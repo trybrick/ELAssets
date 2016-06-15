@@ -1,0 +1,103 @@
+/*** haggen foods css ***/
+.container_12 .prefix_3, .container_16 .prefix_4 {padding-left:240px;}
+
+#CouponsPage .pageHeaderContainer{background:transparent url(/Assets/Common/images/coupons_copy.gif) no-repeat scroll 0 0; clear:both;float:left;height:60px;width:590px;}
+#gridLayout {float:left;width:590px;}
+.couponsPageGrid #gridLayout {float:left;width:480px;}
+
+html, div#container		{background-image:none;}
+
+div#container			{width:1030px; margin:0;padding:0; position:relative;}
+
+#ctl00_TableSide		{float:left;clear:both; margin-right:5px;}
+#HeaderTop				{float:left; width:850px; height:115px; background:#FFF url(/Assets/163/images/WhereBestMealsBeginHeader.jpg) no-repeat top left;}
+#main					{width:620px; overflow:hidden;}
+#navigation-list li a			{float:left; display:block; width:103px; height:30px;background-repeat:no-repeat;text-indent:-99999px;}
+#navigation-list li a:hover		{background-position:0 -30px;}
+
+#availablevarietiestop			{background-image:url(/Assets/163/images/available_varieties.gif);}
+#availablevarietiesmiddle		{border-top:3px solid #AC574A;} 
+
+#ShoppingListHeaderSmall		{background-image:url(/Assets/163/images/ShoppingListHeader.gif); height:39px;}
+#ShoppingListHeaderLarge		{background-image:url(/Assets/163/images/largeshoplist.gif);}
+
+a.Coupons				{background-image: url(/Assets/163/images/tabImages/Coupons.png);}
+a.WeeklyAd				{background-image: url(/Assets/163/images/tabImages/WeeklyAd.png);}
+a.Recipes				{background-image: url(/Assets/163/images/tabImages/Recipes.png);}
+a.Videos				{background-image: url(/Assets/163/images/tabImages/Videos.png);}
+a.Browse				{background-image: url(/Assets/163/images/tabImages/Browse.png);}
+a.Locator				{background-image: url(/Assets/163/images/tabImages/StoreLocator.png);}
+
+li.nav-item				{display:inline;}
+ul#navigation-list      {list-style-type:none; float:left; clear:both; margin:0; padding:0; border-bottom:3px solid #AC574A; overflow:hidden; height:30px;}
+
+.GridItem th			{background-color:#00694D;}
+
+#main.storelocator		{width:850px;}
+#GoogleMapCanvas		{width:380px;}
+#storeZipEntryForm,
+#GoogleMapStoreList		{width:450px;}
+
+#legend th			{background-color:#00694D;}
+
+#RecipeCardTop,
+#RecipeCardMiddle,
+#RecipeCardBottom			{width:610px;}
+
+#RecipeCardMiddle,
+#RecipeCardBottom		{background-color:#FBF8ED;}
+
+#RecipeCardMiddle		{height:430px;}
+
+#TopRecipesTeaser		{float:left;}
+#ChangeDietaryPreferences		{display:none;}
+
+#MealPlanner.recipe h2 a,
+#FeaturedRecipeTeaser.recipe h2 a,
+#FeaturedRecipeTeaser p a,
+#TopRecipesTeaser h2,
+#QuickSearch h2,
+#ChangeDietaryPreferences p a,
+#recipecontent h3,
+#StoreLocator h2,
+a:link, a:visited, a:active			{color:#00694D;}
+#FeaturedArticleTeaser {background:transparent url(/Assets/163/Images/dark_green_gradient.jpg) repeat-x;}
+
+#SavedRecipes				{display:none;}
+
+#QuickSearch h3,
+#ChangeDietaryPreferences p				{color:#000;}
+
+#TopRecipesTeaser p a		{color:#92352F; border-bottom:1px dotted #92352F;}
+
+#CtrlDivSubTitle h2,
+#QuickSearch ul a,
+#category h3,
+h2, 
+#Department h3, #Aisles h3, #Category h3,
+#MealPlanner li a		{color:#92352F;}
+
+#InBetween1, #InBetween2	{color:#00694D;}
+
+#TitleBar, #CurrentList		{border:none; border-bottom: 1px dotted #666;padding-bottom:1em;margin-bottom:1em;}
+
+/*** Manage list page ***/
+#ctl00_ContentPlaceHolder1_ManageListMenu1_HyperLinkSaveCurrentList,
+#ctl00_ContentPlaceHolder1_ManageListMenu1_TextBoxSaveCurrentList,
+#ctl00_ContentPlaceHolder1_ManageListMenu1_ImageButtonSaveCurrentList,
+#ctl00_ContentPlaceHolder1_ManageListMenu1_hypviewsavelist,
+#ctl00_ContentPlaceHolder1_ManageListMenu1_hypimgviewsavelist			{display:none;}
+
+/*** Store Locator Page ***/
+div#main.storelocator	{width:870px;display:inline;}
+#StoreLocator h2 	{font-size:120%;margin-left:5px;}
+#storeInfoZip		{width:45%; font-size:120%;}
+#StoreLocator .storeInfoZip {width:45%; font-size:120%;}
+#StoreLocatorZipLookup	{width:870px;}
+#storeZipEntryForm input {width:85px;}
+
+/*** header ***/
+#StoreHeader			{position:relative; background: #d4e4f1 url(/Assets/182/Images/header-bg.jpg) repeat-x top left;}
+#StoreHeaderLogo		{margin:30px 0 10px 30px;}
+#StoreHeaderRight		{position:absolute; background-color:#FBF8ED; right:0;top:32px; border:2px solid #92352F; width:226px; padding:10px; text-align:center;}
+#StoreHeaderRight strong	{font-size:110%;}

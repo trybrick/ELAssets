@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Recipe Center Redesign</title>
+	<link rel="stylesheet" href="recipe.css" type="text/css" media="screen"/>
+	<!--[if IE]>
+	        <link rel="stylesheet" type="text/css" href="ieRecipe.css" />
+	<![endif]-->
+	
+</head>
+<body>
+	<script src="js/prototype.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var subnavPages = 4;			
+		function showOneContent(elem_id){
+			hideAllContent();
+			clearAllNavs();
+			elemOnContent('recipe-search-page'+elem_id);
+			elemOnSubnav('recipe-search-nav'+elem_id);
+		}
+		function hideAllContent(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffContent( 'recipe-search-page'+i );
+		}
+		function clearAllNavs(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffSubnav( 'recipe-search-nav'+i );
+		}
+		function elemOnContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "block";
+		}
+		function elemOnSubnav(elem_id){
+			if($(elem_id))
+			$(elem_id).addClassName('recipe-search-nav-active');
+		}
+		function elemOffContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "none";
+		}
+		function elemOffSubnav(elem_id){
+			if($(elem_id))
+				$(elem_id).removeClassName('recipe-search-nav-active');
+		}
+		function toggleOptions(elem_id){
+			if(($(elem_id)).hasClassName('hiddenOptions')) {
+				$(elem_id).removeClassName('hiddenOptions');
+			}
+			else $(elem_id).addClassName('hiddenOptions');
+		}
+		
+	</script>
+	<div id="main-wrapper">
+		<div id="recipe-wrapper">
+			<div id="recipe-header">
+				<h2>Recipe Center</h2>
+				<div id="recipe-header-promo">
+					Over 60,000 Recipes!
+				</div>
+				<a href="http://www.ucook.com/" target="_blank">
+					<img border="0" alt="Powered by uCook" src="images/ucook_rev.png"/>
+				</a>
+			</div>
+			<ul id="recipe-nav">
+				<li>
+					<a href="index.html">Recipes</a>
+				</li>
+				<li>
+					<a href="videos.html">Videos</a>
+				</li>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li class="current-recipe-nav">
+					<a href="search.html">Search</a>
+				</li>
+			</ul>
+			<div id="recipe-main">
+				<div id="recipe-search-content" class="recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Search Results</h3>
+					</div>
+					<ul id="recipe-search-nav">
+						<li id="recipe-search-nav1" class="recipe-search-nav-active">
+							<a href="javascript:void(0);" onclick="javascript:showOneContent(1);">Recipes</a>
+						</li>
+						<li id="recipe-search-nav2">
+							<a href="javascript:void(0);" onclick="javascript:showOneContent(2);">Videos</a>
+						</li>
+						<li id="recipe-search-nav3">
+							<a href="javascript:showOneContent(3);">Articles</a>
+						</li>
+						<li class="recipe-search-nav-blank">
+						</li>
+					</ul>
+					<div id="recipe-search-results-options">
+						<div id="recipe-search-results-options-results">
+							<label for="recipe-search-results-number-option">Results Per Page</label>
+							<select id="recipe-search-results-number-option"><option>5</option><option>10</option><option>15</option></select>
+						</div>
+						<div id="recipe-search-results-options-sort">
+							<label for="recipe-search-results-sort-option">Sort by</label>
+							<select id="recipe-search-results-sort-option"><option>Relevance</option></select>
+						</div>
+					</div>
+					<div class="recipe-search-results-nav">
+						<a href="javascript:" class="search-results-nav-prev">Previous page</a>
+						<div class="recipe-search-results-nav-container">
+							<a class="results-nav-selected">1</a>
+							<a>2</a>
+							<a>3</a>
+							<a>4</a>
+						</div>
+						<a href="javascript:" class="search-results-nav-next">Next page</a>
+					</div>
+					<div id="recipe-search-page1" class="recipe-main-body">
+						<ol class="recipe-search-listing">
+							<li class="sponsored-result">
+								<a href="recipefull.html"><img border="0" src="images/herbpotatoes.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<div class="sponsored-logo">
+										<img src="Images/sponsored-logo.jpg" alt="Sponsored Logo"/>
+									</div>
+									<a href="recipefull.html"><span>Gold N' Plump&reg;</span>Roasted Herb Potatoes</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="recipefull.html">View Recipe</a>
+								</div>
+								<div class="recipe-related-content">
+									<a class="recipe-related-video" href="videos.html">Related Video</a>
+								</div>
+							</li>
+							<li>
+								<a href="recipefull.html"><img border="0" src="images/tuscan.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="recipefull.html">Tuscan-Style Fusilli</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="recipefull.html">View Recipe</a>
+								</div>
+								<div class="recipe-related-content">
+									<a class="recipe-related-coupon" href="">Related Coupon</a>
+									<a class="recipe-related-video" href="videos.html">Related Video</a>
+								</div>
+							</li>
+							<li>
+								<a href="recipefull.html">	<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="recipefull.html">Crispy Lemon-Lime Sesame Chicken</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="recipefull.html">View Recipe</a>
+								</div>
+							</li>
+							<li>
+								<a href="recipefull.html"><img border="0" src="images/buffalo.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="recipefull.html">Hot Wings</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="recipefull.html">View Recipe</a>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<div id="recipe-search-page2" class="recipe-main-body" style="display:none;">
+						<ol class="recipe-search-listing">
+							<li>
+								<a href="videos.html"><img border="0" src="images/herbpotatoes.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="videos.html">Roasted Herb Potatoes</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="videos.html">View Video</a>
+								</div>
+							</li>
+							<li>
+								<a href="videos.html"><img border="0" src="images/tuscan.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="videos.html">Tuscan-Style Fusilli</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="videos.html">View Video</a>
+								</div>
+							</li>
+							<li>
+								<a href="videos.html">	<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="videos.html">Crispy Lemon-Lime Sesame Chicken</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="videos.html">View Video</a>
+								</div>
+							</li>
+							<li>
+								<a href="videos.html"><img border="0" src="images/buffalo.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="videos.html">Hot Wings</a>
+									<div class="recipe-rating">
+										<div class="recipe-rating-text">Rated</div>
+										<div class="recipe-rating-star-container">
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+											<a class="recipe-rating-star"></a>
+										</div>
+										<div class="recipe-rating-text">by <span class="recipe-rating-count">15</span> users</div>
+									</div>
+									<a class="view-content" href="videos.html">View Video</a>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<div id="recipe-search-page3" class="recipe-main-body" style="display:none;">
+						<ol class="recipe-search-listing">
+							<li>
+								<a href="article.html"><img border="0" src="images/polenta.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="article.html">Lumpy Polenta</a>
+									<a class="view-content" href="article.html">View Article</a>
+								</div>
+							</li>
+							<li>
+								<a href="article.html"><img border="0" src="images/tuscan.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="article.html">Tuscan-Style Fusilli</a>
+									<a class="view-content" href="article.html">View Article</a>
+								</div>
+							</li>
+							<li>
+								<a href="article.html">	<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="article.html">Crispy Lemon-Lime Sesame Chicken</a>
+									<a class="view-content" href="article.html">View Article</a>
+								</div>
+							</li>
+							<li>
+								<a href="article.html"><img border="0" src="images/buffalo.jpg" alt="Recipe Image"/></a>
+								<div class="content-info">
+									<a href="article.html">Hot Wings</a>
+									<a class="view-content" href="article.html">View Article</a>
+								</div>
+							</li>
+						</ol>
+					</div>
+					<div class="recipe-search-results-nav">
+						<a href="javascript:" class="search-results-nav-prev">Previous page</a>
+						<div class="recipe-search-results-nav-container">
+							<a class="results-nav-selected">1</a>
+							<a>2</a>
+							<a>3</a>
+							<a>4</a>
+						</div>
+						<a href="javascript:" class="search-results-nav-next">Next page</a>
+					</div>
+				</div>
+				<div class="recipe-search-options recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Search Terms</h3>
+					</div>
+					<div class="recipe-main-body">
+						<p>Enter your recipe ingredient search terms:</p>
+						<input class="searchField" value="chicken"></input>
+						<a href="searchresults.html">
+							<input class="searchButton" type="submit" title="Search" value="Go"/>
+						</a>
+					</div>
+				</div>
+				<div class="recipe-search-options recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Popular Searches</h3>
+					</div>
+					<ul id="recipe-popularsearch-listing" class="recipe-main-body">
+						<li>
+							<a href="searchresults.html">Roasted Herb Potatoes</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Tuscan-Style Fusilli</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Crispy Lemon-Lime Sesame Chicken</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Hot Wings</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Roasted Herb Potatoes</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Tuscan-Style Fusilli</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Crispy Lemon-Lime Sesame Chicken</a>
+						</li>
+						<li>
+							<a href="searchresults.html">Hot Wings</a>
+						</li>
+					</ul>
+				</div>
+				<div class="recipe-search-options recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Refine Search</h3>
+					</div>
+					<ul id="recipe-refinesearch-listing" class="recipe-main-body">
+						<li id="refineSearch1" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch1')"><span></span>Course</a>
+							<ul>
+								<li>
+									<label for="refineSearch1Opt1"><input type="checkbox" name="refineSearch" id="refineSearch1Opt1" value="All Courses" checked="checked"/>All Courses</label>
+								</li>
+								<li>
+									<label for="refineSearch1Opt2"><input type="checkbox" name="refineSearch" id="refineSearch1Opt2" value="Breakfast"/>Breakfast (32)</label>
+								</li>
+								<li>
+									<label for="refineSearch1Opt3"><input type="checkbox" name="refineSearch" id="refineSearch1Opt3" value="Lunch"/>Lunch (4)</label>
+								</li>
+								<li>
+									<label for="refineSearch1Opt4"><input type="checkbox" name="refineSearch" id="refineSearch1Opt4" value="Snack"/>Snack (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch1Opt5"><input type="checkbox" name="refineSearch" id="refineSearch1Opt5" value="Dinner"/>Dinner (3)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch2" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch2')"><span></span>Region</a>
+							<ul>
+								<li>
+									<label for="refineSearch2Opt1"><input type="checkbox" name="refineSearch" id="refineSearch2Opt1" value="All Regions" checked="checked"/>All Regions</label>
+								</li>
+								<li>
+									<label for="refineSearch2Opt2"><input type="checkbox" name="refineSearch" id="refineSearch2Opt2" value="African"/>African (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch2Opt3"><input type="checkbox" name="refineSearch" id="refineSearch2Opt3" value="Central American"/>Central American (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch2Opt4"><input type="checkbox" name="refineSearch" id="refineSearch2Opt4" value="Asian"/>Asian (2)</label>
+								</li>
+								<li>
+									<label for="refineSearch2Opt5"><input type="checkbox" name="refineSearch" id="refineSearch2Opt5" value="European"/>European (3)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch3" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch3')"><span></span>Holiday</a>
+							<ul>
+								<li>
+									<label for="refineSearch3Opt1"><input type="checkbox" name="refineSearch" id="refineSearch3Opt1" value="All Holidays" checked="checked"/>All Holidays</label>
+								</li>
+								<li>
+									<label for="refineSearch3Opt2"><input type="checkbox" name="refineSearch" id="refineSearch3Opt2" value="Christmas"/>Christmas (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch3Opt3"><input type="checkbox" name="refineSearch" id="refineSearch3Opt3" value="Easter"/>Easter (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch3Opt4"><input type="checkbox" name="refineSearch" id="refineSearch3Opt4" value="4th of July"/>4th of July (2)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch4" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch4')"><span></span>Event</a>
+							<ul>
+								<li>
+									<label for="refineSearch4Opt1"><input type="checkbox" name="refineSearch" id="refineSearch4Opt1" value="All Events" checked="checked"/>All Events</label>
+								</li>
+								<li>
+									<label for="refineSearch4Opt2"><input type="checkbox" name="refineSearch" id="refineSearch4Opt2" value="Wedding"/>Wedding (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch4Opt3"><input type="checkbox" name="refineSearch" id="refineSearch4Opt3" value="Birthday"/>Birthday (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch4Opt4"><input type="checkbox" name="refineSearch" id="refineSearch4Opt4" value="Baby Shower"/>Baby Shower (2)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch5" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch5')"><span></span>Total Time</a>
+							<ul>
+								<li>
+									<label for="refineSearch5Opt1"><input type="checkbox" name="refineSearch" id="refineSearch5Opt1" value="All Events" checked="checked"/>Any Total Time</label>
+								</li>
+								<li>
+									<label for="refineSearch5Opt2"><input type="checkbox" name="refineSearch" id="refineSearch5Opt2" value="20 Minutes or Less"/>20 Minutes or Less (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch5Opt3"><input type="checkbox" name="refineSearch" id="refineSearch5Opt3" value="30 Minutes or Less"/>30 Minutes or Less (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch5Opt4"><input type="checkbox" name="refineSearch" id="refineSearch5Opt4" value="40 Minutes or Less"/>40 Minutes or Less (2)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch6" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch6')"><span></span>Skill Level</a>
+							<ul>
+								<li>
+									<label for="refineSearch6Opt1"><input type="checkbox" name="refineSearch" id="refineSearch6Opt1" value="All Events" checked="checked"/>Any Skill Level</label>
+								</li>
+								<li>
+									<label for="refineSearch6Opt2"><input type="checkbox" name="refineSearch" id="refineSearch6Opt2" value="20 Minutes or Less"/>Beginner (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch6Opt3"><input type="checkbox" name="refineSearch" id="refineSearch6Opt3" value="30 Minutes or Less"/>Intermediate (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch6Opt4"><input type="checkbox" name="refineSearch" id="refineSearch6Opt4" value="40 Minutes or Less"/>Expert (2)</label>
+								</li>
+							</ul>
+						</li>
+						<li id="refineSearch7" class="hiddenOptions">
+							<a href="javascript:void(0);" onclick="toggleOptions('refineSearch7')"><span></span>Equipment</a>
+							<ul>
+								<li>
+									<label for="refineSearch7Opt1"><input type="checkbox" name="refineSearch" id="refineSearch7Opt1" value="All Events" checked="checked"/>All Equipment</label>
+								</li>
+								<li>
+									<label for="refineSearch7Opt2"><input type="checkbox" name="refineSearch" id="refineSearch7Opt2" value="20 Minutes or Less"/>Oven (5)</label>
+								</li>
+								<li>
+									<label for="refineSearch7Opt3"><input type="checkbox" name="refineSearch" id="refineSearch7Opt3" value="30 Minutes or Less"/>Slicing Wheel (7)</label>
+								</li>
+								<li>
+									<label for="refineSearch7Opt4"><input type="checkbox" name="refineSearch" id="refineSearch7Opt4" value="40 Minutes or Less"/>Food Processor (2)</label>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar-wrapper">
+			<div id="sidebar-ad-300">
+				<img alt="300x250 ad" src="images/ad_300x250.jpg"/>
+			</div>
+			<div id="recipe-sidebar" class="recipe-shadow">
+				<div class="recipe-main-header">
+					<h3>What Can I Make?</h3>
+				</div>
+				<div class="recipe-main-body">
+					<fieldset id="recipe-whatcanImake">
+						<h5>Ingredients</h5>
+						<p>Select your ingredients to generate a recipe:</p>
+						<div class="DietaryPreference"><span>Meal Type</span><select><option>Breakfast</option><option>Lunch</option><option>Snack</option><option>Dinner</option><option>Dessert</option></select>
+						</div>
+						<div class="DietaryPreference"><span>Ingredient 1</span><select><option>Chicken</option></select>
+						</div>
+						<div class="DietaryPreference"><span>Ingredient 2</span><select><option>Pasta</option></select>
+						</div>
+						<div class="DietaryPreference"><span>Prep Time</span><select><option>20 Minutes or Less</option><option>30 Minutes or Less</option><option>40 Minutes or Less</option></select>
+						</div>
+						<input class="dietaryPreferencesButton" type="submit" title="Dietary Preferences" value="Submit"/>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

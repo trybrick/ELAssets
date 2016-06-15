@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Kellogg’s®</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<PromoLinkUrl>https://www.kelloggsfamilyrewards.com/en_US/promotions/free-groceries.html</PromoLinkUrl>
+	<PromoLinkClickTracker>http://pubads.g.doubleclick.net/gampad/clk?id=27587893&amp;iu=/6394/Click_Tracking_Only</PromoLinkClickTracker>
+	<ManufacturerCode>46101</ManufacturerCode>
+	<DepartmentID>10358</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Kelloggs/kelloggsKFRQ4-2012/Images/</ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt="Kellogg's KFR">kelloggs_header.jpg</HeaderImage>
+	<SubheadImage alt="Get Recipes Button">button_getrecipes.png</SubheadImage>
+	<SubheadClickCode></SubheadClickCode>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27129973&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00021</ProductCode>
+			<Description>Froot Loops</Description>
+			<Image>FrootLoops.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27131053&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00022</ProductCode>
+			<Description>Mini Wheats</Description>
+			<Image>MiniWheats.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27131293&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00023</ProductCode>
+			<Description>Rice Krispies</Description>
+			<Image>RiceKrispies.png</Image>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27131653&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00024</ProductCode>
+			<Description>Krave</Description>
+			<Image>Krave.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27131773&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00025</ProductCode>
+			<Description>Crunchy Nut</Description>
+			<Image>CrunchyNut.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27132013&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00026</ProductCode>
+			<Description>Raisin Bran</Description>
+			<Image>RaisinBran.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27132853&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00027</ProductCode>
+			<Description>Raisin Bran Crunch</Description>
+			<Image>RaisinBranCrunch.png</Image>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27134173&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00028</ProductCode>
+			<Description>Apple Jacks</Description>
+			<Image>AppleJacks.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27134893&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00029</ProductCode>
+			<Description>Corn Pops</Description>
+			<Image>CornPops.png</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=27136093&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>00030</ProductCode>
+			<Description>Crispix</Description>
+			<Image>Crispix.png</Image>
+		</Product>
+	</ProductGroup>
+</LandingPage>

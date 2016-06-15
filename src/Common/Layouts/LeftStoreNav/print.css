@@ -1,0 +1,35 @@
+body 					{font-size:90%; height:100%; background-color:#FFFFFF; 
+					font-weight:normal; font-style:normal; font-family: Arial, Helvetica, sans-serif; color:black; margin-top:10px; 
+					margin-left:10px ; margin-right:10px; padding-left:0; padding-right:0;}
+
+#container 				{background:none; display:block; background-color:#FFFFFF; width: 6.25in; }
+#main					{display:block; float:left; padding:0; margin:0; width:100%; }
+#sidebar, #recipesidebar		{display:none;}
+#StoreHeader, #header			{display:none;}
+#recipeoptions				{display:none;}
+#GsnFooter				{display:none;}
+#chainlogo				{background:transparent url('##root##/Assets/##ChainID##/Images/printlogo.gif') no-repeat scroll 0% 0%; clear:both; display:block; height:70px; width:200px;}
+
+#Recipe input				{display:none;}
+#Recipe td				{padding:4px; vertical-align:top;height:auto;}
+#Recipe tr				{vertical-align:top; height:auto;}
+#Recipe td table			{font-size:100%; margin:0; padding:0; border:0; border-collapse:collapse;}
+#Recipe td table td			{vertical-align:top; padding:0px; height:auto;}
+#Recipe h2				{margin-top:12px; color:#000000; font-size:150%; width:100%; border-bottom:1px solid black;}
+#Recipe h3				{color:#000000; font-size:110%; }
+#RecipeFull1_lblPrepInstructions br	{clear:both; display:block; margin:6px 0 6px 0;}
+
+/*** nutrition table ***/
+#NutritionTable				{clear:both; font-family:Arial; width:96%; font-size:90%; margin:12px 0 0 12px; border:1px solid black; padding:4px; border-collapse:collapse;}
+#NutritionTable	h2			{font-size:200%; color:#000000; border:0px none; margin:0}
+#NutritionTable hr.thin			{color:black; border:black; background-color:black; margin:0; height:1px;}
+#NutritionTable hr.thick		{color:black; border:black; background-color:black; margin:0; height:3px;}
+#NutritionTable:after			{content: ""; display: block; height: 0; clear: both }
+.NutritionLine				{width:100%; float:left; text-align:left; margin:0px 2px; padding:0; border-collapse:collapse;}
+.NutritionFacts				{border:1px solid black; padding:4px; margin:0; padding:0; border-collapse:collapse;}
+.NutritionLineItem			{width:49.9%; float:left; text-align:left; margin:0px; padding:0; }
+.NutritionLineElement			{width:49.9%; float:left; text-align:left; margin:0px; padding:0; border-bottom:1px solid black; }
+.NutritionLineElementRight		{width:49.9%; float:left; text-align:right; margin:0px; padding:0; border-bottom:1px solid black; }
+
+#lightwindow_overlay, #lightwindow	{display:none;}
+#reciperating				{display:none;}

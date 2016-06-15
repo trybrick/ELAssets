@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<SignOut>
+	<Links>
+		<Link>
+			<Href>/Shop/WeeklyAd.aspx</Href>
+			<Text>Browse Our Weekly Ad</Text>
+		</Link>
+		<Link>
+			<Href>/Recipes/RecipeCenter.aspx</Href>
+			<Text>View and Search Recipes</Text>
+		</Link>
+		<Link>
+			<Href>/Recipes/RecipeVideos.aspx</Href>
+			<Text>Watch Cooking Videos</Text>
+		</Link>
+	</Links>
+</SignOut>

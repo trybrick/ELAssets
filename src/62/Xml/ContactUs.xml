@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<CakeOrder>
+  <Cakes>
+    <Cake>
+      <Size>8 inch Round Double Layer</Size>
+      <Serving>6-8</Serving>
+      <Price>$9.99 each</Price>
+    </Cake>
+    <Cake>
+      <Size>1/4 Sheet</Size>
+      <Serving>10-12</Serving>
+      <Price>$14.99 each</Price>
+    </Cake>
+    <Cake>
+      <Size>1/2 Sheet</Size>
+      <Serving>20-24</Serving>
+      <Price>$24.99 each</Price>
+    </Cake>
+    <Cake>
+      <Size>Full Sheet</Size>
+      <Serving>40-44</Serving>
+      <Price>$34.99 each</Price>
+    </Cake>
+  </Cakes>
+  <Flavors>
+    <Flavor>
+      <Name>Chocolate</Name>
+    </Flavor>
+    <Flavor>
+      <Name>White</Name>
+    </Flavor>
+    <Flavor>
+      <Name>Yellow</Name>
+    </Flavor>
+    <Flavor>
+      <Name>Marble</Name>
+    </Flavor>
+  </Flavors>
+</CakeOrder>

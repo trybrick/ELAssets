@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DunkinDonuts>
+	<Brand reg="true">Dunkin\' Donuts</Brand>
+	<BrandSiteUrl>http://www.dunkindonuts.com</BrandSiteUrl>
+	<Logo alt="Dunkin Donuts Logo">logo.gif</Logo>
+	<HeadingText>Browse Our Coffee Aisle</HeadingText>
+	<ManufacturerCode>81334</ManufacturerCode>
+	<CSS>
+		<Stylesheet>##root##/Assets/Common/Promotions/DunkinDonuts/Assets/css/default.css</Stylesheet>
+		<WrapID>dd-wrap</WrapID>
+		<HeaderID>dd-header</HeaderID>
+		<MainID>dd-main</MainID>
+		<FooterID>dd-footer</FooterID>
+		<ProductDetailClass>flavor</ProductDetailClass>
+	</CSS>
+	<DepartmentID>10360</DepartmentID>
+	<ImagePath>##root##/Assets/Common/Promotions/DunkinDonuts/Assets/Images/</ImagePath>
+	<MasterLayout columns="2"></MasterLayout>
+	<FooterImage>footer_graphic.jpg</FooterImage>
+	<ProductList>
+		<Product>
+			<Title>Original Blend</Title>
+			<ProductCode>00046</ProductCode>
+			<Image alt="">pkg_original.png</Image>
+			<Description>The unique mix of 100% Arabica beans delivers the smooth, delicious flavor that's made Dunkin&#8217; Donuts&#174; coffee famous. Also available in whole bean.</Description>
+			<SubHeading>Everyone Loves a Classic</SubHeading>
+			<Layout row="1" col="1" />
+			<Order>1</Order>
+		</Product>
+		<Product>
+			<Title reg="true">Dunkin&#8217; Dark</Title>
+			<ProductCode>00076</ProductCode>
+			<Image alt="">pkg_dark.png</Image>
+			<Description>Dunkin&#8217; Dark&#174; coffee is carefully roasted using 100% Arabica beans. Try Dunkin&#8217; Dark&#174; coffee for a rich coffee experience.</Description>
+			<SubHeading>A Darker Roast for a More Full-Bodied Flavor</SubHeading>
+			<Layout row="2" col="1" />
+			<Order>2</Order>
+		</Product>
+		<Product>
+			<Title reg="true">Dunkin&#8217; Decaf</Title>
+			<ProductCode>00048</ProductCode>
+			<Image alt="">pkg_decaf.png</Image>
+			<Description>Want decaf without skimping on taste? Dunkin&#8217; Decaf&#174; coffee, made with 100% Arabica beans, has all the taste of Dunkin&#8217; Original Blend.</Description>
+			<SubHeading>Mellow Your Mug</SubHeading>
+			<Layout row="2" col="2" />
+			<Order>3</Order>
+		</Product>
+		<Product>
+			<Title tm="true">Dunkin&#8217; Turbo</Title>
+			<ProductCode>00136</ProductCode>
+			<Image alt="">pkg_turbo.png</Image>
+			<Description>This rich, smooth, medium roast coffee has an extra boost of delicious Dunkin&#8217; Donuts&#174; flavor to kick-start your day</Description>
+			<SubHeading>Better Call Dibs on the Big Mug</SubHeading>
+			<Layout row="3" col="1" />
+			<Order>4</Order>
+		</Product>
+		<Product>
+			<Title>French Vanilla</Title>
+			<ProductCode>00047</ProductCode>
+			<Image alt="">pkg_frenchvanilla.png</Image>
+			<Description>Enjoy the taste of Dunkin&#8217; Donuts&#174; French Vanilla coffee. The flavor is perfect for those craving a flavorful coffee experience. Savor the French vanilla splendor with each sip. Your coffee mug never had it so good.</Description>
+			<SubHeading>Spoil Your Coffee Mug</SubHeading>
+			<Layout row="3" col="2" />
+			<Order>5</Order>
+		</Product>
+		<Product>
+			<Title>Hazelnut</Title>
+			<ProductCode>00049</ProductCode>
+			<Image alt="">pkg_hazelnut.png</Image>
+			<Description>You'll go nuts for the velvety taste of Dunkin&#8217; Donuts&#174; Hazelnut coffee. Warm and nutty, it's a nice change of pace from your usual coffee routine. Spread the sweet aroma of roasted hazelnuts with every pot.</Description>
+			<SubHeading>Get Nutty</SubHeading>
+			<Layout row="4" col="1" />
+			<Order>6</Order>
+		</Product>
+		<Product>
+			<Title>Cinnamon Spice</Title>
+			<ProductCode>00050</ProductCode>
+			<Image alt="">pkg_cinnamon.png</Image>
+			<Description>Dunkin&#8217; Donuts&#174; Cinnamon Spice coffee is a comfort to your senses. This flavorful coffee is perfect to brew at home on a crisp morning, cozy night or anytime you want to fill your home with its enticing aroma.</Description>
+			<SubHeading>Spice up Your Life</SubHeading>
+			<Layout row="4" col="2" />
+			<Order>7</Order>
+		</Product>
+	</ProductList>
+</DunkinDonuts>

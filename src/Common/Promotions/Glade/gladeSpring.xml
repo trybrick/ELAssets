@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Glade</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<PromoLinkUrl></PromoLinkUrl>
+	<PromoLinkClickTracker></PromoLinkClickTracker>
+	<ManufacturerCode></ManufacturerCode>
+	<DepartmentID></DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath></ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt=""></HeaderImage>
+	<SubheadImage alt=""></SubheadImage>
+	<SubheadClickCode></SubheadClickCode>
+	<ProductGroup>
+		<Product>
+			<ClickCode></ClickCode>
+			<ProductCode></ProductCode>
+			<Description></Description>
+			<Image></Image>
+		</Product>
+	</ProductGroup>
+</LandingPage>

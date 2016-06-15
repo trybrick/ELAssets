@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<header>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>##root##</Link>
+	</MenuItem>
+	
+	<MenuItem>
+		<Title>Order Online</Title>
+		<Link>#</Link>
+			<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Online Shopping</Title>
+				<Link>http://www.cobornsdelivers.com/</Link>
+				<Target>_blank</Target>
+			</MenuItem>
+			<MenuItem>
+				<Title>Gift Cards</Title>
+				<Link><![CDATA[http://www.cashwisefloralandgift.com/shop/DisplayCategory.asp?Type=1&C1=1&C2=0&C3=0&C4=0&sid=COBORNS]]></Link>
+				<Target>_blank</Target>
+			</MenuItem>
+			<MenuItem>
+				<Title>Floral</Title>
+				<Link><![CDATA[http://www.cobornsfloralandgift.com/shop/DisplayCategory.asp?Type=1&C1=1&C2=0&C3=0&C4=0&sid=COBORNS]]></Link>
+				<Target>_blank</Target>
+			</MenuItem>
+			<MenuItem>
+				<Title>Photo</Title>
+				<Link>http://coborns.lifepics.com</Link>
+				<Target>_blank</Target>
+			</MenuItem>
+			<MenuItem>
+				<Title>Order Specialty Items</Title>
+				<Link>http://coborns.elsstore.com/</Link>
+				<Target>_blank</Target>
+			</MenuItem>
+			</SubLevelNavigation>
+	</MenuItem>
+	
+	<MenuItem>
+		<Title>Recipes</Title>
+		<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Weekly Ads</Title>
+		<Link>##root##/Shop/WeeklyAd.aspx</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Weekly Ads</Title>
+				<Link>##root##/Shop/WeeklyAd.aspx</Link>
+			</MenuItem>
+		<MenuItem>
+			<Title>Liquor Ads</Title>
+			<Link>##root##/liquor-store-ad.aspx</Link>
+		</MenuItem>
+		</SubLevelNavigation>			
+	</MenuItem>
+	
+	
+	<MenuItem>
+		<Title>Coupons</Title>
+		<Link>##root##/Shop/Coupons.aspx</Link>
+	</MenuItem>
+		
+	<MenuItem>
+		<Title>Departments</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+		<MenuItem>			
+			<Title>Deli/Catering</Title>
+			<Link>##root##/catering.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Bakery</Title>
+			<Link>##root##/bakery.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Produce</Title>
+			<Link>##root##/produce-price-guide.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Meat &amp; Seafood</Title>
+			<Link>##root##/meat-and-seafood.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Food Safety</Title>
+			<Link>##root##/safety.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Health and Wellness</Title>
+			<Link>##root##/health-and-wellness.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Liquor</Title>
+			<Link>##root##/liquor.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Pharmacy</Title>
+			<Link>##root##/pharmacy.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Video</Title>
+			<Link>http://coborns.myvideostore.com/</Link>
+			<Target>_blank</Target>
+		</MenuItem>
+		<MenuItem>
+			<Title>Floral</Title>
+			<Link>##root##/floral.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Photo</Title>
+			<Link>http://coborns.lifepics.com/</Link>
+			<Target>_blank</Target>
+		</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Store Locator</Title>
+		<Link>##root##/StoreLocator.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Careers</Title>
+		<Link>##root##/employment-opportunities.aspx</Link>
+		<SubLevelNavigation>	
+		<MenuItem>			
+			<Title>Job Opportunities</Title>
+			<Link>##root##/employment-opportunities.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Employment Benefits</Title>
+			<Link>##root##/employment-home.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Employment Application</Title>
+			<Link>##root##/employment-application.aspx</Link>
+		</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>About Us</Title>
+		<Link>##root##/history.aspx</Link>
+		<SubLevelNavigation>	
+		<MenuItem>			
+			<Title>History</Title>
+			<Link>##root##/history.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Sustainability</Title>
+			<Link>##root##/sustainability.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Our Brands</Title>
+			<Link>##root##/our-brands.aspx</Link>
+		</MenuItem>
+		<MenuItem>			
+			<Title>Our Clubs</Title>
+			<Link>##root##/our-clubs.aspx</Link>
+		</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Contact Us</Title>
+		<Link>##root##/Contact</Link>
+	</MenuItem>
+</TopLevelNavigation>
+</header>

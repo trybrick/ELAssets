@@ -1,0 +1,305 @@
+
+<script>
+
+//$(document).ready(function() {
+	$('.adContent').hide();
+	
+	$('.circularThumb').click(function() {
+		$('#circularThumbNav').slideUp();
+	});
+	
+	
+	$("a.circularSort").click(function(){
+		$("#circularSorted").show();
+		$("#circularThumbNav").hide();
+	});
+	
+	
+	$('area.jt').cluetip({
+		  attribute: 'href',
+		  cluetipClass: 'jtip',
+		  arrows: true, 
+		  dropShadow: true,
+		  hoverIntent: false,
+		  closePosition: 'title',
+		  closeText: 'x'
+	});
+
+  	
+  	$('#houdini').cluetip({
+    	splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
+    	                 // ...and split the contents into separate divs where there is a "|"
+    	showTitle: false // hide the clueTip's heading
+  	});
+		
+	
+	$( '#circularNav' ).tabs().find( '.ui-tabs-nav' );
+		
+ 
+	$( '#circular-2' ).tabs().find( '.ui-tabs-nav' );
+			
+	
+	$(".circularThumb").click(function(){
+		$("#circularThumbNav").hide();
+	});
+	
+	
+	$(".circularBack").click(function(){
+		$('#cluetip').hide();
+		$(".adContent").hide();
+		$("#circularSorted").hide();
+		$("#circularThumbNav").show();
+	
+	});
+	
+	
+	// Hides cluetips when the user clicks outside of the .adContent div
+	$("body").click(function(e){
+	
+	    if(e.target.className !== "adContent")
+	    {
+	      $("#cluetip").hide();
+	    }
+ 	});
+
+
+	
+//});
+
+</script>
+    
+<div id="circularNav" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+	<ul id="circularThumbNav" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+		<h2>Weekly Circulars</h2>
+		<div class="CircularLists">
+			<label for="ddlDepartment">Sort All Circular Products:</label>
+			<select id="ddlDepartment">
+				<option value="-1">- Shop By Dept. -</option>
+		        <option exportkeyid="117502" value="10337">Bakery</option>
+		        <option exportkeyid="117509" value="10354">Baking Needs</option>
+		        <option exportkeyid="117542" value="10355">Beverages</option>
+		        <option exportkeyid="117682" value="10358">Cereal &amp; Breakfast</option>
+		        <option exportkeyid="117740" value="10359">Cleaning &amp; Laundry</option>
+		        <option exportkeyid="117779" value="10361">Condiments</option>
+		        <option exportkeyid="117786" value="10369">Cookies / Crackers / Snacks</option>
+		        <option exportkeyid="117833" value="10338">Dairy</option>
+		        <option exportkeyid="117839" value="10339">Deli</option>
+		        <option exportkeyid="117985" value="10341">Frozen Foods</option>
+		        <option exportkeyid="118042" value="10343">Grocery</option>
+		        <option exportkeyid="118074" value="10344">Health &amp; Beauty</option>
+		        <option exportkeyid="118103" value="10364">Ice Cream / Frozen Desserts</option>
+		        <option exportkeyid="118137" value="10362">Kitchen Supplies</option>
+		        <option exportkeyid="118217" value="10345">Meat &amp; Poultry</option>
+		        <option exportkeyid="118348" value="10366">Paper &amp; Plastic Goods</option>
+		        <option exportkeyid="118364" value="10352">Pastas &amp; Sauces</option>
+		        <option exportkeyid="118393" value="10346">Pet Supplies</option>
+		        <option exportkeyid="118462" value="10347">Produce</option>
+		        <option exportkeyid="118551" value="10349">Seafood</option>
+	        </select>
+	        <span class="or">-or-</span>
+	        <select id="ddlBrand">
+		        <option value="-1">- Shop By Brand -</option>
+		        <option exportkeyid="8080" value="Banquet">Banquet</option>
+		        <option exportkeyid="11811" value="Blue Bonnet">Blue Bonnet</option>
+		        <option exportkeyid="20639" value="Chinet">Chinet</option>
+		        <option exportkeyid="20684" value="Chips Ahoy!">Chips Ahoy!</option>
+		        <option exportkeyid="24168" value="Cottonelle">Cottonelle</option>
+		        <option exportkeyid="38673" value="Fresh Step">Fresh Step</option>
+		        <option exportkeyid="41548" value="Glad">Glad</option>
+		        <option exportkeyid="43932" value="Green Giant">Green Giant</option>
+		        <option exportkeyid="46484" value="Healthy Choice">Healthy Choice</option>
+		        <option exportkeyid="48610" value="Hormel">Hormel</option>
+		        <option exportkeyid="52547" value="Jimmy Dean">Jimmy Dean</option>
+		        <option exportkeyid="54711" value="Kemps">Kemps</option>
+		        <option exportkeyid="55924" value="Kleenex">Kleenex</option>
+		        <option exportkeyid="59132" value="Lean Cuisine">Lean Cuisine</option>
+		        <option exportkeyid="64111" value="Marie Callender's">Marie Callender's</option>
+		        <option exportkeyid="67934" value="Minute Maid">Minute Maid</option>
+		        <option exportkeyid="77404" value="Our Family">Our Family</option>
+		        <option exportkeyid="79750" value="Pedigree">Pedigree</option>
+		        <option exportkeyid="81312" value="Philadelphia">Philadelphia</option>
+		        <option exportkeyid="88952" value="Ripples">Ripples</option>
+		        <option exportkeyid="89068" value="Ritz">Ritz</option>
+		        <option exportkeyid="102531" value="Swanson">Swanson</option>
+		        <option exportkeyid="107281" value="Totino's">Totino's</option>
+		        <option exportkeyid="115252" value="Wisk">Wisk</option>
+	        </select>
+	        <a href="#" class="button circularSort">Sort</a>
+        </div>
+        <p>Or, click on a Circular to View Full Size</p>
+		<li>
+			<a href="#circular-1" id="circularThumb-1" class="circularThumb" onclick="$('.adContent').show();" >
+				<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/circularpage_1.jpg" alt="Circular One" align="middle"/>
+			</a>
+		</li>
+		<li>
+			<a href="#circular-2" id="circularThumb-2" class="circularThumb" onclick="$('.adContent').show();">
+				<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/circularpage_2.jpg" alt="Circular Two" align="middle"/>
+			</a>
+		</li>
+	</ul>
+	
+	<!--<a href="#" id="circularDrawer" onclick="$('#circularThumbNav').slideToggle('blind'); $('#cluetip').hide();"><span>v</span></a>-->
+	<div id="circularSorted" style="display:none;">
+		<a href="#" class="circularBack">&larr; Go Back to View All Circulars</a>
+		<div class="CircularLists">
+			<label for="ddlDepartment">Sort All Circular Products:</label>
+			<select id="ddlDepartment">
+				<option value="-1">- Shop By Dept. -</option>
+		        <option exportkeyid="117502" value="10337">Bakery</option>
+		        <option exportkeyid="117509" value="10354">Baking Needs</option>
+		        <option exportkeyid="117542" value="10355">Beverages</option>
+		        <option exportkeyid="117682" value="10358">Cereal &amp; Breakfast</option>
+		        <option exportkeyid="117740" value="10359">Cleaning &amp; Laundry</option>
+		        <option exportkeyid="117779" value="10361">Condiments</option>
+		        <option exportkeyid="117786" value="10369">Cookies / Crackers / Snacks</option>
+		        <option exportkeyid="117833" value="10338">Dairy</option>
+		        <option exportkeyid="117839" value="10339">Deli</option>
+		        <option exportkeyid="117985" value="10341">Frozen Foods</option>
+		        <option exportkeyid="118042" value="10343">Grocery</option>
+		        <option exportkeyid="118074" value="10344">Health &amp; Beauty</option>
+		        <option exportkeyid="118103" value="10364">Ice Cream / Frozen Desserts</option>
+		        <option exportkeyid="118137" value="10362">Kitchen Supplies</option>
+		        <option exportkeyid="118217" value="10345">Meat &amp; Poultry</option>
+		        <option exportkeyid="118348" value="10366">Paper &amp; Plastic Goods</option>
+		        <option exportkeyid="118364" value="10352">Pastas &amp; Sauces</option>
+		        <option exportkeyid="118393" value="10346">Pet Supplies</option>
+		        <option exportkeyid="118462" value="10347">Produce</option>
+		        <option exportkeyid="118551" value="10349">Seafood</option>
+	        </select>
+	        <span class="or">-or-</span>
+	        <select id="ddlBrand">
+		        <option value="-1">- Shop By Brand -</option>
+		        <option exportkeyid="8080" value="Banquet">Banquet</option>
+		        <option exportkeyid="11811" value="Blue Bonnet">Blue Bonnet</option>
+		        <option exportkeyid="20639" value="Chinet">Chinet</option>
+		        <option exportkeyid="20684" value="Chips Ahoy!">Chips Ahoy!</option>
+		        <option exportkeyid="24168" value="Cottonelle">Cottonelle</option>
+		        <option exportkeyid="38673" value="Fresh Step">Fresh Step</option>
+		        <option exportkeyid="41548" value="Glad">Glad</option>
+		        <option exportkeyid="43932" value="Green Giant">Green Giant</option>
+		        <option exportkeyid="46484" value="Healthy Choice">Healthy Choice</option>
+		        <option exportkeyid="48610" value="Hormel">Hormel</option>
+		        <option exportkeyid="52547" value="Jimmy Dean">Jimmy Dean</option>
+		        <option exportkeyid="54711" value="Kemps">Kemps</option>
+		        <option exportkeyid="55924" value="Kleenex">Kleenex</option>
+		        <option exportkeyid="59132" value="Lean Cuisine">Lean Cuisine</option>
+		        <option exportkeyid="64111" value="Marie Callender's">Marie Callender's</option>
+		        <option exportkeyid="67934" value="Minute Maid">Minute Maid</option>
+		        <option exportkeyid="77404" value="Our Family">Our Family</option>
+		        <option exportkeyid="79750" value="Pedigree">Pedigree</option>
+		        <option exportkeyid="81312" value="Philadelphia">Philadelphia</option>
+		        <option exportkeyid="88952" value="Ripples">Ripples</option>
+		        <option exportkeyid="89068" value="Ritz">Ritz</option>
+		        <option exportkeyid="102531" value="Swanson">Swanson</option>
+		        <option exportkeyid="107281" value="Totino's">Totino's</option>
+		        <option exportkeyid="115252" value="Wisk">Wisk</option>
+	        </select>
+	        <a href="#" class="button circularSort">Sort</a>
+        </div>
+
+		<table id="sortedProducts" width="100%" border="1" align="center">
+			<tr class="tableHeader">
+				<td class="productRow"></td>
+				<td class="productDescription">Product</td>
+				<td class="productPrice">Price</td>
+				<td class="productAdd"></td>
+			</tr>
+			<tr class="productRow">
+				<td class="productImage">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/tips/thumbs/sweetcorn.jpg" width="75" alt=""/>
+				</td>
+				<td class="productDescription">
+					<h4>Sweet Corn</h4>
+					<p>Product Description</p>
+				</td>
+				<td class="productPrice"><p>Price!</p></td>
+				<td class="productAdd"><a href="#" class="add button">Add to List</a></td>
+			</tr>
+			<tr class="productRow">
+				<td class="productImage">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/tips/thumbs/greengiant.jpg" width="75" alt=""/>
+				</td>
+				<td class="productDescription">
+					<h4>Green Giant Canned Vegetables</h4>
+					<p>Save $5.68 on 8! Offer good on 14.5 - 16oz cans of all Green Giant Vegetable varieties. Limit 8 cans per checkout.</p>
+				</td>
+				<td class="productPrice"><p>Price!</p></td>
+				<td class="productAdd"><a href="#" class="add button">Add to List</a></td>
+			</tr>
+			<tr class="productRow">
+				<td class="productImage">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/tips/thumbs/shrimp.jpg" width="75" alt=""/>
+				</td>
+				<td class="productDescription">
+					<h4>Medium Cooked Cocktail Shrimp</h4>
+					<p>51 - 60 Count Shrimp pre-cooked for a quick snack, fast meal, or party appetizer!</p>
+				</td>
+				<td class="productPrice"><p>Price!</p></td>
+				<td class="productAdd"><a href="#" class="add button">Add to List</a></td>
+			</tr>
+			<tr class="productRow last">
+				<td class="productImage">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/tips/thumbs/cobia.jpg" width="75" alt=""/>
+				</td>
+				<td class="productDescription">
+					<h4>Cobia Fillets</h4>
+					<p>farm raised, AKVA.  Heart healthy choice. High in Omega-3 Fatty Acids</p>
+				</td>
+				<td class="productPrice"><p>Price!</p></td>
+				<td class="productAdd"><a href="#" class="add button">Add to List</a></td>
+			</tr>
+		</table>
+	
+	</div>
+	<div id="circular-1" class="adContent">
+		<a href="#" class="circularBack">&larr; Go Back to View All Circulars</a>
+		<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/circularpage_1.jpg" width="615px" id="CircularImage" usemap="#circularmap" />
+		<map name="circularmap">
+			<area shape="rectangle" coords="0,50,400,200" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="400,50,600,150" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="400,160,600,250" href="tips/tip2.html" rel="tips/tip1.html" alt="Steaks or Roasts" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="21,280,277,464" href="tips/2centham.html" rel="tips/2centham.html" alt="Ham Savings Guarantee" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="300,300,400,400" href="tips/shrimp.html" rel="tips/shrimp.html" alt="Medium Cooked Cocktail Shrimp" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="471,300,600,450" href="tips/cobiafillets.html" rel="tips/cobiafillets.html" alt="Bi-Color Sweet Corn" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="0,470,190,570" href="tips/bicolorcorn.html" rel="tips/bicolorcorn.html" alt="Bi-Color Sweet Corn" class="jt" title="Click to add Item to your list"/>
+			<area shape="rectangle" coords="200,470,350,550" href="tips/greengiant.html" rel="tips/greengiant.html" alt="Green Giant Vegetables" class="jt" title="Click to add Item to your list"/>
+		</map>
+	</div>
+	
+	<div id="circular-2" class="adContent multiple-pages">
+		<a href="#" class="circularBack">&larr; Go Back to View All Circulars</a>
+		<ul>
+			<li><a href="#tabs-1">1</a></li>
+			<li><a href="#tabs-2">2</a></li>
+		</ul>
+		<div id="tabs-1">
+			<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/circularpage_2.jpg" width="615px" id="CircularImage" usemap="#circularmap-multiple-1" />
+			<!--
+			<map name="circularmap">
+				<area shape="rectangle" coords="0,50,400,200" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+				<area shape="rectangle" coords="400,50,600,150" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+				<area shape="rectangle" coords="400,160,600,250" href="tips/tip2.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+			</map>-->
+		</div>
+		<div id="tabs-2">
+			<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/circularpage_2-2.jpg" width="615px" id="CircularImage" usemap="#circularmap-multiple-2" />
+			<!--
+			<map name="circularmap">
+				<area shape="rectangle" coords="0,50,400,200" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+				<area shape="rectangle" coords="400,50,600,150" href="tips/tip1.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+				<area shape="rectangle" coords="400,160,600,250" href="tips/tip2.html" rel="tips/tip1.html" alt="Ham" class="jt" title="Click to add Item to your list"/>
+			</map>
+			-->
+		</div>
+	</div>
+
+
+
+</div>
+
+    
+     
+    
+
+    

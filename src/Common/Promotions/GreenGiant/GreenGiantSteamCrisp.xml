@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HoneyBunches>
+	<Brand reg="true">Green Giant</Brand>
+	<BrandSiteUrl>http://greengiant.com/</BrandSiteUrl>
+	<Logo alt="Green Giant">sc_header.png</Logo>
+	<HeadingText>Picked at the peak of perfection, SteamCrisp corn is vacuum packed and perfectly steamed in the can for delicious, crisp vegetables &lt;br&gt; &lt;span&gt;100% Natural &lt;/span&gt;</HeadingText>
+	<PageDescriptText></PageDescriptText>
+	<ManufacturerCode>200000</ManufacturerCode>
+	<CSS>
+		<Stylesheet>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/GreenGiant/GreenGiantSteamCrisp.css</Stylesheet>
+		<WrapID>hbo-wrap</WrapID>
+		<HeaderID>hbo-header</HeaderID>
+		<MainID>hbo-main</MainID>
+		<ProductDetailClass>hbo-product</ProductDetailClass>
+	</CSS>
+	<DepartmentID>10357</DepartmentID>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/GreenGiant/Images/</ImagePath>
+	<MasterLayout columns="2" rows="3"></MasterLayout>
+	<FooterImage></FooterImage>
+	<ProductList>
+		<Product>
+			<Title>Niblets®</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875017;70975631;p?</ClickCode>
+			<ProductCode>10419</ProductCode>
+			<Image alt="">sc_niblets.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="1" />
+			<Order>1</Order>
+		</Product>
+		<Product>
+			<Title>Extra Sweet Niblets® </Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875030;70975631;k?</ClickCode>
+			<ProductCode>10821</ProductCode>
+			<Image alt="">sc_extrasweet.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="2" />
+			<Order>2</Order>
+		</Product>
+		<Product>
+			<Title>Niblets® No Salt Added</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875015;70975631;n?</ClickCode>
+			<ProductCode>10009</ProductCode>
+			<Image alt="">sc_niblets_nosalt.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="3" />
+			<Order>3</Order>
+		</Product>
+		<Product>
+			<Title>White Shoepeg Corn</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875019;70975631;r?</ClickCode>
+			<ProductCode>10546</ProductCode>
+			<Image alt="">sc_white.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="1" />
+			<Order>4</Order>
+		</Product>
+		<Product>
+			<Title>Super Sweet Yellow &amp; White Corn</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875018;70975631;q?</ClickCode>
+			<ProductCode>11274</ProductCode>
+			<Image alt="">sc_supersweet_yellow.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="2" />
+			<Order>5</Order>
+		</Product>
+		<Product>
+			<Title>Super Sweet White Corn</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875029;70975631;s?</ClickCode>
+			<ProductCode>26161</ProductCode>
+			<Image alt="">sc_supersweet_white.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="3" />
+			<Order>6</Order>
+		</Product>
+		<Product>
+			<Title>Mexicorn® Vacuum</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875028;70975631;r?</ClickCode>
+			<ProductCode>10453</ProductCode>
+			<Image alt="">sc_mexicorn.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="3" col="1" />
+			<Order>7</Order>
+		</Product>
+		<Product>
+			<Title>Southwestern Style Corn</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253875020;70975631;j?</ClickCode>
+			<ProductCode>45746</ProductCode>
+			<Image alt="">sc_southwestern.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="3" col="2" />
+			<Order>8</Order>
+		</Product>
+		<Product>
+			<Title>Chipotle White Corn</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;253874740;70975631;r?</ClickCode>
+			<ProductCode>45745</ProductCode>
+			<Image alt="">sc_chipotle.png</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="3" col="3" />
+			<Order>9</Order>
+		</Product>
+	</ProductList>
+</HoneyBunches>

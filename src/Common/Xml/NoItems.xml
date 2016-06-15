@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<MenuLinks>
+	<WeeklyAd>
+		<ImagePath>/Assets/Common/Images/BrowseWeeklyAD.gif</ImagePath>
+		<Hyperlink>/Shop/WeeklyAd.aspx</Hyperlink>
+	</WeeklyAd>
+	<Recipe>
+		<ImagePath>/Assets/Common/Images/AddIngredients.gif</ImagePath>
+		<Hyperlink>/Recipes/RecipeCenter.aspx</Hyperlink>
+	</Recipe>
+	<BrowseAisle>
+		<ImagePath>/Assets/Common/Images/BrowseAisle.gif</ImagePath>
+		<Hyperlink>Browse.aspx</Hyperlink>
+	</BrowseAisle>	
+</MenuLinks>

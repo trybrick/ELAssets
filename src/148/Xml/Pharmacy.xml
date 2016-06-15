@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<PharmacyContent>
+	<Stores>
+		<Store>
+			<Name>Eagle River</Name>
+			<Phone>715.479.6413</Phone>
+			<SortBy>1</SortBy>
+		</Store>
+		<Store>
+			<Name>Monocqua</Name>
+			<Phone>715.356.9449</Phone>
+			<SortBy>2</SortBy>
+		</Store>
+		<Store>
+			<Name>Rhinelander</Name>
+			<Phone>715.369.4849</Phone>
+			<SortBy>3</SortBy>
+		</Store>
+		<Store>
+			<Name>Wasau</Name>
+			<Phone>715.848.9066</Phone>
+			<SortBy>4</SortBy>
+		</Store>
+	</Stores>
+</PharmacyContent>

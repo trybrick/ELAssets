@@ -1,0 +1,16 @@
+#Email-Outer {width: 100%;}
+#Email-Container {margin: 0 auto;width: 728px;}
+#Email-Header {float: left;}
+#Email-Personalized {float: left;}
+#Email-Pods {float: left;margin: 5px 0 0 20px;}
+#Email-Footer {float: left;}
+.EmailPod {background: url("http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailv4/mercury/images/podmain.png") no-repeat scroll 0 bottom transparent;float: left;height: 185px;width: 172px;}
+.EmailPod h2 {background: no-repeat scroll 0 bottom transparent;height: 45px;margin: 0;text-indent: -9999px;}
+#podCouponSavings h2 {background-image: url("http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailv4/mercury/images/podTop_CouponSavings.png");}
+#podFeaturedRecipe h2 {background-image: url("http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailv4/mercury/images/podTop_FeaturedRecipe.png");}
+#podFeaturedVideo h2 {background-image: url("http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailv4/mercury/images/podTop_FeaturedVideo.png");}
+#podWeeklyAd h2 {background-image: url("http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailv4/mercury/images/podTop_WeeklyAd.png");}
+.EmailPod a {color: #666666;display: block;font-family: Arial,helvetica,sans-serif;font-style: italic;height: 140px;overflow: hidden;padding:0 10px;text-align: center;text-decoration: none;width: 152px;}
+.EmailPod a span {color: #CC0000;display: block;font-size: 24px;font-weight: bold;}
+.EmailPod a img {border: 0;margin: 0 auto;max-height: 105px;max-width: 130px;}
+.EmailPod a table {height: 100px;width: 100%;}

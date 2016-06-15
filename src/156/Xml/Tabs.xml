@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+
+
+
+<tabs>
+	<tab>
+	    <url>/Recipes/RecipeCenter.aspx</url>
+	    <text>Recipe&lt;br&gt;Center</text>
+	</tab>	
+	<tab>
+	    <url>/Recipes/RecipeVideos.aspx</url>
+	    <text>Cooking&lt;br&gt;Videos</text>
+	</tab>	
+</tabs>

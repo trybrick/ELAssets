@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<footer>
+	<FooterItem>
+		<FooterText>Copyright &#xA9; 2016 Redner&#39;s Markets Inc.</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Privacy Policy</FooterText>
+		<FooterLink>http://groceryshopping.net/about/privacy-policy/</FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Contact Us</FooterText>
+		<FooterLink>/Contact-Us.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Recalls</FooterText>
+		<FooterLink>/Recalls.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass>FooterEmphasis</FooterClass>		
+	</FooterItem>
+	<FooterItem>
+		<FooterText>FAQ</FooterText>
+		<FooterLink>/FAQ.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+</footer>

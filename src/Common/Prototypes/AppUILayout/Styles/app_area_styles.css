@@ -1,0 +1,141 @@
+/*------------------------------------------------*/
+
+/* !App Content Area Styles*/
+
+/*------------------------------------------------*/
+
+body { font-family: "Helvetica", Helvetica, Arial,sans-serif; }
+img	{border:0;}
+.ui-corner-all { border-radius: 0 0 4px 4px;}
+a.button	{ background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/buttonbg.jpg') repeat-x #96C670; padding: 4px 10px; border-radius: 3px; border:1px solid #AAA; color: #fff; text-decoration: none;text-shadow: 0px 1px 2px #000; font-size: 12px;}
+h2 {letter-spacing: 0.04em;}
+/*------------------------------------------------*/
+/* !App Menu */
+/*------------------------------------------------*/
+
+
+#appContainer { width: 615px; float:left;border-left: 1px solid #CCC; border-botom: 1px solid #CCC; border-right: 1px solid #CCC; border-top: none;padding:0;}
+.ui-tabs .ui-tabs-panel { padding:0;}
+.ui-tabs .ui-tabs-nav { padding:0; border-radius: 0;}
+
+#appContainer ul.appMenu { border:none; float: left; background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/appmenubg.jpg') repeat-x #555; color: #797979; height: 85px; width: 100%;}
+#appContainer ul.appMenu li { background:none; border:none; float:left; display:inline; list-style-image: none; width: 65px; font-size: 10px;text-align: center;white-space: normal;}
+#appContainer ul.appMenu li img	{ margin: 0 10px; border-radius: 3px 3px 3px 3px; box-shadow: 2px 2px 2px #333333;}
+#appContainer ul.appMenu li a { color: #ccc; text-decoration: none;}
+
+.app-content {float:left;  width: 100%;}
+
+#appContainer ul.appMenu li.ui-state-highlight {border: 1px solid #fcefa1; background: #333; height: 55px; }
+.ui-tabs {padding:0;}
+.ui-widget-header {font-weight:normal;}
+#appContainer ul.appMenu .ui-tabs .ui-tabs-nav li.ui-tabs-selected {font-size: 10px;}
+
+/*------------------------------------------------*/
+/* !Circular App */
+/*------------------------------------------------*/
+#circularNav p {font-size: 75%; padding: 10px; color: #666666; text-align: center;}
+.CircularLists { font-size: 75%; padding: 10px; color: #666666;}
+#circularNav	{ float:left; border: none; width: 100%;}
+#circularNav ul	{ background:#eee; height:auto; padding: 0 10px; margin:0; width: 595px;overflow: hidden;}
+#circularNav ul li		{ width: 20%; padding: 12px 10px 20px;position: static /*important for ie7*/;}
+#circularNav ul li.ui-state-hover	{ height: auto;}
+#circularNav ul li a	{ float:left; width: 83%; padding: 10px 20px; }
+#appContainer #circularNav li img	{ width: 100%;}
+#circularThumbNav h2 { padding: 10px 0 5px;}
+#circularThumbNav p	{ padding: 0;}
+#circularDrawer		{ float:left; width: 100%; background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/drawerbg.png') repeat-x;}
+#circularDrawer span	{ background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/drawerarrow.png') no-repeat center 12px; height: 25px; display: block;text-indent: -99999px;overflow: hidden;}
+.adContent { float:left; clear:both; display:none;}
+
+#circularNav div.multiple-pages ul { float:none;  text-align:center;background: none transparent; border-bottom: 1px solid #999999;}
+#circularNav div.multiple-pages ul li	{ margin:5px 5px -1px; padding: 0;width: auto;}
+#circularNav div.multiple-pages ul li a	{ padding: 4px; border: 1px solid #999999; background: #EDEDD5; color: green; font-size: 14px;}
+#circularNav div.multiple-pages ul li.ui-state-active a{ background: #FBFBC2;}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+}
+
+a.circularBack { background: #97C771; color: white; font-size: 16px; padding: 5px 20px; display:block; text-decoration: none; text-align:center;}
+/*------------------------------------------------*/
+/* !Circular Sorted Products */
+/*------------------------------------------------*/
+table#sortedProducts { margin: 0 auto; color:#666;}
+table#sortedProducts td	{ vertical-align: middle;border-bottom: 1px solid #CCCCCC;padding: 10px;}
+table#sortedProducts td.productImage { width:100px;}
+table#sortedProducts p	{ text-align: left; padding:0;}
+table#sortedProducts h4 { font-size: 90%;}
+table#sortedProducts td.productAdd { width:85px;}
+table#sortedProducts tr.tableHeader { background:#96c670; color:white; font-size: 75%;}
+
+
+/*------------------------------------------------*/
+/* !ClueTips */
+/*------------------------------------------------*/
+
+#cluetip-inner { background: url("http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/rec_carousel_bg.jpg") #E9E9CF repeat-x;}
+
+#cluetip h3, #cluetip h2, #cluetip p { float:none;}
+#cluetip h2 { color: #36a131;}
+#cluetip-title,
+#cluetip-inner h3 { background:none; text-indent: 0; color: #333;}
+#cluetip-inner h3 { width: 100%; line-height: 1em; margin:0; padding: 10px 0; color:#666666; }
+.cluetip-jtip h3#cluetip-title {background: none repeat scroll 0 0 transparent;
+    color: #FCFFF4;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 20px;
+    margin-top: -12px;
+    padding-top: 4px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    width: 97%;}
+h3#cluetip-title { background: #fff}
+.cluetip-jtip #cluetip-inner { width: 91%; padding: 15px 15px;}
+#cluetip-close a	{ background: none repeat scroll 0 0 #666666; border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 4px 7px;
+    margin: 2px 0px 5px;
+    text-decoration: none;
+    border-radius: 10px; }
+
+#cluetip a.button	{ background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/buttonbg.jpg') repeat-x #96C670; padding: 4px 10px 1px; border-radius: 3px; border:1px solid #AAA; color: #fff; text-decoration: none;text-shadow: 0px 1px 2px #000; font-size: 16px;}
+#cluetip a.add		{ float:right; clear:none;}
+#cluetip p	{ font-size: 12px;}
+img.cluetip-thumb	{ width: 75px; height: 75px; background: #ccc; border: 1px solid #aaa; float:left; margin-right: 5px;font-size: 10px; clear:none;}
+#cluetip h2.price	{ margin-bottom: 10px; padding: 8px 0; text-align: center;}
+
+
+/*------------------------------------------------*/
+/* !Sign In Form */
+/*------------------------------------------------*/
+#fancybox-outer 	{background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/login_bg.jpg') repeat-x #e9e9cf;     
+					border-bottom-left-radius: 12px;
+				    border-bottom-right-radius: 12px;
+				    border-top-left-radius: 12px;
+				    border-top-right-radius: 12px;
+				    box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);}
+#login_form input	{ border-radius: 5px; border: 1px solid #CCCCCC; color: #666666;margin: 5px 0;padding: 5px;}
+#login_form h2	{ text-align: center; margin: 24px 0 20px;font-size: 150%;}
+#login_form h4	{ margin: 10px 0}
+#login_form p 	{ font-size: 12px;margin: 10px 0;}
+#login-facebook	{ width: 41%; float:left; padding-left: 10px;padding-right: 5px;}
+#login-gsn		{ width: 53%; float:left; border-left: 1px solid #E9E9CF; padding-left: 15px}
+/*------------------------------------------------*/
+/* !Info Lightboxes */
+/*------------------------------------------------*/
+#appInfoContent h2, #listInfoContent h2 { margin: 10px; text-align: center; width: 520px;}
+#appInfoContent p, #listInfoContent p	{ margin: 10px;}
+
+/*------------------------------------------------*/
+/* !ie7 */
+/*------------------------------------------------*/
+
+*:first-child+html .cluetip-jtip h3#cluetip-title {zoom:1}
+*:first-child+html #cluetip-close a { zoom:1; width: 10px; text-indent: 0; margin-right: 10px; text-align: center; line-height: 16px;}
+*:first-child+html #cluetip-inner h3 {clear:none; width:auto;}
+*:first-child+html #cluetip-inner h2 {width: auto; clear:none; display:block;}
+*:first-child+html #cluetip-inner h2.price	{ float:none; width: 100%;}
+*:first-child+html h3#cluetip-title { margin-top: -30px;}
+*:first-child+html #cluetip a.add { width: 30px; clear:none;}	

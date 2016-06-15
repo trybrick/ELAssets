@@ -1,0 +1,164 @@
+﻿/*------------------------------------------------*/
+/* !ie6 hacks
+/*------------------------------------------------*/
+.clearfix{height:1%;}
+.group { height:1%; }
+img { -ms-interpolation-mode:bicubic; }
+.separator.vertical { display:none; }
+#container { background:#fff none no-repeat; padding:0 10px; }
+/*------------------------------------------------*/
+/* !buttons
+/*------------------------------------------------*/
+#mainContentHeader a.button { width:auto; }
+#ShoppingList a.button, #StoreLocator a.button, #SignInDiv a.button	{clear:none;margin-bottom:0;margin-top:0;}
+a.button.added span, a.button.added span:hover	{display:block;height:1%;}
+#register .button, #login .button { background-image:none; }
+#register .button span, #login .button span { line-height:100%; }
+/*------------------------------------------------*/
+/* !slideshow
+/*------------------------------------------------*/
+#playpause{right:auto; left:10px;}
+/*------------------------------------------------*/
+/* !header
+/*------------------------------------------------*/
+#StoreHeaderMiddle { float:left; width:100%; }
+#StoreMenu ul {	margin-left:5px; }
+#StoreHeaderRightTop { width:180px; }
+#LoginBox #fb-button-wrap { display:inline; }
+#LoginProfileLinkDiv a { margin-left:2px; }
+/*------------------------------------------------*/
+/* !double float margin bug fixes
+/*------------------------------------------------*/
+#main,
+#LoginBox a.button, 
+#sidebar, #recipesidebar,
+#slideshow,
+#CurrentStoreInfo,
+#AddYourOwnItems,
+div#PromoContainer,
+div#PromoContainer div,
+#StaticContentPage.#GsnFooter,
+.GridMode1 .couponsFrame,		
+.GridMode1 .couponsImage,
+.GridMode1 .couponsDescription,
+.GridMode1 .couponsSavings,
+div.featuredVideo { display:inline !important; }
+/*------------------------------------------------*/
+/* !footer
+/*------------------------------------------------*/
+#GsnFooter { float:none; }
+/*------------------------------------------------*/
+/* !recipes
+/*------------------------------------------------*/
+#FeaturedRecipeTeaser img { height:150px; }
+#SearchResults { margin-top:10px; }
+/*------------------------------------------------*/
+/* !add recipe
+/*------------------------------------------------*/
+a.DeleteX span { display:none; }
+#fakeFileUpload { display:none; }
+#image-input a.button { display:none; }
+/*------------------------------------------------*/
+/* !weekly ad
+/*------------------------------------------------*/
+#CircularType_7 img, #CircularType_8 img, #CircularType_9 img, #CircularType_10 img	{ height:175px; width:175px; }
+ul.CircularPageMenu li { height:100px; }
+.bigPage .top { height:31px; }
+.circularitems .couponsFrame { height:230px; }
+.thumbNail .top { height:31px; }
+#hoverAdPage.bigPage div.circularHoversImage { overflow:none; }
+.thumbNail .middle img{margin:0 auto;height:expression( this.scrollHeight > 299 ? "300px" :"auto" );width:expression( document.body.clientWidth > 259 ? "260px" :"auto" );}
+/*------------------------------------------------*/
+/* !store locator
+/*------------------------------------------------*/
+#StoreLocatorePage { float:left; }
+/*------------------------------------------------*/
+/* !coupons
+/*------------------------------------------------*/
+.couponsFrame { height:250px; }
+.couponsImage { height:130px; }
+.couponsDescription { height:30px; }
+.CouponsFAQ		{ height:1500px; }
+.GridMode1 .couponsFrame			{ height:255px; }
+.GridMode1 .couponsImage			{ height:130px; }
+.GridMode1 .couponsDescription		{ height:30px; }
+.GridMode1 .couponsSavings			{ background: transparent url('/Assets/Common/Images/coupon_savings.gif') 0 0 no-repeat; }
+.GridMode1 a						{ margin:6px 0 6px 16px; }
+.GridMode2 .couponsFrame 		{ height:145px; }
+.GridMode2 .couponsImage img {margin:0 12px;max-height:100px;max-width:80px;position:static;width: expression((document.body.clientWidth > 80)? "80px" : "auto");
+	max-width: 80px;}
+.GridMode3 .couponsFrame 		{ height:50px; }
+.GridMode3 .couponsSavings 		{ background:transparent url(/Assets/Common/Images/coupon_savings.gif) no-repeat scroll 0 0; }
+/*------------------------------------------------*/
+/* !product pages
+/*------------------------------------------------*/
+#ProductPlusMinusButtons { margin:2px 0 0 0; }
+.ItemImage img { height:40px; width:40px; }
+/*------------------------------------------------*/
+/* !product description
+/*------------------------------------------------*/
+.nutrition-facts-wrap { display:inline; }
+/*------------------------------------------------*/
+/* !sale item search results
+/*------------------------------------------------*/
+#SaleItems .couponsFrame { height:100px; }
+/*------------------------------------------------*/
+/* !shopping list
+/*------------------------------------------------*/
+#AddYourOwnItems {width:270px;}
+/*------------------------------------------------*/
+/* !ogs
+/*------------------------------------------------*/
+.orderErrorMsg	{ height:300px; }
+#ConfirmStore #stores .storeInfoZip	{ height:50px; }
+/*------------------------------------------------*/
+/* !png transparency fix
+/*------------------------------------------------*/
+#AdPromo img, 
+#availablevarietiestop, 
+#ChainRecipes img,
+a.video-thumb .overlay { behavior: url(/Assets/Common/Js/iepngfix.htc); }
+/*------------------------------------------------*/
+/* !iehover-fix
+/*------------------------------------------------*/
+ul.nav iframe 		{ position: absolute; /* account for the border */ left: -0.25em; top: -0.25em; z-index: -1;  filter: progid:DXImageTransform.Microsoft.Alpha(style=0, opacity=0);}
+html ul.nav li 		{ z-index: 201; }
+/*------------------------------------------------*/
+/* !profile
+/*------------------------------------------------*/
+#DietaryPreferences input { width:100px; }
+#SignInControl { background-image:url('/Assets/Common/Images/signin_grocery.jpg'); }
+/*------------------------------------------------*/
+/* !static content
+/*------------------------------------------------*/
+.staticContentHomeButton { display:none !important; width:auto !important; }
+/*------------------------------------------------*/
+/* ! recipe search results
+/*------------------------------------------------*/
+#searchControls .advancedSearch { margin-right:22px; }
+#advancedSearch { display:inline; float:none; top:150px; left:-590px; }
+#loadingSearch { background:none; top:150px; left:-590px; }
+.pager { width:120px; }
+.pager.bottom { clear:both; float:none; position:relative; left:292px;}
+/*------------------------------------------------*/
+/* !recipe center
+/*------------------------------------------------*/
+.featuredDetail ul,
+.featuredDetail a.viewLink,
+.cookingContent div { float:none !important; }
+/*------------------------------------------------*/
+/* !article full
+/*------------------------------------------------*/
+#ArticlePage #BackToArticle{ position:static; }
+#ArticlePage {position:relative; }
+#ArticlePage #main { position:static; }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+﻿/* my apple market
+--------------------------------------------------*/
+html				{height:100%; background:none;}
+body 				{font-size:0.7em; height:100%;
+				font-weight:normal; font-style:normal; font-family: Verdana, Arial, Helvetica, sans-serif; color:black; margin-top:0; 
+				margin-left:0 ;padding-left:0; padding-right:0;}
+h2,h3					{color:#005931;}
+a:link,
+a:visited,
+a:active,			
+a:hover				{ color:#107E35;font-size:11px;font-weight:bold; }
+
+/* layout
+--------------------------------------------------*/
+#banner-advertisement {margin-left: 454px;}
+#container 		{ background:none transparent; width:1250px; padding:0px; }
+#main			{ padding:0 0 0 10px; }
+.main-wrapper 	{ background-color:#fff; clear:none; float:left; width:925px; }
+.main-content   { float:left; }
+.aside			{ float:right; width:250px;}
+#Promotion 		{float: left; width: 925px;}
+
+/* header
+--------------------------------------------------*/
+#header { background:#FFF url("/Assets/188/Images/header_left.jpg") no-repeat left top; position:relative; width:1067px; }
+.header-logo { display:block; float:left; margin-bottom:7px; margin-left:405px; }
+
+/* login box
+--------------------------------------------------*/
+#login-box									{ background:#FFF url("/Assets/188/Images/login_box_bg.jpg") left top no-repeat; bottom:39px; float:right; height:49px; margin:0; padding-left:20px; padding-top:40px; position:absolute; right:10px; width:272px; }
+#login-box p								{ margin:0; }
+#login-box .links							{ margin:0.5em 0 0 0; }
+#login-box .links a							{ display:block; float:left; font-size:10px; margin-bottom:0.5em; text-decoration:underline;}
+
+#login-box #logout-links #preferences-link 	{ border-right:2px solid #61a844; padding-right:1em; margin-right:1em;}
+
+#login-box #login-links #signin-link 		{ background-color:#FFF; border:2px solid #006633; padding:3px; text-align:center;  }
+#login-box #login-links #register-link		{ padding:5px; }
+#login-box #login-links span 				{ display:block; float:left; padding:5px 2px 5px 10px; text-align:center }
+
+#login-box .consumer-name-text { font-weight:bold; }
+
+/* store info
+--------------------------------------------------*/
+#header .store-info { background-color:#77b700; border-top:5px solid #006633; float:left; height:14px; margin-right:160px; padding:10px 10px 10px 2%; width:97%; }
+#header .store-info ul { list-style-type:none; margin:0; padding:0; }
+#header .store-info ul li { color:#FFF; float:left; margin-right:0.5em; }
+
+/* header navigation
+--------------------------------------------------*/
+#primary-navigation		  { float:left; margin-top:12px; width:150px }
+#primary-navigation ul	  { border:1px solid #006634; list-style-type:none; margin:0; padding:0 5px 5px; float:left;}
+#primary-navigation ul li { background:#FFF url("/Assets/188/Images/arrow.jpg") no-repeat 0 50%; border-top:1px solid #CCC; padding:5px 0 5px 30px; }
+#primary-navigation ul li:first-child { border-top:none; }
+#primary-navigation ul li a { font-size:15px; }
+
+/* header modules
+--------------------------------------------------*/
+#module-images	{ float:left; margin-left:10px;}
+#module-images a { display:block; margin:10px auto; width:100px; }
+#module-images a img { width:100px; }
+
+/* home
+--------------------------------------------------*/
+#main.home { background:transparent url("/Assets/188/Images/apples.gif") no-repeat left bottom; padding-bottom:132px; width:875px; }
+#main.home .main-content { display:inline; margin-left:20px; width:570px; }
+#main.home .aside .section h2 { background:url("/Assets/188/Images/arrow_dark_green.jpg") no-repeat 5px 50% #006633; border:none; margin-bottom:0; padding:8px 0 8px 30px; width:auto; }
+#main.home .aside .section h2 a { background-color:#006633; color:#FFF; font-size:15px; text-transform:uppercase; }
+#main.home .aside .featured-recipe { background-color:#c2e97e; padding-bottom:10px; }
+#main.home .aside .featured-recipe a.recipe-image { display:block; margin:10px auto; width:135px; }
+#main.home .aside .featured-recipe a.recipe-image img { max-width:135px; }
+
+#home-departments			{ border-collapse:collapse; clear:both; width:558px; }
+#home-departments tr.alt td { background-color:#cdffcc; }
+#home-departments tr td p { margin:0; }
+#home-departments tr td a { font-size:15px; text-decoration:underline; }
+#home-departments tr td img { height:115px; }
+
+.splash-image { float:left; width:558px; }
+.splash-image a { display:block; overflow:hidden; }
+
+/* featured teasers
+--------------------------------------------------*/
+#FeaturedArticleTeaser { background:url("/Assets/188/Images/green_background.jpg") repeat-x scroll 0 0 transparent; }
+
+/* tabs
+--------------------------------------------------*/
+#secondary-navigation 			{float:left;width:100%;font-size:90%;line-height:normal;background-image:url(/Assets/Common/Images/bg_white.gif);  font-family:Arial; font-weight:normal; letter-spacing:-0.03em; line-height:103%;}
+#secondary-navigation ul			{padding:10px 5px 0 5px;}
+#secondary-navigation #blank			{width:8px; padding:0;}
+#secondary-navigation li 			{padding-left:8px; color:#5F9F80; background-image:url("/Assets/188/Images/left.gif");}
+#secondary-navigation a			{padding-right:12px; color:#5F9F80; background-image:url("/Assets/188/Images/right.gif"); color:darkGreen;}
+#secondary-navigation #current 		{background-image:url("/Assets/188/Images/left_on.gif");}
+#secondary-navigation #current a 		{background-image:url("/Assets/188/Images/right_on.gif");}
+
+/* weekly ad
+--------------------------------------------------*/
+.text-only-link a {font-size:8px;}
+
+
+/* store locator
+--------------------------------------------------*/
+#main.storelocator		{width:855px;padding-left:10px;}
+#GoogleMapCanvas {margin-right: -55px;}
+
+/* static content
+--------------------------------------------------*/
+#StaticContentPage { clear:none; padding:1em }
+
+#StaticContentPage p {
+	float:left;
+	font-size:14px;
+	line-height:140%;
+	margin-right:1em;
+	width:30em;
+}
+
+/* shopping list
+--------------------------------------------------*/
+#ShoppingList {
+	background-color:#FFFFFF;
+	float:left;
+	margin-bottom:12px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	text-align:center;
+	width:250px;
+}
+#ShoppingListHeaderSmall {
+	background:url("/Assets/188/Images/shopping_list_top.jpg") no-repeat scroll 0 0 transparent;
+	height:60px;
+}
+#ShoppingListMain {
+	background:url("/Assets/188/Images/shopping_list_middle.jpg") repeat-y scroll 0 0 transparent;
+	margin:0;
+	padding:0 15px 0 0;
+}
+#ShoppingList #ShoppingListItemsDisplay {
+	margin:0 0;
+	min-height:75px;
+	width:300px;
+}
+#FiveListButtons {
+	background:url("/Assets/188/Images/shopping_list_bottom.jpg") no-repeat scroll 0 0 transparent;
+	min-height:78px;
+	padding:0 0 0 0;
+}
+#AddYourOwnItems input {
+	margin-left:15px;
+	width:200px;
+}
+#ShoppingList table {
+	border:0 none;
+	border-collapse:collapse;
+	clear:both;
+	margin:0 auto;
+	text-align:left;
+	width:222px;
+}
+#ShoppingList td {
+	border-bottom:1px solid #0099FF;
+	clear:both;
+	margin:2px 0;
+	padding-top:3px;
+	text-align:left;
+}
+
+#ShoppingList #trashcanSmall {
+	margin-left:2px;
+}
+
+/* manage list
+--------------------------------------------------*/
+#legend th {
+	background-color:#107E35;
+}
+
+#ShoppingListHeaderLarge {
+	background:url("/Assets/188/Images/shopping_list_top_large.jpg") no-repeat scroll 0 0 transparent;
+	width:576px;
+}
+
+#ManageList table {
+	clear:both;
+	float:left;
+	width:575px;
+}
+
+#ManageList, 
+#savedshoppinglists {
+	background-color:#FFFFCC;
+	float:left;
+	width:576px;
+}
+
+#ManageList #ShoppingListItemsDisplay {
+	background:none repeat scroll 0 0 transparent;
+}
+
+/* available varieties
+--------------------------------------------------*/
+#availablevarieties:after	{content: ""; display: block; height: 0; clear: both; }
+#availablevarietiestop		{width:100%; padding:4px 0 4px 0; height:auto; clear:both; margin-bottom:0;}
+#availablevarietiestop h2 	{color:#FFFFFF; display:block; font-size:110%; width:90%; margin:0 auto; text-align:center; border:0;}
+
+/* coupons
+--------------------------------------------------*/
+#tblCouponTopN			{border:2px solid #107E35; }
+#PersonalizedSpecialsPage .couponsFrame 			{border:1px solid #107E35;}
+.couponsDisclaimer		{display:inline; float:left; text-align:center; width:590px; font-size:10px;}
+#CouponsPage .pageHeaderContainer {background:transparent url(/Assets/Common/images/new_coupons_header.jpg) no-repeat scroll 0 0;height:100px;width:590px;}
+
+/* product
+--------------------------------------------------*/
+#InBetween1, #InBetween2			{color:#107E35; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+.GridItem th			{text-align:left; background-color: #107E35; color: #FFFFCC; font-weight: bold;}
+#CouponList table table th				{background-color:#107E35;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#ProductsGrid th					{background-color:#007348;}
+#tblPersonalizedSpecialsTopN 				{border:1px solid #007348;}
+
+/* contact
+--------------------------------------------------*/
+#ContactUs, 
+#ContactUsThanks, 
+#EmploymentApplication, 
+#EmploymentPositions 	{margin-left:10px;float:left;width:800px; clear:none;}
+
+#EmploymentPositionsHeader h1 {margin-left:2px; color:#933}
+#EmploymentPositionsHeader {float:left;width:800px;margin:4px 0 0 10px;}
+
+/* registration
+--------------------------------------------------*/
+#signUpPop1, #signUpPop2, #signUpPop3 {left:442px;top:238px;}

@@ -1,0 +1,351 @@
+@import "/Assets/189/Styles/menu.css";/* ======================================= */
+/* ============ NEW Site Layout ===========*/
+html,
+body,
+#wrap {
+	height:auto;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: url(../images/layout/bg_body_x.png) repeat-x;
+	height: auto;
+	width: 100%;
+	position: relative;
+	font-family: Helvetica,Arial,sans-serif;
+	color: #333;
+}
+
+/* overrides GSN default CSS */
+html{
+	background:none;
+}
+
+a:link, a:visited, a:hover, a:active {
+	font-weight:normal;
+	text-decoration:underline;
+}
+
+a.button, a.button:hover {
+	text-decoration:none;
+}
+
+th {
+	background-color: #10713B;
+}
+
+#FiveListButtons a {
+	text-decoration:none;
+}
+
+/* end GSN overrides */
+#banner-advertisement {top: 128px; margin-left: 464px;}
+
+#container-outer {
+	width: 100%;
+	min-width: 980px;
+	height: auto;
+	margin: 0 auto;
+	background: url(../images/layout/bg_footer_x.png) repeat-x left bottom;
+}
+
+#container {
+	background-image: none;
+}
+/* must be same height as the footer */
+#container {
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+/*------------------------------*/
+/* ********** Header ********** */
+/*------------------------------*/
+
+#sHeader {
+	background: url(../images/layout/bg_header.jpg) no-repeat center top;
+	font-size: 16px;
+	height: 128px;
+	left:-113px;
+	position:relative;
+	width:1200px;
+}
+
+/*------------------------------*/
+/* ********** Top Hotlinks */
+/*------------------------------*/
+
+#sHeader ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 97px;
+	top: 14px;
+}
+#sHeader ul li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 20px;
+}
+#sHeader ul li a,#sHeader ul li a:visited {
+	color: #2a2a2a !important;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+}
+#sHeader ul li a:hover,
+#sHeader ul li a.active {
+	color: #fff !important;
+}
+
+#sHeader h1 {
+  display:block;
+  height:124px;
+  margin:0 0 0 100px;
+  text-indent:-9999px;
+  width:400px;
+}
+#sHeader h1 a {
+  text-decoration: none;
+  display:block;
+  height:124px;
+  outline: none;
+}
+
+/*------------------------------*/
+/* ********** Header ********** */
+/*------------------------------*/
+
+#WeeklyAdPage p {
+	clear: both;
+	margin: 15px 0;
+}
+
+/*------------------------------*/
+/* ********** Search Box/Button */
+/*------------------------------*/
+
+#searchwrapper {
+	width: 272px;
+	height: 42px;
+	background: url(../images/layout/bg_searchInput.png) no-repeat;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	right: 97px;
+	top: 44px;
+}
+
+#searchbox {
+	border: 0px;
+	background-color: transparent;
+	background-image: none;
+	position: absolute;
+	top: 10px;
+	left: 9px;
+	width: 190px;
+	height: 30px;
+	font-size: 14px;
+	color: #400;
+	outline: none !important;
+}
+#searchbox_submit {
+	border: 0px;
+	background: transparent url(../images/layout/btn_search.png) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 208px;
+	width: 62px;
+	height: 42px;
+	outline: none !important;
+	text-indent:-9999px;
+}
+#searchbox_submit:hover {
+	background-position: 0 -42px;
+}
+#navigation {
+	float:left;
+	width: 980px;
+}
+/*------------------------------*/
+/* ********** Content ********** */
+/*------------------------------*/
+#content {
+	padding:0;
+	clear: both;
+}
+#container_left {
+	float: left;
+	width: 725px;
+	padding-bottom: 10px;
+}
+#container_right {
+	float: left;
+	width: 245px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+/*------------------------------*/
+/*      !Recipe Center          */
+/*------------------------------*/
+#Recipe {
+	margin-bottom:15px;
+}
+
+
+
+/*------------------------------*/
+/*            !Footer           */
+/*------------------------------*/
+#footerWrap {
+	height: 155px;
+	position: relative;
+	height:150px;
+	clear: both;
+}
+#footer {
+	width: 980px;
+	margin: auto;
+	height: 100%;
+	position: relative;
+}
+#footer ul#leftCol,
+#footer ul#midCol,
+#footer ul#rightCol {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+#footer ul#leftCol {
+	right: 250px;
+}
+
+#footer ul#midCol {
+	right:135px;
+}
+
+#footer ul li {
+	list-style-type: none;
+}
+#footer ul li a {
+	color: #817c6a;
+	text-decoration: none;
+	font-size: 14px;
+}
+#footer ul li a:hover,
+#footer ul li a:visited {
+	color: #303030;
+}
+#logo_footer {
+	position: absolute;
+	left: 0;
+	top: 16px;
+}
+#tagline_footer {
+	position: absolute;
+	left: 0;
+	top: 106px;
+}
+/*Ad Pods*/
+#sidebar div.AdMaster.Tile2 {
+	top: 150px;
+	right: -190px;
+}
+/*Color overrides */
+a:link,a:visited,a:active,a:hover,#CircularLists span a:hover,h2,#savedshoppinglists h2,#category h3,#CategoryHeader h3,#spanItems,#spanSalePrice,.CategoryHeader,#CircularAdText1_dlCategory h3,.CategoryHeader h3 {
+	color: #A21220;
+}
+.GridMode2 .couponsSavings {
+	background-color: #A21220;
+}
+/* **** login/logout btn *** */
+#btn_login {
+	width: 63px;
+	height: 29px;
+	background: url(../images/layout/btn_login.png) no-repeat;
+	float: right;
+	text-decoration: none;
+	text-indent:-9999px;
+	outline: none;
+}
+#btn_logout {
+	width: 75px;
+	height: 29px;
+	background: url(../images/layout/btn_logout.png) no-repeat;
+	float: right;
+	text-decoration: none;
+	text-indent:-9999px;
+	outline: none;
+}
+#btn_login:hover,#btn_logout:hover {
+	background-position: left bottom;
+}
+/* ****** my store ***** */
+#myStore {
+	color: #ffe573;
+	text-align: right;
+	width: 502px;
+	height: 32px;
+	padding: 3px 31px 0 0;
+	margin: 0px;
+	position: absolute;
+	right: 97px;
+	top: 44px;
+}
+#myStore a:link,#myStore:visited {
+	color: #FFE573;
+	outline: none;
+}
+#myStore a:hover {
+	color: #fff;
+}
+#myStore span {
+	color: #520a10;
+	margin-right:0.5em;
+}
+#myStore a#cancelStore {
+	display: block;
+	outline: none;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-decoration: none;
+	background: url(../images/layout/btn_cancelStore.png) no-repeat;
+}
+#myStore a#cancelStore:hover {
+	background-position: left bottom
+}
+div#myStore em {
+	background: url(../images/layout/tip_cancelStore.png) no-repeat;
+	width: 133px;
+	height: 47px;
+	position: absolute;
+	top: 31px;
+	left: 456px;
+	text-align: center;
+	text-indent: -9999px;
+	z-index: 2;
+}
+
+/* IE6 hacks */
+body, #container-outer {
+	_background: none;
+}
+
+#footerWrap {
+	_background:url(../images/layout/bg_footer_x.png) repeat-x left bottom;
+}
+
+#CouponsPage .pageHeaderContainer,
+.pageHeaderContainer { display:none; }
+
+/*** Registration Page ***/
+#signUpPop1, #signUpPop2, #signUpPop4 {top:264px;}
+#SignUpV2 #navigation {float:left;width:250px;}
+#signUpPhoto {margin:0 0 5px;}

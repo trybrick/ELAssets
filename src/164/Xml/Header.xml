@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<header>
+	<logo>/Assets/##chainid##/Images/HeaderLogo.gif</logo>
+	<TopLevelNavigation>
+		<MenuItem>
+			<Title>Home</Title>
+			<Link>##root##</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Weekly Ads</Title>
+			<Link>##root##/Shop/MyPantry.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Coupons</Title>
+			<Link>##root##/Shop/Specials.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Browse The Isle</Title>
+			<Link>##root##/Shop/Product.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Recipes</Title>
+			<Link>##root##/Shop/SavedLists.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Contact</Title>
+			<Link>##root##/Contact</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Locations</Title>
+			<Link>##root##/Contact</Link>
+		</MenuItem>
+	</TopLevelNavigation>
+	<ContentObjects>
+		<ContentObject>
+			<Name>stores</Name>
+			<Parameters />
+		</ContentObject>
+	</ContentObjects>
+</header>

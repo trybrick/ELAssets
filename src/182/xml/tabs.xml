@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+
+
+
+<tabs>
+	<tab>
+	    <url>/Shop/WeeklyAd.aspx</url>
+	    <text>Weekly&lt;br&gt;Ad</text>
+	</tab>
+	<tab>
+	    <url>/Shop/MyPantry.aspx</url>
+	    <text>My&lt;br&gt;Favorites</text>
+	</tab>
+	<tab>
+	    <url>/Shop/PersonalizedSpecials.aspx</url>
+	    <text>ValuCard&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+	    <url>/Shop/Specials.aspx</url>
+	    <text>In-Store&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+	    <url>/Shop/Product.aspx</url>
+	    <text>Browse&lt;br&gt;the Aisles</text>
+	</tab>
+	<tab>
+	    <url>/Shop/Coupons.aspx</url>
+	    <text>##manufacturercoupontotalsavings## in &lt;br&gt;Coupon Savings</text>
+	</tab>
+	<tab>
+	    <url>/Recipes/RecipeCenter.aspx</url>
+	    <text>Recipe&lt;br&gt;Center</text>
+	</tab>	
+	<tab>
+	    <url>/Recipes/RecipeVideos.aspx</url>
+	    <text>Cooking&lt;br&gt;Videos</text>
+	</tab>	
+</tabs>

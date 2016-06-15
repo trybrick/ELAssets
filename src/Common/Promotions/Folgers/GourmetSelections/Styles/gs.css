@@ -1,0 +1,16 @@
+#LandingPageContainer			{width:590px;height:700px;overflow:hidden;padding:0;font-family:Futura, Verdana, Arial, sans-serif;color:#9c754b;font-size:12px; background:#FFFFFF url(/Assets/Common/Promotions/Folgers/GourmetSelections/Images/landingpage_bg.jpg) repeat-x top left;}
+#LandingPageContainer h1,
+#LandingPageContainer h2,
+#LandingPageContainer h3,
+#LandingPageContainer p			{font-family:Futura, Verdana, Arial, sans-serif;color:#9c754b;font-size:12px;border-bottom:none;} /* Be kind to Opera rule */
+#LandingPageContainer em		{font-weight:normal;font-size:10px;}
+#LandingPageMain				{width:100%;}
+
+a.ListAdd						{display:block;width:115;height:27;padding:0;float:left;clear:right;outline:0;}
+div.Product,
+div.Logo						{float:left;height:159px;width:277px;padding:12px 0 0 13px;}
+div.Logo						{text-align:center;}
+h2 em							{margin-top:1em;display:block;}
+img								{border:none;}
+img.Logo						{margin:0 auto;}
+img.ProductImage				{float:left;}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HoneyBunches>
+	<Brand reg="true"></Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<Logo alt="">sargento_header.jpg</Logo>
+	<HeadingText></HeadingText>
+	<PageDescriptText></PageDescriptText>
+	<ManufacturerCode>46100</ManufacturerCode>
+	<CSS>
+		<Stylesheet>##root##/Assets/Common/Promotions/Sargento2/Assets/CSS/screen.css</Stylesheet>
+		<WrapID>sargento-wrap</WrapID>
+		<HeaderID>sargento-header</HeaderID>
+		<MainID>sargento-main</MainID>
+		<ProductDetailClass>sargento-product</ProductDetailClass>
+	</CSS>
+	<DepartmentID>10339</DepartmentID>
+	<ImagePath>##root##/Assets/Common/Promotions/Sargento2/Assets/Images/</ImagePath>
+	<MasterLayout columns="2" rows="3"></MasterLayout>
+	<FooterImage></FooterImage>
+	<ProductList>
+		<Product>
+			<Title>Mozzarella String Cheese</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;235720947;50621646;i?</ClickCode>
+			<ProductCode>00719</ProductCode>
+			<Image alt="">sargento_string_cheese.jpg</Image>
+			<Description>When you need a quick, delicious snack, reach for Sargento String Cheese, the natural snack cheese.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="1" />
+			<Order>1</Order>
+		</Product>
+		<Product>
+			<Title>Light Mozzarella String Cheese</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;235720948;50621646;j?</ClickCode>
+			<ProductCode>00717</ProductCode>
+			<Image alt="">sargento_lt_string_cheese.jpg</Image>
+			<Description>A wholesome and delicious snack with 50% less fat and 25% fewer calories, but all the great creamy taste you love.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="2" />
+			<Order>2</Order>
+		</Product>
+		<Product>
+			<Title>Reduced Fat Colby Jack</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;235720949;50621646;k?</ClickCode>
+			<ProductCode>00742</ProductCode>
+			<Image alt="">sargento_rf_colby_jack.jpg</Image>
+			<Description>A natural snack cheese stick that combines the great tastes of Colby and Monterey Jack cheeses. Great at home or on the go for a quick, tasty energy boost.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="1" />
+			<Order>3</Order>
+		</Product>
+		<Product>
+			<Title>Sharp Cheddar</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;235720885;50621646;j?</ClickCode>
+			<ProductCode>00712</ProductCode>
+			<Image alt="">sargento_sharp_cheddar.jpg</Image>
+			<Description>Aged sharp cheddar sticks are a natural snack with a ton of flavor.  These wholesome sticks are delicious on their own or paired with fruit or your favorite cracker.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="2" />
+			<Order>4</Order>
+		</Product>
+	</ProductList>
+</HoneyBunches>

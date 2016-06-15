@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Festival Foods - New App UI Layout</title>
+
+<!--Styles-->
+<link href="Styles/reset.css" rel="stylesheet" type="text/css" l="l" />
+<link href="themes/base/jquery.ui.all.css" rel="stylesheet" />
+<link href="styles/smoothness/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+<link href="styles/jquery.cluetip.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="Styles/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<link href="Styles/app_area_styles.css" rel="stylesheet" type="text/css" media="screen">
+<link href="Styles/prototype.css" rel="stylesheet" type="text/css" l="l">
+<link rel="stylesheet" type="text/css" href="styles/carousel_skin.css" />
+<link rel="stylesheet" type="text/css" href="styles/managelist.css" />
+
+<!--Javascript-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script src="js/jquery.areacluetip.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.core.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.mouse.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.sortable.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.tabs.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+
+
+<script>
+var mouse_is_inside = false;
+
+$(document).ready(function() {
+	
+	$(function() {
+		$( "#tabs" ).tabs({ selected: 0 }).find( ".ui-tabs-nav" ).sortable({ axis: "x" });
+	});
+		
+	$("a#appInfo").fancybox({
+		'autoDimensions': false,
+		'height'		: 290,
+		'width'			: 530
+	});
+
+	$("a#listInfo").fancybox({
+		'autoDimensions': false,
+		'height'		: 290,
+		'width'			: 530
+	});
+	
+	$("a.iframe").fancybox();
+
+	$("a.loginbox").fancybox({
+		'scrolling'		: 'no',
+		'autoDimensions': false,
+		'width'			: 530,
+		'height'		: 290,
+		'titleShow'		: false,
+		'onClosed'		: function() {
+		    $("#login_error").hide();
+		}
+	});
+
+    
+    //Choose Store
+    
+   	$('a.chooseStore').click(
+  		function () {
+    		$("#chooseStoreForm").slideToggle();
+  		}
+	);
+
+     $("a#chooseClose").click( function(){
+    	$("#chooseStoreForm").hide();
+    
+     });
+     
+     $("a.myAppRemoveButton").fancybox({
+		'autoDimensions': true,
+		'scrolling'		: 'no'
+		});
+   
+			//Tabs for Manage List
+			$(function(){
+				$("#ManageListTabs").tabs();
+			});
+			
+			//Add Own Item Drop Down menus 
+			//$("ul.listsubnav").parent().append("<span></span>"); 
+
+		    $("a#AddOwnItem").click(function() {   
+					$("ul.addownitem-box").slideToggle();
+
+		      /*  $("ul.current-list-menu").children().not($(this).parent()).children('ul.addownitem-box').css("display" , "block").hide();
+		        $(this).parent().find("ul.addownitem-box").focus().slideToggle('fast');
+
+		        }).hover(function() {  
+		            $(this).addClass("subhover"); 
+		        }, function(){  //On Hover Out  
+		            $(this).removeClass("subhover"); */
+		    });
+	
+	
+	
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<div id="headerContent">
+        	<div id="profile">
+        		<a href="#login_form" class="loginbutton loginbox sign-in"><span>Sign In</span></a>
+        		<a href="signup.html" class="loginbutton create-account"><span>Create Account</span></a>
+        		<div id="login-wrapper" style="display:none">
+					<form id="login_form" method="post" action="">
+						<h2>Member Login</h2>
+					    	<!--<p id="login_error">login with Facebook, or enter your Username and Login Information below.</p>-->
+					    <div id="login-facebook">
+					    	<h4>Are You a Facebook User?</h4>
+					    	<p>You can use your Facebook account to login to our site. Connect below:</p>
+					    	<a href="#"><img src="images/facebook_login_example.jpg" /></a>
+					    
+					    </div>
+						<div id="login-gsn">
+							<h4>Login in with your Festival Foods Account:</h4>
+							<p>
+								<label for="login_name">Email/Username: </label> 
+								<a href="#">Forgot?</a>
+								<input type="text" id="login_name" name="login_name" size="30" />
+							</p>
+							<p>
+								<label for="login_pass">Password: </label>
+								<a href="#">Forgot?</a>
+								<input type="password" id="login_pass" name="login_pass" size="30" />
+							</p>
+							<a class="button" href="#">Log In</a>
+						
+							
+						</div>
+					</form>
+				</div>
+            	       
+           </div>
+        
+        
+        </div>
+  	</div>
+
+	<div id="content">
+
+	  <div id="subNav">
+			<div id="search">
+	        
+	        <form method="get" id="searchform" action="http://www.sohtanaka.com/">
+				<fieldset class="search">
+					<input class="box" name="Search" value="Search for items" size="255" onfocus="value=''" type="text">
+					<button class="btn" title="Submit Search">Find</button>
+				</fieldset>
+			</form>
+	        
+	        </div>
+			<div id="chooseStore">
+				<a class="chooseStore"  href="#">Choose Store</a>
+				<div id="chooseStoreForm" style="display:none;">
+					<p>Find a store near you:</p>
+					<label for="choosecity">City:</label>
+					<label for="selectState">State:</label>
+					<input type="text" value="city name" id="choosecity"/>
+					<select id="selectState">
+						<option>MN</option>
+						<option>WI</option>
+					</select>
+					<p class="formseparator">&mdash;&mdash; or 	&mdash;&mdash;</p>
+					<label for="choosezip">Zip Code:</label>
+					<input type="text" value="zip code" />
+					<p>Find stores within</p>
+					<select>
+						<option>5 miles</option>
+						<option>10 miles</option>
+						<option>20 miles</option>
+					</select>
+					<a class="button" id="chooseStoreLink" href="choosestore.html">Go</a><br/>
+					<a href="#" id="chooseClose">Close</a>
+					
+					<div style="display:none">
+						<div id="chooseStoreBox">
+							<p>Form here</p>
+							<a class="button storeSelectLink" href="#">Select this Store</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myStore" style="display:none;">
+				<a class="myStore"  href="#">My Store</a>
+				<div id="myStoreInfo" style="display:none;">
+						<h4>Festival Appleton</h4>
+						<p>1234 Example Street</p>
+						<p>Appleton, WI 42059</p>
+						<p>(123) 456-7890</p>
+						<a href="#" class="selectDifferentStore">Select a Different Store</a><br/>
+						<a href="#" class="unSelectStore">unselect</a><br/>
+						<a href="#" id="myStoreClose">close</a><br/>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="AdMaster Tile1">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="728" height="90" id="DH_Recipe_728x90_PBBrownie_04" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="wmode" value="opaque" /> 
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="flash/DH_Recipe_728x90_PBBrownie_04.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="flash/DH_Recipe_728x90_PBBrownie_04.swf" quality="high" bgcolor="#ffffff" width="728" height="90" name="DH_Recipe_728x90_PBBrownie_04" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
+        
+        </div>
+	    <div id="appoftheday"><img src="Images/aotd.png" width="62" height="62" /><br />
+		<p><a class="aotd" href="#">App of the Day</a></p>
+      </div>
+<!-- END HEADER AREA -->
+
+<!--Start Main Content  -->	 
+<div id="ManageListWrapper" class="maincontent-wrapper">
+	<div id="sidebar">    
+		<div class="AdMaster Tile2">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 		codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="300" height="250" id="PNW_OR_ATL_300x250" align="middle">
+			<param name="allowScriptAccess" value="sameDomain" />
+			<param name="wmode" value="opaque" />
+			<param name="allowFullScreen" value="false" />
+			<param name="movie" value="flash/PNW_OR_ATL_300x250.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed wmode="opaque"  src="flash/PNW_OR_ATL_300x250.swf" quality="high" bgcolor="#ffffff" width="300" height="250" name="PNW_OR_ATL_300x250" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+		</object>
+
+        
+        </div>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+			    jQuery('.recommend-carousel').jcarousel({
+			        wrap: 'circular'
+			    });
+			});
+		</script>
+		<div class="sidebarHeader">
+			<h3>Recomendations for You</h3>
+		</div>
+    	<div class="recomendations">
+		  <ul id="rec_products" class="recommend-carousel jcarousel-skin">
+		  		<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/yogurt.jpg" width="75" alt="" /></li>
+		    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/pasta.jpg" width="75" alt="" /></li>
+		    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/papertowels.jpg" width="75" alt="" /></li>
+		    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/hamburgerbuns.jpg" width="75" alt="" /></li>
+		    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/mustard.jpg" width="75" alt="" /></li>
+		    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/cheese.jpg" width="75" alt="" /></li>
+			</ul>
+	    </div>
+		<div class="sidebarHeader">
+			<h3>Recipes for You</h3>
+		</div>
+	    <div class="recipes">
+		  <ul id="rec_recipes" class="recommend-carousel jcarousel-skin">
+			  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/balsamicsteak.jpg" width="75" alt="" /></li>
+			  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/browniepudding.jpg" width="75" alt="" /></li>
+			  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/oystersouptt.jpg" width="75" alt="" /></li>
+			  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/bakedzitiflorentinet.jpg" width="75" alt="" /></li>
+			  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/busydaycakett.jpg" width="75" alt="" /></li>
+			</ul>
+    	</div>
+	</div><!--sidebar div-->
+	<div id="ManageListMain" class="gsn-maincontent">
+		<div id="ManageListHeader" class="header">
+			<h1>Manage Your List</h1>
+		</div>
+		<div id="ManageListTabs" class="manage-list-main">
+			<script>
+			
+			</script>
+			<ul>
+				<li><a href="#tabs-1">Current List</a></li>
+				<li><a href="#tabs-2">Saved Lists</a></li>
+			</ul>
+			<div id="tabs-1" class="current-list-tab">
+				<ul class="current-list-menu">
+					<li><a href="#">save list</a></li>
+					<li><a href="#">email list</a></li>
+					<li><a href="#">start new list</a></li>
+					<li>
+						<a href="#" id="AddOwnItem">Add Own Item</a>  
+				        <ul class="addownitem-box" style="display:none;">  
+				            <li>
+				            	<input class="" id="" action="" name="" value="add your own item" type="text" onfocus="value=''" style="width: 150px;float:left;"/>
+				            	<select style="width: 150px; float:left;">
+				            		<option value="-1">- Select Item Dept. -</option>
+									<option exportkeyid="117485" value="10353">Baby</option>
+									<option exportkeyid="117509" value="10354">Baking Needs</option>
+									<option exportkeyid="117542" value="10355">Beverages</option>
+									<option exportkeyid="117651" value="10357">Canned Goods</option>
+									<option exportkeyid="117682" value="10358">Cereal &amp; Breakfast</option>
+									<option exportkeyid="117740" value="10359">Cleaning &amp; Laundry</option>
+									<option exportkeyid="117756" value="10360">Coffee / Tea / Cocoa</option>
+									<option exportkeyid="117779" value="10361">Condiments</option>
+									<option exportkeyid="117786" value="10369">Cookies / Crackers / Snacks</option>
+									<option exportkeyid="117833" value="10338">Dairy</option>
+									<option exportkeyid="117985" value="10341">Frozen Foods</option>
+									<option exportkeyid="118010" value="10342">General Merchandise</option>
+									<option exportkeyid="118042" value="10343">Grocery</option>
+									<option exportkeyid="118074" value="10344">Health &amp; Beauty</option>
+									<option exportkeyid="118103" value="10364">Ice Cream / Frozen Desserts</option>
+									<option exportkeyid="118137" value="10362">Kitchen Supplies</option>
+									<option exportkeyid="118217" value="10345">Meat &amp; Poultry</option>
+									<option exportkeyid="118348" value="10366">Paper &amp; Plastic Goods</option>
+									<option exportkeyid="118393" value="10346">Pet Supplies</option>
+									<option exportkeyid="118462" value="10347">Produce</option>
+									<option exportkeyid="118551" value="10349">Seafood</option>
+				            	</select>
+				            	<a href="#" class="button">add to list</a>
+				            
+				            </li>  
+				        </ul>
+					</li>
+				</ul>
+				<p>manage list stuff here</p>
+			</div>
+			<div id="tabs-2" class="saved-lists-tab">
+				<p>saved list stuff here</p>
+			</div>
+		</div>
+	</div>
+
+
+</div><!--ManageListwrapper -->
+<!--End Main Content  -->			
+<!--START FOOTER AREA -->
+<div id="footer"></div><!--footer-->
+</div><!--content-->
+</div><!--wrapper-->
+
+
+
+</body></html>

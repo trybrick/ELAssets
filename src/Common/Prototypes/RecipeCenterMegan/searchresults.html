@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Recipe Center - Search Resuls</title>
+
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js" type="text/javascript"></script>
+<script src="js/recipe-carousel.js" type="text/javascript"></script>
+<script src="js/recipecenter.js" type="text/javascript"></script>
+
+<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="styles/ie7.css">
+<![endif]-->
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		var subnavPages = 4;	
+		if (typeof(Recipe)=="undefined"){
+			Recipe = new Object();
+		}		
+		Recipe.showOneContent = function(elem_id){
+			hideAllContent();
+			clearAllNavs();
+			elemOnContent('recipeSearch-page'+elem_id);
+			elemOnSubnav('recipeSearch-nav'+elem_id);
+		}
+		function hideAllContent(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffContent( 'recipeSearch-page'+i );
+		}
+		function clearAllNavs(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffSubnav( 'recipeSearch-nav'+i );
+		}
+		function elemOnContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "block";
+		}
+		function elemOnSubnav(elem_id){
+			if($(elem_id))
+			$(elem_id).addClassName('recipeSearch-nav-active');
+		}
+		function elemOffContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "none";
+		}
+		function elemOffSubnav(elem_id){
+			if($(elem_id))
+				$(elem_id).removeClassName('recipeSearch-nav-active');
+		}
+	</script>
+
+<div id="wrapper">
+<div id="header">
+	
+	<img src="Images/header.jpg" alt="header screenshot"/>
+</div><!--header-->
+
+<div id="container">
+	
+<!- -------------------Recipe Center----------------------- -->
+<div id="main">
+
+	<div id="recipeHeader">
+
+		<a href="index.html" class="home-link"><h1>Recipe Center</h1></a>
+		<a class="cheflink" src="#"><img src="Images/askthechef_button.png"/></a>
+		<div id="recipeSearch">
+			<a href="searchresults.html"><img class="search-button" src="images/search_eyeglass.png" alt="Search"></a>
+			<input type="text" id="search-field" maxlength="30" tabindex="1">
+
+			<a src="#" onClick="toggleMyDiv()" class="search-link">Advanced <img alt="dropdown" src="Images/search_downarrow.png"></a>
+		</div>
+<!- -------------------Advanced Search----------------------- -->
+		<div id="advancedSearch" style="display:block">
+	
+			<h2>Advanced Search</h2>
+			<div id="advancedSearchContainer">
+				
+				<form>
+				<div class="search-container">
+					<label for="mealtype">Meal Type</label>
+					<select name="Meal Type" title="Meal Type" id="mealtype">
+						<option>Breakfast</option>
+						<option>Lunch</option>
+						<option>Dinner</option>
+						<option>Snacks/Appetizer</option>
+						<option>Brunch</option>
+					</select><br/>
+					<label for="cuisinetype">Cuisine Type</label>
+					<select name="Meal Type" title="Meal Type" id="cuisinetype">
+						<option>American</option>
+						<option>Chinese</option>
+						<option>Japanese</option>
+						<option>Korean</option>
+						<option>French</option>
+					</select><br/>
+					<label for="mainingredient">Main Ingredient</label>
+					<input name="Meal Type" title="Meal Type" id="mainingredient">
+					
+					<label for="trackcals">Calories</label>
+					<div class="search-slider slider" id="trackcals">
+						<div id="trackcals_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcals_handle_max" class="sliderHandle right"></div>
+						<div id="trackcals_slider_span" class="span"></div>
+					</div>
+					<p id="slidecals" class="sliding"></p>
+
+					<label for="trackchol">Cholesterol</label>
+					<div class="search-slider" id="trackchol">
+						<div id="trackchol_handle_min" class="sliderHandle left"></div>
+  						<div id="trackchol_handle_max" class="sliderHandle right"></div>
+						<div id="trackchol_slider_span" class="span"></div>
+						</div>
+						<p id="slidechol" class="sliding"></p>
+					</div>
+					
+					
+				</div>
+				
+				
+				<div class="search-container">
+					<label for="tracktime">Total Cook and Prep Time</label>
+					<div class="search-slider" id="tracktime">
+						<div id="tracktime_handle_min" class="sliderHandle left"></div>
+  						<div id="tracktime_handle_max" class="sliderHandle right"></div>
+						<div id="tracktime_slider_span" class="span"></div>
+					</div>
+						<p id="slidetime" class="sliding"></p>
+					
+					<label for="trackskill">Skill Level</label>
+					<div class="search-slider" id="trackskill">
+						<div id="trackskill_handle_min" class="sliderHandle left"></div>
+  						<div id="trackskill_handle_max" class="sliderHandle right"></div>
+						<div id="trackskill_slider_span" class="span"></div>
+					</div>
+						<p id="slideskill" class="sliding"></p>
+					
+					<label for="trackfat">Total Fat Content</label>
+					<div class="search-slider" id="trackfat">
+						<div id="trackfat_handle_min" class="sliderHandle left"></div>
+  						<div id="trackfat_handle_max" class="sliderHandle right"></div>
+						<div id="trackfat_slider_span" class="span"></div>
+					</div>
+						<p id="slidefat" class="sliding"></p>
+					
+					<label for="trackcarbs">Carbohydrates</label>
+					<div class="search-slider" id="trackcarbs">
+						<div id="trackcarbs_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcarbs_handle_max" class="sliderHandle right"></div>
+						<div id="trackcarbs_slider_span" class="span"></div>
+					</div>
+						<p id="slidecarbs" class="sliding"></p>
+			
+				</div>
+				<div class="search-container">
+					<label for="">Vegetarian</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegetarian" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegetarian" value="no"/>
+							<p>No</p>
+						</div>
+						
+					<label for="">Vegan</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegan" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegan" value="no" />
+							<p>No</p>
+						</div>							
+					<label for="trackprot">Protein</label>
+					<div class="search-slider" id="trackprot">
+						<div id="trackprot_handle_min" class="sliderHandle left"></div>
+  						<div id="trackprot_handle_max" class="sliderHandle right"></div>
+						<div id="trackprot_slider_span" class="span"></div>
+					</div>
+						<p id="slideprot" class="sliding"></p>
+					
+					
+					
+					<label for="tracksalt">Sodium</label>
+					<div class="search-slider" id="tracksalt">
+						<div id="tracksalt_handle_min" class="sliderHandle left"></div>
+  						<div id="tracksalt_handle_max" class="sliderHandle right"></div>
+						<div id="tracksalt_slider_span" class="span"></div>
+					</div>
+						<p id="slidesalt" class="sliding"></p>
+				</div>
+				<div id="searchButtons">
+					<a class="button" href="searchresults.html">
+						<span>Search Recipes</span></a>
+					<a class="button" href="#">
+						<span>Apply Settings to My Profile</span></a>
+				</div>
+				</form>	
+			</div>
+
+		
+	</div>
+<script type="text/javascript">
+		setSliders();
+	</script>
+<!- -------------------End Advanced Search----------------------- -->
+	
+	<div id="recipeFullSide">
+		<h2>Refine Search</h2>
+		<form>
+			<label for="mealtype">Meal Type</label>
+			<select name="Meal Type" title="Meal Type" id="mealtype">
+						<option>Breakfast</option>
+						<option>Lunch</option>
+						<option>Dinner</option>
+						<option>Snacks/Appetizer</option>
+						<option>Brunch</option>
+			</select><br/>
+			<label for="cuisinetype">Cuisine Type</label>
+			<select name="Meal Type" title="Meal Type" id="cuisinetype">
+						<option>American</option>
+						<option>Chinese</option>
+						<option>Japanese</option>
+						<option>Korean</option>
+						<option>French</option>
+			</select><br/>
+			<label for="mainingredient">Main Ingredient</label>
+					<input name="Meal Type" title="Meal Type" id="mainingredient">
+			
+			<label for="trackcalsRef">Calories</label>
+			<div class="search-slider slider" id="trackcalsRef">
+				<div id="trackcalsRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackcalsRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackcalsRef_slider_span" class="span"></div>
+				<p id="slidecalsRef" class="sliding"></p>
+			</div>
+			<p id="slidecalsRef" class="sliding"></p>
+			
+			<label for="trackcholRef">Cholesterol</label>
+			<div class="search-slider" id="trackcholRef">
+				<div id="trackcholRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackcholRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackcholRef_slider_span" class="span"></div>
+			</div>
+			<p id="slidecholRef" class="sliding"></p>
+			
+			<label for="tracktimeRef">Total Cook and Prep Time</label>
+			<div class="search-slider" id="tracktimeRef">
+				<div id="tracktimeRef_handle_min" class="sliderHandle left"></div>
+  				<div id="tracktimeRef_handle_max" class="sliderHandle right"></div>
+				<div id="tracktimeRef_slider_span" class="span"></div>
+			</div>
+			<p id="slidetimeRef" class="sliding"></p>
+			
+			<label for="trackskillRef">Skill Level</label>
+			<div class="search-slider" id="trackskillRef">
+				<div id="trackskillRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackskillRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackskillRef_slider_span" class="span"></div>
+			</div>
+			<p id="slideskillRef" class="sliding"></p>
+			
+			<label for="trackfatRef">Total Fat Content</label>
+			<div class="search-slider" id="trackfatRef">
+				<div id="trackfatRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackfatRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackfatRef_slider_span" class="span"></div>
+			</div>
+			<p id="slidefatRef" class="sliding"></p>
+			
+			<label for="trackcarbsRef">Carbohydrates</label>
+			<div class="search-slider" id="trackcarbsRef">
+				<div id="trackcarbsRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackcarbsRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackcarbsRef_slider_span" class="span"></div>
+			</div>
+			<p id="slidecarbsRef" class="sliding"></p>
+			
+			<label for="trackprotRef">Protein</label>
+			<div class="search-slider" id="trackprotRef">
+				<div id="trackprotRef_handle_min" class="sliderHandle left"></div>
+  				<div id="trackprotRef_handle_max" class="sliderHandle right"></div>
+				<div id="trackprotRef_slider_span" class="span"></div>
+			</div>
+			<p id="slideprotRef" class="sliding"></p>
+			
+			<label for="tracksaltRef">Sodium</label>
+			<div class="search-slider" id="tracksaltRef">
+				<div id="tracksaltRef_handle_min" class="sliderHandle left"></div>
+  				<div id="tracksaltRef_handle_max" class="sliderHandle right"></div>
+				<div id="tracksaltRef_slider_span" class="span"></div>
+			</div>
+			<p id="slidesaltRef" class="sliding"></p>
+			
+			<script>
+			
+				var handles = ['trackcalsRef_handle_min', 'trackcalsRef_handle_max'];
+		var trackcalsRef = new Control.Slider(handles, 'trackcalsRef', {
+  			range: $R(0, 2000),
+   			values: $R(0, 2000),
+   			sliderValue: [300, 1700],
+    		spans: ["trackcalsRef_slider_span"],
+    		restricted: true,
+    		onSlide: function(v) {
+               	$('slidecalsRef').innerHTML = 'Calorie Range: '+v[0]+'-'+v[1];
+          		}
+			});
+	
+       	var handles = ['trackcholRef_handle_min', 'trackcholRef_handle_max'];
+		var trackcholRef = new Control.Slider(handles, 'trackcholRef', {
+  		range: $R(0, 2000),
+   		values: $R(0, 2000),
+   		sliderValue: [300, 1700],
+    	spans: ["trackcholRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slidecholRef').innerHTML = 'Cholesterol (mg): '+v[0]+'-'+v[1];
+          		}
+		});
+       	
+       	var handles = ['tracktimeRef_handle_min', 'tracktimeRef_handle_max'];
+		var tracktimeRef = new Control.Slider(handles, 'tracktimeRef', {
+  		range: $R(0, 180),
+   		values: $R(0, 180),
+   		sliderValue: [0, 180],
+    	spans: ["tracktimeRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slidetimeRef').innerHTML = 'Minutes: '+v[0]+'-'+v[1];
+          		}
+		});
+       	
+       	var handles = ['trackskillRef_handle_min', 'trackskillRef_handle_max'];
+		var trackskillRef = new Control.Slider(handles, 'trackskillRef', {
+   		range: $R(0, 5),
+   		values: [0,1,2,3,4, 5],
+   		sliderValue: [0, 5],
+    	spans: ["trackskillRef_slider_span"],
+    	onSlide: function(v) {
+               	$('slideskillRef').innerHTML = 'Skill Level: '+v[0]+'-'+v[1];
+          		}
+		});
+	
+      	var handles = ['trackfatRef_handle_min', 'trackfatRef_handle_max'];
+		var trackfatRef = new Control.Slider(handles, 'trackfatRef', {
+  		range: $R(0, 180),
+   		values: $R(0, 180),
+   		sliderValue: [0, 180],
+    	spans: ["trackfatRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slidefatRef').innerHTML = 'Total Fat(g): '+v[0]+'-'+v[1];
+          		}
+		});
+       
+       
+       
+       	var handles = ['trackcarbsRef_handle_min', 'trackcarbsRef_handle_max'];
+		var trackcarbsRef = new Control.Slider(handles, 'trackcarbsRef', {
+  		range: $R(0, 180),
+   		values: $R(0, 180),
+   		sliderValue: [0, 180],
+    	spans: ["trackcarbsRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slidecarbsRef').innerHTML = 'Carbs(g): '+v[0]+'-'+v[1];
+          		}
+		});
+       	
+       	var handles = ['trackprotRef_handle_min', 'trackprotRef_handle_max'];
+		var trackprotRef = new Control.Slider(handles, 'trackprotRef', {
+  		range: $R(0, 180),
+   		values: $R(0, 180),
+   		sliderValue: [0, 180],
+    	spans: ["trackprotRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slideprotRef').innerHTML = 'Protein(g): '+v[0]+'-'+v[1];
+          		}
+		});
+       	
+       	var handles = ['tracksaltRef_handle_min', 'tracksaltRef_handle_max'];
+		var tracksaltRef = new Control.Slider(handles, 'tracksaltRef', {
+  		range: $R(0, 2500),
+   		values: $R(0, 2500),
+   		sliderValue: [0, 2500],
+    	spans: ["tracksaltRef_slider_span"],
+    	restricted: true,
+    	onSlide: function(v) {
+               	$('slidesaltRef').innerHTML = 'Sodium(mg): '+v[0]+'-'+v[1];
+          		}
+		});
+			
+			
+			</script>
+			
+			<label for="">Vegetarian</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegetarian" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegetarian" value="no"/>
+							<p>No</p>
+						</div>
+						
+			<label for="">Vegan</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegan" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegan" value="no" />
+							<p>No</p>
+						</div>
+			
+			<a class="button" href=""><span>Refine Search</span></a>
+		</form>
+		<h2>Top Recipes</h2>
+		<ul class="side-recipe-list">
+			<li><a href="#">Blueberry Pancakes</a></li>
+			<li><a href="#">Lemonade Cookies</a></li>
+			<li><a href="#">Wild Mushroom and Brie Flatbread</a></li>
+			<li><a href="#">Heirloom Tomato Salad</a></li>
+		</ul>
+	</div><!--recipeFullSide-->
+	
+	
+	
+	
+	
+	
+	
+	<div id="recipeSearchMain">
+	
+		<div id="recipeSearchTop">
+			<h1>Search Results</h1>
+			
+			<ul id="searchnav">
+					<li id="recipeSearch-nav1" class="recipeSearch-active recipeSearch-nav-active first-nav"><a href="javascript:void(0);" onclick="Recipe.showOneContent(1);">Recipes</a></li>
+					<li id="recipeSearch-nav2" class="tab"><a href="javascript:void(0);" onclick="Recipe.showOneContent(2);">Articles</a></li>
+					<li id="recipeSearch-nav3" class="tab"><a href="javascript:void(0);" onclick="Recipe.showOneContent(3);">Videos</a></li>
+			</ul>
+			
+			<div id="recipeSearchReview">
+				
+				<label for="">You Searched For:</label>
+				<input type="text" id="search-field" maxlength="30" tabindex="1" value="Apple Dessert">
+				<a class="button"><span>Go</span></a>
+				<p class="sorting">sort by: 
+					<a href="">Rating</a> | 
+					<a href="">Relevance</a> | 
+					<a href="">Name</a></p>
+			</div><!--recipeSearchReview-->
+			
+		</div><!--recipeSearchtop"-->
+		
+		
+		<div id="recipeSearchMainContent">
+		 <div id="recipeSearch-page1">
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this!</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+						<img src="Images/video_icon.png" alt="video_icon" width="20" height="14" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/lamb_chops.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It's very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/lamb_chops.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/lamb_chops.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div class="searchResult">
+				<a href="recipefull.html"><img src="Images/lamb_chops.jpg"/></a>
+			
+				<div class="recipeDescription">
+					<a href="recipefull.html"><h2>Apple Tart with Lemon glaze</h2></a>
+				This simple recipe goes well with Indian dishes, or a simple pork chop and rice. It&apos;s very mild in flavor and is meant to go with a variety of...</div>
+				<div class="recipeInfo">
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this 3 times</a>
+					<div class="mini-icon">
+						<img src="Images/menu_icon.png" alt="menu_icon" width="14" height="14" />
+					</div>
+				</div>
+			</div>
+			<div id="searchPagination">
+				<p class="resulttally">Showing Items 1&#8211;8 (out of 127 results)</p>
+				<a href="#">&lt;</a> 
+				<a href="#">Previous</a>
+				<a href="#" class="searchnumber active">1</a>
+				<a href="#" class="searchnumber">2</a>
+				<a href="#" class="searchnumber">3</a>
+				<a href="#" class="searchnumber">4</a>
+				<a href="#" class="searchnumber">5</a>
+				<a href="#" class="searchnumber">...</a>
+				<a href="#" class="searchnumber">20</a>
+				<a href="#">Next</a>
+				<a href="#">&gt;</a>
+			</div>
+		  </div><!--searchRecipeResults-->
+		  
+		  <div id="recipeSearch-page2" style="display:none;">
+		  		<div class="searchResult">
+		  			<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+		  			<div class="articleDescription">
+		  				<a href="recipefull.html"><h2>Take a Trip to the Apple Orchard</h2></a>
+		  				<p>When the leaves turn their bright shades of orange and red, it's the perfect time to visit your local apple orchard. It's a great way to support local farming and businesses as well as a great opportunity to spend...</p>
+		  			</div>
+		  		</div>
+		  		<div class="searchResult">
+		  			<a href="recipefull.html"><img src="Images/apples.jpg"/></a>
+		  			<div class="articleDescription">
+		  				<a href="recipefull.html"><h2>Take a Trip to the Apple Orchard</h2></a>
+		  				<p>When the leaves turn their bright shades of orange and red, it's the perfect time to visit your local apple orchard. It's a great way to support local farming and businesses as well as a great opportunity to spend...</p>
+		  			</div>
+		  		</div>
+		  		<div id="searchPagination">
+				<p class="resulttally">Showing Items 1&#8211;2 (out of 2 results)</p>
+				<a href="#" class="searchnumber active">1</a>
+				</div>
+		  </div><!--searchArticleResults-->
+		  
+		  <div id="recipeSearch-page3" style="display:none;">
+		  		<div class="searchResult">
+		  			
+		  			<div class="articleDescription">
+		  				
+		  				<p>No videos currently match your search. Please refine your results or try another search.</p>
+		  			</div>
+		  		</div>
+		  </div><!--searchVideoResults-->
+		  
+		</div><!--recipeSearchMainContent-->
+		
+	</div><!--recipeSearchMain-->
+		
+
+	
+	
+	
+	
+	
+	
+	
+	
+</div><!--main-->	
+<!- ------------------------Sidebar------------------------ -->
+	
+	<div id="sidebar">
+		<img src="Images/sidebar.jpg" alt="sidebar" width="300" height="486" />
+	</div><!--sidebar-->
+
+
+</div><!-- container-->
+</div><!--wrapper-->
+
+
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

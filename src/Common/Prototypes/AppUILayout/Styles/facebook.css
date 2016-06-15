@@ -1,0 +1,319 @@
+/*Sign Up and Manage Apps Styles for App UI*/
+/*---------------------------*/
+/* !Main Styles */
+/*---------------------------*/
+p			{ line-height: 1.2em;}
+a img:hover	{border:none;}
+#signUpWrapper, #AppMarketWrapper		{  float: left; width: 957px; margin: 10px 0 0 4px; background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/signupbg.jpg') repeat; border-top: 1px solid #E9E4DC;}
+#signUp, #AppMarket				{ width: 615px; float:left; margin: 16px; padding: 0 0 20px; background: #FFF; border-radius: 15px; -moz-border-radius: 15px; box-shadow: 0 2px 16px #CCCCCC; -moz-box-shadow:0 2px 16px #CCCCCC; }
+#signUpFeatures, #ManageApps		{ width: 285px; float:left; color: #736357; margin: 20px 0 0;}
+#signUpWrapper h4, #signUpWrapper legend, #signUpWrapper label 	{ font-size: 110%; color:#534741;font-weight: bold;}
+h4					{ margin: 5px 0;}
+a.button			{ display: inline-block; padding: 5px; background: #8CC63F; color: white; text-decoration: none; border-radius: 5px; font-size: 90%;}
+a.add-button		{ padding: 6px 15px; background: #8CC63F; border-radius: 10px; color: white;}
+a.remove-button		{ padding: 6px 15px; background: red; border-radius: 10px; color: white;}
+a.submitButton 		{ display: inline-block; padding: 10px; background: #9D7D59; color: white; text-decoration: none; border-radius: 5px; font-size: 125%;}
+.signUpInfo			{ width: 100%; color: #C7B299; text-align: center; padding: 10px 0;}
+a.icon-link			{ float:left; margin: 35px 38px;}
+a.app-details		{ color:#C7B299; font-size: 90%; text-align: center;}
+a.privacy-link		{ float:right; background: url(http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/icon_privacy.png) no-repeat; padding: 2px 0 5px 30px; margin: 20px 0; color:#C7B299; line-height: 1.5em;}
+.intro-text			{ margin-top:10px;}
+.signUpForm			{ /*float:left;*/ text-align: center;}
+/*---------------------------*/
+/* !Progress Tracker Styles */
+/*---------------------------*/
+#progressTracker { 
+	width: 605px; 
+	border: 5px solid #b3b3b3; 
+	float:left; 
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/signup_progresstracker_clear_sprite.png') -1px 89px #b2dd7e;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	height: 85px;
+}
+
+#progressTracker.progress2 { background-position: -1px 185px;}
+#progressTracker.progress3 { background-position: -1px 282px;}
+#progressTracker h4	{ margin: 5px 0;}
+#progressTracker p	{ font-size: 65%;margin: 0;}
+
+#yourinfo, #yourhousehold, #yourpantry { float:left; padding-left: 35px; margin: 12px 0 0;} 	 
+#yourinfo			{ width: 22%;}
+#yourhousehold		{ width: 27%; margin-left: 30px;}
+#yourpantry			{ width: 27%;}
+/*---------------------------*/
+/* !Header Styles */
+/*---------------------------*/
+
+.signUpHeader { background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/signupheader_shine.png') center 70px no-repeat #E9E4DC;text-align: center; width: 90%; margin: 0 auto; padding: 10px; border-radius: 15px; -moz-border-radius:15px;}
+.signUpHeader p.signUpInfo	{ margin: -15px 0 11px; padding: 0;}
+.signUpHeaderThanks	{ margin-top:20px;}
+/*---------------------------*/
+/* !Form Styles */
+/*---------------------------*/
+#signUpWrapper label	{ width: 33%; float:left; text-align: right; padding: 3px 0 0;}
+#signUp fieldset	{border:none;padding: 0 20px;}
+#signUp	input[type=text], #signUp select,  { 
+	border: 1px solid #534741; float:left;
+	margin: 0px 12px; background:url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/textbox_bg.jpg') top left repeat-x; 
+	border-radius: 5px; -moz-border-radius:5px; padding: 5px;
+}
+
+#signUp	 input[type=checkbox]	{float:left;margin: 4px 10px 0 0px;}
+.checkbox-set label		{ float:left; width:45%; display:block; text-align: left; line-height: 1.3em; font-weight: normal; color: #736357; font-size: 90%;}
+.checkbox-set legend	{ float:left; width: 33%; text-align: right;}
+.checkbox-set div		{ width: 65%; float:right;}
+
+.signUpForm ol		{ float:left;}
+.signUpForm ol li		{float:left;width: 100%; list-style-type: none; margin: 8px 0; padding: 0 0 15px; border-bottom: 1px solid #E9E4DC;}
+.helper-icon		{ float:right; padding-right: 30%;}
+
+#signUpStep1 ol				{ width: 90%; padding: 0 5%;}
+
+#signUpStep2 .helper-icon {float:right; padding: 0;}
+#signUpStep2 ol				{ width: 75%; padding: 0 14%;}
+#signUpStep2 ol li				{ width: 90%;}	
+#signUpStep2 label			{ width: 52%;}
+
+#signUpStep3 legend, .or-separator	{ width: 100%; float:left; margin: 5px 0;}
+.or-separator		{ color: #C7B299; font-size: 150%; margin: 10px 0; font-weight: bold; background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/or_separator.png') center center no-repeat;}
+.pantryItems label 	{ padding:0; float:none; font-size: 90%; color: #736357; font-weight:normal;}
+.pantryItems input[type="checkbox"] { float:none}
+ul.pantryItems		{ width: 35%; float:left; text-align: left; margin-left: 40px;}
+ul.pantryItems li	{ list-style-type: none;line-height: 1.2em; margin: 0;}
+
+#childrenQuestions	{ width: 300px; margin: 0 auto;}
+#childrenQuestions label	{ width: 55%;}
+
+/*---------------------------*/
+/* !Sign Up Features*/
+/*---------------------------*/
+#signUpFeatures	h1, #signUpFeatures h2, #signUpFeatures h3	{ text-align: center;}
+#signUpFeatures h3			{ color:#9D7D59; border-top: 1px solid #E9E4DC; border-bottom: 1px solid #E9E4DC; padding: 15px 0 10px;}
+#signUpFeatures p			{ font-size: 90%; margin: 10px 0;}
+#signUpFeatures h1			{ background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/signup_features_header.png') top center no-repeat; width: 280px; height: 50px; text-indent: -9999px; overflow: hidden;}
+
+/*---------------------------*/
+/* !App Market */
+/*---------------------------*/
+#AppMarket h1, #AppMarket h2, #AppMarket h3	{ color:#534741; margin: 0 0 15px;}
+#AppMarketTop		{ 
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/appmarket_headerbg.png') 0 50px repeat-x; 
+	width: 100%; min-height: 75px; padding: 0 10px;
+}
+#AppMarketTop h3			{ float:left; width: 55%;}
+#AppMarketTop .search-terms {
+	font-style: italic; font-weight: normal; 
+	color: #666666;
+	margin: 0 20px 15px 0; 
+}
+#AppMarketTop input[type=search], #AppMarketTop select{
+	border: 1px solid #534741; 
+	background:url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/textbox_bg.jpg') top left repeat-x; 
+	border-radius: 5px; -moz-border-radius:5px; padding: 5px;
+}
+#AppMarketTop label	{ 
+	margin-left: 50px; 
+
+}
+
+#AppMarket a#home-link	{ 
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/appmarket_homeicon.png') top left no-repeat; 
+	padding-top:30px; text-align: center; 
+	color: #C7B299; font-size: 80%; 
+	float: left; margin: 0 0 0 10px;
+}
+#AppMarketTop h1	{ text-align: center;  margin: 5px 30px 25px 0; line-height: 45px;}
+#AppSlideshow		{ height: 240px; float: left;}
+.slide				{ }
+.slide h2			{ 
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding: 10px;
+    position: absolute;}
+#chainAppSuggested, .AppTeaserCategory	{ width: 45%; float: left; margin-left: 20px;}
+#chainAppSuggested li, .AppTeaserCategory li	{ 
+	float: left;
+    text-align: center;
+    width: 33%;
+    margin: 0 0 15px;}
+
+#chainAppSuggested { background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/whitegradientbg.png') top center no-repeat #8CC63F;border-radius: 10px;padding: 10px 0;}
+.AppTeaserCategory	{ height: 150px;}
+#chainAppSuggested h3,.AppTeaserCategory h3 { margin: 10px 0px;}
+#chainAppSuggested h3 {text-align: center;}
+
+.AdMaster.Tile2 {margin: 20px 0 0 0;}
+/*---------------------------*/
+/* !App Slideshow */
+/*---------------------------*/
+.slides_container {
+    width:580px;
+    height:220px;
+    margin: 10px 18px;
+    border-radius: 10px;
+  }
+  .slides_container div {
+    width:470px;
+    height:170px;
+    display:block;
+  }
+  
+  ul.pagination {
+  	background: rgba(255,255,255, 0.8);
+    height: 25px;
+    margin-left: 18px;
+    padding-left: 45%;
+    position: relative;
+    top: -35px;
+    width: 50%;
+    z-index: 500;
+  
+  }
+  
+  .pagination li {
+ 	display: block;
+  	float: left;
+  	width: 10px;
+  	height: 10px;
+  	border-radius: 5px;
+  	border: 1px solid #CCC;
+  	background: white;
+  	margin: 5px 2px 0;
+  }
+  
+  .pagination li a {
+  	text-indent: -9999px;
+  	display: block;
+  }
+ 
+ .pagination li.current {
+ 	background: #8CC63F;
+ 	border: 1px solid #666;
+ }
+/*---------------------------*/
+/* !App Summary */
+/*---------------------------*/ 
+#AppSummary h2	{ float:left; margin-left:20px; width: 40%;}
+#AppScreenshots {float:right;}
+#AppScreenshots ul.pagination {padding-left:38%; width: 52%;}
+
+#AppSummary .summary-icon	{ 
+	float:left; margin: 0 0 10px 20px; 
+	width: 150px; height: 150px;
+}	
+#AppSummary a.add-button	{ 
+	float:left; clear:left; 
+	margin-left: 20px; 
+}
+ #AppSummary .slides_container {
+    width:300px; height:250px;
+    margin: 10px 18px;
+}
+ 
+#AppSummary  .slides_container div {
+    width:270px; height:250px;
+    display:block;
+}
+
+#AppDescription	{
+	border-bottom: 1px solid #CCCCCC;
+	float:left; margin: 0 20px 10px;
+	padding: 0 0 20px;
+}
+  
+/*---------------------------*/
+/* !App Search */
+/*---------------------------*/  
+#AppSearchResults ul { border-top: 1px solid #ccc; margin: 10px 0;}
+#AppSearchResults ul li	{ padding: 10px; border-bottom: 1px solid #ccc; float: left;}
+#AppSearchResults ul li.alt	{
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/appmarket_altbg.jpg') bottom left repeat-x;
+	margin-bottom: 1px;
+}
+#AppSearchResults ul li.last { border:none;}
+#AppSearchResults ul li .app-icon	{ float:left;} 
+#AppSearchResults ul li .add-button	{ float:right;} 
+#AppSearchResults ul li h3, #AppSearchResults ul li p	{
+	width: 70%; margin: 5px 10px; float:left;
+}
+  
+/*---------------------------*/
+/* !ManageApps */
+/*---------------------------*/
+ 
+#ManageApps h1, #ManageApps p	{ text-align: center; margin: 0 0 15px;}
+
+.myAppRemoveButton {
+	background: red; border-radius: 10px; 
+	padding: 3px 7px; color: white;
+	float:right; position: relative; top: 10px; margin: 0 10px;
+}
+#MyApps 	{
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/myappsbg.png') top center no-repeat; 
+	width: 300px; height: 545px;}
+
+#MyApps .jcarousel-skin .jcarousel-container { 
+	background: none}
+#MyApps .jcarousel-skin .jcarousel-container-vertical {
+	width: 260px;
+	border: none;
+	box-shadow: none;
+	height:460px;}
+#MyApps	.jcarousel-skin .jcarousel-clip-vertical {
+	width: 260px; height: 455px;}
+	
+#MyApps	.jcarousel-skin .jcarousel-prev-vertical, #MyApps .jcarousel-skin .jcarousel-next-vertical {left: 135px;}
+
+#MyApps .jcarousel-skin .jcarousel-item-vertical {
+	height: 120px; width: 100px; margin-bottom: 10px; padding: 0 15px;text-align: center;
+}
+
+/*----------------------------*/
+/* !Removing App Confirmation */
+/*----------------------------*/
+p.warning	{
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/warningbg.png') 20px center no-repeat #F2DCDD; 
+	padding: 20px 20px 20px 50px;text-align: center; 
+	color: red; font-size: 120%; font-weight: bold; 
+	border: 1px solid red; border-radius: 15px; 
+	margin: 0 auto 20px;
+}
+p.success	{
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/successbg.png') 20px center no-repeat #CEE8AC; 
+	padding: 20px 20px 20px 50px; margin: 0 auto 20px; text-align: center; 
+	color: green; font-size: 120%; font-weight: bold; border: 1px solid green; border-radius: 15px; 
+
+
+}
+#remove-app-confirm, #AddAppConfirm	{
+	background: none #FFF; padding:20px; min-height: 650px; text-align: center; width: 530px;
+}
+#remove-app-confirm h3, 
+#AddAppConfirm h3 { color:#534741; margin: 0 0 15px; text-align: left;}
+
+#remove-app-confirm img.icon, 
+#AddAppConfirm img.icon{float:left; padding: 0 20px;}
+
+#remove-app-confirm a.app-details, 
+#AddAppConfirm a.app-details	{ float:left; clear:left; padding: 5px 20px; width: 100px;}
+
+#remove-app-confirm p.description, 
+#AddAppConfirm p.description	{ margin: 15px 0 25px; text-align: left;}
+
+.info-box{
+	border-radius: 15px; padding: 20px; margin: 20px 0; text-align: left;
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/whitegradientbg.png') top center no-repeat #E9E4DC;
+}
+.info-box h3 {
+	background: url(http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/manageapps/info-box-pointer.png) left center no-repeat; 
+	padding-left: 40px; 
+}
+.info-box ol{
+	width:90%; margin: 10px auto
+}
+.info-box li{
+	margin: 15px 0;
+}
+#remove-app-confirm .banner-ad,
+#AddAppConfirm .banner-ad	{ margin: 20px auto 0;}

@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Recipe Full</title>
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/recipe-center.js"></script>
+	<script type="text/javascript">
+		document.observe("dom:loaded", onPageLoad);
+		
+		function onPageLoad() {
+			InitializeAdvancedSearch();
+		}
+		
+		function showSocial() {
+			$('share').show();
+		}
+		
+		function hideSocial() {
+			$('share').hide();
+		}
+		
+		function redirectRecipe() {
+			window.location.replace('index.html');
+		}
+		
+	</script>
+	<link href="stylesheets/default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="container" class="group">
+    	<div id="header">
+        	<div id="primary-navigation"></div>
+            <div id="store-information"></div>
+            <div id="user-login"></div>
+        </div>
+        <div id="recipe-full-page" class="recipe main group">
+			<div id="secondary-navigation" onclick="redirectRecipe()"></div>
+			<div id="search" class="group module full">
+				<a id="toggle-advanced-link" class="toggle-link" style="display:none;">Advanced Search</a><!-- hidden from non js browsers -->
+				<div id="top-search-control" class="group">
+					<input type="text" />
+					<a class="button" href="search-results.html">Search</a>
+				</div>
+				<div id="advanced-search" class="group" style="display:none;">
+					<div class="header">
+						<h2>Advanced Search</h2>
+						<p>Enter a search term that describes what you are looking for, or use the optional search fields to narrow your search.</p>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-term">Keyword</label>
+							<input type="text" class="default-value" id="adv-search-term" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-exclude">Exclude</label>
+							<input type="text" class="default-value" id="adv-search-exclude" name="adv-search-exclude" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div id="special-diet" class="group">
+						<label>Special Diet</label>
+						<ul class="group">
+							<li><input type="radio" name="rblDiet" value="1" />Kosher</li>
+							<li><input type="radio" name="rblDiet" value="2" />Vegetarian</li>
+							<li><input type="radio" name="rblDiet" value="3" />Vegan</li>
+							<li><input type="radio" checked="checked" name="rblDiet" value="4" />None</li>
+						</ul>
+					</div>
+					<div id="dietary-preferences" class="group">
+						<div class="header">
+							<h2>Dietary Preferences</h2>
+							<em>Enter minimum and maximum amount for each attribute. </em>
+						</div>
+						<fieldset class="dietary-range">
+							<label for="min-cal">Calories</label>
+							<input id="min-cal" name="min-cal" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-cal" name="max-cal" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-fat">Total Fat (g)</label>
+							<input id="min-fat" name="min-fat" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-fat" name="max-fat" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-carb">Carbohydrates (g)</label>
+							<input id="min-carb" name="min-carb" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-carb" name="max-carb" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sugar">Sugars (g)</label>
+							<input id="min-sugar" name="min-sugar" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sugar" name="max-sugar" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sodium">Sodium (mg)</label>
+							<input id="min-sodium" name="min-sodium" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sodium" name="max-sodium" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-protein">Protein (g)</label>
+							<input id="min-protein" name="min-protein" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-protein" name="max-protein" type="text" maxlength="4" />
+						</fieldset>
+						<ul id="preference-actions" class="action-group group">
+							<li><a href="#null">Clear preferences</a></li>
+							<li><a href="#null">Load preferences</a></li>
+							<li><a href="#null">Save preferences</a></li>
+						</ul>
+					</div><!-- dietary-preferences -->
+					<div id="search-criteria" class="group">
+						<fieldset>
+							<label for="ddl-courses">Course or Event</label>
+							<select>
+								<option value="0" selected="selected">All courses and events</option>
+								<option value="1">Appetizers</option>
+								<option value="2">Breakfast</option>
+								<option value="3">Brunch</option>
+								<option value="4">Dinner</option>
+								<option value="5">Lunch</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-region">Region</label>
+							<select>
+								<option value="0" selected="selected">All regions</option>
+								<option value="1">African</option>
+								<option value="2">Asian</option>
+								<option value="3">Central American</option>
+								<option value="4">North American</option>
+								<option value="5">South American</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-skill">Skill Level</label>
+							<select>
+								<option value="0" selected="selected">All skill levels</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-holiday">Holidays</label>
+							<select>
+								<option value="0" selected="selected">All holidays</option>
+								<option value="1">Christmas</option>
+								<option value="2">Easter</option>
+								<option value="3">Halloween</option>
+								<option value="4">Thanksgiving</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-time">Total Time</label>
+							<select>
+								<option value="0" selected="selected">All times</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-equipment">Equipment</label>
+							<select>
+								<option value="0" selected="selected">All equipment</option>
+								<option value="1">Blender</option>
+								<option value="2">Grilling and BBQ</option>
+								<option value="3">Deep Fryer</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+					</div><!-- search-criteria -->
+					<div class="group footer">
+						<a class="clear-search" href="#null">Clear all fields</a>
+						<a class="button" href="search-results.html">Search</a>
+					</div>
+				</div><!-- advanced-search -->
+			</div><!-- search -->
+			<div id="primary-content">
+				<div id="social" class="group">
+					<div class="like"><a href="#" class="button"><span>Like</span></a><span class="summary">200 people like this.</span></div>
+				</div>
+				<ul id="recipe-actions" class="action-group group">
+					<li><a href="#null">Add to List</a></li>
+					<li><a href="#null">Save</a></li>
+					<li><a href="#null">Print</a></li>
+					<li><a href="#null">Email</a></li>
+					<li onmouseover="showSocial()" onmouseout="hideSocial()"><a href="#null">Share</a>
+						<ul id="share" style="display:none;">
+							<li><a class="facebook" href="#null">Facebook</a></li>
+							<li><a class="twitter" href="#null">Twitter</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="recipe-header" class="module">
+					<h2>Grilled Steak with Sauteed Mushrooms</h2>
+					<img class="content-thumbnail" alt="" src="images/mock_images/grilled_steak.jpg" />
+					<div class="details group">
+						<div class="rating group">
+							<span class="rating-text">Rated</span>
+							<span class="rating-control"></span>
+							<span class="rating-text">by 10 users</span>
+						</div>
+						<div id="recipe-attributes">
+							<dl>
+								<dt>Prep time:</dt>
+								<dd>30 minutes</dd>
+							</dl>
+							<dl>
+								<dt>Cook time:</dt>
+								<dd>45 minutes</dd>
+							</dl>
+							<dl>
+								<dt>Total time:</dt>
+								<dd>1 hour 15 minutes</dd>
+							</dl>
+							<dl>
+								<dt>Serves:</dt>
+								<dd>4</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<p id="recipe-description">If you want a really great steak for the barbecue grill, be sure to pick a cut with a good bit of marbling. Fat and age make for a great grilled steak!</li>
+				<div id="recipe-ingredients" class="section group">
+					<ul id="ingredient-actions" class="action-group group">
+						<li><a href="#null">Check All</a></li>
+						<li><a href="#null">Add Checked</a></li>
+						<li><a href="#null">Add All</a></li>
+					</ul>
+					<ul id="ingredient-list">
+						<li><input type="checkbox" name="ingredients" value="1" /><span>Trimmed 1-inch-thick strip sirloin, club or filet mignon steaks</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>Peppercorns</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>2 tsp salt</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>1/4 cup butter</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>1 tsp Worcestershire sauce</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>2 tbsp lemon juice</span></li>
+						<li><input type="checkbox" name="ingredients" value="1" /><span>2 oz. brandy, optional</span></li>
+					</ul>
+				</div>
+				<div id="recipe-instructions" class="section">
+					<ol>
+						<li>Use: Trimmed 1-inch-thick strip sirloin, club or filet mignon steaks</li>
+						<li>Crush don't grind: Peppercorns coarsely on a board with a pressing, rolling movement, using the bottom of a pan.</li> 
+						<li>Press the steaks into the crushed pepper and work it into both sides of the meat with the heel of your palm or with the flat side of a cleaver.</li>
+						<li>Sprinkle the bottom of a 9-inch skillet with: 2 teaspoons salt</li>
+						<li>When it begins to brown, put the steaks into the pan and brown uncovered over high heat.</li>
+						<li>Reduce to medium heat, turn steaks and cook to desired degree of rareness. In a separate pan, prepare: 	   
+							<ul>
+								<li>1/4 cup butter</li>
+	   						<li>1 teaspoon Worcestershire sauce</li>
+	   						<li>2 tablespoons lemon juice</li>
+							</ul>
+						</li>
+						<li>Remove steaks from the pan in which they have been cooked and discard the pan drippings. If you wish to flambe the steaks, page 155, do so with: (2 oz. brandy)</li>
+						<li>Serve the butter mixture separately.</li>
+					</ol>
+				</div>
+			</div><!-- primary-content -->
+			<div id="secondary-content" class="aside">
+				<div class="module">
+					<h2>Wine Pairings</h2>
+					<ul>
+						<li><a href="#">Straccali Chianti</a></li>
+						<li><a href="#">Fontanafredda 'Briccotondo' Barbera</a></li>
+						<li><a href="#">Cellole Chianti Classico Riserva</a></li>
+					</ul>
+				</div>
+				<div class="module">
+					<h2>Related Videos</h2>
+					<ul>
+						<li><a href="#">Grilling Steak</a></li>
+						<li><a href="#">Dry Rubs</a></li>
+						<li><a href="#">Marinades</a></li>
+					</ul>
+					<a class="more-link" href="#">more...</a>
+				</div>
+				<div class="module">
+					<h2>My Recipes</h2>
+					<ul>
+						<li><a href="#">BBQ Pork Ribs</a></li>
+						<li><a href="#">Teriyaki Chicken</a></li>
+						<li><a href="#">Grilled Rib Eye Steak</a></li>
+					</ul>
+					<a class="more-link" href="#">more...</a>
+				</div>
+				<div id="nutrition" class="module">
+					<h2>Nutritional Information</h2>
+					<em>Nutrition information is provided as a resource. Values will vary depending on specific ingredients used.</em>
+					<dl class="alternate">
+						<dt>Calories</dt><dd>1500</dd>
+					</dl>
+					<dl>
+						<dt>Carbohydrates</dt><dd>0g</dd>
+					</dl>
+					<dl class="alternate">
+						<dt>Cholesterol</dt><dd>15g</dd>
+					</dl>
+					<dl>
+						<dt>Fat</dt><dd>30g</dd>
+					</dl>
+					<dl class="alternate">
+						<dt>Protein</dt><dd>20g</dd>
+					</dl>
+					<dl>
+						<dt>Sodium</dt><dd>30mg</dd>
+					</dl>
+					<dl class="alternate">
+						<dt>Sugar</dt><dd>15g</dd>
+					</dl>
+					<a class="more-link" href="#">more...</a>
+				</div>
+			</div><!-- secondary-content -->
+		</div><!-- recipe-full-page -->
+		<div id="shopping-list" class="aside"></div>
+	</div><!-- container -->
+    <div id="footer"></div>
+</body>
+</html>

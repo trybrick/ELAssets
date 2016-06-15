@@ -1,0 +1,305 @@
+/*** chain-specific overrides for Food City (KVAT) 3-2-2009***/
+
+body 				{font-size:0.72em; height:100%; background:transparent; 
+				font-weight:normal; font-style:normal; font-family: "Lucida Grande",Arial,Verdana,sans-serif; color:black; margin-top:0; 
+				margin-left:0 ;padding-left:0; padding-right:0;}
+html				{height:100%; background: none white;}
+a:link,
+a:visited,
+a:active			{font-weight:bold; color:#5E80AA; text-decoration:none;}
+a:hover				{font-weight:bold; color:#5E80AA; text-decoration:underline;}
+h2				{color:#5E80AA;}
+
+/* layout
+--------------------------------------------------*/
+#container			{border:0; padding:0; background:white;}
+
+#main						{ margin-right:14px; }
+#sidebar, #recipesidebar	{ display:inline; margin:0; }
+
+#imgSubHeader			{ clear:both; float:left; }
+.pageHeader 			{ margin:0 0 25px; }
+
+#FeaturedRecipeTeaser h3, #FeaturedArticleTeaser h3, #AskTheChefTeaser h3, #CookingTipsTeaser h3 {color:black}
+
+
+/*** nav bar ***/
+#StoreMenu			{background-color:#5E80AA; color:yellow; }
+#StoreMenu li a:hover		{color:#FFFF66;}
+#nav-wrap 			{height:30px; padding:3px 0 0; background:#86ACD1 url(/Assets/182/Images/primary-nav-bg.jpg) repeat-x scroll left top;}
+#nav				{font-size:13px;letter-spacing:-0.03em;margin-left:10px;}
+#nav a 				{display:block;height:auto;margin:auto;width:auto;}
+#nav li li a 			{margin-left:0;}
+#nav li:hover			{background:#5E80AA;}
+
+/*** signin and signup page ***/
+#signinWelcomeText ul		{background:url('/Assets/182/Images/signin_welcome.jpg') no-repeat;}	
+div.InputControl img		{margin-left:100px;}
+.clear-border{border:none !important;}
+#SignUpPersonalInfo span, #DietaryPreferencesFullControl span {width:140px;}
+
+
+/*** featured recipe, weekly article, ask the chef, cooking tips ***/
+#FeaturedRecipeTeaser		{width:220px; background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x;}
+#FeaturedArticleTeaser		{width:220px; margin-left:15px; background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x;}
+#AskTheChefTeaser		{background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x; }
+#CookingTipsTeaser		{background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x; }
+#recipeVideoCenter		{float:left;width:210px;padding:0; margin-left:15px;clear:none;}
+#FeaturedArticleTeaser h2 a,
+#AskTheChefTeaser h2 a,
+#CookingTipsTeaser h2 a,
+#FeaturedRecipeTeaser h2 a,
+#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a	{color:#5E80AA;}
+
+/*** splash page ***/
+#AdPromo			{background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x;}
+#AdPromo p			{color:#FFFFFF;}
+
+/*** meal planner ***/
+#MealPlanner			{background:transparent url(/Assets/182/Images/page-bg-inverted.jpg) repeat-x;}
+
+/*** shopping list ***/
+#ShoppingListHeaderSmall 	{height:40px; background:#A3BBd7 url(/Assets/182/Images/small_shoplist_header.jpg);}
+#ShoppingList 			{color:white; background-color:#A3BBD7;}
+#ShoppingList table 		{float:left; border-bottom:1px solid white;}
+#ShoppingList table a, 
+#ShoppingList table input 	{color:white;}
+#ShoppingList td 		{border-bottom:1px solid white;}
+#FiveListButtons		{background-color:#A3BBd7; padding:20px; width: 260px;}
+#availablevarietiestop		{background:#5E80AA url(/Assets/Common/Images/avail_varieties_300_r1_c1.png) no-repeat scroll 0 0;}
+
+#ShoppingList table div.shopListItemSmall {color:white;}
+
+/* =Shopping List Icons */
+#ShoppingList #FiveListButtons a { background-image:url(/Assets/182/Images/ShopListButtons.gif); width:40px; padding:0; margin-left:15px; }
+#ShoppingList #FiveListButtons a.shoplistPrint { background-position:0 0; margin-left:0; }
+#FiveListButtons a.shoplistEmail { background-position:-40px 0; }
+#FiveListButtons a.shoplistLast { background-position:-80px 0; }
+#FiveListButtons a.shoplistSave { background-position:-120px 0; }
+#FiveListButtons a.shoplistManage { background-position:-160px 0; }
+
+#ShoppingList #FiveListButtons a.shoplistPrint:hover { background-position:0 -50px; }
+#FiveListButtons a.shoplistEmail:hover { background-position:-40px -50px; }
+#FiveListButtons a.shoplistLast:hover { background-position:-80px -50px; }
+#FiveListButtons a.shoplistSave:hover { background-position:-120px -50px; }
+#FiveListButtons a.shoplistManage:hover { background-position:-160px -50px; }
+
+#FiveListButtons a span  { text-indent:-9999px; }
+
+/*** manage list legend ***/
+#legend th			{background-color:#5E80AA;}
+
+/*** coupons grid ***/
+#tblCouponTopN			{border:2px solid #5E80AA; }
+#CouponList h3			{color:#5E80AA; }
+
+/*** 3-panel toolbox ***/
+#Department h3, #Aisles h3, #Category h3	{color:#5E80AA; }
+#InBetween1, #InBetween2			{color:#5E80AA; }
+
+/*** grid styles ***/
+#CategoryHeader h3		{color:#5E80AA; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+#Options th,.GridItem th			{text-align:left; background-color: #5E80AA; color: #FFFFCC; font-weight: bold;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#CircularAdText1_dlCategory h3	{color:#5E80AA;}
+#CircularAdGrid table 		{margin-top:0; border-collapse:collapse;}
+
+/*** recipe page ***/
+#RecipeCardTop					{width:100%; height: 52px; padding:0; background:none;}
+#RecipeCardMiddle				{background:none; background-color:white; }
+#RecipeCardBottom				{display:none;}
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe				{margin-top:12px;}
+
+/*** tabs **/
+#header				{font-size:85%; background:transparent url(/Assets/182/Images/bg_white.gif) repeat-x scroll center bottom;}
+#secondary-navigation li 			{padding-left:3px; color:#710101; margin-right:3px; font-weight:normal; background-image:url("/Assets/182/Images/left.gif");}
+#secondary-navigation a			{padding-right:7px; color:#710101; font-weight:normal; background-image:url("/Assets/182/Images/right.gif");}
+#secondary-navigation #current 		{color:#710101; font-weight:normal; background-image:url("/Assets/182/Images/left_on.gif");}
+#secondary-navigation #current a 		{color:#710101; font-weight:bold; background-image:url("/Assets/182/Images/right_on.gif");}
+#RecipeCardTop #secondary-navigation #current 	{color:#710101; font-weight:normal; background-image:url("/Assets/182/Images/left_on.gif");}
+#RecipeCardTop #secondary-navigation #current a 	{color:#710101; font-weight:normal; background-image:url("/Assets/182/Images/right_on.gif");}
+
+
+
+/*** headers ***/ /*** headers ***/ 
+ #ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,		
+#SavedRecipes h2,			
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#EmploymentPositions h1			{color:#5E80AA;}	
+
+/*** about us page ***/
+#StoreSelector					{background-color:#70A6A4; }
+#address,#map					{float:left;}
+#address						{background-color:#5E80AA;color:#FFFFFF;padding:0;text-align:center;}
+#addresscontent					{margin:80px 30px;text-align:left;height:105px;width:270px}
+#addresscontent	a				{color:inherit;}
+#about h3						{color:#5E80AA;border-bottom:solid 1px #000000;font-size:14px;}
+div.aboutContent				{width:650px;font-size:14px;float:left;clear:both;margin-bottom:20px;}
+div.aboutContent ul li			{line-height:2em;}
+#map							{border:solid 3px #5E80AA;}
+
+
+
+
+
+#wrapper {
+	width: 910px;
+	padding: 0px;
+}
+
+#wrapper p {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper input,#wrapper textarea,#wrapper select {	
+	font-size: 10px;
+	line-height: 1em;
+	border-width: 1px;
+	padding: 1px;
+	margin: 0px;
+}
+
+#wrapper img {
+	border:none;
+	display:inline;
+}
+.qmmc	{float:left; width:910px;}
+
+#banner {
+	height: 90px;
+	position:relative;
+}
+#bannerImg {
+	height: 90px;
+	width:574px;
+}
+#bannerLogo {
+	width: 574px;
+	float: left;
+}
+#finders {
+	width: 326px;
+	height: 90px;
+	float: left;
+	background-image: url(/Assets/182/Images/locator_search_bkg.jpg);
+	padding: 0px 0px 0px 10px;
+}
+#searchContainer1 {
+	width: 326px;
+	height: 44px;
+	margin: 10px 0px 0px 0px;
+	float: left;
+}
+#searchContainer2 {
+	width: 320px;
+	height: 24px;
+	margin: 4px 0px 0px 0px;
+	float: left;
+	background-image: url(/Assets/182/Images/searchBkg.jpg);
+}
+#storeLocator {
+	width: 130px;
+	height: 44px;
+	float: left;
+	background-image: url(/Assets/182/Images/locatorBkg2.jpg);
+	padding: 22px 0px 0px 10px;
+	background-repeat: no-repeat;
+}
+#personalizeCoupons {
+	width: 180px;
+	float: left;
+}
+#searchContainer {
+	float: left;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+}
+#searchGo {
+	width: 32px;
+	height: 24px;
+	float: right;
+}
+#slideshowContainer {
+	width: 825px;
+	height: 283px;
+}
+#slideshow {
+	width: 601px;
+	float: left;
+}
+#scrollContainer {
+	width: 85px;
+	height: 277px;
+	float: left;
+	background: url(/Assets/182/Images/layout/scroll.jpg);
+	padding-top: 6px;
+	padding-left: 119px;
+	padding-right: 20px;
+}
+#scroll1, #scroll2, #scroll3, #scroll4 {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999999;
+}
+#scroll1 p, #scroll2 p, #scroll3 p, #scroll4 p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	line-height: 12px;
+	padding: 8px 0px 8px 0px;
+}
+#scroll1 a, #scroll2 a, #scroll3 a, #scroll4 a, #scroll1 a:visited, #scroll2 a:visited, #scroll3 a:visited, #scroll4 a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+#scroll1 a:hover, #scroll2 a:hover, #scroll3 a:hover, #scroll4 a:hover {
+	text-decoration: none;
+	color: #006699;
+}
+
+
+#ChainRecipes	{display:inline;}
+
+/*** header ***/
+#StoreHeader			{position:relative; background: #d4e4f1 url(/Assets/182/Images/header-bg.jpg) repeat-x top left;}
+#StoreHeaderLogo		{margin:30px 0 10px 30px;}
+#StoreHeaderRight		{position:absolute;right:338px;top:32px;}
+
+
+/*** new coupons ***/
+img.headerTopN	{float:left; margin-bottom:24px}
+.couponsImage				{margin-top:-15px;}
+.couponsImage img			{margin:0;}
+
+.gridSwapLayout #help { background-image:url(/Assets/182/Images/coupons_help_icon.gif); height:20px; padding-left:25px; padding-top:2px; position:relative; top:-2px; }
+
+.ProductDisplay th {
+    color: #000000;
+    }
+
+

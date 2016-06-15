@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<AboutUs>
+<AboutUsContent>
+	<ul>
+		<li>Bakery - We offer custom cake decorating and computer cake imaging!</li>
+		<li>Dairy - Always fresh with the selection you need!</li>
+		<li>Floral - Fresh flowers and plants, seasonal merchandise, and FTD deliveries and wires!</li>
+		<li>Frozen Foods - All the variety with specialty ice creams and novelties!</li>
+		<li>Health &amp; Beauty - National Brands and Private Label products competitively priced to suit your needs!</li>
+		<li>Meat - Fresh Smokehouse and smoked specialties. Ask us for a special cut. We are the Meat People!</li>
+		<li>Produce - The freshest quality products and selection. Check out our local and worldwide organics!</li>
+		<li>Pharmacy - Full service, professional Pharmacists with delivery available!</li>
+	</ul>
+	<ul>
+		<li>Film Developing</li>
+		<li>Dry Clean</li>
+		<li>NSP/Xcel Payments</li>
+		<li>Ameritech Payments</li>
+		<li>Shoe Repair</li>
+		<li>Money Orders</li>
+		<li>Returns and More</li>
+	</ul>
+</AboutUsContent>
+	<ContentObjects>
+		<ContentObject>
+			<Name>stores</Name>
+			<Parameters />
+		</ContentObject>
+	</ContentObjects>
+</AboutUs>

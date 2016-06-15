@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<header>
+	<HeaderLogo>/Assets/##chainid##/Images/logo.jpg</HeaderLogo>
+	<TopLevelNavigation>
+		<MenuItem>
+			<Title>Home</Title>
+			<Link>##root##</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>History</Title>
+			<Link>##root##/Page.aspx?Display=40</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Departments</Title>
+			<Link>##root##/Page.aspx?Display=76</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Weekly Ads</Title>
+			<Link>##root##/Shop/WeeklyAd.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Recipes</Title>
+			<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Coupons</Title>
+			<Link>##root##/Shop/Coupons.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>News &#38; Holiday Menu</Title>
+			<Link>##root##/Page.aspx?Display=42</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Contact Us</Title>
+			<Link>##root##/Contact</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Employment</Title>
+			<Link>##root##/Employment</Link>
+		</MenuItem>
+	</TopLevelNavigation>
+	<ContentObjects>
+		<ContentObject>
+			<Name>stores</Name>
+			<Parameters />
+		</ContentObject>
+	</ContentObjects>
+</header>

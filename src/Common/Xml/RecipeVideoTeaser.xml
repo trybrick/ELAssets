@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<RecipeVideoTeaser>
+	<Image>/Assets/Common/Images/video_center_link.gif</Image>
+	<Link>/Recipes/RecipeVideos.aspx</Link>
+</RecipeVideoTeaser>

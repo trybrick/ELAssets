@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<header>
+<HeaderLogo>/Assets/##chainid##/Images/HeaderLogo.jpg</HeaderLogo>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>##root##</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Store Locator</Title>
+		<Link>##root##/StoreLocator.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>About Us</Title>
+		<Link>##root##/About-Us.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Weekly Ads</Title>
+		<Link>##root##/Shop/WeeklyAd.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Recipes</Title>
+		<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Coupons</Title>
+		<Link>##root##/Shop/Coupons.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Contact Us</Title>
+		<Link>##root##/Contact</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Employment</Title>
+		<Link>##root##/Employment</Link>
+	</MenuItem>
+</TopLevelNavigation>
+</header>

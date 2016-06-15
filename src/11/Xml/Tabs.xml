@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<tabs>
+	<tab class="weekly-ad">
+	    <url>/Shop/WeeklyAd.aspx</url>
+	    <text>Weekly Ads &amp; &lt;br&gt;Greensheets</text>
+	</tab>
+	<tab class="my-favorites">
+	    <url>/Shop/MyFavorites.aspx</url>
+	    <text>My&lt;br&gt;Favorites</text>
+	</tab>
+	<tab class="in-store-specials">
+	    <url>/Shop/Specials.aspx</url>
+	    <text>In-Store&lt;br&gt;Specials</text>
+	</tab>
+	<tab class="browse">
+	    <url>/Shop/Product.aspx</url>
+	    <text>Browse&lt;br&gt;the Aisles</text>
+	</tab>
+	<tab class="store-coupons">
+	    <url>/Shop/FeaturedProducts.aspx</url>
+	    <text>Store&lt;br&gt;Coupons</text>
+	</tab>
+	<tab class="coupons">
+	    <url>/Shop/Coupons.aspx</url>
+	    <text>##manufacturercoupontotalsavings## in &lt;br&gt;Manufacturer Coupons</text>
+	</tab>
+	<tab class="recipe-center">
+	    <url>/Recipes/RecipeCenter.aspx</url>
+	    <text>Recipe&lt;br&gt;Center</text>
+	</tab>	
+	<tab class="cooking-videos">
+	    <url>/Recipes/RecipeVideos.aspx</url>
+	    <text>Cooking&lt;br&gt;Videos</text>
+	</tab>	
+</tabs>

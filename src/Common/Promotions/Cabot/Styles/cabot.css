@@ -1,0 +1,119 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+#promoLP-wrap { 
+	background: url(../Images/cabot_wrap_bg.png) repeat-y #edf5f7;
+	float:left;
+	width:100%; 
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,.3);-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.3);box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+}
+
+#promoLP-header	{
+	float: left;
+	width: 100%;
+}
+	
+#promoLP-header .promoLP-logo { 
+	float: left;
+	width: 100%;
+}
+
+#promoLP-header .promoLP-logo img {
+	min-width: 100%;
+}
+
+#promoLP-header h1 { 
+	display: none; 
+}
+
+#promoLP-header h2{
+	border-bottom:none;text-align:center;
+}
+	
+#promoLP-main { 
+	background: url(../Images/cabot_main_bg.png) repeat-x;
+	float:left;
+	width: 95%;
+	padding: 15px;
+}
+	
+#promoLP-main .promoLP-product {
+	float:left;
+	margin:5px;
+	padding:10px;
+	text-align: center;
+	width:250px;
+}
+	
+#promoLP-main .promoLP-product img {
+	display: inline;
+	max-height:175px;
+}
+
+#promoLP-main .promoLP-product h3 {
+	border: none;
+	color: #c41a37;
+	display:block;
+	font-size: 21px;
+	margin:10px 0;
+	padding:0;
+}
+
+#promoLP-main .promoLP-product p {
+	margin:10px 0;
+}
+	
+#promoLP-main .promoLP-button { 
+	background:#c41a37 url(../Images/buttonbg.png) 0 0 repeat-x; 
+	border:2px solid #910c0b;
+	border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	display: block; 
+	font:16px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin:5px auto;
+	padding:.2em 1em;
+	text-decoration: none;
+	width:120px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	letter-spacing: 0.05em;
+}
+
+#promoLP-main #promoLP-product-wrap1, #promoLP-main #promoLP-product-wrap2{
+	background: #fdffc0;
+	margin: 10px 0;
+	height: 210px;
+	width: 270px;
+	padding:20px 5px 0;
+}
+
+#promoLP-bottom-graphic {
+	float:left;
+	width:100%;
+}
+
+#promoLP-bottom-graphic img {
+	margin: 0 auto;
+}
+	
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #promoLP-main .sargento-button {
+	background-image:none;
+}
+	
+* html .group {
+	height:1%;
+}

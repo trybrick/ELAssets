@@ -1,0 +1,412 @@
+﻿/* Coborns
+--------------------------------------------------*/
+html {
+    background: #ffffff;
+    height: 100%;
+}
+body {
+    font-size: 0.7em;
+    height: 100%;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Verdana, Arial, sans-serif;
+    color: black;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+a:link,
+a:visited,
+a:active {
+    font-weight: bold;
+    color: #800000;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #800000;
+    text-decoration: underline;
+}
+h2 { color: #800000 }
+ /* layout
+--------------------------------------------------*/
+#banner-advertisement {margin-left: 466px;}
+/* static content
+--------------------------------------------------*/
+#StaticContentPage {
+    display: inline;
+    clear: both;
+    float: left;
+	padding-top:10px;
+}
+#TopNavigation {
+    width: 220px;
+    margin: 5px auto;
+}
+#LeftNav { margin-top: 1em }
+#LeftNav a {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em;
+}
+#imgSubHeader {
+    clear: both;
+    float: left;
+}
+
+/* available varieties
+--------------------------------------------------*/
+#availablevarieties:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#availablevarietiestop { background: #800000 url("../../Common/Images/avail_varieties_300_r1_c1.png") 0 0 no-repeat }
+#availablevarietiestop h2 {
+    color: #FFFFFF;
+    display: block;
+    font-size: 110%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+}
+
+/* header
+--------------------------------------------------*/
+#StoreHeader { background: transparent url(/Assets/75/Images/HeaderBG.jpg) no-repeat top left }
+#LoginBox a {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 4px;
+    width: 100%;
+}
+#LoginBox a.button {
+    margin-left: 48px;
+    width: 80px;
+}
+#LoginProfileLinkDiv a {
+    clear: none;
+    display: inline;
+    float: none;
+}
+#StoreHeaderRightTop {
+    border: 3px solid #5B0000;
+    margin-bottom: 10px;
+}
+#StoreHeaderLogo { display: none }
+
+/* top navigation
+--------------------------------------------------*/
+#nav { background-color: #800000 }
+#nav { padding: 0 0 0 45px }
+#nav ul { padding: 0 }
+#nav ul,
+#nav li a,
+#nav li a:visited,
+#nav li a:active {
+    color: #FFFFFF;
+    font-size: 95%;
+    text-decoration: none;
+}
+#nav li a:hover { color: #FFFF00 }
+#nav li ul { background: #800000 }
+#nav li:hover { background-color: #5b0000 }
+
+/* featured teasers
+--------------------------------------------------*/
+#FeaturedRecipeTeaser,
+#FeaturedArticleTeaser {
+    width: 245px;
+    margin: 0;
+    float: left;
+    display: inline;
+}
+#FeaturedRecipeTeaser { background: transparent url(/Assets/75/Images/lime_green_background.jpg) repeat-x }
+#FeaturedRecipeTeaser h3 { color: #FFFFFF }
+#FeaturedArticleTeaser { background: transparent url(/Assets/75/Images/bright_yellow_background.jpg) repeat-x }
+#FeaturedArticleTeaser h3 { color: #000000 }
+#FeaturedArticleTeaser h2 a { color: #000 }
+#AskTheChefTeaser { background: transparent url(/Assets/75/Images/lime_green_background.jpg) repeat-x }
+#AskTheChefTeaser h3 { color: #FFFFFF }
+#CookingTipsTeaser { background: transparent url(/Assets/75/Images/bright_yellow_background.jpg) repeat-x }
+#CookingTipsTeaser h3 { color: #FFFFFF }
+#CookingTipsTeaser h2 a { color: #000 }
+#SignOutPage #sidebar #FeaturedArticleTeaser.recipe { background: url("/Assets/75/Images/bright_yellow_background.jpg") repeat-x scroll 0 0 transparent !important; }
+
+/* splash page
+--------------------------------------------------*/
+#SplashContainer {
+    height: 305px;
+    margin-bottom: 0;
+}
+#AdPromo {
+    width: 220px;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+#AdPromo img {
+    display: block;
+    float: left;
+    margin: 0;
+}
+#CobornsDelivers {
+    float: left;
+    width: 48%;
+    height: 210px;
+    background: white;
+}
+#CobornsDelivers img { margin: 40px auto }
+
+#MealPlanner { background: transparent url(/Assets/75/Images/beige_gradient.jpg) repeat-x }
+#MealPlanner a { color: #003366 }
+
+/* coupons
+--------------------------------------------------*/
+#tblCouponTopN { border: 2px solid #800000 }
+#CouponList h3 { color: #800000 }
+
+/* product page
+--------------------------------------------------*/
+#Department h3,
+#Aisles h3,
+#Category h3 { color: #800000 }
+#InBetween1,
+#InBetween2 { color: #800000 }
+
+#CategoryHeader h3 { color: #800000 }
+.GridItem {
+    clear: both;
+    text-align: left;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+.GridItem th {
+    text-align: left;
+    background-color: #800000;
+    color: #FFFFCC;
+    font-weight: bold;
+}
+.GridAlternatingItem {
+    text-align: left;
+    background-color: #CCCCCC;
+    color: #000000;
+    font-weight: bold;
+}
+#CircularAdText1_dlCategory h3 { color: #800000 }
+#CouponList table table th { background-color: #800000 }
+
+/* recipe
+--------------------------------------------------*/
+#RecipeCardTop {
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    background: none;
+}
+#RecipeCardMiddle {
+    background: none;
+    background-color: #f4F1cf;
+}
+#RecipeCardBottom { display: none }
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe { margin-top: 12px }
+
+/* headings
+--------------------------------------------------*/
+#ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,
+#UpdatePanelPage  h1,
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,
+#DietaryPreferencesTip h1,
+#privacy h2,
+#recipecontent h3,
+#CtrlDivSubTitle h2,
+#FeaturedArticleFull h3,
+#ContactUs h2,
+#EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,
+#EmploymentPositionsHeader h1,
+#EmploymentPositions h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2,
+#ContactUs hr,
+#ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists span a { color: #800000 }
+#CircularLists .text-only-link a { width: auto }
+
+/* employment header
+--------------------------------------------------*/
+#EmploymentLogo {
+    clear: both;
+    margin-bottom: 12px;
+    float: left;
+    width: 100%;
+    height: 250px;
+    background: transparent url(/Assets/75/Images/careers.jpg);
+}
+
+/* deli page
+--------------------------------------------------*/
+.DeliContent {
+    width: 910px;
+    margin: 0 auto;
+    float: left;
+    background: #FFFFCC;
+}
+.PartyPlatter {
+    float: left;
+    background: #FFFFCC;
+}
+.PartyPlatter td { padding: 1em }
+.DeliMain {
+    color: #000;
+    width: 75%;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    float: left;
+    clear: both;
+    display: inline;
+}
+.DeliMain h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-decoration: underline;
+    border: none;
+}
+.DeliMain p {
+    width: 60%;
+    font-size: 120%;
+    margin-top: 1em;
+}
+.DeliHeader { float: left }
+.DeliHeader p.HeaderText {
+    float: left;
+    font-size: 120%;
+    width: 270px;
+    padding: 2em;
+}
+.DeliContent img { float: left }
+.DeliMain ol,
+.DeliMain ul {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* shopping list
+--------------------------------------------------*/
+#savedshoppinglists h2 {
+    color: #C02407;
+    border-bottom: 1px solid #800000;
+}
+
+#legend th { background-color: #800000 }
+
+#ShoppingListHeaderSmall {
+    background: url(/Assets/75/Images/Coborns_shopping_list_top.jpg) no-repeat;
+    height: 109px;
+}
+div#ShoppingList div#ShoppingListItemsDisplay {
+    margin: 0 0;
+    min-height: 91px;
+}
+#FiveListButtons {
+    background: url(/Assets/75/Images/Coborns_shopping_list_bottom.jpg) no-repeat;
+    min-height: 78px;
+    padding-top: 12px;
+}
+#FiveListButtons a {
+    display: inline;
+    border: 0 none;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0px;
+}
+#FiveListButtons a.shoplistPrint span,
+#FiveListButtons a.shoplistEmail span,
+#FiveListButtons a.shoplistLast span,
+#FiveListButtons a.shoplistSave span,
+#FiveListButtons a.shoplistManage span { margin-top: 37px }
+#FiveListButtons a.shoplistPrint {
+    background: url(/assets/75/images/ShopList_print.png) no-repeat;
+    margin-left: 20px;
+}
+#FiveListButtons a.shoplistEmail {
+    background: url(/assets/75/images/ShopList_email.png) no-repeat;
+    margin-left: 12px;
+}
+#FiveListButtons a.shoplistLast {
+    background: url(/assets/75/images/ShopList_lastlist.png) no-repeat;
+    margin-left: 12px;
+}
+#FiveListButtons a.shoplistSave {
+    background: url(/assets/75/images/ShopList_save.png) no-repeat;
+    margin-left: 20px;
+}
+#FiveListButtons a.shoplistManage {
+    background: url(/assets/75/images/ShopList_manage.png) no-repeat;
+    margin-left: 12px;
+}
+#FiveListButtons a:link,
+#FiveListButtons a:visited,
+#FiveListButtons a:active {
+    font-family: "Trebuchet MS",Trebuchet, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+#ManageList #ShoppingListItemsDisplay { background: transparent url(/Assets/75/Images/Coborns_shopping_list_middle_large.jpg) repeat-y }
+#trashcanSmall { margin-left: 6px }
+#ShoppingList table div.shopListItemSmall {
+    font-family: "Trebuchet MS",Trebuchet, Verdana, sans-serif;
+    color: #000;
+}
+#ShoppingList td { border-bottom: none }
+#ShoppingListHeaderLarge {
+    background: transparent url(/Assets/75/Images/Coborns_shopping_list_top_large.jpg) no-repeat;
+    height: 64px;
+}
+#ManageList h3 {
+    margin-left: 22px;
+    font-family: "Trebuchet MS",Trebuchet, Verdana, sans-serif;
+}
+#ManageList input { margin-left: 20px }
+#ManageList .category {
+    margin-left: 9px;
+    width: 571px;
+}
+#ManageList .Item { font-family: "Trebuchet MS",Trebuchet, Verdana, sans-serif; }
+#ShoppingListMain { background: transparent url(/Assets/75/Images/Coborns_shopping_list_middle.jpg) top right }
+#AddYourOwnItems input {
+    margin-left: 15px;
+    width: 196px;
+}
+
+/* slideshow
+--------------------------------------------------*/
+#playpause {
+    left: 10px;
+    right: auto;
+    bottom: 10px;
+}
+#signUpPop1,
+#signUpPop2,
+#signUpPop3 { top: 201px }
+.sidebarFeaturesText { font-size: 1.2em }
+
+/* IE 6
+--------------------------------------------------*/
+* html #LoginBox a { display: inline }

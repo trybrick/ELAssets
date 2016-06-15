@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ChangeDietaryPreferences>
+	<Title>My Dietary Preferences are applied to all searches.</Title>
+	<Link>##root##/Profile/SignUp.aspx/</Link>
+	<ClickHere>Click Here</ClickHere>
+	<EndLine>to change.</EndLine>
+</ChangeDietaryPreferences>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+    
+    $("a").click(function(event){
+   event.preventDefault();
+   $(this).hide("slow");
+ });
+    
+    
+    
+ });
+    
+  
+    </script>
+    
+    <style type="text/css">
+    a.test { font-weight: bold; }
+
+    
+    </style>
+    
+    
+  </head>
+  <body>
+    <a href="http://jquery.com/">jQuery</a>
+    
+   <script type="text/javascript">
+//Write a "Good morning" greeting if
+//the time is less than 10
+
+var d=new Date();
+var time=d.getHours();
+
+if (time<10)
+  {
+  document.write("<b>Good morning</b>");
+  }
+else
+{
+	document.write("Good Day!");
+	}
+</script>
+    
+    
+  </body>
+</html>

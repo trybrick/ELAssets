@@ -1,0 +1,211 @@
+﻿/* Haggen
+--------------------------------------------------*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* grid */ 
+.container_12 .grid_12,.container_16 .grid_16{width:940px}
+.container_12 .prefix_3, .container_16 .prefix_4 {padding-left:240px;}
+.container_16 .grid_3 {width:160px;}
+.grid_3, .grid_9, .grid_12 {display:inline;float:left;margin-left:10px;margin-right:10px;position:relative;}
+
+/* general
+--------------------------------------------------*/
+html	{background:#dfcdae url("/Assets/163/Images/headerHaggen.jpg") 0 0 repeat-x;}
+body{font:16px; font-family: Georgia, Times, "Times New Roman", serif;}
+a:focus{outline:1px dotted invert}
+hr 	{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}
+h2	{color:#333;}
+h3	{font-size:16px;color:#666;line-height:24px;}
+h4	{font-size:16px;line-height:24px;}
+h5	{font-size:16px;line-height:24px;}
+h6	{font-size:16px;line-height:24px;}
+ol	{list-style:decimal}
+ul	{list-style:circle}
+li	{margin-left:24px;line-height:24px;text-align:justify;margin-bottom:24px;}
+th	{background-color:#00694D;}
+.compact li {margin-bottom:0;}
+@font-face {
+    font-family: 'League';
+    src: url('https://s3.amazonaws.com/media.haggen.com/static/fonts/league.eot');
+    src: url('https://s3.amazonaws.com/media.haggen.com/static/fonts/league.eot?#iefix') format('embedded-opentype'),
+         url('https://s3.amazonaws.com/media.haggen.com/static/fonts/league.woff') format('woff'),
+         url('https://s3.amazonaws.com/media.haggen.com/static/fonts/league.ttf') format('truetype'),
+         url('https://s3.amazonaws.com/media.haggen.com/static/fonts/league.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#Promotion { width:auto; }
+#CouponsPage .pageHeaderContainer {background:transparent url(/Assets/Common/images/coupons_copy.gif) no-repeat scroll 0 0; clear:both;float:left;height:60px;width:590px;}
+#gridLayout {float:left;width:590px;}
+.couponsPageGrid #gridLayout {float:left;width:480px;}
+
+/* layout
+--------------------------------------------------*/
+#banner-advertisement {top: 153px; position: absolute;}
+#container			{ background:transparent none; width:1161px; padding:0;}
+#HeaderTop			{float:left; width:850px; height:115px; background:#FFF url(/Assets/163/images/WhereBestMealsBeginHeader.jpg) no-repeat top left;}
+.main-wrapper {background-color: #dfcdae; padding:0 40px; width:920px;}
+#main				{width:620px;}
+#sidebar, #recipesidebar { margin:10px 0 0; }
+
+/* store locator
+--------------------------------------------------*/
+#storeInfoZip 			{width:48%}
+#StoreLocator .storeInfoZip {width:48%}
+
+/* header
+--------------------------------------------------*/
+#navigation-list li a			{float:left; display:block; width:103px; height:30px;background-repeat:no-repeat;text-indent:-99999px;}
+#navigation-list li a:hover		{background-position:0 -30px;} 
+#navigation-list li.nav-item				{display:inline;}
+ul#navigation-list      {list-style-type:none; float:left; clear:both; margin:0; padding:0; border-bottom:3px solid #AC574A; overflow:hidden; height:30px;}
+
+#StoreHeaderRight		{background-color:#FBF8ED;border:2px solid #92352F;font-size:14px;width:275px;margin-bottom:10px;padding:10px;text-align:center;}
+.header_wrapper {width:100%;min-width:1000px;}
+.header {padding: 10px 0; position: relative; height: 97px; width:930px;}
+
+/* top level (horizontal) navigation */
+#top-nav {padding-left:100px;}
+#top-nav a:hover, #top-nav a:hover > a {background-color: #4d9342;}
+.nav_wrapper {position: relative;min-width:1000px;z-index:21;}
+#top-nav ul {padding:0;margin:0;list-style:none;color:#fff;z-index:50;width:100%;background-color:#b32317;font-weight:bold;}
+#top-nav a {display:block;color:#fff;font-family:League, Arial, Helvetica, sans-serif;}
+#top-nav a:hover {color:#ffffff;border-bottom:none;text-decoration:none; background-color: #3a7730;}
+#top-nav li {text-transform:uppercase;font-weight:normal;font-family:League, Arial, Helvetica, sans-serif;float:left;margin:0;position:relative;z-index:20;padding:3px 5px;text-align:left;line-height:30px;}
+#top-nav > ul > li {padding:3px 5px 3px 5px;}
+#top-nav > ul > li > a {padding-right:40px;}
+#top-nav li:hover {color:#ffffff; background-color: #4d9342;}
+#top-nav li ul {position:absolute;left:-999em;z-index:30;}
+#top-nav li:hover ul {left:0;top:33px;background-color:#4d9342;}
+#top-nav li ul li { float:none; font-weight: normal; font-size:15px; padding-right:0;}
+#top-nav li ul li a {font-family: Georgia, Times, "Times New Roman", serif;text-transform:none;font-weight:normal;text-decoration:none;padding: 0 5px;font-size: 16px;}
+a:link, a:visited, a:active, a:hover {font-weight: normal;}
+/* weekly ad
+--------------------------------------------------*/
+#availablevarietiestop		{background:#016a43 url(/Assets/Common/Images/avail_varieties_300_r1_c1.png) no-repeat scroll 0pt 0pt;}			
+#availablevarietiesmiddle		{border-top:3px solid #AC574A;} 
+
+/* shopping list
+--------------------------------------------------*/
+#ShoppingListHeaderSmall		{background-image:url(/Assets/163/images/ShoppingListHeader.gif); height:39px;}
+#ShoppingListHeaderLarge		{background:url(/Assets/163/images/largeshoplist.gif) repeat-x;}
+
+a.Coupons				{background-image: url(/Assets/163/images/tabImages/Coupons.png);}
+a.WeeklyAd				{background-image: url(/Assets/163/images/tabImages/WeeklyAd.png);}
+a.Recipes				{background-image: url(/Assets/163/images/tabImages/Recipes.png);}
+a.Videos				{background-image: url(/Assets/163/images/tabImages/Videos.png);}
+a.Browse				{background-image: url(/Assets/163/images/tabImages/Browse.png);}
+a.Locator				{background-image: url(/Assets/163/images/tabImages/StoreLocator.png);}
+
+#legend th	{background-color:#00694D;}
+
+#RecipeCardMiddle, #RecipeCardBottom {background-color:#FBF8ED;}
+#RecipeCardMiddle		{padding-top:12px}
+#TopRecipesTeaser		{float:left;}
+#ChangeDietaryPreferences		{display:none;}
+#ChainRecipes	{clear:both; float:left; margin-bottom:12px;}
+#ChainRecipes h2	{margin-left:0;}
+#MealPlanner.recipe h2 a,
+#FeaturedRecipeTeaser.recipe h2 a,
+#FeaturedRecipeTeaser p a,
+#TopRecipesTeaser h2,
+#QuickSearch h2,
+#ChangeDietaryPreferences p a,
+#recipecontent h3,
+#StoreLocator h2,
+a:link, a:visited, a:active			{color:#00694D;}
+#FeaturedArticleTeaser {background:transparent url(/Assets/163/Images/dark_green_gradient.jpg) repeat-x;}
+#SavedRecipes				{display:none;}
+#QuickSearch h3, #ChangeDietaryPreferences p				{color:#000;}
+#TopRecipesTeaser p a		{color:#92352F; border-bottom:1px dotted #92352F;}
+#CtrlDivSubTitle h2, #QuickSearch ul a, #category h3, h2, #Department h3, #Aisles h3, #Category h3, #MealPlanner li a		{color:#92352F;}
+#InBetween1, #InBetween2	{color:#00694D;}
+#TitleBar, #CurrentList		{border:none; border-bottom: 1px dotted #666;padding-bottom:1em;margin-bottom:1em;}
+#FeaturedArticleTeaser p, #FeaturedRecipeTeaser p, #CookingTipsTeaser p, #AskTheChefTeaser p, #FeaturedArticleTeaser a, #FeaturedRecipeTeaser a, #CookingTipsTeaser a, #AskTheChefTeaser a	{font-size:11px;line-height:12px}
+#ShoppingList #ShoppingListItemsDisplay {font-size:12px;}
+#FeaturedRecipeTeaser h3, #FeaturedArticleTeaser h3, #AskTheChefTeaser h3, #CookingTipsTeaser h3 {font-size:13px;line-height:16px;}
+#ManageList {width: 600px;}
+#ManageList .Item {font-size: 14px;}
+
+/*** Coupons Page ***/
+.couponsIntroCopy	{font-size:12px;}
+.GridMode2 .couponsSavings,.GridMode2 .couponsStoreSavings {font-family:helvetica,arial,sans-serif;font-size:100%;}
+.couponsPageGrid .CategoryDisplayContainer h3 {font-size:14px;line-height:normal;}
+.gridSwapLayout #help {font-size:12px;}
+
+/*** Weekly Ad Page ***/
+#WeeklyAdPage p 				{ font-size:12px; }
+#PagerTop li, #PagerBottom li	{ margin-left:0;margin-bottom:0; }
+
+/* secondary (vertical) navigation */
+#secondary-navigation { border-bottom:none;float:left;}
+#secondary-navigation ul { padding:0;margin:0 0 20px 0;width:100%;list-style:none;}
+#secondary-navigation li, #secondary-navigation #current {background:none;padding:0;border-bottom:1px solid #005643;color:#005643;font-size:16px;line-height:18px;}
+#secondary-navigation li a, #secondary-navigation #current a {background:none;color:#005643;display:block;font-weight:bold;margin:6px 15px;padding:0;text-decoration:none;}
+#secondary-navigation #current a {color: #B32317;}
+#secondary-navigation li a:hover, #secondary-navigation #current a:hover { color: #ffffff; border-bottom: none;}
+
+/* footer */
+#footer-outer { background: url('/Assets/163/Images/bodybg.jpg') repeat left top; padding-top:10px; width:100%;}
+#footer-outer .footer {margin-left:auto;margin-right:auto;width:960px}
+#footer-outer .footer h2 {font-family:League, Arial, Helvetica, sans-serif;color:#EEEEEE;font-size:24px;font-weight:normal;line-height:24px;margin-bottom:0; text-transform:uppercase;}
+#footer-outer .footer ul {margin-bottom:24px;}
+#footer-outer .footer li {color:#D4C2A5;font-size:15px;line-height:20px;list-style:none outside none;margin-bottom:0;margin-left:0;}
+#footer-outer .footer li a {color:#D4C2A5;font-weight:normal;text-decoration:none;}
+#footer-outer .footer li a:hover {color:#ffffff;}
+#footer-outer .links {float:left;padding-top:5px;}
+#footer-outer .links > li {display:inline;padding-right:30px;}
+
+.footer-bottom { background:#fff url("/Assets/163/Images/bodybg.jpg") no-repeat 9px top; font-size:0.7em;font-weight:normal;height:82px; margin:0 auto 10px auto; padding:10px 0; width:1160px;}
+.footer-bottom p {color:#999999; font-size:10px; margin-bottom:0; margin-left:45px; padding-bottom:0; width:945px; }
+.footer-bottom p a {color:#89C737;font-weight:normal;text-decoration:none;}
+.footer-bottom p a:hover {border-bottom:1px solid #A0DF50;color:#336600;}
+.legal {width: 235px !important;margin: 0;color: #819270;font-size:11px;text-align:right;line-height:18px;float:right;}
+a.socNetButton {
+	display:inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius:8px;
+	background-color:#819270;
+	background-position:center center;
+	background-repeat:no-repeat;
+	margin:0 3px;
+	background-size: 25px;
+}
+a.socNetButton:hover {
+	background-color:#d4c2a5;
+}
+/* sign up page */
+#signinWelcomeText ul {font-size:100%;}
+#signinWelcomeText li {line-height:normal;margin-bottom:0;margin-left:0;}
+#SignUpV2 label {font-size:1em;}
+.sidebarFeaturesText {font-size:1em;}
+.fieldInputs input[type="text"], .fieldInputCard input[type="text"], .fieldInputs input[type="password"], .fieldInputCard input[type="password"] {font-size:1em;}
+
+/* store locator page */
+#storeZipEntryForm h2 {border:none;font-size:14px;margin-bottom:10px;}
+#storeZipEntryForm p {font-size:12px;}
+#GoogleMapCanvas {margin:80px 0 0;}
+#StoreLocatorePage {margin-left:65px;}
+
+/* recipe center */
+#Recipe {font-size:12px;}
+#recipetitle h2 {font-size:150%;}
+#NutritionTable {margin:12px 0 12px 12px;}
+#RecipeCardMiddle ul, #Article ul {list-style:none;}
+#RecipeCardMiddle li, #SearchResults li, .videoWrapper li {font-size:12px;font-weight:normal;line-height:normal;margin-bottom:0;margin-left:0;text-align:left;}
+#RecipeCardMiddle h3 {line-height:normal;}
+#ArticlePage	{float:none;width:930px;}
+#ArticlePage h2	{margin:10px 0;}
+.NutritionLine	{font-size:10px;}
+#FeaturedRecipeTeaser.recipe h2 a {line-height: 117%;}
+
+/* browse the aisles */
+div#Department select, div#Aisles select, div#Category select {font-size:10px;}
+
+/* email list */
+#EmailForm div, #EmailForm h3 {clear:both;}
+#EmailForm #sendButton, #EmailForm #cancelButton {clear:none;}
+#EmailShoppingList span.txtLabel {font-size:.8em;}

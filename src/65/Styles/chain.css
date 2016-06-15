@@ -1,0 +1,148 @@
+/* gary's foods
+--------------------------------------------------*/
+html				{height:100%; background:transparent url(/Assets/65/Images/background_brown.jpg) repeat-x fixed;}
+body 				{font-size:0.7em; height:100%; background:transparent; font-weight:normal; font-style:normal; font-family: Verdana, Arial, Helvetica, sans-serif; color:black; margin-top:0; margin-left:0 ;padding-left:0; padding-right:0;}
+
+a:link,
+a:visited,
+a:active			{font-weight:bold; color:#C02407; text-decoration:none;}
+a:hover				{font-weight:bold; color:#C02407; text-decoration:underline;}
+
+h2				{color:#C02407;}
+
+#imgSubHeader			{clear:both; float:left;}
+#StaticContentPage		{width:720px;}
+
+/* header 
+--------------------------------------------------*/
+#StoreHeader				{background: transparent url(/Assets/65/Images/HeaderBG.jpg) no-repeat top right;}
+#StoreHeaderRightTop 		{border: solid 3px #C02407; }
+#StoreInfoDiv .StoreHours
+{
+	vertical-align:baseline;
+	float:left;
+	margin-left:5px;
+	padding:3px 0pt;
+	width:auto;
+}
+#StoreMenu {font-size:108%;}
+
+
+/* nav bar 
+--------------------------------------------------*/
+#nav			{background-color:#C02407; color:yellow; }
+#nav ul			{ margin-left:26px; }
+#nav li a		{ color:#fff; }
+#nav li a:hover	{ color:#FFFF66; text-decoration:none; }
+#nav li ul			{background: #C02407;font-size: inherit;width: 12em;}
+
+/* home
+--------------------------------------------------*/
+#AdPromo			{background:transparent url(/Assets/65/Images/large_purple_gradient.jpg) repeat-x;}
+#AdPromo p			{color:#FFFFFF;}
+
+/* featured teasers
+--------------------------------------------------*/
+#FeaturedRecipeTeaser		{background:transparent url(/Assets/65/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser		{background:transparent url(/Assets/65/Images/red_gradient.jpg) repeat-x; }
+#AskTheChefTeaser			{background:transparent url(/Assets/65/Images/large_olive_gradient.jpg) repeat-x; }
+#CookingTipsTeaser			{background:transparent url(/Assets/65/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser h3,
+#AskTheChefTeaser h3,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3	{color:#FFFFFF;}
+#MealPlanner			{background:transparent url(/Assets/65/Images/orangebrown_gradient.jpg) repeat-x;}
+
+/* shopping list 
+--------------------------------------------------*/
+#savedshoppinglists h2		{color:#C02407; border-bottom:1px solid #C02407;}
+#legend th			{background-color:#C02407;}
+
+/* coupons
+--------------------------------------------------*/
+#tblCouponTopN			{border:2px solid #C02407; }
+#CouponList h3			{color:#C02407; }
+
+/* products 
+--------------------------------------------------*/
+#Department h3, #Aisles h3, #Category h3	{color:#C02407; }
+#InBetween1, #InBetween2			{color:#C02407; }
+#CategoryHeader h3		{color:#C02407; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+.GridItem th			{text-align:left; background-color: #C02407; color: #FFFFCC; font-weight: bold;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#CircularAdText1_dlCategory h3	{color:#C02407;}
+
+/* recipe page 
+--------------------------------------------------*/
+#RecipeCardTop					{width:100%; height:42px; padding:0; background:none;}
+#RecipeCardMiddle				{background:none; background-color:#f4F1cf; }
+#RecipeCardBottom				{display:none;}
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe				{margin-top:12px;}
+
+/* headings
+--------------------------------------------------*/
+ #ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,		
+#SavedRecipes h2,			
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#EmploymentPositions h1			{color:#C02407;}
+#departments h3,
+#services h3					{border-bottom:1px solid #000000;color:#C02407;}	
+
+h3.pageHeading					{color:#C02407; border-bottom:2px solid #C02407;}
+
+/* about us page 
+--------------------------------------------------*/
+#mainContentLeftNav 			{float:left;}
+#StoreSelector					{background-color:#70A6A4; }
+#storeinformation				{height:309px;width:260px;padding:2em;background-color:#C02407;float:left;}
+#storeinformation h2			{color:#FFFFFF;text-align:center;border-bottom:none;}
+#storeinformation a				{color:#FFFFFF;}
+#storeinformation p				{color:#FFFFFF;}
+#AboutUsDiv						{clear:both; height:auto; text-align:center; width: 100%;}
+#navigation						{float:left; clear:both; width:100px; text-align:left;}
+#navigation a					{display:block;margin:1em 0;}
+
+/* department page 
+--------------------------------------------------*/
+#departments,#services					{width:100%;float:left;}
+#departments img, #services img				{float:left;}
+
+/* Kids Page 
+--------------------------------------------------*/
+#kidsheader						{float:none;width:100%;text-align:center;}
+#kidsheader img					{clear:both;margin:0 auto;}
+#kidsheader p					{font-family:"Comic Sans MS",Arial,sans-serif;color:#08158A;font-size:15.6px;font-weight:bold;}
+div.link						{float:left;margin:10px;}
+#links							{width:100%;}
+
+/* Links Page 
+--------------------------------------------------*/
+#Links							{clear:both;}
+#Links .Link					{padding:10px;margin-left:7%;font-family:Arial, Helvetica, sans-serif;font-size:10pt;}
+
+/* Registration Page 
+--------------------------------------------------*/
+#signUpPop1, #signUpPop2, #signUpPop4 {top:190px;}
+#SignUpV2 #navigation {clear:none;width:250px;}

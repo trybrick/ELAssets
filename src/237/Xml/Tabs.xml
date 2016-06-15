@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tabs>
+	<tab>
+		<url>/Shop/WeeklyAd.aspx</url>
+		<text>Weekly&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+		<url>/Shop/Coupons.aspx</url>
+		<text>##manufacturercoupontotalsavings## in Coupon&lt;br&gt;Savings</text>
+	</tab>
+	<tab>
+		<url>/Shop/MyFavorites.aspx</url>
+		<text>My&lt;br&gt;Favorites</text>
+	</tab>
+	<!--
+		<tab>
+			<url>/Shop/PersonalizedSpecials.aspx</url>
+			<text>My&lt;br&gt;Specials</text>
+		</tab>
+	-->
+	<tab>
+		<url>/Shop/Product.aspx</url>
+		<text>Browse&lt;br&gt;the Aisles</text>
+	</tab>
+	<tab>
+		<url>/Shop/Specials.aspx</url>
+		<text>In Store&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+		<url>/Shop/PreviousOrders.aspx</url>
+		<text>Order&lt;br&gt;History</text>
+	</tab>
+</tabs>

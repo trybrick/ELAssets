@@ -1,0 +1,386 @@
+<?xml version='1.0'?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" encoding="UTF-8"/>
+
+<xsl:template match="/">
+	<style>
+		@import url("http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/landingPageStyles.css");
+	</style>
+	<div id="conAgra-content">
+
+	<div id="conAgra-header"> 
+    <a href="javascript:void(0);"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/header.jpg" alt="Imagine the Possibilities | The best meals are made with tomatoes. Click to get the recipes." width="692" height="221" /></a>
+    </div>
+    
+    <div id="conAgra-sideBar"> 
+    <a href="javascript:void(0);"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/sideAd.jpg" alt="Add flavor to every recipe.  Click to get coupon." width="173" height="524" /></a>
+    </div>
+    
+    <div id="textLeft">
+    <p class="tl_header">Find Recipes Where Delicious Meets Easy</p>
+    <p class="tl_text">There are so many different types of canned tomatoes,<br />
+						and so many ways to make them a part of your menu.<br />
+						Unlock a huge variety of cooking possibilities by keeping<br />
+						diced or stewed tomatoes on hand.</p>
+    </div>
+  	<div id="featureRecipe">
+    <p class="fr_header"><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67836">Featured Recipe</a></p>
+    <p class="fr_subhead">Try the flavor of the month!</p>
+    <a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67836"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/featureRecipeImg.jpg" alt="Featured Recipe" width="132" height="131" class="fr_img" /></a>
+    <p class="fr_title"><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67836">White Bean &amp; Tomato Salad</a></p>
+    </div>
+    
+    <div id="recipeBar">
+   	  <div id="conAgra-meat">
+        <p class="m_header"><a href="javascript:void(0);" onclick="$('meatRecipes').show(); $('sandwichRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide')">Meat &amp; Seafood</a></p>
+        <a href="javascript:void(0);" onclick="$('meatRecipes').show(); $('sandwichRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide')"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/meat.png" width="124" height="109" alt="Meat and Seafood" class="m_img" /></a>
+        <p class="m_cta"><a href="javascript:void(0);" onclick="$('meatRecipes').show(); $('sandwichRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide')">Get the recipes <span class="webding">4</span></a></p>
+        </div>
+        
+        <div id="divider1">
+        <img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/divider.png" width="3" height="132" alt="Divider" />
+        </div>
+        
+        <div id="conAgra-sandwich">
+        <p class="sa_header"><a href="javascript:void(0);" onclick="$('sandwichRecipes').show(); $('meatRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide');">Sandwiches,<br />Salads &amp; Pizza</a></p>
+        <a href="javascript:void(0);" onclick="$('sandwichRecipes').show(); $('meatRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide');"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/sandwich.jpg" width="127" height="95" alt="Sandwiches, Salads and Pizza" class="sa_img"/></a>
+        <p class="sa_cta"><a href="javascript:void(0);" onclick="$('sandwichRecipes').show(); $('meatRecipes','sauceRecipes','pastaRecipes','soupRecipes').invoke('hide');">Get the recipes <span class="webding">4</span></a></p>
+        </div>
+        
+        <div id="divider2">
+        <img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/divider.png" width="3" height="132" alt="Divider" />
+        </div>
+        
+        <div id="conAgra-sauce">
+        <p class="sm_header"><a href="javascript:void(0);" onclick="$('sauceRecipes').show(); $('meatRecipes','sandwichRecipes','pastaRecipes','soupRecipes').invoke('hide');">Sauce &amp; Marinade</a></p>
+        <a href="javascript:void(0);" onclick="$('sauceRecipes').show(); $('meatRecipes','sandwichRecipes','pastaRecipes','soupRecipes').invoke('hide');"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/sauce.jpg" width="127" height="95" alt="Sauce and Marinade" class="sm_img"/></a>
+        <p class="sm_cta"><a href="javascript:void(0);" onclick="$('sauceRecipes').show(); $('meatRecipes','sandwichRecipes','pastaRecipes','soupRecipes').invoke('hide');">Get the recipes <span class="webding">4</span></a></p>
+        </div>
+        
+        <div id="divider3">
+        <img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/divider.png" width="3" height="132" alt="Divider" />
+        </div>
+        
+        <div id="conAgra-pasta">
+        <p class="p_header"><a href="javascript:void(0);" onclick="$('pastaRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','soupRecipes').invoke('hide');">Pasta &amp; Rice</a></p>
+        <a href="javascript:void(0);" onclick="$('pastaRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','soupRecipes').invoke('hide');"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/pasta.jpg" width="127" height="95" alt="Pasta and Rice" class="p_img" /></a>
+        <p class="p_cta"><a href="javascript:void(0);" onclick="$('pastaRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','soupRecipes').invoke('hide');">Get the recipes <span class="webding">4</span></a></p>
+        </div>
+        
+        <div id="divider4">
+        <img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/divider.png" width="3" height="132" alt="Divider" />
+        </div>
+        
+        <div id="conAgra-soup">
+        <p class="so_header"><a href="javascript:void(0);" onclick="$('soupRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','pastaRecipes').invoke('hide');">Soup &amp; Chili</a></p>
+        <a href="javascript:void(0);" onclick="$('soupRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','pastaRecipes').invoke('hide');"><img src="http://upload.gsngrocers.com/elvs/Promotions/ConAgra/ConAgraTomatoProject/images/soup.png" width="127" height="95" alt="Soup and Chili" class="so_img" /></a>        
+        <p class="so_cta"><a href="javascript:void(0);" onclick="$('soupRecipes').show(); $('meatRecipes','sandwichRecipes','sauceRecipes','pastaRecipes').invoke('hide');">Get the recipes <span class="webding">4</span></a></p>
+        </div>
+    </div>
+	
+    <div id="meatRecipes" style="display: none;">
+    <h3>Meat &amp; Seafood Recipes</h3>
+    <p class="hideText"><a href="javascript:void(0);" onclick="$('meatRecipes').hide();">Hide Recipes</a></p>
+    <table>
+    	<tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=39084">Artichoke &amp; Tomato Chicken</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=13282">Chicken Fingers Parmesan</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=35617">Tuscan Lamb Chop Skillet</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=10739">Barbecued Pork Sandwiches</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5321">Barbecue-Style Ribs</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=35617">Barbecue-Style Sandwiches</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=10026">Barbecued Pot Roast</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=13352">Italian-Style Hamburger Steaks</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=34328">Chicken With Orzo</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=39571">Parmesan Burger</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=3420">Shrimp Jambalaya</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=8382">Quick Jambalaya</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=34328">Shrimp and Feta Pasta</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=36072">Mediterranean Shrimp With Feta</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=55462">Mediterranean Shrimp With Feta</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=6939">Shepherd's Pie with Mixed Vegetables</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=2117">Pot Roast</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67835">Chili Lime Shrimp</a></td>
+        </tr>
+    </table>
+    </div>
+    
+    <div id="sandwichRecipes" style="display: none;">
+    	<h3>Sandwiches, Salads &amp; Pizza Recipes</h3>
+         <p class="hideText"><a href="javascript:void(0);" onclick="$('sandwichRecipes').hide();">Hide Recipes</a></p>
+        <table>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48621">Really Sloppy- Sloppy Joes</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5356">Sloppy Joes</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td>
+        <td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=18643">Sloppy Joes</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=40683">Farmhouse Pizza</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=36405">Tex-Mex Hot n' Spicy Sloppy Joes</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67836">White Bean and Tomato Salad</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=37837">Easy Personal Pizza</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67838">Mediterranean Salad</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67839">Country Side Italian Salad</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67840">Beany Mini Pizza</a></td>
+        </tr>
+        </table>
+    </div>
+    
+    <div id="sauceRecipes" style="display: none;">
+        <h3>Sauce &amp; Marinade Recipes</h3>
+         <p class="hideText"><a href="javascript:void(0);" onclick="$('sauceRecipes').hide();">Hide Recipes</a></p>
+        <table>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=19990">Chunky Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=10430">Spaghetti Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=19991">Tomato Sauce With Basil</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=12051">Barbecue Sauce For Spareribs</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=20104">Barbecue Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=38038">Ratatouille Pasta Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=3696">Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=4034">Chunky  Microwave Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=9065">Barbecue Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67843">Surprisingly Simple Meat Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=34826">Fresh Tomato Sauce with Capers &amp; Olives</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=21112">Barbecue Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=1102">Tomato-Basil Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5349">Spaghetti Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5381">Fettuccine with Marinara Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=8297">Italian Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=8820">Italian Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=11976">Basic Tomato Sauce</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=21111">Tomato Sauce</a></td>
+        </tr>
+        </table>
+    </div>
+    
+    <div id="pastaRecipes" style="display: none;">
+    <h3>Pasta &amp; Rice Recipes</h3>
+     <p class="hideText"><a href="javascript:void(0);" onclick="$('pastaRecipes').hide();">Hide Recipes</a></p>
+    <table>
+    	<tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5363">Chili-Mac Skillet</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=13277">Jamaican Macaroni</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=49226">Spanish Rice with Green Chilies</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=1546">Confetti Macaroni Bake</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=11409">Budapest Beef Goulash</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=38725">Cavatappi Amatriciana </a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=45235">Baked Ziti with Sausage</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=45252">Cavatappi with Barbecued Chicken</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=3780">Eggplant and Ziti Parmesan</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=46674">Beef Bake</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48055">Skillet Chicken, Rice, and Red Bean Cumin Chili</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48620">Mexican Lasagna</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48752">Zucchini Lasagna</a></td>
+        </tr>
+        <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=37884">Moroccan Macaroni Pie</a></td>
+        </tr>
+    </table>
+    </div>
+    
+    <div id="soupRecipes" style="display: none;">
+    <h3>Soup &amp; Chili Recipes</h3>
+     <p class="hideText"><a href="javascript:void(0);" onclick="$('soupRecipes').hide();">Hide Recipes</a></p>
+    <table>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=19724">Manhattan Clam Chowder</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=1556">Can Opener Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=67844">Beefy Chili Skillet</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=5609">Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=15098">Cream of Tomato Soup</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=35626">Shiitake Mushroom Tomato Bisque</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48526">Tomato &amp; Bean Soup</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=13198">Vegetable Veal Stew</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=35533">Meatball Soup</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=45101">Chicken Gumbo</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=21763">Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48646">Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=48948">College Football Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=1488">Pasta E Fagioli</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=8407">Manhattan Clam Chowder</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=8410">Hamburger Minestrone</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=21755">Texas Chili</a></td>
+     </tr>
+     <tr>
+        <td width="100" height="100">Image Placeholder</td><td><a href="http://luckysupermarkets.gsnrecipes.com/Recipes/RecipeFull.aspx?recipeid=37918">Creole Gumbo Pot</a></td>
+     </tr>
+    </table>
+    </div>
+    
+</div>
+
+</xsl:template>
+
+</xsl:stylesheet><!-- Stylus Studio meta-information - (c) 2004-2007. Progress Software Corporation. All rights reserved.
+
+<metaInformation>
+	<scenarios>
+		<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" url="ConAgraTomatoProject.xml" htmlbaseurl="" outputurl="" processortype="saxon8" useresolver="no" profilemode="0" profiledepth="" profilelength=""
+		          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal"
+		          customvalidator="">
+			<advancedProp name="sInitialMode" value=""/>
+			<advancedProp name="bXsltOneIsOkay" value="true"/>
+			<advancedProp name="bSchemaAware" value="false"/>
+			<advancedProp name="bXml11" value="false"/>
+			<advancedProp name="iValidation" value="0"/>
+			<advancedProp name="bExtensions" value="true"/>
+			<advancedProp name="iWhitespace" value="0"/>
+			<advancedProp name="sInitialTemplate" value=""/>
+			<advancedProp name="bTinyTree" value="true"/>
+			<advancedProp name="bWarnings" value="true"/>
+			<advancedProp name="bUseDTD" value="false"/>
+			<advancedProp name="iErrorHandling" value="fatal"/>
+		</scenario>
+	</scenarios>
+	<MapperMetaTag>
+		<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/>
+		<MapperBlockPosition></MapperBlockPosition>
+		<TemplateContext></TemplateContext>
+		<MapperFilter side="source"></MapperFilter>
+	</MapperMetaTag>
+</metaInformation>
+-->

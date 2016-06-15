@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Birds Eye</Brand>
+	<BrandSiteUrl>http://www.birdseye.com/</BrandSiteUrl>
+	<ManufacturerCode>14500</ManufacturerCode>
+	<DepartmentID>10341</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS>##root##/Assets/Common/Promotions/BirdsEye/Styles/BirdsEye.css</CSS>
+	<ImagePath>##root##/Assets/Common/Promotions/BirdsEye/Images/</ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt="">birdseye_header.jpg</HeaderImage>
+	<PageDescriptionText>Steamfresh&#174; Chef's Favorites</PageDescriptionText>
+	<FooterImage></FooterImage>
+	<ProductGroup>
+		<Title>Roasted Red Potato and Green Beans</Title>
+		<Image alt="">Roasted-Red-Potato-and-Green-Beans.jpg</Image>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246341414;70975631;g?</ClickCode>
+			<ProductCode>01401</ProductCode>
+			<Description>Whole green beans and lightly roasted baby red potatoes, made with the restaurant-quality ingredients you love, such as Parmesan cheese and olive oil. Good source of fiber.</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Lightly Sauced Primavera Vegetable Risotto</Title>
+		<Image alt="">Lightly-Sauced-Primavera-Vegetable-Risotto.jpg</Image>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246342079;70975631;o?</ClickCode>
+			<ProductCode>01429</ProductCode>
+			<Description>Creamy risotto with sweet green peas and tender carrots, as well as light notes of Parmesan cheese. No preservatives.</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Lightly Sauced Creamed Spinach</Title>
+		<Image alt="">Lightly-Sauced-Creamed-Spinach.jpg</Image>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246342078;70975631;n?</ClickCode>
+			<ProductCode>01427</ProductCode>
+			<Description>All natural and totally delicious for a steakhouse favorite at home.</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Lightly Sauced Mushroom &amp; Green Bean Risotto</Title>
+		<Image alt="">Lightly-Sauced-Mushroom-Green-Bean-Risotto.jpg</Image>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246342077;70975631;m?</ClickCode>
+			<ProductCode>01428</ProductCode>
+			<Description>Risotto made rich with savory mushrooms and the crunch of cut green beans. No preservatives.</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+</LandingPage>

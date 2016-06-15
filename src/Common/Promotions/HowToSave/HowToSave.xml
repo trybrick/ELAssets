@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<LandingPage>
+	<Stylesheet>/Assets/Common/Promotions/HowToSave/style.css</Stylesheet>
+	<ImagePath>/Assets/Common/Promotions/HowToSave/images/</ImagePath>
+	<Section>
+		<Title>Get the things you need on sale.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>We have as many as 5,000 specials at any given time. Our website lets you search them all, and it selects the sale items most relevant to you.</BodyText>
+		<Link></Link>
+	</Section>
+	<Section>
+		<Title>Build a meal plan around our specials.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>Using specials as the foundation for your recipes means you save on the large budget items and have fun with new recipes or old favorites. You can plan most, or all, of your weekly meals, using our recipe database. Planning your meals with our website means you won&#39;t forget things, and more important, you can build meals around the items that are on special – items you probably can&#39;t find in the circulars or ads, but that are on special nonetheless.</BodyText>
+		<Link></Link>
+	</Section>
+	<Section>
+		<Title>Plan in advance to save trips, time, energy and money.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>When you use our website to plan a week&#39;s meals and shopping, your planning time is repaid and more with saved time at the store and no missed ingredients. Your store visit is more efficient because the list is in aisle-order. And every mile you save by saving a trip saves you money too - 50&#162; to $1 a mile depending on the car you drive.</BodyText>
+		<Link></Link>
+	</Section>
+	<Section>
+		<Title>Get all the coupon deals.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>Our website lets you search for the deals that you want out of thousands available, and it selects the coupon deals that are the most relevant to your shopping. Best of all, your coupons print out with your shopping list, so there is no clipping, no hassle at checkout. It&#39;s like free money.</BodyText>
+		<Link></Link>
+	</Section>
+	<Section>
+		<Title>Stock up on staples on sale.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>When you see deals, stock up and save down the road. Invest in the things you&#39;ll always use when they are on sale, and enjoy the savings.</BodyText>
+		<Link></Link>
+	</Section>
+	<Section>
+		<Title>Build a &#39;smart pantry&#39; for inexpensive impromptu meal solutions.</Title>
+		<Heading></Heading>
+		<Image></Image>
+		<BodyText>This is where you can be creative. There is a large selection of &#39;staple&#39; items you can keep on hand so you can put together an impromptu, easy, healthy unplanned meal without another trip to the store. Dry pasta, olive oil, cereal, canned tomatoes, canned beans, canned meats, canned and frozen vegetables, spicy sauces, dried cheeses, dry beans, and other items keep for weeks or months. With them you can put together an impromptu and tasty meal for a few dollars, and save a trip to the store or restaurant.</BodyText>
+		<Link></Link>	
+	</Section>
+</LandingPage>
+

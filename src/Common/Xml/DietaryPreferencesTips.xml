@@ -1,0 +1,59 @@
+<DietaryPreferencesList>
+  <DietaryPreference>
+    <Preference>Vegetarian</Preference>
+    <Definition>no meat (beef, pork, poultry)</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Vegan</Preference>
+    <Definition>no animal products- beef, pork, poultry, fish, eggs, dairy (milk, cheese)</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Kosher</Preference>
+    <Definition>food that conforms to strict Jewish biblical laws.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Always exclude these ingredient(s)</Preference>
+    <Definition>examples: nuts, olives, fish, dairy products</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Calorie</Preference>
+    <Definition>A unit of energy-producing potential equal to this amount of heat that is contained in food and released upon oxidation by the body.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Carbohydrate</Preference>
+    <Definition>Any of a group of organic compounds that includes sugars, starches, cellulose, and gums and serves as a major energy source.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Total Fat</Preference>
+    <Definition>Fat Free - Contains less than 0.5 grams of fat per serving Low Fat - Contains less than 3 grams of fat per serving</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Saturated Fat</Preference>
+    <Definition>A fat, most often of animal origin, that is solid at room temperature and whose fatty acid chains cannot incorporate additional hydrogen atoms. An excess of these fats in the diet is thought to raise the cholesterol level in the bloodstream. Saturated Fat Free - Contains less than 0.5 grams of saturated fat per serving</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Low Saturated Fat</Preference>
+    <Definition>Contains less than 1 gram of saturated fat per serving</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+   <Preference>Cholesterol</Preference>
+    <Definition>A white crystalline substance found in animal tissues and various foods, that is normally synthesized by the liver and is important as a constituent of cell membranes and a precursor to steroid hormones. Its level in the bloodstream can influence the pathogenesis of certain conditions, such as the development of atherosclerotic plaque and coronary artery disease. Cholesterol Free - Contains less than 2 mg of cholesterol per serving Low Cholesterol - Contains less than 95 mg of cholesterol per serving</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Calcium</Preference>
+    <Definition>The fifth most abundant element in the earth's crust and an important component of most plants and animals.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Iron</Preference>
+    <Definition>Present in food systems in three oxidation states: the elemental form (FE0), ferrous iron (Fe+2), and ferric iron.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Dietary Fiber</Preference>
+    <Definition>Dietary fiber, often called roughage, is that part of cereals and grains, vegetables, fruits, beans, nuts and seeds that people cannot digest. Including more fiber-containing foods in your diet may reduce the risk of major chronic diseases such as cancer and coronary heart disease.</Definition>
+  </DietaryPreference>
+  <DietaryPreference>
+    <Preference>Sodium</Preference>
+    <Definition>Common table salt Sodium Free - Contains less than 5 mg of sodium per serving</Definition>
+  </DietaryPreference>
+</DietaryPreferencesList>
+

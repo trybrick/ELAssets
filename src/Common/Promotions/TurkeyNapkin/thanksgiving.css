@@ -1,0 +1,88 @@
+
+body {}
+
+a img{border: 0px none;}
+
+#turkeywrap {
+	background-color: #E5DBD1;
+	min-height: 600px;
+	width: 600px;
+	margin:auto;}
+#turkeytop {
+	background-image: url(turkeytop.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color:
+	width: 600px;
+	height: 455px;
+}
+	
+#turkeywrap h1 {
+	font-size: 18px;
+	font-family: "Georgia", "Times";
+	font-style: italic;
+	font-weight: normal;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #47362F;
+	letter-spacing: 2px;
+	line-height: 1.4em;
+	width: 535px;
+}
+
+#turkeywrap img{
+	padding: 20px 20px 30px 30px;
+}
+.turkeydirtop {
+	background-image: url(dirtop.png);
+	width: 535px;
+	height: 40px;
+	margin-left: 30px;	
+}
+
+.turkeydir{
+	margin-top: -1px;
+	padding-top:0px;
+	width: 534px;
+	margin-left: 30px;
+	background-color: white;
+	border-left: 1px solid #DBC2A9;
+	position:relative;
+	display:block;
+}
+
+.turkeydir ol{
+	font-size: 12px;
+	font-family: "Georgia", "Times";
+	font-style: italic;
+	font-weight: normal;
+	color: #47362F;
+	letter-spacing: 1.5px;
+	line-height: 1.4em;
+	margin-top:0px;
+	padding: 10px 20px 10px 40px;
+}
+
+.turkeydir li{
+	padding-bottom: 10px;
+	margin-top:0px;
+}
+
+.turkeyvideotop {
+	background-image: url(dirtop.png);
+	width: 535px;
+	height: 40px;
+	margin-left: 30px;
+	margin-top: 20px;	
+}
+
+.turkeydir object{
+	margin-left: 25px;
+	margin-top: 40px;
+	margin-bottom:30px;
+}
+
+#turkeyvideomessage h1{
+	margin: 20px;
+	padding-bottom: 20px;
+}

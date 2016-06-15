@@ -1,0 +1,114 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+#vlasic-wrap { 
+	background-color:#fff; 
+	width:590px; 
+	float: left;
+}
+
+#vlasic-header,
+.vlasic-product {
+	background: none #fff; ;
+}
+
+
+#vlasic-header	{
+	text-align: center;
+}
+	
+#vlasic-header img { 
+	display: inline; 
+	padding-top: 20px;
+}
+	
+#vlasic-main {
+	font-family: "Arial", Arial, Helvetica, sans-serif;
+	background-color:#d3edf8; 
+}
+	
+#vlasic-main h2{
+	clear:none;
+	font: 18px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color: #0579a6;
+	border:none;
+	float:left;
+	width: 60%;
+}
+
+#vlasic-main p{
+	float:left;
+	width: 60%;
+}
+	
+.vlasic-product-row {
+	width: 100%;
+	clear:both;
+	float:left;
+}	
+
+.vlasic-product {
+	clear:left;
+	width: 100%;
+	height: 240px;
+	padding-top: 15px;
+}
+	
+#vlasic-main .vlasic-product img {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+}
+
+	
+#vlasic-main .two-column .vlasic-product {
+	float:left;
+}
+	
+#vlasic-main .vlasic-button { 
+	background:#c41a37 url(../../../Images/button_shine_30.png) left 50% repeat-x; 
+	border:1px solid #c41a37;
+	border-radius:4px;
+	color:#fff;
+	display: block; 
+	font:18px Arial, Helvetica, sans-serif;
+	margin:1em auto;
+	padding:.2em 0;
+	text-decoration: none;
+	width:120px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	text-align: center;
+	float:left;
+}
+	
+#vlasic-footer p {
+	text-align: center;
+	color: #777;
+}
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #vlasic-main .vlasic-button {
+	background-image:none;
+}
+	
+* html .group {
+	height:1%;
+}
+	
+* html #vlasic-main .vlasic-product-row {
+	background-image: none;
+}

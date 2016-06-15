@@ -1,0 +1,425 @@
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.slider.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/jquery.rating.js"></script>
+<script type="text/javascript" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/recipe-search.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+
+
+<script>
+$(document).ready(function() {	
+	$(function() {
+		$( "#RecipeHomeTabs" ).tabs();
+	});
+	
+//Links
+	$('a.recipe-full-link').click(function(){
+		$('#RecipeCenterContent').load('ajax/recipecenter/recipefull.html');
+	});
+	
+	$('a.menu-link').click(function(){
+		$('#RecipeCenterContent').load('ajax/recipecenter/menu.html');
+	});
+	
+	$('a.article-link').click(function(){
+		$('#RecipeCenterContent').load('ajax/recipecenter/article.html');
+	});
+	
+	$('a#searchResultsButton').click(function(){
+		$('#RecipeCenterContent').load('ajax/recipecenter/recipesearchresults.html');
+		$('div#advancedSearchContainer').slideUp();
+	});
+//Advanced Search
+	$('a.advanced-search-link').click(
+		function(){
+			$('div#advancedSearchContainer').slideToggle();
+	
+	});
+	
+	
+
+//Featured Slides
+	$(function(){
+    	$("#RecipeFeatured").slides({
+    				play: 5000,
+    				hoverPause: true,
+    				pause: 2500
+    				});    		
+    });
+
+});
+
+</script>
+
+<style>
+	@import url('http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Styles/recipecenter.css');
+	@import url('http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Styles/jquery.rating.css');
+</style>
+<div class="RecipeCenterLoader">
+<div id="RecipeCenterWrapper" class="gsn-recipecenter">
+	<div id="RecipeCenterHeader" class="gsn-app-header">
+		<h1>Recipe Center</h1>
+		
+		<label for="recipesearch" class="search-label">Search</label>
+		<input type="text" id="recipesearch" class="recipe-search-box" value="Search Recipe Center for Recipes, Articles, and Videos"/>
+		
+		<a class="advanced-search-link">Advanced Search <img class="advanced-search-arrow" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/arrow_down.png" /> </a>
+		
+<! =========================== Begin Advanced Search ============================== -->		
+		
+		<div id="advancedSearchContainer" style="display:none;">
+				
+				<div class="search-container">
+					<div class="search-option">
+						<label for="mealtype">Meal Type</label>
+						<select name="Meal Type" title="Meal Type" id="mealtype">
+						<option>Breakfast</option>
+						<option>Lunch</option>
+						<option>Dinner</option>
+						<option>Snacks/Appetizer</option>
+						<option>Brunch</option>
+						</select>
+					</div>
+					<div class="search-option">
+						<label for="cuisinetype">Cuisine Type</label>
+						<select name="Meal Type" title="Meal Type" id="cuisinetype">
+							<option>American</option>
+							<option>Chinese</option>
+							<option>Japanese</option>
+							<option>Korean</option>
+							<option>French</option>
+						</select>
+					</div>
+					<div class="search-option">
+						<label for="mainingredient">Main Ingredient</label>
+						<input name="Meal Type" title="Meal Type" id="mainingredient">
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="calorie-amt">Calories</label>
+							<input type="text" id="calorie-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="calorie-range"></div>
+					
+						<p id="slidecals" class="sliding"></p>
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="cholesterol-amt">Cholesterol</label>
+							<input type="text" id="cholesterol-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="cholesterol-range"></div>
+					
+						<p id="slidechol" class="sliding"></p>
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="cooktime-amt">Cholesterol</label>
+							<input type="text" id="cooktime-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="cooktime-range"></div>
+					
+						<p id="slideCookTime" class="sliding"></p>
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="skill-amt">Skill Level</label>
+							<input type="text" id="skill-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="skill-range"></div>
+					
+						<p id="slideskill" class="sliding"></p>
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="fat-amt">Total Fat</label>
+							<input type="text" id="fat-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="fat-range"></div>
+					
+						<p id="slidefat" class="sliding"></p>
+					</div>
+					<div class="recipe-slider-input">
+						<p>
+							<label for="carb-amt">Carbohydrates</label>
+							<input type="text" id="carb-amt" style="border:0; color:#f6931f; font-weight:bold;"/>
+						</p>
+						<div id="carb-range"></div>
+					
+						<p id="slidecarb" class="sliding"></p>
+					</div>
+					<!--
+					
+			
+				</div>
+				<div class="search-container">
+					<label for="">Vegetarian</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegetarian" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegetarian" value="no"/>
+							<p>No</p>
+						</div>
+						
+					<label for="">Vegan</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegan" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegan" value="no" />
+							<p>No</p>
+						</div>
+							
+							
+					<label for="trackprot">Protein</label>
+					<div class="search-slider" id="trackprot">
+						<div id="trackprot_handle_min" class="sliderHandle left"></div>
+  						<div id="trackprot_handle_max" class="sliderHandle right"></div>
+						<div id="trackprot_slider_span" class="span"></div>
+					</div>
+						<p id="slideprot" class="sliding"></p>
+					
+					
+					
+					<label for="tracksalt">Sodium</label>
+					<div class="search-slider" id="tracksalt">
+						<div id="tracksalt_handle_min" class="sliderHandle left"></div>
+  						<div id="tracksalt_handle_max" class="sliderHandle right"></div>
+						<div id="tracksalt_slider_span" class="span"></div>
+					</div>
+						<p id="slidesalt" class="sliding"></p>-->
+						
+				</div>
+				<div id="searchButtons">
+					<a class="button" href="#" id="searchResultsButton">
+						<span>Search Recipes</span></a>
+					<a class="button" href="#">
+						<span>Apply Settings to My Profile</span></a>
+				</div>
+			</div>
+<! =========================== End Advanced Search ============================== -->
+		
+		
+		
+	</div>
+	<div id="RecipeCenterContent">
+		<script>
+			
+		
+		</script>
+		
+		<div id="RecipeFeatured" class="featured-slider">
+			<div class="slides_container">
+				<div class="slide">
+					<h2>Featured Article: <span class="title">Visiting an Apple Orchard</span></h2>
+					<img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/featured_recipe_slide.jpg" alt="Apples in a bin"/>
+				</div>
+				<div class="slide" style="display:none;">
+					<h2>Featured Recipe: <span class="title">Apple Galette with a Ginger Glaze</span></h2>
+					<img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/featured_recipe_slide.jpg" alt="Apples in a bin"/>
+				</div>
+			</div>
+		</div>
+		<div id="RecipeHomeTabs" class="gsn-box-tabs">
+			<ul>
+			<li><a href="#tabs-1">My Savings</a></li>
+			<li><a href="#tabs-2">My Current List</a></li>
+			<li><a href="#tabs-3">My Recipes</a></li>
+			<li><a href="#tabs-4">Ask the Chef</a></li>
+			</ul>
+			<div id="tabs-1" class="home-tabs my-savings">
+				<div class="recipe-teaser recipe-teaser-sponsored">
+					<a href="#" class="recipe-full-link">
+						<img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star1" type="radio" class="star" disabled="disabled"/>
+						<input name="star1" type="radio" class="star" disabled="disabled"/>
+						<input name="star1" type="radio" class="star" disabled="disabled"/>
+						<input name="star1" type="radio" class="star" disabled="disabled"/>
+						<input name="star1" type="radio" class="star" disabled="disabled" checked="checked"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link">
+						<img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star2" type="radio" class="star" disabled="disabled"/>
+						<input name="star2" type="radio" class="star" disabled="disabled"/>
+						<input name="star2" type="radio" class="star" disabled="disabled"/>
+						<input name="star2" type="radio" class="star" disabled="disabled" checked="checked"/>
+						<input name="star2" type="radio" class="star" disabled="disabled"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link">
+						<img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star3" type="radio" class="star" disabled="disabled"/>
+						<input name="star3" type="radio" class="star" disabled="disabled"/>
+						<input name="star3" type="radio" class="star" disabled="disabled"/>
+						<input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/>
+						<input name="star3" type="radio" class="star" disabled="disabled"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star4" type="radio" class="star" disabled="disabled"/>
+						<input name="star4" type="radio" class="star" disabled="disabled"/>
+						<input name="star4" type="radio" class="star" disabled="disabled"/>
+						<input name="star4" type="radio" class="star" disabled="disabled"/>
+						<input name="star4" type="radio" class="star" disabled="disabled" checked="checked"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<a href="#" class="more-link">More Ideas Based on your stores' savings...</a>
+			</div>
+			<div id="tabs-2" class="home-tabs my-recipes">
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star6" type="radio" class="star"/>
+						<input name="star6" type="radio" class="star"/>
+						<input name="star6" type="radio" class="star"/>
+						<input name="star6" type="radio" class="star"/>
+						<input name="star6" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star7" type="radio" class="star"/>
+						<input name="star7" type="radio" class="star"/>
+						<input name="star7" type="radio" class="star"/>
+						<input name="star7" type="radio" class="star"/>
+						<input name="star7" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star8" type="radio" class="star"/>
+						<input name="star8" type="radio" class="star"/>
+						<input name="star8" type="radio" class="star"/>
+						<input name="star8" type="radio" class="star"/>
+						<input name="star8" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star9" type="radio" class="star"/>
+						<input name="star9" type="radio" class="star"/>
+						<input name="star9" type="radio" class="star"/>
+						<input name="star9" type="radio" class="star"/>
+						<input name="star9" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<a href="#" class="more-link">More Ideas Based on your items...</a>
+			</div>
+			<div id="tabs-3" class="home-tabs my-current-list">
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star10" type="radio" class="star"/>
+						<input name="star10" type="radio" class="star"/>
+						<input name="star10" type="radio" class="star"/>
+						<input name="star10" type="radio" class="star"/>
+						<input name="star10" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star11" type="radio" class="star"/>
+						<input name="star11" type="radio" class="star"/>
+						<input name="star11" type="radio" class="star"/>
+						<input name="star11" type="radio" class="star"/>
+						<input name="star11" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_apples_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Apple Galette with a Ginger Glaze</h3></a>
+					<p>
+						<input name="star12" type="radio" class="star"/>
+						<input name="star12" type="radio" class="star"/>
+						<input name="star12" type="radio" class="star"/>
+						<input name="star12" type="radio" class="star"/>
+						<input name="star12" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<div class="recipe-teaser">
+					<a href="#" class="recipe-full-link"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Images/recipecenter/recipe_icon_lamb_75x75.jpg"/></a>
+					<a href="#" class="recipe-full-link"><h3>Lamb Chops with Grilled Asparagus Spears</h3></a>
+					<p>
+						<input name="star13" type="radio" class="star"/>
+						<input name="star13" type="radio" class="star"/>
+						<input name="star13" type="radio" class="star"/>
+						<input name="star13" type="radio" class="star"/>
+						<input name="star13" type="radio" class="star"/>
+					</p>
+					<p class="tags">Butter, Lamb, Asparagus</p>
+				</div>
+				<a href="#" class="more-link">View all Saved Recipes</a>
+			</div>
+			<div id="tabs-4" class="home-tabs ask-the-chef">
+				<h3>Do you have a question you just can't find the answer to?</h3>
+				<p>Ask our professional chef directly through this contact form.</p>
+				<label for="askchef-email">Your Email Address:</label>
+				<input id="askchef-email" type="text"/>
+				<label for="askchef-question">Your Question:</label>
+				<textarea id="askchef-question">Type your question here</textarea>
+				<input type="submit"/>
+				
+			</div>
+	
+		</div>
+		<div id="" class="recipe-center-footer">
+			<div id="popularMenusTeaser" class="recipe-teaser-box box-left">
+				<h2>Popular Menus</h2>
+				<a href="#" class="popularmenupage-link">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/recipecenter/family_eating.jpg"/>
+				</a>
+				<p class="teaser-description">Try our complete menu ideas - no more worrying what to make with your main dish!</p>
+				<ul>
+					<li><a href="#" class="menu-link">Chinese without the "Take-out"</a></li>
+					<li><a href="#" class="menu-link">Romantic Italian Dinner</a></li>
+					<li><a href="#" class="menu-link">A "Foodie" Dinner Party</a></li>
+				</ul>
+			</div>
+			<div id="HealthTeaser" class="recipe-teaser-box">
+				<h2>Health &amp; Wellness</h2>
+				<a href="#" class="popularmenupage-link">
+					<img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/recipecenter/man_running.jpg"/>
+				</a>
+				<p class="teaser-description">Try our complete menu ideas - no more worrying what to make with your main dish!</p>
+				<ul>
+					<li><a href="#" class="article-link">Why is sleep so important?</a></li>
+					<li><a href="#" class="article-link">Buying local: A Guide</a></li>
+					<li><a href="#" class="article-link">Starting a Low-fat Diet</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

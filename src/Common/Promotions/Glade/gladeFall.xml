@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Glade</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<ManufacturerCode></ManufacturerCode>
+	<DepartmentID>10493</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/assets/common/promotions/glade/images/</ImagePath>
+	<ButtonImage>http://upload.gsngrocers.com/elvs/assets/common/promotions/glade/images/addtocart_btn.png</ButtonImage>
+
+	<!-- CONTENT -->
+	<HeaderImage alt=""></HeaderImage>
+	<PageDescriptionText></PageDescriptionText>
+	<FooterImage></FooterImage>
+	<ProductGroup>
+		<Title></Title>
+		<Product>
+			<Image alt="">sprayFallHayride.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82060933&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0001</ProductCode>
+			<Description>Glade Fall Hayride Room Spray</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">sprayAppleCin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82061653&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0002</ProductCode>
+			<Description>Glade Orcahrd Apple Room Spray</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">sprayPumpkin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82062373&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0003</ProductCode>
+			<Description>Glade Pumpkin Spice Room Spray</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">jarHayride.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82061173&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0004</ProductCode>
+			<Description>Glade Fall Hayride Jar Candle</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">jarAppleCin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82061413&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0005</ProductCode>
+			<Description>Glade Orchard Apple Jar Candle</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">jarPumpkin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82062133&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0006</ProductCode>
+			<Description>Glade Pumpkin Spice Jar Candle</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">plugHayride.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82061293&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0007</ProductCode>
+			<Description>Glade Fall Hayride Plugin</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">plugAppleCin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82061533&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0008</ProductCode>
+			<Description>Glade Orchard Apple Plugin</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">plugPumpkin.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=82062253&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0009</ProductCode>
+			<Description>Glade Pumpkin Spice Plugin</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+</LandingPage>

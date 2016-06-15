@@ -1,0 +1,81 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+#oep-wrap { 
+	background-color:#fdf688; 
+	width:590px; 
+}
+	
+#oep-header h1 { 
+	display: none; 
+}
+	
+#oep-main { 
+	background:#feffd6 url(../Images/OEP_Main_BG.jpg) repeat-x left top; 
+}
+	
+#oep-main .oep-product-row {
+	background:transparent url(../Images/row_separator.png) no-repeat 50% top;
+	margin:1em 0;
+	padding-top:20px;
+}
+
+#oep-main .oep-product {
+	text-align: center;
+}
+	
+#oep-main .oep-product img {
+	display: inline;
+}
+
+#oep-main .oep-product h2 {
+	border: none;
+	color: #c41a37;
+	font-size: 18px;
+}
+	
+#oep-main .two-column .oep-product {
+	float:left;
+	width:50%;
+}
+	
+#oep-main .oep-button { 
+	background:#c41a37 url(../../../../Images/button_shine_30.png) left 50% repeat-x; 
+	border:1px solid #c41a37;
+	border-radius:4px;
+	color:#fff;
+	display: block; 
+	font:14px Arial, Helvetica, sans-serif;
+	margin:1em auto;
+	padding:.2em 0;
+	text-decoration: none;
+	width:150px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+	
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #oep-main .oep-button {
+	background-image:none;
+}
+	
+* html .group {
+	height:1%;
+}
+	
+* html #oep-main .oep-product-row {
+	background-image: none;
+}

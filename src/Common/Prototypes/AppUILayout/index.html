@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Festival Foods - New App UI Layout</title>
+
+<!--Styles-->
+<link href="Styles/reset.css" rel="stylesheet" type="text/css" l="l" />
+<link href="themes/base/jquery.ui.all.css" rel="stylesheet" />
+<link href="styles/smoothness/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+<link href="styles/jquery.cluetip.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="Styles/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+
+<link href="Styles/app_area_styles.css" rel="stylesheet" type="text/css" media="screen">
+<link href="Styles/prototype.css" rel="stylesheet" type="text/css" l="l">
+<link rel="stylesheet" type="text/css" href="styles/carousel_skin.css" />
+
+<!--Javascript-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script src="js/jquery.areacluetip.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.core.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.mouse.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.sortable.js" type="text/javascript"></script>
+<script src="js/ui/jquery.ui.tabs.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+
+
+
+<script>
+var mouse_is_inside = false;
+
+$(document).ready(function() {
+	
+	$(function() {
+		$( "#appContainer" ).tabs({ selected: 1 }).find( ".ui-tabs-nav" ).sortable({ axis: "x" });
+	});
+		
+	$("a#appInfo").fancybox({
+		'autoDimensions': false,
+		'height'		: 290,
+		'width'			: 530
+	});
+
+	$("a#listInfo").fancybox({
+		'autoDimensions': false,
+		'height'		: 290,
+		'width'			: 530
+	});
+	
+	$("a.iframe").fancybox();
+
+	$("a.loginbox").fancybox({
+		'scrolling'		: 'no',
+		'autoDimensions': false,
+		'width'			: 530,
+		'height'		: 290,
+		'titleShow'		: false,
+		'onClosed'		: function() {
+		    $("#login_error").hide();
+		}
+	});
+	
+	//myList Drop Down menus 
+	$("ul.listsubnav").parent().append("<span></span>"); 
+      
+    $("ul.mylistnav li span").click(function() {   
+        $("ul.mylistnav").children().not($(this).parent()).children('ul.listsubnav').css("display" , "block").hide();
+        $(this).parent().find("ul.listsubnav").focus().slideToggle('fast');
+        }).hover(function() {  
+            $(this).addClass("subhover"); 
+        }, function(){  //On Hover Out  
+            $(this).removeClass("subhover"); 
+    });
+	
+	//myList script to hide drop down menus when clicked outside of sidebarHeader area
+	$('.sidebarHeader').hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    $("html").mouseup(function(){ 
+        if(! mouse_is_inside) $('ul.listsubnav').hide();
+    });
+    
+	//MyList menu manage list - activate from my list drop down
+	var tabs = $("#appContainer").tabs();
+	var $tabs = $('#appContainer').tabs(); // first tab selected
+	$("a.manageList").click(function(){
+		$tabs.tabs('select', 5); // switch to 4th tab
+	});
+    
+    //App Menu Slide Up/Slide Down
+	$("a.hideAppMenu").click(function(){
+    	$("ul.appMenu").slideUp();
+    	$("a.hideAppMenu").hide();
+    	$("a.showAppMenu").css('display' , 'block');
+    
+    });
+    
+    $("a.showAppMenu").click(function(){
+    	$("ul.appMenu").slideDown();
+    	$("a.showAppMenu").hide();
+    	$("a.hideAppMenu").show();
+    });
+    
+    //Choose Store
+    
+   	$('a.chooseStore').click(
+  		function () {
+    		$("#chooseStoreForm").slideToggle();
+  		}
+	);
+
+     $("a#chooseClose").click( function(){
+    	$("#chooseStoreForm").hide();
+    
+     });
+    
+    
+    
+    
+   /* $("a.chooseStore").click(
+    	function(){
+    	$("#chooseStoreForm").show();
+    });
+    
+   
+    
+    $("a#myStoreClose").click( function(){
+    	$("#myStoreInfo").hide();
+    
+    });
+    
+    $("a#chooseStoreLink").fancybox({
+		'autoDimensions': false,
+		'height'		: 590,
+		'width'			: 530
+		});
+		
+	$("a#chooseStoreLink").click(function(){
+		$("#chooseStoreForm").hide();
+	});
+ 
+	$("a.storeSelectLink").click(function(){
+		$("#chooseStoreForm").hide();
+		$("#chooseStore").hide();
+		
+		$("#myStore").css('display','block');
+		
+	
+	});
+	
+	$("a.myStore").hover(
+    	function(){
+    	$("#myStoreInfo").show();
+    }).hide();
+    
+   $("a.unSelectStore").click(function(){
+    	$("#myStore").hide();
+    	$("#chooseStore").show();
+    	$("#myStore").replaceWith($("#chooseStore"));
+    });*/
+	
+	
+	$('a.mylistDetails').click(function(){
+		$(this).parent().next('.available-varieties').slideToggle().siblings('.available-varieties').hide();
+		
+		//$('.available-varieties').slideToggle();
+	});
+	
+	
+	
+	
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<div id="headerContent">
+        	<div id="profile">
+        		<a href="#login_form" class="loginbutton loginbox sign-in"><span>Sign In</span></a>
+        		<a href="signup.html" class="loginbutton create-account"><span>Create Account</span></a>
+        		<div id="login-wrapper" style="display:none">
+					<form id="login_form" method="post" action="">
+						<h2>Member Login</h2>
+					    	<!--<p id="login_error">login with Facebook, or enter your Username and Login Information below.</p>-->
+					    <div id="login-facebook">
+					    	<h4>Are You a Facebook User?</h4>
+					    	<p>You can use your Facebook account to login to our site. Connect below:</p>
+					    	<a href="Facebookconnect.html" target><img src="images/facebook_login_example.jpg" /></a>
+					    
+					    </div>
+						<div id="login-gsn">
+							<h4>Login in with your Festival Foods Account:</h4>
+							<p>
+								<label for="login_name">Email/Username: </label> 
+								<a href="#">Forgot?</a>
+								<input type="text" id="login_name" name="login_name" size="30" />
+							</p>
+							<p>
+								<label for="login_pass">Password: </label>
+								<a href="#">Forgot?</a>
+								<input type="password" id="login_pass" name="login_pass" size="30" />
+							</p>
+							<a class="button" href="#">Log In</a>
+						
+							
+						</div>
+					</form>
+				</div>
+            	       
+           </div>
+        
+        
+        </div>
+  	</div>
+
+	<div id="content">
+
+	  <div id="subNav">
+			<div id="search">
+	        
+	        <form method="get" id="searchform" action="http://www.sohtanaka.com/">
+				<fieldset class="search">
+					<input class="box" name="Search" value="Search for items" size="255" onfocus="value=''" type="text">
+					<button class="btn" title="Submit Search">Find</button>
+				</fieldset>
+			</form>
+	        
+	        </div>
+			<div id="chooseStore">
+				<a class="chooseStore"  href="#">Choose Store</a>
+				<div id="chooseStoreForm" style="display:none;">
+					<p>Find a store near you:</p>
+					<label for="choosecity">City:</label>
+					<label for="selectState">State:</label>
+					<input type="text" value="city name" id="choosecity"/>
+					<select id="selectState">
+						<option>MN</option>
+						<option>WI</option>
+					</select>
+					<p class="formseparator">&mdash;&mdash; or 	&mdash;&mdash;</p>
+					<label for="choosezip">Zip Code:</label>
+					<input type="text" value="zip code" />
+					<p>Find stores within</p>
+					<select>
+						<option>5 miles</option>
+						<option>10 miles</option>
+						<option>20 miles</option>
+					</select>
+					<a class="button" id="chooseStoreLink" href="choosestore.html">Go</a><br/>
+					<a href="#" id="chooseClose">Close</a>
+					
+					<div style="display:none">
+						<div id="chooseStoreBox">
+							<p>Form here</p>
+							<a class="button storeSelectLink" href="#">Select this Store</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myStore" style="display:none;">
+				<a class="myStore"  href="#">My Store</a>
+				<div id="myStoreInfo" style="display:none;">
+						<h4>Festival Appleton</h4>
+						<p>1234 Example Street</p>
+						<p>Appleton, WI 42059</p>
+						<p>(123) 456-7890</p>
+						<a href="#" class="selectDifferentStore">Select a Different Store</a><br/>
+						<a href="#" class="unSelectStore">unselect</a><br/>
+						<a href="#" id="myStoreClose">close</a><br/>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="AdMaster Tile1">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="728" height="90" id="DH_Recipe_728x90_PBBrownie_04" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="wmode" value="opaque" /> 
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="flash/DH_Recipe_728x90_PBBrownie_04.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed wmode="opaque" src="flash/DH_Recipe_728x90_PBBrownie_04.swf" quality="high" bgcolor="#ffffff" width="728" height="90" name="DH_Recipe_728x90_PBBrownie_04" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
+        
+        </div>
+	    <div id="appoftheday"><img src="Images/aotd.png" width="62" height="62" /><br />
+		<p><a class="aotd" href="#">App of the Day</a></p>
+      </div>
+		<div id="appWrapper">
+			<div id="appHeader">
+				<h3>App Launch Window</h3>
+				<a id="appInfo"class="info" href="#appInfoContent"><img src="Images/i.png" width="14" height="14" /></a>
+				<a href="#" class="showAppMenu" style="display:none;">Show Apps</a>
+				<a href="#" class="hideAppMenu">Hide Apps</a>
+				<a href="manageapps.html" class="manageAppLink">Manage Apps</a>
+				
+			</div>
+			<div style="display:none;">
+				<div id="appInfoContent">
+					<h2>How to Use the App Store</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div id="appContainer">
+					<ul class="appMenu">
+						
+						<li>
+							<a href="ajax/circular.html" title="tabs-1" onclick="$('#cluetip').hide()">
+								<img src="images/appicon_circular.png" alt="circular" class="appIcon"/>
+									Circular
+							</a>
+						</li>
+						<li>
+							<a href="#tabs-2" onclick="$('.adContent').hide();$('#cluetip').hide()">
+								<img src="images/appicon_quickcoupons.png" alt="quick coupons" class="appIcon"/>
+									Quick Coupons
+							</a>
+						</li>
+						<li>
+							<a href="ajax/recipecenter/recipehome.html" tile="tabs-3" onclick="$('.adContent').hide(); $('#cluetip').hide()">
+								<img src="images/appicon_ucook.png" alt="ucook" class="appIcon"/>
+									ucook
+							</a>
+						</li>
+						<li>
+							<a href="#tabs-4" onclick="$('.adContent').hide();$('#cluetip').hide()">
+								<img src="images/appicon_ideals.png" alt="iDeals" class="appIcon"/>
+									iDeals
+							</a>
+						</li>
+						<li>
+							<a href="ajax/browse.html" title="tabs-5" onclick="$('.adContent').hide();$('#cluetip').hide()">
+								<img src="images/appicon_browse.png" alt="iDeals" class="appIcon"/> 
+								Browse the Aisles</a>
+						</li>
+						<li>
+							<a href="ajax/managelist.html" title="tabs-6" onclick="$('.adContent').hide();$('#cluetip').hide()">
+								My List
+							</a>
+						</li>
+					</ul>
+					<div id="tabs-1" class="app-content"></div>
+				
+					<div id="tabs-2" class="app-content">
+						<h2>This will be the Quick Coupons App.</h2>
+					</div>
+					<div id="tabs-3" class="app-content"></div>
+					
+					<div id="tabs-4" class="app-content">
+						<h2>This will be the iDeals App.</h2>
+					</div>
+					<div id="tabs-5" class="app-content"></div>
+					<div id="tabs-6" class="app-content"></div>
+				
+			</div><!--appContainer-->
+		</div> <!-- appWrapper div-->   
+		<div id="sidebar">    
+		    
+		    <div class="sidebarHeader">
+		    	<h3>My List</h3> 
+		    	<a id="listInfo" href="#listInfoContent" class="info">
+		    		<img src="Images/i.png" width="14" height="14" />
+		    	</a>
+		    	<ul class="mylistnav">  
+				    <li>  
+				        <a href="#">Add Own Item</a>  
+				        <ul class="listsubnav addownitem">  
+				            <li>
+				            	<input class="" id="" action="" name="" value="add your own item" type="text" onfocus="value=''" style="width: 150px;float:left;"/>
+				            	<select style="width: 150px; float:left;">
+				            		<option value="-1">- Select Item Dept. -</option>
+									<option exportkeyid="117485" value="10353">Baby</option>
+									<option exportkeyid="117509" value="10354">Baking Needs</option>
+									<option exportkeyid="117542" value="10355">Beverages</option>
+									<option exportkeyid="117651" value="10357">Canned Goods</option>
+									<option exportkeyid="117682" value="10358">Cereal &amp; Breakfast</option>
+									<option exportkeyid="117740" value="10359">Cleaning &amp; Laundry</option>
+									<option exportkeyid="117756" value="10360">Coffee / Tea / Cocoa</option>
+									<option exportkeyid="117779" value="10361">Condiments</option>
+									<option exportkeyid="117786" value="10369">Cookies / Crackers / Snacks</option>
+									<option exportkeyid="117833" value="10338">Dairy</option>
+									<option exportkeyid="117985" value="10341">Frozen Foods</option>
+									<option exportkeyid="118010" value="10342">General Merchandise</option>
+									<option exportkeyid="118042" value="10343">Grocery</option>
+									<option exportkeyid="118074" value="10344">Health &amp; Beauty</option>
+									<option exportkeyid="118103" value="10364">Ice Cream / Frozen Desserts</option>
+									<option exportkeyid="118137" value="10362">Kitchen Supplies</option>
+									<option exportkeyid="118217" value="10345">Meat &amp; Poultry</option>
+									<option exportkeyid="118348" value="10366">Paper &amp; Plastic Goods</option>
+									<option exportkeyid="118393" value="10346">Pet Supplies</option>
+									<option exportkeyid="118462" value="10347">Produce</option>
+									<option exportkeyid="118551" value="10349">Seafood</option>
+				            	</select>
+				            	<a href="#" class="button">add to list</a>
+				            
+				            </li>  
+				        </ul>  
+				    </li> 
+				    <li><a href="#">Print</a></li> 
+				    <li>  
+				        <a href="#">Options</a>  
+				        <ul class="listsubnav myListOptions">  
+				            <li><a href="#" class="manageList">Manage List</a></li>  
+				            <li><a href="#" class="emailList">Email List</a></li>
+				            <li><a href="#" class="previousList">Previous List</a></li>  
+				            <li><a href="#" class="saveList">Save List</a></li>    
+				        </ul>  
+				    </li>  
+				</ul> 
+		    </div>
+			    <div style="display:none">
+			    	<div id="listInfoContent">
+			    		<h2>How to Manage Your List</h2>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    	</div>
+			    </div>
+		    	<div id="myList">
+		    		
+		    		<div class="myListRow">
+		    			<a class="listItem" href="#"></a>
+		    			<a class="listItemText" href="">Polly-O Whole Milk Ricotta - 32 Oz Containers</a>
+		    			<a href="#" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a>
+		    		</div>
+		    		<div class="available-varieties" style="display:none;">
+		    			<a class="closelink" href="#" onclick="$('.available-varieties').slideUp();">Close</a>
+		    			<img class="thumb" src="/assets/common/prototypes/appuilayout/images/products/yogurt.jpg" alt="product-image"  width="75px" height="75"/>
+		    			<h4 class="product-name">Polly-O Whole Milk Ricotta - 32 Oz Containers</h4>
+		    			<img src="/assets/common/images/manufacturercouponicon.gif" class="icon" alt="coupon icon"/>
+		    			<img src="/assets/common/images/UPromiseIcon.gif" class="icon" alt="uPromise icon"/>
+		    			<h4 class="section-title">Available Varieties</h4>
+		    			<p class="product-variety">Non-fat - 32oz</p><input type="checkbox" name="variety" value="food" />
+		    			<p class="product-variety">Low-Fat (1%) - 32 oz</p><input type="checkbox" name="variety" value="food" /> 
+		    			<p class="product-variety">Original (2%) - 32oz</p><input type="checkbox" name="variety" value="food" /> 
+		    			<br/><a href="#" class="button">add</a>
+		    			<h4 class="section-title">Recipe Ideas</h4>
+		    			<ul>
+		    				<li><a class="product-recipe-ideas">Ricotta-Stuffed Manicotti with Marinara sauce</a></li>
+		    				<li><a class="product-recipe-ideas">Low-Fat Italian Style Cheesecake</a></li>
+		    				<li><a class="product-recipe-ideas">Ricotta and Sun-dried Tomato Tartlets</a></li>
+		    			
+		    			</ul>
+		    			<a class="button" href="#">See more Recipe Ideas...</a>
+		    		</div>
+		    		<div class="myListRow">
+		    			<a class="listItem" href="#"></a>
+		    			<a class="listItemText" href="">Honeydew Melon Honey Dew Melon Sold Buy The Melon</a>
+		    			<a href="#" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a>
+		    		</div>
+		    		<div class="available-varieties" style="display:none;">
+		    			<img class="thumb" src="/assets/common/prototypes/appuilayout/images/products/yogurt.jpg" alt="product-image"  width="75px" height="75"/>
+		    			<h4 class="product-name">Honeydew Melon Honey Dew Melon Sold Buy The Melon</h4>
+		    			<img src="/assets/common/images/manufacturercouponicon.gif" class="icon" alt="coupon icon"/>
+		    			<img src="/assets/common/images/UPromiseIcon.gif" class="icon" alt="uPromise icon"/>
+		    			<h4 class="section-title">Available Varieties</h4>
+		    			<p class="product-variety">HoneyDew - Whole melon</p><input type="checkbox" name="variety" value="food" /> 
+		    			<p class="product-variety">HoneyDew- Half Melon</p><input type="checkbox" name="variety" value="food" />
+		    			<br/><a href="#" class="button">add</a> 
+		    			<h4 class="section-title">Recipe Ideas</h4>
+		    			<ul>
+		    				<li><a class="product-recipe-ideas">HoneyDew Bubble Tea</a></li>
+		    				<li><a class="product-recipe-ideas">Ginger Mint Summer Fruit Salad</a></li>
+		    			</ul>
+		    			<a class="button" href="#">See more Recipe Ideas...</a>
+		    		</div>
+		    		<div class="myListRow">
+		    			<a class="listItem" href="#"></a>
+		    			<a class="listItemText" href="">House Foods Organic Tofu</a>
+		    			<a href="#" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a>
+		    		</div>
+		    		<div class="available-varieties" style="display:none;">
+		    			<img class="thumb" src="/assets/common/prototypes/appuilayout/images/products/yogurt.jpg" alt="product-image"  width="75px" height="75"/>
+		    			<h4 class="product-name">House Foods Organic Tofu - Medium / Firm 14.0 Oz</h4>
+		    			<img src="/assets/common/images/manufacturercouponicon.gif" class="icon" alt="coupon icon"/>
+		    			<img src="/assets/common/images/UPromiseIcon.gif" class="icon" alt="uPromise icon"/>
+		    			<h4 class="section-title">Available Varieties</h4>
+		    			<p class="product-variety">Medium / Firm 14.0 Oz</p><input type="checkbox" name="variety" value="food" /> 
+		    			<p class="product-variety">Medium / Semi-Firm 14.0 Oz</p><input type="checkbox" name="variety" value="food" /> 
+		    			<p class="product-variety">Medium / Silken 14.0 Oz</p><input type="checkbox" name="variety" value="food" /> 
+		    			<br/><a href="#" class="button">add</a>
+		    			<h4 class="section-title">Recipe Ideas</h4>
+		    			<ul>
+		    				<li><a class="product-recipe-ideas">Tofu Noodle Stir Fry</a></li>
+		    				<li><a class="product-recipe-ideas">Classic Miso Soup</a></li>
+		    				<li><a class="product-recipe-ideas">Tofu Pad Thai</a></li>
+		    				<li><a class="product-recipe-ideas">Tofu Protein Smoothie</a></li>
+		    			</ul>
+		    			<a class="button" href="#">See more Recipe Ideas...</a>
+		    		</div>
+		    		<div class="myListRow">
+		    			<a class="listItem" href="#"></a>
+		    			<a class="listItemText" href="">Pacific Free Range Chicken Broth - Certified Organic 32.0 Fl.Oz</a>
+		    			<a href="#" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a>
+		    		</div>
+		    		<div class="available-varieties" style="display:none;">
+		    			Lots of stuff to go here!<br/>
+		    		</div>
+		    		<div class="myListRow">
+		    			<a class="listItem" href="#"></a>
+		    			<a class="listItemText" href="">Eat Natural Fruit And Nut Granola Bar 1.76 Oz</a>
+		    			<a href="#" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a>
+		    		</div>
+		    		<div class="available-varieties" style="display:none;">
+		    			Lots of stuff to go here!<br/>
+		    		</div>
+		    		<div id="myListBottom">
+		    		
+		    		</div>
+	
+					<!--<table class="mylistTable" width="94%" border="0">
+					  <tr>
+					    <td width="5%"><a class="listItem" href="#"></a></td>
+					    <td width="90%"><a class="listItemText" href="">Polly-O Whole Milk Ricotta 32 Oz</a></td>
+					    <td width="5%"><a href="#" onclick="" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a></td>
+					  </tr>
+					  <tr class="available-varieties" style="display:none;">
+					  	<td>Lots of stuff to go here!</td>
+					  </tr>
+					  <tr>
+					    <td width="5%"><a class="listItem" href="#"></a></td>
+					    <td width="90%"><a class="listItemText" href="">Honeydew Melon Honey Dew Melon Sold Buy The Melon</a></td>
+					    <td width="5%"><a href="#myListDetailBox" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a></td>
+					  </tr>
+					  <tr>
+					    <td width="5%"><a class="listItem" href="#"></a></td>
+					    <td width="90%"><a class="listItemText" href="">House Foods Organic Tofu - Medium / Firm 14.0 Oz</a></td>
+					    <td width="5%"><a href="#myListDetailBox" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a></td>
+					  </tr>
+					  <tr>
+					    <td width="5%"><a class="listItem" href="#"></a></td>
+					    <td width="90%"><a class="listItemText" href="">Pacific Free Range Chicken Broth - Certified Organic 32.0 Fl.Oz</a></td>
+					    <td width="5%"><a href="#myListDetailBox" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a></td>
+					  </tr>
+					  <tr>
+					    <td width="5%"><a class="listItem" href=""></a></td>
+					    <td width="90%"><a class="listItemText" href="#">Eat Natural Fruit And Nut Granola Bar 1.76 Oz</a></td>
+					    <td width="5%"><a href="#myListDetailBox" class="mylistDetails"><img src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/myList_details.png" alt="details"/></a></td>
+					  </tr>
+					</table> -->
+					<!-- Place in circular sort!-->
+					<div style="display:none">
+						<div id="ItemDetailBox">
+							my List details
+					
+						</div>
+					</div>
+
+				</div>
+		    
+			<div class="AdMaster Tile2">
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="300" height="250" id="PNW_OR_ATL_300x250" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="wmode" value="opaque" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="flash/PNW_OR_ATL_300x250.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed wmode="opaque"  src="flash/PNW_OR_ATL_300x250.swf" quality="high" bgcolor="#ffffff" width="300" height="250" name="PNW_OR_ATL_300x250" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
+
+            
+            </div>
+			<script type="text/javascript">
+				jQuery(document).ready(function() {
+				    jQuery('.recommend-carousel').jcarousel({
+				        wrap: 'circular'
+				    });
+				});
+			</script>
+			<div class="sidebarHeader">
+				<h3>Recomendations for You</h3>
+			</div>
+	    	<div class="recomendations">
+			  <ul id="rec_products" class="recommend-carousel jcarousel-skin">
+			  		<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/yogurt.jpg" width="75" alt="" /></li>
+			    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/pasta.jpg" width="75" alt="" /></li>
+			    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/papertowels.jpg" width="75" alt="" /></li>
+			    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/hamburgerbuns.jpg" width="75" alt="" /></li>
+			    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/mustard.jpg" width="75" alt="" /></li>
+			    	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/products/cheese.jpg" width="75" alt="" /></li>
+				</ul>
+		    </div>
+				
+			<div class="sidebarHeader">
+				<h3>Recipes for You</h3>
+			</div>
+		    <div class="recipes">
+			  <ul id="rec_recipes" class="recommend-carousel jcarousel-skin">
+				  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/balsamicsteak.jpg" width="75" alt="" /></li>
+				  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/browniepudding.jpg" width="75" alt="" /></li>
+				  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/oystersouptt.jpg" width="75" alt="" /></li>
+				  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/bakedzitiflorentinet.jpg" width="75" alt="" /></li>
+				  	<li><img src="http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/images/recipes/busydaycakett.jpg" width="75" alt="" /></li>
+				</ul>
+	    	</div>
+		</div><!--sidebar div-->
+		<!--<div style="float:none; clear:both;">&nbsp;</div>-->
+<div class="AdMaster Tile3">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="728" height="90" id="Vlasic_728x90_ATL" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="wmode" value="opaque" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="flash/Vlasic_728x90_ATL.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed wmode="opaque"  src="flash/Vlasic_728x90_ATL.swf" quality="high" bgcolor="#ffffff" width="728" height="90" name="Vlasic_728x90_ATL" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
+
+</div>
+<div id="footer"></div><!--footer-->
+</div><!--content-->
+</div><!--wrapper-->
+
+
+
+</body></html>

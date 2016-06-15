@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Recipe Center</title>
+
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js" type="text/javascript"></script>
+<script src="js/recipe-carousel.js" type="text/javascript"></script>
+<script src="js/recipecenter.js" type="text/javascript"></script>
+<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="styles/ie7.css">
+<![endif]-->	
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+		var subnavPages = 4;	
+		if (typeof(Recipe)=="undefined"){
+			Recipe = new Object();
+		}		
+		Recipe.showOneContent = function(elem_id){
+			hideAllContent();
+			clearAllNavs();
+			elemOnContent('recipeSide-page'+elem_id);
+			elemOnSubnav('recipeSide-nav'+elem_id);
+		}
+		function hideAllContent(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffContent( 'recipeSide-page'+i );
+		}
+		function clearAllNavs(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffSubnav( 'recipeSide-nav'+i );
+		}
+		function elemOnContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "block";
+		}
+		function elemOnSubnav(elem_id){
+			if($(elem_id))
+			$(elem_id).addClassName('recipeSide-nav-active');
+		}
+		function elemOffContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "none";
+		}
+		function elemOffSubnav(elem_id){
+			if($(elem_id))
+				$(elem_id).removeClassName('recipeSide-nav-active');
+		}
+	</script>
+
+<div id="wrapper">
+<div id="header">
+	
+	<img src="Images/header.jpg" alt="header screenshot"/>
+</div><!--header-->
+
+<div id="container">
+	
+<!- -------------------Recipe Center----------------------- -->
+<div id="main" class="home">
+
+	<div id="recipeHeader">
+
+		<a href="index.html" class="home-link"><h1>Recipe Center</h1></a>
+		<a class="cheflink" src="#"><img src="Images/askthechef_button.png"/></a>
+		<div id="recipeSearch">
+			<a href="searchresults.html"><img class="search-button" src="images/search_eyeglass.png" alt="Search"></a>
+			<input type="text" id="search-field" maxlength="30" tabindex="1">
+
+			<a src="#" onClick="toggleMyDiv()" class="search-link">Advanced <img alt="dropdown" src="Images/search_downarrow.png"></a>
+		</div>
+<!- -------------------Advanced Search----------------------- -->
+		<div id="advancedSearch"  style="display:block;">
+
+			<h2>Advanced Search</h2>
+			<div id="advancedSearchContainer">
+				
+				<form>
+				<div class="search-container">
+					<label for="mealtype">Meal Type</label>
+					<select name="Meal Type" title="Meal Type" id="mealtype">
+						<option>Breakfast</option>
+						<option>Lunch</option>
+						<option>Dinner</option>
+						<option>Snacks/Appetizer</option>
+						<option>Brunch</option>
+					</select><br/>
+					<label for="cuisinetype">Cuisine Type</label>
+					<select name="Meal Type" title="Meal Type" id="cuisinetype">
+						<option>American</option>
+						<option>Chinese</option>
+						<option>Japanese</option>
+						<option>Korean</option>
+						<option>French</option>
+					</select><br/>
+					<label for="mainingredient">Main Ingredient</label>
+					<input name="Meal Type" title="Meal Type" id="mainingredient">
+					
+					<label for="trackcals">Calories</label>
+					<div class="search-slider slider" id="trackcals">
+						<div id="trackcals_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcals_handle_max" class="sliderHandle right"></div>
+						<div id="trackcals_slider_span" class="span"></div>
+					</div>
+					<p id="slidecals" class="sliding"></p>
+
+					<label for="trackchol">Cholesterol</label>
+					<div class="search-slider" id="trackchol">
+						<div id="trackchol_handle_min" class="sliderHandle left"></div>
+  						<div id="trackchol_handle_max" class="sliderHandle right"></div>
+						<div id="trackchol_slider_span" class="span"></div>
+						</div>
+					</div>
+					<p id="slidechol" class="sliding"></p>
+
+					
+				</div>
+				
+				
+				<div class="search-container">
+					<label for="tracktime">Total Cook and Prep Time</label>
+					<div class="search-slider" id="tracktime">
+						<div id="tracktime_handle_min" class="sliderHandle left"></div>
+  						<div id="tracktime_handle_max" class="sliderHandle right"></div>
+						<div id="tracktime_slider_span" class="span"></div>
+					</div>
+						<p id="slidetime" class="sliding"></p>
+					
+					<label for="trackskill">Skill Level</label>
+					<div class="search-slider" id="trackskill">
+						<div id="trackskill_handle_min" class="sliderHandle left"></div>
+  						<div id="trackskill_handle_max" class="sliderHandle right"></div>
+						<div id="trackskill_slider_span" class="span"></div>
+					</div>
+						<p id="slideskill" class="sliding"></p>
+					
+					<label for="trackfat">Total Fat Content</label>
+					<div class="search-slider" id="trackfat">
+						<div id="trackfat_handle_min" class="sliderHandle left"></div>
+  						<div id="trackfat_handle_max" class="sliderHandle right"></div>
+						<div id="trackfat_slider_span" class="span"></div>
+					</div>
+						<p id="slidefat" class="sliding"></p>
+					
+					<label for="trackcarbs">Carbohydrates</label>
+					<div class="search-slider" id="trackcarbs">
+						<div id="trackcarbs_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcarbs_handle_max" class="sliderHandle right"></div>
+						<div id="trackcarbs_slider_span" class="span"></div>
+					</div>
+						<p id="slidecarbs" class="sliding"></p>
+			
+				</div>
+				<div class="search-container">
+					<label for="">Vegetarian</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegetarian" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegetarian" value="no"/>
+							<p>No</p>
+						</div>
+						
+					<label for="">Vegan</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegan" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegan" value="no" />
+							<p>No</p>
+						</div>
+							
+							
+					<label for="trackprot">Protein</label>
+					<div class="search-slider" id="trackprot">
+						<div id="trackprot_handle_min" class="sliderHandle left"></div>
+  						<div id="trackprot_handle_max" class="sliderHandle right"></div>
+						<div id="trackprot_slider_span" class="span"></div>
+					</div>
+						<p id="slideprot" class="sliding"></p>
+					
+					
+					
+					<label for="tracksalt">Sodium</label>
+					<div class="search-slider" id="tracksalt">
+						<div id="tracksalt_handle_min" class="sliderHandle left"></div>
+  						<div id="tracksalt_handle_max" class="sliderHandle right"></div>
+						<div id="tracksalt_slider_span" class="span"></div>
+					</div>
+						<p id="slidesalt" class="sliding"></p>
+						
+				</div>
+				<div id="searchButtons">
+					<a class="button" href="searchresults.html">
+						<span>Search Recipes</span></a>
+					<a class="button" href="#">
+						<span>Apply Settings to My Profile</span></a>
+				</div>
+				</form>	
+			</div>
+		
+	</div>
+	<script type="text/javascript">
+		setSliders();
+	</script>
+	
+	
+	<div id="recipeSplash">
+		<div id="recipeSlideshow">
+			<div id="carousel-wrapper">
+				<div id="carousel-content">
+					<div id="slide-1" class="slide firstSlide">
+						<h1>Featured Article</h1>
+						<img class="mainImg" src="Images/apple_orchard.jpg" alt=""/>
+					</div>
+					<div id="slide-2" class="slide">
+						<h1>Featured Tip: Campfire Cooking</h1>
+						<img class="mainImg" src="Images/campfire_cooking.jpg" alt=""/>
+					</div>
+					<div id="slide-3" class="slide">
+						<h1>Ask The Chef</h1>
+						<img class="mainImg" src="Images/apple_orchard.jpg" alt=""/>
+					</div>
+					<div id="slide-4" class="slide">
+						<h1>Breakfast Ideas</h1>
+						<img class="mainImg" src="Images/campfire_cooking.jpg" alt=""/>
+					</div>
+					<div id="slide-5" class="slide">
+						<h1>Featured Article</h1>
+						<img class="mainImg" src="Images/apple_orchard.jpg" alt=""/>
+					</div>
+				</div>
+			</div>
+			<div id="slideShowControls">
+				<a href="javascript:" rel="slide-1" class="carousel-jumper carousel-selected">Slide 1</a>
+				<a href="javascript:" rel="slide-2" class="carousel-jumper">Slide 2</a>
+				<a href="javascript:" rel="slide-3" class="carousel-jumper">Slide 3</a>
+				<a href="javascript:" rel="slide-4" class="carousel-jumper">Slide 4</a>
+				<a href="##" rel="pause" class="carousel-control carousel-nav-pause">Play/Pause</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			new Carousel('carousel-wrapper', $$('#carousel-content .slide'), $$('a.carousel-control', 'a.carousel-jumper'), {auto: true, frequency: 5, duration: 1.0, circular:true });
+		</script>
+		
+		
+		<div id="featuredRecipeSplash">
+			<h2><a href="#">Today's Featured Recipe</a></h2>
+			<a href="recipefull.html"><img src="Images/lamb_chops.jpg" alt="recipe image" width="100" height="100"/></a>
+			<a href="recipefull.html"><h3>Lamb Chops with Asparagus Spears</h3></a>
+					<div class="recipeRatings">*****</div>
+					<a class="made-link" href="">I've made this!</a><br/>
+					<a class="recipeTag">Butter</a>,<a class="recipeTag"> Lamb Chops</a>
+		</div>
+		
+	</div>	
+	<div id="recipeSideTabs">
+		<ul>
+			<li id="recipeSide-nav1" class="recipeSide-active recipeSide-nav-active first-nav"><a href="javascript:void(0);" onclick="Recipe.showOneContent(1);">Recipes for Current List</a></li>
+			<li id="recipeSide-nav2"><a href="javascript:void(0);" onclick="Recipe.showOneContent(2);">My Savings Recipes</a></li>
+			<li id="recipeSide-nav3"><a href="javascript:void(0);" onclick="Recipe.showOneContent(3);">My Favorite Recipes</a></li>
+		</ul>
+		<div id="recipeSide-page1">
+			<div id="recipeSideNav">
+				<h2>My Current List</h2>
+			</div>
+			<div class="currentListSide">
+				<p class="tab-description">These recipes are based on current items in your shopping list.</p>
+				<div class="recipesideFeature">
+					<img src="Images/lamb_chops.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Lamb Chops with Asparagus Spears</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Butter</a>, <a class="recipeTag">Lamb Chops</a>
+				</div>	
+			
+				<div class="recipesideFeature">
+					<img src="Images/cookies.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Blueberry and White Chocolate Cookies</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Cookies</a>, <a class="recipeTag">Desserts</a>
+				</div>
+			
+				<div class="recipesideFeature">
+					<img src="Images/shrimp_kebabs.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Shrimp Kebabs with Asian Ginger Dipping Sauce</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Asian</a>, <a class="recipeTag">Seafood</a>, <a class="recipeTag">Grilling</a>
+				</div>
+				<a href="#"><h3>More ideas based on your items...</h3></a>
+		
+			</div>
+		</div><!--currentListTab-->	
+		<div id="recipeSide-page2" style="display:none;">
+			<div id="recipeSideNav">
+				<h2>My Savings</h2>
+			</div>
+			<div class="currentListSide">
+				<p class="tab-description">These recipes are based on the current savings at your store.</p>
+				<div class="recipesideFeature">
+					<img src="Images/cookies.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Blueberry and White Chocolate Cookies</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Cookies</a>, <a class="recipeTag">Desserts</a>
+				</div>
+				
+				<div class="recipesideFeature">
+					<img src="Images/lamb_chops.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Lamb Chops with Asparagus Spears</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Butter</a>, <a class="recipeTag">Lamb Chops</a>
+				</div>	
+			
+				
+			
+				<div class="recipesideFeature">
+					<img src="Images/shrimp_kebabs.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Shrimp Kebabs with Asian Ginger Dipping Sauce</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Asian</a>, <a class="recipeTag">Seafood</a>, <a class="recipeTag">Grilling</a>
+				</div>
+				<a href="#"><h3>More based on current savings...</h3></a>
+		
+			</div>
+		</div><!--mySavingsTab-->	
+		<div id="recipeSide-page3" style="display:none;">
+			<div id="recipeSideNav">
+				<h2>My Favorites</h2>
+			</div>
+			<div class="currentListSide">
+				<p class="tab-description">These are the most recent recipes you have saved to your recipe box.</p>
+				
+				<div class="recipesideFeature">
+					<img src="Images/shrimp_kebabs.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Shrimp Kebabs with Asian Ginger Dipping Sauce</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Asian</a>, <a class="recipeTag">Seafood</a>, <a class="recipeTag">Grilling</a>
+				</div>
+				
+				<div class="recipesideFeature">
+					<img src="Images/lamb_chops.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Lamb Chops with Asparagus Spears</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Butter</a>, <a class="recipeTag">Lamb Chops</a>
+				</div>	
+			
+				<div class="recipesideFeature">
+					<img src="Images/cookies.jpg" alt="recipe image" />
+					<h4><a href="recipefull.html">Blueberry and White Chocolate Cookies</a</h4>
+					<div class="recipeRatings">*****</div>
+					<a class="recipeTag">Cookies</a>, <a class="recipeTag">Desserts</a>
+				</div>
+			
+				
+				<a href="#"><h3>View the rest of your favorites...</h3></a>
+		
+			</div>
+		</div><!--myFavoritesTab-->	
+	</div><!--recipeSideTabs-->
+	
+	
+	
+	<div id="healthSplash">
+		<h2>Health and Wellness</h2>
+			<div class="healthList">
+				<h3><a href="#">Top Wellness Articles</a></h3>
+					<img src="Images/running.jpg" alt="image" width="150px" height="50px"/>
+					<ul>
+						<li><a href="#">Start Running Again!</a></li>
+						<li><a href="#">Why is Sleep so Important?</a></li>
+						<li><a href="#">Buying Local: How-To</a></li>
+						<li><a href="#">Starting a Low-Fat Diet</a></li>
+					</ul>
+			</div>
+			
+			<div class="healthList">
+				<h3><a href="#">Recipe Roundups</a></h3>
+					<img src="Images/running.jpg" alt="image" width="150px" height="50px"/>
+					<ul>
+						<li><a href="#">Start Running Again!</a></li>
+						<li><a href="#">Why is Sleep so Important?</a></li>
+						<li><a href="#">Buying Local: How-To</a></li>
+						<li><a href="#">Starting a Low-Fat Diet</a></li>
+					</ul>
+			</div>
+			
+			<div class="healthList">
+				<h3><a href="#">Seasonal Recipes</a></h3>
+					<img src="Images/running.jpg" alt="image" width="150px" height="50px"/>
+					<ul>
+						<li><a href="#">Start Running Again!</a></li>
+						<li><a href="#">Why is Sleep so Important?</a></li>
+						<li><a href="#">Buying Local: How-To</a></li>
+						<li><a href="#">Starting a Low-Fat Diet</a></li>
+					</ul>
+			</div>
+		
+	
+	
+	</div><!--health and wellness-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div><!--main-->	
+<!- ------------------------Sidebar------------------------ -->
+	
+	<div id="sidebar">
+		<img src="Images/sidebar.jpg" alt="sidebar" width="300" height="486" />
+	</div><!--sidebar-->
+
+
+</div><!-- container-->
+</div><!--wrapper-->
+
+
+</body>
+</html>

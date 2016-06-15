@@ -1,0 +1,628 @@
+
+/* country mart ok
+--------------------------------------------------*/
+html { background: none #ffcc66 }
+body { font-family: Tahoma, Arial, Helvetica, sans-serif }
+a:link,
+a:visited,
+a:active { color: #2E775C }
+
+/* layout
+--------------------------------------------------*/
+#container {
+    background: none transparent;
+    margin: 0 auto;
+}
+.main-wrapper {
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+/* header
+--------------------------------------------------*/
+#StoreHeaderMiddle {
+    position: absolute;
+    top: 102px;
+    left: 20px;
+}
+#StoreInfoDiv {
+    margin: 0;
+    float: left;
+    color: white;
+    font-size: 100%;
+    background: none transparent;
+    border: 0;
+    padding: 0;
+    font-weight : bold;
+}
+#StoreAddress1Div,
+#StoreAddress2Div,
+#StoreCityStateZipDiv,
+#StoreTelDiv,
+#StoreHoursDiv {
+    color: white;
+    font-size: 12px;
+}
+#StoreHeader {
+    float: left;
+    background: url('/Assets/199/Images/HeaderBG.jpg') top left no-repeat;
+    width: 920px;
+}
+#StoreHeaderLogo {
+    width: 300px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    clear: both;
+    float: left;
+}
+#StoreHeaderRightTop {
+    background: url("/Assets/Common/images/whiteTransparent80.png") repeat scroll 0 0 transparent;
+    border: 1px solid #008873;
+    font-size: 100%;
+    margin: 9px 10px 0 0;
+    text-align: right;
+}
+#StoreHeaderRightTop a { color: #2E775C }
+
+/* navigation
+--------------------------------------------------*/
+#nav {
+    background-color: #f4F4EC;
+    font-size: 135%;
+    border-bottom: 4px solid #FF7212;
+    padding-left: 25px;
+    width: 895px;
+}
+
+#nav li {
+	margin:0 10px;
+}
+
+#nav li li {
+	margin:0;
+}
+
+#nav li a,
+#nav li a:visited,
+#nav li a:active {
+    color: #2E775C;
+    font-size: 95%;
+    text-decoration: none;
+}
+#nav li a:hover { color: white }
+#nav li ul {
+    background: #f4F4EC;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#nav li:hover {
+    color: white;
+    background: #FF7212;
+}
+
+/* homepage
+--------------------------------------------------*/
+#AdPromo {
+    background: none white;
+    border: 0;
+    float: none;
+    margin-bottom: 10px;
+    padding-top: 0;
+    width: 295px;
+}
+#AdPromo h2 {
+    font-size: 190%;
+    text-transform: uppercase;
+}
+#AdPromo img { max-height: 150px }
+#slideshow {
+    width: 610px;
+    height: 300px;
+}
+#SplashContainer {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#circularThumbnail { margin: 4px 0 0 }
+
+/* home modules
+--------------------------------------------------*/
+.home-module-wrapper {
+    margin-top: 10px;
+    width: 610px;
+}
+.home-module {
+    border: 1px solid #999;
+    float: left;
+    margin: 0 14px 5px 0;
+    min-height: 220px;
+    padding: 10px;
+    position: relative;
+    width: 276px;
+}
+.home-module.alt { margin-right: 0 }
+.home-module h2 { margin:0 0 5px; text-transform: uppercase }
+.home-module h3 { color: #FF7212 }
+.home-module .inner-text-wrap { float: left }
+.home-module.with-image .inner-text-wrap { width: 50% }
+.home-module img {
+    float: right;
+}
+.home-module h2 a {text-decoration:none;}
+.home-module h2 a:hover {text-decoration:none; color:#C00;}
+
+.home-module .more-link {
+    background: url("/Assets/199/Images/more.gif") no-repeat scroll 0 2px transparent;
+    bottom: 8px;
+    padding: 6px 0 6px 28px;
+    position: absolute;
+    right: 10px;
+}
+
+#featured-recipe-teaser {
+	text-align:center;
+}
+
+#featured-recipe-teaser h2 {
+	text-align:left;
+}
+
+#featured-recipe-teaser img {
+	display:inline;
+	float:none;
+}
+
+/* home sidebar
+--------------------------------------------------*/
+#home .main-content { float: left; width:610; }
+#home .aside {
+    float: right;
+    padding-left: 5px;
+    width: 295px;
+}
+#home .aside .search-module {
+    background-color: #8dc63f;
+    margin-bottom: 10px;
+	padding-bottom:20px;
+}
+#home .aside .search-module h2 {
+    background: url("/Assets/156/Images/dashed_white_line.gif") no-repeat scroll left top #82B63A;
+    border: none;
+    color: #fff;
+    margin: 0;
+    padding: 8px 10px;
+    width: 275px;
+}
+
+#home .aside .search-module .accordion-content {
+	padding:0 10px;
+}
+
+#home .aside .search-module .accordion-content p {
+	float:left;
+}
+
+#home .aside .search-module input {
+	background: none repeat scroll 0 0 #AFC96A;
+	border: 1px solid #789641;
+	color: #547422;
+	float: left;
+	font-size: 1em;
+	height: 19px;
+	margin-top: 22px;
+	padding: 0 0 0 5px;
+	width: 185px;
+}
+
+#home .aside .search-module select {
+	background:none repeat scroll 0 0 #AFC96A;
+	border:1px solid #789641;
+	color:#547422;
+	float:left;
+	font-size:1em;
+	line-height:1.7em;
+	margin-left:0;
+	padding:2px 0;
+	width:226px;
+}
+
+#home .aside .search-module p {
+	color: #fff;
+	font-size: 11px;
+}
+
+#home .aside .search-module a.search {
+	background-color:#8dc63f;
+	border:1px solid #fff;
+	border-radius:4px;
+	color:#fff;
+	float:right;
+	margin-top:20px;
+	padding:3px 12px;
+	
+	-moz-border-radius:6px;
+	
+}
+
+#home .aside .search-module a.search:hover {
+	background-color:#82B63A;
+	text-decoration:none;
+}
+
+#home .aside .home-module {
+    float: none;
+    margin: 0;
+    min-height: 0;
+	padding-bottom: 50px;
+    width: 275px;
+}
+#home .aside .home-module img {
+	border: 1px solid #DFDFD9;
+	float: none;
+	margin: 4px auto;
+	padding: 4px;
+}
+
+#home .aside .home-module h2 {
+	color:#9E0B0F;
+	font-size:23px;
+}
+
+/* home social
+--------------------------------------------------*/
+a.home_twitter {display:block; width:34px; height:34px; float:left; margin:-8px 20px 0px 97px; text-decoration:none;}
+a.home_facebook {display:block; width:34px; height:34px; float:left; margin:-8px 0px 0px 0px; text-decoration:none;}
+a.home_twitter:hover, a.home_facebook:hover {text-decoration:none;}
+
+a.title_link {text-decoration:none;}
+a.title_link:hover {text-decoration:none; color:#C00;}
+
+
+/* home under slideshow links
+--------------------------------------------------*/
+.coupon_link_group {display:block; width:610px; height:40px; margin:0px;}
+a.linkLeft, a.linkRight {
+	display:block; float:left; width:298px; padding:3px 0px 5px 0px;
+	font-size:18px; text-align:center; text-decoration:none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background: #F4A500;
+	cursor: pointer;
+	color: #ffffff;
+}
+a.linkLeft {margin-right:13px;}
+a.linkLeft:hover {background:#FFCC66; text-decoration:none;}
+a.linkRight:hover {background:#FFCC66; text-decoration:none;}
+
+
+a.button, a.button:hover {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	background: #C25340 url("/Assets/Common/Images/button_shine_30.png") repeat-x scroll left 50%;
+	cursor: pointer;
+	color: white;
+	display: block;
+	float: left;
+	font: normal 10px Arial,sans-serif;
+	height: 18px;
+	margin-right: 6px;
+	padding-right: 10px;
+	text-decoration: none;
+}
+
+
+/* search
+--------------------------------------------------*/
+.accordion_toggle { background: url('/Assets/156/Images/expand_triangle.gif') no-repeat }
+.accordion_toggle_active { background: url('/Assets/156/Images/contract_triangle.gif') no-repeat }
+.pageHeader { font-size: 110% }
+
+/* footer
+--------------------------------------------------*/
+#GsnFooter {
+    margin: 0;
+    padding: 1em 5px;
+}
+
+/* headings
+--------------------------------------------------*/
+h2,
+.RecipeBox a,
+#QuickSearch h2,
+#AdvancedSearch h2,
+#TopRecipesTeaser h2,
+#Department h3,
+#Aisles h3,
+#Category h3,
+#InBetween1,
+#InBetween2,
+#ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,
+#UpdatePanelPage  h1,
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,
+#DietaryPreferencesTip h1,
+#privacy h2,
+#recipecontent h3,
+#CtrlDivSubTitle h2,
+#FeaturedArticleFull h3,
+#ContactUs h2,
+#EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2,
+#ContactUs hr,
+#ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists span a,
+#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a,
+.BtnPageLink { color: #2E775C }
+.GridItem th,
+#Options th,
+#legend th { background-color: #2E775C }
+
+/* shopping list
+--------------------------------------------------*/
+#ShoppingList { background-color: #FFFFFF }
+#ShoppingListHeaderSmall {
+    background: transparent url(/Assets/187/Images/shopping_list_top.jpg) no-repeat;
+    height: 86px;
+    width: 300px;
+}
+#ShoppingListHeaderLarge.Saved {
+    background: transparent url(/Assets/187/Images/shopping_list_top_large.jpg) no-repeat;
+    width: 576px;
+}
+#ShoppingListHeaderLarge {
+    background: transparent url(/Assets/187/Images/shopping_list_top_large.jpg);
+    width: 576px;
+}
+#ShoppingListItemsDisplay {
+    min-height: 75px;
+    width: 300px;
+}
+#FiveListButtons {
+    background: transparent url(/Assets/187/Images/shopping_list_bottom.jpg) no-repeat;
+    min-height: 78px;
+    padding: 0px 0 0 0px;
+    width: 297px;
+}
+#ShoppingListMain {
+    background: transparent url(/Assets/187/Images/shopping_list_middle.jpg);
+    padding-left: 0;
+    width: 300px;
+}
+#AddYourOwnItems { margin: 3px 0 3px 35px }
+#AddYourOwnItems input { width: 190px }
+#FiveListButtons a.shoplistPrint span,
+#FiveListButtons a.shoplistEmail span,
+#FiveListButtons a.shoplistLast span,
+#FiveListButtons a.shoplistSave span,
+#FiveListButtons a.shoplistManage span { margin: 30px 0 0 0 }
+#FiveListButtons a.shoplistPrint {
+    margin-left: 10px;
+    width: 32px;
+}
+#TitleBar,
+#CurrentList {
+    width: 598px;
+    border: 0px solid #FFFFCC;
+    padding: 0;
+}
+div#ShoppingList div#ShoppingListItemsDisplay { margin: 0em 0 }
+#ShoppingList td {
+    clear: both;
+    margin: 2px 0;
+    border-bottom: 1px solid #000099;
+}
+#ShoppingList table { width: 250px }
+#ManageList,
+#savedshoppinglists {
+    float: left;
+    width: 576px;
+    background-color: #FFFFcc;
+    height: auto;
+}
+#ManageList #ShoppingListItemsDisplay { background: transparent }
+#savedshoppinglists .SavedShoppingListsAllItems { background-color: #FFFFCC }
+#SavedShoppingListsDisplay {
+    background-color: #FFFFCC;
+    margin-top: 0px;
+}
+#savedshoppinglists #CurrentList {
+    background-color: #FFFFCC;
+    width: 575px;
+    margin-top: 61px;
+}
+#legend tr:hover { background-color: #FFFFFF }
+
+/* recipes
+--------------------------------------------------*/
+#MealPlanner.recipe { background: #ffeecc }
+#FeaturedArticleTeaser.recipe,
+#AskTheChefTeaser.recipe,
+#CookingTipsTeaser.recipe {
+    width: 32%;
+    background: url(/Assets/199/Images/orange_bkgd.jpg) top left repeat-x;
+}
+#RecipeCardMiddle {
+    background-color: white;
+    margin-top: 12px;
+}
+#RecipeCardBottom { display: none }
+
+/* buttons
+--------------------------------------------------*/
+a.button,
+a.button:hover {
+    font-weight: bold;
+    color: white;
+    background: transparent url('/Assets/199/Images/standard_submit_orange_span.gif') no-repeat scroll top right;
+    display: block;
+    float: left;
+    font: normal 10px arial, sans-serif;
+    height: 18px;
+    margin-right: 6px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+a.button span,
+a.button span:hover {
+    font-weight: bold;
+    color: white;
+    background: transparent url('/Assets/199/Images/standard_submit_orange.gif') no-repeat;
+    display: block;
+    line-height: 12px;
+    padding: 3px 0 3px 10px;
+}
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none;
+}
+a.button:active span {
+    background-position: bottom left;
+    color: white;
+    padding: 4px 0 2px 10px;
+}
+a.button.added:hover { background: #006B3F url("/Assets/Common/Images/button_shine_30.png") repeat-x scroll left 50%; }
+
+/* coupons
+--------------------------------------------------*/
+#CouponsPage .pageHeaderContainer {
+    background: transparent url(/Assets/199/images/new_coupons_header.jpg) no-repeat scroll 0 0;
+    height: 150px;
+    width: 590px;
+}
+.couponsDisclaimer {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 590px;
+    font-size: 10px;
+}
+.gridSwapLayout #help {border:none;}
+
+#cardCouponsHeading #show-description {
+	left: 320px;
+}
+
+/* static content pages
+--------------------------------------------------*/
+#StaticContentPage {
+    font-size: 110%;
+    float: left;
+    min-height: 500px;
+}
+#StaticContentPage .leftnav {
+    float: left;
+    width: 250px;
+}
+#StaticContentPage .leftnav h2 { margin-bottom: 12px }
+#StaticContentPage .leftnav a {
+    float: left;
+    font-size: 100%;
+    width: 90%;
+    margin-bottom: 6px;
+}
+#StaticContentPage #maincontent {
+    float: left;
+    width: 590px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+#StaticContentPage .contentDiv {
+    float: left;
+    width: 590px;
+    font-size: 110%;
+}
+#StaticContentPage #maincontent img {
+    float: left;
+    max-width: 590px;
+}
+#StaticContentPage #mainContentHeader ul {
+    margin: 0 auto;
+    padding: 10px 0px 10px 17px;
+    width: 890px;
+	border-bottom:2px solid #999999;
+}
+#StaticContentPage #mainContentHeader a.button {
+	background:#F4A500;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font: 20px arial,sans-serif;
+    height: 18px;
+    text-decoration: none;
+	padding: 5px 50px; margin:0px 5px;
+}
+#StaticContentPage #mainContentHeader a.button:hover {
+	background:#FFCC66;
+    text-decoration: none;
+}
+#StaticContentPage #mainContentHeader a.button span {
+    background:transparent;
+    color: #ffffff;
+    display: block;
+    font-weight: normal;
+    line-height: 18px;
+	padding:0px;
+}
+#StaticContentPage #mainContentHeader a.button span:hover {
+    background:transparent;
+    color: #ffffff;
+    display: block;
+    font-weight: normal;
+    line-height: 18px;
+	padding:0px;
+}
+
+#StaticContentPage #mainContentHeader .active a.button {background:#2E775C;}
+#StaticContentPage #mainContentHeader .active a.button:hover {background:#2E775C;}
+#StaticContentPage #mainContentHeader .active a.button span {background:transparent;}
+#StaticContentPage #mainContentHeader .active a.button span:hover {background:transparent;}
+
+
+/* profile sign in
+--------------------------------------------------*/
+#login .button,
+#register .button {
+    background-color: #f4a500;
+    border-color: #f4a500;
+}
+
+/* progile registration
+--------------------------------------------------*/
+#signUpPop1,
+#signUpPop2,
+#signUpPop3 {
+    top: 233px;
+    left: 300px;
+}
+
+/* IE 6
+--------------------------------------------------*/
+* html #StoreHeaderRightTop {
+    background-image: none;
+    background-color: #fff;
+}
+* html #AdPromo img { height: 150px }
+* html #StaticContentPage { height: 500px }
+
+* html .home-module { height:220px; padding:0; }
+
+* html #slideshow,
+* html #slideshow .slide { clear:both; float:left; }

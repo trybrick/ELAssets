@@ -1,0 +1,53 @@
+
+#couponsCategories		{width:130px; float:left; font-size:12px; font-weight:bold;}
+#gridLayout			{width:455px; float:right;}
+#gridLayout h2			{margin-top:0;}
+.couponsPageGrid				{position:relative; float:left;}
+.couponsPageGrid .CategoryDisplayContainer h3	{font-size:110%;}
+.gridSwapLayout 		{float:right; margin-bottom:12px;}
+.gridSwapLayout a		{cursor:pointer;width:13px; height:13px; float:left; border:1px solid black; padding:0; margin-left:6px;}
+.gridStyleIcon1			{cursor:pointer;width:13px; height:13px; background:url(/Assets/Common/Images/GridStyleIcon_r1_c1.gif) top left no-repeat;}
+.gridStyleIcon2			{cursor:pointer;width:13px; height:13px; background:url(/Assets/Common/Images/GridStyleIcon_r1_c2.gif) top left no-repeat;}
+.gridStyleIcon3			{cursor:pointer;width:13px; height:13px; background:url(/Assets/Common/Images/GridStyleIcon_r1_c3.gif) top left no-repeat;}
+.gridStyleIcon1.active,
+.gridStyleIcon2.active,
+.gridStyleIcon3.active		{background-color:#ffffcc; background-position:0 -13px;}
+
+/*** default (block) coupon format ***/
+.GridMode1 .couponsContainer		{width:147px; position:relative; display:inline; width:6; float:left; padding:0; margin:2px; text-align:center; }
+.GridMode1 .couponsFrame		{display:inline; width:100%; float:left; border:0; padding:0; margin:0; text-align:center; min-height:240px; _height:240px;}
+.GridMode1 .couponsFrame.last		{border-right:0;}
+.GridMode1 .couponsImage		{display:inline; float:left; border:0; margin:0 10px; min-height:130px; _height:130px;width: 120px;}
+.GridMode1 .couponsImage img		{position:static; display:inline; border:0; margin:20px auto 6px auto; max-height:100px; max-width:80px; }
+.GridMode1 .couponsDescription		{display:inline; clear:both; float:left; width: 100%; min-height:30px; _height:30px;line-height:120%; margin:0 auto; font-size:10px; font-weight:normal;}
+.GridMode1 .couponsStoreSavings		{display:inline; position:absolute; top:5px; right:5px; width:50px; height:50px; padding:15px 0 0 0; color:white; font-size:100%; line-height:100%; font-weight:bold; background: transparent url('/Assets/Common/Images/coupon_store_savings.png') 0 0 no-repeat;}
+.GridMode1 .couponsSavings		{display:inline; position:absolute; top:5px; right:5px; width:50px; height:50px; padding:15px 0 0 0; color:white; font-size:100%; line-height:100%; font-weight:bold; background: transparent url('/Assets/Common/Images/coupon_savings.png') 0 0 no-repeat;}
+.GridMode1 .price			{display:inline; width:100%; clear:both; float:left; padding:0; font-size:100%; line-height:100%; font-weight:bold; min-height:24px;}
+.GridMode1 .activeCoupon		{background: url(/Assets/Common/Images/coupon_highlighted.jpg);}
+.GridMode1 .couponDivider		{float:left; width:1px; height:230px; background:#CCCCCC;}
+.GridMode1 .couponClear			{clear:both; width:100%; height:1px; border:0; margin:2px 0pt; width:100%;}
+.GridMode1 a				{margin-top:6px; margin-bottom:6px}
+
+/*** line-grid-item coupon format 2 ***/
+.GridMode2 .couponsContainer 		{border:1px dotted #CCCCCC;float:left;height:145px;width:210px; margin-right:5px;}
+.GridMode2 .couponsFrame 		{clear:both;float:left;width:100%; min-height:145px; _height:145px;padding:0; margin:0; border:0;}
+.GridMode2 .couponsSavings 		{position:static;background:red;color:white;display:inline;float:left;font-size:130%;font-weight:bold;margin:5px;padding:2px;position:static; height:auto; width:195px;}
+.GridMode2 .couponsSavings br		{display:none;}
+.GridMode2 .couponsImage 		{margin:0; border:0 none;clear:none;display:inline;float:left;margin:0;width:80px; height:100px;}
+.GridMode2 .couponsImage img		{position:static; max-height:100px; max-width:80px; margin:0 12px;}
+.GridMode2 .couponsDescription 		{font-size:10px; line-height:120%; text-transform:lowercase; float:right;height:auto;margin:0 1px;position:absolute; top:27px; left:105px; text-align:left;clear:none;width:100px;}
+.GridMode2 .couponsFrame a 		{position:absolute;left:75px;top:115px;width:75px; height:auto;}
+.GridMode2 .activeCoupon		{height:135px; background:#FFFFDD url(/Assets/Common/Images/coupon_highlighted.jpg) no-repeat scroll -20px -6px}
+.GridMode2 .couponClear			{display:none;}
+
+/*** line-item coupon format 3 ***/
+.GridMode3 .couponsContainer 	{border:0;float:left;width:450px; margin:0;}
+.GridMode3 .couponsFrame 	{clear:both;float:right;width:100%; padding:0; margin:0; border:0; min-height:50px; _height:50px;}
+.GridMode3 .couponsSavings 	{position:static;background:transparent url(/Assets/Common/Images/coupon_savings.png) no-repeat scroll 0 0;color:white;display:inline;float:left;font-size:90%;font-weight:bold;height:35px;line-height:100%;margin:0;padding:15px 0 0;position:static;width:50px;}
+.GridMode3 .couponsImage 	{height:100px; display:none; margin:0; border:0 none;clear:none;float:left;margin:20px auto 0;width:80px;}
+.GridMode3 .couponsImage img	{display:none; position:absolute; top:2px; left:0; max-height:100px; max-width:80px; margin:0;}
+.GridMode3 .couponsDescription 	{position:static;clear:none; font-size:10px; line-height:120%; float:left;height:auto; margin:10px 0 0 18px;text-align:left;width:280px;}
+.GridMode3 .couponsFrame a 	{clear:none; position:static;width:75px; float:right; margin:12px 6px 0 0;}
+.GridMode3 .activeCoupon	{height:auto; background:#FFFFDD url(/Assets/Common/Images/coupon_highlighted.jpg) no-repeat scroll -60px -22px}
+.GridMode3 .couponClear		{display:none;}
+

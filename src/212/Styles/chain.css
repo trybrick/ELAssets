@@ -1,0 +1,35 @@
+﻿/*** chain-specific overrides for Coborn's Inc ***/
+
+html {background:url(/Assets/212/Images/menuBg.jpg) repeat-y top left;}
+body {background:none;}
+h2 { border:none; color:#000; font:bold 24px "Arial Black", Arial, Helvetica,sans-serif;}
+h3 { color:#006753; font-weight:bold; text-align:left;margin:10px 0;}
+
+#container-outer {background:url(/Assets/212/Images/bg.jpg) repeat-x top left;}
+#container {background:none;margin:0;padding:0;}
+
+#StoreHeader {background:none;width:100%;height:102px;}
+#StoreHeaderLogo {background:#000000;height:82px;padding:20px 0 0 20px;width:165px;}
+#StoreHeaderRight {margin:9px 0 0;}
+#StoreHeaderRightInner {float:right;}
+#StoreMenu {background:url(/Assets/212/Images/menuBg.jpg) repeat-y top left;float:left;text-align:left;padding:30px 0 30px 20px;width:180px;font-size:150%;line-height:35px;}
+#StoreMenu li {display:block;}
+#StoreMenu ul {text-align:left;}
+
+#mainContent, #div1, #ContactUs {float:left;width:710px;margin:15px 0;}
+#StaticContentPage {width:710px;margin:0;float:left;clear:none;}
+.staticContentEntry {float:right;width:100%;clear:none;}
+.ContactInput h3 {margin:15px 0 0;}
+#staticContentDiv_1 p a {display:block;}
+#ContactUsThanks {float:left;clear:none;width:65%;}
+
+#StoreMenu li a.nav-login {color:#FFFF00;}
+
+#GsnFooter {background:none;margin:0 0 0 105px;}
+
+#manufacturingContent table { margin:0 auto 20px; }
+#StaticContentPage p { font-size:14px; marign:0 auto; }
+/* =IE6 hacks */
+
+* html #StoreMenu { height:800px; }
+* html .footerLogos img { display:inline; }

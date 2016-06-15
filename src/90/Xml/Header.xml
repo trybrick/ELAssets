@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<header>
+	<HeaderLogo>/Assets/##chainid##/Images/HeaderLogo_2013.png</HeaderLogo>
+	<TopLevelNavigation>
+		<MenuItem>
+			<Title>Home</Title>
+			<Link>##root##</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Things I Buy</Title>
+			<Link>/Shop/MyPantry.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Items On Sale</Title>
+			<Link>/Shop/Specials.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Shop By Department</Title>
+			<Link>/Shop/Product.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Saved Carts</Title>
+			<Link>/Shop/SavedLists.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Previous Orders</Title>
+			<Link>/Shop/PreviousOrders.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Contact Us</Title>
+			<Link>/Contact</Link>
+		</MenuItem>
+	</TopLevelNavigation>
+</header>

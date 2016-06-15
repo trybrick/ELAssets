@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<header>
+	<logo>/Assets/156/Images/HeaderLogo.gif</logo>
+	<TopLevelNavigation>
+		<MenuItem>
+			<Title>Home</Title>
+			<Link>/Recipes/RecipeCenter.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Cooking Videos</Title>
+			<Link>/Recipes/RecipeVideos.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Create a Shopping List</Title>
+			<Link>/Shop/Browse.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Savings Center</Title>
+			<Link>/Shop/Coupons.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>My Recipe Box</Title>
+			<Link>/Recipes/MyRecipes.aspx</Link>
+		</MenuItem>
+		<MenuItem>
+			<Title>Contact Us</Title>
+			<Link>/Contact</Link>
+		</MenuItem>
+	</TopLevelNavigation>
+	<ContentObjects>
+		<ContentObject>
+			<Name>featuredarticles</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>featuredrecipe</Name>
+		</ContentObject>
+		<!-- <ContentObject>
+			<Name>mealplannerteaser</Name>
+		</ContentObject> -->
+		<ContentObject>
+			<Name>quicksearch</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>advancedsearch</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>toprecipes</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>recipecenterinformation</Name>
+		</ContentObject>
+	</ContentObjects>
+</header>

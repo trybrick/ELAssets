@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<header>
+<logo>/Assets/##chainid##/Images/HeaderLogo.gif</logo>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>http://www.mycountrymart.com</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Store Information</Title>
+		<Link>http://www.mycountrymart.com/stores/index.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Departments</Title>
+		<Link>http://www.mycountrymart.com/departments/index.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Weekly Ads</Title>
+		<Link>##root##/Shop/WeeklyAd.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Recipes</Title>
+		<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Community</Title>
+		<Link>http://www.mycountrymart.com/community_programs/index.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Coupons</Title>
+		<Link>##root##/Shop/Coupons.aspx</Link>
+	</MenuItem>
+</TopLevelNavigation>
+</header>
+ 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>SaraLee</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<ManufacturerCode></ManufacturerCode>
+	<DepartmentID>12806</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/assets/common/promotions/saralee/images/</ImagePath>
+	<ButtonImage>http://upload.gsngrocers.com/elvs/assets/common/promotions/saralee/images/addtolist.jpg</ButtonImage>
+
+	<!-- CONTENT -->
+	<HeaderImage alt=""></HeaderImage>
+	<PageDescriptionText></PageDescriptionText>
+	<FooterImage></FooterImage>
+	<ProductGroup>
+		<Title></Title>		
+
+		<Product>
+			<Class></Class>
+			<Image alt="">whole-wheat.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=121086253&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0001</ProductCode>
+			<Description>whole wheat</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Class></Class>
+			<Image alt="">whole-grain-white.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=121087213&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0002</ProductCode>
+			<Description>whole grain white</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Class></Class>
+			<Image alt="">honey-wheat.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=121088173&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0003</ProductCode>
+			<Description>honey wheat</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+</LandingPage>

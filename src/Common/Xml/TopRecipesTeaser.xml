@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<TopRecipeElements>
+	<Title>Top 50 Recipes</Title>
+	<Link>##root##/Recipes/RecipeSearchResults.aspx?TopRecipes=true</Link>
+	<ClickHere>Top 50 Most Popular Recipes</ClickHere>
+	<EndLine> on our site.</EndLine>
+</TopRecipeElements>

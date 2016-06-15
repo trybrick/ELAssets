@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<RecipeCenter>
+	<ContentObjects>
+		<ContentObject>
+			<Name>manufacturercoupons</Name>
+		</ContentObject>
+		<ContentObject>
+			<Source>http://groceryshopping.jambocast.com/xml/playlists/12672</Source>
+		</ContentObject>
+	</ContentObjects>
+</RecipeCenter>

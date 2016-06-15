@@ -1,0 +1,23 @@
+/*-----------------------------------------*/
+/* !Choose Store Styles   */
+/*-----------------------------------------*/
+
+#chooseStoreHeader	{ float:left; width: 100%; background: green; }
+#chooseStoreContent { float:left; width: 98%; margin: 5px 0 0 11px; width: 942px;}
+#chooseStoreContent h4	{ font-size: 120%;}
+#chooseStoreContent	h5	{ font-size: 100%}
+#chooseStoreContent p	{ font-size: 90%; color: #333; margin: 5px 0;}
+#chooseStoreMap		{ float:right;}
+
+/*-----------------------------------------*/
+/* !Choose Store Search   */
+/*-----------------------------------------*/
+#chooseStoreSearch		{ float:left; width: 45%; margin: 15px 0 0; padding:5px; background: #eee;}
+#chooseStoreSearch h4	{ border-bottom: 1px solid #ccc; margin: 0 0 10px;}
+input#refinecity		{ width: 200px;}
+p.refineformseparator	{ text-align: center;}
+
+/*-----------------------------------------*/
+/* !Choose Store results  */
+/*-----------------------------------------*/
+.storeResult		{ background: #f7f7f7; width: 210px; height: 290px; float:left; clear:none; margin: 10px 10px 0 0; padding: 9px 0;}

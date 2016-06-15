@@ -1,0 +1,241 @@
+<SignUpV2>
+	<Pages>
+		<Page type="formvalues" value="otherOptionalInformation">
+			<Name>Personal Preferences</Name>
+			<Direction>optional</Direction>
+			<Groups>
+				<Group>1</Group>
+			</Groups>
+			<DisplayFields statuscode="1">
+				<DisplayField>
+					<DisplayText>Username:</DisplayText>
+					<DisplayOrder>4</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>false</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtUsername</InputID>
+					<InputTitle>username</InputTitle>
+					<Validators>
+						<Validator>
+							<Type name="type">uniqueUsername</Type>
+							<Regex name="regex"></Regex>
+							<ValidationField name="validationfield"></ValidationField>
+							<ErrorMessage name="errormessage">Invalid Username</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "uniqueUsername", regex: "", validationfield: "", errormessage: "This username is already taken" }]]>
+							</JSONObject>
+						</Validator>
+					</Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>UserName</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Password:</DisplayText>
+					<DisplayOrder>5</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>password</InputType>
+					<InputID>txtPassword</InputID>
+					<InputTitle>password</InputTitle>
+					<ErrorMessage name="errormessage"></ErrorMessage>
+					<Validators>
+						<Validator>
+							<Type name="type">regex</Type>
+							<Regex name="regex">.{6,20}</Regex>
+							<ValidationField name="validationfield"></ValidationField>
+							<ErrorMessage name="errormessage">Invalid Password</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "regex", regex: ".{6,20}", validationfield: "", errormessage: "Invalid Password" }]]>
+							</JSONObject>
+						</Validator>
+					</Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>DecryptedPassword</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Confirm Password:</DisplayText>
+					<DisplayOrder>6</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>password</InputType>
+					<InputID>txtPasswordConfirm</InputID>
+					<InputTitle>password2</InputTitle>
+					<ValidationField name="validationfield">txtPassword</ValidationField>
+					<ErrorMessage name="errormessage"></ErrorMessage>
+					<Validators>
+						<Validator>
+							<Type name="type">regex</Type>
+							<Regex name="regex">.{6,20}</Regex>
+							<ValidationField name="validationfield"></ValidationField>
+							<ErrorMessage name="errormessage">Invalid Password</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "regex", regex: ".{6,20}", validationfield: "", errormessage: "Invalid Password" }]]>
+							</JSONObject>
+						</Validator>
+						<Validator>
+							<Type name="type">field</Type>
+							<Regex name="regex"></Regex>
+							<ValidationField name="validationfield">txtPassword</ValidationField>
+							<ErrorMessage name="errormessage">Passwords do not match</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "field", regex: "", validationfield: "txtPassword", errormessage: "Passwords do not match" }]]>
+							</JSONObject>
+						</Validator>
+					</Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>DecryptedPassword</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Address 1:</DisplayText>
+					<DisplayOrder>1</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtAddress1</InputID>
+					<InputTitle>primaryaddress</InputTitle>
+					<Validators></Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>PrimaryAddress</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Address 2:</DisplayText>
+					<DisplayOrder>2</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>false</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtAddress2</InputID>
+					<InputTitle>secondaryaddress</InputTitle>
+					<Validators></Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>SecondaryAddress</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>City:</DisplayText>
+					<DisplayOrder>3</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtCity</InputID>
+					<InputTitle>city</InputTitle>
+					<Validators></Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>City</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>State:</DisplayText>
+					<DisplayOrder>4</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>select</InputFieldType>
+					<InputType></InputType>
+					<InputID>ddlState</InputID>
+					<InputTitle>statevalue</InputTitle>
+					<Validators></Validators>
+					<PossibleValues>
+						<Value>
+							<DisplayText>##States##</DisplayText>
+							<DisplayValue></DisplayValue>
+						</Value>
+					</PossibleValues>
+					<DataPath>State</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Zip Code:</DisplayText>
+					<DisplayOrder>4</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>true</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtZipCode</InputID>
+					<InputTitle>postalcode</InputTitle>
+					<Validators>
+						<Validator>
+							<Type name="type">regex</Type>
+							<Regex name="regex">^\\d{5}((-|\\s)?\\d{4})?$</Regex>
+							<ValidationField name="validationfield"></ValidationField>
+							<ErrorMessage name="errormessage">Invalid Zip Code</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "regex", regex: "^\\d{5}((-|\\s)?\\d{4})?$", validationfield: "", errormessage: "Invalid Zip Code" }]]>
+							</JSONObject>
+						</Validator>
+					</Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>PostalCode</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Mobile #:</DisplayText>
+					<DisplayOrder>4</DisplayOrder>
+					<DataType>text</DataType>
+					<IsRequired>false</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>text</InputType>
+					<InputID>txtMobile</InputID>
+					<InputTitle>phone</InputTitle>
+					<Validators>
+						<Validator>
+							<Type name="type">regex</Type>
+							<Regex name="regex">^(\\(?\\d\\d\\d\\)?)?( |-|\\.)?\\d\\d\\d( |-|\\.)?\\d{4,4}(( |-|\\.)?[ext\\.]+ ?\\d+)?$</Regex>
+							<ValidationField name="validationfield"></ValidationField>
+							<ErrorMessage name="errormessage">Invalid Phone Number</ErrorMessage>
+							<JSONObject>
+								<![CDATA[{type: "regex", regex: "^(\\(?\\d\\d\\d\\)?)?( |-|\\.)?\\d\\d\\d( |-|\\.)?\\d{4,4}(( |-|\\.)?[ext\\.]+ ?\\d+)?$", validationfield: "", errormessage: "Invalid Phone Number" }]]>
+							</JSONObject>
+						</Validator>
+					</Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>Phone</DataPath>
+					<DataSource>Consumer</DataSource>
+				</DisplayField>
+				<DisplayField>
+					<DisplayText>Check to receive specials via text message.</DisplayText>
+					<DisplayOrder>4</DisplayOrder>
+					<DataType>checkbox</DataType>
+					<IsRequired>false</IsRequired>
+					<Group>1</Group>
+					<InputFieldType>input</InputFieldType>
+					<InputType>checkbox</InputType>
+					<InputID>chkMobileUpdates</InputID>
+					<InputTitle>receiveSMS</InputTitle>
+					<Validators></Validators>
+					<PossibleValues></PossibleValues>
+					<DataPath>ReceiveSMS</DataPath>
+					<DataSource>ConsumerSetting</DataSource>
+				</DisplayField>
+			</DisplayFields>
+		</Page>
+		<Page type="formvalues" value="otherRequiredInformation">
+			<Name>Store Preferences</Name>
+			<Notes>Providing your address allows us to send you customized savings that are specific to your area.</Notes>
+		</Page>
+		<Page type="placeholder" value="dietarypreferences">
+			<Name>Dietary Preferences</Name>
+			<Direction>dietary</Direction>
+			<Notes>Specifying your dietary information allows us to provide you with recipes customized to your specific dietary plan.</Notes>
+			<Groups></Groups>
+			<DisplayFields></DisplayFields>
+		</Page>
+	</Pages>	
+</SignUpV2>

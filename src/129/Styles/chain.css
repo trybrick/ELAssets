@@ -1,0 +1,214 @@
+﻿/*------------------------------------------------*/
+/* !cashwise
+/*------------------------------------------------*/
+body 				{font-size:0.7em; height:100%; 
+				font-weight:normal; font-style:normal; font-family: Verdana, Arial, Helvetica, sans-serif; color:black; margin-top:0; 
+				margin-left:0 ;padding-left:0; padding-right:0;}
+html				{background: #ffffff; height:100%;}
+a:link,
+a:visited,
+a:active			{font-weight:bold; color:#FF0000; text-decoration:none;}
+a:hover				{font-weight:bold; color:#FF0000; text-decoration:underline;}
+h2				{color:#FF0000;}
+#imgSubHeader			{clear:both; float:left;}
+/*------------------------------------------------*/
+/* !static content
+/*------------------------------------------------*/
+#StaticContentPage 	{background-color:#FFF;margin:0; clear:both; float:left;}
+#LeftNav 			{ margin-top:1em; }
+#LeftNav a			{  border-bottom:1px solid #ccc; padding:0.5em; }
+#StaticContentPage h2				{font-weight:bold; font-size:18px; color:#000;text-decoration:underline;border:none;}
+#StaticContentPage p				{clear:both;font-size:120%;margin-top:1em;}
+#StaticContentPage td p { margin:0; }
+#StaticContentPage ol, div#StaticContentPage ul				{font-weight:bold;font-size:120%;}
+#StaticContentPage img.HeaderImage {float:left; margin:0 20px 20px 0;}
+#StaticContentPage p.HeaderText	{ clear:none; float:left; width:250px;}
+#sustainability	{width:820px;margin:0 auto 20px;}
+#sustainability p {font-size:14px;width:auto;margin:0;}
+#sustainability h2 {font-size:14px;margin:15px 0 2px;}
+#sustainability li {font-size:14px;font-weight:normal;}
+#sustainability ul {margin-top:4px;}
+/*------------------------------------------------*/
+/* !available varieties
+/*------------------------------------------------*/
+#availablevarieties:after	{content: ""; display: block; height: 0; clear: both; }
+#availablevarietiestop		{background:#FF0000 url("../../Common/Images/avail_varieties_300_r1_c1.png") 0 0 no-repeat; }
+#availablevarietiestop h2 	{color:#FFFFFF; display:block; font-size:110%; width:90%; margin:0 auto; text-align:center; border:0;}
+/*------------------------------------------------*/
+/* !button style: party platter and bakery depts
+/*------------------------------------------------*/
+#TopNavigation				{margin:5px auto}
+#TopNavigation a 			{background: url(/Assets/129/Images/submit_button_large.gif) 0 0 no-repeat; color:#ffffff; display:block; float:left; font-size:80%; height:18px; margin:0 3px ; padding:3px 0 0 0; text-align:center; width:100px;}
+#TopNavigation a:hover 		{background-position: -200px 0; text-decoration:none; }
+#TopNavigation a:active 	{background-position: -100px 0;}
+/*------------------------------------------------*/
+/* !header
+/*------------------------------------------------*/
+#StoreHeader			{background: transparent url(/Assets/129/Images/CashWise_Header_2011.jpg) no-repeat top left;}
+#StoreHeaderRight		{height:110px;}
+#StoreHeaderRightTop 		{width:215px; border: 0; margin:0; min-width:0; background: none;}
+#StoreHeaderLogo		{display:none;}
+#LoginBox 		{background-color:#ffffff;border:2px solid red;margin: 15px 15px 0 0;}
+#LoginBox .fb_button_text {color:#ffffff;}
+a.SignUpLink			{ background-color:#000; color:#fff; font-size:9px; height:1.5em; }
+
+#LoginNewProfileLinkDiv		{color:#FFFFFF; width:100%; background:none; letter-spacing:-1px;}
+#LoginButtonDiv			{color:#FF0000; }
+#LoginNewProfileLinkDiv a	{color:#FFFFFF; }
+
+#LoginLabelTextDiv { color:#ff0000; }
+#LoginAsLabelDiv { font-size:12px; }
+#LoginProfileLinkDiv	{ background-color:#fff; font-size:9px; margin-top:5px; padding:2px; }
+#LoginProfileLinkDiv a { display:inline; float:none; width:auto; } 
+/*------------------------------------------------*/
+/* !nav bar
+/*------------------------------------------------*/
+#nav				{background-color:#FF0000; }
+#nav 				{padding: 0 0 0 45px;}
+#nav ul			{padding: 0 ;}
+#nav ul, #nav li a,
+#nav li a:visited, 
+#nav li a:active		{color:#FFFFFF; font-size:95%; text-decoration:none; }
+#nav li a:hover			{color:#FFFF00;}
+#nav li ul 			{background: #FF0000;}
+#nav li:hover			{background:#FF6600;}
+/*------------------------------------------------*/
+/* !featured teasers
+/*------------------------------------------------*/
+#FeaturedRecipeTeaser		{background:transparent url(/Assets/129/Images/lime_green_background.jpg) repeat-x; }
+#FeaturedArticleTeaser		{background:transparent url(/Assets/129/Images/bright_yellow_background.jpg) repeat-x; }
+#AskTheChefTeaser		{background:transparent url(/Assets/129/Images/lime_green_background.jpg) repeat-x; }
+#CookingTipsTeaser		{background:transparent url(/Assets/129/Images/bright_yellow_background.jpg) repeat-x; }
+#FeaturedArticleTeaser h3	{color:#000000;}
+#AskTheChefTeaser h3,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3	{color:#FFFFFF;}
+#MealPlanner h3			{border-bottom:1px solid black;}
+/*------------------------------------------------*/
+/* !home
+/*------------------------------------------------*/
+#SplashContainer		{height:305px; margin-top:0; margin-bottom:0; padding:0; overflow:hidden;}
+#AdPromo			{width:220px; height:300px; padding:0; margin:0; overflow:hidden;}
+#AdPromo img	{margin:0 auto;}
+#CobornsDelivers		{float:left; width:48%; height:210px; background:white;}
+#CobornsDelivers img		{margin:40px auto;}
+#FeaturedRecipeTeaser,
+#FeaturedArticleTeaser		{width:245px; margin:0; float:left; display:inline;}
+#FeaturedArticleTeaser h2 a,
+#CookingTipsTeaser h2 a	{color:black;}
+#playpause { left:10px; right:auto; bottom:10px; }
+/*------------------------------------------------*/
+/* !meal planner
+/*------------------------------------------------*/
+#MealPlanner			{background:transparent url(/Assets/129/Images/beige_gradient.jpg) repeat-x;}
+#MealPlanner a			{color:#003366;}
+/*------------------------------------------------*/
+/* !coupons grid
+/*------------------------------------------------*/
+#tblCouponTopN			{border:2px solid #FF0000; }
+#CouponList h3			{color:#FF0000; }
+/*------------------------------------------------*/
+/* !3-panel toolbox
+/*------------------------------------------------*/
+#Department h3, #Aisles h3, #Category h3	{color:#FF0000; }
+#InBetween1, #InBetween2			{color:#FF0000; }
+/*------------------------------------------------*/
+/* !grid styles
+/*------------------------------------------------*/
+#CategoryHeader h3		{color:#FF0000; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+.GridItem th			{text-align:left; background-color: #FF0000; color: #FFFFCC; font-weight: bold;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#CircularAdText1_dlCategory h3	{color:#FF0000;}
+
+#Options .ItemImage { height:auto; }
+/*------------------------------------------------*/
+/* !recipe page
+/*------------------------------------------------*/
+#RecipeCardTop					{width:100%; height:42px; padding:0; background:none;}
+#RecipeCardMiddle				{background:none; background-color:#f4F1cf; }
+#RecipeCardBottom				{display:none;}
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe				{margin-top:12px;}
+/*------------------------------------------------*/
+/* !heading text
+/*------------------------------------------------*/
+ #ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#EmploymentPositions h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,					
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists span a	{color:#FF0000;}
+#CircularLists .text-only-link a{ width:auto;}		
+/*------------------------------------------------*/
+/* !employment header
+/*------------------------------------------------*/
+#EmploymentLogo {clear:both; margin-bottom:12px; float:left; width:100%; height:250px; background:transparent url(/Assets/129/Images/careers.jpg);}
+/*------------------------------------------------*/
+/* ! deli page =
+/*------------------------------------------------*/
+table.PartyPlatter			{float:left;}
+table.PartyPlatter td		{padding:1em;}
+/*------------------------------------------------*/
+/* !Shopping List
+/*------------------------------------------------*/
+#savedshoppinglists h2		{color:#C02407; border-bottom:1px solid #FF0000;}
+#legend th			{background-color:#FF0000;}
+#ShoppingListHeaderSmall {background:url(/Assets/129/Images/Cashwise_shopping_list_top.jpg) no-repeat;height:109px;margin-bottom:-1px;}
+div#ShoppingList div#ShoppingListItemsDisplay { margin:0;min-height:30px;}
+#FiveListButtons {background:url(/Assets/129/Images/Cashwise_shopping_list_bottom.jpg) no-repeat;min-height:78px;padding-top:12px;}
+#FiveListButtons a {display:inline;border:0 none;float:left;margin:0 0 0 10px;padding:0px;}
+#FiveListButtons a.shoplistPrint span,#FiveListButtons a.shoplistEmail span, #FiveListButtons a.shoplistLast span,#FiveListButtons a.shoplistSave span, #FiveListButtons a.shoplistManage span	{margin-top:37px;}
+#FiveListButtons a.shoplistPrint {background:url(/assets/129/images/ShopList_print.png) no-repeat;margin-left:24px;}
+#FiveListButtons a.shoplistEmail {background:url(/assets/129/images/ShopList_email.png) no-repeat;margin-left:12px;}
+#FiveListButtons a.shoplistLast {background:url(/assets/129/images/ShopList_lastlist.png) no-repeat;margin-left:12px;}
+#FiveListButtons a.shoplistSave {background:url(/assets/129/images/ShopList_save.png) no-repeat;margin-left:15px;}
+#FiveListButtons a.shoplistManage {background:url(/assets/129/images/ShopList_manage.png) no-repeat;margin-left:12px;}
+#FiveListButtons a:link,#FiveListButtons a:visited,#FiveListButtons a:active,#ItemCount {font-family: "Avian","Arial", "Helvetica", Verdana;color:#ff3333; font-weight:normal;}
+#ManageList #ShoppingListItemsDisplay {background: transparent url(/Assets/129/Images/Cashwise_shopping_list_middle_large.jpg) repeat-y;}
+#trashcanSmall {margin-left:6px;}
+#ShoppingList table div.shopListItemSmall	{font-family: "Avian","Arial", "Helvetica", Verdana;color:#000;font-weight:normal;}
+#ShoppingList td {border-bottom:none;}
+#ShoppingList table {width:255px;}
+#ShoppingListHeaderLarge {background:transparent url(/Assets/129/Images/Cashwise_shopping_list_top_large.jpg) no-repeat; height:60px;}
+#ManageList h3 {margin-left:22px;font-family: "Avian","Arial", "Helvetica", Verdana;}
+#ManageList input {margin-left:20px;}
+#ManageList .category {margin-left:32px; width:510px;}
+#ManageList .Item	{font-family: "Avian","Arial", "Helvetica", Verdana;}
+#ShoppingListMain {background:transparent url(/Assets/129/Images/Cashwise_shopping_list_middle.jpg) top right; }
+#AddYourOwnItems input {margin-left:5px; width:196px;}
+
+#signUpPop1, #signUpPop2, #signUpPop3 {top:194px;}
+.sidebarFeaturesText {font-size:1.2em;}
+
+/*------------------------------------------------*/
+/* !Contact Us
+/*------------------------------------------------*/
+#ContactUsThanks { float: left; width: 83%;}
+
+
+/*------------------------------------------------*/
+/* !Sign Up
+/*------------------------------------------------*/
+#SignUpV2.addinfocontainer label {width:195px;}
+#SignUpV2.addinfocontainer #emails input {margin:3px 10px 0px 15px;}
+

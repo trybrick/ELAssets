@@ -1,0 +1,299 @@
+﻿/* Ideal grocery
+--------------------------------------------------*/
+html { background: none #ccc }
+#container {
+    background: transparent none;
+	padding: 0;
+	width: 1130px;
+}
+
+.main-wrapper {
+	background-color:#fff;
+	padding:0 10px;
+	width:930px;
+}
+
+/* header
+--------------------------------------------------*/
+#secondary-navigation { font-size: 130% }
+#nav {
+    background: #A71716 url(/Assets/90/Images/bg_menu.jpg) repeat-x left bottom;
+    padding: 10px 0 0;
+    margin-bottom: 0;
+	margin-bottom: 0;
+	padding: 10px 0 0;
+}
+#nav ul {
+    float: left;
+    margin-left: 70px;
+}
+#nav li { margin: 0 10px }
+#nav a {
+    color: #fff;
+    margin: 0;
+}
+#nav a:hover {
+    color: #ff0;
+    text-decoration: none;
+}
+/#StoreHeaderRightTop {
+    border: 0;
+    background: white none;
+    margin-top: 30px;
+    : ;
+}
+#StoreInfoDiv {
+    background-color: transparent;
+    color: #000;
+    margin-top: 33px;
+    width: 300px;
+}
+#StoreHeader { 
+	background: transparent url(/Assets/90/Images/header_2013.jpg) no-repeat left top;
+	width:950px;
+}
+
+#StoreHeaderLogo {
+    width: 119px;
+    height: 150px;
+}
+
+#GsnFooter { 
+	margin-top:0;
+	padding-top:40px;
+	width:950px;
+}
+#CurrentStoreInfo { top: 160px }
+#CurrentStoreInfo p.otherstore { display: none }
+
+/* hide teasers
+--------------------------------------------------*/
+#CookingTipsTeaser,
+#AskTheChefTeaser,
+#FeaturedArticleTeaser { display: none }
+
+/* product grid, headers
+--------------------------------------------------*/
+.GridItem th,
+#legend th { background-color: #A71716 }
+
+/* shopping list
+--------------------------------------------------*/
+#ShoppingListHeaderSmall { background-image: url(/Assets/90/Images/ShoppingListHeader.gif) }
+#ShoppingListHeaderLarge {
+    height: 60px;
+    background-image: url(/Assets/90/Images/ShoppingListLarge.gif);
+}
+#ShoppingListHeaderLarge.Saved { background-image: url(/Assets/90/Images/ShoppingListHeaderSaved.gif) }
+div#ShoppingList div#ShoppingListItemsDisplay {
+    overflow: hidden;
+    width: 300px;
+}
+
+/* hide recipes.
+--------------------------------------------------*/
+#SearchOptions { display: none }
+#ManageList #ShoppingListItemsDisplay { padding-top: 12px }
+
+/* shoppinglist icons
+--------------------------------------------------*/
+a#CheckOutIcon { margin-left: 25px }
+a#PrintListIcon { display: none }
+
+/* buttons
+--------------------------------------------------*/
+#CtrlDivTextSearch #autosuggest a {
+    background: transparent none no-repeat top left;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+/* no items
+--------------------------------------------------*/
+ul#ogsNoItemsLinks {
+    list-style-type: none;
+    text-indent: 0;
+}
+ul#ogsNoItemsLinks li {
+    list-style-image: url(/Assets/Common/Images/add_icon_list.gif);
+    margin: 1em;
+}
+ul#ogsNoItemsLinks li a {
+    font-size: 120%;
+    padding-left: 1em;
+}
+
+/* headings
+--------------------------------------------------*/
+h2,
+a:link,
+a:visited,
+a:active,
+#Department h3,
+#Aisles h3,
+#Category h3,
+#InBetween1,
+#InBetween2,
+#ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,
+#UpdatePanelPage  h1,
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,
+#DietaryPreferencesTip h1,
+#privacy h2,
+#recipecontent h3,
+#CtrlDivSubTitle h2,
+#FeaturedArticleFull h3,
+#ContactUs h2,
+#EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2,
+#ContactUs hr,
+#ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists span a
+#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a,
+.BtnPageLink,
+#GlobalQuickSearch h2 { color: maroon }
+th {
+    background-color: maroon;
+    color: #ffffcc;
+}
+
+/* checkout
+--------------------------------------------------*/
+#CheckOutHeader { width:950px; }
+.CheckoutPage { background-color:#fff;}
+
+#UserInformation, 
+#SubstituteItems, 
+#Taxes,
+#DeliveryInformation,
+#PaymentOptions {
+	float:left;
+	margin:0;
+	padding-left:0;
+	width:950px;
+}
+
+#ctl00_ContentPlaceHolder1_txtAddress2, 
+#ctl00_ContentPlaceHolder1_ddlState, 
+#ctl00_ContentPlaceHolder1_txtPhoneAlternate {
+    margin-bottom: 0;
+}
+
+
+#CheckOutSteps { margin-bottom:0; width: 950px; }
+#CheckOutSteps table { margin: 0 auto }
+#PaymentOptionsList { width: 700px }
+#CheckOutButtons { 
+	background-color:#FFFFFF;
+	float:left;
+	margin:0;
+	padding-left: 194px;
+    width: 756px;
+}
+#ctl00_Navigation {
+	background-color: #fff;
+	float: left;
+	padding: 1em 0;
+	width: 950px;
+}
+#DeliveryInformation {
+	background-color:#FFFFFF;
+	float:left;
+	padding-left:140px;
+	width:810px;
+}
+
+div.checkoutInfoDiv {
+	background-color:#EEEEEE;
+	border:1px solid #999999;
+	margin:35px;
+	margin:1em;
+	padding:2%;
+	width:435px;
+}
+
+#CheckOutOrderSubstitutionTypes label 	{width:370px;}
+#CheckOutUserInformation input 			{width:235px;}
+
+.StaticContent.Footer {
+	background-color:#fff;
+	width:950px;
+	margin:0;
+}
+
+.CommentTextArea { width:100%; }
+
+/* signout
+--------------------------------------------------*/
+
+/* hides reference to weekly circular */
+#SignOutPage #noitems { display: none }
+
+/* signin page
+--------------------------------------------------*/
+#SignInDiv #main { display: block }
+#signinWelcomeText ul { padding-left: 300px }
+#signinWelcomeText li {
+    list-style-type: square;
+    text-indent: 0px;
+}
+li#first {
+    text-indent: -40px;
+    list-style-type: none;
+}
+
+/* taxes
+--------------------------------------------------*/
+#Taxes table.Subtotal tr td.subTotalLabel {
+	width:508px;
+}
+
+#Taxes table.Subtotal {
+	clear:both;
+	float:none;
+    width: 590px; 
+    margin-left: 0px;
+}
+
+#Taxes .checkoutMain div table {
+    border: 1px solid #666;
+    width: 590px;
+    margin: 1em auto;
+}
+
+/* sign up
+--------------------------------------------------*/
+#PrivacyDisclaimer { margin-left: 135px }
+
+/* contact us
+--------------------------------------------------*/
+#ContactUs h2,
+#EmploymentPositions h1,
+#EmploymentApplication h2 { padding-top: 10px }
+#signUpPop1,
+#signUpPop2,
+#signUpPop3 {
+    top: 202px;
+    left: 305px;
+}
+
+/* IE 7
+--------------------------------------------------*/
+*:first-child+html #nav {
+	overflow: auto;
+}
+*:first-child+html #Taxes table.Subtotal tr td.subTotalLabel {
+	width:523px;
+}

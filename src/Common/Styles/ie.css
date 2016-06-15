@@ -1,0 +1,76 @@
+/* IE styles */
+
+/* IE 8 and below styles
+--------------------------------------------------*/
+	#WeeklyAdPage .noPagesAvailable { min-width:300px; } 
+/* !sign-in 
+---------------------------------------------------*/
+	#register .button span, #login .button span { line-height:100%; }
+	#register .button, #login .button { padding-top:0.3em; }
+
+
+	
+/* IE 7 only styles
+--------------------------------------------------*/
+/* use *:first-child+html in front of selector to target IE7 only*/
+
+/* clearfix
+--------------------------------------------------*/
+	*:first-child+html .clearfix { 
+		min-height: 1px; 
+		zoom: 1; 
+	}
+	*:first-child+html .group	 { min-height: 1px; }
+	
+/* header
+--------------------------------------------------*/
+	/*needed for IE7 z-index bug:parent of drop down must have higher z-index defined or IE ignores z-index property.*/
+	*:first-child+html #nav { z-index:7; }
+	*:first-child+html #lightwindow_contents #scrollabletable { padding-right:18px; }
+	*:first-child+html #StoreHeader,
+	*:first-child+html #header	{ margin-right:200px; }
+	*:first-child+html #StoreHeaderRightTop { width:200px; }
+	
+/* weekly ad
+--------------------------------------------------*/
+	*:first-child+html #CircularLists select { font-size:85%; }
+	*:first-child+html .as_tipContainer { z-index:9; }
+		
+/* recipe center
+--------------------------------------------------*/
+	*:first-child+html .OwnRecipePage ul { margin-left:3em; }
+	*:first-child+html .recipeIngredient span { margin-top:4px; }
+	*:first-child+html #SearchResults { margin-top:10px; }
+	*:first-child+html #fakeFileUpload { display:none; }
+	*:first-child+html #image-input a.button { display:none; }
+	
+/* search results
+--------------------------------------------------*/
+	*:first-child+html #txtSearchTerm { padding-top:7px; }
+	*:first-child+html #searchControls .searchControlLink { margin-top:5px; }
+	*:first-child+html .pager { width:120px; }
+	
+	*:first-child+html .pager.bottom { 
+		clear:both; 
+		float:none; 
+		position:relative; 
+		left:292px;
+	}
+	
+	*:first-child+html #loadingSearch { 
+		background:transparent url(/Assets/Common/Images/whiteTransparent50.png) repeat top left; 
+		left:0; 
+		top:0;
+	}
+	
+	*:first-child+html #advancedSearch select { visibility:visible !important; }
+
+/* store locator
+--------------------------------------------------*/
+	*:first-child+html #storeZipEntryForm a { margin-top:2px; }
+	*:first-child+html #StoreLocatorePage { float:left;  }
+
+/* article full
+--------------------------------------------------*/
+	*:first-child+html #ArticlePage #BackToArticle{ position:static; }
+	*:first-child+html #ArticlePage {position:relative; }

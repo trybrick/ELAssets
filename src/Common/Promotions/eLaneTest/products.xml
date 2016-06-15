@@ -1,0 +1,595 @@
+<?xml version="1.0"?><!DOCTYPE Products []>
+
+<Products>
+	<Categories>
+		<Category>
+			<Name>Cold Cereal</Name>
+			<CategoryID>1</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/cold_cereal.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Protein Snack Bars</Name>
+			<CategoryID>2</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/protein_snack_bars.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Protein Meal Bars</Name>
+			<CategoryID>3</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/protein_meal_bars.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Protein Water</Name>
+			<CategoryID>4</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/protein_water.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Cereal Bars</Name>
+			<CategoryID>5</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/cereal_bars.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Snack Bites</Name>
+			<CategoryID>6</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/snack_bites.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Waffles</Name>
+			<CategoryID>7</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/waffles.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Bliss Bars</Name>
+			<CategoryID>8</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/bliss_bars.gif</CategoryIMG>
+		</Category>
+		<Category>
+			<Name>Protein Water Mix</Name>
+			<CategoryID>9</CategoryID>
+			<CategoryIMG>/Assets/Common/Images//specialk/protein_water_mix.gif</CategoryIMG>
+		</Category>
+	</Categories>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolatey_delight.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolatey Delight Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-1</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/original.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Original Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-2</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/red_berries.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Red Berries Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-3</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/cinnamon_pecan.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Cinnamon Pecan Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-4</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/vanilla_almond.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Vanilla Almond Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-5</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/fruit_yogurt.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Fruit and Yogurt Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-6</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>1</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/protein_plus.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Protein Plus Cereal</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-7</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>8</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/bliss_rasberry.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolatey Dipped Rasberry Bliss</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-8</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>8</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/bliss_orange.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolatey Dipped Orange Bliss</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize>18 oz Box</DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081706-9</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>2</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolatepb_sbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolate Peanut Butter Protein Snack Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-1</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>2</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolate_delight_sbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolate Delight Protein Snack Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-2</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>3</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolatepb_mbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolate Peanut Butter Protein Meal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-3</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>3</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/doublechocolate_mbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Double Chocolate Protein Meal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-13</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>3</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/strawberry_mbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Strawberry Protein Meal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-4</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>3</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolatey_chip_mbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolatey Chip Protein Meal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-5</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>4</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/strawberry_kiwi.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Strawberry Kiwi Protein Water</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-6</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>4</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/lemon_twist.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Lemon Twist Protein Water</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-7</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>4</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/tropical_blend.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Tropical Blend Protein Water</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-8</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>4</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/mixed_berry.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Mixed Berry Protein Water</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-9</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>9</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/mix_strawberry_kiwi.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Strawberry Kiwi Protein Water Mix</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081806-0</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>9</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/mix_pink_lemonade.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Pink Lemonade Protein Water Mix</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-1</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>9</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/mix_iced_tea.gif</ProductImagURL>
+		<DepartmentID>12792</DepartmentID>
+		<BrandName>Kelloggs Special K2O</BrandName>
+		<ProductDescription>Iced Tea Protein Water Mix</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-2</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/honey_nut_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Honey Nut Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-3</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/variety_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription> Bar Variety Pack</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-4</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/strawberry_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Strawberry Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-5</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/blueberry_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Blueberry Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-6</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/peaches_berries_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Peaches and Berries Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-7</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/vanilla_crisp_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Vanilla Crisp Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-8</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>5</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/chocolatey_drizzle_cbar.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Chocolatey Drizzle Cereal Bars</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-9</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>6</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/strawberry_snackbites.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs Special K</BrandName>
+		<ProductDescription>Snack Bites Strawberry</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081906-0</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>7</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/eggo_waffles.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs</BrandName>
+		<ProductDescription>Eggo Waffles Special K</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081006-1</AdCode>
+	</Product>
+	<Product>
+		<CategoryID>7</CategoryID>
+		<ChainID/>
+		<ProductImagURL>/Assets/Common/Images//specialk/eggo_redberries_waffles.gif</ProductImagURL>
+		<DepartmentID>12795</DepartmentID>
+		<BrandName>Kelloggs</BrandName>
+		<ProductDescription>Eggo Waffles Special K Red Berries</ProductDescription>
+		<ProductCode>38000</ProductCode>
+		<IsProprietary>False</IsProprietary>
+		<Quantity>1</Quantity>
+		<DisplaySize></DisplaySize>
+		<RegularPrice>3.01</RegularPrice>
+		<CurrentPrice>2.50</CurrentPrice>
+		<SavingsAmount>0.49</SavingsAmount>
+		<SavingsStatement>Save 49 cents</SavingsStatement>
+		<AdCode>20081006-2</AdCode>
+	</Product>
+</Products>

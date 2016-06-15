@@ -1,0 +1,37 @@
+/*------------------------------------------------*/
+/* !facebook deals app */
+/*------------------------------------------------*/
+
+#fb-root {float:left;width:100%;}
+.ContentRow {border-top:1px solid #CCCCCC;float:left;padding:10px 0;width:100%;}
+#HeaderContent {border-top:none;padding:0 0 10px;}
+#HeaderContent #HeaderLogo {float:left;margin:10px 20px 0 0;}
+#HeaderContent #HeaderLogo img {max-height:100px;max-width:150px;}
+#StoreInfo {float:left;}
+#StoreInfo img {float:left;}
+#StoreInfo .fbButton {margin:0 0 0 5px;}
+#StoreInfo .StoreInfoRow {clear:left;float:left;margin:0 0 5px;}
+#ProfileInfo {background-color:#EDEFF4;border:1px solid #D8DFEA;float:right;margin:0 0 0 20px;padding:5px;width:100px;}
+#ProfileInfo p {color:#333333;margin:5px 0;text-align:center;width:100%;}
+#ProfileInfo img {margin:0 auto;}
+#SplashContent img {display:inline;}
+#googleMap {border:1px solid #cccccc;height:400px;}
+.GroupFrame {clear:both;float:left;margin-bottom:12px;width:100%;}
+.GroupItem {border-right:1px solid #e9e9e9;display:inline;float:left;margin:0;min-height:275px;padding:0 10px;text-align:center;width:165px;}
+.GroupItem:first-of-type {border-left:1px solid #e9e9e9;}
+.GroupItem p {color:#333333;margin:5px 0;}
+.GroupItem img{margin: 10px auto;max-height:75px;}
+#RecipesFrame .GroupItem {min-height:200px;}
+body {background:#ffffff;}
+h2 {border:none;font-size:16px;margin:10px 0;padding:0;}
+h3 {background-color: #3b5998;border-bottom:1px solid #133783;color:#FFFFFF;font-size:16px;margin:0;padding:5px 0;text-align:center;text-decoration:none;}
+h4 {font-size:13px;margin:5px 0;}
+h5 {background-color: maroon;color: #FFFFFF;font-size: 12px;margin: 10px 0 5px;padding: 3px 0;}
+#container-outer {width:745px;}
+#container {background:#ffffff;margin:10px 0 0;padding:0;width:100%;}
+#footer, #GsnFooter {display:none;}
+a.fbButton, a.fbButton:hover {background-color:#5B74A8;border:1px solid #29447E;color:#FFFFFF;display:inline-block;line-height:14px;margin:5px auto;padding:2px 6px;text-decoration:none;}
+a.fbButton:active {background-color: #4F6AA3;border: 1px solid #29447E;}
+.facebookLike {margin-left:40px;}
+.gmnoprint a {font-size:13px;}
+.gmnoprint p {font-size:11px;line-height:14px;margin:5px 0;}

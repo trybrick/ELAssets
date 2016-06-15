@@ -1,0 +1,102 @@
+/*** chain-specific overrides for uCook 
+
+
+#StoreHeader			{background:url('/Assets/156/Images/ucook_header_xmas.jpg') }
+#LoginBox a, #LoginBox p	{color:white;}
+
+
+***/
+
+
+/*** coupons grid format
+.CouponsGrid				{width:490px;}
+.couponsContainer 			{width:118px;}
+.couponsStoreSavings 			{right:3px; top:3px;}
+.couponsFrame 				{width:117px;}
+.couponsFrame a 			{margin:3px 17px;}
+.couponsDescription			{width:116px; margin:0 1px;}
+.activeCoupon 				{background-position:-12px 0;}
+***/
+
+/*** line-item coupon format
+#CouponsPage .pageHeaderContainer	{display:block; background-position:-9px 0; width:494px;background:transparent url(/Assets/156/images/coupons_copy.gif) no-repeat scroll 0 0;}
+.CouponsGrid		{width:490px;}
+.CouponsGrid h2		{display:none;}
+.couponsContainer 	{border-bottom:1px dotted #CCCCCC;float:left;height:104px;width:490px; margin:0;}
+.couponsFrame 		{clear:both;float:left;width:490px; min-height:100px; padding:0; margin:0; border:0;}
+.couponsSavings 	{background:transparent url(/Assets/Common/Images/coupon_savings.png) no-repeat scroll 0 0;color:white;display:inline;float:right;font-size:90%;font-weight:bold;height:50px;line-height:100%;margin:0;padding:15px 0 0;position:absolute;right:1px;top:27px;width:50px;}
+.couponsImage 		{margin:0; border:0 none;clear:none;display:inline;float:left;margin:0;margin:20px auto 0;width:80px;}
+.couponsImage img	{position:absolute; top:2px; left:0; height:100px; margin:0;}
+.couponsDescription 	{font-size:100%; float:left;height:auto;left:90px;margin:0 1px;position:absolute;text-align:left;top:40px;width:260px;}
+.couponsFrame a 	{position:absolute;right:25px;top:36px;width:75px;}
+.activeCoupon		{background:#FFFFDD url(/Assets/Common/Images/coupon_highlighted.jpg) no-repeat scroll -40px -22px}
+.couponClear		{display:none;}
+
+ ***/
+ #CouponsPage .pageHeaderContainer	{display:block; background-position:-9px 0; width:494px; height:60px; ;background:transparent url(/Assets/156/images/coupons_copy.gif) no-repeat scroll 0 0;}
+.CategoryDisplayContainer		{display:none}
+ 
+/*** Shopping List ***/
+#ShoppingList 				{margin-bottom:12px;}
+#ManageList, #savedshoppinglists,
+#TitleBar				{width:490px;}
+#ManageList table table,
+#savedshoppinglists table table		{width:490px; }
+#ShoppingList td			{}
+#TitleBar, #CurrentList 		{width:490px;}
+#savedshoppinglists			{background:url(/Assets/156/Images/SavedShopListTop490.jpg) no-repeat; padding-top:57px;}
+#savedshoppinglists img			{display:none;}
+#ManageList td td 			{padding-top:3px;}
+#ShoppingList table a, 
+#ShoppingList table input {line-height:120%;}
+
+#MyRecipesPage #main	{background:transparent url(/Assets/156/Images/recipeboxheader.gif) no-repeat scroll left top; padding-top:29px;width:490px;}
+
+#ManageList th		{display:none;}
+#ManageList #category span	{float:left; margin:4px 0 8px 4px;}
+#noitems ul			{font-size:120%; margin-left:40px; list-style-type:square; line-height:160%;}
+
+
+.accordion_content	{display:inline;}
+
+#ContactUs	{float:right; clear:right; width:700px; }
+#main.storelocator	{width:750px; margin-top:0;}
+/*** =store locator ***/
+#StoreLocator h1 { font-size:150%; width:100%; margin-top:12px;}
+#StoreLocator p.result { color:white; background-color: red; padding: 1px 0px 1px 4px; }
+#StoreLocatorDropDown { display:none; } /* default */
+#StoreLocatorZipLookup { height:auto; width:100%; display:block; }
+#storeZipEntryForm { display:none; clear:none; float:left; width:500px; margin-bottom:4px; }
+#storeZipEntryForm p { float:left; margin-top:0; margin-right:8px;vertical-align:baseline; }
+#storeZipEntryForm p span,
+#storeZipEntryForm p input,
+#storeZipEntryForm p select	{ float:left; margin-top:0; margin-right:6px; }
+#storeZipEntryForm p span	{margin-top:4px;}
+#storeZipEntryForm a.button span { margin-right:0; margin-top:0}
+#storeZipEntryForm a { *margin-top:2px; vertical-align:baseline;}
+#storeZipEntryForm input { width:100px; }
+#storeInfoZip { text-align:center; line-height:110%; font-size:90%; width:30%; float:left; height:auto; padding:0 10px 0 0; margin:0 0 12px 0; }
+#StoreLocator .storeInfoZip { text-align:center; line-height:110%; font-size:90%; width:30%; float:left; height:auto; padding:0 10px 0 0; margin:0 0 12px 0; }
+#GoogleMapCanvas { float:right; margin:0; width:100%; height:500px; border: 1px solid black; }
+#GoogleMapStoreList { display:none; float:left; width:500px; height:auto; }
+#storeInfoMap { line-height:110%; font-size:90%; width:100%; float:left; height:auto; }
+#GoogleMapCanvas .gmnoprint span,
+#GoogleMapCanvas .gmnoprint a {font-size:9px!important}
+
+
+/*** iPhone link ***/
+#iPhone {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;color:black;float:left;padding-top:0;width:250px;}
+
+
+#iPhone p {color:#999999;display:inline;float:left;width:255px; font-size:88%;}
+#iPhone a {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;background:transparent url(/Assets/156/Images/large_submit_button_ucook.gif) no-repeat scroll 0 0;clear:both;color:#FFFFFF;display:block;height:20px;padding:3px 0 0;text-align:center;width:100px; margin-bottom:34px;
+}
+.iPhoneLink	a {font-size:110%;margin-bottom:17px;text-align:center; color:#C9060E;}
+p span.Registered 	{font-style:normal;position: relative; bottom:5px;font-size:8px;}
+h3 span.Registered 	{font-style:normal;position: relative; bottom:5px;font-size:8px;}

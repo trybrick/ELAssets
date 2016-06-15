@@ -1,0 +1,16 @@
+a:link,
+a:visited,
+a:active { color:#00B25C;text-decoration:none; }
+a:hover	{ color:#00B25C;text-decoration:underline; }
+p	{ color:#000000; font-size:12px; text-align:center}
+ul	{list-style-type:none; margin:0 0 0 10; padding: 0 0 0 0;}
+li	{margin: 5 0 5 10;}
+
+h3	{font-family:Georgia, 'Times New Roman', Times, serif;margin:0 0 0 0; display:block; clear:both; color:#00B25C; font-weight:normal; font-size:20px; text-align:center; }
+h4 	{font-family:Georgia, 'Times New Roman', Times, serif;margin:0 0 0 0; font-weight:bold; color:#000000; font-size:12px; text-align:center;}
+h5	{font-family:Georgia, 'Times New Roman', Times, serif;margin:0 0 0 0;font-weight:bold;color:#000000;font-size:12px;text-align:center;}
+
+body 	{margin: 0; padding:0;}
+html 	{margin: 0; padding:0;}
+
+#WeeklyAdPreview	{background-color: #FFFFCC; border: medium double #00B25C; padding:0; margin:0; width:210px; height: 315px; text-align:center; vertical-align:text-top;}

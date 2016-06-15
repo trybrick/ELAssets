@@ -1,0 +1,151 @@
+﻿/*------------------------------------------------*/
+/* !Ted's IGA
+/*------------------------------------------------*/
+html				{height:100%; background:transparent url(/Assets/62/Images/background_gray.jpg) repeat-x;}
+body 				{font-size:0.7em; height:100%; background:transparent; font-weight:normal; font-style:normal; font-family: Verdana, Arial, Helvetica, sans-serif; color:black; margin-top:0;		margin-left:0 ;padding-left:0; padding-right:0;}
+a:link,
+a:visited,
+a:active			{font-weight:bold; color:#003366; text-decoration:none;}
+a:hover				{font-weight:bold; color:#003366; text-decoration:underline;}
+h2				{color:#013C8A;}
+
+#imgSubHeader			{clear:both; float:left;}
+/*------------------------------------------------*/
+/* !header
+/*------------------------------------------------*/
+#StoreHeader			{ background: transparent url(/Assets/62/Images/HeaderBG.jpg) no-repeat top right; }
+#StoreHeaderRightTop 	{ border: solid 3px #013C8A; }
+#StoreHeaderLogo		{ width:90px;padding:0; }
+#StoreHeaderMiddle 		{ float:left; left:110px; position:absolute; top:0; }
+#StoreInfoDiv 			{background-color:transparent;color:#000;width:200px;margin-left:10px;padding-top:10px;}
+#StoreAddress1Div,
+#StoreAddress2Div,
+#StoreCityStateZipDiv,
+#StoreTelDiv			{ float:none; }
+/*------------------------------------------------*/
+/* !login box
+/*------------------------------------------------*/
+#LoginBox a.button,
+#LoginBox a.button:hover	{ background:#004dc3 url(/Assets/Common/Images/button_shine_30.png) left 50% repeat-x; }
+#LoginBox a.button span,
+#LoginBox a.button:hover span	{ background-image:none; }
+/*------------------------------------------------*/
+/* !nav bar
+/*------------------------------------------------*/
+#nav				{ background:#013C8A url(/Assets/62/Images/nav_bg.jpg) repeat-x top left; color:yellow; }
+#nav ul				{ float:left; margin-left:70px; }
+#nav li				{ margin:0 5px; }
+#nav li a			{ color:#fff; }
+#nav li a:hover		{ color:#FFFF66; text-decoration:none; }
+/*------------------------------------------------*/
+/* !featured teaser
+/*------------------------------------------------*/
+#FeaturedRecipeTeaser		{background:transparent url(/Assets/62/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser		{background:transparent url(/Assets/62/Images/orangebrown_gradient.jpg) repeat-x;}
+#AskTheChefTeaser		{background:transparent url(/Assets/62/Images/large_olive_gradient.jpg) repeat-x; }
+#CookingTipsTeaser		{background:transparent url(/Assets/62/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser h3,
+#AskTheChefTeaser h3,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3	{color:#FFFFFF;}
+/*------------------------------------------------*/
+/* !home
+/*------------------------------------------------*/
+#AdPromo			{background:transparent url(/Assets/62/Images/large_blue_gradient.jpg) repeat-x;}
+#AdPromo p			{color:#FFFFFF;}
+#LargeButton	    {width:210px;margin:0 0 0 2%;padding:0;float:left;}
+#SplashBlocks		{position:relative;float:left;width:100%;}
+#MealPlanner			{background:transparent url(/Assets/62/Images/blue_gradient.jpg) repeat-x;}
+/*------------------------------------------------*/
+/* !shopping list
+/*------------------------------------------------*/
+#savedshoppinglists h2		{color:#013C8A; border-bottom:1px solid #013C8A;}
+/*------------------------------------------------*/
+/* !manage list legend
+/*------------------------------------------------*/
+#legend th			{background-color:#013C8A;}
+/*------------------------------------------------*/
+/* !coupons grid
+/*------------------------------------------------*/
+#tblCouponTopN			{border:2px solid #013C8A; }
+#CouponList h3			{color:#013C8A; }
+/*------------------------------------------------*/
+/* !3-panel toolbox
+/*------------------------------------------------*/
+#Department h3, #Aisles h3, #Category h3	{color:#013C8A; }
+#InBetween1, #InBetween2			{color:#013C8A; }
+/*------------------------------------------------*/
+/* !grid styles
+/*------------------------------------------------*/
+#CategoryHeader h3		{color:#013C8A; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+.GridItem th			{text-align:left; background-color: #013C8A; color: #FFFFCC; font-weight: bold;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#CircularAdText1_dlCategory h3	{color:#013C8A;}
+/*------------------------------------------------*/
+/* !heading text */
+/*------------------------------------------------*/ 
+ #ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,		
+#SavedRecipes h2,			
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#LoyaltyCard h2, #CakeOrder h2
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#EmploymentPositions h1,	
+#Menu h3,
+#cateringimg h3						{color:#013C8A;}	
+#ContactUs h2, #EmploymentPositions h1, #EmploymentApplication h2, #LoyaltyCard h2, #CakeOrder h2 {	border-bottom:1px solid black;	color:#013C8A;font-size:130%;width:100%;}
+#ContactUs h1, 
+#LoyaltyCard h1, 
+#CakeOrder h1 { border-bottom:1px solid black;color:#013C8A;font-size:150%;font-weight:bold;width:100%;}
+/*------------------------------------------------*/
+/* !about us
+/*------------------------------------------------*/
+#AboutUs { text-align:left; }
+#AboutUs p { float:none;width:500px; }
+/*------------------------------------------------*/
+/* !static content pages
+/*------------------------------------------------*/
+#navigation { width:245px;float:left;margin-right:10px; background-color:#FFFFCC;height:800px;padding-top:20px; }
+#navigation a { display:block;font-size:14px;color:#FFF; font-weight:bold; background:transparent url(/Assets/62/Images/deli_button.jpg) no-repeat top left;width:245px;height:21px;padding-top:2px;overflow:hidden;text-align:center;}
+#mainContent { float:left;width:645px;margin-left:10px; }
+#mainContent h3 { font-size:16px; }
+#mainContent p { width:500px;padding:0 25px; font-size:14px;line-height:1.5em; }
+#linkButtons {padding: 12px;}
+#staticContent h2 { margin-bottom:0px; }
+#LeftNav	{ width:245px;float:left;margin-right:10px; background-color:#FFFFCC;height:800px;padding-top:20px; }
+#LeftNav a	{ display:block;font-size:14px;color:#FFF; font-weight:bold; background:transparent url(/Assets/62/Images/deli_button.jpg) no-repeat top left;width:245px;height:21px;padding-top:2px;overflow:hidden;text-align:center;}
+#mainContentLeftNav	  { float:left;width:645px;margin-left:10px; }
+#mainContentLeftNav p { width:500px;padding:0 25px; font-size:14px;line-height:1.5em; }
+/*------------------------------------------------*/
+/* !profile signin
+/*------------------------------------------------*/
+#login .button, #register .button { background-color:#004dc3; border-color:#004dc3; }
+/*------------------------------------------------*/
+/* !registration page
+/*------------------------------------------------*/
+#signUpPop1, #signUpPop2, #signUpPop4 {top:193px;}
+#SignUpV2 #navigation {height:34px;background-color:#FFFFFF;}
+/*------------------------------------------------*/
+/* !IE 6
+/*------------------------------------------------*/
+* html #LoginBox a.button,
+* html #LoginBox a.button:hover { background-image:none; }

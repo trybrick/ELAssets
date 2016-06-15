@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sargento>
+	<Brand reg="true">Sargento</Brand>
+	<BrandSiteUrl>http://www.sargento.com/</BrandSiteUrl>
+	<Logo alt="Sargento Logo">logo.gif</Logo>
+	<HeadingText></HeadingText>
+	<ManufacturerCode>46100</ManufacturerCode>
+	<CSS>
+		<Stylesheet>##root##/Assets/Common/Promotions/Sargento/Assets/css/screen.css</Stylesheet>
+		<IDPrefix>sargento</IDPrefix>
+	</CSS>
+	<DepartmentID>10338</DepartmentID>
+	<ImagePath>##root##/Assets/Common/Promotions/Sargento/Assets/Images/</ImagePath>
+	
+		
+<!-- ================================================================== -->
+	
+	<Categories>
+		<Category id="1">
+			<Title>Artisan Blends Shredded Cheese</Title>
+			<Order>1</Order>
+			<Image>artisan.jpg</Image>
+		</Category>
+		<Category id="2">
+			<Title>Bistro Blends Shredded Cheese</Title>
+			<Order>4</Order>
+			<Image>bistro.jpg</Image>
+		</Category>
+		<Category id="3">
+			<Title>Classic ChefStyle Shredded Cheese</Title>
+			<Order>5</Order>
+			<Image>classic.jpg</Image>
+		</Category>
+		<Category id="4">
+			<Title>Classic Fancy Shredded Cheese</Title>
+			<Order>6</Order>
+			<Image>classic-fancy.jpg</Image>
+		</Category>
+		<Category id="5">
+			<Title>Classic Shredded Cheese Blends</Title>
+			<Order>2</Order>
+			<Image>classic_2.jpg</Image>
+		</Category>
+<!--		
+		<Category id="6">
+			<Title>Limited Edition Shredded Cheese</Title>
+			<Order>7</Order>
+			<Image>special_reserve.jpg</Image>
+		</Category>
+-->
+		<Category id="7">
+			<Title>Reduced Fat Shredded Cheese</Title>
+			<Order>3</Order>
+			<Image>reduced-fat.jpg</Image>
+		</Category>
+		<Category id="8">
+			<Title>Reduced Sodium Shredded Cheese</Title>
+			<Order>8</Order>
+			<Image>reduced-sodium.jpg</Image>
+		</Category>
+	</Categories>
+	
+<!-- ================================================================== -->	
+		
+	<ProductList>
+		<Product>
+			<Title>Authentic Mexican</Title>
+			<ProductCode>00046</ProductCode>
+			<Order>1</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Double Cheddar</Title>
+			<ProductCode>00047</ProductCode>
+			<Order>2</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella &amp; Provolone</Title>
+			<ProductCode>00048</ProductCode>
+			<Order>3</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Parmesan</Title>
+			<ProductCode>00049</ProductCode>
+			<Order>4</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Swiss</Title>
+			<ProductCode>00050</ProductCode>
+			<Order>5</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Whole Milk Mozzarella</Title>
+			<ProductCode>00051</ProductCode>
+			<Order>6</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		<Product>
+			<Title>Wisconsin Sharp White Cheddar</Title>
+			<ProductCode>00052</ProductCode>
+			<Order>7</Order>
+			<CategoryID>1</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->			
+		<Product>
+			<Title>Chipotle Cheddar Cheese</Title>
+			<ProductCode>00053</ProductCode>
+			<Order>2</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella &amp; Asiago with Roasted Garlic</Title>
+			<ProductCode>00054</ProductCode>
+			<Order>1</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella with Sun-Dried Tomatoes &amp; Basil</Title>
+			<ProductCode>00055</ProductCode>
+			<Order>3</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Nacho &amp; Taco</Title>
+			<ProductCode>00056</ProductCode>
+			<Order>4</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Sharp Wisconsin &amp; Vermont Cheddar with Real Bacon</Title>
+			<ProductCode>00057</ProductCode>
+			<Order>5</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Taco</Title>
+			<ProductCode>00058</ProductCode>
+			<Order>6</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		<Product>
+			<Title>Italian Pasta</Title>
+			<ProductCode>00059</ProductCode>
+			<Order>7</Order>
+			<CategoryID>2</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->		
+		<Product>
+			<Title>Mild Cheddar</Title>
+			<ProductCode>00060</ProductCode>
+			<Order>2</Order>
+			<CategoryID>3</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella</Title>
+			<ProductCode>00061</ProductCode>
+			<Order>1</Order>
+			<CategoryID>3</CategoryID>
+		</Product>
+		<Product>
+			<Title>Sharp Cheddar</Title>
+			<ProductCode>00062</ProductCode>
+			<Order></Order>
+			<CategoryID>3</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->
+		<Product>
+			<Title>Cheddar Jack</Title>
+			<ProductCode>00063</ProductCode>
+			<Order>3</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		<Product>
+			<Title>Colby-Jack</Title>
+			<ProductCode>00064</ProductCode>
+			<Order>4</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mild Cheddar</Title>
+			<ProductCode>00065</ProductCode>
+			<Order>5</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		<Product>
+			<Title>Monterey Jack</Title>
+			<ProductCode>00066</ProductCode>
+			<Order>6</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella</Title>
+			<ProductCode>00067</ProductCode>
+			<Order>7</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		<Product>
+			<Title>Sharp Cheddar</Title>
+			<ProductCode>00068</ProductCode>
+			<Order>8</Order>
+			<CategoryID>4</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->
+		<Product>
+			<Title>4 Cheese Mexican</Title>
+			<ProductCode>00069</ProductCode>
+			<Order>2</Order>
+			<CategoryID>5</CategoryID>
+		</Product>
+		<Product>
+			<Title>6 Cheese Italian</Title>
+			<ProductCode>00070</ProductCode>
+			<Order>1</Order>
+			<CategoryID>5</CategoryID>
+		</Product>
+		<Product>
+			<Title>Pizza Double Cheese</Title>
+			<ProductCode>00071</ProductCode>
+			<Order>3</Order>
+			<CategoryID>5</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->	
+		<Product>
+			<Title>Special Reserve Sharp Cheddar</Title>
+			<ProductCode>00072</ProductCode>
+			<Order>1</Order>
+			<CategoryID>6</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->		
+		<Product>
+			<Title>4 Cheese Italian</Title>
+			<ProductCode>00073</ProductCode>
+			<Order>2</Order>
+			<CategoryID>7</CategoryID>
+		</Product>
+		<Product>
+			<Title>4 Cheese Mexican</Title>
+			<ProductCode>00074</ProductCode>
+			<Order>1</Order>
+			<CategoryID>7</CategoryID>
+		</Product>
+		<Product>
+			<Title>Colby-Jack</Title>
+			<ProductCode>00075</ProductCode>
+			<Order>3</Order>
+			<CategoryID></CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella</Title>
+			<ProductCode>00076</ProductCode>
+			<Order>4</Order>
+			<CategoryID>7</CategoryID>
+		</Product>
+		<Product>
+			<Title>Sharp Cheddar</Title>
+			<ProductCode>00077</ProductCode>
+			<Order>4</Order>
+			<CategoryID>7</CategoryID>
+		</Product>
+		
+<!-- ================================================================== -->		
+		<Product>
+			<Title>Mild Cheddar</Title>
+			<ProductCode>00078</ProductCode>
+			<Order>2</Order>
+			<CategoryID>8</CategoryID>
+		</Product>
+		<Product>
+			<Title>Mozzarella</Title>
+			<ProductCode>00079</ProductCode>
+			<Order>1</Order>
+			<CategoryID>8</CategoryID>
+		</Product>				
+	</ProductList>
+</Sargento>

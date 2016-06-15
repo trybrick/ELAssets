@@ -1,0 +1,103 @@
+﻿<?xml version="1.0"?>
+<!-- 
+Filled Pasta
+-	Riserva
+-	Ravioli
+-	Tortellini 
+-	Tortelloni
+Cut Pasta
+Sauces
+-	Pesto
+-	Red Sauce
+-	Creamy Sauce
+Cheeses
+-->
+<LandingPage>
+<Categories>
+	<Category>
+		<Name>Filled Pasta</Name>
+		<sort>1</sort>
+		<id>1</id>
+		<image>filledpasta.png</image>
+		<SubCategory>
+			<Name>Ravioli</Name>
+			<Product>Four Cheese Ravioli</Product>
+			<Product>Light Four Cheese Ravioli</Product>
+			<Product>Three Cheese Ravioli</Product>
+			<Product>Four Cheese Ravioli (20 oz.)</Product>
+			<Product>Whole Wheat Four Cheese Ravioli</Product>
+			<Product>Whole Wheat Chicken &amp; Prosciutto Ravioli (20 oz.)</Product>
+		</SubCategory>
+		<SubCategory>
+			<Name>Tortellini</Name>
+			<Product>Herb Chicken Tortellini (20 oz.)</Product>
+			<Product>Spinach Cheese Tortellini</Product>
+			<Product>Three Cheese Tortellini</Product>
+			<Product>Mixed Cheese Tortellini (20 oz.)</Product>
+			<Product>Three Cheese Tortellini (20 oz.)</Product>
+			<Product>Whole Wheat Three Cheese Tortellini</Product>
+		</SubCategory>
+		<SubCategory>
+			<Name>Tortelloni</Name>
+			<Product>Chicken &amp; Prosciutto Tortelloni</Product>
+			<Product>Sweet Italian Sausage Tortelloni</Product>
+			<Product>Cheese &amp; Roasted Garlic Tortelloni</Product>
+		</SubCategory>
+		<SubCategory>
+			<Name>Riserva</Name>
+			<Product>Chicken &amp; Four Cheese Ravioli</Product>
+			<Product>Quattro Formaggi Agnolotti</Product>
+			<Product>Spicy Beef &amp; Sausage Ravioli</Product>
+			<Product>Wild Mushroom Agnolotti</Product>
+		</SubCategory>
+	</Category>
+	<Category>
+		<Name>Cut Pasta</Name>
+		<sort>2</sort>
+		<id>2</id>
+		<image>cutpasta.png</image>
+		<SubCategory>
+			<Name>Cut Pasta</Name>
+			<Product>Angel Hair Pasta</Product>
+			<Product>Fettuccine</Product>
+			<Product>Linguine</Product>
+			<Product>Whole Wheat Linguine</Product>
+		</SubCategory>
+	</Category>
+	<Category>
+		<Name>Sauces</Name>
+		<sort>3</sort>
+		<id>3</id>
+		<image>sauces.png</image>
+		<SubCategory>
+			<Name>Pesto Sauce</Name>
+			<Product>Pesto with Basil</Product>
+			<Product>Reduced Fat Pesto with Basil</Product>
+			<Product>Pesto with Basil (11 oz.)</Product>
+		</SubCategory>
+		<SubCategory>
+			<Name>Red Sauce</Name>
+			<Product>Marinara Sauce</Product>
+			<Product>Roasted Garlic Marinara Sauce</Product>
+			<Product>Tomato Herb Parmesan Sauce</Product>
+		</SubCategory>
+		<SubCategory>
+			<Name>Creamy Sauce</Name>
+			<Product>Alfredo Sauce</Product>
+			<Product>Light Alfredo Sauce</Product>
+			<Product>Vodka Sauce</Product>
+		</SubCategory>
+	</Category>
+	<Category>
+		<Name>Cheeses</Name>
+		<sort>4</sort>
+		<id>4</id>
+		<image>cheese.png</image>
+		<SubCategory>
+			<Name>Cheeses</Name>
+			<Product>Freshly Shredded Parmesan Cheese</Product>
+			<Product>Freshly Shredded Romano Cheese</Product>
+		</SubCategory>
+	</Category>
+</Categories>
+</LandingPage>

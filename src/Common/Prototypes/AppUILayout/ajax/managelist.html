@@ -1,0 +1,242 @@
+<!--Styles-->
+<!--
+<link href="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Styles/reset.css" rel="stylesheet" type="text/css" l="l" />
+<link href="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/themes/base/jquery.ui.all.css" rel="stylesheet" />
+<link href="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/styles/smoothness/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+<link href="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/styles/jquery.cluetip.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Styles/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/jquery.js"></script>
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.core.js" type="text/javascript"></script>
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.widget.js" type="text/javascript"></script>
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.tabs.js" type="text/javascript"></script>
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.mouse.js" type="text/javascript"></script>
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/ui/jquery.ui.sortable.js" type="text/javascript"></script> -->
+
+
+<script src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/js/jquery.jeditable.js" type="text/javascript"></script>
+<style>
+	@import url('http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/Styles/managelist.css');
+</style>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+<div id="ManageListMain" class="gsn-managelist">
+	<div id="ManageListHeader" class="header">
+		<h1>Manage Your List</h1>
+	</div>
+	<div id="ManageListTabs" class="manage-list-main">
+		<script>
+		$(document).ready(function() {
+		
+			$(function(){
+				$("#ManageListTabs").tabs();
+			});
+			
+			$("a#AddOwnItem").click(function() {   
+					$("ul.addownitem-box").slideToggle();
+			});
+			
+			$('#current-list-items').sortable({
+				placeholder: "ui-state-highlight"
+			});
+			
+			$('.current-list-group ul').sortable({
+				placeholder: "ui-state-highlight"
+			});
+			
+			$('.current-list-group h2').click(function() {
+					$(this).toggleClass("inactive");
+					$(this).next("ul").slideToggle();
+			});
+			
+			
+			$('a.edit-item').click(function(){
+				
+				$(this).prev().children(".list-comment").editable("http://www.example.com/save.aspx", {
+					indicator : "Saving...",
+					style : "inherit",
+					onblur: "ignore"
+				});
+				
+				$(this).prev().children(".quantity").editable("http://www.example.com/save.aspx", {
+					indicator : "Saving...",
+					style : "inherit",
+					onblur: "ignore"
+				});
+				
+				$(this).prev().children(".list-comment").trigger('click');
+				$(this).prev().children(".quantity").trigger('click');
+				$(this).parent().addClass("editing");
+				$(this).next().next().css("display", "block");
+				$(this).next().css("display","none");
+				$(this).css("display","none");
+				
+			});
+			
+			$('.editing-buttons a.save').click(function(){
+				$(".list-comment form input").submit();
+				$(".quantity form input").submit();
+				$(this).parent().parent().removeClass("editing");
+				$('div.editing-buttons').css("display", "none");
+				$(this).parent().prev().css("display","inline");
+				$(this).parent().prev().prev().css("display","inline");
+			});
+			
+			
+			//favorite action- add somewhere common?
+			
+			$('.favorite-link').click(function(){
+				$(this).toggleClass("favorite-link-added");
+			});
+			
+			
+		});
+		</script>
+		<ul>
+			<li><a href="#tabs-1">Current List</a></li>
+			<li><a href="#tabs-2">Saved Lists</a></li>
+		</ul>
+		<div id="tabs-1" class="current-list-tab">
+			<ul class="current-list-menu">
+				<li><a href="#" class="save">save list</a></li>
+				<li><a href="#" class="email">email list</a></li>
+				<li><a href="#" class="newlist">start new list</a></li>
+				<li>
+					<a href="#" id="AddOwnItem">Add Own Item</a>  
+			        <ul class="addownitem-box" style="display:none;">  
+			            <li>
+			            	<input class="" id="" action="" name="" value="add your own item" type="text" onfocus="value=''" style="width: 150px;float:left;"/>
+			            	<select style="width: 150px; float:left;">
+			            		<option value="-1">- Select Item Dept. -</option>
+								<option exportkeyid="117485" value="10353">Baby</option>
+								<option exportkeyid="117509" value="10354">Baking Needs</option>
+								<option exportkeyid="117542" value="10355">Beverages</option>
+								<option exportkeyid="117651" value="10357">Canned Goods</option>
+								<option exportkeyid="117682" value="10358">Cereal &amp; Breakfast</option>
+								<option exportkeyid="117740" value="10359">Cleaning &amp; Laundry</option>
+								<option exportkeyid="117756" value="10360">Coffee / Tea / Cocoa</option>
+								<option exportkeyid="117779" value="10361">Condiments</option>
+								<option exportkeyid="117786" value="10369">Cookies / Crackers / Snacks</option>
+								<option exportkeyid="117833" value="10338">Dairy</option>
+								<option exportkeyid="117985" value="10341">Frozen Foods</option>
+								<option exportkeyid="118010" value="10342">General Merchandise</option>
+								<option exportkeyid="118042" value="10343">Grocery</option>
+								<option exportkeyid="118074" value="10344">Health &amp; Beauty</option>
+								<option exportkeyid="118103" value="10364">Ice Cream / Frozen Desserts</option>
+								<option exportkeyid="118137" value="10362">Kitchen Supplies</option>
+								<option exportkeyid="118217" value="10345">Meat &amp; Poultry</option>
+								<option exportkeyid="118348" value="10366">Paper &amp; Plastic Goods</option>
+								<option exportkeyid="118393" value="10346">Pet Supplies</option>
+								<option exportkeyid="118462" value="10347">Produce</option>
+								<option exportkeyid="118551" value="10349">Seafood</option>
+			            	</select>
+			            	<a href="#" class="button">add to list</a>
+			            
+			            </li>  
+			        </ul>
+				</li>
+			</ul>
+			<div id="current-list-items">
+				<div class="current-list-group">
+					<h2><a href="#" class="item-header">Produce</a></h2>
+					<ul class="manage-list-content">
+						<li>
+							<span class="sort" id="sort">sort</span>
+							<a class="favorite-link" href="#">&hearts;</a>
+							<img class="thumb" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/managelist/thumb-apples.png"/>
+							<div class="product-info">
+								<h4>Product Name</h4>
+								<p class="description">This is a description of the product if need be.</p>
+								<p class="list-comment" style="display:inline" title="click to edit...">This is my comment</p>
+								<p class="quantity">1</p>
+							</div>
+							<a href="#" class="edit-item">edit</a>
+							<a href="#" class="remove-item">x</a>
+							<div class="editing-buttons" style="display:none;" >
+									<a href="#" class="save">save</a>
+									<a href="#" class="cancel">cancel</a>
+							</div>
+						</li>
+						<li>
+							<span class="sort" id="sort">sort</span>
+							<a class="favorite-link" href="#">&hearts;</a>
+							<img class="thumb" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/managelist/thumb-strawberries.png"/>
+							<div class="product-info">
+								<h4>Product Name</h4>
+								<p class="description">This is a description of the product if need be.</p>
+								<p class="list-comment" style="display:inline" title="click to edit...">This is my comment</p>
+								<p class="quantity">1</p>
+							</div>
+							<a href="#" class="edit-item">edit</a>
+							<a href="#" class="remove-item">x</a>
+							<div class="editing-buttons" style="display:none;" >
+									<a href="#" class="save">save</a>
+									<a href="#" class="cancel">cancel</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="current-list-group">
+					<h2><a href="#" class="item-header">Beverages</a></h2>
+					<ul class="manage-list-content">
+						<li>
+							<span class="sort" id="sort">sort</span>
+							<a class="favorite-link" href="#">&hearts;</a>
+							<img class="thumb" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/managelist/thumb-juice.png"/>
+							<div class="product-info">
+								<h4>Product Name</h4>
+								<p class="description">This is a description of the product if need be.</p>
+								<p class="list-comment" style="display:inline" title="click to edit...">This is my comment</p>
+								<p class="quantity">1</p>
+							</div>
+							<a href="#" class="edit-item">edit</a>
+							<a href="#" class="remove-item">x</a>
+							<div class="editing-buttons" style="display:none;" >
+									<a href="#" class="save">save</a>
+									<a href="#" class="cancel">cancel</a>
+							</div>
+						</li>
+						<li>
+							<span class="sort" id="sort">sort</span>
+							<a class="favorite-link" href="#">&hearts;</a>
+							<img class="thumb" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/managelist/thumb-specialk.png"/>
+							<div class="product-info">
+								<h4>Product Name</h4>
+								<p class="description">This is a description of the product if need be.</p>
+								<p class="list-comment" style="display:inline" title="click to edit...">This is my comment</p>
+								<p class="quantity">1</p>
+							</div>
+							<a href="#" class="edit-item">edit</a>
+							<a href="#" class="remove-item">x</a>
+							<div class="editing-buttons" style="display:none;" >
+									<a href="#" class="save">save</a>
+									<a href="#" class="cancel">cancel</a>
+							</div>
+						</li>
+						<li>
+							<span class="sort" id="sort">sort</span>
+							<a class="favorite-link" href="#">&hearts;</a>
+							<img class="thumb" src="http://foodcity.beta.groceryshopping.net/assets/common/prototypes/appuilayout/images/managelist/thumb-icecream.png"/>
+							<div class="product-info">
+								<h4>Product Name</h4>
+								<p class="description">This is a description of the product if need be.</p>
+								<p class="list-comment" style="display:inline" title="click to edit...">This is my comment</p>
+								<p class="quantity">1</p>
+							</div>
+							<a href="#" class="edit-item">edit</a>
+							<a href="#" class="remove-item">x</a>
+							<div class="editing-buttons" style="display:none;" >
+									<a href="#" class="save">save</a>
+									<a href="#" class="cancel">cancel</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div id="tabs-2" class="saved-lists-tab">
+			<p>saved list stuff here</p>
+		</div>
+	</div>
+</div>

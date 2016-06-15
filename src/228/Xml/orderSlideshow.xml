@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderSlideShow xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/cake_01.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>1</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/sleigh.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>2</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/01.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>3</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/02.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>4</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/sampler.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>5</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/seafood01.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>6</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/royal.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>7</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/veggie01.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>8</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/bountiful.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>10</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/meatball.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>11</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/festive.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>12</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/snack_tray.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>13</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/elegant.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>14</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/hoagie_platter.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>15</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/imperial.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>16</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/wings.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>17</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/victorian.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>18</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/hoagie.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>19</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/fried_chicken.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>20</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/chicken.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>21</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/combo.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>22</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/kng_crab.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>23</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/lobster.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>24</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/scallop.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>25</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/shrimp.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>26</SortBy>
+	</OrderSlide>
+	<OrderSlide>
+		<Title/>
+		<Description>&lt;p&gt;&lt;img width="217" height="175" alt="" src="Assets/228/Images/celebrity.jpg" /&gt;&lt;/p&gt;</Description>
+		<Image/>
+		<SortBy>27</SortBy>
+	</OrderSlide>
+</OrderSlideShow>

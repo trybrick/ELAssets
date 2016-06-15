@@ -1,0 +1,207 @@
+.ie6 #sidebar,
+#sidebar {
+	display: none !important; }
+#conAgra-content {
+    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 0 0 0;
+    color: #3c3c3c; }
+#conAgra-content img { 
+	border-width: 0px; }
+#conAgra-content h2 {
+	border: none;
+	margin: 10px 0 0; }
+#conAgra-content {
+    width: 890px; }
+#conAgra-header {
+	float: left;
+	margin-bottom: 2em; }
+#conAgra-sideBar {
+	float: right; }
+#textLeft {
+    width: 370px;
+    height: 150px;
+	float: left; }
+#textLeft h2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 27px; }
+#textLeft p {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 1em;
+    line-height: 20px;
+    text-align: center; }
+.featuredRecipe {
+    background-image: url(images/featureRecipeBG.jpg);
+    background-repeat: no-repeat;
+	float: left;
+    height: 206px;
+	text-align: center;	
+    width: 310px; }
+.featuredRecipe h2 {
+    font-size: 14px; }
+.featuredRecipe h2 a {
+    text-decoration: none;
+    color: #3c3c3c; }
+.featuredRecipe h3 {
+    font-size: 12px;
+	font-weight: normal; }
+.featuredRecipe img {
+	margin: 0 auto; }
+.featuredRecipe .fr_title {
+    font-size: 14px;
+    font-weight: bold;
+	margin: 5px 0 0; }
+.featuredRecipe .fr_title a {
+    text-decoration: none;
+    color: #3c3c3c; }
+#recipeBar {
+    background-image: url(images/recipeBarBG.jpg);
+    background-repeat: no-repeat;
+	float: left;
+    height: 158px;
+	margin: 2em 0;
+    position: relative;
+    width: 688px; }
+#recipeBar a {
+    text-decoration: none;
+    color: #3c3c3c; }
+#recipeBar p {
+	margin: 0; }
+#recipeBar div {
+	text-align: center; }
+#conAgra-meat {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+#conAgra-meat .ca_header {
+	margin-top: 15px;
+	margin-left: 17px; }
+#conAgra-meat img {
+	margin-top: -10px;
+	margin-left: 5px; }
+.ie7 #conAgra-meat img {
+	margin-top: -7px; }
+#conAgra-meat .cta {
+	margin-top: -5px;
+	margin-left: 15px; }
+#divider1 {
+    position: absolute;
+    top: 0px;
+    left: 129px;
+    margin-top: 15px; }
+#conAgra-sandwich {
+    left: 132px;
+    position: absolute;
+    top: 0px; }
+#conAgra-sandwich .ca_header {
+	margin-top: 5px;
+	margin-left: 5px; }
+#conAgra-sandwich img {
+	margin-top: 0;
+	margin-left: 5px; }
+#conAgra-sandwich .cta {
+	margin-top: -3px;
+	margin-left: 15px; }
+#divider2 {
+    position: absolute;
+    top: 0px;
+    left: 269px;
+    margin-top: 15px; }
+#conAgra-sauce {
+    position: absolute;
+    top: 0px;
+    left: 272px; }
+#conAgra-sauce .ca_header {
+	margin-top: 15px;
+	margin-left: 2px; }
+#conAgra-sauce img {
+	margin-top: -15px;
+	margin-left: 5px; }
+.ie6 #conAgra-sauce img {
+	margin-top: 0; }
+#conAgra-sauce .cta	{
+	margin-top: 2px;
+	margin-left: 15px; }
+#divider3 {
+    position: absolute;
+    top: 0px;
+    left: 404px;
+    margin-top: 15px; }
+#conAgra-pasta {
+    position: absolute;
+    top: 0px;
+    left: 407px; }
+#conAgra-pasta .ca_header {
+	margin-top: 15px;
+	margin-left: 32px; }
+#conAgra-pasta img {
+	margin-top: -15px;
+	margin-left: 5px; }
+.ie6 #conAgra-pasta img {
+	margin-top: 0; }
+#conAgra-pasta .cta	{
+	margin-top: 1px;
+	margin-left: 17px; }
+#divider4 {
+    position: absolute;
+    top: 0px;
+    left: 544px;
+    margin-top: 15px; }
+#conAgra-soup {
+    position: absolute;
+    top: 0px;
+    left: 547px; }
+#conAgra-soup .ca_header {
+	margin-top: 15px;
+	margin-left: 30px; }
+#conAgra-soup img {
+	margin-top: -15px;
+	margin-left: 5px; }
+.ie7 #conAgra-soup img {
+	margin-top: -18px; }
+.ie6 #conAgra-soup img {
+	margin-top: -3px; }
+#conAgra-soup .cta {
+	margin-top: 2px;
+	margin-left: 15px; }
+.recipeContentWrapper {
+	width: 100%;	
+	clear: both; }
+.recipeList {
+	float: left;
+	clear: both; }
+.ie .recipeList {
+	width: 100%; }
+.recipeList h3 {
+	font-size: 18px; }
+.recipeList ul {
+	list-style-type: none;
+	font-size: 15px;
+	margin-left: 0;
+	padding: 0; }
+.recipeList ul li {
+	margin-bottom: 1em; }
+.recipeList ul li a {
+	text-decoration: underline; }
+.cta {
+	background: transparent url(Images/arrow.png) right 50% no-repeat;
+    font-style: italic;
+    font-size: 13px;
+	margin-left: 15px;
+	padding-right: 5px;
+	width: 8em; }
+.ca_header {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+	min-height: 32px; }
+.hideText {
+    font-size: 12px;
+	margin: 1em 0; }
+.hideText a {
+    text-decoration: none;
+    color: #3c3c3c; }
+table { 
+	margin-top: -15px }

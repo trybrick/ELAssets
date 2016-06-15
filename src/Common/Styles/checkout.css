@@ -1,0 +1,526 @@
+/* Checkout
+------------------------------------------------*/
+.CheckoutPage {
+    float: left;
+    padding-left: 0;
+	padding-top: 1em;
+    width: 910px;
+}
+
+/* header
+------------------------------------------------*/
+#LoginBox { display:none; } /* do not allow consumer to logout during checkout */
+#StoreHeaderRightTop { display:none; }
+#StoreHeaderLogin { display:none; }
+
+/* header navigation does not work in checkout. Hide it. */
+#nav ul,
+#StoreMenu ul { visibility: hidden; }
+
+/* checkout buttons
+------------------------------------------------*/
+#CheckOutButtons {
+    margin: 1em auto;
+    width: 450px;
+    float: left;
+    clear: both;
+}
+
+/* confirm store screen
+------------------------------------------------*/
+#ConfirmStore {
+    width: 895px;
+}
+#ConfirmStore #CurrentStore {
+    border: 1px solid red;
+    background: #ffffcc;
+    float: left;
+    clear: both;
+    padding: 6px;
+    width: 30%;
+}
+#ConfirmStore #Instructions,
+#ConfirmStore #controls,
+#ConfirmStore #stores {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 12px;
+}
+#ConfirmStore #stores span { float: left }
+#ConfirmStore #stores .storeInfoZip {
+    border: 1px solid red;
+    height: auto;
+    float: left;
+    font-size: 11px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    min-height: 100px;
+    padding: 3px;
+    text-align: left;
+    width: 31%;
+}
+#ConfirmStore #stores .storeInfoZip:hover {
+    background-color: #ffffcc;
+    font-weight: normal;
+}
+#ConfirmStore #storeAddress {
+    width: 100%;
+    margin-left: 3px;
+    margin-top: 3px;
+    float: left;
+}
+#CurrentStore strong { font-size: 120% }
+#CurrentStore #selectStore { display: none }
+#CurrentStore #newrow { display: none }
+#storeAddress p { margin: 0 }
+#storeAddress p:hover { font-weight: normal }
+#Instructions {
+    float: left;
+    width: 500px;
+}
+#CheckOutHeader {
+    float: left;
+    width: 910px;
+    padding: 0;
+}
+#CurrentStoreInfo {
+    width: 130px;
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    background-color: transparent;
+}
+
+/* delivery information
+------------------------------------------------*/
+#ctl00_ContentPlaceHolder1_txtAddress2,
+#ctl00_ContentPlaceHolder1_ddlState,
+#ctl00_ContentPlaceHolder1_txtPhoneAlternate { float: left; margin-bottom: 13px }
+
+#CheckOutUserInformation td.title {
+    width: 140px;
+    text-align: right;
+    padding-top: 6px;
+}
+#CheckOutUserInformation td.title span { text-align: right }
+#CheckOutUserInformation input {
+    float: left;
+    margin-right: 2px;
+    margin-top: 3px;
+    width: 260px;
+}
+.checkoutHeader {
+    margin: 0 0 0 180px;
+    width: 100%;
+}
+.checkoutHeader h1 { color: #000 }
+.checkoutHeader h1 span { clear: both }
+.checkoutHeader span.checkoutWarning {
+    background-color: #FFFFCC;
+    width: 579px;
+    margin: 0 0 1em;
+    font-size: 140%;
+    border: 1px solid #f00;
+    color: #FF0000;
+    display: block;
+    font-weight: bold;
+    padding: .2em 1em .5em;
+    text-align: center;
+}
+.checkoutHeader span.checkoutWarning strong {
+    font-size: 150%;
+    color: black;
+}
+div.ValidationSummary ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 33px;
+}
+#ChangePassword { margin-left: 150px }
+.checkoutMain {
+    width: 590px;
+    margin: 0 auto;
+}
+.checkoutMain div { float: left }
+.checkoutMain .col1 { padding-top: 4px }
+#CheckOutUserInformation select { margin-right: 4px }
+#CheckOutOrderSubstitutionTypes h1,
+#CheckOutOrderComments h1 { margin-bottom: 0 }
+.checkoutInfoDiv td { vertical-align: top }
+.infoTop h1 { margin-left: 6px }
+.deliveryTimePanel {
+    background: white;
+    border: 1px solid #999999;
+	/*height: 142px;*/
+	overflow-y: hidden !important;
+    width: 190px;
+	-webkit-overflow-scrolling:touch;
+}
+.delivery .infoMain {
+    margin: 0 auto;
+    width: 394px;
+}
+.deliveryType {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.dateSelector,
+.timeSelector { float: left }
+.timeSelector { width: 196px }
+.dateSelector { margin-right: 9px }
+.timeSelector span {
+    display: block;
+    margin: 5px 0;
+}
+.dateSelector table,
+.deliveryTimePanel { border: 1px solid #333 }
+
+/* substituteitems
+------------------------------------------------*/
+#SubstituteItems .checkoutSidebar {
+    display: none;
+    border: 1px solid #CCC;
+    float: left;
+    width: 160px;
+    margin: 0 2em;
+    padding: 0;
+}
+#SubstituteItems .checkoutSidebar table { width: 160px }
+#SubstituteItems .checkoutMain {
+    float: left;
+    margin-left: 180px;
+    border: 1px solid #999;
+    padding: 12px;
+    width: 579px;
+    background-color: #EEE;
+}
+#SubstituteItems #CheckOutButtons {
+    float: left;
+    margin: 1em 163px;
+}
+#SubstituteItems .checkoutMain #CheckOutButtons {
+    float: left;
+    margin: 1em 0;
+}
+#SubstituteItems h4 {
+    font-size: 120%;
+    margin-top: 0;
+}
+#SubstituteItems ol {
+    clear: both;
+    font-size: 110%;
+    margin: 10px 0 20px;
+    padding-left: 30px;
+    width: 450px;
+}
+#SubstituteItems .CategoryHeader {
+    width: 100%;
+    float: left;
+    margin-bottom: 4px;
+}
+#SubstituteItems .CategoryHeader h3 {
+    width: 100%;
+    float: left;
+}
+#SubstituteItems .CategoryHeader h3 span {
+    clear: none;
+    float: left;
+    width: 560px;
+}
+#SubstituteItems .CategoryHeader h3 a {
+    display: none;
+    width: 130px;
+    color: black;
+    font-size: 11px;
+    float: right;
+    height: 20px;
+    background: url(/Assets/43/Images/remove_item_large.gif) top right no-repeat;
+    padding-top: 3px;
+}
+#SubstituteItems .CategoryHeader h3 a img {
+    float: right;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+#SubstituteItems .LineItem { float: left }
+#SubstituteItems .OwnItems p { display: none }
+#SubstituteItems .OwnItems div {
+    clear: both;
+    float: left;
+}
+#SubstituteItems .OwnItems div p {
+    display: block;
+    clear: both;
+    float: left;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 140px;
+    width: 420px;
+}
+#SubstituteItems .OwnItems input {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+}
+#SubstituteItems .OwnItems label {
+    clear: both;
+    float: left;
+    width: 130px;
+    font-weight: bold;
+    text-align: right;
+}
+#SubstituteItems .OwnItems #ctl00_ContentPlaceHolder1_OwnItem1_txtQuantity { width: 20px }
+#SubstituteItems #CartButtons {
+    clear: both;
+    float: left;
+    width: 590px;
+    margin-top: 12px;
+}
+#SubstituteItems .GridItem th { border: 1px solid #565656 }
+a.deleteIcon img { display: inline }
+.SelectedItem { background-color: #FFFFCC }
+.dlUnresolved td { padding: 0.5em 1em }
+a.lbUnresolved {
+    cursor: pointer;
+    height: 2em;
+}
+table.dlUnresolved { border-collapse: collapse }
+#CheckOutOrderSubstitutionTypes input { float: left }
+#CheckOutOrderSubstitutionTypes label {
+    float: left;
+    margin-top: 3px;
+    width: 400px;
+}
+
+/* user information
+------------------------------------------------*/
+.checkoutInfoDiv {
+    width: 76%;
+    padding: 2%;
+    border: 1px solid #999;
+    background-color: #EEE;
+    margin: 1em auto;
+}
+#CheckOutUserInformation table { width: 100% }
+.CommentTextArea {
+    width: 440px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.reqValidator {
+    clear: both;
+    float: left;
+    width: 300px;
+}
+
+#NoDeliver {
+    background-color: #ffffcc;
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 450px;
+    margin: 1em auto;
+}
+#NoDeliver table { width: 100% }
+.deliverydetails {
+    float: left;
+	padding-bottom: 30px;
+	position: relative;
+    width: 150px;
+}
+.loyalty-card-image { margin: 1em 0 }
+
+/* checkout steps
+------------------------------------------------*/
+#CheckOutSteps {
+    float: left;
+    border-bottom: 1px solid #999;
+    background: #EEE;
+    width: 100%;
+    margin-bottom: 12px;
+}
+#CheckOutSteps table { margin: 8px auto 0 auto }
+#CheckOutSteps td {
+    padding-right: 1em;
+    font-size: 14px;
+}
+.CurrentStep {
+    color: #FF0000;
+    font-weight: bold;
+}
+h1 span.checkoutInstructions {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+.checkoutMain .OwnItem { clear: both }
+.checkoutMain .OwnItem div { margin-top: 6px }
+.checkoutMain .OwnItem span {
+    clear: both;
+    float: left;
+    margin-top: 6px;
+    width: 335px;
+}
+.checkoutMain .OwnItem span input[type="text"] {
+    float: right;
+    width: 200px;
+}
+.checkoutMain .OwnItem span select { float: right }
+.checkoutMain .OwnItem p {
+    font-weight: bold;
+}
+.checkoutMain .instructions {
+    clear: both;
+    float: left;
+}
+.checkoutMain .OwnItems {
+    clear: both;
+    width: 590px;
+    float: left;
+}
+.CheckoutPage {
+    clear: both;
+    margin-top: 10px;
+}
+
+/* checkout list gridview styles
+------------------------------------------------*/
+#ctl00_ContentPlaceHolder1_gvAvailableVarieties { width: 584px }
+.gvCheckOutListCheckBox { width: 30px }
+.gvQuantity {
+    text-align: center;
+    width: 40px;
+}
+.gvUnit { width: 60px }
+.gvBrand {
+    width: 70px;
+    font-weight: normal;
+}
+.gvItem { font-weight: normal }
+.gvPriceSavings { width: 33px }
+.gvDescription input {
+    width: 275px;
+    font-size: 100%;
+}
+.gvSize {
+    width: 80px;
+    font-weight: normal;
+}
+.gvSubtotal,
+.gvPrice,
+.gvTaxAmount { width: 70px }
+.gvHeader { text-align: left }
+
+/* taxes
+------------------------------------------------*/
+.checkoutDisclaimer { float: left }
+.checkoutDisclaimer p {
+    float: left;
+    width: 590px;
+}
+#Taxes .Subtotal {
+    clear: both;
+    float: right;
+	margin-top: 1em;
+}
+#Taxes .Subtotal td { border: none }
+#Taxes .checkoutMain div table {
+    width: 590px;
+    margin: 0.5em auto;
+}
+#Taxes table { border-collapse: collapse }
+#Taxes td,
+#Taxes th {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+.PromoCode span {
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.PromoCode a.button span { margin: 0 }
+
+#Taxes a.edit-cart {
+	float: right;
+}
+#Taxes .print-coupons {
+	background: none repeat scroll 0 0 #FFFFCC;
+	border: 1px solid #FF0000;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 1em;
+	text-align: center;
+	width: 94%;
+}
+#Taxes .print-coupons a {
+	text-decoration: underline; 
+}
+/* subtotals
+------------------------------------------------*/
+span.subTotal { font-weight: bold }
+span.cartTotal {
+    color: #FF0000;
+    font-size: 14px;
+}
+.totalLabel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* invoice page
+------------------------------------------------*/
+#OGSInvoice {
+    width: 650px;
+    margin: 0 auto;
+}
+.invoiceinformation { margin-bottom: 1em }
+#OGSInvoice h1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 6px;
+    color: black;
+    text-transform: uppercase;
+}
+#OGSInvoice h2 {
+    border-bottom: none;
+    float: left;
+    width: 100%;
+    margin-top: 0;
+}
+#OGSInvoice table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
+}
+#OGSInvoice table td {
+    padding: 0.5em;
+    border: 1px solid #999;
+}
+#OGSInvoice .order-information {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+#OGSInvoice #store-information {
+    width: 100%;
+    clear: both;
+    margin-top: 4px;
+}
+
+/* payemnt options
+------------------------------------------------*/
+#paymentData {
+    margin: 1em auto;
+    padding-left: 225px;
+    clear: both;
+}
+#payment-data-navigation { margin-top: 12px }

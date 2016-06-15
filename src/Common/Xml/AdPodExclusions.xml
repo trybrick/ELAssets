@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<AdPodExclusions>
+	<ExcludeChain>
+		<ChainID>224</ChainID>
+	</ExcludeChain>
+	<ExcludeChain>
+		<ChainID>230</ChainID>
+	</ExcludeChain>
+</AdPodExclusions>

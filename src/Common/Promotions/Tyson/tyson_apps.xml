@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Tyson</Brand>
+	<BrandSiteUrl>http://www.tyson.com/</BrandSiteUrl>
+	<ManufacturerCode>23700</ManufacturerCode>
+	<DepartmentID>10341</DepartmentID>
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Tyson/Styles/Tyson_apps.css</CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Tyson/Images/</ImagePath>
+	<!-- CONTENT -->
+	<HeaderImage alt="">tyson_header.jpg</HeaderImage>
+	<PageDescriptionText/>
+	<FooterImage/>
+	<ProductGroup>
+		<Title/>
+		<Image alt=""/>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467928;70975631;v?</ClickCode>
+			<ProductCode>5222-910</ProductCode>
+			<ProductImg alt="">Hot-Spicy-Chicken-Wings.jpg</ProductImg>
+			<Description>Any’tizers® Hot ’n Spicy Chicken Wings</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467930;70975631;o?</ClickCode>
+			<ProductCode>10973-910</ProductCode>
+			<ProductImg alt="">Buffalo-Style-Boneless-Chicken-Bites.jpg</ProductImg>
+			<Description>Any’tizers® Buffalo Style Boneless Chicken Bites</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467931;70975631;p?</ClickCode>
+			<ProductCode>10974-910</ProductCode>
+			<ProductImg alt="">Anytizers_Honey_BBQ_Boneless_chicken_Bites.jpg</ProductImg>
+			<Description>Any’tizers® Honey BBQ Boneless Chicken Bites</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467932;70975631;q?</ClickCode>
+			<ProductCode>11124-910</ProductCode>
+			<ProductImg alt="">Homestyle-Chicken-Fries.jpg</ProductImg>
+			<Description>Any’tizers® Homestyle Chicken Fries</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467933;70975631;r?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers-Honey-BBQ.jpg</ProductImg>
+			<Description>Any’tizers® Honey BBQ Wings</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467941;70975631;q?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers-Teq-Lime-Wings.jpg</ProductImg>
+			<Description>Any’tizers® Tequila Lime Chicken Wings</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467942;70975631;r?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Chicken-Bacon-Ranchero.jpg</ProductImg>
+			<Description>Any’tizers® Chicken Bacon Ranchero Empanitas with Southwestern Style Ranch Sauce</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467944;70975631;t?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers-Chicken-Cordon-Bleu-Minis.jpg</ProductImg>
+			<Description>Any’tizers® Stuffed Chicken Cordon Bleu Minis</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467951;70975631;r?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers_General_Tso_Sauce.jpg</ProductImg>
+			<Description>Any’tizers® Breast Chunks with General Tso Sauce Packets</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467952;70975631;s?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers-Sweet-Sour-Chunks.jpg</ProductImg>
+			<Description>Any’tizers® Breast Chunks with Spicy Sweet &amp; Sour Sauce Packets</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467953;70975631;t?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers_Dippin_Twists_Kickin_Honey_Mustard.jpg</ProductImg>
+			<Description>Any’tizers® Dippin' Twists® Kickin' Honey Mustard</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467954;70975631;u?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Quesa-Dippers-Fajita-Chicken.jpg</ProductImg>
+			<Description>Any’tizers® Fajita Chicken QuesaDippers® with Cilantro Lime Salsa</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467955;70975631;v?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Quesa-Dippers-Taco-Chicken.jpg</ProductImg>
+			<Description>Any’tizers® Taco Seasoned QuesaDippers® with Zesty Garden Salsa</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467965;70975631;w?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers_popcorn_chick_bag.jpg</ProductImg>
+			<Description>Any’tizers® Popcorn Chicken</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467967;70975631;y?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizer-Buffalo-Hot-Wings.jpg</ProductImg>
+			<Description>Any’tizers® Buffalo Style Hot Wings®</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467969;70975631;a?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Buffalo-Popcorn-Chicken.jpg</ProductImg>
+			<Description>Any’tizers® Buffalo Popcorn Chicken</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467970;70975631;s?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Anytizers.jpg</ProductImg>
+			<Description>Any’tizers® Honey BBQ Boneless Chicken Bites</Description>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;251467971;70975631;t?</ClickCode>
+			<ProductCode/>
+			<ProductImg alt="">Chicken-Fries.jpg</ProductImg>
+			<Description>Any’tizers® Homestyle Chicken Fries</Description>
+		</Product>
+	</ProductGroup>
+</LandingPage>

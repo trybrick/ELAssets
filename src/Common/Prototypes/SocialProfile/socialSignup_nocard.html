@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>More Information</title>
+	<style type="text/css">
+		@import url("style.css");
+	</style>
+</head>
+
+<body>
+<div id="socialcontainer" class="group">
+	<img src="images/header.jpg"/>
+	<div id="addinfocontainer">
+		<div id="socialwelcome">
+			<img src="images/socialProfileIcon.gif" width="75" height="75" />
+			<h2>
+				Welcome, <span class="fbname">Name!</span>
+			</h2>
+			<h3>
+				That was easy! Thank you for joining us.
+			</h3>
+			<h4>
+				We ask that you take one minute to fill out a few additional preferences. These extra preferences will help us personalize your experience on our site. 
+			</h4>
+			<p>
+				<span><strong>*</strong> fields are required.</span><br/>
+				Some website features that require this information may not be available until the preferences are complete.
+			</p>
+		</div>
+		<form action="/code/css/forms/" method="post" enctype="multipart/form-data">
+			<div class="section" id="socialPrefs1">
+				<h3 id="toggleSocial1">Personal Preferences</h3>
+				<div class="sectionForm">
+					<fieldset>
+						<label>Mobile #:</label> <input type="text" name="mobile" />
+						<div id="txtMobile_validationMessage"></div>
+					</fieldset>						
+					<fieldset>
+						<label for="textmsg">Check to receive specials via text message:</label> <input class="checkBox" type="checkbox" name="textmsg" />
+					</fieldset>						
+				</div>
+			</div>
+			<div class="section" id="socialPrefs2">
+				<h3 id="toggleSocial2">Store Preferences</h3>
+				<p class="notes">
+					This allows us to find you deals based on your favorite store
+				</p>
+				<div class="sectionForm">
+					<fieldset>
+						<label for="location" class="required"><strong>*</strong>Select Your Store:</label>
+						<select name="store" id="store" class="selectOne">
+							<option value="">
+								Select a Store
+							</option>
+							<option value="">
+								---------------
+							</option>
+							<option value="S1">
+								Store 1
+							</option>
+							<option value="S2">
+								Store 2
+							</option>
+							<option value="S3">
+								Store 3
+							</option>
+							<option value="S4">
+								Store 4
+							</option>
+							<option value="S5">
+								Store 5
+							</option>
+						</select>
+						<div id="txtStore_validation" class="fieldValidation"></div>
+						<div id="txtStore_validationMessage" class="validationMessage">
+							* Required
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<div class="section" id="socialPrefs3">
+				<h3 id="toggleSocial3">Dietary Preferences</h3>
+				<p class="notes">
+					This allows us to find you recipes and deals based on your dietary needs
+				</p>
+				<div class="sectionForm">
+					<fieldset>
+						<label for="Vegetarian">Vegetarian:</label> <select name="vegetarian" id="vegetarian" class="selectOne">
+							<option value="veggieno">
+								no
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="vegan">Vegan:</label> <select name="vegan" id="vegan" class="selectOne">
+							<option value="veganno">
+								no
+							</option>
+							<option value="veganyes">
+								yes
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="kosher">Kosher:</label> <select name="kosher" id="kosher" class="selectOne">
+							<option value="kosherno">
+								no
+							</option>
+							<option value="kosheryes">
+								yes
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="calories">Calories:</label> <select name="cals" id="cals" class="selectOne">
+							<option value="calno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno" selected="selected">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="totalfat">Total Fat:</label> <select name="fat" id="fat" class="selectOne">
+							<option value="fatno">
+								No Preference
+							</option>
+							<option value="highfat">
+								High fat
+							</option>
+							<option value="lowfat">
+								Lowfat
+							</option>
+							<option value="nofat">
+								Nonfat
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="saturated fat">Saturated Fat:</label> <select name="satfat" id="satfat" class="selectOne">
+							<option value="satfatno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="cholesterol">Cholesterol:</label> <select name="cholesterol" id="cholesterol" class="selectOne">
+							<option value="cholno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="calcium">Calcium:</label> <select name="calcium" id="calcium" class="selectOne">
+							<option value="calciumno">
+								No Preference
+							</option>
+							<option value="calciumyes">
+								yes
+							</option>
+							<option value="calciumno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="Iron">Iron:</label> <select name="iron" id="iron" class="selectOne">
+							<option value="ironno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="fiber">Dietary Fiber:</label> <select name="fiber" id="fiber" class="selectOne">
+							<option value="fiberno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="Sodium">Sodium:</label> <select name="sodium" id="sodium" class="selectOne">
+							<option value="sodiumno">
+								No Preference
+							</option>
+							<option value="veggieyes">
+								yes
+							</option>
+							<option value="veggieno">
+								no
+							</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="always exclude">Always Exclude:</label> <input type="text" name="always exclude" />
+					</fieldset>
+				</div>
+			</div>
+			<div id="submit">
+				<input type="submit" class="cancelButton" value="Cancel" />
+				<input type="submit" class="submitButton" value="Submit" />
+			</div>
+		</form>
+	</div>
+	<div id="socialSidebar">
+		<img src="images/sidebar.jpg"/>
+	</div>
+</div>
+</body>
+</html>

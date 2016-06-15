@@ -1,0 +1,87 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+#oep-2011-wrap { 
+	background:#fef2db url(../Images/oep-2011-mainbg.jpg) repeat-y center top; 
+	width:100%; 
+}
+#oep-2011-wrap #oep-header {
+	background: #f8a800;
+	text-align: center;
+}	
+#oep-2011-wrap #oep-header h1 { 
+	display: none; 
+}
+
+#oep-2011-wrap .logo img { margin: 0 auto;}
+	
+#oep-2011-wrap #oep-main { 
+	background: url(../Images/oep-2011-shadow.png) transparent repeat-x left top; 
+}
+#oep-2011-wrap #oep-main #row-1 { margin-top: 0;}
+	
+#oep-2011-wrap #oep-main .oep-product-row {
+	background:transparent url(../Images/oep-2011-divider.png) no-repeat 50% top;
+	margin:1em 0;
+	padding-top:20px;
+}
+
+#oep-2011-wrap #oep-main .oep-product {
+	text-align: center;
+}
+	
+#oep-2011-wrap #oep-main .oep-product img {
+	display: inline;
+}
+
+#oep-2011-wrap #oep-main .oep-product h2 {
+	border: none;
+	color: #c41a37;
+	font-size: 18px;
+}
+	
+#oep-2011-wrap #oep-main .two-column .oep-product {
+	float:left;
+	width:50%;
+}
+	
+#oep-2011-wrap #oep-main .oep-button { 
+	background:#b3100f url(../../../../Images/button_shine_30.png) left 50% repeat-x; 
+	border:1px solid #910c0b;
+	border-radius:4px;
+	color:#fff;
+	display: block; 
+	font:16px Arial, Helvetica, sans-serif;
+	margin:1em auto;
+	padding:.2em 0;
+	text-decoration: none;
+	width:150px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+	
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #oep-2011-wrap #oep-main .oep-button {
+	background-image:none;
+}
+	
+* html #oep-2011-wrap .group {
+	height:1%;
+}
+	
+* html #oep-2011-wrap #oep-main .oep-product-row {
+	background-image: none;
+}

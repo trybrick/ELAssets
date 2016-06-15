@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+TM = &#8482;
+R = &#174;
+-->
+<Purina>
+	<Items>
+		<Item id="irrDesc">
+			<Title tm="true">I RULE ROASTERS</Title>
+			<Description>Delicious, slow-cooked meals made with meat or poultry in savory gravy.</Description>
+			<Image>i-rule-roasters.png</Image>
+		</Item>
+		<Item id="nybcDesc">
+			<Title tm="true">NOW YOU\&#39;RE BARKIN\&#39; CUTS</Title>
+			<Description>Made with real meat or poultry and smothered in delicious gravy to deliver&lt;br /&gt;a meaty meal.</Description>
+			<Image>now-youre-barkin-cuts.png</Image>
+		</Item>
+		<Item id="gggDesc">
+			<Title tm="true">GO GETTER GRILLERS</Title>
+			<Description>Tempting your dog's senses with the aroma, look, and flavor of real meat.</Description>
+			<Image>go-getter-grillers.png</Image>
+		</Item>
+		<Item id="bddDesc">
+			<Title tm="true">BOSS DOG DINNERS</Title>
+			<Description>Finely ground, delicious meals made with real meat or poultry. Your dog will love this classic meaty variety.</Description>
+			<Image>boss-dog-dinners.png</Image>
+		</Item>
+		<Item id="sdDesc">
+			<Title tm="false">SENIOR DINNER</Title>
+			<Description>A delicious and tender mix with chicken and rice, formulated to meet the nutritional needs of senior dogs.</Description>
+			<Image>senior-dinners.png</Image>
+		</Item>
+		<Item id="mwmdDesc">
+			<Title tm="true">MY WAY MEATY DINNERS</Title>
+			<Description>Made with high-quality ingredients, exhilarating tastes, and captivating aromas.</Description>
+			<Image>my-way-meaty-dinners.png</Image>
+		</Item>
+		<Item id="vpDesc">
+			<Title tm="false">VARIETY PACKS</Title>
+			<Description>Mighty Dog&lt;sup&gt;&#174;&lt;/sup&gt; Variety Packs are available in 12-can, 12-pouch, and 24-can packs.</Description>
+			<Image>variety-packs.png</Image>
+		</Item>
+	</Items>
+</Purina>

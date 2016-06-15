@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Departments>
+  <Department>
+    <Name>Baby</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/baby.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10353</Href>
+  </Department>
+  <Department>
+    <Name>Bakery</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/bakery.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10337</Href>
+  </Department>
+  <Department>
+    <Name>Baking</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/baking.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10354</Href>
+  </Department>
+  <Department>
+    <Name>Beverages</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/beverages.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10355</Href>
+  </Department>
+  <Department>
+    <Name>Boxed Dinners/Potatoes</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/boxed_dinners.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10343</Href>
+  </Department>
+  <Department>
+    <Name>Bread Spreads</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/bread_spreads.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10361</Href>
+  </Department>
+    <Department>
+      <Name>Breakfast</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/breakfast.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10358</Href>
+    </Department>
+    <Department>
+      <Name>Candy and Gum</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/candy_snacks.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10369</Href>
+    </Department>
+    <Department>
+      <Name>Canned Fruit</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/canned_goods.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10357</Href>
+    </Department>
+    <Department>
+      <Name>Canned Goods</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/canned_goods.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10357</Href>
+    </Department>
+    <Department>
+      <Name>Canned Vegetables</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/canned_goods.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10357</Href>
+    </Department>
+    <Department>
+      <Name>Dairy</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/dairy.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10338</Href>
+    </Department>
+    <Department>
+      <Name>Deli</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/deli.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10339</Href>
+    </Department>
+    <Department>
+      <Name>Dried Beans,Peas,Grains,Rice</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/dried.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10343</Href>
+    </Department>
+    <Department>
+      <Name>Fresh Fruits</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/fresh_fruits.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10347</Href>
+    </Department>
+    <Department>
+      <Name>Fresh Vegetables</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/fresh_vegetables.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10347</Href>
+    </Department>
+    <Department>
+      <Name>Frozen</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/frozen_foods.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10341</Href>
+    </Department>
+    <Department>
+      <Name>Household Supplies</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/household.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10342</Href>
+    </Department>
+    <Department>
+      <Name>International</Name>
+      <ImageUrl>/Assets/90/Images/department_icons/international.gif</ImageUrl>
+      <Href>/Shop/Product.aspx?Department=10343</Href>
+    </Department>
+  <Department>
+    <Name>Juice</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/juice.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10355</Href>
+  </Department>
+  <Department>
+    <Name>Meat</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/meat.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10345</Href>
+  </Department>
+  <Department>
+    <Name>Miscellaneous Grocery</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/grocery.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10343</Href>
+  </Department>
+  <Department>
+    <Name>Olives and Pickles</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/olives_pickles.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10361</Href>
+  </Department>
+  <Department>
+    <Name>Paper and Plastic</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/paper_plastic.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10366</Href>
+  </Department>
+  <Department>
+    <Name>Pasta</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/pasta.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10352</Href>
+  </Department>
+  <Department>
+    <Name>Personal Care</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/personal_care.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10344</Href>
+  </Department>
+  <Department>
+    <Name>Pet</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/pet.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10346</Href>
+  </Department>
+  <Department>
+    <Name>Postage/Gift Certificates</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/postage.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10342</Href>
+  </Department>
+  <Department>
+    <Name>Sauces and Dresssings</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/sauces_dressing.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10361</Href>
+  </Department>
+  <Department>
+    <Name>Seafood</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/seafood.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10349</Href>
+  </Department>
+  <Department>
+    <Name>Snacks</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/candy_snacks.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10369</Href>
+  </Department>
+  <Department>
+    <Name>Soup and Stew</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/soup.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10357</Href>
+  </Department>
+  <Department>
+    <Name>Spices and Seasonings</Name>
+    <ImageUrl>/Assets/90/Images/department_icons/spices_seasonings.gif</ImageUrl>
+    <Href>/Shop/Product.aspx?Department=10343</Href>
+  </Department>
+</Departments>

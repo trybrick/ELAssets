@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Thin Shell Almonds</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<ManufacturerCode></ManufacturerCode>
+	<DepartmentID>10369</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/bluediamond/Images/</ImagePath>
+	<ButtonImage>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/bluediamond/Images/addtolistbutton.png</ButtonImage>
+
+	<!-- CONTENT -->
+	<ProductGroup>
+		<Title></Title>
+		<Product>
+			<Image alt="">unsalted.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=60666973&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0001</ProductCode>
+			<Description>Thin Shell Almonds: Unsalted</Description>
+			<SubHeading></SubHeading>
+		</Product>
+		<Product>
+			<Image alt="">seasalt.png</Image>
+			<ClickCode>http://pubads.g.doubleclick.net/gampad/clk?id=60667093&amp;iu=/6394/Click_Tracking_Only</ClickCode>
+			<ProductCode>0002</ProductCode>
+			<Description>Thin Shell Almonds: Hint of Sea Salt</Description>
+			<SubHeading></SubHeading>
+		</Product>
+	</ProductGroup>
+</LandingPage>

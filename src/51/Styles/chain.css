@@ -1,0 +1,185 @@
+﻿/*------------------------------------------------*/
+/* !Plumbs Market
+/*------------------------------------------------*/
+html				{ height:100%; background:transparent url(/Assets/51/Images/background_gray.jpg) repeat-x fixed; }
+body 				{ font-size:0.75em; height:100%; background:transparent; font-weight:normal; font-style:normal; color:black; margin-top:0; margin-left:0; padding-left:0; padding-right:0; }
+
+a:link,
+a:visited,
+a:active			{ font-weight:bold; color:#C02407; text-decoration:none; }
+a:hover				{ font-weight:bold; color:#C02407; text-decoration:underline; }
+
+h2				{ color:#C02407; border-bottom:none; }
+
+/*------------------------------------------------*/
+/* !header
+/*------------------------------------------------*/
+#StoreHeader			{ background: transparent url(/Assets/51/Images/HeaderBG.jpg) no-repeat 50% top; }
+#StoreHeaderRightTop    { border:1px solid #000; }
+
+/*------------------------------------------------*/
+/* !nav bar
+/*------------------------------------------------*/
+#nav				{ background-color:#C02407; color:yellow; }
+#nav ul				{ margin-left:110px; }
+#nav li a			{ color:#fff; }
+#nav li a:hover		{ color:#FFFF66; text-decoration:none; }
+#nav li ul			{ background-color:#C02407; color: yellow;}
+
+/*------------------------------------------------*/
+/* !featured teasers
+/*------------------------------------------------*/
+#FeaturedRecipeTeaser		{ background:transparent url(/Assets/51/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser		{ background:transparent url(/Assets/51/Images/red_gradient.jpg) repeat-x; }
+#AskTheChefTeaser			{ background:transparent url(/Assets/51/Images/large_olive_gradient.jpg) repeat-x; }
+#CookingTipsTeaser			{ background:transparent url(/Assets/51/Images/green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser h3,
+#AskTheChefTeaser h3,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3	{ color:#FFFFFF; }
+
+/*------------------------------------------------*/
+/* !home page
+/*------------------------------------------------*/
+#DualContentControlDivA a img, 
+#DualContentControlDivB a img 	{ width:203px; height:93px; }
+
+#AdPromo			{ background:transparent url(/Assets/51/Images/large_purple_gradient.jpg) repeat-x; }
+#AdPromo p			{ color:#FFFFFF; }
+
+.footer {
+	float:left; width: 100%;
+	padding-top: 15px;
+}
+
+.footer .footer-teaser	{ min-height: 100px; width: 24%; margin: 0 10px; float:left; margin: 0 auto 20px;	}
+.footer .footer-teaser img { margin: 0 auto;}
+.footer .footer-left{ float:left; width:23%; }
+.footer .footer-right{ float:right; width:22%; }
+.footer .footer-left img, .footer .footer-right img { margin: auto; }
+.footer .footer-middle{ float:left; margin-left:18px; }
+/*------------------------------------------------*/
+/* !meal planner
+/*------------------------------------------------*/
+#MealPlanner			{ background:transparent url(/Assets/51/Images/orangebrown_gradient.jpg) repeat-x; }
+
+/*------------------------------------------------*/
+/* !shopping list
+/*------------------------------------------------*/
+#savedshoppinglists h2		{ color:#C02407; border-bottom:1px solid #C02407; }
+
+/*------------------------------------------------*/
+/* !manage list legend
+/*------------------------------------------------*/
+#legend th			{ background-color:#C02407; }
+
+/*------------------------------------------------*/
+/* !coupons grid
+/*------------------------------------------------*/
+#tblCouponTopN			{ border:2px solid #C02407; }
+#CouponList h3			{ color:#C02407; }
+
+/*------------------------------------------------*/
+/* !3-panel toolbox
+/*------------------------------------------------*/
+#Department h3, #Aisles h3, #Category h3	{ color:#C02407; }
+#InBetween1, #InBetween2			{ color:#C02407; }
+
+/*------------------------------------------------*/
+/* !grid styles
+/*------------------------------------------------*/
+#CategoryHeader h3		{ color:#C02407; }
+.GridItem			{ clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold; }
+.GridItem th			{ text-align:left; background-color: #C02407; color: #FFFFCC; font-weight: bold; }
+.GridAlternatingItem		{ text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold; }
+#CircularAdText1_dlCategory h3	{ color:#C02407; }
+#CouponList table table th		{ background-color:#C02407; }
+
+/*------------------------------------------------*/
+/* !recipe page
+/*------------------------------------------------*/
+#RecipeCardTop					{ width:100%; height:42px; padding:0; background:none; }
+#RecipeCardMiddle				{ background:none; background-color:#f4F1cf; }
+#RecipeCardBottom				{ display:none; }
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe				{ margin-top:12px; }
+
+/*------------------------------------------------*/
+/* !heading text */
+/*------------------------------------------------*/ 
+ #ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,		
+#SavedRecipes h2,			
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#EmploymentPositions h1			{ color:#C02407; }	
+
+h3.pageHeading					{ text-indent:-9999px; height:50px; width:720px; margin-top:0 }
+h3#eventsHeading				{ background:transparent url(/Assets/51/Images/events_heading.gif) no-repeat top left; }
+h3#recipeHeading				{ background:transparent url(/Assets/51/Images/recipes_heading.gif) no-repeat top left; }
+h3#communityHeading				{ background:transparent url(/Assets/51/Images/community_heading.gif) no-repeat top left; }
+h3#cateringHeading				{ background:transparent url(/Assets/51/Images/catering_heading.gif) no-repeat top left; }
+
+/*------------------------------------------------*/
+/* !store locator
+/*------------------------------------------------*/
+#StoreLocator h2			{ color:#FF0000; font-size:130%; width:100%; margin-top:12px; border-bottom:1px solid black; }
+#StoreLocator p.result 		{ color:white; background-color: red; padding: 1px 0px 1px 4px; }
+#StoreLocatorDropDown 		{ display:none; }
+#storeZipEntryForm			{ margin-bottom:24px; }
+#storeInfoZip				{ text-align:center; font-size:90%; line-height:105%; width:30%; float:left; height:85px; padding:0 10px 0 0; margin:0 0 35px; }
+#StoreLocator .storeInfoZip { text-align:center; font-size:90%; line-height:105%; width:30%; float:left; height:85px; padding:0 10px 0 0; margin:0 0 35px; }
+
+/*------------------------------------------------*/
+/* !tab header text
+/*------------------------------------------------*/
+#imgSubHeader			{ clear:both; float:left; }
+.pageHeaderContainer	{ font-family:"Trebuchet MS"; margin-bottom:8px; }
+.pageHeader				{ font-size:160%; color:#666666; font-weight:normal; }
+.pageHeader span		{ font-size: 12px;}
+.pageSubHeader			{ font-size:120%; color:#999999; margin-left:6px; }
+
+/*------------------------------------------------*/
+/* !Employment
+/*------------------------------------------------*/
+#EmploymentPositionsHeader h2, #EmploymentPositions h1, #EmploymentPositions h2 { font-variant: small-caps; color:#1F497D; font-size: 160%; }
+#EmploymentPositionsHeader p	{ font-size: 14px;}
+#EmploymentPositions h1			{ font-size: 140%;}
+#EmploymentPositions p			{ font-size: 14px;}
+/*------------------------------------------------*/
+/* !static content
+/*------------------------------------------------*/
+#StaticContentPage				{ width:720px; }
+#StaticContentImg       		{ text-align:center; }
+#StaticContentImg h4       		{ text-align:left; font-size:1em; margin-left:1em; }
+#StaticContentImg img			{ width:910px; }
+#StaticContentPage #LeftNav		{ background-color:#EEEEEE; float:left; padding:10px 15.5px 0; width:190px; }
+.staticContentEntryLeftNav		{ float:right; width:490px; }
+#StaticContentPage #LeftNav a	{ font-size:120%; background:transparent none repeat-x scroll left top; color:#000; cursor:pointer; display:block; float:left; margin:4px 0; padding-top:2px; text-align:center; text-decoration:none; width:190px; }
+
+/*------------------------------------------------*/
+/* !registration page
+/*------------------------------------------------*/
+#signUpPop1, 
+#signUpPop2, 
+#signUpPop4 	{ top:177px; }
+
+#CircularLists select { font-size:65%; }

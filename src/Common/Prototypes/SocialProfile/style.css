@@ -1,0 +1,59 @@
+/* Main Styles */
+body{ background-color:#999; font-family:Tahoma,Verdana,sans-serif; }
+.group:after{ clear:both; content:'.'; display:block; height:0; visibility:hidden; }
+#addinfocontainer{ float:left; margin: auto; padding: 20px 0 0 20px; width:570px; }
+#addinfocontainer h2{ border-bottom:none; float:left; font-size:24px; font-style: oblique; margin:20px 0; }
+#addinfocontainer h2 span{ color:#EF4135; }
+#addinfocontainer h3{ color:#666666; float:left; font-size:18px; line-height: 28px; margin:10px 0; }
+#addinfocontainer h4{ color:#666666; float:left; font-size:14px; font-weight:normal; margin:10px 0; }
+#addinfocontainer img{ display:block; float: left; margin-right:20px; }
+#addinfocontainer label { clear:none; color:#666666; display:block; float:left; font-size:14px; margin:0; padding:4px 15px 0 0; text-align:right; width:180px; }
+#addinfocontainer p{ float:left; font-size:11px; }
+#addinfocontainer p span{ color:red; }
+#addinfocontainer .notes { background-color: rgba(71, 131, 186, 0.3); border-radius:10px 10px 10px 10px; -moz-border-radius:10px 10px 10px 10px; -webkit-border-radius:10px 10px 10px 10px; box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3); -moz-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3); -webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3); color:rgba(0,0,0,.65); float: right; margin:15px 115px 15px 10px; padding:5px 10px; text-align:center; width: 200px; }
+#socialcontainer{ background-color: #FFF; margin: auto; width: 910px; }
+#socialSidebar { width:300px; float:right; }
+
+/* Buttons */
+.cancelButton { background:url("./Images/pReg_cancel.png") no-repeat scroll left top transparent; border:none; cursor:pointer; float:left; height:34px; margin:0 2px; padding:0;
+text-indent:-999px; width:110px; }
+.cancelButton:hover { background:url("./Images/pReg_cancel.png") no-repeat scroll left bottom transparent; }
+.submitButton { background:url("./Images/pReg_submit.png") no-repeat scroll left top transparent; border:none; cursor:pointer; float:left; height:34px; margin:0 2px; padding:0;
+text-indent:-999px; width:110px; }
+.submitButton:hover { background:url("./Images/pReg_submit.png") no-repeat scroll left bottom transparent; }
+#submit { float:left; margin:20px 0 20px 185px; width: 230px; }
+
+/* Welcome Area */
+#socialwelcome{ float:left; border-bottom:1px dotted #CCCCCC; width:100%; }
+#socialwelcome h3{ color:#666666; float:left; font-size:18px; font-weight:normal; line-height: 28px; width:100%; }
+
+/* Form */
+form { display:block; float:left; font-size: 100%; margin: auto; padding: 0 0 20px; width:100%; }
+form fieldset { border: none; display:block; float:left; height:35px; margin:5px 0; padding:0; width:100%; }
+form input, form textarea { font-size: 16px; color: #000000; }
+form input { width: 300px; background-color: #E5EAEC; border: 1px solid #E5EAEC; color:#4783BA; padding: 3px; margin: 0 0 0 0; }
+form select { font-size:12px; width: 300px; padding: 3px; margin: 0 0 0 0; }
+.checkBox{ margin-top:6px; width:auto; }
+.fieldValidation { float:right; padding:3px 0 0; width:25px; }
+.section { border-bottom:1px dotted #CCCCCC; float:left; padding-bottom:20px; }
+.sectionForm { float: left; width: 100%; }
+.validationMessage { color:#E15438;font-size:11px;margin:0 0 0 195px; }
+.invalid { background:url("./Images/pReg_invalid.jpg") no-repeat scroll center center transparent; height:19px; width:19px; }
+.valid { background:url("./Images/pReg_valid.jpg") no-repeat scroll center center transparent; height:19px; width:19px; }
+
+/* Store Preferences */
+#rewardInstructions{ float:left; width:300px; }
+#rewardInstructions p { color: #C00; margin:0; }
+#rewardInstructions p span { color: #039; }
+
+/* Dietary Preferences */
+#socialPrefs3 fieldset {height:auto;margin:3px 0;}
+
+/* Toggle Preferences */
+#addinfocontainer .collapsed { height:50px; overflow:hidden; }
+#addinfocontainer .collapsed .sectionForm { visibility:hidden;}
+#addinfocontainer .collapsed h3:hover .socialArrow { background-position:top right; }
+#addinfocontainer .collapsed .socialArrow { background-position:top left; }
+#addinfocontainer .socialArrow { background:url(images/socialArrow.png) bottom left; display:block; float:left; height:25px; margin:3px 10px 0 0; width:25px; }
+#addinfocontainer h3:hover .socialArrow { background-position:bottom right; }
+#toggleSocial1, #toggleSocial2, #toggleSocial3 { cursor:pointer; }

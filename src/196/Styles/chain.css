@@ -1,0 +1,94 @@
+/* Scolari's CSS Document */
+.thumbNail .top     {display:block; height:31px; background:transparent url(/Assets/Common/Images/hover_top_big_bg_red.png) no-repeat; width:300px;}
+.bigPage .top		{display:block; background:transparent url(/Assets/Common/Images/hover_top_big_bg_red.png) no-repeat; height:31px;width:300px; float:left; clear:both; padding:0px;} 
+
+#GlobalQuickSearch		{display:none;}
+.PLU		{display:none}
+
+h2, h3, h1,
+h2 a, h3 a, h1 a,
+#recipecontent h3, #FeaturedRecipeTeaser h2,
+#MealPlanner h2, 
+a:link, a:visited, a:active	{color:#B6000C; }
+a:hover				{text-decoration:underline;}
+h1 {font-size:200%;}
+h2			{margin-bottom:4px;}
+th			{background-color: #B6000C; color: #FFFFCC; }
+
+
+html			{height:100%; background: transparent url(/Assets/196/Images/frntpage.jpg) repeat-x fixed;}
+body 			{font-family: "Trebuchet MS", "Tw Cen MT", Verdana; }
+#container-outer	{position:relative;}
+
+#s1header			{margin-bottom:0;}
+#s1headerImage			{float:left;}
+#s1headerImage img		{margin:0 0 0 200px;}
+
+#CouponsPage .pageHeaderContainer {background:transparent url(/Assets/Common/images/new_coupons_header.jpg) no-repeat scroll 0 0; height:100px; width:590px;}
+
+#StoreHeader			{background: transparent url(/Assets/196/Images/HeaderBG.jpg) no-repeat top right;}
+#StoreHeaderRightTop 		{font-size:85%;border:3px solid #C02407;margin-bottom:21px; width:180px;}
+#StoreHeaderRightTop a		{color:black;}
+#StoreMenu
+{clear:both;background-color:#C02407;color:yellow;font-size:110%; font-family:Tahoma, Verdana, Geneva, sans-serif; font-weight:normal;}
+
+
+#StoreInfoDiv 				{background-color:black;font-size:100%;}
+.pageHeaderContainer h1		{display:none; margin-top:12px;}
+
+#header				{font-size:110%;}
+#secondary-navigation li 			{padding-left:6px; margin-right:1px; margin-left:1px; color:white; background-image:url("/Assets/196/Images/left.gif");}
+#secondary-navigation a			{padding-right:10px;color:white; background-image:url("/Assets/196/Images/right.gif");}
+#secondary-navigation a:hover			{color:yellow;}
+#secondary-navigation #current 		{background-image:url("/Assets/196/Images/left_on.gif");}
+#secondary-navigation #current a 				{color:#0E723B; background-image:url("/Assets/196/Images/right_on.gif");}
+
+
+#RecipeCardMiddle	{background:none white; padding-top:12px;}
+/*
+#LoginBox a { color:#000; float:none;clear:both; }
+#LoginBox a.button span, #LoginBox a.button span:hover { color:#000; }
+*/
+
+#AdPromo				{background:none; padding-top:0px; float:left; margin-right:93px;}
+#AdPromo img 			{margin:0px;}
+#DualContentControlDiv, #DualContentControlDiv2 {float:right; margin-left:0;}
+#FeaturedRecipeTeaser			{clear:none; background:transparent url(/Assets/196/Images/yellow_gradient.jpg) repeat-x;height:308px; width:275px;}
+#FeaturedRecipeTeaser h2 a		{font-size:155%; color:red;}
+#DualContentControlDivA a img, #DualContentControlDivB a img {margin-bottom:6px;}
+#DualContentControlDivA a img, #DualContentControlDivB a img, #DualContentControlDivC a img	{margin-left:18px}
+#slideshow				{width:605px;}
+#nav li, #nav li:hover {background:#C02407 none repeat scroll 0 0;}
+#nav, #nav ul		{background-color:#C02407; height:27px;}
+#nav li a			{color:#FFF;}
+#nav li, #nav li:hover		{background:#C02407;}
+
+/** Shopping List **/
+#ShoppingList				{background-color:#FFF;}
+#ShoppingListHeaderSmall	{background:transparent url(/Assets/196/Images/shopping_list_top.jpg);height:66px;width:300px;}
+#FiveListButtons        {background:transparent url(/Assets/196/Images/shopping_list_bottom.jpg);min-height:84px;padding-left:30px;width:270px; font-family: "Trebuchet MS", "Tw Cen MT", Verdana;}
+#ItemCount					{margin-left:40px; font-family: "Trebuchet MS", "Tw Cen MT", Verdana;}
+#FiveListButtons a { padding-left:20px; width:30px; }
+#FiveListButtons a.shoplistEmail	{margin-left:5px;}
+#FiveListButtons a.shoplistManage	{margin-left:7px;}
+#ShoppingList table		    {clear:both; margin:0 auto; text-align:left; width:231px; border:0px none; border-collapse:collapse;}
+#ShoppingList td		{clear:both; margin:2px 0; border-bottom:none;text-align:left;padding-top:3px;}
+#trashcanSmall				{margin:0 15px;}
+#ManageList #ShoppingListItemsDisplay	{background:transparent url(/Assets/196/Images/shopping_list_middle.jpg) repeat-y scroll 0 0;}
+#ShoppingListHeaderLarge {background:transparent url(/Assets/196/Images/large_shoplist.jpg) no-repeat scroll left top;height:61px;}
+#ManageList .category {margin-left:48px;}
+
+/*** Add Your Own Items ***/
+
+#ShoppingListMain {margin:0px;background:transparent url(/Assets/196/Images/shopping_list_middle.jpg) repeat-y top left;width:300px;}
+#AddYourOwnItems input {margin-left:40px; width:180px;}
+
+/** Sign Up page **/
+#SignUpPersonalInfo input.clubcard		{width:266px;}
+#SignUpPersonalInfo span.cardnumber								{width:140px; margin-right:5px;}
+
+/*** Registration Page ***/
+#signUpPop1, #signUpPop2, #signUpPop4 {top:202px;}
+
+/** ie7 **/
+*:first-child+html #giftcard-iframe{margin-top:-300px;}

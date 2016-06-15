@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<header>
+	<TopLevelNavigation>
+		<MenuItem>
+			<Title>Weekly Ad</Title>
+			<Link>/Shop/WeeklyAd.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>In-store Specials</Title>
+					<Link>/Shop/Specials.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Master List</Title>
+					<Link>/Shop/MyFavorites.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Saved Lists</Title>
+					<Link>/Shop/SavedLists.aspx</Link>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+		<MenuItem>
+			<Title>Coupons</Title>
+			<Link>/Shop/Coupons.aspx</Link>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Printable Coupons</Title>
+					<Link>/Shop/Coupons.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>SavingStar</Title>
+					<Link>/savingstar.aspx</Link>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+	  		<MenuItem>
+			<Title>Order Online</Title>
+			<Link>/online-ordering.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+			<!--<SubLevelNavigation>
+				<MenuItem>
+					<Title>SavingStar</Title>
+					<Link>#</Link>
+				</MenuItem>
+			</SubLevelNavigation>-->
+		</MenuItem>
+		<MenuItem>
+			<Title>Company</Title>
+			<Link>#</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Departments</Title>
+					<Link>#</Link>
+					<SubLevelNavigation>
+						<MenuItem>
+							<Title>Dairy • Frozen • Grocery</Title>
+							<Link>/Dairy-Frozen-Grocery.aspx</Link>
+						</MenuItem>
+						<MenuItem>
+							<Title>Produce</Title>
+							<Link>/Produce.aspx</Link>
+						</MenuItem>
+						<MenuItem>
+							<Title>Meat</Title>
+							<Link>/Meat.aspx</Link>
+						</MenuItem>
+						<MenuItem>
+							<Title>Deli</Title>
+							<Link>/Deli.aspx</Link>
+						</MenuItem>
+						<MenuItem>
+							<Title>Bakery</Title>
+							<Link>/Bakery.aspx</Link>
+						</MenuItem>
+					</SubLevelNavigation>
+				</MenuItem>
+				<MenuItem>
+					<Title>Community</Title>
+					<Link>/Community.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>News &amp; Events</Title>
+					<Link>/News-and-Events.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Featured Links</Title>
+					<Link>/Featured-Links.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>FAQ</Title>
+					<Link>/FAQ.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Human Resources</Title>
+					<Link>/Human-Resources.aspx</Link>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+		<MenuItem>
+			<Title>Careers</Title>
+			<Link>##root##/Career-Information.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Company History</Title>
+					<Link>/Company-History.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Career Information</Title>
+					<Link>/Career-Information.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Apply for Position</Title>
+					<Link>https://re11.ultipro.com/RED1001/JobBoard/SearchJobs.aspx?Page=Search/</Link>
+					<Target>_blank</Target>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+		<MenuItem>
+			<Title>Health¢ents</Title>
+			<Link>/Health-Cents.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+		</MenuItem>
+		<MenuItem>
+			<Title>Rx</Title>
+			<Link>Rx.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+		</MenuItem>
+		<MenuItem>
+			<Title>Meal Solutions</Title>
+			<Link>/Recipes/MealPlannerFull.aspx</Link>
+			<NavImagePath/>
+			<NavImageWidth/>
+			<NavImageHeight/>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Recipes</Title>
+					<Link>/Recipes/RecipeCenter.aspx</Link>
+					<NavImagePath/>
+					<NavImageWidth/>
+					<NavImageHeight/>
+				</MenuItem>
+				<MenuItem>
+					<Title>Videos</Title>
+					<Link>/Recipes/RecipeVideos.aspx</Link>
+					<NavImagePath/>
+					<NavImageWidth/>
+					<NavImageHeight/>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+		<MenuItem>
+			<Title>Contact</Title>
+			<Link>/Contact-Us.aspx</Link>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Line to the President</Title>
+					<Link>/Line-to-the-President.aspx</Link>
+				</MenuItem>
+				<MenuItem>
+					<Title>Contact Us</Title>
+					<Link>/Contact-Us.aspx</Link>
+				</MenuItem>
+			</SubLevelNavigation>
+		</MenuItem>
+		<MenuItem>
+			<Title>Locations</Title>
+			<Link>#</Link>
+			<SubLevelNavigation>
+				<MenuItem>
+					<Title>Warehouse Market</Title>
+					<Link>/StoreLocator.aspx</Link>
+					<NavImagePath/>
+					<NavImageWidth/>
+					<NavImageHeight/>
+				</MenuItem>
+				<MenuItem>
+					<Title>Quick Shoppe</Title>
+					<Link>/Quick-Shoppe-Locations.aspx</Link>
+					<NavImagePath/>
+					<NavImageWidth/>
+					<NavImageHeight/>
+				</MenuItem>
+				
+			</SubLevelNavigation>
+		</MenuItem>
+			
+	</TopLevelNavigation>
+</header>

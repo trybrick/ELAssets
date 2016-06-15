@@ -1,0 +1,48 @@
+#recipeSearch a.search-link { 
+	margin-top: 0px;
+ }
+ 
+ #recipeSearch input {
+	margin-left:5px;
+	margin-top: 0px;
+	height: 13px;
+	width: 105px;
+	border:none;
+	background:none;
+}
+
+div #advancedSearch{
+	position: absolute;
+	margin-left: -370px;
+	
+}
+
+
+#advancedSearch input{
+	margin-left: -10px;
+	padding-left: 0px;
+}
+
+.radioOptions{
+ 	float: left;
+    font-size: 80%;
+    line-height: 16px;
+    margin-top: 5px;
+    text-align: left;
+    width: 50px;
+}
+
+
+
+.radioOptions input{
+	float:left;
+	clear:none;
+	width: 20px;
+}
+
+.radio-last { clear:right;}
+
+#recipeFullInfo{
+ margin: 0;
+
+}

@@ -1,0 +1,47 @@
+	<div id="container">
+
+		<div id="header-wrap">
+
+			<div id="header-in">
+				##HeaderContent##
+			</div> <!-- end header-in -->
+
+		</div> <!-- end header-wrap -->
+		
+		<div id="nav-wrap">
+			<div id="nav-in">
+				##NavigationContent##
+			</div>
+		</div>
+
+		<div id="content-wrap">
+
+			<div id="left">
+
+				<div id="left-in">
+					##SidebarContent##
+				</div> <!-- end left -->
+
+			</div> <!-- end left-in -->
+
+			<div id="center">
+
+				<div id="center-in">
+					##MainContent##
+				</div> <!-- end center -->
+
+			</div> <!-- end center-in -->
+
+		</div> <!-- end content-wrap -->
+
+		<div id="footer-wrap">
+
+			<div id="footer-in">
+			##FooterContent##
+			</div> <!-- end footer-in -->
+
+		</div> <!-- end footer-wrap -->
+
+	</div> <!-- end container -->
+
+	<br />

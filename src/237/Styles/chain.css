@@ -1,0 +1,1761 @@
+/*
+Theme Name: Gerritys
+Theme URI: http://gerritys.com
+Description: 3 tempalte theme for Gerritys web site.
+Author: Joey Z
+Version: 1.2
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,caption{
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+a:link, a:visited, a:active, #CircularLists span a {color:#B60050; border:0 none; font-weight:bold; outline:medium none; text-decoration:none;}
+a:hover, #CircularLists span a:hover {color:#6C7644; border:0 none; font-weight:bold; outline:medium none; text-decoration:none;}
+
+/* =Layout
+-------------------------------------------------------------- */
+html{
+	/*background: url('../images/subBg.jpg') center top repeat-y ;*/
+	background:#;
+	margin:0px;
+
+}
+body{
+	background-image: url('../images/background_page.jpg');
+	background-position: center top;
+	background-repeat:repeat-x;
+	background-color:#F3F1CB;
+	font-family:Arial,helvetica,sans-serif;
+	height:100%;
+}
+#header{
+	width:960px;
+	height:145px;
+	background:url('../images/header_background.jpg') ;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+.container {
+    bottom: 5px;
+    display: block;
+    float: left;
+    /*height: 100%;*/
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    z-index: 995;
+}
+
+/* TOP NAV
+**********************************************/
+/*#dc_jqmegamenu_widget-4-item {
+    font: 10px/16px Arial,sans-serif;
+}*/
+
+#menu-main-menu {
+	display:block;
+	width:960px; height:40px;
+	background:#A5AD4F;
+	text-transform:uppercase;
+	/*font: normal 10px/11px Arial, Helvetica, sans-serif;*/
+}
+
+ul#menu-main-menu li#menu-item-20 a {
+    background: url("../images/menu/home.png") no-repeat scroll center center #A5AD4F;
+    text-indent: -20000px;
+    width: 10px;
+	z-index:1000;
+}
+ul#menu-main-menu li#menu-item-20 a:hover {
+	color: #FFFFFF;
+	background-color:#444444;
+    text-decoration: none;
+}
+
+ul#menu-main-menu li#menu-item-4 a:hover {
+    color: #FFFFFF;
+	background-color:#444444;
+    text-decoration: none;
+}
+
+ul#menu-main-menu li a {
+    display: block;
+    float: left;
+    padding: 17px 24px 12px 19px;
+	border-left: 1px solid #727737;
+	color: #FFFFFF;
+    text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:lighter;
+	position: relative;
+}
+ul#menu-main-menu li a:hover {
+	color: #FFFFFF;
+	background:#444444;
+    text-decoration: none;
+}
+
+ul#menu-main-menu li a .dc-mega-icon {
+	background: url("../images/menu/arrow_white.png") no-repeat 0px 0px;
+    display: block; position: absolute;
+    height: 6px; width: 8px; 
+	top: 20px; right: 6px;
+}
+
+ul#menu-main-menu li ul.sub-menu {
+	display:none;
+}
+
+ul#menu-main-menu li ul.sub-menu {
+	visibility:hidden;
+	display:block;
+	position:absolute;
+	padding:10px 15px;
+	background-color:#444444;
+}
+ul#menu-main-menu li:hover ul.sub-menu {visibility:visible;}
+
+ul#menu-main-menu li#menu-item-4 ul.sub-menu li ul.sub-menu {top:40px; height:185px;}
+ul#menu-main-menu li#menu-item-4 ul.sub-menu ul.subStore1 {left:54px;}
+ul#menu-main-menu li#menu-item-4 ul.sub-menu ul.subStore2 {left:246px;}
+ul#menu-main-menu li#menu-item-5 ul.sub-menu {top:40px; left:143px;}
+ul#menu-main-menu li#menu-item-6 ul.sub-menu li ul.sub-menu {top:40px; height:185px;}
+ul#menu-main-menu li#menu-item-6 ul.sub-menu ul.sub1 {left:138px;}
+ul#menu-main-menu li#menu-item-6 ul.sub-menu ul.sub2 {left:338px;}
+ul#menu-main-menu li#menu-item-7 ul.sub-menu {top:40px; left:398px;}
+ul#menu-main-menu li#menu-item-8 ul.sub-menu {top:40px; left:496px;}
+ul#menu-main-menu li#menu-item-9 ul.sub-menu {top:40px; left:589px;}
+ul#menu-main-menu li#menu-item-10 ul.sub-menu {top:40px; left:711px;}
+ul#menu-main-menu li#menu-item-11 ul.sub-menu {top:40px; left:749px;}
+
+ul#menu-main-menu li ul.sub-menu li a {
+	display:block;
+	border:none;
+	clear:both;
+	padding:10px 5px 10px 22px;
+	background-color:#444444;
+	background: url("../images/menu/arrow_off.png") no-repeat 7px 12px transparent;
+}
+ul#menu-main-menu li ul.sub-menu li a:hover {
+	display:block; border:none; color:#A32403;
+	background: url("../images/menu/arrow_on.png") no-repeat 7px 12px #ffffff;
+}
+
+ul#menu-main-menu li#menu-item-4 ul.sub-menu li a {width:150px;}
+ul#menu-main-menu li#menu-item-5 ul.sub-menu li a {width:120px;}
+ul#menu-main-menu li#menu-item-6 ul.sub-menu li a {width:200px;}
+ul#menu-main-menu li#menu-item-7 ul.sub-menu li a {width:120px;}
+ul#menu-main-menu li#menu-item-8 ul.sub-menu li a {width:130px;}
+ul#menu-main-menu li#menu-item-9 ul.sub-menu li a {width:120px;}
+ul#menu-main-menu li#menu-item-10 ul.sub-menu li a {width:120px;}
+ul#menu-main-menu li#menu-item-11 ul.sub-menu li a {width:120px;}
+
+ul#menu-main-menu li#menu-item-4 ul.sub-menu li ul.sub-menu li a,
+ul#menu-main-menu li ul.sub-menu li ul.sub-menu li a {
+	display:block;
+	border:none;
+	clear:both;
+	padding:10px 5px 10px 22px;
+	background-color:#444444;
+	background: url("../images/menu/arrow_off.png") no-repeat 7px 12px transparent;
+}
+ul#menu-main-menu li#menu-item-4 ul.sub-menu li ul.sub-menu li a:hover,
+ul#menu-main-menu li ul.sub-menu li ul.sub-menu li a:hover {
+	display:block; border:none; color:#A32403;
+	background: url("../images/menu/arrow_on.png") no-repeat 7px 12px #ffffff;
+}
+
+/*GC Savings
+**********************************************/
+#goldcardSavings{
+    background: url("../images/goldcardTicker.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    float: left;
+    width:324px; height: 77px;
+    line-height: 30px;
+    padding-top: 10px;
+    text-align: left;
+    font-size:14px;
+    margin: 20px 0 0 80px;
+}
+#logo{display:inline-block;float:left;}
+.savings{color: #fff;font-size:30px;padding-left: 100px;padding-top:3px;display:block;}
+#goldcardSavings p{padding-left: 82px;font-size: 11px; margin-top:35px;}
+.signupLink{padding-left:30px;}
+#goldcardSavings a{padding-left:44px;}
+/*social media
+**********************************************/
+#social a{
+  float:left;
+  left: 43px;
+  position: relative;
+  top: 97px;
+}
+
+#social a:hover{
+	left: 43px;
+    position: relative;
+    top: 87px;
+}
+#social{display:block}
+/*leaderboard
+**********************************************/
+#leaderContainer{
+    background: url("../images/leader_bg.png") repeat scroll 0 0 transparent;
+    clear: both;
+    height: 306px;
+    margin: 0 auto;
+    width: 960px;
+    margin-top: 70px;
+}
+#leftSide{
+	width:480px;
+	display: inline-block;
+	float:left;
+}
+#leaderCta{display: inline-block;float:left;}
+#specials{display:inline-block;vertical-align: top;float:left;}
+#specials li{padding: 10px 0 0px 0}
+#rightSide{
+	height: 285px;
+	width:480px;
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+}
+/*body
+**********************************************/
+#body-main{
+	/*background-color:#fff;*/
+	background-color: /*#FFFFCC*/#fff;
+	margin: 0 auto;
+	width:960px;	
+	clear: both;
+	position: relative;
+	bottom:15px;
+}
+#lowerBlockContainer{
+	display: block;
+	margin: 0 auto;
+	width:960px;
+	padding: 0 10px;
+	vertical-align: top;
+	
+}
+.lowerBlock{
+	display: inline-block;	
+	margin: 0 5px;
+	float:left;
+	position: relative;
+	width:300px;
+	height:300px;
+	overflow: hidden;
+}
+
+#emplBlockHeader{
+    background:url(../images/otherHdrBg.png);
+    color: #FFFFFF;
+    font-size: 25px;
+    height: 55px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left:0;
+    vertical-align: top;
+    width: 290px;
+    z-index: 1000;
+    line-height: 55px;
+}
+
+#otherBlockHeader{
+    color: #FFFFFF;
+    font-size: 25px;
+    height: 55px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+     top: 0;
+    left:0;
+    vertical-align: top;
+    width: 290px;
+    z-index: 1000;
+    background:url(../images/otherHdrBg.png);
+}
+
+#otherBlockHeader p{vertical-align: middle;padding-top:15px}
+
+/*Twitter Block
+**********************************************/
+#twitterBlock{
+	background:url("../images/twitter_background.jpg");
+	width:300px;
+	height:300px;
+	overflow:hidden;
+}
+.twtr-hd{height:60px;}
+.twtr-hd a {display:none;}
+.twtr-hd h1,.twtr-hd h2,.twtr-hd h3{display:none}
+.twtr-user{color:#6ea0b9;font-weight: bold;}
+.twtr-tweet-text{font-size: 10px}
+.twtr-widget .twtr-tweet{padding-bottom: 10px;}
+/*footer
+**********************************************/
+#footerContainer{
+	width:940px;
+	margin:0 0 0 14px;
+	padding: 15px;
+	clear:both;
+}
+/*#footer-outer {display:block; width:100%; height:100%; background:#a8b050;}*/
+
+.footerBlock{
+	display: inline-block;
+    margin: 0 0 0 10px;
+    width: 175px;
+    vertical-align: top;
+	line-height: 20px;
+	float:left;
+}
+.footerBlock h2{
+	border-bottom: 1px solid #6d7745;
+	color: #6d7745;
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+}
+
+.footerBlock a {color:#6d7745; text-transform:uppercase; font-size:11px; font-weight:normal; text-decoration:none;}
+.footerBlock a:hover {text-decoration:underline;}
+
+#copy{clear:both;background: #a8b050;display: block;width:920px; color:#fff;padding: 5px 20px;font-size: 12px; margin:20px 0px 0px -19px;}
+#pgBtm{background: #F3F1CB; display: block; width:960px; height:30px; margin:0px 0px -35px -19px;}
+
+/*Recipie Tab
+**********************************************/
+.slide-out-div {
+          padding: 10px;
+          width: 910px;
+          height:276px;	
+          background: #ffefbc;
+          z-index:4000;
+          color: #262626;
+          font-size: 15px;
+          border:2px solid #222
+      }      
+.handle{
+	background: url(../images/tab.png) #979e48;
+	width:60px;
+	height:320px;
+	display:block;
+	top:-2px!important;
+	border-top:2px solid #222222;
+	border-bottom: 2px solid #222222;
+	border-left:2px solid #222222;
+	
+	}
+.slide-out-div li{
+	    line-height: 15px;
+    	list-style: decimal outside none;
+	    padding: 5px 0 5px 5px;
+}
+.slide-out-div ol{  padding-left: 20px;}
+.slide-out-div h1{font-weight:bold;color:#fff}
+ul.tabNavigation{color: #404040;font-size:15px;font-weight:bold;width:450px;margin:0 auto 20px auto;}
+.tabNavigation a{color: #404040;text-decoration: none;font-size:15px;font-weight:bold}
+.tabNavigation a.selected{color:#fff;font-weight:bold}
+.tabNavigation li{display: inline}
+#ingredients li{list-style: disc inside}
+
+/*Sub page main Col
+**********************************************/
+#container{
+	display:block;
+	/*padding:0px;*/
+	background: url("../images/background_content.png") repeat-y scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 0px 20px 15px 0px;
+    position: relative !important;
+    width: 1090px;
+}
+#content{}
+#leftCol{
+	width:640px;
+	/*height:500px;For Debugging
+	border: 1px dashed fuchsia;For Debugging*/
+	display: inline-block;
+	float: left;
+	clear:left;
+	padding:10px;
+}
+#leftCol_sub{
+	width:610px;
+	/*height:500px;For Debugging
+	border: 1px dashed fuchsia;For Debugging*/
+	display: inline-block;
+	float: left;
+	clear:left;
+	padding:10px 20px;
+	font-size: 14px;
+	min-height: 400px;
+	/* IE 6/7 height */
+	height:auto !important;
+	height:400px;
+}
+.col1{}
+.col2{}
+
+#leftCol_sub p{ line-height: 17px;padding: 10px 0;clear:both;display:block}
+#breadcrumbs{background: #ccc;padding: 5px;font-size:12px;margin-bottom:15px;}
+#breadcrumbs a{color:#000}
+#breadcrumbs a.current{text-decoration:none;}
+#leftCol_sub p img{float:left; padding: 5px 10px 5px 0}
+#sideBar{
+	width:280px;
+	/*height:300px;For Debugging
+	border:1px dotted aqua;For Debugging*/
+	display:inline-block;
+	clear:right;
+	float:left;
+	padding: 10px;
+}
+
+/* Store Styles
+**********************************************/
+#lightwindow_registration {z-index: 996;}
+#UpdateProgress1, #UpdateProgress2, #ctl00_ContentPlaceHolder1_Specials1_UpdateProgress1, #ctl00_ContentPlaceHolder1_Inventory1_UpdateProgress1 {width: 555px;}
+
+#main.storelocator {width: 960px; margin-left:-7px;}
+
+#StoreLocatorePage #StoreLocatorZipLookup {
+	height: auto;
+	width: 100%;
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+#StoreLocatorePage #StoreLocator h2 {
+	width: 100%; color:#657D1A;
+	border-bottom: 1px solid #000000;
+	float: left;
+	padding: 0px 0px 7px 0px; margin:15px 0px 10px 0px;
+	font-size:20px; font-weight:bold;
+}
+#StoreLocatorePage #storeZipEntryForm {
+	box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+    clear: none;
+    float: left;
+	padding:0px 20px; margin:27px 0px 4px 0px;
+    width: 460px;
+}
+#StoreLocatorePage #StoreLocator p {
+    font-size: 1em;
+    margin: 0 0 10px; float:left;
+    width: 100%;
+}
+
+
+#StoreLocatorePage #storeZipEntryForm p span {
+margin-top: 4px;
+font-size: 12px;
+}
+#StoreLocatorePage #storeZipEntryForm p span, 
+#StoreLocatorePage #storeZipEntryForm p select {
+	float: left;
+	margin-right: 6px;
+}
+#StoreLocatorePage #storeZipEntryForm p input {
+	float: left;
+	margin:0px 12px 0px 0px; width:130px;
+}
+#StoreLocatorePage #storeZipEntryForm a {
+	vertical-align: baseline;
+	margin:0px 24px 0px 0px; float:right;
+}
+#StoreLocatorePage #StoreLocatorZipLookup .map-button-group {
+	width: 100%; margin:30px 0px 20px 0px;
+	clear: both; float: right;	
+}
+
+#GoogleMapStoreList {
+    float: left;
+    height: auto;
+    margin-top: 1em;
+    width: 510px;
+}
+
+
+
+
+a.button {
+    background: url("../Images/button_shine_30.png") repeat-x scroll left 50% #666666;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 11px Arial,sans-serif;
+    height: 20px;
+    margin-right: 6px;
+	padding:3px 10px 0px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.button:hover {
+    background: url("../Images/button_shine_30.png") repeat-x scroll left 50% #B60050;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 11px Arial,sans-serif;
+    height: 20px;
+    margin-right: 6px;
+    padding:3px 10px 0px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.add, a.update, a.remove {clear: both;}
+
+#PersonalizedSpecialsPage .couponsContainer a.button {margin-left:10px;}
+#PersonalizedSpecialsPage .couponsContainer .couponsDescription {padding:0px 10px; width:120px;}
+
+#sidebar .account a.button {padding:3px 25px 0px 20px; margin:5px 20px 0px 20px;}
+#sidebar .account a.button:hover {padding:3px 25px 0px 20px; margin:5px 20px 0px 20px;}
+
+#searchStores{padding:20px 0;}
+#seperator{width:10px;display:  inline-block;height:115px;border-right:1px solid #ccc;vertical-align: top;float:left}
+#geoStore{display: inline-block; padding-left: 6px;float:left}
+#gmaps{clear:both;padding-top: 20px;}
+
+#StoreLocator .storeInfoZip.storegrid-column1 {border-left: medium none; clear: both;}
+#StoreLocator .storeInfoZip {
+	text-align: left;
+	line-height: 130%;
+	font-size: 1em;
+	width: 30%;
+	float: left;
+	min-height: 11em;
+	padding: 0 1%;
+	margin-bottom: 2em;
+	font-size: 12px;
+}
+#StoreLocator .storeInfoZip a {text-decoration: underline; color:#B60050;}
+#StoreLocator .storeInfoZip a:hover {text-decoration: underline; color:#657D1A;}
+#StoreLocator .storeInfoZip a.fn.org {display:block;}
+
+#GoogleMapCanvas {
+	float: right;
+	margin: 27px 35px 0px 0px;
+	width: 400px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+.main-wrapper {
+	clear: both;
+	float: left;
+	width: 935px;
+	margin-left: 33px;
+}
+
+/* ORDER CONFIRMATION */
+#OGSInvoice.main-wrapper {margin:15px 0px 15px 33px;}
+#OGSInvoice.main-wrapper .invoicebuttons {margin:10px 0px 50px 0px;}
+#OGSInvoice.main-wrapper h1 {font-weight:bold;}
+#OGSInvoice.main-wrapper h2,
+#OGSInvoice.main-wrapper h3,
+#OGSInvoice.main-wrapper h4,
+#OGSInvoice.main-wrapper h5,
+#OGSInvoice.main-wrapper h6 {font-weight:bold; color:#667E1B; margin:15px 0px 3px 0px;}
+
+#OGSInvoice.main-wrapper .invoiceitems {clear:both; margin-bottom:15px;}
+#OGSInvoice.main-wrapper .invoiceitems th {text-align: left; border-right: 1px solid #FFFFFF; padding:5px;}
+#OGSInvoice.main-wrapper .invoiceitems th.upc,
+#OGSInvoice.main-wrapper .invoiceitems td.upc {width:78px;}
+#OGSInvoice.main-wrapper .invoiceitems th.itemName,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemName {width:450px;}
+#OGSInvoice.main-wrapper .invoiceitems th.itemQuantity,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemQuantity {width:35px;}
+#OGSInvoice.main-wrapper .invoiceitems th.itemPrice,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemPrice {width:55px;}
+#OGSInvoice.main-wrapper .invoiceitems th.tax,
+#OGSInvoice.main-wrapper .invoiceitems td.tax {width:55px;}
+#OGSInvoice.main-wrapper .invoiceitems th.deposit,
+#OGSInvoice.main-wrapper .invoiceitems td.deposit {width:78px;}
+#OGSInvoice.main-wrapper .invoiceitems th.regPrice,
+#OGSInvoice.main-wrapper .invoiceitems td.RegPrice {width:78px;}
+
+#OGSInvoice.main-wrapper .invoiceitems td,
+#OGSInvoice.main-wrapper .invoiceitems td.upc,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemName,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemQuantity,
+#OGSInvoice.main-wrapper .invoiceitems td.ItemPrice,
+#OGSInvoice.main-wrapper .invoiceitems td.tax, 
+#OGSInvoice.main-wrapper .invoiceitems td.deposit {text-align:left; border-right:1px solid #667E1B; border-top:1px solid #667E1B; padding:5px;}
+#OGSInvoice.main-wrapper .invoiceitems td.RegPrice {text-align:left; border-right:1px solid #ffffff; border-top:1px solid #667E1B; padding:5px;}
+
+#OGSInvoice.main-wrapper .invoiceinformation {margin:20px 0px 10px 0px; padding-top: 1em; border-top:1px solid #ffffff; float:right;}
+#OGSInvoice.main-wrapper .invoiceinformation td.invoiceLabel {color:#667E1B; width:155px; text-align:right; border-right:1px solid #667E1B;}
+#OGSInvoice.main-wrapper .invoiceinformation td {color:#000000; width:740px; text-align:left;}
+#OGSInvoice.main-wrapper .invoiceinformation td.invoiceLabel,
+#OGSInvoice.main-wrapper .invoiceinformation td {padding:5px; font-weight:bold; border-top:1px solid #667E1B;}
+
+#OGSInvoice.main-wrapper .disclaimer {clear:both; text-align:right; margin-bottom:30px; width:100%;}
+
+
+.pageHeader {
+	color: #657D1A; font-size:16px; font-weight:bold;
+	margin: 10px 0px 20px 0px;
+	border: 0;
+}
+.pageHeader span {
+	font-size: 12px; font-weight:normal;
+	color:#000000;
+	margin-left: 0.5em;
+}
+
+#RecipeVideosPage h1 {
+    border-bottom: 2px solid #657D1A;
+    color: #657D1A; font-size: 16px; font-weight: bold; 
+    font-family: Arial,Helvetica,sans-serif;
+    width: 530px; height: 23px; padding: 14px 0px 0px 0px; margin: 0; 
+}
+
+#VideoNavigation {
+    float: left;
+    padding: 7px 0 0;
+    width: 200px;
+}
+#PlayListTarget, #CategoryList {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 280px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 195px;
+}
+#PlayListTarget h2 {
+    border: medium none;
+    clear: none;
+    float: left;
+    font-size: 13px;
+    margin: 25px 0 2px;
+    width: 75px;
+}
+
+#FeaturedRecipeTeaser.recipe {
+    background: none repeat scroll 0 0 transparent;
+    clear: both;
+    margin: 14px 2% 15px;
+    width: 42%;
+}
+#MealPlanner.recipe {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    float: left;
+    font-size: 90%;
+    margin: 14px 2% 15px;
+    padding: 4px 8px 3px 4px;
+    text-align: center;
+    width: 42%;
+}
+#MealPlanner.recipe {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 90%;
+    margin: 14px 2% 15px;
+    padding: 4px 8px 3px 4px;
+    text-align: center;
+    width: 42%;
+}
+#MealPlanner h2,
+#FeaturedRecipeTeaser h2,
+#FeaturedArticleTeaser h2,
+#AskTheChefTeaser h2,
+#CookingTipsTeaser h2 {
+    border-bottom: 2px solid #657D1A;
+    color: #657D1A;
+    font-size:16px; font-weight:bold; 
+    height:23px; margin:4px 0px 10px 0px;
+    text-align: center;
+}
+#FeaturedArticleTeaser p, 
+#FeaturedRecipeTeaser p, 
+#CookingTipsTeaser p, 
+#AskTheChefTeaser p, 
+#FeaturedArticleTeaser a, 
+#FeaturedRecipeTeaser a, 
+#CookingTipsTeaser a, 
+#AskTheChefTeaser a {
+    font-size: 100%;
+}
+#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a {color: #657D1A; font-size:16px; font-weight:bold;}
+#FeaturedRecipeTeaser.recipe h2 a:hover,
+#MealPlanner.recipe h2 a:hover {color:#B60050;}
+
+#MealPlanner.recipe {padding: 0px 8px 3px 4px;}
+
+#MealPlanner h3 {
+    border-bottom: 1px solid #657D1A;
+    color: #657D1A;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 4px 0px 2px 0px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+
+#SavedRecipes {margin-bottom: 0px;}
+#SavedRecipes span a {text-decoration:none;}
+
+#ChangeDietaryPreferences, 
+#SavedRecipes, 
+#TopRecipesTeaser, 
+#ChainRecipes, 
+#QuickSearch {
+    border-bottom: 1px solid #657D1A;
+    display: inline;
+    padding: 5px 0px 15px 0px;
+    width: 532px;
+}
+
+#AdvancedSearch, 
+#QuickSearch, 
+#TopRecipesTeaser {
+    margin:0px 0px 0px 10px; padding:12px 0px;
+    width: 532px;
+}
+
+#AdvancedSearch h1, 
+#TopRecipesTeaser h1, 
+#ExpandButton h1, 
+#DietaryPreferencesFullControl h1, 
+#QuickSearch h1 {
+    float: right;
+    height: 25px;
+    margin: 14px 0px 0px 0px; top:-11px;
+    padding: 0px;
+    position:absolute;
+    text-align: right;
+    width: 70px;
+}
+
+#QuickSearch h2, 
+#AdvancedSearch h2, 
+#TopRecipesTeaser h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+#PanelTopRecipes li a {font-weight:normal;}
+
+#QuickSearch #PanelQuick div {
+    float: left;
+    font-size: 10px;
+    margin-left: 16px;
+    margin-top: 10px;
+    min-height: 120px;
+    width: 90px;
+}
+
+#QuickSearch h3 {
+    border-bottom: 1px solid #657D1A;
+    color: #657D1A;
+    font-size: 11px;
+    margin: 4px 0 2px 6px;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+#QuickSearch ul a {color:#B60050;}
+#QuickSearch ul a:hover {color:#657D1A;}
+
+#CtrlDivSubTitle p, 
+#CtrlDivTextSearch p {
+    font-size: 110%; font-weight: bold; color: #657D1A;
+    margin:15px 0px 10px 0px;
+}
+
+#CtrlDivCourseSelection select, 
+#CtrlDivSkillLevelSelection select, 
+#CtrlDivPreparationTimeSelection select, 
+#CtrlDivRegionSelection select, 
+#CtrlDivHolidaySelection select, 
+#CtrlDivEquipmentSelection select {
+    float: left;
+    font-size: 100%;
+    line-height: 100%;
+	margin:0px 10px 10px 0px;
+    width: 255px;
+}
+
+#CtrlDivTextSearch {
+    float: left;
+	margin:0px;
+    width: 264px;
+}
+
+#CtrlDivTextSearch input {
+    display: block;
+    float: left;
+    margin: 0;
+    vertical-align: middle;
+    width: 179px;
+}
+
+#PanelSearch #SearchTips {
+    clear: both;
+    float: left;
+    margin: -18px 0 20px 268px;
+    width: 100px;
+}
+
+#FeaturedArticleTeaser.recipe, 
+#AskTheChefTeaser.recipe, 
+#CookingTipsTeaser.recipe {
+    border: 0 none;
+    margin: 25px 2px 15px 9px;
+    padding: 1%;
+    width: 29%;
+}
+
+#AskTheChefTeaser,
+#CookingTipsTeaser,
+#FeaturedArticleTeaser {
+    background: url("/Assets/237/Images/green_gradient.jpg") repeat-x scroll 0 0 transparent;
+    float: left;
+    min-height: 180px;
+    text-align: center;
+}
+
+#FeaturedRecipeTeaser h2 a, 
+#FeaturedArticleTeaser h2 a, 
+#AskTheChefTeaser h2 a, 
+#CookingTipsTeaser h2 a {color: #657D1A;}
+
+.thumbNail .top, .bigPage .top {
+    background: url("/Assets/237/Images/hover_top_green.png") no-repeat scroll 0 0 transparent;
+    clear: both; display: block; float: left; 
+    min-height: 25px;  padding: 0; margin-bottom:-5px; width: 300px;
+}
+.thumbNail .middle, .bigPage .middle {
+    background: url("/Assets/237/Images/hover_bottom.png") no-repeat scroll left bottom transparent;
+    clear: both; display: block; float: left; padding-bottom: 0px; width: 300px;
+}
+.thumbNail .middle {padding-bottom: 25px;}
+.thumbNail .bottom {
+    background: url("/Assets/237/Images/hover_bottom.png") no-repeat scroll left top transparent;
+    display: none;
+    height: 18px;
+    width: 300px;
+}
+.thumbNail h1, .bigPage h1 {
+    background-color: transparent; display: inline; float: left; margin-top: 8px; width: 292px;
+    color: white; font-family: verdana; font-size: 12px; font-weight: normal; text-align: center; 
+}
+#hoverAdPage.bigPage div.circularHoversPricing {float: left; margin: 10px 0 0;  width: 145px; font-family:Verdana;}
+#hoverAdPage.bigPage div.circularHoversImage {clear: both; float: left; height: 125px; width: 125px; margin: 10px 8px; text-align: center;}
+.bigPage h2 {border: medium none; margin: 0; float: left; color: #4C4C4C; font-size: 13px; font-weight:bold;}
+.bigPage h3 {border: medium none; float: left; margin: 0; width: 100%; font-size: 11px; font-weight: normal; line-height: 120%; text-align: left; color:#4C4C4C;}
+.bigPage h4 {float: left; margin: 0; font-size:13px; color:#B13434; font-weight:bold;}
+
+#lightwindow_contents #availablevarietiestop {
+	background-color: #657D1A;
+}
+
+#SignOut h2 {color:#667E1A; font-weight:bold; font-size:16px; margin:20px 0px 15px 0px;}
+
+#PersonalizedSpecialsPage .TopN {
+    clear: both;
+    float: left;
+    margin-left: -20px;
+    width: 590px;
+}
+
+.CircularTypeBox img {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    max-height: 175px;
+    max-width: 100%;
+}
+.CircularTypeBox {
+    background: url("../Images/circularTypeBox_bkgrnd.gif") repeat-x scroll 0 0 transparent;
+    border: 1px solid #6C7644;
+    clear: none;
+    float: left;
+    height: 215px;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 5px 5px 20px;
+    width: 160px;
+}
+ul.CircularPageMenu li a, 
+ul.CircularPageMenu a:visited, 
+ul.CircularPageMenu li a:active {
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.CircularTypeBox h3 {
+    color: #6C7644;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+#OrderItems h5 {font-size: 12px; margin-left: -98px; margin-top: 0;}
+
+
+.addinfocontainer h2 span {color: #B60050;}
+.addinfocontainer p span {color: #B60050;}
+
+
+
+
+
+
+
+#Department h3, #Aisles h3, #Category h3 {
+	font-size:12px; font-weight:bold; color:#000;
+}
+#InBetween1, #InBetween2 {
+	float: left;
+	height: auto;
+	padding:50px 5px 0px 0px;
+	padding-top: 50px;
+	color: #B60050;
+	font-size: 140%;
+	font-weight: bold;
+}
+
+#sidebar, #recipesidebar {
+	z-index: 0 !important;
+	position: static !important;
+	display: block;
+	float: left;
+	width: 300px;
+	padding: 0;
+	margin: 35px 0 0 20px;
+}
+#ShoppingList {
+	float: left;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0px 10px 0px;
+	margin-bottom: 17px;
+	text-align: center;	background:transparent;
+	box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+}
+#ShoppingListHeaderSmall {
+	background: transparent url("../images/myShopCart_Small.jpg") no-repeat top left;
+	height: 26px;
+	width: 300px;
+}
+#ItemCount {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-style: italic;
+	border: 0px none;
+}
+
+#ShoppingListHeaderLarge.SavedOGS,
+#ShoppingListHeaderLarge.ShopListHeaderOGS {width:558px; height:79px; margin-top:10px; background: url("../images/myShoppingCart.png") no-repeat scroll left top transparent;}
+#ManageList #ShoppingListItemsDisplay {float: left; width: 100%; margin:15px 0px 0px 0px; background-color:#fff;}
+#ManageList .category {clear: both; font-size:12px; font-weight:normal;}
+#ManageList h2 {margin:0 2%; width:96%;}
+th {background-color:#657D1A; color:#fff;}
+
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#ManageListPage #ManageList {
+		margin: 0px 0px 0px -10px;
+	}
+	#ShoppingListHeaderLarge.SavedOGS,
+	#ShoppingListHeaderLarge.ShopListHeaderOGS {width:558px; height:79px; margin:10px 0px 0px 14px;}
+	#ManageList #ShoppingListItemsDisplay {width: 552px; margin:15px 0px 0px 14px;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#signinWelcomeText {margin-top: 25px;}
+#signinWelcomeText h2 {margin-bottom:18px; color:#657D1A; font-size:16px; font-weight:bold;}
+#SignUpV2 h2 {font-weight:normal; font-size:200%; border-bottom:none; margin-bottom:0; padding-top:36px; color:#657D1A; font-size:25px; font-weight:bold;}
+
+#WeeklyAdTextOnlyPage #main{
+    margin-top: 70px;
+}
+/* Shopping Tabs */
+#secondary-navigation {
+	border-bottom: 0px solid;
+    font-size: 100%;
+    line-height: normal;
+	margin:-46px 0px 0px -20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*#ManageListPage #secondary-navigation {
+	margin:10px 0px 0px 0px;
+    position:relative;
+}*/
+
+#secondary-navigation li {
+	background: url("../Images/left_tab_default.gif") no-repeat scroll left top transparent;
+	display:block; height:35px; float: left; margin:0px 5px 0px 0px; padding: 0 0 0 5px;
+}
+#secondary-navigation a {
+    background: url("../Images/right_tab_default.gif") no-repeat scroll right top transparent;
+    color: #006737; font-size:9px; text-transform:uppercase; line-height:12px;
+    display:block; height:35px;
+    font-weight:normal;
+    padding: 6px 14px 0px 6px;
+    text-align: center;
+    text-decoration: none;
+}
+#secondary-navigation li:hover {
+	background: url("../Images/left_tab_hover.gif") no-repeat scroll left top transparent;
+}
+#secondary-navigation a:hover {
+    background: url("../Images/right_tab_hover.gif") no-repeat scroll right top transparent;
+    color: #006737;
+    text-decoration: none;
+}
+#secondary-navigation li.current {
+	background: url("../Images/left_tab_current.gif") no-repeat scroll left top transparent;
+}
+#secondary-navigation li.current a {
+    background: url("../Images/right_tab_current.gif") no-repeat scroll right top transparent; color:#ffffff;
+}
+#secondary-navigation #current {background: url("../Images/left_tab_current.gif") no-repeat scroll left top transparent;}
+#secondary-navigation #current a {background: url("../Images/right_tab_current.gif") no-repeat scroll right top transparent; color:#ffffff;}
+
+#ProductSearchPage #main,
+#PreviousOrdersPage #main,
+#PersonalizedSpecialsPage #main,
+#MyFavorites #main,
+#SignOutPage #main,
+#ArticlePage #main,
+#RecipeSearchResultsPage #main,
+#RecipeFullPage #main,
+#RecipeCenter #main,
+#RecipeVideosPage #main,
+#ProductPage #main,
+#WeeklyAdPage #main,
+#CouponsPage #main,
+#BrowsePage #main,
+#SpecialsPage #main,
+#ManageListPage #main,
+#SavedListsPage #main,
+#EmailListPage #main {
+    box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+    display: inline;
+    float: left;
+    margin: 0px 0px 90px 0px;
+    min-height: 100%;
+    padding: 0px 20px 20px 20px;
+    position: relative;
+    top: 70px;
+    width: 550px;
+}
+#PreviousOrdersPage #main{
+    overflow: hidden;
+    margin-left: -10px;
+    padding-right:0;
+    min-width: 600px;
+}
+#PreviousOrdersPage #main #OrderItems{
+    width:420px;
+}
+#PreviousOrdersPage #main #OrderItems table{
+    width: 100%;
+}
+
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#ProductSearchPage #main,
+	#PreviousOrdersPage #main,
+	#PersonalizedSpecialsPage #main,
+	#MyFavorites #main,
+	#SignOutPage #main,
+	#ArticlePage #main,
+	#RecipeSearchResultsPage #main,
+	#RecipeFullPage #main,
+	#RecipeCenter #main,
+	#RecipeVideosPage #main,
+	#ProductPage #main,
+	#WeeklyAdPage #main,
+	#CouponsPage #main,
+	#BrowsePage #main,
+	#SpecialsPage #main,
+	#ManageListPage #main,
+	#SavedListsPage #main,
+	#EmailListPage #main {
+		margin: 0px 0px 90px -10px;
+		padding: 0px 0px 20px 20px;
+		width: 580px;
+	}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#EmailListPage div h3 {font-weight:bold; padding:10px 0px;}
+#EmailListPage div p {font-size:1.0em; padding-bottom:10px;}
+
+.CategoryDisplayContainer, .OrderDates {
+    clear: both;
+    float: left;
+    margin: 0 5px 0 -10px;
+    width: 135px;
+}
+#CouponsPage .gridLayout h2 {
+    color: #667E1A;
+    font-weight: bold;
+    margin-top: 0;
+}
+#CouponsPage .gridLayout {
+    float: right;
+	margin:-105px -22px 10px 0px;
+    width: 443px;
+}
+#CouponsPage .gridLayout a.button span, #CouponsPage .gridLayout a.button span:hover {font-size:10px; line-height:10px;}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#CouponsPage .gridLayout {margin:0px -22px 10px 0px;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+.GridMode1 .couponsContainer {width: 425px;}
+.GridMode1 .couponsDescription {width: 265px;}
+.GridMode2 .couponsSavings {background: none repeat scroll 0 0 #B60050;}
+.GridMode3 .couponsContainer {margin: 7px 10px 0px; width: 120px;}
+.GridMode3 .couponsImage {margin: 0px 0px;}
+.GridMode3 a.button, .GridMode3 a.button:hover {margin-top: 0px; margin-left: 18px;}
+
+
+#Department, #Aisles, #Category {
+    float: left;
+    height: auto;
+    margin-bottom: 12px;
+    padding: 0;
+    width: 175px;
+}
+
+div#Department select, div#Aisles select, div#Category select {
+    clear: both;
+    height: 100px;
+    width: 170px;
+}
+
+table.GridItem {border-collapse: collapse; width: 550px; margin-bottom:20px;}
+.GridAlternatingItem {background-color: #EAEAEA; color: #000000; font-weight: bold; text-align: left;}
+
+#sidebar .account {display:inline-block; width:280px; height:100%; border:1px solid #6C7644; background:url(../Images/signBox_bkgrnd.gif) repeat-x; padding:10px; margin:0px 0px 25px 0px;}
+#sidebar .account p {display:block; width:100%; float:left; text-align:center; padding:10px 0px 0px 0px;}
+
+#sidebar #txtGlobalQuickSearch {float: left; margin:0px 8px 0px 10px; width: 145px; height:15px;}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#sidebar #txtGlobalQuickSearch {height:17px;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#SearchResults {width: 560px;}
+#SearchResultsHeader {width: 430px; margin-top:10px;}
+#Products, #PreviousOrdersPage #OrderItems, #OrderItems {width: 430px;}
+
+
+
+#SearchTipsHelp h3 {
+    color: #6C7644;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+#SearchTipsLink a.searchTips {
+	display:block; width:240px; height:15px; margin:0px 0px 15px 10px;
+	padding: 7px 0px 0px 35px;
+	text-decoration:none; font-size:12px; color:#2E282B;
+	background:url(../Images/searchTip_btn.png) no-repeat 0px 0px transparent;
+}
+#SearchTipsLink a.searchTips:hover {
+	text-decoration:none; font-size:12px; color:#B60050;
+	background:url(../Images/searchTip_btn.png) no-repeat 0px -22px transparent;
+}
+
+table.first-category-table tr.category-table-head {
+    display: table-row;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+}
+
+#trashcanSmall {
+    background: url("../Images/remove_list_icon.gif") no-repeat scroll 0px 0px transparent;
+    cursor: pointer;
+    display: block;
+    height: 22px; width: 22px;
+    text-indent: -9999px;
+	text-decoration:none;
+}
+#trashcanSmall:hover {
+    background: url("../Images/remove_list_icon.gif") no-repeat scroll 0px -22px transparent;
+	text-decoration:none;
+}
+
+#ShoppingList table .firstItem,
+#ShoppingList table div.shopListItemSmall {
+	padding:5px 0px 0px 5px; margin:0px; width:170px;
+    color: #00000;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#ShoppingList table table.editqtyline {
+    display: block; width: 75px !important;
+    float: right;
+}
+
+#ShoppingList table input.comment {
+	margin-right:3px;
+	float:left;
+    height: 15px;
+    margin-right: 5px;
+    text-transform: none;
+    width: 125px;
+}
+
+#FiveListButtons {clear: both; display: inline; background:transparent; float: left; width: 300px; height:65px; margin:20px 0px;}
+#FiveListButtons a span {float: left; font-size: 80%; margin: 44px 0 0; padding: 0; text-align: center; width: 40px;}
+#FiveListButtons a {text-decoration:none; color:#B60050;}
+#FiveListButtons a:hover {text-decoration:none; color:#657D1A;}
+
+#FiveListButtons a.shoplistManage {
+	display:block; width:41px; height:41px; float:left; padding:0px; margin:0px 0px 0px 40px;
+    background: url("../Images/ShopList_ViewCart.png") no-repeat scroll 0px 0px transparent;
+}
+#FiveListButtons a.shoplistManage:hover {
+    background: url("../Images/ShopList_ViewCart.png") no-repeat scroll 0px -41px transparent;
+}
+#FiveListButtons a.shoplistCheckout {
+	display:block; width:41px; height:41px; float:left; padding:0px; margin:0px 0px 0px 20px;
+    background: url("../Images/ShopList_CheckOut.png") no-repeat scroll 0px 0px transparent;
+}
+#FiveListButtons a.shoplistCheckout:hover {
+    background: url("../Images/ShopList_CheckOut.png") no-repeat scroll 0px -41px transparent;
+}
+#FiveListButtons a.shoplistPrint {
+	display:block; width:41px; height:41px; float:left; padding:0px; margin:0px 0px 0px 20px;
+    background: url("../Images/ShopList_PrintCart.png") no-repeat scroll 0px 0px transparent;
+}
+#FiveListButtons a.shoplistPrint:hover {
+    background: url("../Images/ShopList_PrintCart.png") no-repeat scroll 0px -41px transparent;
+}
+#FiveListButtons a.shoplistEmail {
+	display:block; width:41px; height:41px; float:left; padding:0px; margin:0px 0px 0px 20px;
+    background: url("../Images/ShopList_EmailCart.png") no-repeat scroll 0px 0px transparent;
+}
+#FiveListButtons a.shoplistEmail:hover {
+    background: url("../Images/ShopList_EmailCart.png") no-repeat scroll 0px -41px transparent;
+}
+
+
+ul#PagerTop.CircularPager, ul#PagerBottom.CircularPager {
+    border-bottom: 1px solid #5F5F5F;
+    clear: both;
+    list-style: none outside none;
+    margin: 12px 0;
+    padding: 10px 10px 0;
+    text-align: center;
+    width: auto;
+}
+#PagerTop.CircularPager li, #PagerBottom.CircularPager li {
+    -moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #5F5F5F #5F5F5F -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #393939;
+    display: inline;
+    font-size: 85%;
+    padding: 2px 4px 0;
+    position: static;
+    top: 0;
+    vertical-align: bottom;
+}
+#PagerTop.CircularPager li.activePage, #PagerBottom.CircularPager li.activePage {
+    -moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none;
+    /*background-color: white;*/
+	background:url("../Images/weekAd_activeBkgrnd.gif") repeat-x 0 0;
+    border-color: #5F5F5F #5F5F5F #5F5F5F;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 110%;
+    padding: 4px 8px 0;
+    position: static;
+    top: 1px;
+    vertical-align: bottom;
+}
+#AdContent {
+    margin: 0 auto;
+    text-align: center;
+    width: 550px;
+}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	ul#PagerTop.CircularPager, ul#PagerBottom.CircularPager {width:550px; padding:10px 3px 0;}
+	#AdContent {margin:0px 28px 0px auto;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+/*Log-In Styles
+**********************************************/
+#LoginGreeting {color: #000000; margin-bottom: 10px; width: 100%;}
+#LoginLabelText {float:left; width:100%;}
+#LoginAsLabel {float:left; width:100%; font-size:14px; font-weight:bold;}
+
+#LoginInfo {height:100px;}
+#LoginInfo span {width:100%; float:left; font-weight:bold; padding-top:12px;}
+#StoreName {width:100%; float:left;}
+#StoreAddress {width:100%; float:left;}
+
+#legend table {
+    border: 1px solid #000000;
+    padding: 0;
+    width: 100%;
+}
+#legend tr.message th {
+    background: none repeat scroll 0 0 #657D1A; color: #FFFFFF; display: inline-block;
+    width: 278px; height: 39px;
+    margin: 5px -145px 0 5px; padding:5px 5px 15px 5px;    
+    
+}
+
+#legend td img {border: medium none; display: none;}
+#legend td, #legend td a {
+	color:#000; text-align: left; font-size: 14px; letter-spacing: 2px; text-decoration: none; 
+	margin:0px 0px 0px 0px; padding:10px 0px 0px 0px;
+	vertical-align: middle; float: left;
+}
+#legend td, #legend td a:hover {color:#B5004F; text-decoration: none;}
+#legend tr {height: 28px;}
+#legend tr:hover {background:#E6F0C3;}
+
+#legend tr td.icon a {display:block; width:41px; height:41px; float:left; padding:0px; margin:5px 10px 5px 5px;}
+
+#legend tr.print td.icon a {background: url("../Images/ShopList_PrintCart.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.print td.icon a:hover {background: url("../Images/ShopList_PrintCart.png") no-repeat scroll 0px -41px transparent;}
+
+#legend tr.email td.icon a {background: url("../Images/ShopList_EmailCart.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.email td.icon a:hover {background: url("../Images/ShopList_EmailCart.png") no-repeat scroll 0px -41px transparent;}
+
+#legend tr.delete td.icon a {background: url("../Images/ShopList_DeletCart.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.delete td.icon a:hover {background: url("../Images/ShopList_DeletCart.png") no-repeat scroll 0px -41px transparent;}
+
+#legend tr.save td.icon a {background: url("../Images/ShopList_SavedCarts.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.save td.icon a:hover {background: url("../Images/ShopList_SavedCarts.png") no-repeat scroll 0px -41px transparent;}
+
+#legend tr.save td input {float:left; margin:0px 10px 10px 10px; width:165px; height:19px; border:#6C7644 1px solid; padding:5px;}
+#legend tr.save td a.button {float:left; width:70px; height:16px; padding:6px 7px 7px 0px; text-align:center;}
+#legend tr.save.saveinput:hover {background:#ffffff;}
+
+#legend tr.new td.icon a {background: url("../Images/ShopList_NewCart.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.new td.icon a:hover {background: url("../Images/ShopList_NewCart.png") no-repeat scroll 0px -41px transparent;}
+
+#legend tr.savedLists td.icon a {background: url("../Images/ShopList_ViewSavedCart.png") no-repeat scroll 0px 0px transparent;}
+#legend tr.savedLists td.icon a:hover {background: url("../Images/ShopList_ViewSavedCart.png") no-repeat scroll 0px -41px transparent;}
+
+
+#savedshoppinglists {float: left; width: 100%; margin-left:-3px; background-color:#ffffff;}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#savedshoppinglists {margin-left:-11px;}
+	#winecontent {margin-right:20px;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#SavedShoppingListsDisplay {height: 100%; margin-top: 12px; overflow: auto; width: 100%;}
+
+#SearchTips {clear: both; float: left; margin:20px 0px 20px 30px; width: 100%;}
+#SearchTipsHeader h2 {font-size:22px; font-weight:bold; color:#447D1D; margin:0px 0px 5px 0px; width:100%;}
+#HelpTopics {float:left; margin:13px 10px 0px 0px; padding-left:0px; width:160px;}
+#HelpTopics h3 {font-weight:bold; font-size:1.2em; padding-bottom:3px;}
+#HelpTopics ul li a {line-height:1.5em;}
+
+#SearchTipsContent {float:left; font-size:16px; width:670px;}
+#SearchTipsContent p, #SearchTipsContent li {font-size:14px; line-height:1.3em; padding-bottom:10px;}
+.SearchTipsSubject {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+    margin:20px 0px 0px 0px; padding:15px 15px 15px 17px;
+}
+.SearchTipsSubject h3 {background-color:#ffffff; border:0px solid #ffffff; padding:5px 0px 10px 0px; font-weight:bold; color:#447D1D;}
+.SearchTipsSubject h4 {font-size:14px; line-height:1.3em; font-weight:bold; color:#447D1D;}
+
+#ConfirmStore {margin:-35px 0px 0px 37px; width:895px; padding:0px 0px 10px 0px;}
+
+#StoreLocator h2 {
+    border-bottom: 1px solid #000000;
+    color: #657D1A;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin:30px 0px 10px 0px;
+    padding: 0 0 7px;
+    width: 895px;
+}
+#StoreLocator p {font-size:1.0em; width:200px; margin:0px 0px 10px 0px;}
+
+#ConfirmStore #stores .storeInfoZip {
+    border: 1px solid #6C7644;
+    float: left;
+    font-size: 12px;
+    height: auto;
+	margin:0px 10px 10px 0px;
+    min-height: 100px;
+    padding: 3px;
+    text-align: left;
+    width: 31%;
+}
+#ConfirmStore #stores .storeInfoZip:hover {background:#E6F0C3;}
+
+#ConfirmStore #CurrentStore {
+    background: none repeat scroll 0 0 #E6F0C3;
+    border: 1px solid #6C7644;
+    clear: both;
+    float: left;
+    padding: 6px;
+    width: 30%;
+}
+
+#GsnFooter {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0px 0px 0px 35px;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+    width: 885px;
+}
+#GsnFooter table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin: 0 auto; 
+}
+
+#recipetitle h2 {border-bottom: 1px solid #6C7644; color: #6C7644; font-size: 16px; font-weight: bold; margin: 0 0 7px; padding-bottom: 5px;}
+#recipetitle {clear: none; float: left; width: 340px;}
+#reciperating {float: left; margin: 0; width: 280px;}
+#recipeoptions {float: left; margin: 6px 0px 0px 0px; width: 350px;}
+#UserRecipeRating {border: 1px solid #CCCCCC; float: left; margin: 10px 0 0 30px; padding: 4px; text-align: center; width: 150px;}
+#Recipe #socialControls {float: left;  height: 40px; margin: 20px 0px 0px 0px;}
+
+#recipecontent {float: left; height: auto; margin: 0; width: 575px;}
+#recipecontent h3 {border-bottom: 1px solid #6C7644; clear: both; color: #6C7644; float: left; font-size: 130%; font-weight: bold; margin-bottom: 12px; margin-top: 12px; padding-bottom: 5px; width: 550px;}
+.ingredientItems {clear: both; display: inline-block; height: auto; margin-bottom: 10px;}
+.preparation, .yield, .cookTime {clear: both; margin: 0 0 0 25px; width: 500px;}
+#NutritionTable {border: 1px solid black; border-collapse: collapse; clear: both; float: left; font-family: Arial; font-size: 90%; margin: 12px 0 15px 25px; padding: 4px; width: 90%;}
+#NutritionTable hr.thin {background-color: black; clear: both; height: 1px; margin-bottom: 2px; margin-left: 0; margin-top: 2px; text-align: left; width: 490px;}
+
+#recipeoptions ul {float: left; list-style: none outside none; margin: 3px -20px 0 6px; padding: 0;width: 200px;}
+#recipeoptions li.recipesave a,
+#recipeoptions li.recipeprint a,
+#recipeoptions li.recipeaddchecked a,
+#recipeoptions li.recipeaddall a,
+#recipeoptions li.recipeback a {width: 140px;}
+
+#FeaturedArticleFull h3 {border-bottom: 2px solid #6C7644; color:#6C7644; clear: both; font-size: 16px; font-weight: bold; margin:12px 0px 10px 0px; padding-bottom: 3px; width: 100%;}
+
+#SubmitAskTheChefPage #main {
+    box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+    display: inline;
+    float: left;
+    margin: 0px 0px 90px 0px;
+    min-height: 100%;
+    padding: 0px 20px 20px 20px;
+    position: relative;
+    top: 36px;
+    width: 550px;
+}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#SubmitAskTheChefPage #main {
+		margin: 0px 0px 90px -10px;
+		padding: 0px 0px 20px 20px;
+		width: 580px;
+	}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#SubmitAskTheChefPage h2 {border-bottom: 2px solid #6C7644; color:#6C7644; clear: both; font-size: 16px; font-weight: bold; margin:20px 0px 15px 0px; padding-bottom: 3px; width:550px;}
+#SubmitAskTheChefPage h3 {padding-bottom: 3px;}
+#SubmitAskChefControl .askChef {clear: both; float: left; font-style: normal; margin:4px 10px 0px 0px; width: 100px; text-align:right;}
+#SubmitAskTheChefPage #txtQuestion {color: #000000; float: left; font-size: 12px; width: 400px;}
+#SubmitAskChefControl #txtEmail {width: 396px; font-size:12px;}
+#SubmitAskChefControl a {clear: both; margin: 6px 0px 20px 110px;}
+/* ------------------ BEGIN Safari and Chrome HACKS ------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#SubmitAskChefControl #txtEmail {width: 400px;}
+}
+/* ------------------ END Safari and Chrome HACKS ------------------------------------------------*/
+
+#ProductsGrid, .LineItem, .LineItems {clear: both; float: left; margin-top: 2px; width: 545px;}
+#Options table, .LineItem table {clear: both; float: left; width: 545px;}
+.ProductAddToListControl div {margin-bottom: 5px; margin-top: 2px; text-align: center; width: auto;}
+.ProductDisplay th {font-size: 90%; font-weight: bold; padding: 5px; text-align: left;}
+
+
+
+
+
+
+
+
+
+/*Ad Styles
+**********************************************/
+.AdMaster.Tile6 {
+    height: 615px;
+    margin: 20px 0px 0px -87px;
+    position: absolute;
+    width: 160px;
+}
+/*#ad {display:block; width:728px; height:90px; background:#ff0;}*/
+
+.AdMaster.Tile1 {
+    display: block;
+    margin:20px 0px -10px 0px; width:98%; height:90px; padding-left:20px;
+}
+#sidebar .AdMaster {
+    display: inline; float: left; clear: both;
+    width: 300px; height: auto; margin: 0 0 10px; padding: 0; text-align: center; 
+    position: relative !important;
+    z-index: 0 !important;
+}
+
+
+
+
+/*Checkout Styles
+**********************************************/
+#CurrentStoreInfo {display:none;}
+#CheckOutSteps {
+    background: none repeat scroll 0 0 #ffffff;
+    border-bottom: 0px solid #ffffff;
+    float:left; margin:0px 0px 12px 30px; width: 100%;
+}
+.CurrentStep {color:#B60050; font-weight: bold;}
+
+#CheckOutSteps td {
+    font-size:14px; font-weight:bold; color:#447D1D;
+	box-shadow: 0 0 15px #888888;
+	border:1px solid #6C7644\9; /* for IE8 & below */
+    display:block; float:left; margin:20px; padding:15px;
+}
+
+#UserInformation.CheckoutPage {display:block; width:700px; margin:0px auto; padding:0px; float:none;}
+#UserInformation.CheckoutPage .checkoutHeader {margin:0px 0px 0px 54px; width:100%;}
+
+.checkoutHeader h1 {color:#667E1B;}
+.required {
+    color: #B60050;
+    float: left;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#CheckOutButtons {
+    clear: both;
+    float: left;
+    margin: 15px 0px 45px 250px;
+    width: 450px;
+}
+
+
+/*Sub page images
+**********************************************/
+.picture { background-color: #F9F9F9;
+border: 1px solid #CCCCCC; padding: 3px;
+font: 10px Arial, sans-serif; }
+.picture img { border: 1px solid #CCCCCC;
+vertical-align:middle; margin-bottom: 3px; }
+.right { margin: 0.5em 0pt 0.5em 0.8em; float:right; }
+.left { margin: 0.5em 0.8em 0.5em 0; float:left; } 
+p.wp-caption-text{font-size: 10px;text-align: center;width:150px;}
+.wp-caption{font-size: 10px;}
+/*Sidebar
+**********************************************/
+.vSep hr{color: #ccc;}
+.vSep{padding: 15px 0}
+h1{color: #667e1b;font-size:22px;padding-bottom: 10px;}
+.email{height:30px;font-size: 14px; width: 275px}
+.leadcapBtn{width: 280px;height:46px;background: url(../images/SignupBtn.jpg); border: none; cursor: pointer;}
+
+#recentNews{/*padding:20px 0;*/ }
+#newsBlock{padding: 10px 0;}
+#newsBlock p{font-size: 15px;}
+#newsBlock h2 a{font-weight: bold;color:#667e1b;font-size: 60%; text-decoration: none;padding:0;margin:0;}
+span.date{font-size: 12px;padding: 5px 0;display:block;}
+a.more{color: #667e1b; text-decoration: none;font-size: 12px;padding-left:10px;}
+/*Form Styling
+**********************************************/
+form#stores{ display: inline-block;float:left;}
+form#stores input.address[type=text]{height:30px;font-size: 14px;width:340px;}
+input.zip{height:30px;font-size: 14px; width: 160px; vertical-align: bottom; display:block}
+.searchBtn{width:160px;height:36px; background: url("../images/searchBtn.jpg"); border:none; cursor: pointer; display:block; vertical-align: bottom}
+
+/*Navigation
+*********************************************/
+
+#subNav li a{color: #fff;text-decoration: none; font-weight:normal; }
+#subNav li  a:hover{text-decoration: underline; }
+#subNav {background-color: #666; display: block; float: left; width: 960px}
+#subNav li {display:block; float: left;color:#fff;text-decoration:none; padding: 5px 15px;font-size: 10px;text-transform: uppercase}
+#subNav li {display: inline-block; float: left;color:#fff;text-decoration:underline; padding: 5px 15px;}
+
+
+
+
+/*Slider
+********************************************/
+/*
+ * jQuery Nivo Slider v2.5.1
+ * http://nivo.dev7studios.com
+*/
+ 
+#slider{float:left; position: relative}
+.collapse {
+ display: none;
+}
+.collapse-block {
+ margin: 1em 0;
+}
+
+/*Sub Page Accordion styling
+*******************************************/
+a.toggle-switch{
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #eee;
+	background: #8fa815; /* Old browsers */
+	background: -moz-linear-gradient(top, #8fa815 0%, #647800 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fa815), color-stop(100%,#647800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8fa815 0%,#647800 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8fa815 0%,#647800 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #8fa815 0%,#647800 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fa815', endColorstr='#647800',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #8fa815 0%,#647800 100%); /* W3C */
+	}
+	
+a.css_btn
+{
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #eee;
+	background: #8fa815; /* Old browsers */
+	background: -moz-linear-gradient(top, #8fa815 0%, #647800 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fa815), color-stop(100%,#647800)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8fa815 0%,#647800 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8fa815 0%,#647800 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #8fa815 0%,#647800 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fa815', endColorstr='#647800',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #8fa815 0%,#647800 100%); /* W3C */
+	width: 35%;
+	text-align:center;
+	border: 1px solid #5D7A00
+	}
+a.css_btn:hover
+{
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #eee;
+	background: #647800; /* Old browsers */
+	background: -moz-linear-gradient(top, #647800 2%, #8fa815 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#647800), color-stop(80%,#8fa815)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #647800 2%,#8fa815 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #647800 2%,#8fa815 80%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #647800 2%,#8fa815 80%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#647800', endColorstr='#8fa815',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #647800 2%,#8fa815 80%); /* W3C */
+	width: 35%;
+	text-align:center;
+		border: 1px solid #5D7A00
+
+	}
+/*Tweaks
+***************************************/
+#slideshow-wrapper{top:3px;}
+#sp_credit_link{display:none;}
+span.srp-widget-title-link{
+	font-weight: bold;
+	font-size: 22px;
+	color:#6D7745
+}

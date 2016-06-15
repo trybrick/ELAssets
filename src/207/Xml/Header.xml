@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<header>
+<logo>/Assets/207/Images/headerLogo.png</logo>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>##root##</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Weekly Ads</Title>
+		<Link>##root##/Shop/WeeklyAd.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Locations</Title>
+		<Link>##root##/StoreLocator.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Departments</Title>
+		<Link>##root##/Bakery.aspx</Link>
+		<SubLevelNavigation>
+			<MenuItem>
+				<Title>Special Promotions</Title>
+				<Link>##root##/special-promotions.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Bakery</Title>
+				<Link>##root##/Bakery.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Current News</Title>
+				<Link>##root##/Current-news.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Customer Service</Title>
+				<Link>##root##/CustomerService.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Deli/Catering</Title>
+				<Link>##root##/Deli.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Dairy</Title>
+				<Link>##root##/Dairy.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Floral</Title>
+				<Link>##root##/Floral.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Frozen</Title>
+				<Link>##root##/Frozen.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Fuel</Title>
+				<Link>##root##/Fuel.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Fund Raiser</Title>
+				<Link>##root##/FundRaiser.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>General Merchandise</Title>
+				<Link>##root##/GeneralMerchandise.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Grocery</Title>
+				<Link>##root##/Grocery.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Lawn and Garden</Title>
+				<Link>##root##/LawnAndGarden.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Liquor</Title>
+				<Link>##root##/Liquor.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Meat</Title>
+				<Link>##root##/Meat.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Produce</Title>
+				<Link>##root##/Produce.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Restaurant</Title>
+				<Link>##root##/Restaurant.aspx</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Recipes</Title>
+		<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>About Us</Title>
+		<Link>##root##/History.aspx</Link>
+		<SubLevelNavigation>
+			<MenuItem>
+				<Title>History</Title>
+				<Link>##root##/History.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>John Sullivan Video</Title>
+				<Link>##root##/SullivanVideo.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Mission Statement</Title>
+				<Link>##root##/Mission.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Family Photo</Title>
+				<Link>##root##/Family.aspx</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Press Releases</Title>
+				<Link>##root##/Press.aspx</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+		<MenuItem>
+		<Title>Employment</Title>
+		<Link>##root##/Employment-opening-page.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Contact Us</Title>
+		<Link>##root##/Contact-us-custom.aspx</Link>
+	</MenuItem>
+</TopLevelNavigation>
+</header>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SearchCriteriaTips>
+  <SearchCriteriaTip>
+    <Search>peanut</Search>
+    <Result>recipes that contain the word or ingredient peanut</Result>
+  </SearchCriteriaTip>
+  <SearchCriteriaTip>
+    <Search>peanut oil</Search>
+    <Result>recipes that contain the words or ingredients peanut AND oil</Result>
+  </SearchCriteriaTip>
+  <SearchCriteriaTip>
+    <Search>"peanut oil"</Search>
+    <Result>recipes that contain the exact words or ingredients "peanut oil"</Result>
+  </SearchCriteriaTip>
+  <SearchCriteriaTip>
+    <Search>chicken, mushroom, soup</Search>
+    <Result>recipes that contain the words or ingredients with the words chicken AND mushroom AND soup</Result>
+  </SearchCriteriaTip>
+  <SearchCriteriaTip>
+    <Search>chicken, "mushroom soup"</Search>
+    <Result>recipes that contain the words or ingredients with the words mushroom AND the exact words "mushroom soup"</Result>
+  </SearchCriteriaTip>
+</SearchCriteriaTips>

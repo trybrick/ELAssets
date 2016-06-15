@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Cabot</Brand>
+	<BrandSiteUrl>http://www.cabotcheese.coop/</BrandSiteUrl>
+	<ManufacturerCode>46100</ManufacturerCode>
+	<DepartmentID>10339</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS>##root##/Assets/Common/Promotions/Cabot/Styles/cabot.css</CSS>
+	<ImagePath>##root##/Assets/Common/Promotions/Cabot/Images/</ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt="">cabot_header.jpg</HeaderImage>
+	<PageDescriptionText></PageDescriptionText>
+	<FooterImage>100_logo.png</FooterImage>
+	<ProductGroup>
+		<Title></Title>
+		<Image alt="">yogurt_shot.png</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245950763;70975631;s?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>Cabot Greek-Style yogurt serves up almost twice the benefits of traditional yogurt.</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/greek/</LinkTo>
+			<LinkText>Learn More</LinkText>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title></Title>
+		<Image alt="">cheese_shot.png</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245953239;70975631;t?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>Cabot Creamery Cooperative, Makers of the World&apos;s Best Cheddar.</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/pages/our_products/index.php</LinkTo>
+			<LinkText>Learn More</LinkText>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Cooking with Cabot</Title>
+		<Image alt="">video_thumb.jpg</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245953237;70975631;r?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>Watch and learn how some of Cabot&apos;s favorite foodies prepare delicious recipes using the World&apos;s Best Cheddar.</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/pages/recipes/cooking_with_cabot.php?category_id=8&amp;recipe_id=28</LinkTo>
+			<LinkText>Watch Videos</LinkText>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Recipes</Title>
+		<Image alt="">recipes_thumb.jpg</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245953238;70975631;s?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>View all of Cabot&apos;s delicious recipes ranging from appetizers to comfort food, main dishes, desserts and more!</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/pages/recipes/index.php</LinkTo>
+			<LinkText>View Recipes</LinkText>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>Farmer Stories</Title>
+		<Image alt="">farmers_thumb.jpg</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245953236;70975631;q?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>Cabot Creamery is a farm family owned cooperative with members in New England and New York. We value our roots as a cooperative and as a way of doing business.</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/pages/about_us/farmer_stories/index.php</LinkTo>
+			<LinkText>Learn More</LinkText>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Title>E-Newsletter Signup</Title>
+		<Image alt="">enewsletter_thumb.jpg</Image>
+		<Product>
+			<AddToList>false</AddToList>
+			<ClickCode>http://ad.doubleclick.net/clk;245953234;70975631;o?</ClickCode>
+			<ProductCode></ProductCode>
+			<Description>Receive updates and learn more about Cabot products, events, tasty recipes and the latest on health and food news.</Description>
+			<SubHeading></SubHeading>
+			<LinkTo>http://www.cabotcheese.coop/forms/subscribe.php</LinkTo>
+			<LinkText>View Recipes</LinkText>
+		</Product>
+	</ProductGroup>
+</LandingPage>

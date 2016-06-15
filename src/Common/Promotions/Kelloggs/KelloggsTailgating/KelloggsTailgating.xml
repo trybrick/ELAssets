@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Kellogg’s®</Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<PromoLinkUrl>http://www.snackpicks.com/en_US/holidays-and-occasions/football-party.html</PromoLinkUrl>
+	<ManufacturerCode>46100</ManufacturerCode>
+	<DepartmentID>10369</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS></CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Kelloggs/KelloggsTailgating/Images/</ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt="Kellogg's Tailgating">kelloggs_header.jpg</HeaderImage>
+	<SubheadImage alt="Get Recipes Button">button_getrecipes.png</SubheadImage>
+	<SubheadClickCode>http://ad.doubleclick.net/clk;261741088;70975631;o?</SubheadClickCode>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741089;70975631;p?</ClickCode>
+			<ProductCode>00001</ProductCode>
+			<Description>Town House</Description>
+			<Image>TownHouse.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741090;70975631;h?</ClickCode>
+			<ProductCode>00002</ProductCode>
+			<Description>Flip Sides</Description>
+			<Image>FlipSides.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741091;70975631;i?</ClickCode>
+			<ProductCode>00003</ProductCode>
+			<Description>Flip Sides Cheddar</Description>
+			<Image>FlipSides_Cheddar.jpg</Image>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741092;70975631;j?</ClickCode>
+			<ProductCode>00004</ProductCode>
+			<Description>Cheez-It</Description>
+			<Image>CheezIt.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741098;70975631;p?</ClickCode>
+			<ProductCode>00005</ProductCode>
+			<Description>Cheez-It White Cheddar</Description>
+			<Image>CheezIt_WhiteCheddar.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741097;70975631;o?</ClickCode>
+			<ProductCode>00006</ProductCode>
+			<Description>Cheez-It Snack Mix</Description>
+			<Image>CheezIt_SnackMix.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741099;70975631;q?</ClickCode>
+			<ProductCode>00007</ProductCode>
+			<Description>Cheez-It Snack Mix Double Cheese</Description>
+			<Image>CheezIt_SnackMixDoubleCheese.jpg</Image>
+		</Product>
+	</ProductGroup>
+	<ProductGroup>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741100;70975631;z?</ClickCode>
+			<ProductCode>00008</ProductCode>
+			<Description>Club</Description>
+			<Image>Club.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741101;70975631;a?</ClickCode>
+			<ProductCode>00009</ProductCode>
+			<Description>Club Multi Grain</Description>
+			<Image>Club_MultiGrain.jpg</Image>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;261741109;70975631;i?</ClickCode>
+			<ProductCode>00010</ProductCode>
+			<Description>Club Reduced Fat</Description>
+			<Image>Club_ReducedFat.jpg</Image>
+		</Product>
+	</ProductGroup>
+</LandingPage>

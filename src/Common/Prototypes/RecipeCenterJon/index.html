@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Recipe Center Redesign</title>
+	<link rel="stylesheet" href="recipe.css" type="text/css" media="screen"/>
+	<!--[if IE]>
+	        <link rel="stylesheet" type="text/css" href="ieRecipe.css" />
+	<![endif]-->
+</head>
+<body>
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/scriptaculous.js"></script>
+	<script type="text/javascript" src="js/recipe-carousel-prototype.js"></script>
+	<script type="text/javascript">
+		var subnavPages = 4;	
+		if (typeof(Recipe)=="undefined"){
+			Recipe = new Object();
+		}		
+		Recipe.showOneContent = function(elem_id){
+			hideAllContent();
+			clearAllNavs();
+			elemOnContent('recipe-myrecipecenter-page'+elem_id);
+			elemOnSubnav('recipe-myrecipecenter-nav'+elem_id);
+		}
+		function hideAllContent(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffContent( 'recipe-myrecipecenter-page'+i );
+		}
+		function clearAllNavs(){
+			for( var i = 1; i <= subnavPages; i++ )
+				elemOffSubnav( 'recipe-myrecipecenter-nav'+i );
+		}
+		function elemOnContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "block";
+		}
+		function elemOnSubnav(elem_id){
+			if($(elem_id))
+			$(elem_id).addClassName('recipe-myrecipecenter-nav-active');
+		}
+		function elemOffContent(elem_id){
+			if($(elem_id))
+				$(elem_id).style.display = "none";
+		}
+		function elemOffSubnav(elem_id){
+			if($(elem_id))
+				$(elem_id).removeClassName('recipe-myrecipecenter-nav-active');
+		}
+	</script>
+	<div id="main-wrapper">
+		<div id="recipe-wrapper">
+			<div id="recipe-header">
+				<h2>Recipe Center</h2>
+				<div id="recipe-header-promo">
+					Over 60,000 Recipes!
+				</div>
+				<a href="http://www.ucook.com/" target="_blank">
+					<img border="0" alt="Powered by uCook" src="images/ucook_rev.png"/>
+				</a>
+			</div>
+			<ul id="recipe-nav">
+				<li class="current-recipe-nav">
+					<a href="index.html">Recipes</a>
+				</li>
+				<li>
+					<a href="videos.html">Videos</a>
+				</li>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="search.html">Search</a>
+				</li>
+			</ul>
+			<div id="recipe-main">
+				<div id="recipe-features" class="recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Daily Features</h3>
+					</div>
+					<div id="recipe-features-slideshow">
+						<div id="recipe-features-slideshowMain">
+							<div id="recipe-features-slideshowMain-container">
+								<div id="slide-firstPlaceholder" class="slideHolder">
+								</div>
+								<div id="slide-1" class="slide">
+									<div class="recipe-module recipe-module-article recipe-module-slideshow">
+										<a href="recipefull.html">
+											<img border="0" src="images/herbpotatoes.jpg" alt="Recipe Image"/>
+										</a>
+										<h4>Featured Recipe</h4>
+										<a href="recipefull.html">Grilled Steak with Mushrooms</a>
+										<p>Try a different recipe every day!</p>
+									</div>
+								</div>
+								<div id="slide-2" class="slide">
+									<div class="recipe-module recipe-module-article recipe-module-slideshow">
+										<a href="article.html">
+											<img border="0" src="images/polenta.jpg" alt="Recipe Image"/>
+										</a>
+										<h4>Ask The Chef</h4>
+										<a href="article.html">Lumpy Polenta</a>
+										<p>What can I do to avoid lumpy polenta?</p>
+									</div>
+								</div>
+								<div id="slide-3" class="slide">
+									<div class="recipe-module recipe-module-article recipe-module-slideshow">
+										<a href="article.html">
+											<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/>
+										</a>
+										<h4>Featured Article</h4>
+										<a href="article.html">Lumpy Polenta</a>
+										<p>What can I do to avoid lumpy polenta?</p>
+									</div>
+								</div>
+								<div id="slide-4" class="slide">
+									<div class="recipe-module recipe-module-article recipe-module-slideshow">
+										<a href="article.html">
+											<img border="0" src="images/polenta.jpg" alt="Recipe Image"/>
+										</a>
+										<h4>Healthy Living</h4>
+										<a href="article.html">Salads Made Easy</a>
+										<p>What can I do to avoid lumpy polenta?</p>
+									</div>
+								</div>
+								<div id="slide-5" class="slide">
+								</div>
+								<div id="slide-lastPlaceholder" class="slideHolder">
+								</div>
+							</div>
+						</div>
+						<div id="recipe-features-slideshowControl">
+							<div id="recipe-features-slideshowControl-container">
+								<a href="javascript:" class="carousel-control carousel-nav-prev" rel="prev">Previous slide</a>
+								<a href="javascript:" rel="slide-1" class="carousel-jumper carousel-selected">Slide 1</a>
+								<a href="javascript:" rel="slide-2" class="carousel-jumper">Slide 2</a>
+								<a href="javascript:" rel="slide-3" class="carousel-jumper">Slide 3</a>
+								<a href="javascript:" rel="slide-4" class="carousel-jumper">Slide 4</a>
+								<a href="javascript:" class="carousel-control carousel-nav-next" rel="next">Next slide</a>
+							</div>
+							<div id="recipe-features-slideshowControl-playPause">
+								<a href="javascript:" class="carousel-control carousel-nav-pause" rel="pause">Pause</a>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						new Carousel('recipe-features-slideshowMain', 'recipe-features-slideshowMain-container', $$('#recipe-features-slideshowMain-container .slide'), $$('a.carousel-control', 'a.carousel-jumper'), {auto: true, frequency: 2, duration: 0.4, circular: true, offsetX: -90});
+					</script>
+				</div>
+				<div id="recipe-toprecipes" class="recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>Top Recipes</h3>
+					</div>
+					<div class="recipe-main-body">
+						<table class="recipe-toprecipes-listing">
+							<tr valign="middle">
+								<td>
+									<a href="recipefull.html">
+										<img border="0" src="images/herbpotatoes.jpg" alt="Recipe Image"/>
+									</a>
+								</td>
+								<td>
+									<a href="recipefull.html">Roasted Herb Potatoes</a>
+								</td>
+							</tr>
+							<tr valign="middle">
+								<td>
+									<a href="recipefull.html">
+										<img border="0" src="images/tuscan.jpg" alt="Recipe Image"/>
+									</a>
+								</td>
+								<td>
+									<a href="recipefull.html">Tuscan-Style Fusilli</a>
+								</td>
+							</tr>
+							<tr valign="middle">
+								<td>
+									<a href="recipefull.html">
+										<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/>
+									</a>
+								</td>
+								<td>
+									<a href="recipefull.html">Crispy Lemon-Lime Sesame Chicken</a>
+								</td>
+							</tr>
+							<tr valign="middle">
+								<td>
+									<a href="recipefull.html">
+										<img border="0" src="images/buffalo.jpg" alt="Recipe Image"/>
+									</a>
+								</td>
+								<td>
+									<a href="recipefull.html">Hot Wings</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="recipe-myrecipecenter" class="recipe-shadow">
+					<div class="recipe-main-header">
+						<h3>My Recipe Center</h3>
+						<div class="recipe-main-header-link">
+							<p><a href="">Join here</a> to start saving recipes</p>
+						</div>
+					</div>
+					<ul id="recipe-myrecipecenter-nav">
+						<li id="recipe-myrecipecenter-nav1" class="recipe-myrecipecenter-nav-active">
+							<a href="javascript:void(0);" onclick="Recipe.showOneContent(1);">Meal Planner</a>
+						</li>
+						<li id="recipe-myrecipecenter-nav2">
+							<a href="javascript:void(0);" onclick="Recipe.showOneContent(2);">Saved Recipes</a>
+						</li>
+						<li id="recipe-myrecipecenter-nav3">
+							<a href="javascript:void(0);" onclick="Recipe.showOneContent(3);">Health &amp; Wellness</a>
+						</li>
+						<li id="recipe-myrecipecenter-nav4">
+							<a href="javascript:void(0);" onclick="Recipe.showOneContent(4);">Dietary Preferences</a>
+						</li>
+						<li class="recipe-myrecipecenter-nav-blank">
+						</li>
+					</ul>
+					<div id="recipe-myrecipecenter-page1" class="recipe-main-body">
+						<fieldset id="recipe-myrecipecenter-mealplanner-criteria">
+							<h5>Criteria</h5>
+							<p>Choose how you would like Meal Planner recipes to be generated:</p>
+							<label for="mealPlannerOption1"><input type="radio" name="mealPlannerOptions" id="mealPlannerOption1" value="Default" checked="checked"/>Default</label>
+							<label for="mealPlannerOption2"><input type="radio" name="mealPlannerOptions" id="mealPlannerOption2" value="Dietary Preferences"/>Generate recipes based on my Dietary Preferences</label>
+							<a href="">Edit Dietary Preferences</a>
+							<label for="mealPlannerOption3"><input type="radio" name="mealPlannerOptions" id="mealPlannerOption3" value="Shopping List"/>Generate recipes based on my Shopping List</label>
+							<a href="">Manage Shopping List</a>
+							<label for="mealPlannerOption4"><input type="radio" name="mealPlannerOptions" id="mealPlannerOption4" value="Sale Items"/>Generate recipes based on Sale Items</label>
+							<a href="">View Sale Items</a>
+						</fieldset>
+						<div class="recipe-module recipe-module-mealplanner">
+							<h4>Meal Planner</h4>
+							<div class="recipe-module-listing">
+								<p>Monday</p>
+								<a href="recipefull.html">Chicken Breast with Raspberry Chutney</a>
+								<a href="recipefull.html">Pumpkin Walnut Cookies</a>
+							</div>
+							<div class="recipe-module-listing">
+								<p>Tuesday</p>
+								<a href="recipefull.html">Broccoli Potato Soup</a>
+								<a href="recipefull.html">Hazelnut Chocolate Decadence</a>
+							</div>
+							<div class="recipe-module-listing">
+								<p>Wednesday</p>
+								<a href="recipefull.html">Broccoli Potato Soup</a>
+								<a href="recipefull.html">Hazelnut Chocolate Decadence</a>
+							</div>
+						</div>
+					</div>
+					<div id="recipe-myrecipecenter-page2" class="recipe-main-body" style="display:none;">
+						<div class="recipe-module">
+							<h4>Saved Recipes</h4>
+							<div class="recipe-module-listing">
+								<table class="recipe-toprecipes-listing">
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="recipefull.html">
+												<img border="0" src="images/herbpotatoes.jpg" alt="Recipe Image"/>
+											</a>
+										</td>
+										<td>
+											<a href="recipefull.html">Roasted Herb Potatoes</a>
+										</td>
+									</tr>
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="recipefull.html">
+												<img border="0" src="images/tuscan.jpg" alt="Recipe Image"/>
+											</a>
+										</td>
+										<td>
+											<a href="recipefull.html">Tuscan-Style Fusilli</a>
+										</td>
+									</tr>
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="recipefull.html">
+												<img border="0" src="images/lemonchickensoup.jpg" alt="Recipe Image"/>
+											</a>
+										</td>
+										<td>
+											<a href="recipefull.html">Crispy Lemon-Lime Sesame Chicken</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<input class="savedRecipeButton" type="submit" title="Remove Selected" value="Remove Selected"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="recipe-module" style="margin-right:0;">
+							<h4>My Recipes</h4>
+							<div class="recipe-module-listing">
+								<table class="recipe-toprecipes-listing">
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="">Chocolate Chip Cookies</a>
+										</td>
+									</tr>
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="">Lentil Soup</a>
+										</td>
+									</tr>
+									<tr valign="middle">
+										<td>
+											<input type="checkbox" name="remove" value="remove"/>
+										</td>
+										<td>
+											<a href="">Mom's Beef Stew</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input class="savedRecipeButton" type="submit" title="New Recipe" value="New"/>
+											<input class="savedRecipeButton" type="submit" title="Remove Selected" value="Remove Selected"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div id="recipe-myrecipecenter-page3" class="recipe-main-body" style="display:none;">
+						<div class="recipe-module">
+							<h4>Healthy Savings</h4>
+							<div class="recipe-module-coupon">
+								<img alt="Coupon Image" src="images/coupon.gif"/>
+								<div class="recipe-module-coupon-description">
+									<h5>SAVE $1.00</h5>
+									<p>Fiber One Frozen Muffins</p>
+								</div>
+								<input class="getCouponButton" type="submit" title="Get Coupon" value="Get Coupon"/>
+							</div>
+							<div class="recipe-module-coupon">
+								<img alt="Coupon Image" src="images/coupon.gif"/>
+								<div class="recipe-module-coupon-description">
+									<h5>SAVE $1.00</h5>
+									<p>Fiber One Frozen Muffins</p>
+								</div>
+								<input class="getCouponButton" type="submit" title="Get Coupon" value="Get Coupon"/>
+							</div>
+						</div>
+						<div class="recipe-module recipe-module-article">
+							<h4>Dieting Guide</h4>
+							<a href="article.html">
+								<img border="0" alt="Health and Wellness Image" src="images/salad.jpg"/>
+							</a>
+							<a href="article.html">Salads Made Easy</a>
+							<p>The trend toward whole-grain cooking has become a way of life for many people in America.</p>
+						</div>
+						<div class="recipe-module recipe-module-mealplanner" style="margin-right:0;">
+							<h4>Healthy Recipes</h4>
+							<div class="recipe-module-listing">
+								<p>Breakfast</p>
+								<a href="recipefull.html">Chicken Breast with Raspberry Chutney</a>
+								<a href="recipefull.html">Pumpkin Walnut Cookies</a>
+							</div>
+							<div class="recipe-module-listing">
+								<p>Lunch</p>
+								<a href="recipefull.html">Broccoli Potato Soup</a>
+								<a href="recipefull.html">Hazelnut Chocolate Decadence</a>
+							</div>
+							<div class="recipe-module-listing">
+								<p>Dinner</p>
+								<a href="recipefull.html">Broccoli Potato Soup</a>
+								<a href="recipefull.html">Hazelnut Chocolate Decadence</a>
+							</div>
+						</div>
+					</div>
+					<div id="recipe-myrecipecenter-page4" class="recipe-main-body" style="display:none;">
+						<fieldset id="recipe-myrecipecenter-dietary-prefs">
+							<h5>Dietary Preferences</h5>
+							<p>Choose your preferences to get personalized recipe content:</p>
+							<div class="recipe-myrecipecenter-dietary-prefs-col">
+								<div class="DietaryPreference"><span>Vegetarian:</span><select id="DietaryPreference_3" title="DietaryPreference_3_" name="DietaryPreference_3_value"><option value="2">no</option><option value="1">yes</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Vegan:</span><select id="DietaryPreference_4" title="DietaryPreference_4_" name="DietaryPreference_4_value"><option value="4">no</option><option value="3">yes</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Kosher:</span><select id="DietaryPreference_5" title="DietaryPreference_5_" name="DietaryPreference_5_value"><option value="6">no</option><option value="5">yes</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Calories:</span><select id="DietaryPreference_6" title="DietaryPreference_6_" name="DietaryPreference_6_value"><option value="7">No Preference</option><option value="8">100</option><option value="9">200</option><option value="10">300</option><option value="11">400</option><option value="12">500</option><option value="13">600</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Carbohydrate:</span><select id="DietaryPreference_7" title="DietaryPreference_7_" name="DietaryPreference_7_value"><option value="14">No Preference</option><option value="15">15g or less</option><option value="16">30g or less</option><option value="17">45g or less</option><option value="18">60g or less</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Total Fat:</span><select id="DietaryPreference_8" title="DietaryPreference_8_" name="DietaryPreference_8_value"><option value="19">No Preference</option><option value="20">Fat Free</option><option value="21">Low Fat</option><option value="22">12 or less (main dishes)</option></select>
+								</div>
+								<div class="signUpExclude"><span>Always Exclude:</span><input type="text" id="txtAlwaysExclude" title="FoodExclusion" name="FoodExclusion" value="">
+								</div>
+							</div>
+							<div class="recipe-myrecipecenter-dietary-prefs-col">
+								<div class="DietaryPreference"><span>Saturated Fat:</span><select id="DietaryPreference_9" title="DietaryPreference_9_" name="DietaryPreference_9_value"><option value="23">No Preference</option><option value="24">Saturated Fat Free</option><option value="25">Low Saturated Fat</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Cholesterol:</span><select id="DietaryPreference_10" title="DietaryPreference_10_" name="DietaryPreference_10_value"><option value="26">No Preference</option><option value="27">Cholesterol Free</option><option value="28">Low Cholesterol</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Calcium:</span><select id="DietaryPreference_11" title="DietaryPreference_11_" name="DietaryPreference_11_value"><option value="29">No Preference</option><option value="30">Good Source of (100-190 mg)</option><option value="31">Excellent Source of (200mg or more)</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Iron:</span><select id="DietaryPreference_12" title="DietaryPreference_12_" name="DietaryPreference_12_value"><option value="32">No Preference</option><option value="33">Good Source of (1.8-3.6 mg)</option><option value="34">Excellent Source of (more than 3.6 mg)</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Dietary Fiber:</span><select id="DietaryPreference_13" title="DietaryPreference_13_" name="DietaryPreference_13_value"><option value="35">No Preference</option><option value="36">Good Source (2.5 - 5.0)</option><option value="37">Excellent Source (more than 5 g)</option></select>
+								</div>
+								<div class="DietaryPreference"><span>Sodium:</span><select id="DietaryPreference_14" title="DietaryPreference_14_" name="DietaryPreference_14_value"><option value="38">No Preference</option><option value="39">Sodium Free</option><option value="40">Low Sodium (140 mg or less)</option><option value="41">480 mg or less</option><option value="42">1000 mg or less</option></select>
+								</div>
+							</div>
+							<input class="dietaryPreferencesButton" type="submit" title="Dietary Preferences" value="Submit"/>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar-wrapper">
+			<div id="sidebar-ad-300">
+				<img alt="300x250 ad" src="images/ad_300x250.jpg"/>
+			</div>
+			<div id="recipe-sidebar" class="recipe-shadow">
+				<div class="recipe-main-header">
+					<h3>What Can I Make?</h3>
+				</div>
+				<div class="recipe-main-body">
+					<fieldset id="recipe-whatcanImake">
+						<h5>Ingredients</h5>
+						<p>Select your criteria to find a recipe:</p>
+						<div class="DietaryPreference"><span>Meal Type</span>
+							<select>
+								<option>Select a Meal Type</option><option>Breakfast</option><option>Lunch</option><option>Snack</option><option>Dinner</option><option>Dessert</option>
+							</select>
+						</div>
+						<div class="DietaryPreference"><span>Ingredient</span>
+							<input></input>
+						</div>
+						<div class="DietaryPreference"><span>Prep Time</span>
+							<select>
+								<option>20 Minutes or Less</option><option>30 Minutes or Less</option><option>40 Minutes or Less</option>
+							</select>
+						</div>
+						<input class="dietaryPreferencesButton" type="submit" title="Dietary Preferences" value="Submit"/>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

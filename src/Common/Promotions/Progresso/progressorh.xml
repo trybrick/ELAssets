@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandingPage>
+
+	<!-- BRAND AND GSN INFO -->
+	<Brand>Progresso Soup</Brand>
+	<BrandSiteUrl>http://www.progressosoup.com/soup.aspx?soup=rich-and-hearty</BrandSiteUrl>
+	<ManufacturerCode></ManufacturerCode>
+	<DepartmentID>10357</DepartmentID>
+
+	<!-- STYLE AND IMAGE PATH -->
+	<CSS>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Progresso/Styles/ProgressoRH.css</CSS>
+	<ImagePath>http://upload.gsngrocers.com/elvs/Assets/Common/Promotions/Progresso/Images/</ImagePath>
+
+	<!-- CONTENT -->
+	<HeaderImage alt="">headerbg2.jpg</HeaderImage>
+	<PageDescriptionText>With four NEW Rich &amp; Hearty satisfying flavors to choose from - prepared with big chunks of vegetables and delicious meats - dinner is sure to be a big hit.</PageDescriptionText>
+	<FooterImage></FooterImage>
+	<ProductGroup>
+		<Title></Title>
+		<Image alt="">ProductImages.png</Image>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;247293908;70975631;v?</ClickCode>
+			<ProductCode>004119642169</ProductCode>
+			<Description></Description>
+			<SubHeading>Steak Burger and Country Vegetables</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;247294077;70975631;t?</ClickCode>
+			<ProductCode>004119641076</ProductCode>
+			<Description></Description>
+			<SubHeading>Loaded Potato with Bacon</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958157;70975631;y?</ClickCode>
+			<ProductCode>004119645385</ProductCode>
+			<Description></Description>
+			<SubHeading>Creamy Roasted Chicken Wild Rice</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958163;70975631;v?</ClickCode>
+			<ProductCode>004119645384</ProductCode>
+			<Description></Description>
+			<SubHeading>Chicken Pot Pie Style</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246957922;70975631;x?</ClickCode>
+			<ProductCode>004119691401</ProductCode>
+			<Description></Description>
+			<SubHeading>Chicken &amp; Homestyle Noodles</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958161;70975631;t?</ClickCode>
+			<ProductCode>004119691403</ProductCode>
+			<Description></Description>
+			<SubHeading>Beef Pot Roast with Country Vegetables</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958166;70975631;y?</ClickCode>
+			<ProductCode>004119691416</ProductCode>
+			<Description></Description>
+			<SubHeading>Chicken Corn Chowder </SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958160;70975631;s?</ClickCode>
+			<ProductCode>00041196914085</ProductCode>
+			<Description></Description>
+			<SubHeading>Savory Beef Barley Vegetable</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958165;70975631;x?</ClickCode>
+			<ProductCode>004119691406</ProductCode>
+			<Description></Description>
+			<SubHeading>Steak &amp; Vegetables </SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958159;70975631;a?</ClickCode>
+			<ProductCode>004119691404</ProductCode>
+			<Description></Description>
+			<SubHeading>Steak &amp; Roasted Russet Potatoes </SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958164;70975631;w?</ClickCode>
+			<ProductCode>004119691407</ProductCode>
+			<Description></Description>
+			<SubHeading>Slow Cooked Vegetable Beef</SubHeading>
+		</Product>
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958158;70975631;z?</ClickCode>
+			<ProductCode>004119691413</ProductCode>
+			<Description></Description>
+			<SubHeading>Steak &amp; Homestyle Noodles</SubHeading>
+		</Product>
+		<!-->
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958163;70975631;v?</ClickCode>
+			<ProductCode>004119645384</ProductCode>
+			<Description></Description>
+			<SubHeading>Chicken Pot Pie Style</SubHeading>
+		</Product>
+		
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958157;70975631;y?</ClickCode>
+			<ProductCode>004119645385</ProductCode>
+			<Description></Description>
+			<SubHeading>Creamy Chicken Wild Rice</SubHeading>
+		</Product>
+		-->
+		<Product>
+			<ClickCode>http://ad.doubleclick.net/clk;246958162;70975631;u?</ClickCode>
+			<ProductCode>004119691415</ProductCode>
+			<Description></Description>
+			<SubHeading>New England Clam Chowder</SubHeading>
+		</Product>
+	</ProductGroup>
+</LandingPage>

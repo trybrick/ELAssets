@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<PrintList>
+	<Icons>
+		<Icon>
+			<Name>StoreCouponIcon</Name>
+			<Location>/Assets/Common/Images/store_coupons.gif</Location>
+		</Icon>
+	</Icons>
+</PrintList>

@@ -1,0 +1,11 @@
+/*------------------------------------------------*/
+/* !recipe center prototype - IE only
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/* !ie hacks
+/*------------------------------------------------*/
+h2 {background-image:url(Images/tabCornersUL_FFFFFF.png);background-position:top left;background-repeat:no-repeat;}
+h3 {background-image:url(Images/tabCornersUL_DFCEBD.png);background-position:top left;background-repeat:no-repeat;}
+.recipe-main-header {background-image:url(Images/tabCornersUR_DFCEBD.png);background-position:top right;background-repeat:no-repeat;}
+#recipe-header {background-image:url(Images/tabCornersUR_FFFFFF.png);background-position:top right;background-repeat:no-repeat;}
+#sidebar-wrapper .recipe-main-body {border:1px solid gray;}

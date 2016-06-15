@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<CouponPromo>
+	<ContentObjects>
+		<ContentObject>
+			<Name>manufacturercoupons</Name>
+		</ContentObject>
+	</ContentObjects>
+	<CouponHierarchy>
+		<Group>
+			<Title>Oscar Mayer</Title>
+			<CouponCodes>
+				<Code>14534371</Code>
+				<Code>14534375</Code>
+				<Code>14534377</Code>
+				<Code>14534378</Code>
+				<Code>14535008</Code>
+				<Code>14534379</Code>
+				<Code>14535009</Code>
+				<Code>14534380</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Snacks</Title>
+			<CouponCodes>
+				<Code>14535010</Code>
+				<Code>14534381</Code>
+				<Code>14535011</Code>
+				<Code>14535012</Code>
+				<Code>14534382</Code>
+				<Code>14535013</Code>
+				<Code>14534383</Code>
+				<Code>14535014</Code>
+				<Code>14534384</Code>
+				<Code>14535015</Code>
+				<Code>14534385</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Grocery</Title>
+			<CouponCodes>
+				<Code>14534386</Code>
+				<Code>14534387</Code>
+				<Code>14535016</Code>
+				<Code>14534388</Code>
+				<Code>14535017</Code>
+				<Code>14535018</Code>
+				<Code>14534389</Code>
+				<Code>14535019</Code>
+				<Code>14535020</Code>
+				<Code>14535021</Code>
+				<Code>14535022</Code>
+				<Code>14535023</Code>
+				<Code>14535024</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Pizza</Title>
+			<CouponCodes>
+				<Code>14535026</Code>
+				<Code>14535027</Code>
+				<Code>14534392</Code>
+				<Code>14534395</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Cheese</Title>
+			<CouponCodes>
+				<Code>14534396</Code>
+				<Code>14535028</Code>
+				<Code>14534398</Code>
+				<Code>14534399</Code>
+				<Code>14535000</Code>
+				<Code>14535029</Code>
+				<Code>14535030</Code>
+				<Code>14535031</Code>
+				<Code>14535002</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Beverages</Title>
+			<CouponCodes>
+				<Code>14535003</Code>
+				<Code>14535032</Code>
+				<Code>14535040</Code>
+				<Code>14535004</Code>
+				<Code>14535033</Code>
+				<Code>14535034</Code>
+				<Code>14535005</Code>
+				<Code>14535007</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Test Group 1</Title>
+			<CouponCodes>
+				<Code>14520000</Code>
+				<Code>14520003</Code>
+				<Code>14520008</Code>
+				<Code>14524140</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Test Group 2</Title>
+			<CouponCodes>
+				<Code>14518021</Code>
+				<Code>14525189</Code>
+				<Code>14519381</Code>
+				<Code>14519392</Code>
+			</CouponCodes>
+		</Group>
+		<Group>
+			<Title>Test Group 3</Title>
+			<CouponCodes>
+				<Code>14519396</Code>
+				<Code>14522184</Code>
+			</CouponCodes>
+		</Group>
+	</CouponHierarchy>
+	<PageCopy>
+		<![CDATA[
+		<!-- copy for the page goes here! -->
+		<style>
+			.couponsFrame			{border:2px dashed lightblue;}
+			.couponsDescription		{float:none; width:95%; display:block;}
+		</style>
+		<div class="title">
+			<img src="/Assets/Common/Images/Promos/KraftSummer2009.jpg" border="0"/>
+			<h1>Save Big with these coupons!</h1>
+		</div>
+
+		]]>
+	</PageCopy>
+</CouponPromo>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<footer>
+	<FooterItem>
+		<FooterText>Copyright &#xA9; 2012 Associated Wholesale Grocers</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>About Us</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Subscribe</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Contact</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>		
+	</FooterItem>
+	<FooterItem>
+		<FooterText>News</FooterText>
+		<FooterLink></FooterLink>
+		<FooterTarget></FooterTarget>
+		<FooterClass></FooterClass>
+	</FooterItem>
+</footer>

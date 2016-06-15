@@ -1,0 +1,125 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+#conagra-wrap { 
+	background-color:#fff;
+	float:left;
+	width:590px; 
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,.3);-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.3);box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+}
+
+#conagra-header	{
+	float: left;
+	width: 100%;
+}
+	
+#conagra-header .logo { 
+	display: block;
+	float: left;
+	margin:10px;
+}
+
+#conagra-header h1 { 
+	display: none; 
+}
+
+#conagra-header img { 
+	display: inline; 
+}
+	
+#conagra-main { 
+	float:left;
+	width: 100%;
+}
+	
+#conagra-main h2{
+	display:none;
+}
+	
+#conagra-main .conagra-product-row {
+	background:transparent url(../Images/row_separator.png) no-repeat 50% top;
+	margin:1em 0;
+}
+
+#conagra-main .conagra-product {
+	float:left;
+	text-align: center;
+}
+	
+#conagra-main .conagra-product img {
+	display: inline;
+	max-height:175px;
+}
+
+#conagra-main .conagra-product h2 {
+	border: none;
+	color: #c41a37;
+	display:block;
+	font-size: 16px;
+	margin:10px 0;
+	padding:0;
+}
+
+#conagra-main .conagra-product p {
+	margin:10px 0;
+}
+	
+#conagra-main .two-column .conagra-product {
+	float:left;
+	margin:0 10px;
+}
+
+.conagra-product{
+	width: 250px;
+}
+
+#conagra-main .two-column {
+	float:left;
+	margin:20px;
+}
+
+#conagra-main .three-column {
+	float:left;
+	width:100%;
+}
+	
+#conagra-main .conagra-button { 
+	background:#c41a37 url(../../../../Images/button_shine_30.png) left 50% repeat-x; 
+	border:1px solid #c41a37;
+	border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	display: block; 
+	font:14px Arial, Helvetica, sans-serif;
+	margin:10px auto;
+	padding:.2em 0;
+	text-decoration: none;
+	width:120px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+	
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #conagra-main .conagra-button {
+	background-image:none;
+}
+	
+* html .group {
+	height:1%;
+}
+	
+* html #conagra-main .conagra-product-row {
+	background-image: none;
+}

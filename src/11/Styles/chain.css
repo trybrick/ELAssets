@@ -1,0 +1,765 @@
+﻿/* Festival Foods
+--------------------------------------------------*/
+html {
+    height: 100%;
+    background: none;
+}
+body {
+    font-size: 0.7em;
+    height: 100%;
+    background: #FEF2A0 url(/Assets/11/Images/background_body.jpg) repeat-x scroll 0 0;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+a:link,
+a:visited,
+a:active {
+    font-weight: bold;
+    color: #4d8021;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #4d8021;
+    text-decoration: underline;
+}
+h2 { color: #4d8021 }
+th { background-color: #4d8021 }
+#container-outer {
+    width: 100%;
+    margin: 0 auto;
+    background: url(/Assets/11/Images/background_footer.png) repeat-x bottom;
+}
+#container {
+    position: static;
+    display: block;
+    background: transparent none;
+    padding: 0;
+    overflow: visible;
+	width:1120px;
+}
+#main {
+    margin-left: 10px;
+    margin-top: 5px;
+    min-height: 600px;
+}
+#sidebar,
+#recipesidebar {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.main-wrapper {
+    background-color: #fff;
+    border-left: 1px solid #588A2B;
+    border-right: 1px solid #588A2B;
+    padding: 0 10px;
+	width:920px;
+}
+
+/* tabs
+--------------------------------------------------*/
+#secondary-navigation {
+    background: transparent url('/Assets/11/Images/tabs_bg.jpg') repeat-x top left;
+    border: none;
+	-webkit-box-shadow: 0 1px 2px #000;
+    -moz-box-shadow: 0 1px 4px #000;
+    box-shadow: 1px 1px 2px #000;
+    margin-top: 12px;
+}
+#secondary-navigation li {
+    background: transparent none;
+    margin: 0 9px;
+    min-width: 40px;
+    padding: 0;
+}
+
+#secondary-navigation li.current a { color: #000; }
+
+#secondary-navigation li a {
+    background: transparent url('/Assets/11/Images/tab_icons.gif') no-repeat 50% top;
+    color: #4d8021;
+    font-size: 10px;
+    padding: 35px 0 5px;
+}
+#secondary-navigation li a:hover { background-position: 50% -640px; color: #000; }
+
+#secondary-navigation li.browse a { background-position: 6px -560px }
+#secondary-navigation li.browse a:hover { background-position: 6px -1200px; }
+
+#secondary-navigation li.in-store-specials a { background-position: 3px -80px }
+#secondary-navigation li.in-store-specials a:hover { background-position: 3px -720px }
+
+#secondary-navigation li.my-favorites a { background-position: 5px -240px }
+#secondary-navigation li.my-favorites a:hover { background-position: 5px -880px }
+
+#secondary-navigation li.store-coupons a { background-position: 4px -400px }
+#secondary-navigation li.store-coupons a:hover { background-position: 4px -1040px }
+
+#secondary-navigation li.recipe-center a { background-position: 2px -160px }
+#secondary-navigation li.recipe-center a:hover { background-position: 2px -800px }
+
+#secondary-navigation li.cooking-videos a { background-position: 2px -480px }
+#secondary-navigation li.cooking-videos a:hover { background-position: 2px -1120px }
+
+#secondary-navigation li.coupons a { background-position: 50% -320px }
+#secondary-navigation li.coupons a:hover { background-position: 50% -960px }
+
+#imgSubHeader {
+    clear: both;
+    float: left;
+}
+
+/* buttons
+--------------------------------------------------*/
+a.button,
+a.button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: transparent url('/Assets/11/Images/standard_submit_festorange_span.gif') no-repeat scroll top right;
+    display: block;
+    float: left;
+    font: normal 10px arial, sans-serif;
+    height: 18px;
+    margin-right: 6px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+a.button span,
+a.button span:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: transparent url('/Assets/11/Images/standard_submit_festorange.gif') no-repeat;
+    display: block;
+    line-height: 12px;
+    padding: 3px 0 3px 10px;
+}
+a.button:active {
+    cursor: pointer;
+    background-position: bottom right;
+    color: #000;
+    outline: none;
+    /* hide dotted outline in Firefox */
+}
+a.button:active span {
+    cursor: pointer;
+    background-position: bottom left;
+    color: white;
+    padding: 4px 0 2px 10px;
+    /* push text down 1px */
+}
+a.button.added { background: transparent url('/Assets/11/Images/standard_submit_festgreen_span.gif') no-repeat scroll top right }
+a.button.added span,
+a.button.added span:hover { background: transparent url('/Assets/11/Images/standard_submit_festgreen.gif') no-repeat }
+
+/* header
+--------------------------------------------------*/
+#StoreHeader {
+    position: relative;
+    background: transparent url(/Assets/11/Images/bg.gif);
+    margin-bottom: 0px;
+}
+#StoreHeaderRightTop {
+    z-index: 3;
+    position: absolute;
+    text-align: right;
+    left: 490px;
+    top: 0;
+    width: auto;
+    border: none;
+    background: none;
+}
+
+#HeaderIcons .social {
+float: right;
+margin: 5px 10px 0 0;
+}
+
+#StoreHeaderLogo {
+    width: 100%;
+    height: 75px;
+    background: transparent url(/Assets/11/Images/HeaderLogo.gif) bottom left no-repeat;
+}
+#StoreHeaderMiddle { display: none }
+
+/* primary navigation
+--------------------------------------------------*/
+#StoreMenu {
+    background: white;
+    color: #4d8021;
+    margin-bottom: 0;
+}
+#StoreMenu li a,
+#StoreMenu li a:visited,
+#StoreMenu li a:active {
+    color: #4d8021;
+    text-decoration: none;
+}
+#StoreMenu li a:hover { color: #FF0000 }
+
+/* featured teasers
+--------------------------------------------------*/
+#FeaturedRecipeTeaser { background: transparent url(/Assets/11/Images/festival_green_gradient.jpg) repeat-x }
+#FeaturedArticleTeaser { background: transparent url(/Assets/11/Images/festival_orange_gradient.jpg) repeat-x }
+#AskTheChefTeaser { background: transparent url(/Assets/11/Images/festival_green_gradient.jpg) repeat-x }
+#CookingTipsTeaser { background: transparent url(/Assets/11/Images/festival_orange_gradient.jpg) repeat-x }
+#FeaturedArticleTeaser h3,
+#AskTheChefTeaser h3,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3 { color: #FFFFFF }
+
+/* home
+--------------------------------------------------*/
+#AdPromo { background: transparent url(/Assets/11/Images/festival_orange_gradient.jpg) repeat-x }
+#AdPromo p { color: #FFFFFF }
+
+/* meal planner
+--------------------------------------------------*/
+#MealPlanner { background: transparent url(/Assets/11/Images/festival_orange_gradient.jpg) repeat-x }
+
+/* shopping list
+--------------------------------------------------*/
+#savedshoppinglists h2 {
+    color: #C02407;
+    border-bottom: 1px solid #4d8021;
+}
+
+/* manage list legend
+--------------------------------------------------*/
+#legend th { background-color: #4d8021 }
+
+/* coupons grid
+--------------------------------------------------*/
+#tblCouponTopN { border: 2px solid #4d8021 }
+#CouponList h3 { color: #4d8021 }
+#CouponList table table	th { background-color: #4d8021 }
+
+/* 3-panel toolbox
+--------------------------------------------------*/
+#Department h3,
+#Aisles h3,
+#Category h3 { color: #4d8021 }
+#InBetween1,
+#InBetween2 { color: #4d8021 }
+
+/* grid styles
+--------------------------------------------------*/
+#CategoryHeader h3 { color: #4d8021 }
+.GridItem {
+    clear: both;
+    text-align: left;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+.GridItem th {
+    text-align: left;
+    background-color: #4d8021;
+    color: #FFFFCC;
+    font-weight: bold;
+}
+.GridAlternatingItem {
+    text-align: left;
+    background-color: #DCEDCB;
+    color: #000000;
+    font-weight: bold;
+}
+#CircularAdText1_dlCategory h3 { color: #4d8021 }
+
+.text-only-link {
+	top:105px;
+}
+
+
+/* recipe page
+--------------------------------------------------*/
+#RecipeCardTop {
+    width: 100%;
+    height: 76px;
+    padding: 0;
+    background: none;
+}
+#RecipeCardMiddle {
+    background: none;
+    background-color: white;
+}
+#RecipeCardBottom { display: none }
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe {
+    border: 1px dotted green;
+    min-height: 240px;
+    margin-top: 12px;
+    padding: 4px 8px 0 4px;
+}
+#ChainRecipes,
+#SavedRecipes {
+    margin-left: 10px;
+    display: block;
+}
+#QuickSearch h2,
+#AdvancedSearch h2,
+#TopRecipesTeaser h2,
+#ChainRecipes h2,
+#SavedRecipes {
+    width: 564px;
+    border: 0px solid #4d8021;
+    background: url(/Assets/11/Images/expand_gradient.jpg) repeat-x;
+    font-size: 130%;
+    margin: 0;
+    padding: 5px;
+}
+#SavedRecipes { margin-left: 10px }
+#SavedRecipes .RecipeBox { font-size: 11px }
+div#AdvancedSearch h1,
+div#TopRecipesTeaser h1,
+div#QuickSearch h1 { margin-top: 9px }
+#AdvancedSearch,
+#QuickSearch,
+#TopRecipesTeaser { padding-bottom: 6px }
+#SavedRecipes,
+#ChainRecipes {
+    float: left;
+    margin-bottom: 6px;
+}
+#SavedRecipes { margin-left: 10px }
+#FeaturedArticleTeaser.recipe,
+#AskTheChefTeaser.recipe,
+#CookingTipsTeaser.recipe {
+    border: 0 none;
+    margin: 12px 0 0 10px;
+    width: 166px;
+}
+
+/* headings
+--------------------------------------------------*/
+#ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,
+#UpdatePanelPage  h1,
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,
+#DietaryPreferencesTip h1,
+#privacy h2,
+#recipecontent h3,
+#CtrlDivSubTitle h2,
+#FeaturedArticleFull h3,
+#ContactUs h2,
+#EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,
+#QuickSearch ul	a,
+#QuickSearch h2,
+#ContactUs hr,
+#ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists .text-only-link a,
+#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a,
+.BtnPageLink { color: #4d8021 }
+
+/* store locator
+--------------------------------------------------*/
+#StoreLocatorDropDown { display: none }
+#StoreLocatorZipLookup { display: block }
+
+/* override content pane table padding border and margin
+--------------------------------------------------*/
+table.contentpaneopen {
+    width: 100%;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 0px;
+}
+
+/* override content pane table td margin and line height
+--------------------------------------------------*/
+table.contentpaneopen td {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 0px;
+    line-height: normal;
+}
+
+/* override header content module table margin and border
+--------------------------------------------------*/
+div.mod_contentitemhdr table {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-width: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* override content span article display
+--------------------------------------------------*/
+span.article_seperator { display: none }
+.transMenu39 {
+    position: absolute;
+    overflow: hidden;
+    left: -1000px;
+    top: -1000px;
+}
+.transMenu39 .content { position: absolute }
+.transMenu39 .items {
+    border: 1px solid #4d8021;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.transMenu39  td {
+    padding: 2px 8px 5px 8px !important;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #4d8021 !important;
+}
+#subwrap39 { text-align: left }
+.transMenu39  .item.hover td { color: #FD9F00 !important }
+.transMenu39 .item {
+    text-decoration: none;
+    cursor: pointer;
+}
+.transMenu39 .background {
+    background-color: #FFFFFF !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.transMenu39 .shadowRight {
+    position: absolute;
+    z-index: 3;
+    top: 3px;
+    width: 2px;
+}
+.transMenu39 .shadowBottom {
+    position: absolute;
+    z-index: 1;
+    left: 3px;
+    height: 2px;
+}
+.transMenu39 .item.hover { background-color: #FFFFFF !important }
+.transMenu39 .item img { margin-left: 10px !important }
+table.menu39 {
+    top: 2px;
+    left: 0px;
+    position: static;
+    margin: 0px !important;
+    border: 0px solid #FFFFFF;
+    z-index: 1;
+}
+table.menu39 a {
+    margin: 0px !important;
+    padding: 2px 8px 5px 8px !important;
+    display: block !important;
+    position: relative !important;
+}
+div.menu39 a,
+div.menu39 a:visited,
+div.menu39 a:link {
+    height: 10px;
+    font-size: 12px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #4d8021 !important;
+    text-decoration: none !important;
+    margin-bottom: 0px !important;
+    display: block !important;
+    white-space: nowrap;
+}
+div.menu39 td {
+    border-bottom: 0px solid #4d8021;
+    border-top: 0px solid #4d8021;
+    border-left: 0px solid #4d8021;
+    background-color: #FFFFFF !important;
+}
+div.menu39 td.last39 { border-right: 0px solid #4d8021 }
+#trans-active39 a {
+    color: #FD9F00 !important;
+    background-color: #FFFFFF !important;
+}
+#menu39 a.hover {
+    color: #FD9F00 !important;
+    background-color: #FFFFFF !important;
+}
+#menu39 span { display: none }
+#menu39 a img.seq1,
+.transMenu39 img.seq1 { display: inline }
+#menu39 a.hover img.seq2,
+.transMenu39 .item.hover img.seq2 { display: inline }
+#menu39 a.hover img.seq1,
+#menu39 a img.seq2,
+.transMenu39 img.seq2,
+.transMenu39 .item.hover img.seq1 { display: none }
+#trans-active39 a img.seq1 { display: none }
+#trans-active39 a img.seq2 { display: inline }
+#menu3926 { border-right: 1px solid #4d8021 }
+#menu3927 { border-right: 1px solid #4d8021 }
+#menu3928 { border-right: 1px solid #4d8021 }
+#menu3929 { border-right: 1px solid #4d8021 }
+#menu3930 { border-right: 1px solid #4d8021 }
+#menu3931 { border-right: 1px solid #4d8021 }
+#menu3932 { border-right: 1px solid #4d8021 }
+#menu3933 { border-right: 1px solid #4d8021 }
+#menu3934 { border-right: 1px solid #4d8021 }
+
+/* override submenu display
+--------------------------------------------------*/
+#subwrap39 { display: none }
+#AdDisplayDiv {
+    float: right;
+    width: 210px;
+}
+
+/* footer
+--------------------------------------------------*/
+.footer-wrap {
+    border-left: 1px solid #588A2B;
+    border-right: 1px solid #588A2B;
+    float: left;
+    padding: 0 10px;
+    width: 920px;
+}
+.footerlogo {
+    clear: both;
+    float: left;
+    margin-left: 100px;
+    padding-top: 15px;
+}
+.footerStoreInfo {
+    border-left: 1px dotted #999999;
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 15px;
+    width: auto;
+}
+.footerStoreInfoHeadline {
+    color: #669900;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+.footerStoreInfoBody {
+    color: #666666;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4em;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+#footerSiteMap {
+    clear: both;
+    width: 100%;
+    color: #669900;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    height: 40px;
+    line-height: 1.2em;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#festival-footer {
+	float:left; 
+	width:943px;  
+	/*background-image:url(/Assets/11/Images/background_footer.png);*/
+	background-repeat:repeat-x;  
+	clear:both;
+}
+
+#GsnFooter .gsn-footer-image {
+	border-width:0px; 
+	margin-top:6px; 
+	margin-bottom:12px;
+}
+
+/* Five List Buttons
+--------------------------------------------------*/
+#ShoppingListHeaderSmall {
+    background: transparent url(/Assets/11/Images/shoplist_300_r1_c1.jpg) top right;
+    height: 70px;
+}
+#ManageList,
+#savedshoppinglists {
+    float: left;
+    width: 590px;
+    background-color: #FFFFFF;
+}
+#ManageList #ShoppingListItemsDisplay,
+#ManageList .StaticContent {
+    background: transparent url(/Assets/11/Images/shoplist_large_r2_c1.jpg) repeat-y top left;
+    padding: 0 15px;
+    width: 560px;
+}
+#ShoppingListHeaderLarge {
+    background: transparent url(/Assets/11/Images/shoplist_large_r1_c1.jpg) no-repeat top left;
+    height: 70px;
+}
+#ShoppingListFooterLarge {
+    float: left;
+    width: 590px;
+    background: transparent url(/Assets/11/Images/shoplist_large_r3_c1.jpg) no-repeat bottom left;
+    height: 60px;
+}
+#ShoppingList table div.shopListItemSmall {
+    font-size: 11px;
+    color: #4D8021;
+}
+#FiveListButtons {
+    background: transparent url(/Assets/11/Images/shoplist_300_r3_c1.jpg) top right;
+    padding-top: 12px;
+    min-height: 86px;
+}
+#FiveListButtons a {
+    display: inline;
+    border: 0 none;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0px;
+}
+div#ShoppingList div#ShoppingListItemsDisplay { margin: 0em 0 }
+#FiveListButtons a.shoplistPrint {
+    height: 40px;
+    margin-left: 28px;
+    background: url('/assets/11/images/list_buttons_r1_c2.gif') no-repeat;
+}
+#FiveListButtons a.shoplistEmail {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/11/images/list_buttons_r1_c3.gif') no-repeat;
+}
+#FiveListButtons a.shoplistLast {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/11/images/list_buttons_r1_c4.gif') no-repeat;
+}
+#FiveListButtons a.shoplistManage {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/11/images/list_buttons_r1_c6.gif') no-repeat;
+}
+#FiveListButtons a.shoplistSave {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/11/images/list_buttons_r1_c5.gif') no-repeat;
+}
+#FiveListButtons a.shoplistPrint:hover,
+#FiveListButtons a.shoplistEmail:hover,
+#FiveListButtons a.shoplistLast:hover,
+#FiveListButtons a.shoplistManage:hover,
+#FiveListButtons a.shoplistSave:hover { background-position: 0 -40px }
+#FiveListButtons a.shoplistPrint span,
+#FiveListButtons a.shoplistEmail span,
+#FiveListButtons a.shoplistLast span,
+#FiveListButtons a.shoplistSave span,
+#FiveListButtons a.shoplistManage span {
+    margin-top: 38px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+#ShoppingList table { width: 270px }
+#ShoppingList td {
+    font-weight: bold;
+    color: #4d8021;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+#FiveListButtons a:hover { text-decoration: none }
+#trashcanSmall { background: transparent url(/assets/11/images/shoplist_delete_icon.gif) no-repeat scroll 0 0 }
+#secondary-navigation a:hover { color: #4d8021 }
+#sidebar div.AdMaster.Tile6 {
+    position: absolute;
+    top: 170px !important;
+}
+div#ShoppingList div#ShoppingListItemsDisplay {
+    background: transparent url(/Assets/11/Images/shoplist_300_r4_c1.jpg) top right;
+    min-height: 75px;
+}
+#ShoppingListMain { background: transparent url(/Assets/11/Images/shoplist_300_r4_c1.jpg) top right }
+#AddYourOwnItems input {
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+/*------------------------------------------------*/
+/* !profile sign-in / sign-up */
+/*------------------------------------------------*/
+#login .button, #register .button {
+    background-color: #ff9900;
+    border: 1px solid #dd8a12;
+}
+#LoginButtonDiv a{
+    background:none;
+}
+#LoginNewProfileLinkDiv a:link,
+#LoginNewProfileLinkDiv a:visited,
+#LoginNewProfileLinkDiv a:hover,
+#LoginNewProfileLinkDiv a:active{
+    color:#fff;
+}
+
+#SignUpV2 .backButton, #SignUpV2 .backButton:active, #SignUpV2 .backButton:hover { background-image:url(/Assets/11/Images/pReg_back.png); }
+#SignUpV2 .backButton:hover { background-image:url(/Assets/11/Images/pReg_back.png); }
+#SignUpV2 .cancelButton, #SignUpV2 .cancelButton:active, #SignUpV2 .cancelButton:hover { background-image:url(/Assets/11/Images/pReg_cancel.png); }
+#SignUpV2 .cancelButton:hover { background-image:url(/Assets/11/Images/pReg_cancel.png); }
+.cancelButton { background-image:url(/Assets/11/Images/pReg_cancel.png); }
+.cancelButton:hover { background-image:url(/Assets/11/Images/pReg_cancel.png); }
+#SignUpV2 .finishButton, #SignUpV2 .finishButton:active, #SignUpV2 .finishButton:hover { background-image:url(/Assets/11/Images/pReg_finish.png); }
+#SignUpV2 .finishButton:hover { background-image:url(/Assets/11/Images/pReg_finish.png); }
+#SignUpV2 .homeButton, #SignUpV2 .homeButton:active, #SignUpV2 .homeButton:hover { background-image:url(/Assets/11/Images/pReg_home.png); }
+#SignUpV2 .homeButton:hover { background-image:url(/Assets/11/Images/pReg_home.png); }
+#SignUpV2 .nextButton, #SignUpV2 .nextButton:active, #SignUpV2 .nextButton:hover { background-image:url(/Assets/11/Images/pReg_next.png); }
+#SignUpV2 .nextButton:hover { background-image:url(/Assets/11/Images/pReg_next.png); }
+#SignUpV2 .nothanksButton, #SignUpV2 .nothanksButton:active, #SignUpV2 .nothanksButton:hover { background-image:url(/Assets/11/Images/pReg_nothanks.png); }
+#SignUpV2 .nothanksButton:hover { background-image:url(/Assets/11/Images/pReg_nothanks.png); }
+#SignUpV2 .profileButton, #SignUpV2 .profileButton:active, #SignUpV2 .profileButton:hover { background-image:url(/Assets/11/Images/pReg_profile.png); }
+#SignUpV2 .profileButton:hover { background-image:url(/Assets/11/Images/pReg_profile.png); }
+#SignUpV2 .saveButton, #SignUpV2 .saveButton:active, #SignUpV2 .saveButton:hover { background-image:url(/Assets/11/Images/pReg_save.png); }
+#SignUpV2 .saveButton:hover { background-image:url(/Assets/11/Images/pReg_save.png); }
+.submitButton { background-image:url(/Assets/11/Images/pReg_submit.png); }
+.submitButton:hover { background-image:url(/Assets/11/Images/pReg_submit.png); }
+#SignUpV2 .yesButton, #SignUpV2 .yesButton:active, #SignUpV2 .yesButton:hover { background-image:url(/Assets/11/Images/pReg_yes.png); }
+#SignUpV2 .yesButton:hover { background-image:url(/Assets/11/Images/pReg_yes.png); }
+
+.signUpSidebarTop { background-image:url(/Assets/11/Images/pReg_sidebar.jpg);}
+#signUpPop1,
+#signUpPop2,
+#signUpPop4 {
+    top: 224px;
+    left: 305px;
+}
+/* IE 7
+--------------------------------------------------*/
+*:first-child+html #StoreHeaderRightTop { top: 12px }
+
+.footer-wrap{
+background-color:#fff;
+}

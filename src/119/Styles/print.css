@@ -1,0 +1,29 @@
+body 					{font-size:90%; height:100%; background-color:#FFFFFF; 
+					font-weight:normal; font-style:normal; font-family: Arial, Helvetica, sans-serif; color:black; margin-top:10px; 
+					margin-left:10px ; margin-right:10px; padding-left:0; padding-right:0;}
+
+#container 				{display:block; background-color:#FFFFFF; width: 6.25in; }
+#main					{display:block; float:left; padding:0; margin:0; width:100%; }
+#sidebar, #recipesidebar		{display:none;}
+#StoreHeader, #secondary-navigation			{display:none;}
+#recipeoptions				{display:none;}
+#GsnFooter				{display:none;}
+#chainlogo				{background:transparent url('/Assets/119/Images/printlogo.gif') no-repeat scroll 0% 0%; clear:both; display:block; height:70px; width:200px;}
+
+#Recipe input				{display:none;}
+#Recipe td				{padding:4px; vertical-align:top;height:auto;}
+#Recipe tr				{vertical-align:top; height:auto;}
+#Recipe td table			{font-size:100%; margin:0; padding:0; border:0; border-collapse:collapse;}
+#Recipe td table td			{vertical-align:top; padding:0px; height:auto;}
+#Recipe h2				{clear:both; margin-top:12px; color:#000000; font-size:150%; width:100%; border-bottom:1px solid black;}
+#Recipe h3				{color:#000000; font-size:110%; }
+#RecipeFull1_lblPrepInstructions br	{clear:both; display:block; margin:6px 0 6px 0;}
+
+/*** nutrition table ***/
+#NutritionTable				{clear:both; float:left; margin-top:24px; font-family:Arial; width:100%; font-size:80%; border:0; padding:0;border-collapse:collapse;}
+#NutritionTable	h2			{font-size:200%; color:#000000; border:0; margin:0;}
+.NutritionFacts				{border:1px solid #000000; margin:0; padding:0; border-collapse:collapse;}
+#NutritionLineColumn			{width:50%; float:left;}
+#NutritionLineItem			{width:100%; float:left; text-align:left; margin:0; padding:0; border-collapse:collapse;}
+
+

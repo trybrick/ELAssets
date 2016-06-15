@@ -1,0 +1,298 @@
+﻿/*** chain-specific overrides for Sullivan's Foods ***/
+
+body {background:url(/Assets/207/Images/footerBg.gif) repeat-x bottom left;background-color:#efefef;color:#484848;margin-top:10px;}
+html {background:#d1cfc9;}
+h1 {color:#02a145;font-size:200%;}
+#PasswordRecoverControl h1, #UpdatePanelPage h1, #RecipeSaveToRecipeBox h1 {color:#02a145;border-bottom:none;}
+h2, h3, #recipecontent h3 {color:#02a145;}
+.alth1 {color:#0096c2;}
+.bodyp {color:#383838; font-size:130%;margin:20px 0;}
+.bodyhead {color:#484848;}
+.staticContentEntry {background-color:#e9f4fa;padding:10px;width:843px;}
+.alignLeft {float:left;width:150px;clear:left;}
+hr {background:#FFF;float:none;width:100%;border:none;padding:0px;margin:0 0 15px;border-bottom:1px dotted #CCC;}
+
+#container-outer {background:url(/Assets/207/Images/bg.gif) repeat-x top;}
+#container {background:url(/Assets/207/Images/bodyBg.jpg) repeat-y 20px top;min-height:0;}
+
+#secondary-navigation a {background:#EEE;color:#54b8e6;padding:5px 12px 4px;}
+#secondary-navigation a:hover {background:#54b8e6;color:;}
+#secondary-navigation li {background:none;border:none;padding:0 1px;}
+#secondary-navigation #current {background-image:none;}
+#secondary-navigation #current a {background-image:none;background:#54b8e6;color:#FFF;padding:5px 13px;}
+
+#GoogleMapCanvas .gmnoprint span, #GoogleMapCanvas .gmnoprint a {font-size:11px !important;line-height:16px;}
+#storeInfoZip a:link, #storeInfoZip a:visited, #storeInfoZip a:active, #storeInfoZip a:hover {color:#02A145;}
+#storeInfoZip a:hover {text-decoration:underline;}
+
+#StoreLocator .storeInfoZip {min-height: 13em;}
+#StoreLocator .storeInfoZip a:link, 
+#StoreLocator .storeInfoZip a:visited, 
+#StoreLocator .storeInfoZip a:active, 
+#StoreLocator .storeInfoZip a:hover {color:#02A145;}
+#StoreLocator .storeInfoZip a:hover {text-decoration:underline;}
+
+
+a:link, a:visited, a:active, a:hover, #CircularLists span a:hover {color:#54b8e6;}
+a.button, a.button:hover {background:none;height:auto;}
+a.button span {background:#54b8e6; border:1px solid #54b8e6; color:#FFF;padding:4px 10px; *padding:4px 10px !important;} /* Had to make padding important for ie7 */
+a.button span:hover {background:#EEE; color:#54b8e6; padding:4px 10px; *padding:4px 10px !important; }
+a.button.added span, a.button.added span:hover { background:none #EEE; border:1px solid; color:#54b8e6; }
+a.button.added, a.button.added:hover { background:none; }
+#QuickSearch ul a {color:#54b8e6;}
+#QuickSearch h3, #CtrlDivSubTitle, #MealPlanner h3, #CtrlDivSubTitle p, #CtrlDivTextSearch p, #FeaturedRecipeTeaser h3, #FeaturedArticleTeaser h3, #AskTheChefTeaser h3, #CookingTipsTeaser h3 {color:#484848;}
+.AddButton a.button, .AddButton a.button:hover, .AddButton a.button.update, .AddButton a.button.update:hover, .AddButton a.button.remove, .AddButton a.button.remove:hover {margin:2px;}
+
+#login .button span, #register .button span { border:none; background-color:transparent; }
+#login .button, #register .button { background-color:#03a145; border-color:#03a145; }
+#login .button span:hover, #register .button span:hover { color:#fff; }
+
+#banner-advertisement {top: 260px;}
+
+/*** Header ***/
+#StoreHeader {background:url(/Assets/207/Images/bg.gif) repeat-x scroll center top;}
+#StoreInfoDiv {background:url(/Assets/207/Images/StoreInfoBg.gif) no-repeat top right;height:56px;margin:0;padding:0;}
+#StoreInfoWelcome {float:left;background:url(../../207/Images/headerWelcome.png) no-repeat top left;height:56px;width:400px;}
+#StoreInfoTwitter {float:right;margin:3px 0 0;}
+#StoreInfoFacebook {float:right;margin:3px 0 0;}
+#StoreInfoFollow {float:right;color:#383838;padding:6px;margin:3px 0 0;font-size:110%;}
+#StoreHeaderLogo {width:612px;}
+
+/*** Navigation ***/
+#nav {background:url(/Assets/207/Images/navBg.gif) repeat-x top;height:40px;margin:0 4px;}
+#nav-wrap {background:url(/Assets/207/Images/navLeft.gif) no-repeat top left;height:40px;}
+#nav-in {background:url(/Assets/207/Images/navRight.gif) no-repeat top right;height:40px;}
+#nav a {color:#FFF;}
+#nav ul {height:40px;float:left;}
+#nav li {height:40px;}
+#nav li:hover {background:url(/Assets/207/Images/navBg_r.gif) repeat-x top left;}
+#nav li a {height:21px;text-decoration:none;padding:13px 23.5px 7px 24px;margin:0;}
+#nav li ul {margin:-1px 0 0 0;}
+#nav li li {background:#00b0e4;height:25px;}
+#nav li li:hover {background:#0087af;}
+#nav li li a {padding:6px 0;margin:0 0 0 12px;}
+
+/*** Login Box ***/
+#StoreHeaderRightTop {background:url(/Assets/207/Images/headerLoginBg.gif) no-repeat top left;height:113px;width:254px;border:0;padding:0;margin:28px 1px 0 0;text-align:left;color:#FFF;}
+#LoginBox {height:100px;margin:10px 0 0 13px;text-align:left;width:240px;}
+#LoginBox a {color:#FFF;display:block;float:left;}
+#LoginBox a.recoverLink {float:right;font-size:9px;padding-top:1px;text-decoration:underline;}
+#LoginBox a.button span {background:#FFF; color:#54b8e6;}
+#LoginBox a.button span:hover {background:#54b8e6; color:#FFF; }
+#LoginBox input {display:block;height:15px;float:left;font-size:11px;width:150px;}
+#LoginBox label {display:block;float:left;}
+#loginInputs {float:left;width:100%;}
+.loginInputRow {float:left;height:37px;width:155px;}
+#LoginProfileLinkDiv {float:left;margin-top:10px;}
+#LoginProfileLinkDiv a {background:#FFF;color:#54b8e6;margin:0 5px 0 0;padding:4px 10px;text-decoration:none;}
+#LoginProfileLinkDiv a:hover {background:#54b8e6;color:#FFF;margin:0 5px 0 0;padding:4px 10px;}
+#CtrlDivNotRegisteredError {right:270px;}
+#LoginBox.facebook-login #login-submit { margin:5px 0 0 10%; text-align: center; width:77%; }
+#LoginBox .fb_button_text {padding-left: 20px;}
+.register { margin-top:5px; }
+#SignInControl h1 { font-size:130%; }
+
+/*** Homepage Content ***/
+#SplashContainer {width:910px;margin:0 0 0 7px;}
+#slideshow {border:3px solid #000;float:left;width:594px;height:322px;}
+#AdPromo {background:url(/Assets/207/Images/weeklyAdBg.jpg) no-repeat top left;height:285px;margin:0 15px 0 0;padding:52px 5px 0 0;width:290px;}
+.AdPromoSep {float:left;width:145px;height:250px;overflow:hidden;}
+#AdPromo img {margin:0;}
+#splashblocks {float:left;width:910px;}
+#splashblocks div { float:left; height:350px;width:290px; padding:0 5px; }
+.blocksimg {border:3px solid #CCC;}
+.blockBorder {border:1px solid #7f7f7f;}
+#GoingGreen {width:900px;}
+#GoingGreenText {float:left;width:650px;margin:35px 0 0 20px;line-height:200%;}
+#GoingGreenImg {float:left;width:200px;margin:15px 0 0;}
+#splashblocks #giftCard {background:url(/Assets/207/Images/giftcard.jpg) no-repeat top left;height:294px;padding:0 15px;width:263px;}
+
+/*** Footer ***/
+#StoreFooter {margin:12px 30px 0;width:850px;text-align:center;}
+#StoreFooter img {display:inline;padding-left:10px;padding-right:10px;}
+#StoreFooter p {margin:15px 0 0;text-align:center;font-size:130%;}
+#GsnFooter {background:#d1cfc9;margin:0;height:38px;}
+#GsnFooter a, #GsnFooter a:active, #GsnFooter a:visited {color:#666;}
+#FooterDrop {background:url(/Assets/207/Images/footer.gif) no-repeat 50% top;height:112px;width:910px;float:left;}
+#FooterDrop a, #FooterDrop a:visited, #FooterDrop a:active {color:#0096c2;text-decoration:underline;font-weight:normal;}
+#FooterDrop a:hover {color:#00afe3;text-decoration:none;font-weight:normal;}
+.FooterDropText {padding-top:70px;text-align:center;}
+.FooterSpacer {padding:0 6px 0;}
+
+/*** Store Locator Page ***/
+#main.storelocator {margin:0 15px;}
+#storeZipEntryForm {width:465px;}
+#storeZipEntryForm input {width:90px;}
+#GoogleMapCanvas {margin:33px 33px 0 0;}
+#GoogleMapStoreList {width:465px;}
+#StoreLocator h2 {border-bottom:1px dotted #000;}
+
+/*** Recipe Center ***/
+#secondary-navigation {border-bottom:1px solid #54B8E6;width:573px;}
+#MealPlanner h3 {border-bottom:1px solid #AAA;}
+#MealPlanner.recipe h2 a, #FeaturedRecipeTeaser.recipe h2 a {color:#02a145;}
+#FeaturedArticleFull h3, h2 {border-bottom:1px dotted #999;}
+#FeaturedRecipeTeaser h2 a, #FeaturedArticleTeaser h2 a, #AskTheChefTeaser h2 a, #CookingTipsTeaser h2 a {color:#54b8e6;}
+#RecipeCardMiddle {padding:10px 0 0;}
+#FeaturedRecipeTeaser.recipe  {background:#EEE;padding:5px 0;}
+#NutritionTable hr.thin {height:0;}
+#CtrlDivCourseSelection select, #CtrlDivSkillLevelSelection select, #CtrlDivPreparationTimeSelection select, #CtrlDivRegionSelection select, #CtrlDivHolidaySelection select, #CtrlDivEquipmentSelection select {width:45%;}
+#recipecontent {width:560px;}
+.recipeIngredient {width:530px;}
+.NutritionLineItem	{width:275px;}
+.NutritionLineElementRight {width:130px;}
+
+/*** Shopping List ***/
+#ShoppingListHeaderSmall {background:url(/Assets/207/Images/shoppingListTop.jpg) no-repeat top left;height:109px;width:285px;}
+#ShoppingListMain {background:url(/Assets/207/Images/shoppingListBg.jpg) repeat-y top left;width:280px;padding:5px 0 0 5px;}
+#ShoppingList {text-align:left;margin-left:10px;width:285px;}
+#ShoppingList #ShoppingListItemsDisplay {margin:0.5em 0 0 30px;}
+#FiveListButtons {background:url(../../207/Images/shoppingListBot.jpg) no-repeat top left;height:100px;width:280px;background-color:#FFF;padding:75px 0 0 15px;}
+#FiveListButtons a {padding:0 0 0 5px;background-position:5px 0;}
+#FiveListButtons a:hover {background-position:5px -50px;}
+#FiveListButtons a span {width:45px;}
+#ShoppingList table {width:208px;margin:0;}
+#ShoppingList td {border-bottom:1px dotted #AAA;vertical-align:middle;}
+#trashcanSmall {background:url(/Assets/207/Images/shoppingListX.jpg) no-repeat center;width:15px;height:20px;}
+#AddYourOwnItems {margin:10px 0 3px 30px;*margin-left:15px;}
+#AddYourOwnItems input {width:170px;}
+#AddYourOwnItems a.button span {background:#54B8E6;color:#FFF;}
+#AddYourOwnItems a.button span:hover {background:#FFF;color:#54B8E6;}
+.GridAlternatingItem td, .GridItem td, .GridItem th {padding:4px 5px;}
+#availablevarietiestop	{background:url("/Assets/207/Images/avail_varieties_300_r1_c1.gif") 0 0;}
+
+/*** Shopping List Large ***/
+#ShoppingListHeaderLarge {background:url(../../207/Images/shoppingListLarge.jpg) top left;height:60px;}
+#ManageList {width:555px;}
+#ManageList .category {background:#fefeb7;border-left:2px solid #d7d7d7;border-right:2px solid #d7d7d7;border-bottom:1px solid #d7d7d7;}
+#ManageList table {background:#ffffef;}
+#ManageList td {border-top:1px dotted #AAA;border-bottom:1px dotted #AAA;}
+#ManageList h3 {padding:4px 0 5px 8px;margin:0;color:#484848;}
+th {background-color:#d7d7d7;color:#484848;padding:5px 2px 0;}
+#legend {background:#fefeb7;}
+#legend table {border:none;}
+#legend h2, #legend h3, #ManageList h2 {color:#484848;padding:0 0 5px 0;}
+#legend tr:hover {background-color:#FFF;}
+#legend td, #legend td a {color:#484848;}
+#ManageList tr {background:url(/Assets/207/Images/shoppingListItemBg.jpg) repeat-x top left;}
+#legend p {color:#FFF;margin:2px 0;padding:4px 0;background:#54B8E6;}
+#savedshoppinglists {width:555px;}
+#ShoppingListHeaderLarge.Saved {background-image:url(/Assets/207/Images/shoppingListSavedLarge.jpg);}
+#TitleBar, #CurrentList {border:1px dotted #CCC;width:553px;}
+#savedshoppinglists .SavedShoppingListsAllItems {float:left;width:500px;padding:0 20px;}
+#SavedShoppingListsDisplay {margin-top:0;padding-top:12px;}
+#savedshoppinglists .SavedShoppingListsAll {margin:5px 0 0 20px;}
+#SavedShoppingListsDisplay a.button span, .GridItem a.button span {background:#54B8E6;color:#FFF;}
+#SavedShoppingListsDisplay a.button span:hover, .GridItem a.button span:hover {background:#FFF;color:#54B8E6;}
+
+/*** General Content Pages ***/
+#main {margin:0 0 0 15px;width:575px;}
+#sidebar, #recipesidebar {margin:12px 15px 0 0;}
+#mainContent,#mainContentLeftNav {min-height:500px;margin:10px 0 0;}
+#StaticContentPage {overflow:hidden; padding:10px 20px; width:863px;}
+#InBetween1, #InBetween2 {color:#484848;padding-top:0;padding:50px 2px 0;font-weight:normal;}
+#RecipeVideosPage h1 {width:560px;color:#02a145;}
+#VideoNavigation {width:220px;}
+#gridLayout {width:440px;}
+.GridMode2 .couponsSavings {background:#EEE;color:red;}
+.GridMode2 .couponsContainer {border:1px dotted #AAA;}
+.GridMode3 .couponsContainer {width:140px;}
+#ProductsGrid, .LineItem, .LineItems {width:560px;}
+.pageHeader {color:#02A145;margin:0 0 20px 0;}
+.GridAlternatingItem {background:url(../Images/shoppingListItemBg.jpg) repeat-x bottom left;border-top:1px dotted #CCC;}
+.GridItem th {background-color:#D7D7D7;}
+tr.GridItem {background:url(../Images/shoppingListItemBg.jpg) repeat-x bottom left;background-color:none;border-top:1px dotted #CCC;}
+.CategoryHeader {background:#FEFEB7;margin-bottom:0;width:100%;}
+#CategoryHeader h3, .CategoryHeader h3 {color:#484848;font-size:100%;padding:4px 0 5px 8px;margin:0;}
+#CouponList h3 {color:#484848;font-size:120%;padding:4px 0 5px 8px;margin:0;background:#FEFEB7;}
+#CouponList {border:1px solid #CCC;}
+.LineItem {border:1px solid #CCC;}
+table.GridItem {width:100%;}
+#MyFavoritesHeader img {margin:0 0 10px;}
+#preferences-link, #signout-link {margin:5px;}
+#mainContentHeader ul {margin:0;}
+.leftContent {float:left;width:440px;padding:0 10px 0 0;}
+.rightContent {float:right;width:400px;overflow:hidden;padding:0 0 0 10px;}
+.centerContent {width:100%;float:left;margin:10px 0;}
+.centerContent img {float:left;}
+.leftContent2 {float:left;width:200px;margin:0 7px;}
+.leftContent3 {float:left;width:150px;margin:0 7px;}
+.centerContent table {font-size:11px;}
+.centerContent td {border:1px solid #CCC;}
+#mainContentHeader ul {width:100%;}
+.catering_header {background:url(../images/burst.png) no-repeat top left;width:100%;height:223px;}
+.catering_header_text {float:left;margin:90px 50px 0 230px;width:110px;}
+.catering_header_text p {font-weight:bold;text-align:center;}
+.staticContentEntry h1 {float:left;margin:0 0 5px;}
+.staticContentEntry h3 {font-size:15px;}
+.staticContentEntry p {font-size:14px;margin:3px 0 15px;}
+.staticContentEntry ul {font-size:14px;margin:3px 0 15px;padding-left:15px;}
+.staticContentEntry img {border:1px solid gray;clear:right;display:block;margin:10px;padding:3px;}
+#CircularLists span a,#CircularLists span a:hover {color:red;}
+#CircularLists select {width:135px;}
+.cateringDescription span {display:block;float:right;}
+#ArticlePage {float:none;position:static;width:100%;}
+#ArticlePage #BackToArticle {position:static;}
+#EmailShoppingList textarea {width:450px;}
+#StaticContentPage hr {float:left;}
+.gridLayout {width: 440px;}
+
+/*** Contact Us ***/
+#ContactUs h2 {border-bottom:1px dotted #CCC;padding:20px 0 5px;font-size:200%;color:#484848;}
+.ContactInput { width:100%; }
+.ContactInput h3 {padding:15px 0 0;}
+.ContactInput p { width:100%; }
+
+/*** Advertise ***/
+#sidebar div.AdMaster.Tile6 {right:-150px;top:260px;}
+
+/*** Sign In ***/
+#FeaturedArticleTeaser, #AskTheChefTeaser, #CookingTipsTeaser {background:#EEE;padding:5px 0;}
+#FeaturedArticleTeaser.recipe, #AskTheChefTeaser.recipe, #CookingTipsTeaser.recipe {margin:12px 2px 0 0;}
+
+#SignUpThankYouPage #sidebar #FeaturedArticleTeaser.recipe, #SignUpThankYouPage #sidebar #AskTheChefTeaser.recipe, #SignUpThankYouPage #sidebar #CookingTipsTeaser.recipe, #SignInDiv #sidebar #FeaturedArticleTeaser.recipe, #SignInDiv #sidebar #AskTheChefTeaser.recipe, #SignInDiv #sidebar #CookingTipsTeaser.recipe, #SignOutPage #sidebar #FeaturedArticleTeaser.recipe, #SignOutPage #sidebar #AskTheChefTeaser.recipe, #SignOutPage #sidebar #CookingTipsTeaser.recipe, #SignUpPage #sidebar #FeaturedArticleTeaser.recipe, #SignUpPage #sidebar #AskTheChefTeaser.recipe, #SignUpPage #sidebar #CookingTipsTeaser.recipe  {padding:5px 0;}
+
+/*** Sign Up ***/
+#selectStore, #emails, #navigation, #navigation5, #privacy {width:300px;}
+#SignUpV2 #privacy {width:210px;}
+#signUpPop1, #signUpPop2, #signUpPop4 {top:313px;}
+
+/*** Employment ***/
+#EmploymentOpeningsPage {float:left;margin-left:20px;width:850px;}
+#employmentButtonsDiv { float:left; margin-left:50px; }
+#ContactUs, #ContactUsThanks, #EmploymentApplication, #EmploymentPositions { float:left; margin-left:20px;width:870px; }
+/** IE7 Hacks **/
+#ArticlePage {*float:left; *position:relative; *width:100%;}
+#ArticlePage #sidebar div.AdMaster.Tile6 {*right:-170px; *top:10px;}
+
+/** IE6 Hacks **/
+* html #container {background-position:10px 0;}
+* html #header {width:910px;z-index:497;}
+* html #StoreHeader {width:910px;}
+* html #StoreHeaderMiddle {width:910px;}
+* html #StoreHeaderRight {float:right;}
+* html #nav {width:902px;}
+* html #nav ul {width:910px;}
+* html #nav li {clear:none;text-align:center;width:100px;}
+* html #nav li a {padding:8px 23.5px 7px 24px;}
+* html #nav li ul {background:#00B0E4;clear:both;margin-left:-40px;width:170px;z-index:499;}
+* html #nav li ul li {margin:0;padding:0;text-align:left;width:170px;}
+* html #StoreFooter {margin:12px 15px;}
+* html #GsnFooter {background:#D1CFC9;width:100%;}
+
+* html #loginInputs {width:235px;}
+* html #LoginBox #login-submit {float:right;margin:10px 0 0 0;width:49px;}
+* html #LoginBox .register {clear:none;}
+* html .login-buttons {float:left;width:250px;}
+
+* html #SplashContainer {margin:0 0 0 3.5px;}
+* html #splashblocks div {padding:3px;}
+
+* html .CategoryDisplayContainer {margin:0 3px 0 0;}
+* html .couponsDescription	{padding:0;width:100px;}
+* html .couponsFrame a	{clear:none;}
+* html .couponsImage img	{clear:none; margin:0;}
+* html #GoogleMapCanvas	{margin:15px 15px 0 0}
+* html #ShoppingList	{margin:0;}
+* html #sidebar	{margin:12px 0 0 0;}
+* html #recipesidebar	{margin:12px 0 0 0;}

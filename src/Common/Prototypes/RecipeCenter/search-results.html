@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Search Results</title>
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/recipe-center.js"></script>
+	<script type="text/javascript">
+		document.observe("dom:loaded", onPageLoad);
+		
+		function onPageLoad() {
+			InitializeAdvancedSearch();
+			InitializePrimaryContentNav();
+		}
+		
+		function redirectRecipe() {
+			window.location.replace('index.html');
+		}
+		
+	</script>
+	<link href="stylesheets/default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="container" class="group">
+    	<div id="header">
+        	<div id="primary-navigation"></div>
+            <div id="store-information"></div>
+            <div id="user-login"></div>
+        </div>
+        <div id="search-results-page" class="recipe main group">
+			<div id="secondary-navigation" onclick="redirectRecipe()"></div>
+			<div id="search" class="group module full">
+				<a id="toggle-advanced-link" class="toggle-link" style="display:none;">Advanced Search</a><!-- hidden from non js browsers -->
+				<div id="top-search-control" class="group">
+					<input type="text" />
+					<a class="button" href="search-results.html">Search</a>
+				</div>
+				<div id="advanced-search" class="group" style="display:none;">
+					<div class="header">
+						<h2>Advanced Search</h2>
+						<p>Enter a search term that describes what you are looking for, or use the optional search fields to narrow your search.</p>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-term">Keyword</label>
+							<input type="text" class="default-value" id="adv-search-term" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-exclude">Exclude</label>
+							<input type="text" class="default-value" id="adv-search-exclude" name="adv-search-exclude" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div id="special-diet" class="group">
+						<label>Special Diet</label>
+						<ul class="group">
+							<li><input type="radio" name="rblDiet" value="1" />Kosher</li>
+							<li><input type="radio" name="rblDiet" value="2" />Vegetarian</li>
+							<li><input type="radio" name="rblDiet" value="3" />Vegan</li>
+							<li><input type="radio" checked="checked" name="rblDiet" value="4" />None</li>
+						</ul>
+					</div>
+					<div id="dietary-preferences" class="group">
+						<div class="header">
+							<h2>Dietary Preferences</h2>
+							<em>Enter minimum and maximum amount for each attribute. </em>
+						</div>
+						<fieldset class="dietary-range">
+							<label for="min-cal">Calories</label>
+							<input id="min-cal" name="min-cal" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-cal" name="max-cal" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-fat">Total Fat (g)</label>
+							<input id="min-fat" name="min-fat" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-fat" name="max-fat" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-carb">Carbohydrates (g)</label>
+							<input id="min-carb" name="min-carb" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-carb" name="max-carb" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sugar">Sugars (g)</label>
+							<input id="min-sugar" name="min-sugar" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sugar" name="max-sugar" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sodium">Sodium (mg)</label>
+							<input id="min-sodium" name="min-sodium" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sodium" name="max-sodium" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-protein">Protein (g)</label>
+							<input id="min-protein" name="min-protein" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-protein" name="max-protein" type="text" maxlength="4" />
+						</fieldset>
+						<ul id="preference-actions" class="action-group group">
+							<li><a href="#null">Clear preferences</a></li>
+							<li><a href="#null">Load preferences</a></li>
+							<li><a href="#null">Save preferences</a></li>
+						</ul>
+					</div><!-- dietary-preferences -->
+					<div id="search-criteria" class="group">
+						<fieldset>
+							<label for="ddl-courses">Course or Event</label>
+							<select>
+								<option value="0" selected="selected">All courses and events</option>
+								<option value="1">Appetizers</option>
+								<option value="2">Breakfast</option>
+								<option value="3">Brunch</option>
+								<option value="4">Dinner</option>
+								<option value="5">Lunch</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-region">Region</label>
+							<select>
+								<option value="0" selected="selected">All regions</option>
+								<option value="1">African</option>
+								<option value="2">Asian</option>
+								<option value="3">Central American</option>
+								<option value="4">North American</option>
+								<option value="5">South American</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-skill">Skill Level</label>
+							<select>
+								<option value="0" selected="selected">All skill levels</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-holiday">Holidays</label>
+							<select>
+								<option value="0" selected="selected">All holidays</option>
+								<option value="1">Christmas</option>
+								<option value="2">Easter</option>
+								<option value="3">Halloween</option>
+								<option value="4">Thanksgiving</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-time">Total Time</label>
+							<select>
+								<option value="0" selected="selected">All times</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-equipment">Equipment</label>
+							<select>
+								<option value="0" selected="selected">All equipment</option>
+								<option value="1">Blender</option>
+								<option value="2">Grilling and BBQ</option>
+								<option value="3">Deep Fryer</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+					</div><!-- search-criteria -->
+					<div class="group footer">
+						<a class="clear-search" href="#null">Clear all fields</a>
+						<a class="button" href="search-results.html">Search</a>
+					</div>
+				</div><!-- advanced-search -->
+			</div><!-- search -->
+			<div id="search-filter" class="aside">
+				<div id="current-filter" class="module">
+					<h2>You've selected:</h2>
+					<ul id="filter-list" class="group">
+						<li><a href="#null" title="Click to remove">Appetizers</a></li>
+						<li><a href="#null" title="Click to remove">North American</a></li>
+					</ul>
+				</div>
+				<div id="narrow-search" class="module">
+					<h2>Narrow your results by:</h2>
+					<ul>
+						<li><strong>Course</strong>
+							<ul>
+								<li><a href="#null">Appetizers<span> (32)</span></a></li>
+								<li><a href="#null">Breakfast<span> (17)</span></a></li>
+								<li><a href="#null">Lunch<span> (4)</span></a></li>
+								<li><a href="#null">Dinner<span> (3)</span></a></li>
+							</ul>
+						</li>
+						<li><strong>Region</strong>
+							<ul>
+								<li><a href="#null">Asian<span> (13)</span></a></li>
+								<li><a href="#null">African<span> (4)</span></a></li>
+								<li><a href="#null">Central American<span> (3)</span></a></li>
+								<li><a href="#null">European<span> (3)</span></a></li>
+								<li><a href="#null">North American<span> (2)</span></a></li>
+								<li><a href="#null">South American<span> (1)</span></a></li>
+							</ul>
+						</li>
+						<li><strong>Holiday</strong>
+							<ul>
+								<li><a href="#null">Christmas<span> (4)</span></a></li>
+								<li><a href="#null">Easter<span> (4)</span></a></li>
+								<li><a href="#null">Fourth of July<span> (3)</span></a></li>
+								<li><a href="#null">Halloween<span> (1)</span></a></li>
+								<li><a href="#null">Thanksgiving<span> (1)</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!-- search-filter -->
+			<div id="primary-content">	
+				<ul id="primary-content-navigation" style="display:none;"><!-- hidden from non js browsers -->
+					<li><a title="recipes" href="#null">Recipes</a></li>
+					<li><a title="videos" href="#null">Videos</a></li>
+					<li><a title="articles" href="#null">Articles</a></li>
+				</ul>
+				<div id="recipes" class="section">
+					<div class="header group">
+						<p><strong>243</strong> recipe search results for <em>"chicken"</em></p>
+						<div id="view-select-wrap" class="select-control">
+							<label for="view-select">Results per page</label>
+							<select id="view-select" name="view-select">
+								<option value="5" selected="selected">5</option>
+								<option value="10">10</option>
+								<option value="25">25</option>
+								<option value="50">50</option>
+							</select>
+						</div>
+						<div id="sort-results-wrap" class="select-control">
+							<label for="sort-results">Sort By</label>
+							<select id="sort-results">
+								<option value="0">Relevance</option>
+								<option value="1">Title</option>
+								<option value="2">Rating</option>
+								<option value="3">Sale Items</option>
+							</select>
+						</div>
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null">1</a></li>
+								<li><a href="#null" class="active">2</a></li>
+								<li><a href="#null">3</a></li>
+								<li><a href="#null">4</a></li>
+								<li><a href="#null">5</a></li>
+								<li><a href="#null">6</a></li>
+								<li><a href="#null">7</a></li>
+								<li><a href="#null">8</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="result sponsored group">
+						<img class="content-thumbnail" src="images/mock_images/gold_plump_chx.jpg" alt="" />
+						<div class="details">
+							<h2>Gold N' Plump&#174;<br/>Asian Chicken Salad</h2>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="recipe-full.html">View Recipe</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_lemon_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>Lemon Chicken</h2>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="recipe-full.html">View Recipe</a>
+							<div class="attributes group">
+								<span class="has-sale-item">Sale Item</span>
+							</div>
+						</div>
+					</div>
+					<div class="result group alternate">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_buffalo_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>Buffalo Chicken Wings</h2>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="recipe-full.html">View Recipe</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+						<div class="details">
+							<h2>Deep Frying Chicken</h2>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">View Recipe</a>
+							<div class="attributes group">
+								<span class="has-video">Video</span>
+								<span class="has-sale-item">Sale Item</span>
+							</div>
+						</div>
+					</div>
+					<div class="result group alternate">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+						<div class="details">
+							<h2>Chicken Salad</h2>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">View Recipe</a>
+							<div class="attributes group">
+								<span class="has-sale-item">Sale Item</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer group">
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null">1</a></li>
+								<li><a href="#null" class="active">2</a></li>
+								<li><a href="#null">3</a></li>
+								<li><a href="#null">4</a></li>
+								<li><a href="#null">5</a></li>
+								<li><a href="#null">6</a></li>
+								<li><a href="#null">7</a></li>
+								<li><a href="#null">8</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- recipes -->
+				<div id="videos" class="section">
+					<div class="header group">
+						<p><strong>10</strong> video search results for <em>"chicken"</em></p>
+						<div id="view-select-wrap" class="select-control">
+							<label for="view-select">Results per page</label>
+							<select id="view-select" name="view-select">
+								<option value="5" selected="selected">5</option>
+								<option value="10">10</option>
+								<option value="25">25</option>
+								<option value="50">50</option>
+							</select>
+						</div>
+						<div id="sort-results-wrap" class="select-control">
+							<label for="sort-results">Sort By</label>
+							<select id="sort-results">
+								<option value="0">Relevance</option>
+								<option value="1">Title</option>
+								<option value="2">Rating</option>
+								<option value="3">Time</option>
+							</select>
+						</div>
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link inactive" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null" class="active">1</a></li>
+								<li><a href="#null">2</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_roasting_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>Roasting Chicken</h2>
+							<strong>1:30</strong>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">Watch video</a>
+						</div>
+					</div>
+					<div class="result group alternate">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_cutting_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>Cutting Chicken</h2>
+							<strong>2:12</strong>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">Watch video</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_frying_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>Deep Frying Chicken</h2>
+							<strong>2:23</strong>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">Watch video</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default_video.jpg" alt="" />
+						<div class="details">
+							<h2>How to Butterfly Chicken Breast</h2>
+							<strong>3:00</strong>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">Watch video</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default_video.jpg" alt="" />
+						<div class="details">
+							<h2>De-Boning Chicken</h2>
+							<strong>3:02</strong>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="#null">Watch video</a>
+						</div>
+					</div>
+					<div class="footer group">
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link inactive" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null" class="active">1</a></li>
+								<li><a href="#null">2</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- video -->
+				<div id="articles" class="section">
+					<div class="header group">
+						<p><strong>120</strong> article search results for <em>"chicken"</em></p>
+						<div id="view-select-wrap" class="select-control">
+							<label for="view-select">Results per page</label>
+							<select id="view-select" name="view-select">
+								<option value="5" selected="selected">5</option>
+								<option value="10">10</option>
+								<option value="25">25</option>
+								<option value="50">50</option>
+							</select>
+						</div>
+						<div id="sort-results-wrap" class="select-control">
+							<label for="sort-results">Sort By</label>
+							<select id="sort-results">
+								<option value="0">Relevance</option>
+								<option value="1">Title</option>
+								<option value="2">Rating</option>
+							</select>
+						</div>						
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link inactive" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null" class="active">1</a></li>
+								<li><a href="#null">2</a></li>
+								<li><a href="#null">3</a></li>
+								<li><a href="#null">4</a></li>
+								<li><a href="#null">5</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default_video.jpg" alt="" />
+						<div class="details">
+							<h2>How to make great wings</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#null">Read full article</a>
+						</div>
+					</div>
+					<div class="result group alternate">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_lemon_chicken.jpg" alt="" />
+						<div class="details">
+							<h2>De-boning Chicken</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#null">Read article</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+						<div class="details">
+							<h2>Deep Frying Chicken</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#null">Read article</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+						<div class="details">
+							<h2>!0 Ways to Bake Chicken</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#null">Read article</a>
+						</div>
+					</div>
+					<div class="result group">
+						<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+						<div class="details">
+							<h2>Poultry</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#null">Read article</a>
+						</div>
+					</div>
+					<div class="footer group">
+						<div class="pager">
+							<ul class="group">
+								<li><a class="previous-link inactive" href="#null" title="previous">&#8592;&#160;Previous</a></li>	
+								<li><a href="#null" class="active">1</a></li>
+								<li><a href="#null">2</a></li>
+								<li><a href="#null">3</a></li>
+								<li><a href="#null">4</a></li>
+								<li><a href="#null">5</a></li>
+								<li><a class="next-link" href="#null" title="next">Next&#160;&#8594;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- articles -->
+			</div><!-- primary-content -->
+		</div><!-- main -->
+		<div id="shopping-list" class="aside">
+		</div>
+	</div><!-- container -->
+    <div id="footer"></div>
+</body>
+</html>

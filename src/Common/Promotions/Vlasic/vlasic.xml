@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vlasic>
+	<Brand reg="true"></Brand>
+	<BrandSiteUrl>http://www.vlasic.com/</BrandSiteUrl>
+	<Logo alt="">vlasic_welldone.jpg</Logo>
+	<HeadingText></HeadingText>
+	<ManufacturerCode>54100</ManufacturerCode>
+	<CSS>
+		<Stylesheet>##root##/Assets/Common/Promotions/Vlasic/Assets/style.css</Stylesheet>
+		<WrapID>vlasic-wrap</WrapID>
+		<HeaderID>vlasic-header</HeaderID>
+		<MainID>vlasic-main</MainID>
+		<FooterID>vlasic-footer</FooterID>
+		<ProductDetailClass>vlasic-product</ProductDetailClass>
+	</CSS>
+	<DepartmentID>10361</DepartmentID>
+	<ImagePath>##root##/Assets/Common/Promotions/Vlasic/Assets/</ImagePath>
+	<MasterLayout columns="3" rows="2"></MasterLayout>
+	<FooterImage></FooterImage>
+	<ProductList>
+		<Product>
+			<Title>Vlasic Kosher Dill Spears</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;238274266;50621646;j</ClickCode>
+			<ProductCode>00060</ProductCode>
+			<Image alt="">vlasic-spears.png</Image>
+			<Description>The dill spear is America's favorite pickle, and none is more popular than Vlasic's Kosher Dill Spear.  Tasty, juicy and crunchy, the fresh-pack Vlasic Spear is cut lengthwise, perfect on a plate with your favorite sandwich.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="1" />
+			<Order>1</Order>
+		</Product>
+		<Product>
+			<Title>Vlasic Kosher Dill Stackers</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;238274377;50621646;m</ClickCode>
+			<ProductCode>00560</ProductCode>
+			<Image alt="">vlasic-stackers.png</Image>
+			<Description>Vlasic Stackers are great toppers for your favorite sandwich.  Add Vlasic Kosher Dill Stackers to zing up your sandwich or try our Bread &amp; Butter Stackers for a more sweet and tart flavor.  Vlasic Stackers add great taste to every bite.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="2" />
+			<Order>2</Order>
+		</Product>
+		<Product>
+			<Title>Vlasic Ovals Hamburger Dill Chips</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;238274376;50621646;l</ClickCode>
+			<ProductCode>01160</ProductCode>
+			<Image alt="">vlasic-chips.png</Image>
+			<Description>Every burger tastes better with Vlasic Hamburger Chips.  And you can say goodbye to wimpy chips when you crunch into a Vlasic Hamburger Dill Chip.  Larger and packed with juicy crunchy flavor for a better burger in every bite.</Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="3" />
+			<Order>3</Order>
+		</Product>
+	</ProductList>
+</Vlasic>

@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Recipe Center</title>
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/recipe-center.js"></script>
+	<script type="text/javascript">
+		document.observe("dom:loaded", onPageLoad);
+		
+		// page specific initialization
+		function onPageLoad() {
+			InitializeAdvancedSearch();
+			InitializePrimaryContentNav();
+			InitializeRelatedContent();
+		}
+		
+		function redirectRecipe() {
+			window.location.replace('index.html');
+		}
+	</script>
+	<link href="stylesheets/default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="container" class="group">
+    	<div id="header">
+        	<div id="primary-navigation"></div>
+            <div id="store-information"></div>
+            <div id="user-login"></div>
+        </div>
+        <div id="recipe-center-page" class="recipe group main">
+			<div id="secondary-navigation" onclick="redirectRecipe()"></div>
+			<div id="search" class="group module full">
+				<a id="toggle-advanced-link" class="toggle-link" style="display:none;">Advanced Search</a><!-- hidden from non js browsers -->
+				<div id="top-search-control" class="group">
+					<input type="text" />
+					<a class="button" href="search-results.html">Search</a>
+				</div>
+				<div id="advanced-search" class="group" style="display:none;">
+					<div class="header">
+						<h2>Advanced Search</h2>
+						<p>Enter a search term that describes what you are looking for, or use the optional search fields to narrow your search.</p>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-term">Keyword</label>
+							<input type="text" class="default-value" id="adv-search-term" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-exclude">Exclude</label>
+							<input type="text" class="default-value" id="adv-search-exclude" name="adv-search-exclude" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div id="special-diet" class="group">
+						<label>Special Diet</label>
+						<ul class="group">
+							<li><input type="radio" name="rblDiet" value="1" />Kosher</li>
+							<li><input type="radio" name="rblDiet" value="2" />Vegetarian</li>
+							<li><input type="radio" name="rblDiet" value="3" />Vegan</li>
+							<li><input type="radio" checked="checked" name="rblDiet" value="4" />None</li>
+						</ul>
+					</div>
+					<div id="dietary-preferences" class="group">
+						<div class="header">
+							<h2>Dietary Preferences</h2>
+							<em>Enter minimum and maximum amount for each attribute. </em>
+						</div>
+						<fieldset class="dietary-range">
+							<label for="min-cal">Calories</label>
+							<input id="min-cal" name="min-cal" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-cal" name="max-cal" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-fat">Total Fat (g)</label>
+							<input id="min-fat" name="min-fat" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-fat" name="max-fat" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-carb">Carbohydrates (g)</label>
+							<input id="min-carb" name="min-carb" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-carb" name="max-carb" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sugar">Sugars (g)</label>
+							<input id="min-sugar" name="min-sugar" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sugar" name="max-sugar" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sodium">Sodium (mg)</label>
+							<input id="min-sodium" name="min-sodium" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sodium" name="max-sodium" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-protein">Protein (g)</label>
+							<input id="min-protein" name="min-protein" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-protein" name="max-protein" type="text" maxlength="4" />
+						</fieldset>
+						<ul id="preference-actions" class="action-group group">
+							<li><a href="#null">Clear preferences</a></li>
+							<li><a href="#null">Load preferences</a></li>
+							<li><a href="#null">Save preferences</a></li>
+						</ul>
+					</div><!-- dietary-preferences -->
+					<div id="search-criteria" class="group">
+						<fieldset>
+							<label for="ddl-courses">Course or Event</label>
+							<select>
+								<option value="0" selected="selected">All courses and events</option>
+								<option value="1">Appetizers</option>
+								<option value="2">Breakfast</option>
+								<option value="3">Brunch</option>
+								<option value="4">Dinner</option>
+								<option value="5">Lunch</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-region">Region</label>
+							<select>
+								<option value="0" selected="selected">All regions</option>
+								<option value="1">African</option>
+								<option value="2">Asian</option>
+								<option value="3">Central American</option>
+								<option value="4">North American</option>
+								<option value="5">South American</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-skill">Skill Level</label>
+							<select>
+								<option value="0" selected="selected">All skill levels</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-holiday">Holidays</label>
+							<select>
+								<option value="0" selected="selected">All holidays</option>
+								<option value="1">Christmas</option>
+								<option value="2">Easter</option>
+								<option value="3">Halloween</option>
+								<option value="4">Thanksgiving</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-time">Total Time</label>
+							<select>
+								<option value="0" selected="selected">All times</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-equipment">Equipment</label>
+							<select>
+								<option value="0" selected="selected">All equipment</option>
+								<option value="1">Blender</option>
+								<option value="2">Grilling and BBQ</option>
+								<option value="3">Deep Fryer</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+					</div><!-- search-criteria -->
+					<div class="group footer">
+						<a class="clear-search" href="#null">Clear all fields</a>
+						<a class="button" href="search-results.html">Search</a>
+					</div>
+				</div><!-- advanced-search -->
+			</div><!-- search -->
+			<div id="dietary-prefs"></div>
+			<div id="quick-search" class="group module full">
+				<div class="header">
+					<h2>Browse by Meal Type</h2>
+				</div>
+				<div class="quick-search-category">
+					<h3>Breakfast <span class="ampersand">&amp;</span> Brunch</h3>
+					<ul>
+						<li><a href="#">Pancakes & Waffles</a></li>
+						<li><a href="#">Eggs</a></li>
+						<li><a href="#">Pastries</a></li>
+						<li><a href="#">Sausage & Bacon</a></li>
+						<li><a href="#">Cereals</a></li>
+					</ul>
+				</div>
+				<div class="quick-search-category">
+					<h3>BBQ <span class="ampersand">&amp;</span> Grilling</h3>
+					<ul>
+						<li><a href="#">Burgers</a></li>
+						<li><a href="#">Brats & Hot Dogs</a></li>
+						<li><a href="#">Steaks</a></li>
+						<li><a href="#">Chicken</a></li>
+						<li><a href="#">Ribs</a></li>
+						<li><a href="#">Seafood</a></li>
+						<li><a href="#">Vegetables</a></li>
+					</ul>
+				</div>
+				<div class="quick-search-category">
+					<h3>Side Dishes</h3>
+					<ul>
+						<li><a href="#">Beans <span class="ampersand">&amp;</span> Lentils</a></li>
+						<li><a href="#">Casseroles</a></li>
+						<li><a href="#">Fruits</a></li>
+						<li><a href="#">Rice</a></li>
+						<li><a href="#">Vegetables</a></li>
+					</ul>
+				</div>
+				<div class="quick-search-category last">
+					<h3>Lunch</h3>
+					<ul>
+						<li><a href="#">Salads</a></li>
+						<li><a href="#">Sandwiches <span class="ampersand">&amp;</span> Wraps</a></li>
+						<li><a href="#">Soups <span class="ampersand">&amp;</span> Stews</a></li>
+					</ul>
+				</div>
+			</div><!-- quick-search -->   
+			<div id="primary-content">	
+				<ul id="primary-content-navigation" style="display:none;"><!-- hidden from non js browsers -->
+					<li><a title="recipes" href="#null">Recipes</a></li>
+					<li><a title="videos" href="#null">Videos</a></li>
+					<li><a title="beverages" href="#null">Beverages</a></li>
+				</ul>
+				<div id="recipes" class="section">
+					<div id="featured-recipe" class="group">
+						<div id="recipe-details" class="details">
+							<h2>Featured Recipe</h2>
+							<h3>Grilled Steak with sauteed mushrooms</h3>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<a href="recipe-full.html">View full recipe</a>
+						</div>
+						<img class="content-thumbnail" src="images/mock_images/balsamicsteaktt.jpg" />
+					</div><!-- featured recipe -->
+					<div id="more-recipes" class="related-content" title="article">
+						<h2>More Recipes</h2>
+						<div class="related-wrapper">
+							<div>
+								<div id="article-1" class="related-article teaser">
+									<img class="content-thumbnail" src="images/mock_images/thumbnail_lemon_chicken.jpg" alt="" />
+									<div class="details">
+										<h3>Lemon Chicken with Rice</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 120 users</span>
+										</div>
+										<a href="#">View Recipe</a>
+									</div>
+								</div>
+								<div id="article-2" class="related-article teaser">
+									<img class="content-thumbnail" src="images/mock_images/thumbnail_buffalo_chicken.jpg" alt="" />
+									<div class="details">
+										<h3>Chicken Wings</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 215 users</span>
+										</div>
+										<a href="#">View Recipe</a>
+									</div>                           			
+								</div>
+								<div id="article-3" class="related-article teaser">
+									<img class="content-thumbnail" src="images/mock_images/thumbnail_default.jpg" alt="" />
+									<div class="details">
+										<h3>Classic Baked Potato</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 10 users</span>
+										</div>
+										<a href="#">View Recipe</a>
+									</div>                              	
+								</div>                         
+							</div>
+							<div class="pager-wrap group">
+								<div id="article-pager" class="related-pager" style="display:none;"><!-- hidden from non js browsers -->
+									<span class="pager-button" href="#" title="page 1">1</span>
+									<span class="pager-button" href="#" title="page 2">2</span>
+									<span class="pager-button" href="#" title="page 3">3</span>
+								</div>
+							</div><!-- pager-wrap -->
+						</div><!-- related-wrapper -->	
+					</div><!-- featured articles -->
+				</div><!-- recipes -->
+				<div id="videos" class="section">
+					<div id="featured-video" class="group">
+						<div class="details">
+							<h2>Featured Video</h2>
+							<h3>Thickening Sauces</h3>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<p>A liaison is a mixture of egg yolk and cream use to slightly thicken warm liquids. This will result in a rich sauce with a smooth, creamy texture.</p>
+							<a class="view-full" href="#">Watch this video</a>
+						</div>
+						<img class="content-thumbnail" src="images/mock_images/thickeningsauces.jpg" />
+					</div><!-- featured-video -->
+					<div id="related-videos" class="related-content" title="videos">
+						<h2>More videos</h2>
+						<div class="related-wrapper">
+							<div>
+								<div id="videos-1" class="related-video teaser">
+									<img alt="spice blends video" src="images/mock_images/spiceblends.jpg"/>
+									<div class="details">
+										<h3>Spice Blends</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 10 users</span>
+										</div>
+										<p>Create your own chili, curry, or BBQ seasoning blends</p>
+										<a href="#">Watch Video</a>
+									</div>
+								</div>
+								<div id="videos-2" class="related-video teaser">
+									<img alt="dry rubs video" src="images/mock_images/dryrubs.jpg" />
+									<div class="details">
+										<h3>Dry Rubs</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 10 users</span>
+										</div>
+										<p>Tips for common rubs for grilling</p>
+										<a href="#">Watch Video</a>
+									</div>
+								</div>
+								<div id="videos-3" class="related-video teaser">
+									<img alt="clarifying butter video" src="images/mock_images/clarifyingbutter.jpg" />
+									<div class="details">
+										<h3>Clarifying Butter</h3>
+										<div class="rating group">
+											<span class="rating-text">Rated</span>
+											<span class="rating-control"></span>
+											<span class="rating-text">by 10 users</span>
+										</div>
+										<p>Technique for making clarified butter and how to use it</p>
+										<a href="#">Watch Video</a>
+									</div>
+								</div>                         
+							</div>
+						</div>
+						<div class="pager-wrap group">	
+							<div id="video-pager" class="related-pager" style="display:none;"><!-- hidden from non js browsers -->
+								<span class="pager-button" title="page 1">1</span>
+								<span class="pager-button" title="page 2">2</span>
+								<span class="pager-button" title="page 3">3</span>
+							</div>
+						</div>
+					</div><!-- related videos -->
+				</div><!-- videos -->
+				<div id="beverages" class="section">
+					<div id="featured-beverage" class="group">
+						<div id="beverage-details" class="details">
+							<h2>Featured Beverage</h2>
+							<h3>Vega del Castillo Garnacha</h3>
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+							<div class="beverage-attributes">
+								<h4>Attributes:</h4>
+								<dl>
+									<dt>Producer:</dt>
+									<dd>Vega del Castillo</dd>
+								</dl>
+								<dl>
+									<dt>Region:</dt>
+									<dd>Navarra, Spain</dd>
+								</dl>
+								<dl>
+									<dt>Varietal:</dt>
+									<dd>Grenache</dd>
+								</dl>
+								<dl>
+									<dt scope="row">Bottle Size:</dt>
+									<dd>750 ML</dd>
+								</dl>
+							</div>
+							<a class="view-full" href="#">View Details</a>
+						</div>
+						<img class="content-thumbnail" src="images/mock_images/wine_small.jpg" alt="wine" width="140" height="211" />
+					</div><!-- featured beverage -->
+					<div id="related-beverages" class="related-content" title="beverages">
+						<h2>More beverages</h2>
+						<div class="related-wrapper">
+							<div>
+								<div id="beverages-1" class="related-beverage teaser">
+									<img alt="" src="images/mock_images/wine3_smaller.jpg" />
+									<h3>Schmitt Söhne Spätlese "Piesporter Michelsberg"</h3>
+									<p>Originally from Spain, this grape comes in both red-wine and white-wine varieties and is often associated with France’s southern Rhone Valley.
+									<br /><a href="#">more...</a></p>										
+								</div>
+								<div id="beverages-2" class="related-beverage teaser">
+									<img alt="" src="images/mock_images/wine2_smaller.jpg" />
+									<h3>Emilio Lustau 'Emperatriz Eugenia' Solera Reserva Oloroso</h3>
+									<p>Originally from Spain, this grape comes in both red-wine and white-wine varieties and is often associated
+									<br /><a href="#">more...</a></p>
+								</div>
+								<div id="beverages-3" class="related-beverage teaser">
+									<img alt="" src="images/mock_images/wine4_smaller.jpg" />
+									<h3>Balbas Crianza </h3>
+									<p>Originally from Spain, this grape comes in both red-wine and white-wine varieties and is often associated with France’s southern Rhone Valley.
+									<br /><a href="#">more...</a></p>
+								</div>                         
+							</div>
+						</div>	
+						<div class="pager-wrap group">	
+							<div id="beverage-pager" class="related-pager" style="display:none;"><!-- hidden from non js browsers -->
+								<span class="pager-button" title="page 1">1</span>
+								<span class="pager-button" title="page 2">2</span>
+							<span class="pager-button" title="page 3">3</span>
+							</div>
+						</div>
+					</div><!-- related-beverages -->
+				</div><!-- beverages -->
+			</div><!-- primary-content -->
+			<div id="secondary-content" class="aside">
+				<div class="module">
+					<h2>Village Market Recipes</h2>
+					<ul>
+						<li><a href="#">Chicken Salad</a></li>
+						<li><a href="#">Grilled Lamb Chops</a></li>
+						<li><a href="#">Chicken Fried Rice</a></li>
+					</ul>
+					<a class="more-link" href="#">more...</a>
+				</div>
+				<div class="module">
+					<h2>My Recipes</h2>
+					<ul>
+						<li><a href="#">BBQ Pork Ribs</a></li>
+						<li><a href="#">Teriyaki Chicken</a></li>
+						<li><a href="#">Nabeyaki Udon</a></li>
+					</ul>
+					<a class="more-link" href="#">more...</a>
+				</div>
+				<div class="module">
+					<h2>Sponsored Recipes</h2>
+					<ul>
+						<li><a href="#">Chicken Broccoli</a></li>
+						<li><a href="#">Orange Glazed Salmon</a></li>
+						<li><a href="#">BBQ Pork Sandwich</a></li>
+					</ul>
+					<a class="more-link" href="#">more...</a>
+				</div>
+			</div><!-- secondary-content -->
+			<div id="meal-planner" class="module full group">
+				<h2>Meal Planner <span>Let us help you plan your meals this week.</span></h2>
+				<div class="section">
+					<h3>Tuesday, July 13</h3>                        
+					<ul>
+						<li><a href="#">Eastern Enlightenment</a></li>
+						<li><a href="#">Red and Green Cabbage Salad</a></li>
+						<li><a href="#">Spiral Pasta with Rich Tomato Sauce</a></li>
+					</ul>
+				</div>
+				<div class="section">
+					<h3>Wednesday, July 14</h3>
+					<ul>
+						<li><a href="#">Chicken and Blue Cheese Wrap</a></li>
+						<li><a href="#">Mexican Pasta Salad</a></li>
+						<li><a href="#">No-Bake Granola Bars</a></li>
+					</ul>
+				</div>
+				<div class="section last">
+					<h3>Thursday, July 15</h3>
+					<ul>
+						<li><a href="#">Chicken and Apples in Cream</a></li>
+						<li><a href="#">Crab &amp; Pasta Gazpacho</a></li>
+						<li><a href="#">Raspberry-Chocolate Bars</a></li>
+					</ul>
+				</div>
+			</div><!-- meal-planner -->
+		</div><!-- recipe-center-page main -->
+		<div id="shopping-list" class="aside"></div>
+    	<div id="footer"></div>
+	</div><!-- container -->
+</body>
+</html>

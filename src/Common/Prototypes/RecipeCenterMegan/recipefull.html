@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Recipe Center - Full Recipe View</title>
+
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js" type="text/javascript"></script>
+<script src="js/recipecenter.js" type="text/javascript"></script>	
+<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="styles/ie7.css">
+<![endif]-->
+
+ 
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+	
+	<img src="Images/header.jpg" alt="header screenshot"/>
+</div><!--header-->
+
+<div id="container">
+	
+<!- -------------------Recipe Center----------------------- -->
+<div id="main">
+
+	<div id="recipeHeader">
+
+		<a href="index.html" class="home-link"><h1>Recipe Center</h1></a>
+		<a class="cheflink" src="#"><img src="Images/askthechef_button.png"/></a>
+		<div id="recipeSearch">
+			<a href="searchresults.html"><img class="search-button" src="images/search_eyeglass.png" alt="Search"></a>
+			<input type="text" id="search-field" maxlength="30" tabindex="1">
+
+			<a src="#" onClick="toggleMyDiv()" class="search-link">Advanced <img alt="dropdown" src="Images/search_downarrow.png"></a>
+		</div>
+<!- -------------------Advanced Search----------------------- -->
+		<div id="advancedSearch" style="display:block">
+	
+			<h2>Advanced Search</h2>
+			<div id="advancedSearchContainer">
+				
+				<form>
+				<div class="search-container">
+					<label for="mealtype">Meal Type</label>
+					<select name="Meal Type" title="Meal Type" id="mealtype">
+						<option>Breakfast</option>
+						<option>Lunch</option>
+						<option>Dinner</option>
+						<option>Snacks/Appetizer</option>
+						<option>Brunch</option>
+					</select><br/>
+					<label for="cuisinetype">Cuisine Type</label>
+					<select name="Meal Type" title="Meal Type" id="cuisinetype">
+						<option>American</option>
+						<option>Chinese</option>
+						<option>Japanese</option>
+						<option>Korean</option>
+						<option>French</option>
+					</select><br/>
+					<label for="mainingredient">Main Ingredient</label>
+					<input name="Meal Type" title="Meal Type" id="mainingredient">
+					
+					<label for="trackcals">Calories</label>
+					<div class="search-slider slider" id="trackcals">
+						<div id="trackcals_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcals_handle_max" class="sliderHandle right"></div>
+						<div id="trackcals_slider_span" class="span"></div>
+					</div>
+					<p id="slidecals" class="sliding"></p>
+
+					<label for="trackchol">Cholesterol</label>
+					<div class="search-slider" id="trackchol">
+						<div id="trackchol_handle_min" class="sliderHandle left"></div>
+  						<div id="trackchol_handle_max" class="sliderHandle right"></div>
+						<div id="trackchol_slider_span" class="span"></div>
+						</div>
+						<p id="slidechol" class="sliding"></p>
+					</div>
+					
+					
+				</div>
+				
+				
+				<div class="search-container">
+					<label for="tracktime">Total Cook and Prep Time</label>
+					<div class="search-slider" id="tracktime">
+						<div id="tracktime_handle_min" class="sliderHandle left"></div>
+  						<div id="tracktime_handle_max" class="sliderHandle right"></div>
+						<div id="tracktime_slider_span" class="span"></div>
+					</div>
+						<p id="slidetime" class="sliding"></p>
+					
+					<label for="trackskill">Skill Level</label>
+					<div class="search-slider" id="trackskill">
+						<div id="trackskill_handle_min" class="sliderHandle left"></div>
+  						<div id="trackskill_handle_max" class="sliderHandle right"></div>
+						<div id="trackskill_slider_span" class="span"></div>
+					</div>
+						<p id="slideskill" class="sliding"></p>
+					
+					<label for="trackfat">Total Fat Content</label>
+					<div class="search-slider" id="trackfat">
+						<div id="trackfat_handle_min" class="sliderHandle left"></div>
+  						<div id="trackfat_handle_max" class="sliderHandle right"></div>
+						<div id="trackfat_slider_span" class="span"></div>
+					</div>
+						<p id="slidefat" class="sliding"></p>
+					
+					<label for="trackcarbs">Carbohydrates</label>
+					<div class="search-slider" id="trackcarbs">
+						<div id="trackcarbs_handle_min" class="sliderHandle left"></div>
+  						<div id="trackcarbs_handle_max" class="sliderHandle right"></div>
+						<div id="trackcarbs_slider_span" class="span"></div>
+					</div>
+						<p id="slidecarbs" class="sliding"></p>
+			
+				</div>
+				<div class="search-container">
+					<label for="">Vegetarian</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegetarian" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegetarian" value="no"/>
+							<p>No</p>
+						</div>
+						
+					<label for="">Vegan</label>
+						<div class="radioOptions">
+							<input type="radio" name="vegan" value="yes" />
+							<p>Yes</p>
+							<input type="radio" name="vegan" value="no" />
+							<p>No</p>
+						</div>
+							
+					<label for="trackprot">Protein</label>
+					<div class="search-slider" id="trackprot">
+						<div id="trackprot_handle_min" class="sliderHandle left"></div>
+  						<div id="trackprot_handle_max" class="sliderHandle right"></div>
+						<div id="trackprot_slider_span" class="span"></div>
+					</div>
+						<p id="slideprot" class="sliding"></p>
+					
+					
+					
+					<label for="tracksalt">Sodium</label>
+					<div class="search-slider" id="tracksalt">
+						<div id="tracksalt_handle_min" class="sliderHandle left"></div>
+  						<div id="tracksalt_handle_max" class="sliderHandle right"></div>
+						<div id="tracksalt_slider_span" class="span"></div>
+					</div>
+						<p id="slidesalt" class="sliding"></p>
+				</div>
+				<div id="searchButtons">
+					<a class="button" href="searchresults.html">
+						<span>Search Recipes</span></a>
+					<a class="button" href="#">
+						<span>Apply Settings to My Profile</span></a>
+				</div>
+				</form>	
+			</div>
+
+		
+	</div>
+<script type="text/javascript">
+		setSliders();
+	</script>
+
+<!- -------------------End Advanced Search----------------------- -->
+	
+	<div id="recipeFullSide">
+		<h2>Related Recipes</h2>
+		<ul class="thumb-list" id="relatedRecipes">
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/lamb_large.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>Lamb with Apple Chutney</h4></a>
+			</li>
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/apples.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>Apple Cranberry Coffeecake</h4></a>
+			</li>
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/cookies.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>White Chocolate and Cranberry Cookies</h4></a>
+			</li>
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/burritos.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>Chicken and Bean stuffed Burritos with Pineapple Pico de Gio</h4></a>
+			</li>
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/shrimp_kebabs.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>Grilled Shrimp with a Mirin-Soy Dipping Sauce</h4></a>
+			</li>
+			<li class="relatedRecipeThumb">
+				<div class="sideImageHolder">
+				<img src="Images/lamb_large.jpg" alt="" width="150px"/>
+				</div>
+				<a href="recipefull.html"><h4>Lamp Chops with Asparagus Spears</h4></a>
+			</li>
+			
+		</ul>
+		<a href="#">More...</a>
+	</div><!--recipeFullSide-->
+	
+	
+	
+	
+	
+	
+	
+	<div id="recipeFullMain">
+		<h1>Featured Recipe</h1>
+		<h2>Lamb Chops with Aspargus Spears</h2>
+		<div id="recipeImgIngredients" class="recipeFullSection">
+			<img class="recipeFeatureImage" src="Images/Lamb_large.jpg">
+			<div id="scaleRecipeDiv">
+				<div id="servingInfo">
+				<span class="label">Serving Size:</span> 5 oz.
+				</div>
+				<label for="scaleRecipe">Scale Recipe to: </label><br/>
+				<input name="ScaleRecipe" title="Meal Type" id="ScaleRecipe" value="4">Servings
+				<a class="button"><span>Scale</span></a>
+			</div>
+			<h2>Ingredients</h2>
+			<ul class="ingredient-list">
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />4 lamb chops</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />2 tbsp butter</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />salt</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />Pepper</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />1 tsp Ground Coriander</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />1/2 cup beef broth</li>
+				<li class="ingredient"><input type="checkbox" name="vehicle" value="Bike" />1 1lb fresh Asparagus, ends cut</li>
+			</ul>
+			
+		</div><!--recipeFullSection-->
+		
+		
+		
+		<div id="recipeFullInfo">
+			<div class="made-box">
+				<span class="made-box-text">Made</span>
+				<span class="made-box-number">{24}</span>
+				<span class="made-box-text">times</span>
+			</div>
+			
+			<div class="recipeRatings">*****</div>
+			
+			<a class="made-link" href="">I've made this 3 times</a>
+			
+			<div class="recipeFullDescription">
+				<p>This meal makes a great dinner for two, and is surprisingly easy to make. Wow your next date with your &#8221;advanced&#8221; cooking skills with this recipe.</p>
+			</div>
+			
+			<div id="prepInfo">
+				<p class="preptitle">Preparation Time:</p>
+				<p class="preptitle">Cooking Time:</p>
+				<p>2 min</p>
+				<p>25 minutes</p>
+			</div>
+			<div id="recipeShare">
+				<ul>
+					<li><a href="#"><img src="Images/check_icon.png" alt=""/>Add Selected to List</a></li>
+					<li><a href="#"><img src="Images/check_icon.png" alt=""/>Add All Items to List</a></li>
+					<li><a href="#"><img src="Images/email_icon.png" alt=""/>Email Recipe</a></li>
+				</ul>
+			</div>
+		</div><!--recipeFullInfo-->
+		
+		
+		
+		
+		<div class="recipeFullSection">
+			<h2>Cooking Instructions</h2>
+			<p>In a cast-iron pan (or non-stick), set to medium-high heat and melt 1 tbsp of butter until melted. Coat lamb chops in a dry rub with coriander, cumin, and salt and pepper to taste. Add lamb chops to the pan, cooking until brown on both sides (about 5 minutes per side). Remove lamb chops and set aside.</p>
+			<p>Add red wine and broth to the pan to deglaze the pan. Cook off excess liquid untill you have a thick sauce. Drizzle sauce over lamb chops on a serving tray.</p>
+			<p> In a separate skillet, heat the rest of the butter until melted over medium heat. Add the aspargus and sprinkle with salt and pepper to taste. Cook until apargus is bright green and well done, but not mushy. Serve immediately. Serves 4.</p>
+			<div id="recipeFullSocial">
+				<div><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+				<div><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com%2Fpage%2Fto%2Flike&amp;layout=standard&amp;show_faces=false&amp;width=200&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:35px;" allowTransparency="true"></iframe></div>
+			</div>
+		</div><!--recipeFullSection-->
+		<div class="recipeFullSection">
+			<h2>Nutrition Information</h2>
+			<p>385 Calories per serving</p>
+			<p>15 grams of Fat per serving</p>
+			<p>2 mg of Cholesterol per serving</p>
+			<p>Complete Nutrition Information is not available for this recipe yet.</p>
+		</div><!--recipeFullSection-->
+	</div><!--recipeFullMain-->
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div><!--main-->	
+<!- ------------------------Sidebar------------------------ -->
+	
+	<div id="sidebar">
+		<img src="Images/sidebar.jpg" alt="sidebar" width="300" height="486" />
+	</div><!--sidebar-->
+
+
+</div><!-- container-->
+</div><!--wrapper-->
+
+
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

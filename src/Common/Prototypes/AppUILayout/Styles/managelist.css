@@ -1,0 +1,103 @@
+/*  Manage List styles for App UI  - apply classes to signup/manage apps when able.
+
+/*---------------------------*/
+/* !Main Styles */
+/*---------------------------*/
+
+/*put this somewhere common*/
+.favorite-link { display:block; width: 27px; height: 26px; text-indent: -9999px; overflow: hidden; background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/favorite-removed.png') no-repeat;}
+.favorite-link-added	{ background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/favorite-added.png') no-repeat;}
+
+
+.gsn-managelist	{
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/signup/signupbg.jpg') repeat;
+	float:left;
+	padding: 16px;
+	width: 95%;
+}
+.gsn-managelist h1{ 
+	color: #534741; font-size: 240%; font-family: 'Shadows Into Light', cursive; 
+	text-align: center; margin: 0 0 20px;
+}
+.gsn-managelist .ui-widget-header { 
+	background:None; border:none;
+}
+.gsn-managelist .ui-widget-content { 
+	background:none;
+	border:none;
+}
+.gsn-managelist .ui-tabs-panel{
+	float:left;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid #DDDDDD;
+}
+.gsn-managelist .ui-tabs .ui-tabs-nav li.ui-tabs-selected{ 
+	border-color: #DDDDDD;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+	background:rgba(255, 255, 255, 0.8);
+}
+.gsn-managelist .ui-tabs .ui-tabs-nav li {border:none; background:none;}
+
+.current-list-menu{
+	width: 100%; float:left; margin: 10px 10px 0;
+}
+.current-list-menu li{
+	float:left;
+}
+
+.current-list-menu li a.save,
+.current-list-menu li a.email,
+.current-list-menu li a.newlist	{
+	padding: 3px 5px 5px 30px; float:left;
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/managelist/current_list_menu_bg.png') 0 0 no-repeat; 
+}
+.current-list-menu li a.save {	background-position: 0 1px;}
+.current-list-menu li a.email {	background-position: 0 -31px;}
+.current-list-menu li a.newlist {	background-position: 0 -61px;}
+
+.current-list-menu li #AddOwnItem {
+	background: #CEE5B7; padding: 5px 15px; border-radius: 5px;
+} 
+
+.current-list-menu .addownitem-box {
+	position: absolute; background: #CEE5B7; width: 150px; padding: 15px;
+}
+/*---------------------------*/
+/* !Current List Product display */
+/*---------------------------*/
+#current-list-items {
+	float:left; width: 100%;
+}
+.current-list-group{
+	float:left; width:100%;
+}
+.current-list-group h2	{ 
+	background: #eee; padding: 5px 0; float:left; width: 100%;
+}
+.manage-list-content	{ 
+	float:left; width: 100%;
+}
+
+.favorite-link	{
+
+}
+
+.manage-list-content p, .manage-list-content a.edit-item { font-size: 80%;}
+.manage-list-content a.edit-item { text-decoration: underline;}
+.manage-list-content li { 
+	float:left; border-bottom: 1px solid #ccc; width: 100%; padding: 10px 0;
+}
+.manage-list-content li span.sort {
+	width: 2%;	float:left; margin: 0 10px; text-indent: -9999px; overflow:hidden; height: 75px; margin-bottom: 10px;
+	background: url('http://foodcity.beta.groceryshopping.net/Assets/Common/Prototypes/AppUILayout/Images/managelist/sortbg.png') center left no-repeat; 	
+}
+.manage-list-content li img.thumb {
+	float:left; max-width: 50px; max-height: 75px; margin: 0 10px;
+}
+.manage-list-content .favorite-link	{ margin: 26px 10px; float:left;}
+.manage-list-content li .product-info { width: 62%; float:left; margin: 0 10px 0 0;}
+
+.manage-list-content li a.remove-item {
+	background: red; border-radius: 10px 10px 10px 10px; padding: 0 5px; color: #FFF;}
+li.editing{	background: #CEE5B7; border: 1px solid green;}

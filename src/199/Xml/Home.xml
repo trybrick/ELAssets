@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Home>
+	<Modules>
+		<Module>
+			<Title>In The Community</Title>
+			<Subtitle>Dollar$ for School$</Subtitle>
+			<Description>Country Mart works hard to give back to our communities. Find out what we're doing now.</Description>
+			<Image>DFSLogo.gif</Image>
+			<Url>/Community.aspx</Url>
+		</Module>
+		<Module type="coupons">
+			<Title>Savings Center</Title>
+			<Subtitle>Print brand name coupons and use them in-store! Save even more at Country Mart when you use our digital or print at home coupons!</Subtitle>
+			<Url>/Shop/Coupons.aspx</Url>
+		</Module>
+		<Module>
+			<Title>Life At Its Best</Title>
+			<Subtitle>Quick access to accurate, meaningful info and food tips</Subtitle>
+			<Description>We know you don't want to just live life - you want to live life at its best.</Description>
+			<Image>family_picture.jpg</Image>
+			<Url>/Life-At-Its-Best.aspx</Url>
+		</Module>
+		<Module>
+			<Title>Comanche Country</Title>
+			<Subtitle>There's a lot happening in Comanche County and at the Country Marts in Lawton.</Subtitle>
+			<Description>Check here often for special events and promotions.</Description>
+			<Image>post_note.jpg</Image>
+			<Url>/Promotions.aspx</Url>
+		</Module>
+		<Module>
+			<Title>The Country Mart Card</Title>
+			<Subtitle></Subtitle>
+			<Description></Description>
+			<Image width="220">cm_rewards_card.jpg</Image>
+			<Url>/Loyalty.aspx</Url>
+		</Module>
+		<Module type="featuredRecipe">
+			<Title>Recipe Of The Day</Title>
+		</Module>
+	</Modules>
+	<ContentObjects> 
+	    <ContentObject> 
+	        <Name>manufacturercoupons</Name> 
+	    </ContentObject> 
+		<ContentObject>
+			<Name>quicksearch</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>advancedsearch</Name>
+		</ContentObject>
+		<ContentObject>
+			<Name>recipecenterinformation</Name>
+		</ContentObject>
+	</ContentObjects>
+</Home>

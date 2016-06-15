@@ -1,0 +1,72 @@
+﻿/*
+   style.css
+   Duncan Hines Landing Page
+   
+   Copyright 2009 Grocery Shopping Network All rights reserved.
+*/
+div#PromoContainer div { float:left; *float:none; }
+div.CategoryDiv { border-bottom:1px solid #666; clear:both; margin:2em 0; padding-bottom:1em;}
+div.CategoryImage { width:35%; }
+div.CategoryDetails { width:65%; }
+div.ProductRow { clear:both; margin:0.5em 0;}
+span.ProductName { display:block; float:left; }
+
+
+div.ProductRow img { float:left; }
+
+div#PromoContainer { font-family:Tahoma,Times,serif !important; }
+
+div#PromoContainer h2 {
+	border:none;
+	color:#000;
+	font-size:22px;
+	font-weight:bold;
+}
+
+div#PromoContainer div { 
+	width:98%;
+ }
+ 
+div.CategoryDetails p { 
+	font-size:15px;
+	font-style:italic;
+	font-weight:bold;
+ }
+ 
+ div.ProductRow { 
+	border-top: 1px solid #666; 
+	padding-top: 2em;
+}
+
+span.ProductName { 
+	display:block;
+	float:left;
+	font-family:Tahoma,Times,serif;
+	font-size:15px;
+	font-weight:bold;
+	margin-left:1em;
+ }
+ 
+ div#PromoContainer a.button, span.ProductName { 
+	position:relative;
+	top:50px;
+	left:20px;
+}
+
+
+div#PromoContainer a.button, div#PromoContainer a.button:hover { 
+	background-image:url(/Assets/Common/Images/red_button_right.gif);
+}
+
+div#PromoContainer a.button:hover { 
+	background-position:right -18px;
+}
+
+div#PromoContainer a.button span, div#PromoContainer a.button span:hover { 
+	background-image:url(/Assets/Common/Images/red_button_left.gif);	
+}
+
+div#PromoContainer a.button span:hover { 
+	background-position:0 -18px;
+}
+

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cooking Videos</title>
+	<script type="text/javascript" src="js/prototype.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/recipe-center.js"></script>
+	<script type="text/javascript">
+		document.observe("dom:loaded", onPageLoad);
+		function onPageLoad() {
+			InitializeAdvancedSearch();
+		}
+	</script>
+	<link href="stylesheets/default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="container" class="group">
+    	<div id="header">
+        	<div id="primary-navigation"></div>
+            <div id="store-information"></div>
+            <div id="user-login"></div>
+        </div>
+        <div id="cooking-videos-page" class="recipe main group">
+			<div id="secondary-navigation" onclick="redirectRecipe()"></div>
+			<div id="search" class="group module full">
+				<a id="toggle-advanced-link" class="toggle-link" style="display:none;">Advanced Search</a><!-- hidden from non js browsers -->
+				<div id="top-search-control" class="group">
+					<input type="text" />
+					<a class="button" href="search-results.html">Search</a>
+				</div>
+				<div id="advanced-search" class="group" style="display:none;">
+					<div class="header">
+						<h2>Advanced Search</h2>
+						<p>Enter a search term that describes what you are looking for, or use the optional search fields to narrow your search.</p>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-term">Keyword</label>
+							<input type="text" class="default-value" id="adv-search-term" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div class="group">
+						<fieldset>
+							<label for="adv-search-exclude">Exclude</label>
+							<input type="text" class="default-value" id="adv-search-exclude" name="adv-search-exclude" value="" onfocus="advancedSearchFocus(this)" />
+						</fieldset>
+					</div>
+					<div id="special-diet" class="group">
+						<label>Special Diet</label>
+						<ul class="group">
+							<li><input type="radio" name="rblDiet" value="1" />Kosher</li>
+							<li><input type="radio" name="rblDiet" value="2" />Vegetarian</li>
+							<li><input type="radio" name="rblDiet" value="3" />Vegan</li>
+							<li><input type="radio" checked="checked" name="rblDiet" value="4" />None</li>
+						</ul>
+					</div>
+					<div id="dietary-preferences" class="group">
+						<div class="header">
+							<h2>Dietary Preferences</h2>
+							<em>Enter minimum and maximum amount for each attribute. </em>
+						</div>
+						<fieldset class="dietary-range">
+							<label for="min-cal">Calories</label>
+							<input id="min-cal" name="min-cal" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-cal" name="max-cal" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-fat">Total Fat (g)</label>
+							<input id="min-fat" name="min-fat" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-fat" name="max-fat" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-carb">Carbohydrates (g)</label>
+							<input id="min-carb" name="min-carb" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-carb" name="max-carb" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sugar">Sugars (g)</label>
+							<input id="min-sugar" name="min-sugar" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sugar" name="max-sugar" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-sodium">Sodium (mg)</label>
+							<input id="min-sodium" name="min-sodium" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-sodium" name="max-sodium" type="text" maxlength="4" />
+						</fieldset>
+						<fieldset class="dietary-range">
+							<label for="min-protein">Protein (g)</label>
+							<input id="min-protein" name="min-protein" type="text" maxlength="4" />
+							<span>-</span>
+							<input id="max-protein" name="max-protein" type="text" maxlength="4" />
+						</fieldset>
+						<ul id="preference-actions" class="action-group group">
+							<li><a href="#null">Clear preferences</a></li>
+							<li><a href="#null">Load preferences</a></li>
+							<li><a href="#null">Save preferences</a></li>
+						</ul>
+					</div><!-- dietary-preferences -->
+					<div id="search-criteria" class="group">
+						<fieldset>
+							<label for="ddl-courses">Course or Event</label>
+							<select>
+								<option value="0" selected="selected">All courses and events</option>
+								<option value="1">Appetizers</option>
+								<option value="2">Breakfast</option>
+								<option value="3">Brunch</option>
+								<option value="4">Dinner</option>
+								<option value="5">Lunch</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-region">Region</label>
+							<select>
+								<option value="0" selected="selected">All regions</option>
+								<option value="1">African</option>
+								<option value="2">Asian</option>
+								<option value="3">Central American</option>
+								<option value="4">North American</option>
+								<option value="5">South American</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-skill">Skill Level</label>
+							<select>
+								<option value="0" selected="selected">All skill levels</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-holiday">Holidays</label>
+							<select>
+								<option value="0" selected="selected">All holidays</option>
+								<option value="1">Christmas</option>
+								<option value="2">Easter</option>
+								<option value="3">Halloween</option>
+								<option value="4">Thanksgiving</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-time">Total Time</label>
+							<select>
+								<option value="0" selected="selected">All times</option>
+								<option value="1">Novice</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<label for="ddl-equipment">Equipment</label>
+							<select>
+								<option value="0" selected="selected">All equipment</option>
+								<option value="1">Blender</option>
+								<option value="2">Grilling and BBQ</option>
+								<option value="3">Deep Fryer</option>
+								<option value="4">Expert</option>
+							</select>
+						</fieldset>
+					</div><!-- search-criteria -->
+					<div class="group footer">
+						<a class="clear-search" href="#null">Clear all fields</a>
+						<a class="button" href="search-results.html">Search</a>
+					</div>
+				</div><!-- advanced-search -->
+			</div><!-- search -->
+			<div id="primary-content">
+				<div id="video-player-wrap" class="module full group">
+					<div class="header">
+						<h2>Broiled Steak</h2>
+					</div>
+					<div id="video-player-main">
+						<img src="images/mock_images/video_player.jpg" alt="" />
+						<div id="social" class="group">
+							<div class="like"><a href="#null" class="button"><span>Like</span></a><span class="summary">3,017 people like this</span></div>
+							<div class="tweet"><a href="#null" class="button"><span>Tweet</span></a></div>
+						</div>
+						<div class="details">
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 10 users</span>
+							</div>
+						</div>
+					</div>
+					<div id="video-navigation" class="aside">
+						<div class="result group">
+								<img class="content-thumbnail" alt="" src="images/mock_images/dryrubs.jpg" />
+								<div class="details">
+									<h3>Dry Rubs</h3>
+									<div class="rating group">
+										<span class="rating-text">Rated</span>
+										<span class="rating-control"></span>
+										<span class="rating-text">by 10 users</span>
+									</div>
+									<a href="#null" title="Click to watch this video">Watch video</a>
+								</div>
+						</div>
+						<div class="result group">
+								<img class="content-thumbnail" alt="" src="images/mock_images/thumbnail_frying_chicken.jpg" />
+								<div class="details">
+									<h3>Frying Chicken</h3>
+									<div class="rating group">
+										<span class="rating-text">Rated</span>
+										<span class="rating-control"></span>
+										<span class="rating-text">by 5 users</span>
+									</div>
+									<a href="#null" title="Click to watch this video">Watch video</a>
+								</div>
+						</div>
+						<div class="result group">
+								<img class="content-thumbnail" alt="" src="images/mock_images/thumbnail_cutting_chicken.jpg" />
+								<div class="details">
+									<h3>Cutting Chicken</h3>
+									<div class="rating group">
+										<span class="rating-text">Rated</span>
+										<span class="rating-control"></span>
+										<span class="rating-text">by 2 users</span>
+									</div>
+									<a href="#null" title="Click to watch this video">Watch video</a>
+								</div>
+						</div>
+					</div><!-- video-navigation -->
+				</div><!-- video-player-wrap -->
+				<div id="featured-videos-wrap" class="module full">
+					<h2>Featured Videos</h2>
+					<div class="group">
+						<div class="section">
+							<h3>Lobster</h3>
+							<img class="content-thumbnail" href="#null" src="images/mock_images/video_thumbs_lobster.jpg" alt="Lobster" />
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 2 users</span>
+							</div>
+						</div>
+						<div class="section">
+							<h3>Baked Salmon</h3>
+							<img class="content-thumbnail" href="#null" src="images/mock_images/video_thumbs_salmon.jpg" alt="Lobster" />
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 5 users</span>
+							</div>
+						</div>
+						<div class="section">
+							<h3>Baking Fish</h3>
+							<img class="content-thumbnail" href="#null" src="images/mock_images/video_thumbs_fish.jpg" alt="Lobster" />
+							<div class="rating group">
+								<span class="rating-text">Rated</span>
+								<span class="rating-control"></span>
+								<span class="rating-text">by 1 users</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- related-recipes -->
+			</div><!-- primary-content -->
+			<div id="secondary-content" class="aside">
+
+			</div><!-- secondary-content -->
+		</div><!-- recipe-full-page -->
+		<div id="shopping-list" class="aside"></div>
+    	<div id="footer"></div>
+    </div><!-- container -->
+</body>
+</html>

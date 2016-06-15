@@ -1,0 +1,113 @@
+﻿body 					{font-size:.75em; height:100%; background-color:#FFFFFF; 
+					font-weight:normal; font-style:normal; font-family: Arial, Helvetica, sans-serif; color:black; margin-top:10px; 
+					margin-left:10px ; margin-right:10px; padding-left:0; padding-right:0;}
+
+#container 				{display:block; background-color:#FFFFFF; margin:0; padding:0; width: 100%; }
+#main					{display:block; float:left; padding:0; margin:0; width:100%; }
+#sidebar, #recipesidebar		{display:none;}
+#StoreHeader, #header, #header-wrapper				{display:none;}
+#secondary-navigation { display:none; }
+#Recipe #socialControls {display:none;}
+#bkIFrame { display:hidden; }
+#banner-advertisement { display:none; }
+.header_wrapper { display:none; }
+.nav_wrapper { display:none; }
+#footer-outer { display:none; }
+.footer-bottom { display:none; }
+#bkIFrame { display:none; }
+
+/* gerrity's */
+#footerContainer {display:none;}
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+body:first-of-type #footerContainer {display:none;}
+
+/* for savemart */
+#tbl_wrapper, #section_footer {display:none;}
+#recipeoptions, .ShowHideMetric		{display:none;}
+#GsnFooter				{display:none;}
+#chainlogo				{display:block;}
+#wrapper, .mod_contentitemhdr,
+#wrap39, #subwrap39			{display:none;}
+#footer, #copyright			{display:none;}
+
+/*** hyvee ***/
+#headerTop, #hyvee_container		{display:none;}
+#hyveeFooter			{display:none;}
+
+/*** owfg ***/
+.saveonheader, 
+.coopersHeader, 
+.overwaiteaHeader,
+.pricesmartheader,
+.urbanfareHeader	{display:none;}
+
+#OGSInvoice				{margin:0; width:7in; padding:0; overflow: visible!important; font-size:10pt;}
+#OGSInvoice table		{overflow: visible!important}
+.invoiceitems				{width:100%;}
+.invoiceinformation			{width:50%;}
+a.button				{display:none;}
+
+#Recipe					{font-size:12pt; width:7in;}
+#Recipe input				{display:none;}
+#Recipe td				{padding:4px; vertical-align:top;height:auto;}
+#Recipe tr				{vertical-align:top; height:auto;}
+#Recipe td table			{font-size:100%; margin:0; padding:0; border:0; border-collapse:collapse;}
+#Recipe td table td			{vertical-align:top; padding:0px; height:auto;}
+#Recipe h2				{margin-top:12px; color:#000000; font-size:12pt; width:100%; border-bottom:1px solid black;}
+#Recipe h3				{color:#000000; font-size:110%; }
+#RecipeFull1_lblPrepInstructions br	{clear:both; display:block; margin:6px 0 6px 0;}
+#RecipeFullPage { width:576pt; }
+
+/*** nutrition table ***/
+#NutritionTable				{clear:both; font-family:Arial; width:96%; margin:12px 0 0 12px; border:1px solid black; padding:4px; border-collapse:collapse;}
+#NutritionTable	h2			{font-size:200%; color:#000000; border:0px none; margin:0}
+#NutritionTable hr.thin			{color:black; border:black; background-color:black; margin:0; height:1px;}
+#NutritionTable hr.thick		{color:black; border:black; background-color:black; margin:0; height:3px;}
+#NutritionTable:after			{content: ""; display: block; height: 0; clear: both }
+.NutritionLine				{width:100%; float:left; text-align:left; margin:0px 2px; padding:0; border-collapse:collapse;}
+.NutritionFacts				{border:1px solid black; padding:4px; margin:0; padding:0; border-collapse:collapse;}
+.NutritionLineItem			{width:49.9%; float:left; text-align:left; margin:0px; padding:0; }
+.NutritionLineElement			{width:49.9%; float:left; text-align:left; margin:0px; padding:0; border-bottom:1px solid black; }
+.NutritionLineElementRight		{width:49.9%; float:left; text-align:right; margin:0px; padding:0; border-bottom:1px solid black; }
+
+div#lightwindow_overlay, div#lightwindow,
+div#lightwindow_container, div#lightwindow_title_bar_inner,
+div#lightwindow_title_bar_close_link,
+div#lightwindow_stage, div#lightwindow_data_slide	{display:none;}
+
+.globalRatingText,
+.rating_container,
+#LeftNavBar		{display:none;}
+
+#winecontent,
+.winebox				{display:none;}
+
+/* =Notifications */
+#Notification, #Notification_Popup { display:none; }
+
+/* =Recipe Full */
+.AdMaster,
+#leftsearchbar,
+#searchControls,
+.averageRating,
+#rating-wrapper,
+.recipe-actions,
+.relatedContent { display:none; }
+.sponsorship a img {border:none;}
+#recipeFullWrapper * { float:none !important; }
+
+#steps123 { display:none; }
+
+/* Ad Internal */
+#adInternal, .horizontal-banners {clear:both; float:left; margin-top:1em; text-align:center; width:100%;}
+
+#adInternal .group {
+	margin-bottom: .5em;
+}
+
+/* =Checkout Coupons */
+#OGSInvoice #couponContainerDiv { border: 1px dashed #999999;clear: both;display: inline;float: left;height: auto;margin: 0 0 5px 5px;max-height: 250px;padding: 3px;width: 640px; }
+#OGSInvoice .disclaimer {clear:left;}
+#OGSInvoice #couponContainerDiv #productImage {height: auto;margin: 6px 0 0;max-height: 100px;max-width: 150px;width: auto;}
+#OGSInvoice #couponContainerDiv #barcodeImage {height: auto;margin: 6px 0 0;max-height: 80px;max-width: 150px;}
+#OGSInvoice #couponContainerDiv #chainLogoImage {height: auto;max-height: 30px;width: auto;}

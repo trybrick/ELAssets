@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>##root##/</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>About Us</Title>
+		<Link>##root##/Contact/AboutUs.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Weekly Ads</Title>
+		<Link>##root##/Shop/WeeklyAd.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Shopping List</Title>
+		<Link>##root##/Shop/Browse.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Recipes</Title>
+		<Link>##root##/Recipes/RecipeCenter.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Coupons</Title>
+		<Link>##root##/Shop/Coupons.aspx</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Contact Us</Title>
+		<Link>##root##/Contact/</Link>
+	</MenuItem>
+	<MenuItem>
+		<Title>Employment</Title>
+		<Link>##root##/Employment/</Link>
+	</MenuItem>
+    <MenuItem>
+        <Title>Yahoo</Title>
+        <Link>http://www.yahoo.com</Link>
+    </MenuItem>
+</TopLevelNavigation>

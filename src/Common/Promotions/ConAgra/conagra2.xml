@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HoneyBunches>
+	<Brand reg="true"></Brand>
+	<BrandSiteUrl></BrandSiteUrl>
+	<Logo alt="">conagra_header.jpg</Logo>
+	<HeadingText></HeadingText>
+	<PageDescriptText></PageDescriptText>
+	<CSS>
+		<Stylesheet>##root##/Assets/Common/Promotions/ConAgra/Assets/CSS/screen.css</Stylesheet>
+		<WrapID>conagra-wrap</WrapID>
+		<HeaderID>conagra-header</HeaderID>
+		<MainID>conagra-main</MainID>
+		<ProductDetailClass>conagra-product</ProductDetailClass>
+	</CSS>
+	<DepartmentID>10339</DepartmentID>
+	<ImagePath>##root##/Assets/Common/Promotions/ConAgra/Assets/Images/</ImagePath>
+	<MasterLayout columns="2" rows="3"></MasterLayout>
+	<FooterImage></FooterImage>
+	<ProductList>
+		<Product>
+			<Title>Marie Callender&#8217;s® Bakes</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;237442285;60248903;i?</ClickCode>
+			<LinkURL>http://bricks.coupons.com/Bstart.asp?o=83578&amp;c=CA&amp;p=bgInjawE</LinkURL>
+			<ManufacturerCode>21131</ManufacturerCode>
+			<ProductCode>66001</ProductCode>
+			<Image alt="">MCBakesBurst.jpg</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="1" />
+			<Order>1</Order>
+		</Product>
+		<Product>
+			<Title>Banquet® Dinners</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;237442495;60248903;l?</ClickCode>
+			<LinkURL>http://bricks.coupons.com/Bstart.asp?o=83579&amp;c=CA&amp;p=3u2xrTy0</LinkURL>
+			<ManufacturerCode>31000</ManufacturerCode>
+			<ProductCode>66002</ProductCode>
+			<Image alt="">BanquetDinners.jpg</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="1" col="2" />
+			<Order>2</Order>
+		</Product>
+		<Product>
+			<Title>Marie Callender&#8217;s® Fresh Flavor Steamer® Entrees, Healthy Choice® Steaming Entrees or Kid Cuisine®</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;237442494;60248903;k?</ClickCode>
+			<LinkURL>http://bricks.coupons.com/Bstart.asp?o=83580&amp;c=CA&amp;p=roIDUc46</LinkURL>
+			<ManufacturerCode>21131</ManufacturerCode>
+			<ProductCode>66003</ProductCode>
+			<Image alt="">KC_HC_MC_cluster.jpg</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="1" />
+			<Order>3</Order>
+		</Product>
+		<Product>
+			<Title>Banquet® Fruit Pies</Title>
+			<ClickCode>http://ad.doubleclick.net/clk;237442493;60248903;j?</ClickCode>
+			<LinkURL>http://bricks.coupons.com/Bstart.asp?o=83581&amp;c=CA&amp;p=F3BYrQCk</LinkURL>
+			<ManufacturerCode>31000</ManufacturerCode>
+			<ProductCode>66004</ProductCode>
+			<Image alt="">BanquetFruitPies.jpg</Image>
+			<Description></Description>
+			<SubHeading></SubHeading>
+			<Layout row="2" col="2" />
+			<Order>4</Order>
+		</Product>
+	</ProductList>
+</HoneyBunches>

@@ -1,0 +1,811 @@
+﻿/* Festival Foods
+--------------------------------------------------*/
+html {
+    height: 100%;
+    background: none;
+}
+body {
+    font-size: 0.7em;
+    height: 100%;
+    background:  #FEF2A0 url(/Assets/184/Images/background_body.jpg) repeat-x scroll 0 0;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial,Helvetica,sans-serif;
+    color: black;
+    margin-top: 0px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+h2 { color: #5D8C2E }
+th { background-color: #5d8c2e }
+a:link,
+a:visited,
+a:active {
+    font-weight: bold;
+    color: #5D8C2E;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #5D8C2E;
+    text-decoration: underline;
+}
+
+/* layout
+--------------------------------------------------*/
+#container { background: transparent none }
+.main-wrapper {
+    background-color: #FFF;
+    border: 1px solid #999999;
+    border-bottom: none;
+    padding: 3px 4px 4px 4px;
+}
+#sidebar,
+#recipesidebar { margin: 12px 0 0 10px }
+#GsnFooter {
+    border: 1px solid #999999;
+    border-top: none;
+    margin-top: 0;
+    padding: 10px 4px;
+}
+div#SignInDiv div#main {
+    width: 570px;
+    margin-bottom: 100px;
+}
+#imgSubHeader {
+    clear: both;
+    float: left;
+}
+#Inventory h2 {
+    display: block;
+    width: 570px;
+}
+
+/* tabs
+--------------------------------------------------*/
+#secondary-navigation {
+    float: left;
+    width: 100%;
+    background: url('/Assets/Common/Images/bg_white.gif') repeat-x bottom;
+    line-height: normal;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#secondary-navigation ul {
+    margin: 0;
+    padding: 10px 10px 0 65px;
+    list-style: none;
+}
+#secondary-navigation li {
+    float: left;
+    background: url('/Assets/184/Images/left.gif') no-repeat left top;
+    margin: 0;
+    padding-left: 9px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#secondary-navigation a {
+    float: none;
+    display: block;
+    background: url('/Assets/184/Images/right.gif') no-repeat right top;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 6px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+#secondary-navigation #current {
+    background-image: url('/Assets/184/Images/left_on.gif');
+    border-width: 0;
+}
+#secondary-navigation #current a {
+    background-image: url('/Assets/184/Images/right_on.gif');
+    color: #5D8C2E;
+    padding-bottom: 5px;
+}
+#secondary-navigation #blank {
+    background-image: url('/Assets/184/Images/pixel.gif');
+    border-width: 0;
+}
+#secondary-navigation #blank a {
+    background-image: url('/Assets/184/Images/pixel.gif');
+    border-width: 0;
+}
+#RecipeCardTop #secondary-navigation #current {
+    background-image: url('/Assets/184/Images/left_on_recipe.gif');
+    border-width: 0;
+}
+#RecipeCardTop #secondary-navigation #current a {
+    background-image: url('/Assets/184/Images/right_on_recipe.gif');
+    color: #5D8C2E;
+    padding-bottom: 5px;
+}
+
+/* buttons
+--------------------------------------------------*/
+a.button { background: transparent url('/Assets/184/Images/standard_submit_festorange.gif') no-repeat; }
+a.button:hover { background: transparent url('/Assets/184/Images/standard_submit_festorange.gif') no-repeat;  }
+/*------------------------------------------------*/
+/* !product description lightbox area
+/*------------------------------------------------*/
+#product-description-lightbox .ProductAddToListControl a.button,
+#product-description-lightbox .ProductAddToListControl a.button:hover {
+    margin-bottom: 2px;
+    margin-left: 2px;
+    width: 50px;
+}
+.generic-product-description .ItemName .upc { margin-right: 10px }
+
+/* header
+--------------------------------------------------*/
+#StoreHeader {
+    position: relative;
+    background: transparent url(/Assets/11/Images/bg.gif);
+    margin-bottom: 0px;
+}
+#StoreHeaderRightTop {
+    z-index: 3;
+    position: absolute;
+    text-align: right;
+    left: 480px;
+    top: 0px;
+    width: auto;
+    border: none;
+    background: none;
+}
+
+#HeaderIcons .social {
+float: right;
+margin: 5px 10px 0 0;
+}
+
+#StoreHeaderLogo {
+    width: 100%;
+    height: 75px;
+    background: transparent url(/Assets/184/Images/HeaderLogo.gif) bottom left no-repeat;
+}
+#StoreHeaderMiddle { display: none }
+
+
+/* #LoginProfileLinkDiv a {
+    display: inline;
+    float: none;
+}
+#LoginButtonDiv a { background: url("/Assets/184/Images/submit_button.jpg") no-repeat scroll 0 0 transparent } */
+
+/* primary navigation
+--------------------------------------------------*/
+#StoreMenu {
+    background: #5D8C2E;
+    margin-bottom: 0;
+}
+#StoreMenu li a,
+#StoreMenu li a:visited,
+#StoreMenu li a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+#StoreMenu li a:hover { color: yellow }
+#CookingTipsTeaser,
+#AskTheChefTeaser,
+#FeaturedArticleTeaser { display: none }
+/* Five List Buttons
+--------------------------------------------------*/
+#ShoppingListHeaderSmall, #ShoppingListHeaderSmall .OGS {
+    background: transparent url(/Assets/184/Images/shoplist_300_r1_c1.jpg) top right !important;
+    height: 70px !important;
+}
+#ManageList,
+#savedshoppinglists {
+    float: left;
+    width: 590px;
+    background-color: #FFFFFF;
+}
+#ManageList #ShoppingListItemsDisplay,
+#ManageList .StaticContent {
+    background: transparent url(/Assets/184/Images/shoplist_large_r2_c1.jpg) repeat-y top left;
+    padding: 0 15px;
+    width: 560px;
+}
+#ShoppingListHeaderLarge {
+    background: transparent url(/Assets/184/Images/shoplist_large_r1_c1.jpg) no-repeat top left;
+    height: 70px;
+}
+#ShoppingListHeaderLarge.SavedOGS,
+#ShoppingListHeaderLarge.ShopListHeaderOGS {
+    background-image: url(/Assets/184/Images/gray_largeshopcart.jpg);
+}
+
+#ShoppingListFooterLarge {
+    float: left;
+    width: 590px;
+    background: transparent url(/Assets/184/Images/shoplist_large_r3_c1.jpg) no-repeat bottom left;
+    height: 60px;
+}
+#ShoppingList table div.shopListItemSmall {
+    font-size: 11px;
+    color: #4D8021;
+}
+
+#FiveListButtons {
+    background: transparent url(/Assets/184/Images/shoplist_300_r3_c1.jpg) top right;
+    padding-top: 12px;
+    min-height: 86px;
+}
+#FiveListButtons a {
+    display: inline;
+    border: 0 none;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0px;
+}
+div#ShoppingList div#ShoppingListItemsDisplay { margin: 0em 0 }
+#FiveListButtons a.shoplistPrint {
+    height: 40px;
+    margin-left: 28px;
+    background: url('/assets/184/images/list_buttons_r1_c2.gif') no-repeat;
+}
+#FiveListButtons a.shoplistEmail {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/184/images/list_buttons_r1_c3.gif') no-repeat;
+}
+#FiveListButtons a.shoplistLast {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/184/images/list_buttons_r1_c4.gif') no-repeat;
+}
+#FiveListButtons a.shoplistManage {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/184/images/list_buttons_r1_c6.gif') no-repeat;
+}
+#FiveListButtons a.shoplistSave {
+    height: 40px;
+    margin-left: 10px;
+    background: url('/assets/184/images/list_buttons_r1_c5.gif') no-repeat;
+}
+#FiveListButtons a.shoplistPrint:hover,
+#FiveListButtons a.shoplistEmail:hover,
+#FiveListButtons a.shoplistLast:hover,
+#FiveListButtons a.shoplistManage:hover,
+#FiveListButtons a.shoplistSave:hover { background-position: 0 -40px }
+#FiveListButtons a.shoplistPrint span,
+#FiveListButtons a.shoplistEmail span,
+#FiveListButtons a.shoplistLast span,
+#FiveListButtons a.shoplistSave span,
+#FiveListButtons a.shoplistManage span {
+    margin-top: 38px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+#ShoppingList table { width: 270px }
+#ShoppingList td {
+    font-weight: bold;
+    color: #4d8021;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+#FiveListButtons a:hover { text-decoration: none }
+#trashcanSmall { background: transparent url(/assets/184/images/shoplist_delete_icon.gif) no-repeat scroll 0 0 }
+
+#sidebar div.AdMaster.Tile6 {
+    position: absolute;
+    top: 170px !important;
+}
+div#ShoppingList div#ShoppingListItemsDisplay {
+    background: transparent url(/Assets/184/Images/shoplist_300_r4_c1.jpg) top right;
+    min-height: 75px;
+}
+#ShoppingListMain { background: transparent url(/Assets/184/Images/shoplist_300_r4_c1.jpg) top right }
+#AddYourOwnItems input {
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+/* Two List Buttons
+--------------------------------------------------*/
+#TwoListButtons {
+    height: 60px;
+    background: transparent url(/Assets/184/Images/shoplist_300_r5_c1.jpg) bottom right;
+}
+/* shopping list
+--------------------------------------------------*/
+#savedshoppinglists h2 {
+    color: #C02407;
+    border-bottom: 1px solid #4d8021;
+}
+
+/* manage list legend
+--------------------------------------------------*/
+#legend th { background-color: #5D8C2E }
+/* coupons grid
+--------------------------------------------------*/
+#tblCouponTopN { border: 2px solid #5D8C2E }
+#CouponList h3 { color: #5D8C2E }
+#CouponList table table th { background-color: #5D8C2E }
+
+/* 3panel toolbox
+--------------------------------------------------*/
+#Department h3,
+#Aisles h3,
+#Category h3 { color: #5D8C2E }
+#InBetween1,
+#InBetween2 { color: #5D8C2E }
+
+/* grid styles
+--------------------------------------------------*/
+#CategoryHeader h3 { color: #5D8C2E }
+.GridItem {
+    clear: both;
+    text-align: left;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+.GridItem th {
+    text-align: left;
+    background-color: #5D8C2E;
+    color: #FFFFCC;
+    font-weight: bold;
+}
+.GridAlternatingItem {
+    text-align: left;
+    background-color: #DCEDCB;
+    color: #000000;
+    font-weight: bold;
+}
+#CircularAdText1_dlCategory h3 { color: #5D8C2E }
+
+/* headings
+--------------------------------------------------*/
+#ctl00_ContentPlaceHolder1_EmailPreferences1_lblDailyEmails,
+#PasswordRecoverControl h1,
+#UpdatePanelPage h1,
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,
+#DietaryPreferencesTip h1,
+#privacy h2,
+#CtrlDivSubTitle h2,
+#ContactUs h2,
+#EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#ManageList h3,
+#QuickSearch ul a,
+#QuickSearch h2,
+#ContactUs hr,
+#ContactUsThanks hr,
+#EmploymentApplication hr,
+.BtnPageLink { color: #5D8C2E }
+
+/* store locator page
+--------------------------------------------------*/
+#StoreLocatorDropDown { display: none }
+#StoreLocatorZipLookup { display: block }
+
+/*override content pane table padding border and margin*/
+table.contentpaneopen {
+    width: 100%;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 0px;
+}
+
+/*override content pane table td margin and line height*/
+table.contentpaneopen td {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 0px;
+    line-height: normal;
+}
+
+/*override header content module table margin and border*/
+div.mod_contentitemhdr table {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-width: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/*override content span article display*/
+span.article_seperator { display: none }
+.transMenu39 {
+    position: absolute;
+    overflow: hidden;
+    left: -1000px;
+    top: -1000px;
+}
+.transMenu39 .content { position: absolute }
+.transMenu39 .items {
+    border: 1px solid #5D8C2E;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.transMenu39 td {
+    padding: 2px 8px 5px 8px !important;
+    font-size: 12px !important;
+    font-family: Arial,Helvetica,sans-serif !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #5D8C2E !important;
+}
+#subwrap39 { text-align: left }
+.transMenu39 .item.hover td { color: #FD9F00 !important }
+.transMenu39 .item {
+    text-decoration: none;
+    cursor: pointer;
+}
+.transMenu39 .background {
+    background-color: #FFFFFF !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    opacity: 1;
+}
+.transMenu39 .shadowRight {
+    position: absolute;
+    z-index: 3;
+    top: 3px;
+    width: 2px;
+    opacity: 1;
+}
+.transMenu39 .shadowBottom {
+    position: absolute;
+    z-index: 1;
+    left: 3px;
+    height: 2px;
+    opacity: 1;
+}
+.transMenu39 .item.hover { background-color: #FFFFFF !important }
+.transMenu39 .item img { margin-left: 10px !important }
+table.menu39 {
+    top: 2px;
+    left: 0px;
+    position: relative;
+    margin: 0px !important;
+    border: 0px solid #FFFFFF;
+    z-index: 1;
+}
+table.menu39 a {
+    margin: 0px !important;
+    padding: 2px 8px 5px 8px !important;
+    display: block !important;
+    position: relative !important;
+}
+div.menu39 a,
+div.menu39 a:visited,
+div.menu39 a:link {
+    height: 10px;
+    font-size: 12px !important;
+    font-family: Arial,Helvetica,sans-serif !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #5D8C2E !important;
+    text-decoration: none !important;
+    margin-bottom: 0px !important;
+    display: block !important;
+    white-space: nowrap;
+}
+div.menu39 td {
+    border-bottom: 0px solid #5D8C2E;
+    border-top: 0px solid #5D8C2E;
+    border-left: 0px solid #5D8C2E;
+    background-color: #FFFFFF !important;
+}
+div.menu39 td.last39 { border-right: 0px solid #5D8C2E }
+#trans-active39 a {
+    color: #FD9F00 !important;
+    background-color: #FFFFFF !important;
+}
+#menu39 a.hover {
+    color: #FD9F00 !important;
+    background-color: #FFFFFF !important;
+}
+#menu39 span { display: none }
+#menu39 a img.seq1,
+.transMenu39 img.seq1 { display: inline }
+#menu39 a.hover img.seq2,
+.transMenu39 .item.hover img.seq2 { display: inline }
+#menu39 a.hover img.seq1,
+#menu39 a img.seq2,
+.transMenu39 img.seq2,
+.transMenu39 .item.hover img.seq1 { display: none }
+#trans-active39 a img.seq1 { display: none }
+#trans-active39 a img.seq2 { display: inline }
+#menu3926 { border-right: 1px solid #5D8C2E }
+#menu3927 { border-right: 1px solid #5D8C2E }
+#menu3928 { border-right: 1px solid #5D8C2E }
+#menu3929 { border-right: 1px solid #5D8C2E }
+#menu3930 { border-right: 1px solid #5D8C2E }
+#menu3931 { border-right: 1px solid #5D8C2E }
+#menu3932 { border-right: 1px solid #5D8C2E }
+#menu3933 { border-right: 1px solid #5D8C2E }
+#menu3934 { border-right: 1px solid #5D8C2E }
+
+/*override submenu display*/
+#subwrap39 { display: none }
+#AdDisplayDiv {
+    float: right;
+    width: 210px;
+}
+
+/* ogs home
+--------------------------------------------------*/
+#departments a span:hover { cursor: pointer }
+.grid_3 {
+    border: dotted 1px black;
+    display: block;
+    height: 60px;
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 187px;
+}
+.grid_3 span {
+    width: 120px;
+    float: left;
+    vertical-align: bottom;
+    margin: 20px 0 0 5px;
+    font-size: 10px;
+}
+.grid_3 img {
+    float: left;
+    margin: 10px 5px 5px 5px;
+}
+#SearchOptions { display: none }
+
+/* browse page
+--------------------------------------------------*/
+table#ProductDisplay.GridItem a.button {
+    margin-top: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 65px;
+}
+.department {
+    height: 40px;
+    width: 175px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    padding-top: 5px;
+    position: relative;
+}
+.department-link { position: absolute }
+.help {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+#tab-text {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-left: 70px;
+}
+#tab-text .number {
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+}
+#tab-text .maintext {
+    color: #5D8C2E;
+    font-weight: bold;
+    font-size: 1.8em;
+    float: left;
+    padding-left: .5em;
+}
+#tab-text .subtext {
+    color: red;
+    font-size: 1.5em;
+    float: left;
+    padding-left: .5em;
+    margin-top: 5px;
+}
+
+
+
+/*------------------------------------------------*/
+/* !profile sign-in / sign-up */
+/*------------------------------------------------*/
+#login .button, #register .button {
+    background-color: #ff9900;
+    border: 1px solid #dd8a12;
+}
+#LoginButtonDiv a{
+    background:none;
+}
+#LoginNewProfileLinkDiv a:link,
+#LoginNewProfileLinkDiv a:visited,
+#LoginNewProfileLinkDiv a:hover,
+#LoginNewProfileLinkDiv a:active{
+    color:#fff;
+}
+
+#SignUpV2 .backButton, #SignUpV2 .backButton:active, #SignUpV2 .backButton:hover { background-image:url(/Assets/184/Images/pReg_back.png); }
+#SignUpV2 .backButton:hover { background-image:url(/Assets/184/Images/pReg_back.png); }
+#SignUpV2 .cancelButton, #SignUpV2 .cancelButton:active, #SignUpV2 .cancelButton:hover { background-image:url(/Assets/184/Images/pReg_cancel.png); }
+#SignUpV2 .cancelButton:hover { background-image:url(/Assets/184/Images/pReg_cancel.png); }
+.cancelButton { background-image:url(/Assets/184/Images/pReg_cancel.png); }
+.cancelButton:hover { background-image:url(/Assets/184/Images/pReg_cancel.png); }
+#SignUpV2 .finishButton, #SignUpV2 .finishButton:active, #SignUpV2 .finishButton:hover { background-image:url(/Assets/184/Images/pReg_finish.png); }
+#SignUpV2 .finishButton:hover { background-image:url(/Assets/184/Images/pReg_finish.png); }
+#SignUpV2 .homeButton, #SignUpV2 .homeButton:active, #SignUpV2 .homeButton:hover { background-image:url(/Assets/184/Images/pReg_home.png); }
+#SignUpV2 .homeButton:hover { background-image:url(/Assets/184/Images/pReg_home.png); }
+#SignUpV2 .nextButton, #SignUpV2 .nextButton:active, #SignUpV2 .nextButton:hover { background-image:url(/Assets/184/Images/pReg_next.png); }
+#SignUpV2 .nextButton:hover { background-image:url(/Assets/184/Images/pReg_next.png); }
+#SignUpV2 .nothanksButton, #SignUpV2 .nothanksButton:active, #SignUpV2 .nothanksButton:hover { background-image:url(/Assets/184/Images/pReg_nothanks.png); }
+#SignUpV2 .nothanksButton:hover { background-image:url(/Assets/184/Images/pReg_nothanks.png); }
+#SignUpV2 .profileButton, #SignUpV2 .profileButton:active, #SignUpV2 .profileButton:hover { background-image:url(/Assets/184/Images/pReg_profile.png); }
+#SignUpV2 .profileButton:hover { background-image:url(/Assets/184/Images/pReg_profile.png); }
+#SignUpV2 .saveButton, #SignUpV2 .saveButton:active, #SignUpV2 .saveButton:hover { background-image:url(/Assets/184/Images/pReg_save.png); }
+#SignUpV2 .saveButton:hover { background-image:url(/Assets/184/Images/pReg_save.png); }
+.submitButton { background-image:url(/Assets/184/Images/pReg_submit.png); }
+.submitButton:hover { background-image:url(/Assets/184/Images/pReg_submit.png); }
+#SignUpV2 .yesButton, #SignUpV2 .yesButton:active, #SignUpV2 .yesButton:hover { background-image:url(/Assets/184/Images/pReg_yes.png); }
+#SignUpV2 .yesButton:hover { background-image:url(/Assets/184/Images/pReg_yes.png); }
+
+.signUpSidebarTop { background-image:url(/Assets/184/Images/pReg_sidebar.jpg);}
+
+#signUpPop1,
+#signUpPop2,
+#signUpPop4 {
+    top: 224px;
+    left: 305px;
+}
+
+/* checkout
+--------------------------------------------------*/
+#UserInformation,
+#SubstituteItems,
+#Taxes,
+#DeliveryInformation {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top: none;
+    border-bottom: none;
+	margin-top: 0;
+    padding: 0 4px;
+}
+#CheckOutHeader,
+#ctl00_Navigation {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top: none;
+    border-bottom: none;
+    clear: both;
+    float: left;
+    padding: 0 4px;
+    width: 910px;
+}
+#CheckOutButtons {
+    background-color: #fff;
+    float: none;
+    margin: 1em auto;
+    padding: 0 2%;
+    width: 60%;
+}
+
+#CheckOutButtons:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 1%;
+    visibility: hidden;
+}
+
+.CurrentStep { color: orange }
+#UserInformation .checkoutMain { margin: 0 0 0 200px }
+#UserInformation .checkoutHeader,
+#Taxes .checkoutHeader { margin-left: 185px }
+#Taxes table.Subtotal {
+    clear: both;
+    float: right;
+    margin-left: 0;
+    width: 200px;
+}
+#CheckOutSteps {
+    background: #EEEEEE url(/Assets/158/Images/bg_checkoutsteps.jpg) repeat-x scroll 0 0;
+    border: 1px solid #999999;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+}
+#CheckOutUserInformation fieldset {
+    border: none;
+}
+#CheckOutUserInformation label {
+    display: block;
+    float: left;
+    padding: 0.6em;
+    text-align: right;
+    width: 140px; 
+}
+
+#CheckOutUserInformation input {
+    width: 200px;
+}
+
+.jsvalidation {
+    color: red;
+    margin-left: 4px;
+}
+
+#deliveryslotselection {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+}
+
+#deliveryslotselection .jsvalidation {
+    bottom: 0;
+	clear: both;
+    display: block;
+	left: 0;
+    margin: 1em 0;
+	position: absolute;
+    width: 100%;
+}
+
+/* delivery info
+--------------------------------------------------*/
+#deliveryZones {
+    width: 100%;
+}
+
+#deliveryzones a {
+    font-size: 15px;
+    padding:2em 0;
+    text-decoration: underline;
+}
+
+.deliverydetails {
+    float: left;
+    width: 33%;
+}
+
+#checkoutMain { margin-top: 50px }
+
+#UserInformation .checkoutHeader { 
+    margin: 0 auto;
+    width: 55%;
+}
+#UserInformation .checkoutInstructions {
+    float: left;
+    width: 500px;
+}
+
+#UserInformation div.checkoutInfoDiv {
+	width: 55%;
+}
+
+#Taxes .checkoutMain {
+    float: none;
+    margin: 0 auto;
+    width: 590px;
+}
+
+/* IE 6
+--------------------------------------------------*/
+* html #CheckOutButtons { height: 1% }
+
+/* IE 7
+--------------------------------------------------*/
+*:first-child+html #CheckOutButtons { min-height: 1px }

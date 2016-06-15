@@ -1,0 +1,156 @@
+.group:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+#promoLP-wrap { 
+	background: #ede2cc;
+	float:left;
+	width:570px; 
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+	box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+}
+
+#promoLP-header	{
+    width: 100%;
+}
+	
+#promoLP-header	.promoLP-logo {
+	display:block;
+}
+
+.promoLP-logo {
+	width: 100%;
+	background: #eee2cc;
+}
+
+.promoLP-logo img {
+	min-width: 100%;
+	
+}
+	
+#promoLP-header h1 { 
+	display: none; 
+}
+
+#promoLP-header h2{
+	border-bottom: medium none;
+    color: #797979;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 15px 0 10px;
+    padding: 0 20px;
+    text-align: left;
+    width: 93%;
+}
+	
+#promoLP-main { 
+	float:left;
+	width: 100%;
+}
+
+#promoLP-product-wrap1, #promoLP-product-wrap3 {
+	clear:left;
+}
+
+.promoLP-product-header {
+	float:left;
+	width: 39%;
+	height: 100%;
+	text-align: center;
+}
+
+.promoLP-product-main {
+	float:right;
+	width: 59%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+	
+#promoLP-main .promoLP-product {
+	background: url('../Images/productsbg.png') repeat-x #ffe9bc;
+	border:5px solid #FFFFFF;
+	float: left;
+	margin:10px 20px 20px;
+	padding:9px;
+	width:88%;
+	-moz-border-radius: 10px 10px 10px 10px; 
+	-webkit-border-radius: 10px 10px 10px 10px; 
+	border-radius: 10px 10px 10px 10px;
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	
+}
+	
+#promoLP-main .promoLP-product img {
+	display: inline;
+    margin-right: 15px;
+    margin-top: 11px;
+     max-height: 843px;
+}
+
+#promoLP-main .promoLP-product h3 {
+	border-bottom: medium none;
+    color: #797979;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 15px 0 10px;
+    padding: 0 20px;
+    text-align: left;
+    width: 93%;
+}
+
+.promoLP-product-listing {
+	margin-top: 10px; 
+	
+}
+
+
+#promoLP-main .promoLP-product p {
+	background: url("../Images/dot.gif") no-repeat scroll left center transparent;
+	color: #07589C;
+	font-size: 14px;
+	font-family:arial, helvetica, sans-serif;
+	margin:20px 0 0;
+	padding: 0 0 0 10px;
+}
+	
+#promoLP-main .promoLP-button { 
+	background: #00579C url(/Assets/Common/Images/button_shine_30.png) left 50% repeat-x; 
+	border:1px solid #002a4b;
+	border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	display: block; 
+	font:14px Arial, Helvetica, sans-serif;
+	margin:5px 0 0 10px;
+	padding:.2em 0;
+	text-decoration: none;
+	width:120px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	text-align: center;
+}
+	
+/*------------------------------------------------*/
+/* !IE 7 */
+/*------------------------------------------------*/
+*:first-child + html .group { min-height:1px; }
+	
+/*------------------------------------------------*/
+/* !IE 6 */
+/*------------------------------------------------*/
+* html #promoLP-main .sargento-button {
+	background-image:none;
+}
+	
+* html .group {
+	height:1%;
+}
