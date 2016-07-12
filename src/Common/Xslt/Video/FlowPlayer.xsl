@@ -28,21 +28,20 @@
 	<xsl:param name="TopFeaturedTitle" />
     <xsl:param name="PubSiteId" />
 	<xsl:param name="PrId" />
-	<xsl:param name="PlayerSource" select="concat('http://groceryshopping.jambocast.com/tower.php?pubsite_id=',$PubSiteId,'&amp;pr=',$PrId,'&amp;vcs_id=')" />
 
 		<div class="videoWrapper clearfix">
-		
+
 			<h1>5 Minute Cooking Classes</h1>
 			    <div id="VideoPlayer" class="videoColumn">
 				<h2><span id="CurrentVideoTitle"></span></h2>
 				<a href="#"
 				   style="display:block;width:325px;height:250px;"
 				   id="VideoPlayerTarget">
-				</a> 
+				</a>
 			</div>
-			
+
  			<div id="VideoNavigation" class="videoColumn">
-				<div id="VideoBrowse" class="videoTabPage">	
+				<div id="VideoBrowse" class="videoTabPage">
 					<div class="breadcrumb">
 						<a class="allCategoriesLink">Videos</a>
 						<span id="CurrentCategory"></span>
@@ -64,26 +63,26 @@
 		</div>
 		<xsl:call-template name="AdPodMaster"></xsl:call-template>
 		<script type="text/javascript">
-			
+
 			function play(title, name) {
-			
+
 				var url = 'http://upload.gsngrocers.com/elvs/video/flvs/' + name + '.flv';
-				
+
 				$('CurrentVideoTitle').innerHTML = unescape(title);
-				
+
 				flowplayer("VideoPlayerTarget", "/assets/common/flash/flowplayer-3.2.18.swf", {
 					clip: {
 						url: url,
 						autoPlay: true
 					}
-				});				
+				});
 			}
-			
+
 			window.onload = function() {
 				play('Artichokes','GSN-Artichokes');
 			}
-			
+
 		</script>
 	</xsl:template>
-	
+
 </xsl:stylesheet>
