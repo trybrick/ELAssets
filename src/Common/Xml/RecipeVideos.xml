@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FlashPlayerConfig>
-    
+
 	<VideoPlaylist vtitle="Artichokes">
 		<VideoURL>GSN-Artichokes</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Avocados">
 		<VideoURL>GSN-Avocados</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Baked Eggs">
 
 		<VideoURL>GSN-Baking Eggs</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Baking Fish">
 		<VideoURL>GSN-Baking Fish</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Basics of Rehydration">
 		<VideoURL>GSN-RehydratingBeansChiliesandfruits</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Braised Romaine">
 		<VideoURL>GSN-Braised Romaine-1</VideoURL>
 	</VideoPlaylist>
@@ -31,7 +31,7 @@
 		<VideoURL>GSN-Braising-Beef</VideoURL>
 	</VideoPlaylist>
 
-	
+
 	<VideoPlaylist vtitle="Brining">
 		<VideoURL>GSN-Brining</VideoURL>
     </VideoPlaylist>
@@ -39,7 +39,7 @@
 	<VideoPlaylist vtitle="Broiled Sole">
 		<VideoURL>GSN-Broiled Sole</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Broiled Steak">
 
 		<VideoURL>GSN-Broiled Steak</VideoURL>
@@ -48,239 +48,236 @@
 	<VideoPlaylist vtitle="Caramelizing an Onion">
 		<VideoURL>GSN-Onion Brule</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Chicken Breast Butterfly">
 		<VideoURL>GSN-poultry breast butterfly</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Chicken Breast Fabrication">
 		<VideoURL>GSN-Chicken Breast Fabrication</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Clarifying Butter">
 		<VideoURL>GSN-Clarifying Butter</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Cleaning Fish">
 
 		<VideoURL>GSN-Fish_Gutting</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Cutting Fish">
 		<VideoURL>GSN-Fish Boney_Fabrication</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Deep Frying Shrimp">
 		<VideoURL>GSN-Deep Frying Shrimp</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Deep Frying Vegetables">
 		<VideoURL>GSN-Deep Frying Vegetables</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Dry Rubs">
 		<VideoURL>GSN-Dry Rubs</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Eggplant">
 
 		<VideoURL>GSN-Eggplant</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Fish Overview">
 		<VideoURL>GSN-types of flat fish</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Folding">
 		<VideoURL>GSN-Folding</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Fresh Herbs">
 		<VideoURL>GSN-Fresh Herbs</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Grilling Lamb Chops">
 		<VideoURL>GSN-Grilling Lamb Chops</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Infusing Oils with Garlic">
 
 		<VideoURL>GSN-Infused Oils with Garlic</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Leafy Greens">
 		<VideoURL>GSN-Leafy Greens</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Making Croutons">
 		<VideoURL>GSN-Croutons</VideoURL>
 
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Making Roux">
 		<VideoURL>GSN-Roux</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Marinades">
 		<VideoURL>GSN-Marinade</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Mushroom Stuffing">
 
 		<VideoURL>GSN-Mushroom Duxelle</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Pan Frying Chicken">
 		<VideoURL>GSN-Pan Frying Chicken</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Pan Frying Veal">
 		<VideoURL>GSN-Pan Frying Veal</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Peanut Brittle and Dragee">
 		<VideoURL>GSN-Brittle and More</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Peeling Tomatoes">
 		<VideoURL>GSN-Tomato Concasse</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Roasting Beef">
 
 		<VideoURL>GSN-Roasting Beef</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Roasting Chicken">
 		<VideoURL>GSN-Roasting Chicken</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Roasting Garlic and Shallots">
 		<VideoURL>GSN-Roasting Garlic and Shallots</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Roasting Peppers">
 		<VideoURL>GSN-Roasting Peppers</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Roasting Tomatoes">
 		<VideoURL>GSN-Roasting Tomatoes</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Round Fish">
 
 		<VideoURL>GSN-Non Boney Fish</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Salmon">
 		<VideoURL>GSN-Fish_Salmon</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Saut&#233;ing Trout">
 		<VideoURL>GSN-Sauteing Trout</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Seasonings for Soup">
 		<VideoURL>GSN-Sachet</VideoURL>
     </VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Shallow Poaching Snapper">
 		<VideoURL>GSN-Shallow Poaching Snapper</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Shellfish-Crab">
 
 		<VideoURL>GSN-Shellfish_Crabs</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Shellfish-Lobster">
 		<VideoURL>GSN-Shellfish_Lobster</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Shellfish-Shrimp">
 		<VideoURL>GSN-Shellfish_Shrimp</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Spice Blends">
 		<VideoURL>GSN-Spice Blends</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Steaming Fish">
 		<VideoURL>GSN-Steaming Papillote</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Stewing Veal">
 
 		<VideoURL>GSN-Stewing Veal</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Studding an Onion">
 		<VideoURL>GSN-Onion Piquet</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Thickening Sauces">
 		<VideoURL>GSN-Liaisons and Tempering</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Toasting Seeds and Nuts">
 		<VideoURL>GSN-Toasting Seeds and Nuts</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Trout">
 		<VideoURL>GSN-Trout</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetable Cuts">
 
 		<VideoURL>GSN-Vegetable Cuts</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetable Cuts-Dice Cuts">
 		<VideoURL>GSN-Vegetable Dice Cuts</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetable Cuts-Julienne">
 		<VideoURL>GSN-Vegetable Cuts_Julienne</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetable Fluting">
 		<VideoURL>GSN-Vegetable Fluting</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetable Cuts-Shapes">
 		<VideoURL>GSN-Vegetable Shape Cuts</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Vegetables for Soup">
 
 		<VideoURL>GSN-Mirepoix and Matignon</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Whipping Cream">
 		<VideoURL>GSN-Whipping Cream</VideoURL>
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Whipping Egg Whites">
 		<VideoURL>GSN-Whipping Egg Whites</VideoURL>
 
 	</VideoPlaylist>
-	
+
 	<VideoPlaylist vtitle="Zesting">
 		<VideoURL>GSN-Zesting</VideoURL>
 	</VideoPlaylist>
 	<ContentObjects>
-		<ContentObject>
-			<Source>http://groceryshopping.jambocast.com/xml/playlists/12672</Source>
-		</ContentObject>
 	</ContentObjects>
 	<FeaturedVideos>
 		<topfeatured>
@@ -302,6 +299,6 @@
 			<image>http://upload.gsngrocers.com/elvs/images/grilling_vegetables.jpg</image>
 			<videoid>147715</videoid>
 		</featuredvideo>
-		
+
 	</FeaturedVideos>
 </FlashPlayerConfig>
