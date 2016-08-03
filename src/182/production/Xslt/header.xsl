@@ -3,9 +3,9 @@
   <xsl:output method="html"/>
   <xsl:template match="/">
     <style type="text/css">
-@import url(http://foodcity.gsngrocers.com/production/foodcity-overrides.css);
+@import url(/assets/182/production/foodcity-overrides.css);
 </style>
-    
+
     <!--Import your own CSS file hosted on FTP-->
     <div  class="header-wrap">
       <div class="header centered">
@@ -31,10 +31,10 @@
      <div align="right" style="  float: right; height: 20px; margin-top: 8px; width: 250px; color:#FFF">
         <xsl:choose>
           <xsl:when test="//GenericConsumer/IsLoggedIn = 'false'">
-            
+
           </xsl:when>
           <xsl:when test="//GenericConsumer/IsLoggedIn = 'true'">
-            
+
           </xsl:when>
         </xsl:choose>
       </div>

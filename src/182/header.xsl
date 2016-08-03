@@ -2,10 +2,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html"/>
   <xsl:template match="/"><style type="text/css">
-@import url(http://foodcity.gsngrocers.com/beta/foodcity-overrides.css);
+@import url(/assets/182/beta/foodcity-overrides.css);
 </style>
-    
-    
+
+
     <!--Import your own CSS file hosted on FTP-->
     <div  class="header-wrap">
       <div class="header centered">
