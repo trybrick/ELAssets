@@ -1,0 +1,557 @@
+/* Top Foods Overrides
+--------------------------------------------------*/
+/* reset
+--------------------------------------------------*/
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; } a img, :link img, :visited img { border: 0; } table { border-collapse: collapse; border-spacing: 0; } ol, ul { list-style: none; }
+/* END reset */
+
+html			{ background:none; }
+body 			{ background:none #5B5B6C; color: #333; font-size:0.7em; height:auto; margin-top:20px; font-weight:normal; font-style:normal; font-family: "Lucida Sans Unicode", Lucida, "Lucida Grande", Verdana, Helvetica, Arial, Sans, sans-serif; color:black; vertical-align:top;}
+h2				{padding-bottom:4px; border-bottom:3px solid #77278B; }
+a:hover			{text-decoration:none;}
+input:hover 			{background-color: #FFFFFF; color: #000; cursor: pointer;}
+input:focus 			{color: #000; background-color:  #FFFFFF; cursor: text;}
+input[type="textarea"] 		{background-color:  #FFFFFF;}
+
+/* layout
+--------------------------------------------------*/
+#container			{ padding:0; background: url(../images/bgNavContainer.gif) repeat-y; width:1160px; }
+#topSidebar			{ margin:0 8px 0 0; }
+#main				{ margin:0 0 0 5px; padding-bottom:5%;}
+#GsnFooter			{ margin-bottom:0; width:1160px; background:none transparent;}
+#sidebar, #recipesidebar	{margin:0 5px 0 0; float:right;}
+#banner-advertisement { display:none; }
+#CouponsPage .pageHeaderContainer {background:transparent url(/Assets/Common/images/coupons_copy.gif) no-repeat scroll 0 0; clear:both;float:left;height:60px;width:590px;}
+#gridLayout {float:left;width:590px;}
+.couponsPageGrid #gridLayout	{width:455px;}
+
+/*** header ***/
+#StoreHeader			{background: transparent url(/Assets/149/Images/HeaderBG.jpg) no-repeat top right;}
+#StoreHeaderRightTop 		{border: solid 3px #77278B; margin-bottom:8px; }
+#StoreHeaderLogo		{display:none;}
+#StoreHeaderMiddle		{ float:left; margin-bottom:12px; margin-right:300px; padding-left:250px; text-transform:uppercase; width:590px;}
+
+#main.storelocator		{width:850px;}
+#GoogleMapCanvas		{width:380px;}
+#storeZipEntryForm,
+#GoogleMapStoreList		{width:450px;}
+
+#topContent h2{ 
+	color: #333; 
+	padding: 10px;
+	margin: 0px;
+
+}
+
+#topHeader {
+	width: 1160px;
+	height: 30px;
+	margin: 0 auto;
+	background: url(../images/foodDrug.jpg);
+}
+
+#toplogo {
+	float: left;
+	height: 75px;
+	width: 1160px;	
+}
+
+#topHeader #search {
+	float: right;
+	width: 205px;
+	margin-top: 2px;
+	font-size:130%;
+	}
+
+#topHeader #searchinput{
+	font-size: 0.75em;
+	width: 128px;
+	height: 13px;
+	border: medium double #ccc;
+	float: left;
+}
+
+#topHeader #search .inputImage{ 
+	float: right; 
+	margin-right: 44px; 
+}
+
+#messagebar {
+	margin-top:-8px; 
+	margin-bottom:5px;
+	margin-left:-12px;
+	margin-right:3px;
+	width: 892px;
+	height: auto;
+	background:#D7D7D7;
+	border:dotted; 
+	border-top-color:#FFFFFF;
+	border-bottom-color:#C6BACD;
+	border-width:2px 0; 
+	padding: 6px 6px 6px 0px;
+	color:#77278B;
+	font-weight:bold;
+	font-size:11px;
+	text-transform: uppercase;
+	text-align:right;
+	display: block;
+	float:right;
+}
+
+#messagebar_left	{
+	float:left; clear:none; margin-left:12px;
+}
+#messagebar a {
+	color:#77278B;
+}
+
+/* Menu */
+#menu {
+	width: 1160px;
+	height: 145px;
+	margin: 0 auto;
+	background: url(../images/top1.jpg);
+}
+
+#menu ul { padding-top: 13px; }
+#menu li {
+	float: left;
+	height: 70px;
+}
+
+#menu #navLogo a{ width: 250px; }
+#menu #connection a{ width: 137px; }
+#menu #wallet a{ width: 147px; }
+#menu #offers a{ width: 147px; }
+#menu #history a{ width: 147px; }
+#menu #shoppinglist a{ width: 147px; }
+#menu #interests a{ width: 147px; }
+#menu #recipes a{ width: 147px; }
+
+#menu a{
+	display: block;
+	height: 70px;
+}
+
+#menu a span{ display: none; }
+
+
+/* Menu2 */
+
+#menu2 {
+	width: 1160px;
+	height: 145px;
+	margin: 0 auto;
+	background: url(../images/top2.jpg);
+}
+#menu2 ul { padding-top: 13px; ; padding: 0px 0px 0px 10px; }
+#menu2 li {	float: left; height: 53px; margin: 12px 0px 0px 0px; }
+
+#menu2 #navLogo a{ width: 250px; }
+#menu2 #connection a{ width: 137px; }
+#menu2 #wallet a{ width: 147px; }
+#menu2 #offers a{ width: 147px; }
+#menu2 #history a{ width: 147px; }
+#menu2 #shoppinglist a{ width: 147px; }
+#menu2 #interests a{ width: 147px; }
+#menu2 #recipes a{ width: 147px; }
+
+#menu2 a{ display: block; height: 53px; }
+#menu2 a span{ display: none; }
+
+#page{
+	width: 250px;
+	float:left;
+	height: auto;
+	margin: 0 auto;
+	background: url(../images/bgNav1.gif) repeat-y;
+}
+
+/* topSidebar */
+#topSidebar{
+	float: left;
+	width: 165px; 
+	margin: 25px 0 0 50px;
+	padding: 0 0 0 30px;
+	font-family: "Lucida Sans Unicode", Lucida, "Lucida Grande", Verdana, Helvetica, Arial, Sans, sans-serif;
+	font-size: 1.2em;	
+	display:inline;
+}
+#topSidebar:after	{content: ""; display: block; height: 0; clear: both }
+
+#topSidebar ul{ font-size: 0.97em; }
+
+#topSidebar li a img {
+	float: right;
+	margin: -25px 20px 0 0px;
+}
+
+#topSidebar li ul{ padding-top: 0px; }
+
+
+#topSidebar h5 {
+	color:#77278B;
+	padding: 0px 5px 0px 14px;
+	margin: 0 0 8px 5px;
+	background: left center url(../images/PurpleArrow.jpg) no-repeat;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#topSidebar .list { margin: 0px 15px 0px 2px;}
+
+#topSidebar .list li {
+	padding-top: 0px;
+	border-bottom: 1px solid #C6BACD;
+	text-transform: uppercase;
+	width:145px;
+}
+
+#topSidebar .list li .last {
+	border: none; 
+	padding-bottom: 10px;
+	}
+	
+#topSidebar .list li a {
+	display: block;
+	border: 0px solid #D7D5D5; 
+	background: left center url(../images/menuDot.jpg) no-repeat;	
+	padding: 4px 8px 4px 20px;
+	font-size: 0.85em;
+	color: #333;
+	font-weight:normal;
+}
+
+#topSidebar .list li a:hover{
+	background: #423F44 left center url(../images/menuDot_on.jpg) no-repeat;
+	color: #ccc;
+	border-color: #fff; 
+	font-weight:normal;
+	text-decoration:none;
+}
+#topSidebar .list li ul {
+    position: absolute;
+    z-index: 3px;
+	left: -9999em;
+    margin-left: 10.05em;
+    margin-top: -2.00em;
+} 
+
+#topSidebar .list li li a { 
+	display: block;
+	background: #423F44; 
+    color: #ccc;
+	padding: 4px 8px 4px 20px;
+    background-color: #423F44;
+	font-weight:normal;
+}       
+
+#topSidebar .list li li a:hover {
+    color: white;
+    background-color: #423F44;
+	font-weight:normal;
+       }
+     
+#topSidebar .list li li ul {
+    z-index: 3px;
+    margin-left: 7.7em;
+    margin-top: -1.95em;
+        } 
+
+#topSidebar .list li li a li {
+    color: #ccc;
+    background-color: #423F44;
+	border-color: #fff;
+	padding: 6px 8px 6px 20px; 
+	position:absolute;
+
+       }
+#topSidebar .list li li a:hover li {
+    color: white;
+    background-color: #423F44;
+	border-color: #fff;
+	position:absolute;
+       }
+
+   
+#topSidebar .list li ul {
+    left: -9999em;
+}
+
+#topSidebar .list li:hover ul {
+    left: auto;
+}
+
+
+#memberdetails a {
+	color:#333333;
+	display:block;
+	font-size:0.75em;
+	font-weight:normal;
+	padding:0;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+
+/* topContent */
+#topContent {
+	font-family: "Lucida Sans Unicode", Lucida, "Lucida Grande", Verdana, Helvetica, Arial, Sans, sans-serif;
+	font-size: 0.9em;
+	margin: 0px 0px 0px 250px;
+	width: 895px;
+	height: auto;
+	padding: 5px 5px 1px 10px;
+	background: #fff;
+	color: #5B5B6C;
+}
+.gsn {
+	display: block;
+	float: right;
+	width: 240px;
+	padding: 5px 5px 5px 5px;
+	margin: 10px;
+	color: #FF66CC;
+	border: 1px dotted #D2D0FB;
+	height: 300px;
+}
+.insidetopContent {
+	margin: 0px 0px 0px 0px;
+	width: 640px;
+	height: auto;
+	padding: 8px 0px 5px 10px;
+	background: #fff;
+	color: #5B5B6C;
+}
+
+
+
+
+
+/* Footer */
+#footer {
+	clear: both;
+	width: 1160px;
+	height: 110px;
+	margin: 0 auto;
+	background: url(../images/bgBottom.jpg) no-repeat;
+	background-position: 2px 0;
+}
+
+
+#footer #links {
+	margin: 5px 0px 0px 90px;
+	font-size: 1em;
+	padding: 3px 0 0 0;
+	float: left;
+	width: 500px;
+}
+
+#footer #links li{
+	display: block;
+	float: left;
+	border-right: thin solid #fff;
+	padding: 0px 8px; 
+	text-transform: uppercase;
+}
+
+#footer #links li.last{ border-right: none; }
+
+#footer a {
+	color: #fff;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+#thanks {
+	float: right;
+	margin: 0px 3px 0px 12px;
+	width: 254px;
+}
+#copyright {
+	color: #ccc;
+	text-decoration: none;
+	margin: -70px auto 0 auto;
+	font-size: 0.7em;
+	line-height: 1.1em;
+	width: 1000px;
+	height:auto;
+}
+
+/* Login & Store Locator */
+#loginForm fieldset, #storeLocator fieldset{
+	display: block;
+	margin: 0 5px 8px 0px;
+	padding-left: 20px;
+
+}
+
+#loginForm #username, #loginForm #password, #storeLocator #zipcode{
+	width: 103px;
+	height: 16px;
+	float: left;
+	border: medium #ccc double;
+	font-size: 0.9em;
+}
+
+#loginForm .imageSubmit, #storeLocator .imageSubmit{ 
+	float: right; 
+	margin: 1px 0 0 5px;
+	}
+	
+#topSidebar .t8{
+	text-align: center;
+	display: block;
+	padding: 1px;
+}
+
+
+#storeLocator, #leftNavigation{
+	background: repeat-x url(../images/dotted.jpg);
+	margin-top: 2px;
+	padding-top: 3px;
+}
+
+/* Form Styling */
+#searchtext, #username, #password, #zipcode{ font-family: "Lucida Sans Unicode", Lucida, "Lucida Grande", Verdana, Helvetica, Arial, Sans, sans-serif; }
+#search label, #topSidebar label{ display: none; }
+
+
+
+
+/*** GSN chain-specific content ***/
+
+a:link,
+a:visited,
+a:active			{font-weight:bold; color:#77278B; text-decoration:none;}
+a:hover				{font-weight:bold; color:#77278B; text-decoration:none;}
+h2				{color:#77278B;}
+		
+#StaticContentPage		{width:720px;}
+#SplashContainer		{margin-top:0;}
+#imgSubHeader			{clear:both; float:left;}
+
+.main-wrapper {
+	padding-left:250px;
+}
+
+#wrapper {
+	position:relative;
+}
+
+#page {
+	position:absolute;
+	top:175px;
+	left:0;
+	z-index:5;
+}
+
+/*** food finder ***/
+#FoodFinder			{float:right; clear:none;}
+#StoreFooter			{background: transparent url(/Assets/149/Images/foodfinderBG.jpg) no-repeat top left;}
+
+/*** nav bar ***/
+#StoreMenu			{background-color:#77278B; color:yellow; }
+#StoreMenu li a:hover		{color:#FFFF66;}
+
+/*** featured recipe, weekly article, ask the chef, cooking tips ***/
+#FeaturedRecipeTeaser		{background:transparent url(/Assets/149/Images/top_green_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser		{background:transparent url(/Assets/149/Images/top_green_gradient.jpg) repeat-x; }
+#AskTheChefTeaser		{background:transparent url(/Assets/149/Images/top_gray_gradient.jpg) repeat-x; }
+#CookingTipsTeaser		{background:transparent url(/Assets/149/Images/top_purple_gradient.jpg) repeat-x; }
+#FeaturedArticleTeaser h3,
+#AskTheChefTeaser h3 ,
+#CookingTipsTeaser h3,
+#FeaturedRecipeTeaser h3	{color:#FFFFFF;}
+#FeaturedArticleTeaser img	{margin:0 auto;}
+#DualContentControlDiv		{margin-left:10px;}
+#DualContentControlDiv,		
+#DualContentControlDiv2		{width:auto;}
+
+/*** splash page ***/
+#AdPromo			{background:transparent url(/Assets/149/Images/gold_gradient_lg.jpg) repeat-x;}
+#AdPromo p			{color:#FFFFFF;}
+
+/*** meal planner ***/
+#MealPlanner			{background:transparent url(/Assets/149/Images/redbrown_gradient.jpg) repeat-x;}
+#MealPlanner a			{color:#77278B;}
+
+/*** shopping list ***/
+#savedshoppinglists h2		{color:#77278B; border-bottom:1px solid #77278B;}
+
+/*** manage list legend ***/
+#legend th			{background-color:#77278B;}
+
+/*** coupons grid ***/
+#tblCouponTopN			{border:1px dotted #77278B; }
+#CouponList h3			{color:#77278B; }
+
+/*** 3-panel toolbox ***/
+#Department h3, #Aisles h3, #Category h3	{color:#77278B; }
+#InBetween1, #InBetween2			{color:#77278B; }
+
+/*** grid styles ***/
+#CategoryHeader h3		{color:#77278B; }
+.GridItem			{clear:both; text-align:left; background-color: #FFFFFF; color: #000000; font-weight: bold;}
+.GridItem th			{text-align:left; background-color: #77278B; color: #FFFFCC; font-weight: bold;}
+.GridAlternatingItem		{text-align:left; background-color: #CCCCCC; color: #000000; font-weight: bold;}
+#CircularAdText1_dlCategory h3	{color:#77278B;}
+	
+/*** recipe page ***/
+#RecipeCardTop					{display:none;}
+#RecipeCardMiddle				{background:url(/Assets/149/Images/recipe_top_background.jpg) bottom no-repeat; border:0px;}
+#RecipeCardBottom				{display:none;}
+#FeaturedRecipeTeaser.recipe,
+#MealPlanner.recipe				{margin-top:12px;}
+#ChainRecipes					{display:inline;}
+
+/*** headings ***/ 
+#MealPlanner h3, 
+#DivMealPlanner h2,
+#SearchResults h3,
+#SavedRecipes h2,
+#PasswordRecoverControl h1,		
+#UpdatePanelPage  h1,	
+#EmailPreferences1_lblDailyEmails,
+#EmailPreferences1_lblMonthlyEmails,
+#DietaryPreferencesLabel,		
+#DietaryPreferencesTip h1,
+#privacy h2 ,
+#recipecontent h3,		
+#CtrlDivSubTitle h2,		
+#FeaturedArticleFull h3,		
+#ContactUs h2, #EmploymentApplication h2,
+#ContactUsThanks h2,
+#AboutUs h3,	
+#EmploymentPositionsHeader h1,
+#StoreLocator h2,
+#RecipeSaveToRecipeBox h1,
+#ManageList h3,					
+#QuickSearch ul	a,
+#QuickSearch h2, 
+#ContactUs hr, #ContactUsThanks hr,
+#EmploymentApplication hr,
+#CircularLists span a,#FeaturedRecipeTeaser.recipe h2 a,
+#MealPlanner.recipe h2 a,
+.BtnPageLink				{ border-bottom: 1px solid #77278B; color:#77278B; }	
+
+#CouponList table table th	{background:#77278B}
+#availablevarietiestop		{background:#77278B url(/Assets/Common/Images/avail_varieties_300_r1_c1.png) no-repeat scroll 0pt 0pt;}			
+
+/*** about us page ***/
+#StoreInfoDiv				{background:none transparent; color:#77278B; font-size:90%; line-height:90%; }
+
+#column1, #column2		{margin-top:10px; margin-left:10px;}
+
+
+#sidebar div.AdMaster.Tile2	{position:absolute; top:90px !important}
+
+#Promotion { width:910px; }
+#Promotion #secondary-navigation { display:none; }
+
+/* IE 6
+--------------------------------------------------*/
+* html #Promotion { float:right; margin:0; padding:0;}
+* html #main				{ display:inline; }
+* html #sidebar, 
+* html #recipesidebar	{ display:inline; }
