@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<footer>
+	<FooterItem>
+		<FooterText>Footer Item 1</FooterText>
+		<FooterLink>/footerlink.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Footer Item 2</FooterText>
+		<FooterLink>/footerlink.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Footer Item 3</FooterText>
+		<FooterLink>/footerlink.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Footer Item 4</FooterText>
+		<FooterLink>/footerlink.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+	</FooterItem>
+	<FooterItem>
+		<FooterText>Footer Item 5</FooterText>
+		<FooterLink>/footerlink.aspx</FooterLink>
+		<FooterTarget></FooterTarget>
+	</FooterItem>
+</footer>
