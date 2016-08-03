@@ -13,7 +13,7 @@ body { background: #cc092f; width: 925px; margin: 0 auto; }
 #location { float:left; color: #fff; font-size: 12px; line-height: 170%; margin: 40px 0 10px 180px; }
 #location a {color: #FFFFFF;font-weight: normal; margin: 0 5px; text-decoration: none;}
 #location .change { text-transform: uppercase; font-weight: bold; color: #f0b73d; }
-#header #help { display: block; float: right; color: #fff; text-decoration: none; font-size: 14px; font-weight:normal; height: 20px; background: url(http://trigs.gsngrocers.com/Production/images/help_icon.png) no-repeat top right; margin: 25px 25px 0 0; padding: 8px 20px 0 0; }
+#header #help { display: block; float: right; color: #fff; text-decoration: none; font-size: 14px; font-weight:normal; height: 20px; background: url(/assets/148/Production/images/help_icon.png) no-repeat top right; margin: 25px 25px 0 0; padding: 8px 20px 0 0; }
 #user_login_box { float: right; padding: 0 5px 20px 0; width: 144px; background: url(/assets/148/Production/images/user_login_box.png) 0 bottom no-repeat; line-height: 100%; font-size: 10px; font-weight: bold; }
 #user_login_box a { color: #000; text-decoration: none; }
 #ulb_top { height: 10px; text-align: center; margin: 7px 0 0 0; }

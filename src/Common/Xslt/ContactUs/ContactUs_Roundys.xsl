@@ -16,7 +16,7 @@
 				var subSelect = $('ddlTopicSubSelect');
 
 				subSelect.innerHTML = '';
-				
+
 				subSelectOptions.each(function (o) {
 					if (o.ParentOption == topicSelect.value) {
 						var option = document.createElement('option');
@@ -31,7 +31,7 @@
 			}
 
 			function SubmitContactUs() {
-		
+
 				var emailValidator = new RegExp("^([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$");
 				var emailInput = $('txtEmail');
 				var emailInputLabel = $('txtEmailLabel');
@@ -40,7 +40,7 @@
 				var emailIsValid = emailValidator.test(emailInput.value);
 				var isValid = true;
                 var spamInvalid = SpamValidation("txtmessage");
-                
+
 				if (!emailIsValid) {
  					emailInputLabel.addClassName('contactInvalid');
 					isValid = false;
@@ -67,7 +67,7 @@
 				else {
 					txtFirstNameLabel.removeClassName('contactInvalid');
 				}
-				
+
 				//captchaLebel
 				var txtCaptcha = $('recaptcha_response_field');
 				var txtCaptchaLabel = $('txtCaptchaLabel');
@@ -79,7 +79,7 @@
 				else {
 					txtCaptchaLabel.removeClassName('contactInvalid');
 				}
-				
+
 				var txtLastName = $('txtLastName');
 				var txtLastNameLabel = $('txtLastNameLabel');
 
@@ -127,7 +127,7 @@
 				if (typeof (SubmitForm) == 'function') {
 					isValid = isValid && SubmitForm('hfContactXml');
 				}
-				
+
 				if (isValid && !spamInvalid) {
 					//Validate captcha
 					var captchaChallenge = $('recaptcha_challenge_field');
@@ -143,17 +143,17 @@
 								txtCaptchaLabel.addClassName('contactInvalid');
 								Recaptcha.reload();
 							}
-						}, 
+						},
 						function(error) {
 						});
-					}					
+					}
 				}
-				
+
 				var requiredInfoLabel = $('requiredInfoLabel');
 				requiredInfoLabel.addClassName('contactInvalid');
 			}
 
-            
+
 			//Validate Text Area for Hyper Links, HTML Tags and Special Symbols
             function SpamValidation(txtfield) {
                 var element = document.getElementById(txtfield);
@@ -199,11 +199,11 @@
 							element.checked = false;
 						}
 					}
-				}	
+				}
 
 				TopicChanged();
 			}
-			
+
 			function ValidateCaptcha(challenge, entered, successCallback, errorCallback) {
 				var request = new Ajax.Request(this.document.location.protocol + '//' + document.location.host + '/WebService/Contact.asmx/' + 'ValidateCaptcha?challenge='+ encodeURI(challenge) + '&responseValue=' + encodeURI(entered), {
 					method: 'get',
@@ -212,13 +212,13 @@
 					onFailure: errorCallback
 				});
 			}
-			
+
 			function UnwrapResponse(response) {
 
 				var responseValue = '';
-				
+
 				if (response.responseXML.firstChild.textContent) {
-					
+
 					responseValue = response.responseXML.firstChild.textContent;
 				}
 				else if (response.responseXML.documentElement.firstChild.nodeValue) {
@@ -230,11 +230,11 @@
 
 				return responseValue;
 			}
-			
+
 			function CancelPage() {
 				document.location = document.referrer;
 			}
-		]]>	
+		]]>
 		</script>
 		<input type="hidden" name="staticpagetypeid">
 			<xsl:attribute name="value">
@@ -245,13 +245,13 @@
 			<div id="contactUsInfo">
 				<h3>Thank you for your interest in <xsl:value-of select="ExpressLane/GenericChain/ChainName" />!</h3>
 				<p>Looking for our Coupon Policy? <a href="/couponpolicy.aspx" target="_blank">Click here.</a></p>
-				<p>Looking for a list of our Gluten Free products? <a href="http://upload.gsngrocers.com/elvs/StaticContent/UploadFiles/216/13593glutenfreeproductlist111512.pdf" target="_blank">Click here</a>.</p>
+				<p>Looking for a list of our Gluten Free products? <a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/216/13593glutenfreeproductlist111512.pdf" target="_blank">Click here</a>.</p>
 				<p>Questions about <a href="/community.aspx">Charitable Contributions?</a></p>
 				<p>Are you contacting us regarding employment at a store? Please use our Store Locator to find the phone number and address of the store and make your inquiry at that location. Please ask to speak to the Service Operations Manager.</p>
 				<p>Please note, regarding gift cards:
 			<ul><li>All gift card sales are final</li><li>Gift cards are subject to dormancy fees, where applicable by law. Please see our disclosure on the back of your gift card.</li><li>Lost or stolen cards cannot be replaced.</li></ul></p>
 				<h3>Two Ways to Contact Us</h3>
-				<p>(Please include UPC number, product expiration date, lot code number, date of purchase, product description and store where purchased 
+				<p>(Please include UPC number, product expiration date, lot code number, date of purchase, product description and store where purchased
 			for any product-related inquiries.)</p>
 				<h3>Send Us an Email</h3>
 				<h3>Call Our Customer Experience Center</h3>
@@ -417,7 +417,7 @@
 						</xsl:for-each>
 					</select>
 				</div>
-				
+
 				<div id="ContactUsCaptcha">
 				<label id="txtCaptchaLabel" class="ContactFieldTitle">4. Enter Captcha:*</label>
 				 <script type="text/javascript">
@@ -436,18 +436,18 @@
                          value="manual_challenge"&gt;
                   </noscript>
                 </div>
-                
+
                 <xsl:choose>
                     <xsl:when test="ExpressLane/GenericChain/ChainID != 218">
                         <script>
                             var maxLength = 8000;
 
-                            function countCharsLeft() {  
+                            function countCharsLeft() {
                                 var inputStr = document.aspnetForm.Message.value;
                                 var strLength = inputStr.length;
                                 var errDiv = document.getElementById('characterLimitWarning');
                                 var numLabel = document.getElementById('num');
-                                if (strLength &gt; maxLength ) { 
+                                if (strLength &gt; maxLength ) {
                                     document.aspnetForm.Message.value = inputStr.substring(0,maxLength);
                                     errDiv.style.visibility = "visible";
                                 } else if (strLength &lt; maxLength){
@@ -470,7 +470,7 @@
                         </div>
                     </xsl:otherwise>
                 </xsl:choose>
-                
+
 				<div class="Buttons">
 					<a class="button submit" href="javascript:SubmitContactUs();">
 						<span>Submit</span>

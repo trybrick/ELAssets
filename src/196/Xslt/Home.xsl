@@ -6,7 +6,7 @@
 	<xsl:template match="/"><style>.pollTextTitle		{font-size:160%; font-weight:bold; color:white;}
 				.pollTextQuestion	{font-size:10px; font-weight:bold;}
 				.pollTextAnswer		{font-size:10px; }</style>
-		
+
 		<script id="jsImage" type="text/javascript" language="javascript">
 			<xsl:comment><![CDATA[
      			function changeDIV(hide, show)
@@ -14,7 +14,7 @@
             		var d = new Object();
             		d = document.getElementById(hide);
             		d.style.display = "none";
-                       
+
             		d = document.getElementById(show);
             		d.style.display = "";
         		}
@@ -95,7 +95,7 @@
 						</a>
 					</div>
 					<div id="DualContentControlDivC">
-						<a href="http://upload.gsngrocers.com/elvs/StaticContent/UploadFiles/196/kiosk_reno.pdf" target="_blank">
+						<a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/196/kiosk_reno.pdf" target="_blank">
 							<img>
 								<xsl:attribute name="src">/Assets/<xsl:value-of select="//GenericChain/ChainID"/>/Images/dmvkioskbutton.jpg</xsl:attribute>
 							</img>
