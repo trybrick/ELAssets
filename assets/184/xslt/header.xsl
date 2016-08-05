@@ -58,7 +58,7 @@
 			<a class="social" title="Visit Festival Foods' Blog" href="http://blog.festfoods.com/" target="_blank"><img src="/Assets/184/Images/blog.png" width="20" height="20"/></a>
                         </div>
                         <div id="HeaderFestivalLogo" style="position: absolute; left: -84px; width: 260px; height: 117px;">
-                          <a href="http://festfoods.gsnrecipes.com/ ">
+                          <a href="http://festfoods.gsngrocers.com/ ">
                             <img width="260" height="117" border="0" alt="" src="/Assets/184/Images/logo.png"/>
                           </a>
                         </div>

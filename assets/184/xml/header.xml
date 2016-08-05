@@ -4,7 +4,7 @@
 	<TopLevelNavigation>
 		<MenuItem>
 			<Title>Home</Title>
-			<Link>http://festfoods.gsnrecipes.com</Link>
+			<Link>http://festfoods.gsngrocers.com</Link>
 		</MenuItem>
 		<MenuItem>
 			<Title>FestFoods.com</Title>
@@ -12,11 +12,11 @@
 		</MenuItem>
 		<MenuItem>
 			<Title>Saved Carts</Title>
-			<Link>http://festfoods.gsnrecipes.com/Shop/SavedLists.aspx</Link>
+			<Link>http://festfoods.gsngrocers.com/Shop/SavedLists.aspx</Link>
 		</MenuItem>
 		<MenuItem>
 			<Title>Previous Orders</Title>
-			<Link>http://festfoods.gsnrecipes.com/shop/PreviousOrders.aspx</Link>
+			<Link>http://festfoods.gsngrocers.com/shop/PreviousOrders.aspx</Link>
 		</MenuItem>
 		<MenuItem>
 			<Title>Contact Us</Title>
