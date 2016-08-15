@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
 
-
-
-
 <tabs>
 	<tab>
 	    <url>/Shop/Coupons.aspx</url>
@@ -13,11 +10,15 @@
 	    <text>My&lt;br&gt;Favorites</text>
 	</tab>	
 	<tab>
-	    <url>/Recipes/RecipeCenter.aspx</url>
-	    <text>Recipe&lt;br&gt;Center</text>
+	    <url>/Shop/Product.aspx</url>
+	    <text>Browse the&lt;br&gt;Aisles</text>
+	</tab>	
+		<tab>
+	    <url>/Shop/Specials.aspx</url>
+	    <text>In-Store&lt;br&gt;Specials</text>
 	</tab>	
 	<tab>
-	    <url>/Recipes/RecipeVideos.aspx</url>
-	    <text>Cooking&lt;br&gt;Videos</text>
+	    <url>/Recipes/RecipeCenter.aspx</url>
+	    <text>Recipe&lt;br&gt;Center</text>
 	</tab>	
 </tabs>
