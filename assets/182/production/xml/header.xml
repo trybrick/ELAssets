@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<header>
+<logo>/Assets/##chainid##/Images/HeaderLogo.gif</logo>
+<TopLevelNavigation>
+	<MenuItem>
+		<Title>Home</Title>
+		<Link>http://www.foodcity.com</Link>
+	</MenuItem>
+	
+	<MenuItem>
+		<Title>Customer Care</Title>
+		<Link>#</Link>
+			<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Contact Us</Title>
+				<Link>http://www.foodcity.com/contact.php</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>FAQ</Title>
+				<Link>http://www.foodcity.com/customercare.php?action=faq</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Find Store/Ad</Title>
+				<Link>http://www.foodcity.com/storelocator.php</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Specialty Orders</Title>
+				<Link>http://www.foodcity.com/specialtyorders.php</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Order Specialty Items</Title>
+				<Link>http://coborns.elsstore.com/</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Recalls</Title>
+				<Link>http://www.foodcity.com/recalls.php</Link>
+			</MenuItem>
+			</SubLevelNavigation>
+	</MenuItem>
+	
+	<MenuItem>
+		<Title>Party Planner</Title>
+		<Link>#</Link>
+			<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Holiday Dinners</Title>
+				<Link>http://www.foodcity.com/content.php?id=1301</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Bakery/Deli Trays</Title>
+				<Link>http://www.foodcity.com/partyplanner.php?action=deli</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Fruit Baskets</Title>
+				<Link>http://www.foodcity.com/partyplanner.php?action=fruit</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Gift Cards</Title>
+				<Link>http://www.foodcity.com/partyplanner.php?action=gift</Link>
+			</MenuItem>
+			<MenuItem>
+				<Title>Seafood Trays</Title>
+				<Link>http://www.foodcity.com/partyplanner.php?action=seafood</Link>
+			</MenuItem>
+			</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Cooking</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Chef Walter</Title>
+				<Link>http://www.foodcity.com/cooking.php?id=353</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Food Safety Tips</Title>
+				<Link>http://www.foodcity.com/foodsafety.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Terry's Kitchen</Title>
+				<Link>http://www.foodcity.com/terryskitchen.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Terry's Links</Title>
+				<Link>http://www.foodcity.com/terryskitchenlinks.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>TV Recipes</Title>
+				<Link>http://www.foodcity.com/wjhlrecipes.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>ValuCard Recipes</Title>
+				<Link>http://www.foodcity.com/valucardrecipes.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Fresh Connection Newsletter</Title>
+				<Link>http://www.foodcity.com/docs/53901FreshConnection-Fall08.pdf</Link>
+			</MenuItem>
+		</SubLevelNavigation>			
+	</MenuItem>
+	<MenuItem>
+		<Title>Departments</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Food City Brands</Title>
+				<Link>http://www.foodcity.com/corporate_brands.php?action=welcome</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Legacy Brands</Title>
+				<Link>http://www.foodcity.com/legacybrands.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Floral</Title>
+				<Link>http://www.foodcity.com/departments.php?action=floral</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Gas’N Go</Title>
+				<Link>http://www.foodcity.com/departments.php?action=gasngo</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Produce</Title>
+				<Link>http://www.foodcity.com/departments.php?action=produce</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Meats</Title>
+				<Link>http://www.foodcity.com/departments.php?action=meats</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Organics</Title>
+				<Link>http://www.foodcity.com/departments.php?action=organics</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Video</Title>
+				<Link>http://www.foodcity.com/departments.php?action=video</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Community</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Photo Galleries</Title>
+				<Link>http://www.foodcity.com/photogallery.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Our Commitment</Title>
+				<Link>http://www.foodcity.com/community.php?id=466</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Community Cash</Title>
+				<Link>http://www.foodcity.com/community.php?id=435</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Events</Title>
+				<Link>http://www.foodcity.com/events.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Apples for the Students</Title>
+				<Link>http://www.foodcity.com/apples.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Upromise</Title>
+				<Link>http://www.upromise.com/8293.do?sx=groc&amp;bannerId=FDCITY001B0001&amp;ax=foodcity&amp;origin=y</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Clubs</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>Baby Club</Title>
+				<Link>http://www.foodcity.com/babyclub.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Kids Club</Title>
+				<Link>http://www.foodcity.com/kidsclub.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Pet Club</Title>
+				<Link>http://www.foodcity.com/petclub.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Wine Club</Title>
+				<Link>http://www.foodcity.com/clubs.php?action=wineclub</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Company</Title>
+		<Link>#</Link>
+		<SubLevelNavigation>	
+			<MenuItem>			
+				<Title>About Food City</Title>
+				<Link>http://www.foodcity.com/company.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>About Food City Distribution Center</Title>
+				<Link>http://www.foodcity.com/company.php?action=midmountain</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Media Downloads</Title>
+				<Link>http://www.foodcity.com/company.php?action=media</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>News and Press</Title>
+				<Link>http://www.foodcity.com/companynews.php</Link>
+			</MenuItem>
+			<MenuItem>			
+				<Title>Employment</Title>
+				<Link>http://www.foodcity.com/company.php?action=employment</Link>
+			</MenuItem>
+		</SubLevelNavigation>
+	</MenuItem>
+	<MenuItem>
+		<Title>Contact</Title>
+		<Link>http://www.foodcity.com/contact.php</Link>
+	</MenuItem>
+</TopLevelNavigation>
+</header>

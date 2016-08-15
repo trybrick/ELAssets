@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+
+
+
+<tabs>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=4</url>
+	    <text>Weekly&lt;br&gt;Ad</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=14</url>
+	    <text>My&lt;br&gt;Favorites</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=11</url>
+	    <text>ValuCard&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=7</url>
+	    <text>In-Store&lt;br&gt;Specials</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=23</url>
+	    <text>Browse&lt;br&gt;the Aisles</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=17</url>
+	    <text>##manufacturercoupontotalsavings## in &lt;br&gt;Coupon Savings</text>
+	</tab>
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=3</url>
+	    <text>Recipe&lt;br&gt;Center</text>
+	</tab>	
+	<tab>
+	    <url>http://my.foodcity.com/myfoodcity-redirect/?linkid=18</url>
+	    <text>Cooking&lt;br&gt;Videos</text>
+	</tab>	
+</tabs>

@@ -1,0 +1,597 @@
+@charset "UTF-8";
+/**** reset ****/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:12px;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/**** /reset ****/
+
+body #banner-advertisement{
+	display:none;
+}
+
+/* overide page layout markup */
+div#SignInDiv.main-wrapper{
+	margin: 0 auto;
+	float:none;
+}
+
+div.main-wrapper {
+   margin: 0 auto;
+	float:none;
+}
+
+div#storeZipEntryForm {
+    clear: none;
+    float: left;
+    margin-bottom: 4px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    width: 500px;
+}
+div.AdMaster{
+	padding-bottom: 20px;
+}
+
+div#banner-advertisement.group div.AdMaster{
+	/* display:none; */
+}
+
+
+/* sandbox */
+
+#content-spacer-top{
+height: 20px;
+width: 100%;
+display:block;
+}
+
+#container-outer{
+    width: 100%
+}
+div#container{
+	 margin: 0px auto 0;
+	 width: 940px;
+	 
+	
+}
+
+#mobile-app{
+	background:url('http://www.foodcity.com/site/images/layout/icon-mobile.gif')  top left no-repeat;
+	height: 21px;
+	padding-left: 20px;
+}
+
+.single-column .padded p{
+	padding: 15px 0px;
+}
+.single-column .padded h2{
+	padding: 0px;
+	margin: 0px;
+}
+
+#error {
+	color:red;
+	font-size:10px;
+	display:none;
+}
+.needsfilled {
+	background:red;
+	color:white;
+}
+
+/* attempt to fix gloabal white out */
+
+.container-mid table tr td{
+	padding: 2px 15px;
+}
+
+html body#sub div.container-mid h2, html body#sub div.container-mid p, html body#sub div.container-mid h1, html body#sub div.container-mid h3, html body#sub div.container-mid strong{
+	color:#333;
+}
+
+html body#sub div.ad-specials div.unit div.float-left{
+	color:#333;
+}
+
+
+#t-wrap {
+	border: 1px solid #E8F3FA;
+}
+#t-wrap .item {
+	width: 210px;
+	margin: 8px;
+	float: left;
+	border: 1px solid #efefef;
+}
+#t-wrap .item .item-desc{
+	text-align:center;
+}
+
+
+
+.container-mid strong{
+	color: #666666;
+}
+.container-mid a{
+	color: #007AC3;
+}
+p strong{
+	color: #333;
+}
+a.btn-join-txt-msg{
+	background:url('http://www.foodcity.com/site//images/layout/btn-join-txt-msg.png') top left;
+	display:block;
+	width: 140px;
+	height:20px;
+}
+a.btn-email{
+	background:url('http://www.foodcity.com/site//images/layout/btn-emails.png') top left;
+	display:block;
+	width: 140px;
+	height:20px;
+}
+
+ul.shadow div{
+	background: url('http://www.foodcity.com/site/images/layout/bg-dropdown-item.gif') bottom center no-repeat;
+	
+}
+
+a.btn-join-txt-msg:hover{
+	background:url('http://www.foodcity.com/site//images/layout/btn-join-txt-msg.png') bottom left;
+}
+a.btn-email:hover{
+	background:url('http://www.foodcity.com/site//images/layout/btn-emails.png') bottom left;
+}
+
+p strong span{
+	color: #333;
+}
+
+
+ /* table for list views */
+div.row {
+	border-bottom: 1px solid #E8F3FA;
+	line-height: 0px;
+	background:url('http://www.foodcity.com/site//images/layout/row-bg.gif') repeat-y -2px 0;
+}
+div.row strong {
+	color: #666666;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+	display:block;
+}
+div.row-float-left {
+	width: 292px;
+	float:left;
+	background: url('http://www.foodcity.com/site//images/layout/row.gif') top right repeat-y;
+}
+
+div.row-float-right strong{
+	line-height: 16px;
+}
+div.row-float-right {
+	float: right;
+	width:647px;
+	color: #666666;
+	line-height: 16px;
+}
+div.row-float-right-wrap {
+	padding: 25px 25px;
+	color: #666666;
+	line-height: 16px;
+}
+.row div.row-float-right-wrap p{
+	padding: 0 0 6px 0;
+}
+
+a.read-more, .row-float-right a, .float-right a {
+	color: #007AC3;
+}
+
+
+/**** global ****/
+* {font-family:Helvetica, Arial, sans-serif; font-size: 12px; color: #333333;}
+*:focus {outline: none} 
+.clear {clear:both;}
+.float-left {float:left;}
+.float-right {float:right;}
+.centered {margin: 0 auto;}
+.hidden {display: none;}
+.shadow {-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .4);-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .4);}
+.menu-shadow {-webkit-box-shadow: 10px 0 15px rgba(0, 0, 0, .35);-moz-box-shadow: 10px 0 15px rgba(0, 0, 0, .35);}
+a.block {display: block; width: 100%; height: 100%;}
+.pointer {cursor: pointer;}
+ul.horizontal {list-style: none;} ul.horizontal li {float: left;}
+a {text-decoration: none;}
+#sub div.container-mid .blue{color: #007ac3;}
+.blue {color: #007ac3;}
+span.blue a {color: #007ac3;}
+
+
+div.connect h2 span.blue {color: #007ac3;}
+div.connect h2 span.green {color: #cee15c;}
+
+/* .required {color: #007ac3; font-size: 16px; line-height: 12px;} */
+.green {color: #cee15c;}
+div.container-mid {width:940px; margin: 20px auto 0 auto;}
+div.title {height: 19px; padding: 10px; background: url('http://www.foodcity.com/site/images/layout/bg-pinstripe.gif') repeat; font-size: 24px; font-weight: lighter;color:#FFF }
+div.title span {height: 19px; padding: 10px; font-size: 24px; font-weight: lighter;  }
+
+.input-select {height: 23px; margin: 0 0 0 5px;}
+.input-select div.selected {width: 205px; height: 23px; padding: 5px 0 0 10px; margin: 0;font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat;cursor: pointer;}
+.input-select div.icon {width: 20px; height: 20px; margin: 0;  background: url('http://www.foodcity.com/site/images/layout/bg-select.png') top right no-repeat;cursor: pointer;}
+.input-select div.icon:hover {background-position: right -20px;}
+
+.input-select ul {width: 215px; padding: 5px 0 0 0; background: #ffffff; border: 1px solid #d4d2d2;  border-top: none; margin: 20px 0 0 5px; list-style: none; position: absolute; display: none;}
+.input-select ul li {height: 20px; font-size: 10px; padding: 0 0 0 5px; line-height: 20px; font-weight: bold; color: #999999; cursor: pointer;}
+.input-select ul li:hover {background:#007ac3; color: #ffffff; }
+div.padded {padding: 20px;}
+h1.faq-head {font-size: 16px; font-weight: bold; color: #007ac3;}
+/**** /global ****/
+
+body {background: #f5f5f5 url('http://www.foodcity.com/site/images/layout/bg-header-long.jpg') top center no-repeat;}
+
+.header-wrap {width: 100%; height: 110px; background: #396108 url('http://www.foodcity.com/site/images/layout/bg-header.jpg') top center no-repeat; text-align: center;}
+div.header {width: 940px; height: 110px;}
+img.logo-header {position: relative; left: -4px;}
+
+div.login {width: 124px; height: 53px; background: url('http://www.foodcity.com/site/images/layout/bg-login.png') bottom center no-repeat; margin: -120px -5px 0 0;}
+
+/********** Primary Nav *********/
+div.nav {position: absolute; z-index: 100000; width: 917px; height: 44px; margin-top: -20px; margin-left: 50%; left: -623px; padding: 0 165px 0 165px; background: url('http://www.foodcity.com/site/images/layout/bg-nav.png') top center no-repeat;}
+ul.nav {width: 630px; height: 30px; overflow: hidden;}
+ul.nav li {padding: 0 15px 0 15px;}
+ul.nav li a {line-height: 30px; font-weight: bold; text-transform: uppercase; color:#FFF;}
+ul.nav li a:hover {color: #e9fa82;}
+ul.nav li ul {width:175px; margin: 0 0 0 -5px; padding: 10px 0 3px 0; background: #ffffff url('http://www.foodcity.com/site/images/layout/bg-dropdown.gif')top center no-repeat; position: absolute; display: none;}
+ul.nav li:hover ul {display: block;}
+ul.nav li ul div {width: 100%; overflow: hidden; color: #555555; font-size: 10px;}
+ul.nav li ul div div.float-left {width: 56px; margin: 0 0 0 10px; overflow: hidden;}
+ul.nav li ul div div.float-right {width: 99px; margin: 5px 5px 0 5px; overflow: hidden; line-height: 12px; background: none;}
+ul.nav li ul div div.float-right p { color: #555555; font-size: 10px;}
+ul.nav li ul div span.price {font-size: 14px; line-height: 20px; font-weight: bold; color: #007ac3;}
+ul.nav li ul div span.blue {line-height: 20px; font-size: 10px;}
+ul.nav li ul div div.caption {height: 20px; padding: 0 0 0 20px; background: url('http://www.foodcity.com/site/images/layout/bg-dropdown-item.gif') bottom left no-repeat;}
+ul.nav li ul li {width:175px; height: 25px; margin: 0; padding: 0; float: none; background: url('http://www.foodcity.com/site/images/layout/bg-dropdown-item.gif') bottom left no-repeat;}
+ul.nav li ul li a {color: #007ac3; font-size: 10px; padding: 0 10px 0 20px; font-weight: normal; text-transform: uppercase; display: block; width: 145px; height: 100%; line-height: 26px;}
+ul.nav li ul li.last {background: none;}
+ul.nav li ul li:hover {background: url('http://www.foodcity.com/site/images/layout/bg-pinstripe.gif') top left repeat;}
+ul.nav li ul li:hover a {color: #ffffff;}
+
+div.locator {width:280px; height: 30px; padding: 5px 0 0 0; line-height: 20px; font-weight: bold; text-transform: uppercase;}
+div.locator div{
+	color:#FFF;
+}
+div.locator .input-text {width: 114px; height: 23px; padding: 0 0 0 10px; margin: 0 0 0 5px; font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat; border: none;}
+div.locator div.icon {width: 20px; height: 20px;  background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') top right no-repeat;}
+div.locator div.icon:hover {background-position: right -20px;}
+
+div.ad {width: 75px; height: 25px; background: url('http://www.foodcity.com/site/images/layout/btn-weekly-ad.gif') no-repeat; position: relative; top: 5px; }
+div.ad:hover {background-position: 0 -25px;}
+div.ad a {display: block; width: 100%; height: 100%; text-indent: -100000px;}
+
+/********** End Primary Nav *********/
+
+/********** Hero *********/
+div.hero-wrap {width: 930px; height: 385px; border: 5px solid #ffffff; background: #fcfcfd; overflow: visible;}
+div.hero {position: absolute; /*width: 930px; height: 380px;*/ width: 850px; height: 128px; padding: 252px 0 0 80px; overflow: visible; margin: 5px 0 0 0; display: none;}
+div#hero1 {display: block;}
+div.hero div.button {width: 300px; height: 30px;}
+
+div.tab-wrap {position: relative; z-index: 10; width: 34px; height: 50px; margin: 160px 0 0 0; overflow: hidden; cursor: pointer;}
+div.float-left div.tab {width: 34px; height: 50px; margin: 0 0 0 -10px; background: url('http://www.foodcity.com/site/images/layout/hero-tabs.png') top left no-repeat; position:relative; z-index: 9500}
+div.float-right div.tab {width: 34px; height: 50px; margin: 0 0 0 10px; background: url('http://www.foodcity.com/site/images/layout/hero-tabs.png') top right no-repeat; position:relative; z-index: 9500}
+div.nav-hero { background: url("http://www.foodcity.com/site/images/layout/nav-hero-shadow.png") no-repeat scroll 0 0 transparent;
+
+    height: 50px;
+   
+    position: relative;
+    top: -255px;
+    width: 930px;
+    z-index: 115000;}
+ul.nav-hero {}
+ul.nav-hero li {width: 232px; height: 50px; margin: 0 1px 0 0; background: url("http://www.foodcity.com/site/images/layout/bg-nav-hero.png") bottom center no-repeat;}
+ul.nav-hero li.last {margin: 0; width: 231px;}
+ul.nav-hero li:hover {background: url("http://www.foodcity.com/site/images/layout/bg-nav-hero-hover.png") bottom center no-repeat;}
+ul.nav-hero li.active, ul.nav-hero li.activeSlide {background: url("http://www.foodcity.com/site/images/layout/bg-nav-hero-hover.png") bottom center no-repeat;}
+ul.nav-hero li a {padding: 7px 0 0 0; font-size: 26px; line-height: 50px; text-align: center; text-transform: uppercase; font-weight: lighter;}
+
+	/* subpage hero */
+	body#sub div.hero, body#pharmacy div.hero {display: block;/*width: 930px; height: 380px;*/ width: 885px; height: 380px; padding: 0 45px 0 0; }
+	body#sub div.hero div.button, body#pharmacy div.hero div.button {margin-top: 290px;}
+	div.hero ul li a {font-size: 12px; font-weight: bold; text-transform: uppercase; line-height: 30px; color:#FFF}
+	
+	div.hero ul li:hover {background-position: 0 -30px;}
+	
+	div.hero ul {margin-top: 30px; position: absolute;}
+	
+	div.hero ul li {width: 167px; height: 30px; padding: 0 30px 0 23px; margin: 0 0 1px 0; background: url('http://www.foodcity.com/site/images/layout/bg-subnav-no-children.gif') no-repeat; overflow: hidden;}
+	div.hero ul li.children {width: 167px; height: 30px; padding: 0 30px 0 23px; margin: 0 0 1px 0; background: url('http://www.foodcity.com/site/images/layout/bg-subnav.gif') no-repeat; overflow: hidden;}
+   	div.hero ul li.children:hover {width: 167px; height: 30px; padding: 0 30px 0 23px; margin: 0 0 1px 0; background: url('http://www.foodcity.com/site/images/layout/bg-subnav.gif') no-repeat 0 bottom; overflow: hidden;}
+ 	
+	div.hero ul li.children ul li{
+		background: none;
+	}
+	div.hero ul li ul {position: absolute; margin: -30px 0 0 197px; background: #ffffff url('http://www.foodcity.com/site/images/layout/subnav-arrow.gif') top left no-repeat; display: none;}
+	div.hero ul li ul li {background: none; border-bottom: 1px solid #e8f2fc; margin: 0;}
+	
+	div.hero ul li ul li:hover { background: url('http://www.foodcity.com/site/images/layout/bg-subnav-no-children.gif') no-repeat 0 -30px; width: 166px; border-left: 1px solid #dedede;}	
+	
+	div.hero ul li ul li.children { background: url('http://www.foodcity.com/site/images/layout/bg-subnav-white.gif') no-repeat 0 0; width: 166px; border-left: 1px solid #dedede;}
+	div.hero ul li ul li.children:hover { background: url('http://www.foodcity.com/site/images/layout/bg-subnav-white.gif') no-repeat 0 -30px; width: 166px; border-left: 1px solid #dedede;}
+	
+	div.hero ul li ul li.first:hover {background: url('http://www.foodcity.com/site/images/layout/bg-subnav-first-no-children.gif') no-repeat; width: 167px; border-left: none;}
+	
+	div.hero ul li ul li.first.children {background: url('http://www.foodcity.com/site/images/layout/bg-subnav-first.gif') no-repeat 0 0; width: 167px; border-left: none;}
+	div.hero ul li ul li.first.children:hover {background: url('http://www.foodcity.com/site/images/layout/bg-subnav-first.gif') no-repeat 0 -30px; width: 167px; border-left: none;}
+	
+	
+	div.hero ul li ul li ul li.first:hover {background: url('http://www.foodcity.com/site/images/layout/bg-subnav-first-no-children.gif') no-repeat; width: 167px; border-left: none;}
+	
+	div.hero ul li ul li ul li.first.children:hover {background: url('http://www.foodcity.com/site/images/layout/bg-subnav-first.gif') no-repeat; width: 167px; border-left: none;}
+	
+	
+	div.hero ul li:hover ul {display: block;}
+	
+	div.hero ul li ul li ul.third {display: none;}
+	
+	div.hero ul li ul li:hover ul.third {display: block; margin: -30px 0 0 196px;}
+	
+	div.hero ul li ul li a, div.hero ul li ul li ul li a {color: #006aa8;}
+	div.hero ul li ul li:hover a, div.hero ul li ul li ul:hover a {color: #ffffff;}
+	div.hero ul li ul li ul.third li a {color: #006aa8;}
+	div.hero ul li ul li ul.third li:hover a {color: #ffffff;}
+	
+	div.hero ul li ul li ul li ul.fourth {display: none;}
+	div.hero ul li ul li ul li:hover ul.fourth {display: block; margin: -30px 0 0 196px;}
+	div.hero ul li ul li ul li:hover ul.fourth li a {color: #006aa8;}
+	div.hero ul li ul li ul li ul.fourth li:hover a {color: #ffffff;}
+	/********** End Hero *********/
+
+/********** Callouts *********/
+div.callouts {width: 960px; height: 140px;}
+div.callout {width: 320px; height: 150px;}
+
+div.specials {width:150px; height: 30px; margin: 100px 0 0 0;}
+div.specials .input-text {width: 100px; height: 23px; padding: 0 0 0 10px; margin: 0 0 0 5px; font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat; border: none;}
+div.specials div.icon {width: 20px; height: 20px;  background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') top right no-repeat;}
+div.specials div.icon:hover {background-position: right -20px;}
+/********** End Callouts *********/
+
+/********** Ad Specials *********/
+div.ad-specials {width:930px; margin: 20px auto 0 auto; border: 5px solid #ffffff; background: #ffffff;}
+div.ad-specials div.unit {width: 293px; height: 98px; margin-bottom: 20px; border: 1px solid #e0e0e0; float:left; overflow: hidden;}
+div.ad-specials div.bottom {margin-bottom: 0;}
+div.ad-specials div.middle {width: 298px; margin-right:18px; margin-left: 18px;}
+
+div.ad-specials div.unit div.float-left {width: 122px; height: 88px; padding: 5px; text-align: center; }
+div.ad-specials div.unit div.float-right {width: 155px; height: 88px; padding: 27px 5px 5px 0; color: #555555; font-size: 10px; line-height: 14px;}
+div.ad-specials div.unit div.float-right p {color: #555555; font-size: 10px; line-height: 14px; margin: 3px 0 5px 0;}
+div.ad-specials div.unit div.float-right h1 {font-size: 18px; font-weight: bold; color: #007ac3; line-height: 18px;}
+/********** End Ad Specials *********/
+
+/********** Floral Finder *********/
+div.floral-finder {width: 290px; height: 290px; border: 1px solid #ebebeb; padding: 4px; background: #ffffff;}
+div.floral-finder h2 {font-size: 14px; margin: 15px 0 8px 5px; text-transform: uppercase;}
+div.floral-finder .input-select div.selected {width: 240px;}
+div.floral-finder .input-select ul {width: 250px;}
+div.btn-search-flowers {width: 160px; height: 31px; margin: 10px 0 0 10px; background: url('http://www.foodcity.com/site/images/layout/btn-search-flowers.gif') no-repeat;}
+div.btn-search-flowers:hover {background-position: 0 -31px;}
+
+div.btn-search-cakes {width: 160px; height: 31px; margin: 10px 0 0 10px; background: url('http://www.foodcity.com/site/images/layout/btn-search-cakes.gif') no-repeat;}
+div.btn-search-cakes:hover {background-position: 0 -31px;}
+/********** End Floral Finder *********/
+
+/********** Subpage *********/
+div.single-column {width: 930px; min-height: 290px; border: 1px solid #ebebeb; padding: 4px; margin: 30px 0 0 0; background: #ffffff;}
+div.single-column p {padding: 15px; color: #666666; line-height: 20px;}
+div.single-column h2 {color: #666666; margin: 0 0 0 15px;}
+
+div.single-column strong, div.single-column p strong {color: #333333;}
+div.single-column a, div.single-column p a {color: #333333;}
+div.single-column a:hover, div.single-column p a:hover {text-decoration: underline;}
+
+div.double-column {width: 605px; min-height: 290px; border: 1px solid #ebebeb; padding: 4px; margin: 0 0 0 20px; background: #ffffff;}
+div.double-column p {padding: 15px; color: #666666; line-height: 20px;}
+
+div.double-column2 {width: 457px; min-height: 309px; border: 1px solid #ebebeb; padding: 4px; margin: 10px 0 0 0; background: #ffffff;}
+div.double-column2 p {padding: 15px; color: #666666; line-height: 20px;}
+
+div.double-column3 {width: 445px; min-height: 290px; border: 1px solid #ebebeb; padding: 4px 4px 2px 4px; margin: 10px 0 0 0; background: #ffffff;}
+
+div.double-column h2, div.double-column2 h2, div.double-column2 h2 {color: #666666; margin: 0 0 0 15px;}
+
+div.half-column {width: 453px; min-height: 324px; border: 1px solid #ebebeb; padding: 4px 4px 1px 4px ; margin: 10px 0 0 0; background: #ffffff; overflow: hidden;}
+div.half-column p, div.whole-column p, div.sub3-col1 p {padding: 15px; color: #666666; line-height: 20px;}
+div.half-column h2, div.half-column h1, .double-column2 h1{padding: 4px 15px; margin: 15px 0 0 0}
+div.half-column ul{
+	padding: 4px 15px
+}
+div.half-column ul li{
+	padding: 2px;
+	list-style:disc inside;
+}
+div.whole-column {width: 940px; min-height: 324px; border: 1px solid #ebebeb; margin: 10px 0 0 0; background: #ffffff; overflow: hidden;}
+div.no-margin {margin: 0;}
+
+div.sub3-col1 {width: 612px; min-height: 420px; border: 1px solid #ebebeb; padding: 4px 4px 1px 4px ; margin: 10px 0 0 0; background: #ffffff; overflow: hidden;}
+div.sub3-col2 {width: 306px; min-height: 450px; padding: 0px 4px 1px 4px ; margin: -10px 0 0 0; overflow: hidden;}
+
+div.whole-column div.float-left {width: 292px; height: 150px; border-bottom: 1px solid #e8f3fa; border-right: 1px solid #e8f3fa; overflow: hidden;color: #666666; line-height: 20px;}
+div.whole-column div.float-right { width: 596px; height: 100px; border-bottom: 1px solid #e8f3fa; overflow: hidden;color: #666666; line-height: 20px; padding: 25px; font-size: 12px;}
+div.whole-column div.even {background: #f7fbfd;}
+div.whole-column div.float-right strong {color: #666666; font-size: 14px;}
+
+div.content-main {width: 940px; background: #ffffff; border: 1px solid #eaeaea;}
+
+#pet div.col-left, #contact div.col-left  
+{width: 253px; margin: 37px 0 0 0; height: 100%;}
+
+#pet div.col-right, #contact div.col-right  
+{width: 687px; margin: 37px 0 0 0; color: #666666; line-height: 20px;}
+
+#pet div.col-right p, #contact div.col-right p  
+{color: #666666; line-height: 20px; margin: 0 0 10px 0;}
+
+#pet div.col-right h1, #contact div.col-right h1  
+{color: #007ac3; font-size: 18px; margin: 0 0 15px 0;}
+
+
+
+
+div.title-form {width: 607px; height: 42px; padding: 0 30px 0 30px; font-size: 24px; line-height: 42px; color: #ffffff; background: url('http://www.foodcity.com/site/images/layout/bg-header-blue.gif') repeat-x;}
+div.form-info {width: 601px; padding: 15px 32px 15px 32px; margin: 0 0 20px 0; border: 1px solid #eaeaea; border-top: none; background: #e5f1f9; color: #666666;}
+div.form-info h2 {font-size: 14px; font-weight: bold;color: #007ac3;}
+div.form-info hr {width: 667px; margin: 10px 0 10px -32px; border: none; background: url('http://www.foodcity.com/site/images/layout/hr.gif') repeat-x;}
+div.form-info .input-text, div.pet-form .input-text {width: 165px; height: 30px; margin: 5px 24px 10px 0; border: none; color: #888888; padding: 0 5px 0 5px; background: url('http://www.foodcity.com/site/images/layout/bg-input-text.gif') top left no-repeat;}
+div.form-info .w300 {width: 300px;}
+div.form-info .w100 {width: 100px;}
+div.form-info .w20 {width: 20px; margin: 5px 5px 10px 0; }
+div.form-info div {color: #666666;}
+
+#pet div.select, #contact div.select  
+{width: 71px; height: 30px; margin: 5px 20px 0 0; background: url('http://www.foodcity.com/site/images/layout/bg-input-text.gif') top left no-repeat;}
+
+div.select {width: 171px; height: 30px; margin: 5px 20px 0 0; background: url('http://www.foodcity.com/site/images/layout/bg-input-text.gif') top left no-repeat;}
+
+#pet div.select div.selected, #contact div.select div.selected 
+{width: 35px; height: 30px; padding: 0 0 0 5px; color: #888888; line-height: 30px; cursor: pointer;}
+
+#pet div.select div.icon, #contact div.select div.icon  
+{width:31px; height: 30px; cursor: pointer; background: url('http://www.foodcity.com/site/images/layout/icon-select.gif') no-repeat;}
+div.select div.icon {width:31px; height: 30px; cursor: pointer; background: url('http://www.foodcity.com/site/images/layout/icon-select.gif') no-repeat;}
+
+#pet div.select div.icon:hover, #contact div.select div.icon:hover 
+{background-position: 0 -30px;}
+
+#pet div.select ul, #contact div.select ul 
+{width: 69px; height: 100px; margin: 30px 0 0 0; padding: 5px 0 0 0; position: absolute; background: #ffffff; color: #888888; border: 1px solid #d4d2d2; display: none; overflow: auto;}
+
+#pet div.select ul li, #contact div.select ul li  
+{height: 20px; font-size: 10px; padding: 0 0 0 5px; line-height: 20px; font-weight: bold; color: #999999; cursor: pointer;}
+
+#pet div.select ul li:hover, #contact div.select ul li:hover  
+{background:#007ac3; color: #ffffff; }
+
+div.pet-header {width: 665px; height: 44px; color: #666666; border: 1px solid #eaeaea; border-bottom: none; background: #cee5f3 url('http://www.foodcity.com/site/images/layout/hr.gif') bottom left repeat-x;}
+div.pet-info {width: 171px; height: 30px; padding: 13px 0 0 34px; border-right: 1px solid #eaeaea; background: #cee5f3; cursor: pointer; display: none;}
+div.pet-header div.pet1 {display: block;}
+div.active-pet {background: #e5f1f9;}
+div.add-pet {width: 30px; height: 30px; padding: 11px 0 0 16px; font-size: 24px; color: #007ac3; border-left: 1px solid #c0d0da; background: #cee5f3; cursor: pointer;}
+
+div.add-pet:hover {background: #e5f1f9;}
+
+div.pet-header div.inactive {color: #c0d0da}
+div.pet-header div.inactive:hover {background: #cee5f3;}
+div.pet-header div.invalid-tab span {color: #ff0000;}
+
+div.wrapper-pet-form {width: 665px; height: 153px; margin: 0 0 15px 0; border: 1px solid #eaeaea; background: #e5f1f9;}
+
+div.pet-form {width: 599px; height: 123px; padding: 15px 32px 15px 32px; color: #666666; position: absolute; display: none;}
+div.pet-form div {color: #666666;}
+div.pet1 {display: block;}
+
+#pet div#petType1, #pet div#petType2, #pet div#petType3 {width: 101px;}
+#pet div#petType1 div.selected, #pet div#petType2 div.selected, #pet div#petType3 div.selected {width: 65px;}
+#pet div#petType1 ul, #pet div#petType2 ul, #pet div#petType3 ul {width: 99px;}
+
+#pet div#bday_month1 {width: 101px;}
+#pet div#bday_month1 div.selected {width: 65px;}
+#pet div#bday_month1 ul {width: 99px;}
+#pet div#bday_month2 {width: 101px;}
+#pet div#bday_month2 div.selected {width: 65px;}
+#pet div#bday_month2 ul {width: 99px;}
+#pet div#bday_month3 {width: 101px;}
+#pet div#bday_month3 div.selected {width: 65px;}
+#pet div#bday_month3 ul {width: 99px;}
+
+.input-radio {margin: 15px 5px 0 0;}
+
+div.btn-join {width: 160px; height: 31px; background: url('http://www.foodcity.com/site/images/layout/btn-join-club.gif') no-repeat; cursor: pointer;}
+div.btn-join:hover {background-position: 0 -31px;}
+
+div.submit {height: 200px;}
+#pet div.bottom-right-content {color: #666666; width: 480px; margin: 0 0 0 20px; font-size: 10px; line-height: 16px;}
+
+#pet .invalid, #pet div.select div.invalid {background: #ffbaba;}
+
+h1.department-name {font-size: 22px; line-height: 150px; font-weight: normal; width: 100%; text-align: center;}
+
+h1 {color:#333333;}
+/********** End Subpage *********/
+
+/********** Pharmacy *********/
+
+table.prescriptions {margin: 0 0 20px 0;}
+table.prescriptions tr {border-bottom: 1px solid #f0f7fb;}
+table.prescriptions tr td {border-right: 1px solid #e5f1f9; line-height: 14px; vertical-align: middle; color: #333333; height: 33px; padding: 0 0 0 27px; text-transform: uppercase;}
+table.prescriptions tr td.end {border-right: none;}
+table.prescriptions tr.header td {padding: 0 0 0 27px; font-weight: bold; height: 72px; text-transform: none;}
+table.prescriptions tr.odd {background: url('http://www.foodcity.com/site/images/layout/bg-odd-tr.gif');}
+
+table.prescriptions tr td.col1 {width: 206px;}
+table.prescriptions tr td.col2 {width: 119px;}
+table.prescriptions tr td.col3 {width: 120px;}
+table.prescriptions tr td.col4 {width: 96px;}
+table.prescriptions tr td.col5 {width: 97px;}
+table.prescriptions tr td.col6 {width: 97px;}
+table.prescriptions tr td.col7 {width: 199px;}
+
+#pharmacy div.whole-column div.float-left {width: auto; height: auto; border: none; margin: 0 0 0 20px; height: 200px;}
+div.btn-prescriptions {background: url('http://www.foodcity.com/site/images/layout/btn-prescriptions.png') no-repeat; width: 218px; height: 30px;}
+div.btn-prescriptions:hover {background-position: 0 -30px;}
+#pharmacy div.whole-column div.float-left strong {color: #333333;}
+#pharmacy div.whole-column div.float-left ul {width: 600px;}
+#pharmacy div.whole-column div.float-left ul li {color: #333333; font-size: 10px; background: url('http://www.foodcity.com/site//images/layout/bullet.gif') 0 4px no-repeat; padding: 0 0 0 10px;}
+
+div.hero-wrap .input-hero-text {width: 185px; height: 23px; padding: 0 0 0 10px; margin: 5px 0 0 -5px; font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat; border: none;}
+div.hero-wrap div.hero-icon {width: 20px; height: 20px; margin: 5px 0 0 0;  background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') top right no-repeat;}
+div.hero-wrap div.hero-icon:hover {background-position: right -20px;}
+div.hero-input {margin: 275px 0 0 585px;}
+/********** End Pharmacy *********/
+
+/********** Begin Store Locator *********/
+#locator div.wrap-master {width: 913px; margin: 30px auto 0 auto; padding: 0 0 0 27px;}
+#locator div.wrap-master h1, #locator div.wrap-master h2 {font-size: 18px; font-weight: bold; color: #333333; margin: 0;}
+#locator div.wrap-master h2 {color: #007ac4; margin: 0; line-height: 30px;}
+#locator strong {color: #333333; font-size: 14px;}
+
+div.store-list {background: url('http://www.foodcity.com/site/images/layout/hline.gif') bottom left repeat-x; padding: 0 0 15px 0; margin: 0 40px 0 0;}
+div.wrap-map {height: 573px; background: url('http://www.foodcity.com/site//images/layout/vline.gif') 0 0 repeat-y;}
+
+table.stores {width: 381px; margin: 37px 0 0 0;}
+table.stores tr td {padding: 10px 0 10px 0; color: #333333; font-size: 14px; line-height: 18px;}
+table.stores td.head {height: 32px; background: url('http://www.foodcity.com/site//images/layout/hline.gif') 0 30px repeat-x; padding: 0;}
+table.stores td.col1 {width: 204px;}
+table.stores td.col2 {width: 177px;}
+div#gmap {width: 460px; height: 563px; border: 5px solid #ffffff; margin: 0 0 0 22px; position: absolute; z-index: 1; padding: 0;}
+div.map-loader {padding: 277px 0 0 0; width: 470px; height: 296px; margin: 0 0 0 22px; position: absolute; background: url('http://www.foodcity.com/site/images/layout/bg-map-loader.jpg') no-repeat; z-index: 0; text-align: center;}
+/********** End Store Locator *********/
+
+/********** Connect Panel *********/
+div.connect {width: 940px; height: 80px; margin-top: 22px; color:#FFF}
+div.email-signup {width: 279px; height: 65px; padding: 10px 5px 5px 16px; background: #7fbce1; color:#fff}
+div.text-signup {width: 255px; height: 65px; padding: 10px 5px 5px 40px; background: url("http://www.foodcity.com/site/images/layout/bg-text-signup.gif") no-repeat; color:#FFF}
+div.connected {width: 295px; height: 65px; padding: 10px 5px 5px 40px; background: url("http://www.foodcity.com/site/images/layout/bg-connected-tube.gif") no-repeat;}
+
+div.email-signup .input-text {width: 245px; height: 23px; padding: 0 0 0 10px; margin: 5px 0 0 -5px; font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat; border: none;}
+div.email-signup div.icon {width: 20px; height: 20px; margin: 5px 0 0 0;  background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') top right no-repeat;}
+div.email-signup div.icon:hover {background-position: right -20px;}
+
+div.text-signup .input-text {width: 230px; height: 23px; padding: 0 0 0 10px; margin: 5px 0 0 -5px; font-size: 10px; font-weight: bold; color: #999999; background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') no-repeat; border: none;}
+div.text-signup div.icon {width: 20px; height: 20px; margin: 5px 0 0 0;background: url('http://www.foodcity.com/site/images/layout/bg-textfield.png') top right no-repeat;}
+div.text-signup div.icon:hover {background-position: right -20px;}
+
+div.connect div h2, div.connect div h2 span {font-size: 16px; line-height: 20px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; color:#fff}
+div.nets {width: 275px; height: 30px; margin: 5px 0 0 0; /*background: url("http://www.foodcity.com/site/images/layout/bg-nets.gif"); */}
+div.nets a {display: block; width: 50%; height: 100%; float: left; text-indent: -100000px;}
+/********** End Connect Panel *********/
+
+/********** Footer *********/
+div.footer {width: 940px; padding: 27px 0 10px 0; color: #fff; font-size: 10px; font-weight: bold;}
+div.footer a {color: #999999; font-size: 10px; font-weight: bold;}
+div.footer a:hover {text-decoration: underline;}
+div.footer ul li {margin: 0 13px 0 0;}
+div.footer ul li.divider {border-left: 1px solid #999999;}
+div.footer ul li a {text-transform: uppercase;}
+div.footer ul li.last {margin: 0;}
+/********** End Footer *********/

@@ -1,9 +1,0 @@
-/*** BBQ Ad Incentive CSS ***/
-#bbqMain {float:left;width:100%;font-family:"trebuchet ms",Arial, Helvetica, sans-serif;font-size:12px;letter-spacing:1px;color:#505050;}
-#bbqMain h1 {font-size:20px;}
-#bbqContent {float:left;margin:15px 0 0;}
-#bbqImage {float:left;width:300px;}
-.bbqSubtitle {font-size:14px;}
-.bbqFeature {float:left;width:100%;border-top:1px dotted #505050;}
-#bbqMain a,#bbqMain a:active,#bbqMain a:visited {color:#cf4d43;text-decoration:underline;}
-#bbqMain a:hover {color:#505050;text-decoration:none;}
