@@ -119,7 +119,7 @@
 			<h3>Accessing Quick Links &amp; Contacts</h3>
 			<p>Click on the Quick Links &amp; Contacts button at the top of the page for phone numbers and websites for our insurance products, 401(k), and other employee benefits.</p>
 			<a href="http://roundys.learnercommunity.com/employee-communication"><img src="/Assets/225/Images/ESSImage.JPG" /></a>
-			<img class="empl-shop" src="/Assets/225/Images/ESSImage.png" />
+			<a href="http://myroundysvoice.com" target="_blank"><img class="empl-shop" src="/Assets/225/Images/2016SplashPageImage.png" /></a>
 		</div>
 
 		<div id="corpColumn">
