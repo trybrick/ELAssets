@@ -12,19 +12,6 @@
 			<xsl:for-each select="ExpressLane/JobOpenings/Positions">
 				<h3><xsl:value-of select="JobPositionTitle" disable-output-escaping="yes"/></h3>
 				<p><xsl:value-of select="JobPositionDescription" disable-output-escaping="yes"/></p>
-				<ul>
-					<xsl:for-each select="Stores">
-						<li>
-							<!-- row striping -->
-							<xsl:if test="position() mod 2 = 0">
-								<xsl:attribute name="class">alternate-row</xsl:attribute>
-							</xsl:if>
-							<a href="{concat('Apply.aspx?Sid=',StoreID,'&amp;Pid=',JobPositionID)}">
-								<xsl:value-of select="StoreName"/>
-							</a>
-						</li>
-					</xsl:for-each>
-				</ul>
 			</xsl:for-each>
 			<h2 style="padding-top:25px;margin-top:0;">How To Apply</h2>
 			<p>We offer all of our employees flexible scheduling in a fun and clean environment. Applications available at our Customer Service Center. We are always looking for motivated, energetic people to join our team.<br/><br/>
