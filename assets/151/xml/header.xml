@@ -71,7 +71,7 @@
 		<SubLevelNavigation>
 			<MenuItem>
 				<Title>Contact</Title>
-				<Link>##root##/Contact</Link>
+				<Link>##root##/contact/default.aspx</Link>
 			</MenuItem>
 			<MenuItem>
 				<Title>Employment</Title>

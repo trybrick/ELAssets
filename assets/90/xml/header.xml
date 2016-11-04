@@ -28,7 +28,7 @@
 		</MenuItem>
 		<MenuItem>
 			<Title>Contact Us</Title>
-			<Link>/Contact</Link>
+			<Link>/contact/default.aspx</Link>
 		</MenuItem>
 	</TopLevelNavigation>
 </header>

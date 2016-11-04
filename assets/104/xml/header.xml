@@ -28,7 +28,7 @@
 		</MenuItem>
 		<MenuItem>
 			<Title>Contact Us</Title>
-			<Link>##root##/Contact</Link>
+			<Link>##root##/contact/default.aspx</Link>
 		</MenuItem>
 		<MenuItem>
 			<Title>Employment</Title>
