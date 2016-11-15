@@ -118,8 +118,7 @@
 
 			<h3>Accessing Quick Links &amp; Contacts</h3>
 			<p>Click on the Quick Links &amp; Contacts button at the top of the page for phone numbers and websites for our insurance products, 401(k), and other employee benefits.</p>
-			<a href="http://roundys.learnercommunity.com/employee-communication"><img src="/Assets/225/Images/ESSImage.JPG" /></a>
-			<a href="http://employeedocs.roundys.com/KrogerEUID" target="_blank"><img class="empl-shop" src="/Assets/225/Images/kroger_euid_retrieval_onerdybox.png" /></a>
+			<a href="https://employeedocs.roundys.com/Login?rtn=euid" target="_blank"><img class="empl-shop" src="/Assets/225/Images/euid2.png" /></a>
 		</div>
 
 		<div id="corpColumn">
