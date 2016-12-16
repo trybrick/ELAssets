@@ -65,7 +65,7 @@
 		<script type="text/javascript">
 
 			function play(title, name) {
-
+				name = name.toLowerCase();
 				var url = 'http://upload.gsngrocers.com/elvs/video/flvs/' + name + '.flv';
 
 				$('CurrentVideoTitle').innerHTML = unescape(title);
