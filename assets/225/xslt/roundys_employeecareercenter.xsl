@@ -118,8 +118,7 @@
          <div class="videos">
             <div class="careerHeader">Career Opportunities</div>
             <ul>
-               <li>
-                  <a href="https://idm.roundys.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://sso.brassring.com/SSO/SAML/SAML2PageListener/AssertionConsumerService.aspx" target="_blank">Click here</a> to search for internal openings and complete the internal application
+               <li>Contact Bryan Aderhold (414-231-7111)                  
                </li>
             </ul>
          </div>
@@ -146,7 +145,7 @@
       </div>
       <div class="returnHome">
 		<a href="/ess.aspx">
-			<img class="homeBtn" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_returnHome.png" />
+			<img class="homeBtn" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_returnhome.png" />
 		</a>
       </div>	
       <div id="corpFooter">
