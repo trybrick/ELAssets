@@ -118,7 +118,7 @@
          <div class="videos">
             <div class="careerHeader">Career Opportunities</div>
             <ul>
-               <li>Contact Bryan Aderhold (414-231-7111)                  
+               <li>Contact Bryan Aderhold (414-231-7111)</li><li> or <a href="mailto:Bryan.Aderhold@roundys.com" target="_top">Bryan.Aderhold@roundys.com</a>               
                </li>
             </ul>
          </div>
