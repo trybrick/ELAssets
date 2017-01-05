@@ -18,7 +18,11 @@
 	</tab>
 	<tab>
 	    <url>/Shop/Coupons.aspx</url>
-	    <text>##manufacturercoupontotalsavings## in &lt;br&gt;Coupon Savings</text>
+	    <text>Store&lt;br&gt;Coupons</text>
+	</tab>
+	<tab>
+	    <url>/coupon</url>
+	    <text>Printable&lt;br&gt;Coupons</text>
 	</tab>
 	<tab>
 	    <url>/Recipes/RecipeCenter.aspx</url>

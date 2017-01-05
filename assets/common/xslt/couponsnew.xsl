@@ -139,6 +139,13 @@
 				<div class="clear"></div>
 				<!-- lets build the listing on the left -->
 				<div class="CategoryDisplayContainer" id="categoryDisplayContainer">
+					
+				<xsl:if test="count(//ArrayOfCoupon/Coupon[CategoryID ='-1']) &lt; 0.5">
+					<script type="text/javascript">
+						window.location.href = "/coupon";
+					</script>
+				</xsl:if>
+					
 					<div class="couponsIntroCopy">Click below to sort store coupons by a desired category. All other coupons follow.</div>
 					
 					<!-- store coupons need to be at the top -->

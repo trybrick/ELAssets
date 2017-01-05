@@ -72,7 +72,7 @@
 				<p>
 					<a>
 						<xsl:attribute name="href">/Shop/Coupons.aspx</xsl:attribute>
-						<xsl:text> ##manufacturercoupontotalsavings## In Coupon Savings</xsl:text>
+						<xsl:text>Coupon Savings</xsl:text>
 					</a>
 				</p>
 			</div>

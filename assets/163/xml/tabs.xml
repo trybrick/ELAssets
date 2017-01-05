@@ -1,8 +1,4 @@
 <?xml version="1.0"?>
-
-
-
-
 <tabs>
 	<tab>
 	    <url>/Shop/WeeklyAd.aspx</url>
@@ -14,7 +10,11 @@
 	</tab>
 	<tab>
 	    <url>/Shop/Coupons.aspx</url>
-	    <text>Coupon&lt;br&gt;Savings</text>
+	    <text>Store&lt;br&gt;Coupons</text>
+	</tab>
+	<tab>
+	    <url>/coupon</url>
+	    <text>Printable&lt;br&gt;Coupons</text>
 	</tab>
 	<tab>
 	    <url>/Shop/Browse.aspx</url>

@@ -143,7 +143,7 @@ a:link, a:visited, a:active			{color:#00694D;}
 #secondary-navigation { border-bottom:none;float:left;}
 #secondary-navigation ul { padding:0;margin:0 0 20px 0;width:100%;list-style:none;}
 #secondary-navigation li, #secondary-navigation #current {background:none;padding:0;border-bottom:1px solid #005643;color:#005643;font-size:16px;line-height:18px;}
-#secondary-navigation li a, #secondary-navigation #current a {background:none;color:#005643;display:block;font-weight:bold;margin:6px 15px;padding:0;text-decoration:none;}
+#secondary-navigation li a, #secondary-navigation #current a {background:none;color:#005643;display:block;font-weight:bold;margin:6px 9px;padding:0;text-decoration:none;}
 #secondary-navigation #current a {color: #B32317;}
 #secondary-navigation li a:hover, #secondary-navigation #current a:hover { color: #ffffff; border-bottom: none;}
 
