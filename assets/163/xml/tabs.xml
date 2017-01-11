@@ -10,11 +10,7 @@
 	</tab>
 	<tab>
 	    <url>/Shop/Coupons.aspx</url>
-	    <text>Store&lt;br&gt;Coupons</text>
-	</tab>
-	<tab>
-	    <url>/coupon</url>
-	    <text>Printable&lt;br&gt;Coupons</text>
+	    <text>Coupon&lt;br&gt;Savings</text>
 	</tab>
 	<tab>
 	    <url>/Shop/Browse.aspx</url>
