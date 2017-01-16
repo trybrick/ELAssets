@@ -377,6 +377,7 @@
 		<script type="text/javascript" for="window" event="onload">
 			if (document.all) { LoadForm(); }
 			else { window.document.addEventListener("DOMContentLoaded", LoadForm, true); } //firefox
+			setTimeout(LoadDeliveryTimes,500);
 		</script>
 		<div id="UserInformation">
 			<div class="checkoutHeader">
