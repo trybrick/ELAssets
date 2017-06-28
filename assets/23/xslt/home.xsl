@@ -60,9 +60,7 @@
 					</p>
 				</div>			
 				<div id="pharmacists" style="margin: 0pt 0pt 0pt 20px;">
-					<a href="https://www.mypharmacyconnect.com/Home/Index?StoreToken=a46959ad-79b9-422f-847a-6d8624c035cc" target="_blank">
-						<img alt="" src="/Assets/##chainid##/Images/hudsonPharm.jpg" />
-					</a> 
+					<img alt="" src="/Assets/##chainid##/Images/hudsonPharm.jpg" />
 				</div>
 				<div id="valu2u" style="margin-left:20px; float:left; width:210px; height:210px;">
 					<a target="_blank" href="http://holiday.rollbackrewards.com/consumer/Partner.action?partner=countymarkethudson">
