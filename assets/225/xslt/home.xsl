@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output method="html" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 	<xsl:template match="/">
-		<img id="headerImage" alt="Roundy's Header Image" src="https://upload.gsngrocers.com/chainfiles/225/creative/201702/636220784644251570-roundys.jpg"/>
+		<img id="headerImage" alt="Roundy's Header Image" src="https://upload.brickinc.net/chainfiles/225/creative/201702/636220784644251570-roundys.jpg"/>
 		<div id="mainContent">
 			<img id="mainLogo" alt="Roundy's Logo" src="/Assets/225/Images/logo_roundys.jpg"/>
 			<p>Roundy's Supermarkets, Inc. is a retail grocery company headquartered in Milwaukee, Wisconsin.<br />
