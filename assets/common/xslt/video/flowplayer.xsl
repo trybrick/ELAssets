@@ -66,7 +66,7 @@
 
 			function play(title, name) {
 				name = name.toLowerCase();
-				var url = 'http://upload.gsngrocers.com/elvs/video/flvs/' + name + '.flv';
+				var url = 'https://upload.brickinc.net/elvs/video/flvs/' + name + '.flv';
 
 				$('CurrentVideoTitle').innerHTML = unescape(title);
 

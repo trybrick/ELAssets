@@ -12,7 +12,7 @@
 				<ul>
 					<li>
 						<a>
-							<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
+							<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
 							<xsl:attribute name="title"><xsl:value-of select="@vtitle"/></xsl:attribute>
 							<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 							<xsl:attribute name="params">lightwindow_width=420,lightwindow_height=335px; lightwindow_close=true</xsl:attribute>
@@ -30,7 +30,7 @@
 				<ul>
 					<li>
 						<a>
-							<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
+							<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
 							<xsl:attribute name="title"><xsl:value-of select="@vtitle"/></xsl:attribute>
 							<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 							<xsl:attribute name="params">lightwindow_width=420,lightwindow_height=335px; lightwindow_close=true</xsl:attribute>

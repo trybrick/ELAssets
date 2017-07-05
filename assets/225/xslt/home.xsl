@@ -33,7 +33,7 @@
             <div class="employee">
                 <a href="/ess.aspx">
                     <p>For our employees, <br />click here:</p>
-                    <img class="employeeImage" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
+                    <img class="employeeImage" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
                 </a>
             </div>
         </div>	

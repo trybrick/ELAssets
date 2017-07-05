@@ -27,10 +27,10 @@
 		<style>
 			#BOD-wrapper {background-color:#777777;border:2px solid #333333;float:left;position:relative;width:540px;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;}
 			#BOD-wrapper h3 {color:#ffffff;font-family:Trebuchet MS,Helvetica,Arial,sans-serif;font-size:21px;font-weight:bold;margin:0;padding:10px 0;text-align:center;}
-			#BOD-wrapper a#BOD-close {background:transparent url(http://upload.gsngrocers.com/elvs/assets/common/promotions/ShopperWelcome/Images/Close_X.png) top right no-repeat;display:block;height:30px;position:absolute;right:-15px;text-indent:-9999px;top:-15px;width:30px;}
+			#BOD-wrapper a#BOD-close {background:transparent url(https://upload.brickinc.net/elvs/assets/common/promotions/ShopperWelcome/Images/Close_X.png) top right no-repeat;display:block;height:30px;position:absolute;right:-15px;text-indent:-9999px;top:-15px;width:30px;}
 			#BOD-wrapper ul {list-style:none;margin:0;padding:0;}
 			#BOD-wrapper ul li {background-color:#ffffff;border-top:1px solid #f0f0f0;float:left;width:100%;}
-			#BOD-wrapper ul li:hover {background:#f0f0f0 url(http://upload.gsngrocers.com/elvs/assets/common/promotions/ShopperWelcome/Images/Selected_Arrow.png) center right no-repeat;}
+			#BOD-wrapper ul li:hover {background:#f0f0f0 url(https://upload.brickinc.net/elvs/assets/common/promotions/ShopperWelcome/Images/Selected_Arrow.png) center right no-repeat;}
 			#BOD-wrapper ul li.noThanks {background:#ffffff none;padding:5px 0 10px;text-align:center;border-radius:0 0 7px 7px;-moz-border-radius:0 0 7px 7px;-webkit-border-radius:0 0 7px 7px;}
 			#BOD-wrapper ul li.noThanks:hover {background:#ffffff none;}
 			#BOD-wrapper ul li a {color:#444444;float:left;font-weight:normal;height:100%;text-decoration:none;width:100%;}

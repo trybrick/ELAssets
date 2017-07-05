@@ -5,13 +5,13 @@
 		<link rel="stylesheet" href="/Assets/225/Styles/hrPortal.css" media="screen" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js"></script>
-        <script type="text/javascript" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/site.js"></script>
+        <script type="text/javascript" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/site.js"></script>
 		
 		<div id="corpHeader">
-			<img class="corpLogo" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
+			<img class="corpLogo" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
 			
 			<a href="https://reset-self-service.roundys.com/" target="_blank">
-				<img style="float:right" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
+				<img style="float:right" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
 			</a>
 		</div>
 		<div id="corpContent">
@@ -20,11 +20,11 @@
 			<br />
 			<p>Anyone wanting to access the OneRoundy’s portal and ESS page must:</p>
 			<ul>
-				<li>Have a valid Roundy’s username (Employee ID #) and password. Click <a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">here</a> for instructions to create your password.</li>
+				<li>Have a valid Roundy’s username (Employee ID #) and password. Click <a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">here</a> for instructions to create your password.</li>
 				<li>Meet basic browser and system requirements</li>
 			</ul>
 			<a href="/tutorials.aspx">
-				<img class="tutorials" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_tutorials.png" />
+				<img class="tutorials" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_tutorials.png" />
 			</a>
 
 			<h2>Accessing Employee Self-Service</h2>
@@ -80,27 +80,27 @@
 				<ul>
 					<li>
 						<a href="http://www.roundys.com/Home.gsn" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.marianos.com/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.picknsave.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.copps.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
 						</a>	
 					</li>					
 					<li>
 						<a href="http://www.metromarket.net/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
 						</a>	
 					</li>
 				</ul>

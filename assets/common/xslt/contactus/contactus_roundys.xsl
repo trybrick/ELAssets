@@ -245,7 +245,7 @@
 			<div id="contactUsInfo">
 				<h3>Thank you for your interest in <xsl:value-of select="ExpressLane/GenericChain/ChainName" />!</h3>
 				<p>Looking for our Coupon Policy? <a href="/couponpolicy.aspx" target="_blank">Click here.</a></p>
-				<p>Looking for a list of our Gluten Free products? <a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/216/13593glutenfreeproductlist111512.pdf" target="_blank">Click here</a>.</p>
+				<p>Looking for a list of our Gluten Free products? <a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/216/13593glutenfreeproductlist111512.pdf" target="_blank">Click here</a>.</p>
 				<p>Questions about <a href="/community.aspx">Charitable Contributions?</a></p>
 				<p>Are you contacting us regarding employment at a store? Please use our Store Locator to find the phone number and address of the store and make your inquiry at that location. Please ask to speak to the Service Operations Manager.</p>
 				<p>Please note, regarding gift cards:

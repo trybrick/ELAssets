@@ -42,7 +42,7 @@
 				<h3>Avocados</h3>
 				<p>
 					<a>
-						<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=GSN-Avocados</xsl:attribute>
+						<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=GSN-Avocados</xsl:attribute>
 						<xsl:attribute name="title">Avocados</xsl:attribute>
 						<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 						<xsl:attribute name="style">text-decoration:none</xsl:attribute>
@@ -55,7 +55,7 @@
 				<h3>Brining</h3>
 				<p>
 					<a>
-						<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=GSN-Brining</xsl:attribute>
+						<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=GSN-Brining</xsl:attribute>
 						<xsl:attribute name="title">Brining</xsl:attribute>
 						<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 						<xsl:attribute name="style">text-decoration:none</xsl:attribute>
@@ -68,7 +68,7 @@
 				<h3>Grilling</h3>
 				<p>
 					<a>
-						<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=GSN-Grilling Lamb Chops</xsl:attribute>
+						<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=GSN-Grilling Lamb Chops</xsl:attribute>
 						<xsl:attribute name="title">Grilling</xsl:attribute>
 						<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 						<xsl:attribute name="style">text-decoration:none</xsl:attribute>
@@ -81,7 +81,7 @@
 				<h3>Peeling Tomatoes</h3>
 				<p>
 					<a>
-						<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=GSN-Tomato Concasse</xsl:attribute>
+						<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player4.html?file=GSN-Tomato Concasse</xsl:attribute>
 						<xsl:attribute name="title">Peeling Tomatoes</xsl:attribute>
 						<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 						<xsl:attribute name="style">text-decoration:none</xsl:attribute>

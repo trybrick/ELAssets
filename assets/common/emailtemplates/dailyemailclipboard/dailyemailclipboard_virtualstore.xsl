@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
 	<xsl:import href="/Assets/Common/EmailTemplates/ExactTargetScripts.xsl"/>
 	<xsl:output method="html" encoding="UTF-8"/>
-	<xsl:variable name="SpacerURL" select="'http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/spacer.gif'"/>
+	<xsl:variable name="SpacerURL" select="'https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/spacer.gif'"/>
 
 	<xsl:template match="/">
 		<!-- EXACT TARGET CODE FOR MAIN -->
@@ -14,7 +14,7 @@
 			</style>
 
         
-        <table width="730" border="0" align="center" cellpadding="0" cellspacing="0" style="background-repeat: no-repeat; background-position: center top;" background="http://upload.gsngrocers.com/elvs/Common/clipBoard_header.jpg">
+        <table width="730" border="0" align="center" cellpadding="0" cellspacing="0" style="background-repeat: no-repeat; background-position: center top;" background="https://upload.brickinc.net/elvs/Common/clipBoard_header.jpg">
             <tr height="70"><td></td>
             </tr>
             <tr>
@@ -31,12 +31,12 @@
                                             <table width="350" border="0" align="center" cellpadding="0" cellspacing="0">
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="http://upload.gsngrocers.com/elvs/VirtualStore/Content/custom/themes/##chainid##/logoMail.png" height="100" style="display:block; height: 100px; width: 300px;"  border="0"/>
+                                                        <img src="https://upload.brickinc.net/elvs/VirtualStore/Content/custom/themes/##chainid##/logoMail.png" height="100" style="display:block; height: 100px; width: 300px;"  border="0"/>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td width="50">
-                                                    <img src="http://upload.gsngrocers.com/elvs/Common/mini_coupon.jpg" style="display:block;"  border="0"/>
+                                                    <img src="https://upload.brickinc.net/elvs/Common/mini_coupon.jpg" style="display:block;"  border="0"/>
                                                     </td>
                                                     <td>
                                                         <xsl:call-template name="CouponsTeaser"/>
@@ -48,9 +48,9 @@
                                             <center><font face="Arial, Helvetica, sans-serif" color="#4775b6" size="2"><b>Hello, 
                                                     <xsl:call-template name="ExactTargetRetrieve_FirstName" /></b></font>
                                                 <br/>
-                                            <a href="##root##/Account/Login"><img src="http://upload.gsngrocers.com/elvs/Common/SignIn.jpg" alt="Sign In" style="display:block;"  border="0"/></a>
+                                            <a href="##root##/Account/Login"><img src="https://upload.brickinc.net/elvs/Common/SignIn.jpg" alt="Sign In" style="display:block;"  border="0"/></a>
                                             <a href="##root##/Circulars">
-                                            <img src="http://upload.gsngrocers.com/elvs/Common/viewAd.jpg" style="display:block;"  border="0"/>
+                                            <img src="https://upload.brickinc.net/elvs/Common/viewAd.jpg" style="display:block;"  border="0"/>
                                             </a>
                                             </center>
                                         </td>
@@ -137,7 +137,7 @@
             </tr>
             <tr>
             	<td>
-                	<img src="http://upload.gsngrocers.com/elvs/Common/clipBoard_footer.jpg"/>
+                	<img src="https://upload.brickinc.net/elvs/Common/clipBoard_footer.jpg"/>
                 </td>
             </tr>
 
@@ -180,7 +180,7 @@
 			</tr>
 			<tr>
 				<td width="10" bgcolor="#E8E6CF">
-					<img src="http://upload.gsngrocers.com/elvs/Common/pod_left.jpg" width="10" height="112" style="display:block;"  border="0"/>				
+					<img src="https://upload.brickinc.net/elvs/Common/pod_left.jpg" width="10" height="112" style="display:block;"  border="0"/>				
 				</td>
 				<td width="180" bgcolor="#E8E6CF" align="center">
 					<xsl:choose>
@@ -212,7 +212,7 @@
 										<img src="{//Video/ThumbNail}" border="0" alt="Featured Video" style="display:block;" width="120"/>
 									</xsl:when>
 									<xsl:otherwise>
-										<img src="http://upload.gsngrocers.com/elvs/Assets/Common/EmailTemplates/DailyEmail/images/podFeatVid.jpg" border="0" alt="Featured Video" style="display:block;" width="120"/>
+										<img src="https://upload.brickinc.net/elvs/Assets/Common/EmailTemplates/DailyEmail/images/podFeatVid.jpg" border="0" alt="Featured Video" style="display:block;" width="120"/>
 									</xsl:otherwise>
 								</xsl:choose>
 							</a>
@@ -221,13 +221,13 @@
 					</xsl:choose>
 				</td>
 				<td width="10" bgcolor="#E8E6CF">
-					<img src="http://upload.gsngrocers.com/elvs/Common/pod_right.jpg" width="10" height="112" style="display:block;"  border="0"/>
+					<img src="https://upload.brickinc.net/elvs/Common/pod_right.jpg" width="10" height="112" style="display:block;"  border="0"/>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="3">
 					<a href="{$destination}">
-						<img src="http://upload.gsngrocers.com/elvs/Common/pod_bottom.jpg" width="168" height="25" style="display:block;"  border="0"/>
+						<img src="https://upload.brickinc.net/elvs/Common/pod_bottom.jpg" width="168" height="25" style="display:block;"  border="0"/>
 					</a>
 				</td>
 			</tr>
@@ -236,7 +236,7 @@
 		
 	<xsl:template name="Coupons">
 		<xsl:call-template name="PodTemplate">
-			<xsl:with-param name="headerImage" select="'http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_coup.jpg'" />
+			<xsl:with-param name="headerImage" select="'https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_coup.jpg'" />
 			<xsl:with-param name="destination" select="'##root##/Coupons'" />
 			<xsl:with-param name="bodyContent" select="'Coupons'" />
 		</xsl:call-template>
@@ -244,7 +244,7 @@
 	
 	<xsl:template name="FeaturedRecipe">
 		<xsl:call-template name="PodTemplate">
-			<xsl:with-param name="headerImage" select="'http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_recipe.jpg'" />
+			<xsl:with-param name="headerImage" select="'https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_recipe.jpg'" />
 			<xsl:with-param name="destination" select="concat('##root##/RecipeCenter/Recipe/', //RecipeData/GenericRecipe/RecipeID)" />
 			<xsl:with-param name="bodyContent" select="'FeaturedRecipe'" />
 		</xsl:call-template>
@@ -252,7 +252,7 @@
 
 	<xsl:template name="FeaturedVideo">
 		<xsl:call-template name="PodTemplate">
-			<xsl:with-param name="headerImage" select="'http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_video.jpg'" />
+			<xsl:with-param name="headerImage" select="'https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/podtop_video.jpg'" />
 			<xsl:with-param name="destination" select="'##root##/RecipeCenter/RecipeVideo'" />
 			<xsl:with-param name="bodyContent" select="'FeaturedVideo'" />
 		</xsl:call-template>
@@ -268,7 +268,7 @@
         		<xsl:if test="string-length($FacebookUrl) &gt; 0">
         			<a id="headerFBIcon" href="{$FacebookUrl}" target="_blank">
 						<img alt="Facebook" style="display:block;" border="0">
-							<xsl:attribute name="src">http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/fbIcon.jpg</xsl:attribute>
+							<xsl:attribute name="src">https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/fbIcon.jpg</xsl:attribute>
 						</img>
 					</a>
 				</xsl:if>
@@ -277,7 +277,7 @@
         		<xsl:if test="string-length($TwitterUrl) &gt; 0">
 					<a id="headerTWIcon" href="{$TwitterUrl}" target="_blank">
 						<img alt="Twitter" style="display:block;" border="0">
-						<xsl:attribute name="src">http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/twIcon.jpg</xsl:attribute>
+						<xsl:attribute name="src">https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/twIcon.jpg</xsl:attribute>
 						</img>
 					</a>
 				</xsl:if>
@@ -285,7 +285,7 @@
         	<td>
         		<xsl:if test="(string-length($TwitterUrl) &gt; 0) or (string-length($FacebookUrl) &gt; 0)" >
         			<img alt="Follow Us Online" style="display:block;" border="0">
-        				<xsl:attribute name="src">http://upload.gsngrocers.com/elvs/assets/common/emailtemplates/dailyemailclipboard/images/followUs.jpg</xsl:attribute> 
+        				<xsl:attribute name="src">https://upload.brickinc.net/elvs/assets/common/emailtemplates/dailyemailclipboard/images/followUs.jpg</xsl:attribute> 
         			</img>
         		</xsl:if>
         	</td>

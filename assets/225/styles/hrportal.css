@@ -56,7 +56,7 @@ a:link, a:visited, a:active, a:hover
 
 #corpHeader
 {
-	background: url(http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/headerBG.png);
+	background: url(https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/headerBG.png);
 	height: 87px;
 	margin-bottom: 30px;
 }
@@ -125,7 +125,7 @@ a:link, a:visited, a:active, a:hover
     list-style:none;
     position:absolute;
     left:-9999px;
-    background-image: url(http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/quickLinksTop3.png); background-repeat: no-repeat;
+    background-image: url(https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/quickLinksTop3.png); background-repeat: no-repeat;
     height: 663px;
     padding: 0 32px;
 }
@@ -234,7 +234,7 @@ a:link, a:visited, a:active, a:hover
 }
 #essMenu > ul > li
 {
-	background: url("http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png") no-repeat 15px 33px;
+	background: url("https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png") no-repeat 15px 33px;
 }
 
 #essMenu ul li a,

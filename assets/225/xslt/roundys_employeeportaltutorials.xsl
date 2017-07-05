@@ -6,25 +6,25 @@
 		
 		<div id="corpHeader">
 			<a href="/ess.aspx">
-			<img class="corpLogo" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
+			<img class="corpLogo" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
 			</a>
 			
 		<a href="https://reset-self-service.roundys.com/">
-				<img style="float:right" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
+				<img style="float:right" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
 			</a>
 		</div>
 		<div id="corpContentFull">
 			<div class="tutorialsContent">
-				<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/headerTutorials.png" />
+				<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/headerTutorials.png" />
 				<ul>
-					<li><a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">Getting Started With Employee Self Service</a></li>
-					<li><a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/Employee Self Service User Guide.pdf" target="_blank">Employee Self-Service Guide</a></li>
-					<li><a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/Manage My Password.pdf" target="_blank">Password Management</a></li>
-					<li><a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/Browser and System Requirements.pdf" target="_blank">Browser &amp; System Requirements</a></li>
+					<li><a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">Getting Started With Employee Self Service</a></li>
+					<li><a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/Employee Self Service User Guide.pdf" target="_blank">Employee Self-Service Guide</a></li>
+					<li><a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/Manage My Password.pdf" target="_blank">Password Management</a></li>
+					<li><a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/Browser and System Requirements.pdf" target="_blank">Browser &amp; System Requirements</a></li>
 				</ul>
 			</div>
 			<div class="videos">
-				<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/headerVideos.png" />
+				<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/headerVideos.png" />
 				<ul>
 					<li><a href="http://xl.learnsomething.com/dynwebstream/default.aspx?folder=Roundys/DirectLink&amp;fname=ESS_Paychecks_and_Earnings_History.flv&amp;w=1268&amp;h=720" target="_blank">Paycheck &amp; Earnings History</a></li>
 					<li><a href="http://xl.learnsomething.com/dynwebstream/default.aspx?folder=Roundys/DirectLink&amp;fname=ESS_Kronos_MyRequests.flv&amp;w=1268&amp;h=720" target="_blank">My Requests</a></li>
@@ -36,7 +36,7 @@
 		</div>
         <div class="returnHome">
             <a href="/ess.aspx">
-                <img class="homeBtn" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_returnHome.png" />
+                <img class="homeBtn" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_returnHome.png" />
             </a>
         </div>		
 		<div id="corpFooter">
@@ -45,27 +45,27 @@
 				<ul>
 					<li>
 						<a href="http://www.roundys.com/Home.gsn" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.marianos.com/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.picknsave.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.copps.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.metromarket.net/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
 						</a>	
 					</li>
 				</ul>

@@ -4,7 +4,7 @@
 	<xsl:output method="html" />	
 	<xsl:template match="/">
 		<style type="text/css">
-			@import url(http://upload.gsngrocers.com/elvs/assets/common/styles/socialmedia/facebookdeals.css);
+			@import url(https://upload.brickinc.net/elvs/assets/common/styles/socialmedia/facebookdeals.css);
 		</style>			
 		<xsl:choose>
 			<xsl:when test="/ExpressLane">

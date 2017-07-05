@@ -5,8 +5,8 @@
 		<link rel="stylesheet" href="Styles/protoshow.css" media="screen" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js"></script>
-        <script type="text/javascript" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/protoshow.js"></script>
-        <script type="text/javascript" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/site.js"></script>
+        <script type="text/javascript" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/protoshow.js"></script>
+        <script type="text/javascript" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/site.js"></script>
 		<style>
 			body
 			{
@@ -55,7 +55,7 @@
 			}
 			#corpHeader
 			{
-				background: url(http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/headerBG.png);
+				background: url(https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/headerBG.png);
 				height: 87px;
 				margin-bottom: 30px;
 			}
@@ -108,7 +108,7 @@
     			list-style:none;
     			position:absolute;
     			left:-9999px;
-    			background-image: url(http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/quickLinksTop3.png); background-repeat: no-repeat;
+    			background-image: url(https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/quickLinksTop3.png); background-repeat: no-repeat;
     			height: 663px;
     			padding: 0 32px;
 			}
@@ -254,13 +254,13 @@
 			}
 		</style>
 		<div id="corpHeader">
-			<img class="corpLogo" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
+			<img class="corpLogo" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
 			
 			<ul class="quickLinks">
     
     <li>
         
-            <img class="links" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_quickLinks.png" />
+            <img class="links" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_quickLinks.png" />
         
         <ul>
             <li>
@@ -336,16 +336,16 @@
     
 </ul>
 <a href="https://reset-self-service.roundys.com/">
-				<img class="logBtn" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
+				<img class="logBtn" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
 			</a>
 		</div>
 		<div id="corpContent">
 			<div id="myshow1" class="protoshow">
 			<ul class="show">
-				<li class="slide" data-slide-interval=""><img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/ess.png" alt="" /></li>
-				<li class="slidePane" data-slide-interval=""><img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/slideOne.png" alt="" /></li>
-				<li class="slide" data-slide-interval=""><img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/ess.png" alt="" /></li>
-				<li class="slide" data-slide-interval=""><img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/slideOne.png" alt="" /></li>
+				<li class="slide" data-slide-interval=""><img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/ess.png" alt="" /></li>
+				<li class="slidePane" data-slide-interval=""><img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/slideOne.png" alt="" /></li>
+				<li class="slide" data-slide-interval=""><img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/ess.png" alt="" /></li>
+				<li class="slide" data-slide-interval=""><img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/slideOne.png" alt="" /></li>
 			</ul>
 		</div>
 
@@ -354,11 +354,11 @@
 			<br />
 			<p>Anyone wanting to access the OneRoundy’s portal and ESS page must:</p>
 			<ul>
-				<li>Have a valid Roundy’s username (Employee ID #) and password. Click <a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">here</a> for instructions to create your password.</li>
+				<li>Have a valid Roundy’s username (Employee ID #) and password. Click <a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/getting started with employee self service.pdf" target="_blank">here</a> for instructions to create your password.</li>
 				<li>Meet basic browser and system requirements</li>
 			</ul>
 			<a href="/tutorials.aspx">
-				<img class="tutorials" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_tutorials.png" />
+				<img class="tutorials" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_tutorials.png" />
 			</a>
 
 			<h2>Accessing Employee Self-Service</h2>
@@ -388,9 +388,9 @@
 					<li>Roundy's Reward Card</li>
 				</ul>
 					<a href="https://employees.roundys.com/psp/pshrprd/EMPLOYEE/HRMS/s/WEBLIB_PTPP_SC.HOMEPAGE.FieldFormula.IScript_AppHP?pt_fname=HC_PERSONAL_INFO_ESS&amp;FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_PERSONAL_INFO_ESS&amp;IsFolder=true">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_personalInfo.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_personalInfo.png" />
 					</a>
-					<img alt="start new section" class="divide" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png" />
+					<img alt="start new section" class="divide" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png" />
 				<h1>Benefits</h1>
 				<ul>
 					<li>Dependents and Beneficiaries</li>
@@ -400,9 +400,9 @@
 					<li>Benefits Enrollment</li>
 				</ul>
 				<a href="https://employees.roundys.com/psp/pshrprd/EMPLOYEE/HRMS/s/WEBLIB_PTPP_SC.HOMEPAGE.FieldFormula.IScript_AppHP?pt_fname=HC_BENEFITS_ESS&amp;FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_BENEFITS_ESS&amp;IsFolder=true">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_benefits.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_benefits.png" />
 				</a>
-				<img alt="start new section" class="divide" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png" />
+				<img alt="start new section" class="divide" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png" />
 				<h1>Payroll</h1>
 				<ul>
 					<li>View Paycheck</li>
@@ -413,9 +413,9 @@
 					<li>Earnings Summary</li>
 				</ul>
 				<a href="https://employees.roundys.com/psp/pshrprd/EMPLOYEE/HRMS/s/WEBLIB_PTPP_SC.HOMEPAGE.FieldFormula.IScript_AppHP?pt_fname=HC_PAYROLL_COMP&amp;FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_PAYROLL_COMP&amp;IsFolder=true">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_payroll.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_payroll.png" />
 				</a>
-				<img alt="start new section" class="divide" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png" />
+				<img alt="start new section" class="divide" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png" />
 				<h1>Timekeeping &amp; Scheduling</h1>
 				<ul>
 					<li>My Timecard</li>
@@ -423,24 +423,24 @@
 					<li>My Requests</li>
 				</ul>
 				<a href="https://workforceess.roundys.com/">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_timeSchedule.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_timeSchedule.png" />
 				</a>
-				<img alt="start new section" class="divide" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png" />
+				<img alt="start new section" class="divide" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png" />
 				<h1>Newsletters</h1>
 				<ul>
 					<li>Own Brand Newsletter</li>
 				</ul>
 				<a href="/Newsletters.aspx">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_newsletters.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_newsletters.png" />
 				</a>
-				<img alt="start new section" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/divider.png" />
+				<img alt="start new section" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/divider.png" />
 				<!--<h1>Career Center</h1>
 				<ul>
 					<li>List of Available Positions</li>
 					<li>Internal Application</li>
 				</ul>
 				<a href="#">
-						<img class="corpButton" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_careerCenter.png" />
+						<img class="corpButton" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_careerCenter.png" />
 				</a>-->
 			</div>
 		</div>
@@ -452,32 +452,32 @@
 				<ul>
 					<li>
 						<a href="http://www.roundys.com/Home.gsn" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.marianos.com/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.picknsave.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.copps.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.rainbowfoods.com/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/rainbowLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/rainbowLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.metromarket.net/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
 						</a>	
 					</li>
 				</ul>

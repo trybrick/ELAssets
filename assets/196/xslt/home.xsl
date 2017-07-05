@@ -95,7 +95,7 @@
 						</a>
 					</div>
 					<div id="DualContentControlDivC">
-						<a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/196/kiosk_reno.pdf" target="_blank">
+						<a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/196/kiosk_reno.pdf" target="_blank">
 							<img>
 								<xsl:attribute name="src">/Assets/<xsl:value-of select="//GenericChain/ChainID"/>/Images/dmvkioskbutton.jpg</xsl:attribute>
 							</img>

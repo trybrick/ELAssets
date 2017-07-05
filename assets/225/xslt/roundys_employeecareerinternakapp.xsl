@@ -6,14 +6,14 @@
 
 		<div id="corpHeader">
 			<a href="/ess.aspx">
-			<img class="corpLogo" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
+			<img class="corpLogo" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/oneRoundysLogo.png" />
 			</a>
 			
 			<ul class="quickLinks">
     
     <li>
         
-            <img class="links" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_quickLinks.png" />
+            <img class="links" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_quickLinks.png" />
         
         <ul>
             <li>
@@ -89,7 +89,7 @@
     
 </ul>
 <a href="https://reset-self-service.roundys.com/">
-				<img class="logBtn" src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
+				<img class="logBtn" src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/btn_password_2.png" />
 			</a>
 		</div>
 		<div id="corpContentFull">
@@ -104,27 +104,27 @@
 				<ul>
 					<li>
 						<a href="http://www.roundys.com/Home.gsn" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/roundyLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.marianos.com/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/marianosLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.picknsave.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/pcknsaveLogo.png" />
 						</a>	
 					</li>
 					<li>
 						<a href="http://www.copps.com/" target="_blank">	
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/coppsLogo.png" />
 						</a>	
 					</li>					
 					<li>
 						<a href="http://www.metromarket.net/" target="_blank">
-							<img src="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
+							<img src="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/225/metromarketLogo.png" />
 						</a>	
 					</li>
 				</ul>

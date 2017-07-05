@@ -10,7 +10,7 @@
 			ul {list-style:none; padding:0;}
 			li {margin: .25em 0;}
 		</style>
-		<iframe width="100%" scrolling="auto" height="335" frameborder="0" id="VideoPlayer" name="VideoPlayer" src="http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=intro_999" marginwidth="0" marginheight="0"/>
+		<iframe width="100%" scrolling="auto" height="335" frameborder="0" id="VideoPlayer" name="VideoPlayer" src="https://upload.brickinc.net/elvs/video/gsn_player4.html?file=intro_999" marginwidth="0" marginheight="0"/>
 		<h4 id="RecipeTitle">Select a Video</h4>
 		<ul id="column1" style="width:25%; float:left;">
 			<xsl:for-each select="ExpressLane/FlashPlayerConfig/VideoPlaylist">
@@ -44,7 +44,7 @@
 	<xsl:template name="VideoLinks">
 		<li>
 			<a href="javascript:void(0)">
-				<xsl:attribute name="onclick">$('VideoPlayer').src = 'http://upload.gsngrocers.com/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/>';$('RecipeTitle').innerHTML = '<xsl:value-of select="@vtitle"/>'</xsl:attribute>
+				<xsl:attribute name="onclick">$('VideoPlayer').src = 'https://upload.brickinc.net/elvs/video/gsn_player4.html?file=<xsl:value-of select="VideoURL"/>';$('RecipeTitle').innerHTML = '<xsl:value-of select="@vtitle"/>'</xsl:attribute>
 				<xsl:value-of select="@vtitle"/>
 			</a>
 		</li>

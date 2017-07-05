@@ -45,7 +45,7 @@
 							<!-- Exact Target Main Store -->
 							<xsl:call-template name="ExactTargetRetrieve_StoreContent" />
 							</td>
-							<td rowspan="5"><img src="http://upload.gsngrocers.com/elvs/common/blank.gif" alt="" border="0" width="15" /></td>
+							<td rowspan="5"><img src="https://upload.brickinc.net/elvs/common/blank.gif" alt="" border="0" width="15" /></td>
 							<!-- RIGHT COLUMN -->
 							<td valign="top" rowspan="5" width="210">
 								<!-- Code to call the weekly ad html in Exact Target-->
@@ -123,7 +123,7 @@
 								</img>
 							</td>
 							<!-- END RECIPE SECTION -->
-							<td><img src="http://upload.gsngrocers.com/elvs/common/blank.gif" alt="" border="0" width="10" /></td>
+							<td><img src="https://upload.brickinc.net/elvs/common/blank.gif" alt="" border="0" width="10" /></td>
 							<!-- MEAL PLANNER -->
 							<td valign="top">
 								<h3 style="font-family:Georgia, 'Times New Roman', Times, serif;margin:0; display:block; clear:both; color:#FF0000; font-weight:normal; font-size:20px; text-align:left; width:100%;">
@@ -213,7 +213,7 @@
 								</p>
 							</td>
 							<!-- END FEATURED ARTICLE -->
-							<td><img src="http://upload.gsngrocers.com/elvs/common/blank.gif" alt="" border="0" width="10" /></td>
+							<td><img src="https://upload.brickinc.net/elvs/common/blank.gif" alt="" border="0" width="10" /></td>
 							<!-- COOKING TIPS -->
 							<td valign="top">
 								<h2 style="font-family:Georgia, 'Times New Roman', Times, serif;margin:0 0 0 0; display:block; clear:both; color:#FF0000; font-weight:normal; font-size:20px; text-align:center; width:100%; ">

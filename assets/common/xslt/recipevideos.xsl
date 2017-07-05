@@ -22,7 +22,7 @@
 			<li>
 				<xsl:attribute name="onclick">javascript:refreshAdPods();</xsl:attribute>
 				<a>
-					<xsl:attribute name="href">http://upload.gsngrocers.com/elvs/video/gsn_player_v6.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
+					<xsl:attribute name="href">https://upload.brickinc.net/elvs/video/gsn_player_v6.html?file=<xsl:value-of select="VideoURL"/></xsl:attribute>
 					<xsl:attribute name="title"><xsl:value-of select="@vtitle"/></xsl:attribute>
 					<xsl:attribute name="class">lightwindow page-options</xsl:attribute>
 					<xsl:attribute name="params">lightwindow_width=400px,lightwindow_height=300px; lightwindow_close=true</xsl:attribute>

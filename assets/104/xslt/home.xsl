@@ -113,7 +113,7 @@
 			</xsl:if>
 			<div id="DualContentControlDiv">
 				<div id="DualContentControlDivA">
-					<a href="http://upload.gsngrocers.com/elvs/staticcontent/uploadfiles/104/152114freezerpleaserordfrm2014.indd.pdf" title="Freezer Pleasers Order Form" target="_blank">
+					<a href="https://upload.brickinc.net/elvs/staticcontent/uploadfiles/104/152114freezerpleaserordfrm2014.indd.pdf" title="Freezer Pleasers Order Form" target="_blank">
 						<img alt="Freezer Pleasers Button" src="/Assets/##chainid##/Images/freezer_pleaser_order_form.jpg" />
 					</a>
 				</div>
