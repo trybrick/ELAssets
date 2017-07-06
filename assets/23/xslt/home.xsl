@@ -60,7 +60,9 @@
 					</p>
 				</div>			
 				<div id="pharmacists" style="margin: 0pt 0pt 0pt 20px;">
-					<img alt="" src="/Assets/##chainid##/Images/hudsonPharm.jpg" />
+					<a  href="Shop/WeeklyAd.aspx">
+						<img alt="" src="/Assets/##chainid##/Images/shoppingcart.jpg" />
+					</a>
 				</div>
 				<div id="valu2u" style="margin-left:20px; float:left; width:210px; height:210px;">
 					<a target="_blank" href="http://holiday.rollbackrewards.com/consumer/Partner.action?partner=countymarkethudson">
