@@ -77,7 +77,7 @@
 		<div id="GoingGreen">
 			<div id="GoingGreenText">
 				<h1>Going Green</h1>
-				<p class="bodyp">Sullivan's is proud to introduce its new "Going Green" Grocery bags for only 99 cents a bag.  Purchase one bag and receive 5 cents off your grocery order.  Then each time you shop with the bag you will get 5 cents off for each bag used!</p>
+				<p class="bodyp">Sullivan's is proud to introduce its new "Going Green" Grocery bags for only $1.99 a bag.  Purchase one bag and receive 5 cents off your grocery order.  Then each time you shop with the bag you will get 5 cents off for each bag used!</p>
 			</div>
 			<div id="GoingGreenImg">
 				<img src="/Assets/207/Images/greenbag.jpg" alt=""/>
