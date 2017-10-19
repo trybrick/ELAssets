@@ -60,7 +60,7 @@
 					</p>
 				</div>			
 				<div id="pharmacists" style="border-style: none;">
-					<a href="https://www.mypharmacyconnect.com/Home/Index?StoreToken=a46959ad-79b9-422f-847a-6d8624c035cc" target="_blank">
+					<a href="https://stores.healthmart.com/countymarketpharmacyWI/Login.aspx?ReturnUrl=%2fcountymarketpharmacyWI" target="_blank">
 						<img alt="" src="/Assets/##chainid##/Images/hudsonpharm.png" />
 					</a> 
 				</div>
