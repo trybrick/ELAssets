@@ -16,7 +16,7 @@
 		</MenuItem>
 		<MenuItem>
 			<Title>Savings Center</Title>
-			<Link>/Shop/Coupons.aspx</Link>
+			<Link>/coupon</Link>
 		</MenuItem>
 		<MenuItem>
 			<Title>My Recipe Box</Title>
