@@ -14,13 +14,13 @@
 					</img>
 				</a>
 			</div>
-			<div style="float:right;margin-right: -8px;margin-left: -50px;">
-					<a href="http://www.countymarketgood2go.com" target='_blank'>
-						<img src="https://upload.brickinc.net/chainfiles/183/creative/201802/636540433798732789-cm_g2g_logo.png" width="120px"/>
-					</a>
+			<div style="float:right">
+				<a href="http://www.countymarketgood2go.com" target='_blank'>
+					<img src="https://upload.brickinc.net/chainfiles/183/creative/201802/636540433798732789-cm_g2g_logo.png" width="150px"/>
+				</a>
 			</div>
-			<div id="StoreHeaderRight">
-				<div id="StoreHeaderRightTop">
+			<div id="StoreHeaderRight" >
+				<div id="StoreHeaderRightTop" style="margin-right:0px;">
 					<div id="LoginBox" class="group facebook-login">
 						<xsl:choose>
 							<xsl:when test="//GenericConsumer/IsLoggedIn = 'true'">
