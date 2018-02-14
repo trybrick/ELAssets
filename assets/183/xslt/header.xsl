@@ -16,7 +16,7 @@
 			</div>
 			<div style="float:right">
 				<a href="http://www.countymarketgood2go.com" target='_blank'>
-					<img src="https://upload.brickinc.net/chainfiles/183/creative/201802/636540433798732789-cm_g2g_logo.png" width="150px"/>
+					<img src="https://upload.brickinc.net/chainfiles/183/creative/201802/636541901958227454-cm_g2g_logo.jpg" width="125px"/>
 				</a>
 			</div>
 			<div id="StoreHeaderRight" >
