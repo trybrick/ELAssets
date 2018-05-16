@@ -14,6 +14,11 @@
 					</img>
 				</a>
 			</div>
+			<div style="float:right">
+				<a href="http://www.countymarketgood2go.com" target='_blank'>
+					<img src="https://upload.brickinc.net/chainfiles/183/creative/201802/636541901958227454-cm_g2g_logo.jpg" width="125px"/>
+				</a>
+			</div>
 			<div id="StoreHeaderRight">
 				<div id="StoreHeaderRightTop">
 					<div id="LoginBox" class="group facebook-login">
@@ -72,7 +77,7 @@
 					</div>
 
 				</div>
-                <div><a class="socialIcon" href="https://www.facebook.com/CountyMarketHudson" target="_blank"><img alt="Follow County Market Hudson on Facebook" src="/Assets/23/Images/facebook.png" /></a>
+                <div><a class="socialIcon" href="https://www.facebook.com/CountyMarketHudson" target="_blank"><img alt="Follow County Market Hudson on Facebook" src="/Assets/23/Images/facebook.png" style="display: inherit;" /></a>
                 </div>
 			</div>
 			<div style="clear: both;" />

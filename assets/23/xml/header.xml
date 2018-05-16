@@ -34,6 +34,11 @@
 			<Title>Employment</Title>
 			<Link>http://careers.jerrysinc.net</Link>
 		</MenuItem>
+		<MenuItem>
+			<Title>Online Shopping</Title>
+			<Link>http://www.countymarketgood2go.com</Link>
+			<Target>_blank</Target>
+		</MenuItem>
 	</TopLevelNavigation>
 	<ContentObjects>
 		<ContentObject>
