@@ -2,7 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html"/>
 	<xsl:template match="/">
-
+		<script type="text/javascript">
+			window.location.href = "http://www.haggen.com/";
+		</script>
+	
+	<!--
 		<div class="header_wrapper">
 		        <div class="container_12">
 		            <a href="http://www.haggen.com/">
@@ -75,6 +79,6 @@
 		      <div class="clear"></div>
 		        </div>
 		    </div>
-	
+	-->
 	</xsl:template>
 </xsl:stylesheet>
